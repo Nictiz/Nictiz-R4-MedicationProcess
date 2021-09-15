@@ -155,6 +155,17 @@
         <type value="token" />
       </searchParam>
     </resource>
+    <resource>
+      <type value="Patient" />
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
+      <interaction>
+        <code value="search-type" />
+      </interaction>
+      <searchParam>
+        <name value="identifier" />
+        <type value="token" />
+      </searchParam>
+    </resource>
     <operation>
       <name value="Medication-Overview"/>
       <definition value="http://nictiz.nl/fhir/OperationDefinition/Medication-Overview"/>
