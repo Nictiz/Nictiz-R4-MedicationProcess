@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="MedicationOverview" />
+  <url value="http://nictiz.nl/fhir/StructureDefinition/MedicationOverview" />
+  <name value="MedicationOverview" />
+  <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Profile on the List resource which represents the medication overview conform information standard ['Medication Proces'](https://www.nictiz.nl/Paginas/Informatiestandaard-Medicatieprocess.aspx)" />
+  <purpose value="To define the medication overview as stated in the information standard Medication Process." />
+  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="Medication-Process-v9-2-0-0" />
+    <uri value="https://decor.nictiz.nl/art-decor/decor-datasets--mp-?id=&amp;amp;effectiveDate=&amp;amp;conceptId=&amp;amp;conceptEffectiveDate=" />
+    <name value="Medication Process 9 v2.0.0" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="List" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/List" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="List.extension">
+      <path value="List.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="List.extension:myExtension">
+      <path value="List.extension" />
+      <sliceName value="myExtension" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationOverview.Verification" />
+      </type>
+    </element>
+    <element id="List.identifier">
+      <path value="List.identifier" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement900-22093" />
+        <comment value="Identificatie" />
+      </mapping>
+    </element>
+    <element id="List.code">
+      <path value="List.code" />
+      <min value="1" />
+    </element>
+    <element id="List.code.coding">
+      <path value="List.code.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="List.code.coding.system">
+      <path value="List.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="List.code.coding.code">
+      <path value="List.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="11181000146103" />
+    </element>
+    <element id="List.subject">
+      <path value="List.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-patient" />
+      </type>
+    </element>
+    <element id="List.date">
+      <path value="List.date" />
+      <short value="Medication Overview date" />
+      <definition value="The date that the medication overview was prepared." />
+      <alias value="DocumentDatum" />
+      <min value="1" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-501" />
+        <comment value="DocumentDatum" />
+      </mapping>
+    </element>
+    <element id="List.source">
+      <path value="List.source" />
+      <min value="1" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-502" />
+        <comment value="Auteur" />
+      </mapping>
+    </element>
+    <element id="List.source.extension">
+      <path value="List.source.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="List.source.extension:organization">
+      <path value="List.source.extension" />
+      <sliceName value="organization" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationOverview.SourceOrganization" />
+      </type>
+    </element>
+    <element id="List.entry">
+      <path value="List.entry" />
+      <slicing>
+        <discriminator>
+          <type value="profile" />
+          <path value="item.reference.resolve()" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="List.entry:medicationAgreement">
+      <path value="List.entry" />
+      <sliceName value="medicationAgreement" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement900-9580" />
+        <comment value="Medicatieafspraak" />
+      </mapping>
+    </element>
+    <element id="List.entry:medicationAgreement.item">
+      <path value="List.entry.item" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationAgreement" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="List.entry:administrationAgreement">
+      <path value="List.entry" />
+      <sliceName value="administrationAgreement" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement900-20132" />
+        <comment value="Toedieningsafspraak" />
+      </mapping>
+    </element>
+    <element id="List.entry:administrationAgreement.item">
+      <path value="List.entry.item" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-AdministrationAgreement" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="List.entry:medicationUsage">
+      <path value="List.entry" />
+      <sliceName value="medicationUsage" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement900-21338" />
+        <comment value="MedicatieGebruik" />
+      </mapping>
+    </element>
+    <element id="List.entry:medicationUsage.item">
+      <path value="List.entry.item" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationUse2" />
+        <aggregation value="bundled" />
+      </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement900-21338" />
+        <comment value="MedicatieGebruik" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

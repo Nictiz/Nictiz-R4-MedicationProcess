@@ -3,7 +3,7 @@
   <id value="Medication-Overview" />
   <url value="http://nictiz.nl/fhir/OperationDefinition/Medication-Overview" />
   <name value="MedicationOverview"/>
-  <status value="active"/>
+  <status value="draft"/>
   <kind value="operation"/>
   <experimental value="false"/>
   <publisher value="Nictiz" />

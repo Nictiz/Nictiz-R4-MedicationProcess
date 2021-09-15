@@ -2,7 +2,6 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/capabilitystatement.xsd">
   <id value="MedicationProcess-ServerCapabilities"/>
   <url value="http://nictiz.nl/fhir/CapabilityStatement/MedicationProcess-ServerCapabilities" />
-  <version value="0.0.1"/>
   <name value="MedicationProcess_Servercapabilities" />
   <status value="active" />
   <date value="2021-09-01" />
