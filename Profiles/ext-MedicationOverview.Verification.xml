@@ -18,6 +18,11 @@
   <purpose value="To indicate if and when a medication overview is verified with a patient or health proffesional." />
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="Medication-Process-v9-2-0-0" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20210921T194523/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2021-01-01T000000.html" />
+    <name value="Medication Process 9 v2.0.0-beta" />
+  </mapping>
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
@@ -28,6 +33,23 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="VerificationPatient / VerificationHealthProfessional" />
+      <definition value="Verification with patient and health professional." />
+      <alias value="VerificatiePatiënt" />
+      <alias value="VerificatieZorgverlener" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-506" />
+        <comment value="VerificationPatient" />
+      </mapping>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-509" />
+        <comment value="VerificationHealthProfessional" />
+      </mapping>
+    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
@@ -42,9 +64,6 @@
     <element id="Extension.extension:verificationPatient">
       <path value="Extension.extension" />
       <sliceName value="verificationPatient" />
-      <short value="VerificationPatient" />
-      <definition value="Is the medication overview verified with the patient?" />
-      <alias value="Verificatie patiënt" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -54,15 +73,21 @@
     </element>
     <element id="Extension.extension:verificationPatient.value[x]">
       <path value="Extension.extension.value[x]" />
+      <short value="VerifiedWithPatient?" />
+      <definition value="Verified with patient?" />
+      <alias value="GeverifieerdMetPatiënt?" />
       <type>
         <code value="boolean" />
       </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-507" />
+        <comment value="VerifiedWithPatient?" />
+      </mapping>
     </element>
     <element id="Extension.extension:verificationPatientDate">
       <path value="Extension.extension" />
       <sliceName value="verificationPatientDate" />
-      <short value="VerificationPatientDate" />
-      <alias value="VerificatieDatum" />
       <min value="0" />
       <max value="1" />
     </element>
@@ -72,16 +97,21 @@
     </element>
     <element id="Extension.extension:verificationPatientDate.value[x]">
       <path value="Extension.extension.value[x]" />
+      <short value="VerificationDate" />
+      <definition value="Date of verification." />
+      <alias value="VerificatieDatum" />
       <type>
         <code value="dateTime" />
       </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-508" />
+        <comment value="VerificationDate" />
+      </mapping>
     </element>
     <element id="Extension.extension:verificationHealthProfessional">
       <path value="Extension.extension" />
       <sliceName value="verificationHealthProfessional" />
-      <short value="VerificationHealthProfessional" />
-      <definition value="Is the medication overview verified by the health professional?" />
-      <alias value="Verificatie zorgverlener" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -91,15 +121,21 @@
     </element>
     <element id="Extension.extension:verificationHealthProfessional.value[x]">
       <path value="Extension.extension.value[x]" />
+      <short value="VerifiedWithHealthProfessional?" />
+      <definition value="Verified with health professional?" />
+      <alias value="GeverifieerdMetZorgverlener?" />
       <type>
         <code value="boolean" />
       </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-510" />
+        <comment value="VerifiedWithHealthProfessional?" />
+      </mapping>
     </element>
     <element id="Extension.extension:verificationHealthProfessionalDate">
       <path value="Extension.extension" />
       <sliceName value="verificationHealthProfessionalDate" />
-      <short value="VerificationHealthProfessionalDate" />
-      <alias value="VerificatieDatum" />
       <min value="0" />
       <max value="1" />
     </element>
@@ -109,9 +145,17 @@
     </element>
     <element id="Extension.extension:verificationHealthProfessionalDate.value[x]">
       <path value="Extension.extension.value[x]" />
+      <short value="VerificationDate" />
+      <definition value="Date of verification." />
+      <alias value="VerificatieDatum" />
       <type>
         <code value="dateTime" />
       </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-511" />
+        <comment value="VerificationDate" />
+      </mapping>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
