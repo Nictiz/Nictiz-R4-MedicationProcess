@@ -5,7 +5,8 @@ This document contains release notes per profile, indicating differences with th
 ## MedicationOverview.xml
 - Updated references.
 - Updated mappings, moved mappings to extension where possible.
-- Replaced fixed values in `List.code` with a pattern to align with the R4 profiling guidelines.
+- Replaced fixed values in `List.code` with a pattern to align with the R4 profiling guidelines..
+- Added `List.entry` slices for BodyHeight and BodyWeight.
 
 ## Bundle-MedicationOverview.xml
 - Moved mappings to MedicationOverview profile.
@@ -30,7 +31,6 @@ This document contains release notes per profile, indicating differences with th
 ## OperationDefinition Medication-Overview.xml
 - Improved wording in description and documentation to be more generic and readable.
 - Moved Medication-Overview Bundle profile to an HL7 core extension due to changes made to the base resource in R4.
-- Replaced in parameter type Identifier to Id.
 - Renamed out parameter from Bundle to return to align more with HL7 OperationDefinitions.
 
 ## Examples

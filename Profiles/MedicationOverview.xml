@@ -212,5 +212,45 @@
         <comment value="MedicationUse" />
       </mapping>
     </element>
+    <element id="List.entry:bodyHeight">
+      <path value="List.entry" />
+      <sliceName value="bodyHeight" />
+      <max value="1" />
+    </element>
+    <element id="List.entry:bodyHeight.item">
+      <path value="List.entry.item" />
+      <short value="BodyHeight" />
+      <alias value="Lichaamslengte" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyHeight" />
+        <aggregation value="bundled" />
+      </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-448" />
+        <comment value="BodyHeight" />
+      </mapping>
+    </element>
+    <element id="List.entry:bodyWeight">
+      <path value="List.entry" />
+      <sliceName value="bodyWeight" />
+      <max value="1" />
+    </element>
+    <element id="List.entry:bodyWeight.item">
+      <path value="List.entry.item" />
+      <short value="BodyWeight" />
+      <alias value="Lichaamsgewicht" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyWeight" />
+        <aggregation value="bundled" />
+      </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="BodyWeight" />
+        <comment value="mp-dataelement920-453" />
+      </mapping>
+    </element>
   </differential>
 </StructureDefinition>

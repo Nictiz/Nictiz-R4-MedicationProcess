@@ -30,8 +30,8 @@
     <use value="in"/>
     <min value="0"/>
     <max value="1"/>
-    <documentation value="The id of a patient resource located on the server on which this operation is executed. This paramater is not be necessary if the operation is executed in context of a specific authenticated and authorized patient."/>
-    <type value="id"/>
+    <documentation value="The identifier of a patient for which this operation is executed. This paramater is not be necessary if the operation is executed in context of a specific authenticated and authorized patient."/>
+    <type value="Identifier"/>
   </parameter>
   <parameter>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationdefinition-profile">
