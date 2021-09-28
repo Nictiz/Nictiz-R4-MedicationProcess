@@ -8,8 +8,8 @@ This document contains release notes per profile, indicating differences with th
 - Replaced fixed values in `List.code` with a pattern to align with the R4 profiling guidelines.
 
 ## Bundle-MedicationOverview.xml
-- Updated mappings.
-- Added mandatory slice for Patient so it is more explicitly stated that it is required.
+- Moved mappings to MedicationOverview profile.
+- Added mandatory slice for Patient to be more explicit that the patient needs to be included.
 
 ## ext-MedicationOverview.SourceOrganization.xml
 - Moved mappings from MedicationOverview.xml to this extension.

@@ -14,15 +14,10 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="Profile on the Bundle resource which represents the structure of the retrieve medication overview response transaction. The output of the ['$medication-overiew'](http://nictiz.nl/fhir/OperationDefinition/Medication-Overview) operation SHALL conform to this profile." />
+  <description value="Profile on Bundle which represents the structure of the retrieve medication overview response transaction. The output of the ['$medication-overiew'](http://nictiz.nl/fhir/OperationDefinition/Medication-Overview) operation SHALL conform to this profile." />
   <purpose value="To define the body of the retrieve medication overview response transaction. This profile should provide guidance for servers in constructing the medication-overview operation outcome and enableling validation against it. For clients this profile should be helpfull in expecting the response format of the medication-overview outcome." />
   <copyright value="CC0" />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="Medication-Process-v9-2-0-0" />
-    <uri value="https://decor.nictiz.nl/art-decor/decor-datasets--mp-?id=&amp;amp;effectiveDate=&amp;amp;conceptId=&amp;amp;conceptEffectiveDate=" />
-    <name value="Medication Process 9 v2.0.0" />
-  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Bundle" />
@@ -51,16 +46,8 @@
     <element id="Bundle.entry:list">
       <path value="Bundle.entry" />
       <sliceName value="list" />
-      <short value="MedicationOveriew" />
-      <alias value="Medicatie Overzicht" />
-      <alias value="Documentgegevens" />
       <min value="1" />
       <max value="1" />
-      <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement900-22968" />
-        <comment value="Documentgegevens" />
-      </mapping>
     </element>
     <element id="Bundle.entry:list.resource">
       <path value="Bundle.entry.resource" />
@@ -82,18 +69,6 @@
         <comment value="Patient" />
       </mapping>
     </element>
-    <element id="Bundle.entry:list.resource.entry:AdministrationAgreement">
-      <path value="Bundle.entry.resource.entry" />
-      <sliceName value="AdministrationAgreement" />
-    </element>
-    <element id="Bundle.entry:list.resource.entry:AdministrationAgreement.item">
-      <path value="Bundle.entry.resource.entry.item" />
-      <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement900-20132" />
-        <comment value="Toedieningsafspraak" />
-      </mapping>
-    </element>
     <element id="Bundle.entry:patient">
       <path value="Bundle.entry" />
       <sliceName value="patient" />
@@ -105,7 +80,7 @@
       <min value="1" />
       <type>
         <code value="Resource" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-patient" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient" />
       </type>
     </element>
   </differential>

@@ -28,6 +28,16 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/List" />
   <derivation value="constraint" />
   <differential>
+    <element id="List">
+      <path value="List" />
+      <short value="DocumentData" />
+      <alias value="Documentgegevens" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-500" />
+        <comment value="DocumentData" />
+      </mapping>
+    </element>
     <element id="List.extension">
       <path value="List.extension" />
       <slicing>
@@ -61,11 +71,18 @@
     </element>
     <element id="List.subject">
       <path value="List.subject" />
+      <short value="Patient" />
+      <alias value="Patient" />
       <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient" />
       </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-1" />
+        <comment value="Patient" />
+      </mapping>
     </element>
     <element id="List.date">
       <path value="List.date" />
