@@ -2,7 +2,7 @@
 
 This repository contains HL7 FHIR R4 compliant profiles and related conformance materials for the information standaard [MedicationProces 9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces) Version 2.0 and higher .
 
-This repository has a dependency on the [zib2020 package](https://simplifier.net/NictizR4-Zib2020/~packages).
+This repository has a dependency on the [zib2020 package](https://simplifier.net/Nictiz-R4-zib2020/~packages).
 
 This repository is maintained by the Dutch National Intitute for ICT in Healthcare (Nictiz).
 
