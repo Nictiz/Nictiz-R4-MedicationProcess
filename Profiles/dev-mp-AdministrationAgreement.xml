@@ -1,23 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="dev-mp-AdministrationAgreement"/>
-    <url value="https://example.org/fhir/StructureDefinition/MyNlcoreAdministrationAgreement"/>
-    <name value="DevMpAdministrationAgreement"/>
-    <status value="draft"/>
-    <fhirVersion value="4.0.1"/>
-    <mapping>
-        <identity value="zib-administrationagreement-v1.0.3-2020EN" />
-        <uri value="https://zibs.nl/wiki/AdministrationAgreement-v1.0.3(2020EN)" />
-        <name value="zib AdministrationAgreement-v1.0.3(2020EN)" />
-    </mapping>
-    <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20210921T194523/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2021-01-01T000000.html" />
-        <name value="Medication Process 9 v2.0.0-beta" />
-    </mapping>
-    <kind value="resource"/>
-    <abstract value="false"/>
-    <type value="MedicationDispense"/>
-    <baseDefinition value="http://nictiz.nl/fhir/StructureDefinition/nl-core-AdministrationAgreement"/>
-    <derivation value="constraint"/>
+  <id value="dev-mp-AdministrationAgreement" />
+  <url value="https://example.org/fhir/StructureDefinition/MyNlcoreAdministrationAgreement" />
+  <name value="DevMpAdministrationAgreement" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="zib-administrationagreement-v1.0.3-2020EN" />
+    <uri value="https://zibs.nl/wiki/AdministrationAgreement-v1.0.3(2020EN)" />
+    <name value="zib AdministrationAgreement-v1.0.3(2020EN)" />
+  </mapping>
+  <mapping>
+    <identity value="Medication-Process-v9-2-0-0" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20210921T194523/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2021-01-01T000000.html" />
+    <name value="Medication Process 9 v2.0.0-beta" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MedicationDispense" />
+  <baseDefinition value="http://nictiz.nl/fhir/StructureDefinition/nl-core-AdministrationAgreement" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="MedicationDispense.extension">
+      <path value="MedicationDispense.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="MedicationDispense.extension:additionalInformation">
+      <path value="MedicationDispense.extension" />
+      <sliceName value="additionalInformation" />
+      <min value="0" />
+    </element>
+    <element id="MedicationDispense.extension:additionalInformation.value[x]">
+      <path value="MedicationDispense.extension.value[x]" />
+      <definition value="Known issue: is datatype 'string' in MP dataset. https://bits.nictiz.nl/browse/MP-536" />
+    </element>
+  </differential>
 </StructureDefinition>
