@@ -1,0 +1,8 @@
+{
+  "updated": "2022-03-14T12:29:39.9638989+01:00",
+  "dependencies": {
+    "nictiz.fhir.nl.r4.zib2020": "0.1.0-beta1",
+    "hl7.fhir.r4.core": "4.0.1"
+  },
+  "missing": {}
+}
