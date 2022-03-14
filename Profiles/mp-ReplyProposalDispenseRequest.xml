@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="mp-ReplyProposalDispenseRequest" />
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp9-ReplyProposalDispenseRequest" />
+  <name value="MpReplyProposalDispenseRequest" />
+  <title value="mp ReplyProposalDispenseRequest" />
+  <status value="draft" />
+  <description value="Profile on the Communication resource which represents the reply proposal dispense request conform information standard ['Medication Process'](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)" />
+  <purpose value="To define the medication overview as stated in the information standard Medication Process." />
+  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="Medication-Process-v9-2-0-0" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20210921T194523/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2021-01-01T000000.html" />
+    <name value="Medication Process 9 v2.0.0" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Communication" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Communication" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Communication">
+      <path value="Communication" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-539" />
+        <comment value="Antwoord" />
+      </mapping>
+    </element>
+    <element id="Communication.identifier">
+      <path value="Communication.identifier" />
+      <min value="1" />
+      <max value="1" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-540" />
+        <comment value="Identificatie" />
+      </mapping>
+    </element>
+    <element id="Communication.basedOn">
+      <path value="Communication.basedOn" />
+      <min value="1" />
+      <max value="1" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-544" />
+        <comment value="RelatieVoorstelGegevens" />
+      </mapping>
+    </element>
+    <element id="Communication.basedOn.identifier">
+      <path value="Communication.basedOn.identifier" />
+      <min value="1" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-545" />
+        <comment value="Identificatie" />
+      </mapping>
+    </element>
+    <element id="Communication.sent">
+      <path value="Communication.sent" />
+      <min value="1" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-541" />
+        <comment value="AntwoordDatum" />
+      </mapping>
+    </element>
+    <element id="Communication.sender">
+      <path value="Communication.sender" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-NlCoreHealthProfessionalReference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole" />
+      </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-542" />
+        <comment value="Auteur" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>
