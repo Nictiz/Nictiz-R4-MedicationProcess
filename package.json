@@ -1,0 +1,11 @@
+{
+  "name": "NictizRMedicationProcess",
+  "version": "0.1.0",
+  "description": "Put a description here",
+  "dependencies": {
+    "nictiz.fhir.nl.r4.zib2020": "0.1.0-beta1"
+  },
+  "fhirVersions": [
+    "4.0.0"
+  ]
+}
