@@ -5,21 +5,21 @@
   <name value="DevMpMedicationAgreement" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
-    <mapping>
-        <identity value="zib-medicationagreement-v1.2-2020EN" />
-        <uri value="https://zibs.nl/wiki/MedicationAgreement-v1.2(2020EN)" />
-        <name value="zib MedicationAgreement-v1.2(2020EN)" />
-    </mapping>
-    <mapping>
-        <identity value="zib-instructionsforuse-v1.2.1-2020EN" />
-        <uri value="https://zibs.nl/wiki/InstructionsForUse-v1.2.1(2020EN)" />
-        <name value="zib InstructionsForUse-v1.2.1(2020EN)" />
-    </mapping>
-    <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20210921T194523/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2021-01-01T000000.html" />
-        <name value="Medication Process 9 v2.0.0-beta" />
-    </mapping>
+  <mapping>
+    <identity value="zib-medicationagreement-v1.2-2020EN" />
+    <uri value="https://zibs.nl/wiki/MedicationAgreement-v1.2(2020EN)" />
+    <name value="zib MedicationAgreement-v1.2(2020EN)" />
+  </mapping>
+  <mapping>
+    <identity value="zib-instructionsforuse-v1.2.1-2020EN" />
+    <uri value="https://zibs.nl/wiki/InstructionsForUse-v1.2.1(2020EN)" />
+    <name value="zib InstructionsForUse-v1.2.1(2020EN)" />
+  </mapping>
+  <mapping>
+    <identity value="Medication-Process-v9-2-0-0" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20210921T194523/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2021-01-01T000000.html" />
+    <name value="Medication Process 9 v2.0.0-beta" />
+  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="MedicationRequest" />
