@@ -1,26 +1,26 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="2.16.840.1.113883.2.4.3.11.60.20.77.11.42--20220222180251"/>
+    <id value="2.16.840.1.113883.2.4.3.11.60.20.77.11.49--20220311132509"/>
     <meta>
         <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
         <valuePeriod>
-            <start value="2022-02-22T18:02:51+01:00"/>
+            <start value="2022-03-11T13:25:09+01:00"/>
         </valuePeriod>
     </extension>
-    <url value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.42--20220222180251"/>
+    <url value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.49--20220311132509"/>
     <identifier>
         <use value="official"/>
         <system value="urn:ietf:rfc:3986"/>
-        <value value="urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.11.42"/>
+        <value value="urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.11.49"/>
     </identifier>
-    <version value="2022-02-22T18:02:51"/>
-    <name value="RedenWijzigen_StakenCodelijst_MP9_200"/>
-    <title value="RedenWijzigen-StakenCodelijst"/>
+    <version value="2022-03-11T13:25:09"/>
+    <name value="Toedieningsafspraak_RedenWijzigen_StakenCodelijst_MP9_200"/>
+    <title value="Toedieningsafspraak-RedenWijzigen-StakenCodelijst"/>
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="Nictiz"/>
-    <description value="RedenWijzigen-StakenCodelijst"/>
+    <description value="Toedieningsafspraak-RedenWijzigen-StakenCodelijst"/>
     <immutable value="false"/>
     <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
     <compose>
@@ -54,6 +54,22 @@
             </concept>
             <concept>
                 <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+                    <valueString value="foutieve registratie"/>
+                </extension>
+                <code value="62691000146103"/>
+                <display value="foutieve registratie"/>
+                <designation>
+                    <language value="en-US"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000003001"/>
+                        <display value="Fully specified name"/>
+                    </use>
+                    <value value="Incorrect registration (finding)"/>
+                </designation>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
                     <valueString value="contra-indicatie"/>
                 </extension>
                 <code value="438833006"/>
@@ -81,7 +97,7 @@
                         <code value="900000000000003001"/>
                         <display value="Fully specified name"/>
                     </use>
-                    <value value="Drug interaction (finding)"/>
+                    <value value="Drug interaction (disorder)"/>
                 </designation>
             </concept>
             <concept>
@@ -118,10 +134,10 @@
             </concept>
             <concept>
                 <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-                    <valueString value="aanpassing toedieningswijze"/>
+                    <valueString value="toedieningsweg voldoet niet"/>
                 </extension>
                 <code value="112191000146101"/>
-                <display value="medicatietoedieningsweg voldoet niet"/>
+                <display value="toedieningsweg voldoet niet"/>
                 <designation>
                     <language value="en-US"/>
                     <use>
@@ -166,6 +182,22 @@
             </concept>
             <concept>
                 <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+                    <valueString value="opname"/>
+                </extension>
+                <code value="405776004"/>
+                <display value="opname gepland"/>
+                <designation>
+                    <language value="en-US"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000003001"/>
+                        <display value="Fully specified name"/>
+                    </use>
+                    <value value="Planned admission (situation)"/>
+                </designation>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
                     <valueString value="wens patiënt"/>
                 </extension>
                 <code value="159711000146106"/>
@@ -198,22 +230,6 @@
             </concept>
             <concept>
                 <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-                    <valueString value="opname"/>
-                </extension>
-                <code value="ondervoorbehoud_405776004"/>
-                <display value="-onder voorbehoud- opname gepland"/>
-                <designation>
-                    <language value="en-US"/>
-                    <use>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="900000000000003001"/>
-                        <display value="Fully specified name"/>
-                    </use>
-                    <value value="-onder voorbehoud-  Planned admission (situation)"/>
-                </designation>
-            </concept>
-            <concept>
-                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
                     <valueString value="geplande procedure"/>
                 </extension>
                 <code value="405613005"/>
@@ -226,22 +242,6 @@
                         <display value="Fully specified name"/>
                     </use>
                     <value value="Planned procedure (situation)"/>
-                </designation>
-            </concept>
-            <concept>
-                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-                    <valueString value="foutieve registratie"/>
-                </extension>
-                <code value="159691000146109"/>
-                <display value="foutieve registratie"/>
-                <designation>
-                    <language value="en-US"/>
-                    <use>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="900000000000003001"/>
-                        <display value="Fully specified name"/>
-                    </use>
-                    <value value="Incorrect registration (finding)"/>
                 </designation>
             </concept>
             <concept>
@@ -280,24 +280,22 @@
                 <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
                     <valueString value="substitutie"/>
                 </extension>
-                <code value="160151000146105"/>
-                <display value="geneesmiddelsubstitutie"/>
-                <designation>
-                    <language value="en-US"/>
-                    <use>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="900000000000003001"/>
-                        <display value="Fully specified name"/>
-                    </use>
-                    <value value="Substitution of medication (finding)"/>
-                </designation>
+                <code value="xxx"/>
+                <display value="xx koppeling volgt xx"/>
             </concept>
             <concept>
                 <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
                     <valueString value="loopt in andere medicamenteuze behandeling"/>
                 </extension>
-                <code value="160161000146108"/>
-                <display value="heeft onterecht dubbele medicamenteuze behandeling"/>
+                <code value="xxx"/>
+                <display value="xx koppeling volgt xx"/>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+                    <valueString value="overgang naar GDS"/>
+                </extension>
+                <code value="160141000146107"/>
+                <display value="overgang naar geneesmiddeldistributiesysteem"/>
                 <designation>
                     <language value="en-US"/>
                     <use>
@@ -305,7 +303,23 @@
                         <code value="900000000000003001"/>
                         <display value="Fully specified name"/>
                     </use>
-                    <value value="-onder voorbehoud- Has wrong duplicate medication treatment (finding)"/>
+                    <value value="Change of provision of medication to monitored dosage system (situation)"/>
+                </designation>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+                    <valueString value="medicatie niet verstrekt aan patiënt"/>
+                </extension>
+                <code value="182850000"/>
+                <display value="medicatie niet verstrekt"/>
+                <designation>
+                    <language value="en-US"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000003001"/>
+                        <display value="Fully specified name"/>
+                    </use>
+                    <value value="Drugs not issued (finding)"/>
                 </designation>
             </concept>
         </include>
