@@ -41,5 +41,14 @@
       <path value="MedicationDispense.extension.value[x]" />
       <definition value="Known issue: is datatype 'string' in MP dataset. https://bits.nictiz.nl/browse/MP-536" />
     </element>
+    <element id="MedicationDispense.extension:agreementReason">
+      <path value="MedicationDispense.extension" />
+      <sliceName value="agreementReason" />
+      <min value="0" />
+    </element>
+    <element id="MedicationDispense.extension:agreementReason.value[x]">
+      <path value="MedicationDispense.extension.value[x]" />
+      <definition value="Known issue: is datatype 'code' in MP dataset. https://bits.nictiz.nl/browse/MP-369, https://bits.nictiz.nl/browse/MP-370" />
+    </element>
   </differential>
 </StructureDefinition>
