@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Bundle-MedicationOverview" />
-  <url value="http://nictiz.nl/fhir/StructureDefinition/Bundle-MedicationOverview" />
-  <name value="MedicationOverviewResponseStructure" />
-  <title value="Medication Overview Response Structure" />
-  <status value="active" />
+  <id value="mp-MedicationOverview-Bundle" />
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationOverview-Bundle" />
+  <name value="MpMedicationOverviewBundle" />
+  <title value="mp MedicationOverview-Bundle" />
+  <status value="draft" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />
@@ -14,9 +14,9 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="Profile on Bundle which represents the structure of the retrieve medication overview response transaction. The output of the ['$medication-overiew'](http://nictiz.nl/fhir/OperationDefinition/Medication-Overview) operation SHALL conform to this profile." />
-  <purpose value="To define the body of the retrieve medication overview response transaction. This profile should provide guidance for servers in constructing the medication-overview operation outcome and enableling validation against it. For clients this profile should be helpfull in expecting the response format of the medication-overview outcome." />
-  <copyright value="CC0" />
+  <description value="Profile on the Bundle resource which represents the structure of the retrieve medication overview response transaction conform information standard ['Medication Process'](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). The output of the ['$medication-overview'](https://simplifier.net/medicationprocess/medication-overview) operation SHALL conform to this profile." />
+  <purpose value="To define the body of the retrieve medication overview response transaction. This profile should provide guidance for servers in constructing the medication-overview operation outcome and enabling validation against it. For clients this profile should be helpful in expecting the response format of the medication-overview outcome." />
+  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -54,20 +54,8 @@
       <min value="1" />
       <type>
         <code value="List" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/MedicationOverview" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp9-MedicationOverview" />
       </type>
-    </element>
-    <element id="Bundle.entry:list.resource.subject">
-      <path value="Bundle.entry.resource.subject" />
-      <type>
-        <code value="Reference" />
-        <aggregation value="bundled" />
-      </type>
-      <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement900-19798" />
-        <comment value="Patient" />
-      </mapping>
     </element>
     <element id="Bundle.entry:patient">
       <path value="Bundle.entry" />

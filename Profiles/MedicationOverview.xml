@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="MedicationOverview" />
-  <url value="http://nictiz.nl/fhir/StructureDefinition/MedicationOverview" />
-  <name value="MedicationOverview" />
-  <status value="active" />
+  <id value="mp-MedicationOverview" />
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationOverview" />
+  <name value="MpMedicationOverview" />
+  <title value="mp MedicationOverview" />
+  <status value="draft" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />
@@ -13,7 +14,7 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="Profile on the List resource which represents the medication overview conform information standard ['Medication Proces'](https://www.nictiz.nl/Paginas/Informatiestandaard-Medicatieprocess.aspx)" />
+  <description value="Profile on the List resource which represents the medication overview conform information standard ['Medication Process'](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)." />
   <purpose value="To define the medication overview as stated in the information standard Medication Process." />
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
@@ -117,7 +118,7 @@
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
         <map value="mp-dataelement920-503" />
-        <comment value="AuthorIsPatient" />
+        <comment value="AuthorIsPatient (implicit)" />
       </mapping>
     </element>
     <element id="List.source.extension">
@@ -191,11 +192,6 @@
     <element id="List.entry:medicationUse">
       <path value="List.entry" />
       <sliceName value="medicationUse" />
-      <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement900-21338" />
-        <comment value="MedicatieGebruik" />
-      </mapping>
     </element>
     <element id="List.entry:medicationUse.item">
       <path value="List.entry.item" />
@@ -248,8 +244,8 @@
       </type>
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
-        <map value="BodyWeight" />
-        <comment value="mp-dataelement920-453" />
+        <map value="mp-dataelement920-453" />
+        <comment value="BodyWeight" />
       </mapping>
     </element>
   </differential>
