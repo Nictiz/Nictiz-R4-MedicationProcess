@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="mp-MedicationPrescriptionProcessing-Bundle" />
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationPrescriptionProcessing-Bundle" />
+  <name value="MpMedicationPrescriptionProcessingBundle" />
+  <title value="mp MedicationPrescriptionProcessing Bundle" />
+  <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Profile on Bundle which represents the structure of the Send MedicationPrescriptionProcessing request transaction." />
+  <copyright value="CC0" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Bundle" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Bundle.type">
+      <path value="Bundle.type" />
+      <fixedCode value="batch" />
+    </element>
+    <element id="Bundle.total">
+      <path value="Bundle.total" />
+      <comment value="The total value contains the number of matching HCIMs: MedicationUse, AdministrationAgreement and MedicationAgreement. Other included resources, such as Medication resources, are not included in the total." />
+    </element>
+    <element id="Bundle.entry">
+      <path value="Bundle.entry" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="resource" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="Bundle.entry:administrationAgreement">
+      <path value="Bundle.entry" />
+      <sliceName value="administrationAgreement" />
+      <min value="1" />
+    </element>
+    <element id="Bundle.entry:administrationAgreement.resource">
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-AdministrationAgreement" />
+      </type>
+    </element>
+    <element id="Bundle.entry:medicationDispense">
+      <path value="Bundle.entry" />
+      <sliceName value="medicationDispense" />
+    </element>
+    <element id="Bundle.entry:medicationDispense.resource">
+      <path value="Bundle.entry.resource" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationDispense" />
+      </type>
+    </element>
+    <element id="Bundle.entry:patient">
+      <path value="Bundle.entry" />
+      <sliceName value="patient" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Bundle.entry:patient.resource">
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient" />
+      </type>
+    </element>
+    <element id="Bundle.entry:pharmaceuticalProduct">
+      <path value="Bundle.entry" />
+      <sliceName value="pharmaceuticalProduct" />
+      <min value="1" />
+    </element>
+    <element id="Bundle.entry:pharmaceuticalProduct.resource">
+      <path value="Bundle.entry.resource" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
