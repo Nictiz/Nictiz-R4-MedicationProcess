@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="mp-MedicationOverview-Bundle" />
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationOverview-Bundle" />
+  <name value="MpMedicationOverviewBundle" />
+  <title value="mp MedicationOverview-Bundle" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Profile on the Bundle resource which represents the structure of the retrieve medication overview response transaction conform information standard ['Medication Process'](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). The output of the ['$medication-overview'](https://simplifier.net/medicationprocess/medication-overview) operation SHALL conform to this profile." />
+  <purpose value="To define the body of the retrieve medication overview response transaction. This profile should provide guidance for servers in constructing the medication-overview operation outcome and enabling validation against it. For clients this profile should be helpful in expecting the response format of the medication-overview outcome." />
+  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Bundle" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Bundle.type">
+      <path value="Bundle.type" />
+      <fixedCode value="searchset" />
+    </element>
+    <element id="Bundle.total">
+      <path value="Bundle.total" />
+      <comment value="The total value contains the number of matching HCIMs: MedicationUse, AdministrationAgreement and MedicationAgreement. Other included resources, such as Medication resources, are not included in the total." />
+    </element>
+    <element id="Bundle.entry">
+      <path value="Bundle.entry" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="resource" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="Bundle.entry:list">
+      <path value="Bundle.entry" />
+      <sliceName value="list" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Bundle.entry:list.resource">
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+      <type>
+        <code value="List" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationOverview" />
+      </type>
+    </element>
+    <element id="Bundle.entry:patient">
+      <path value="Bundle.entry" />
+      <sliceName value="patient" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Bundle.entry:patient.resource">
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

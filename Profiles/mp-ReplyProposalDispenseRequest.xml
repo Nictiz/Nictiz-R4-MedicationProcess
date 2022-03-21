@@ -40,6 +40,30 @@
         <comment value="Response" />
       </mapping>
     </element>
+    <element id="Communication.meta">
+      <path value="Communication.meta" />
+    </element>
+    <element id="Communication.meta.tag">
+      <path value="Communication.meta.tag" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Communication.meta.tag:actionable">
+      <path value="Communication.meta.tag" />
+      <sliceName value="actionable" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://hl7.org/fhir/ValueSet/common-tags" />
+        <code value="actionable" />
+      </patternCoding>
+    </element>
     <element id="Communication.identifier">
       <path value="Communication.identifier" />
       <short value="Identification" />
