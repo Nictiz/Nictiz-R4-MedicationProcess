@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="mp-ReplyProposalDispenseRequest" />
-  <url value="http://nictiz.nl/fhir/StructureDefinition/mp-ReplyProposalDispenseRequest" />
-  <name value="MpReplyProposalDispenseRequest" />
-  <title value="mp ReplyProposalDispenseRequest" />
+  <id value="mp-ReplyProposalMedicationAgreement" />
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp-ReplyProposalMedicationAgreement" />
+  <name value="MpReplyProposalMedicationAgreement" />
+  <title value="mp ReplyProposalMedicationAgreement" />
   <status value="draft" />
   <publisher value="Nictiz" />
   <contact>
@@ -14,8 +14,8 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="Profile on the Communication resource which represents the reply proposal dispense request conform information standard ['Medication Process'](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)." />
-  <purpose value="To define the reply proposal dispense request as stated in the information standard Medication Process." />
+  <description value="Profile on the Communication resource which represents the reply proposal medication agreement conform information standard ['Medication Process'](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)." />
+  <purpose value="To define the reply proposal medication agreement as stated in the information standard Medication Process." />
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -32,7 +32,7 @@
     <element id="Communication">
       <path value="Communication" />
       <short value="Response" />
-      <definition value="Response to the proposal dispense request." />
+      <definition value="Response to the proposal medication agreement." />
       <alias value="Antwoord" />
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
@@ -177,7 +177,7 @@
       <min value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-ReplyProposalDispenseRequest.Response" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-ReplyProposalMedicationAgreement.Response" />
       </type>
       <isModifier value="false" />
     </element>
