@@ -25,13 +25,17 @@
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
-    <type value="fhirpath" />
-    <expression value="Bundle.entry.where(resource.ofType(MedicationRequest))" />
+    <type value="element" />
+    <expression value="Bundle.entry.resource" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <max value="1" />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-ProposalComment" />
