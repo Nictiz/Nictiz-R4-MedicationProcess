@@ -31,11 +31,7 @@
   <differential>
     <element id="Bundle.type">
       <path value="Bundle.type" />
-      <fixedCode value="batch" />
-    </element>
-    <element id="Bundle.total">
-      <path value="Bundle.total" />
-      <comment value="The total value contains the number of matching HCIMs: AdministrationAgreement and MedicationDispense. Other included resources, such as Medication resources, are not included in the total." />
+      <fixedCode value="transaction" />
     </element>
     <element id="Bundle.entry">
       <path value="Bundle.entry" />
@@ -60,11 +56,6 @@
         <code value="Resource" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-AdministrationAgreement" />
       </type>
-      <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-294" />
-        <comment value="AdministrationAgreement" />
-      </mapping>
     </element>
     <element id="Bundle.entry:administrationAgreement.resource.meta">
       <path value="Bundle.entry.resource.meta" />
@@ -100,11 +91,6 @@
         <code value="Resource" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationDispense" />
       </type>
-      <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-346" />
-        <comment value="MedicationDispense" />
-      </mapping>
     </element>
     <element id="Bundle.entry:medicationDispense.resource.meta">
       <path value="Bundle.entry.resource.meta" />
@@ -143,11 +129,6 @@
         <code value="Resource" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient" />
       </type>
-      <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-1" />
-        <comment value="Patient" />
-      </mapping>
     </element>
     <element id="Bundle.entry:pharmaceuticalProduct">
       <path value="Bundle.entry" />
@@ -161,11 +142,6 @@
         <code value="Resource" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct" />
       </type>
-      <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-260" />
-        <comment value="PharmaceuticalProduct" />
-      </mapping>
     </element>
   </differential>
 </StructureDefinition>

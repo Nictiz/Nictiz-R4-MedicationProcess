@@ -31,11 +31,7 @@
   <differential>
     <element id="Bundle.type">
       <path value="Bundle.type" />
-      <fixedCode value="batch" />
-    </element>
-    <element id="Bundle.total">
-      <path value="Bundle.total" />
-      <comment value="The total value contains the number of matching HCIMs: MedicationAgreement and DispenseRequest. Other included resources, such as Medication resources, are not included in the total." />
+      <fixedCode value="transaction" />
     </element>
     <element id="Bundle.entry">
       <path value="Bundle.entry" />
@@ -60,11 +56,6 @@
         <code value="Resource" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationAgreement" />
       </type>
-      <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-43" />
-        <comment value="MedicationAgreement" />
-      </mapping>
     </element>
     <element id="Bundle.entry:medicationAgreement.resource.meta">
       <path value="Bundle.entry.resource.meta" />
@@ -105,11 +96,6 @@
         <code value="Resource" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-DispenseRequest" />
       </type>
-      <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-274" />
-        <comment value="DispenseRequest" />
-      </mapping>
     </element>
     <element id="Bundle.entry:dispenseRequest.resource.meta">
       <path value="Bundle.entry.resource.meta" />
@@ -153,11 +139,6 @@
         <code value="Resource" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient" />
       </type>
-      <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-1" />
-        <comment value="Patient" />
-      </mapping>
     </element>
     <element id="Bundle.entry:pharmaceuticalProduct">
       <path value="Bundle.entry" />
@@ -171,11 +152,6 @@
         <code value="Resource" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct" />
       </type>
-      <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-260" />
-        <comment value="PharmaceuticalProduct" />
-      </mapping>
     </element>
     <element id="Bundle.entry:bodyHeight">
       <path value="Bundle.entry" />
@@ -188,11 +164,6 @@
         <code value="Resource" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyHeight" />
       </type>
-      <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-448" />
-        <comment value="BodyHeight" />
-      </mapping>
     </element>
     <element id="Bundle.entry:bodyWeight">
       <path value="Bundle.entry" />
@@ -205,11 +176,6 @@
         <code value="Resource" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyWeight" />
       </type>
-      <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-453" />
-        <comment value="BodyWeight" />
-      </mapping>
     </element>
     <element id="Bundle.entry:laboratoryTestResult">
       <path value="Bundle.entry" />
