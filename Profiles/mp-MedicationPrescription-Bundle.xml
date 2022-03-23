@@ -4,7 +4,7 @@
   <url value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationPrescription-Bundle" />
   <name value="MpMedicationPrescriptionBundle" />
   <title value="mp MedicationPrescription Bundle" />
-  <status value="active" />
+  <status value="draft" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />
@@ -14,9 +14,15 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="Profile on Bundle which represents the structure of the Send MedicationPrescription request transaction." />
-  <copyright value="CC0" />
+  <description value="Profile on the Bundle resource which represents the structure of the Send MedicationPrescription transaction conform information standard ['Medication Process'](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)." />
+  <purpose value="To define the body of the Send MedicationPrescription transaction." />
+  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="Medication-Process-v9-2-0-0" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20210921T194523/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2021-01-01T000000.html" />
+    <name value="Medication Process 9 v2.0.0-beta" />
+  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Bundle" />
@@ -29,7 +35,7 @@
     </element>
     <element id="Bundle.total">
       <path value="Bundle.total" />
-      <comment value="The total value contains the number of matching HCIMs: MedicationUse, AdministrationAgreement and MedicationAgreement. Other included resources, such as Medication resources, are not included in the total." />
+      <comment value="The total value contains the number of matching HCIMs: MedicationAgreement and DispenseRequest. Other included resources, such as Medication resources, are not included in the total." />
     </element>
     <element id="Bundle.entry">
       <path value="Bundle.entry" />
@@ -54,6 +60,11 @@
         <code value="Resource" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationAgreement" />
       </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-43" />
+        <comment value="MedicationAgreement" />
+      </mapping>
     </element>
     <element id="Bundle.entry:medicationAgreement.resource.meta">
       <path value="Bundle.entry.resource.meta" />
@@ -81,7 +92,7 @@
     </element>
     <element id="Bundle.entry:medicationAgreement.resource.intent">
       <path value="Bundle.entry.resource.intent" />
-      <definition value="Set to _order_ because this MedicationAgreement authorizes an action for a patient, pharmacist, professional administrator et cetera." />
+      <comment value="Set to _order_ because this MedicationAgreement authorizes an action for a patient, pharmacist, professional administrator et cetera." />
       <fixedCode value="order" />
     </element>
     <element id="Bundle.entry:dispenseRequest">
@@ -94,6 +105,11 @@
         <code value="Resource" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-DispenseRequest" />
       </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-274" />
+        <comment value="DispenseRequest" />
+      </mapping>
     </element>
     <element id="Bundle.entry:dispenseRequest.resource.meta">
       <path value="Bundle.entry.resource.meta" />
@@ -137,6 +153,11 @@
         <code value="Resource" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient" />
       </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-1" />
+        <comment value="Patient" />
+      </mapping>
     </element>
     <element id="Bundle.entry:pharmaceuticalProduct">
       <path value="Bundle.entry" />
@@ -145,10 +166,16 @@
     </element>
     <element id="Bundle.entry:pharmaceuticalProduct.resource">
       <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
         <code value="Resource" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct" />
       </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-260" />
+        <comment value="PharmaceuticalProduct" />
+      </mapping>
     </element>
     <element id="Bundle.entry:bodyHeight">
       <path value="Bundle.entry" />
@@ -161,6 +188,11 @@
         <code value="Resource" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyHeight" />
       </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-448" />
+        <comment value="BodyHeight" />
+      </mapping>
     </element>
     <element id="Bundle.entry:bodyWeight">
       <path value="Bundle.entry" />
@@ -173,6 +205,11 @@
         <code value="Resource" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyWeight" />
       </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-453" />
+        <comment value="BodyWeight" />
+      </mapping>
     </element>
     <element id="Bundle.entry:laboratoryTestResult">
       <path value="Bundle.entry" />
