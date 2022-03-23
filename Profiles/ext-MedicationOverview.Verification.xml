@@ -3,7 +3,7 @@
   <id value="ext-MedicationOverview.Verification" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationOverview.Verification" />
   <name value="ExtMedicationOverviewVerification" />
-  <title value="Ext Medicaton Overview Verification" />
+  <title value="Ext MedicatonOverview Verification" />
   <status value="draft" />
   <publisher value="Nictiz" />
   <contact>
@@ -14,8 +14,8 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="Extension to capture if a patient and / or health proffesional verified the medication overview and the corresponding date the verficiation took place." />
-  <purpose value="To indicate if and when a medication overview is verified with a patient or health proffesional." />
+  <description value="Extension to capture if a patient and/or health professional verified the medication overview and the corresponding date the verification took place." />
+  <purpose value="To indicate if and when a medication overview is verified with a patient or health professional." />
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
   <mapping>
