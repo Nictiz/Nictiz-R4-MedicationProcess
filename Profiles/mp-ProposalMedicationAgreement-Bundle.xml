@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="mp-ProposalMedicationAgreement-Bundle" />
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp-ProposalMedicationAgreement-Bundle" />
+  <name value="MpProposalMedicationAgreementBundle" />
+  <title value="mp ProposalMedicationAgreement Bundle" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Profile on the Bundle resource which represents the structure of the Send ProposalMedicationAgreement transaction conform information standard ['Medication Process'](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)." />
+  <purpose value="To define the body of the Send ProposalMedicationAgreement transaction." />
+  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="Medication-Process-v9-2-0-0" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20210921T194523/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2021-01-01T000000.html" />
+    <name value="Medication Process 9 v2.0.0-beta" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Bundle" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Bundle.type">
+      <path value="Bundle.type" />
+      <fixedCode value="batch" />
+    </element>
+    <element id="Bundle.total">
+      <path value="Bundle.total" />
+      <comment value="The total value contains the number of matching HCIMs: MedicationAgreement. Other included resources, such as Medication resources, are not included in the total." />
+    </element>
+    <element id="Bundle.entry">
+      <path value="Bundle.entry" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="resource" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="3" />
+    </element>
+    <element id="Bundle.entry:proposalMedicationAgreement">
+      <path value="Bundle.entry" />
+      <sliceName value="proposalMedicationAgreement" />
+      <min value="1" />
+    </element>
+    <element id="Bundle.entry:proposalMedicationAgreement.extension">
+      <path value="Bundle.entry.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Bundle.entry:proposalMedicationAgreement.extension:proposalComment">
+      <path value="Bundle.entry.extension" />
+      <sliceName value="proposalComment" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-ProposalComment" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Bundle.entry:proposalMedicationAgreement.resource">
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-ProposalMedicationAgreement" />
+      </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-43" />
+        <comment value="MedicationAgreement" />
+      </mapping>
+    </element>
+    <element id="Bundle.entry:patient">
+      <path value="Bundle.entry" />
+      <sliceName value="patient" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Bundle.entry:patient.resource">
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient" />
+      </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-1" />
+        <comment value="Patient" />
+      </mapping>
+    </element>
+    <element id="Bundle.entry:pharmaceuticalProduct">
+      <path value="Bundle.entry" />
+      <sliceName value="pharmaceuticalProduct" />
+      <min value="1" />
+    </element>
+    <element id="Bundle.entry:pharmaceuticalProduct.resource">
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct" />
+      </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-260" />
+        <comment value="PharmaceuticalProduct" />
+      </mapping>
+    </element>
+    <element id="Bundle.entry:bodyHeight">
+      <path value="Bundle.entry" />
+      <sliceName value="bodyHeight" />
+      <max value="1" />
+    </element>
+    <element id="Bundle.entry:bodyHeight.resource">
+      <path value="Bundle.entry.resource" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyHeight" />
+      </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-448" />
+        <comment value="BodyHeight" />
+      </mapping>
+    </element>
+    <element id="Bundle.entry:bodyWeight">
+      <path value="Bundle.entry" />
+      <sliceName value="bodyWeight" />
+      <max value="1" />
+    </element>
+    <element id="Bundle.entry:bodyWeight.resource">
+      <path value="Bundle.entry.resource" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyWeight" />
+      </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-453" />
+        <comment value="BodyWeight" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

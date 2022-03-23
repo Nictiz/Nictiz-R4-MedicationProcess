@@ -77,6 +77,7 @@
     </element>
     <element id="MedicationRequest.intent">
       <path value="MedicationRequest.intent" />
+      <comment value="Set to _plan_ because this Proposal Medication Agreement is intended to be acted upon by a patient, pharmacist, professional administrator et cetera." />
       <fixedCode value="plan" />
     </element>
     <element id="MedicationRequest.authoredOn">
@@ -113,11 +114,6 @@
         <identity value="Medication-Process-v9-2-0-0" />
         <map value="mp-dataelement920-530" />
         <comment value="Author" />
-      </mapping>
-      <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-531" />
-        <comment value="AuthorIsPatient (implicit)" />
       </mapping>
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
