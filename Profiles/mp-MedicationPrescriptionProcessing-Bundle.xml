@@ -87,6 +87,7 @@
     </element>
     <element id="Bundle.entry:medicationDispense.resource">
       <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
         <code value="Resource" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationDispense" />
