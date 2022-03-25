@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="mp-ProposalDispenseRequest-Bundle-01"/>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:a0890caa-523f-48fe-a8be-7a94739c62a2"/>
+    </identifier>
+    <type value="transaction"/>
+    <total value="3"/>
+    <link>
+        <relation value="self"/>
+        <url value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/Bundle?identifier=a0890caa-523f-48fe-a8be-7a94739c62a2"/>
+    </link>
+    <entry>
+        <fullUrl value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/MedicationRequest/mp-ProposalDispenseRequest-01"/>
+        <resource>
+            <MedicationRequest>
+                <id value="mp-ProposalDispenseRequest-01"/>
+                <meta>
+                    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-DispenseRequest"/>
+                    <tag>
+                        <system value="http://hl7.org/fhir/ValueSet/common-tags"/>
+                        <code value="actionable"/>
+                    </tag>
+                </meta>
+                <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.AdditionalWishes">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.3.2051"/>
+                            <code value="1"/>
+                            <display value="Spoed"/>
+                        </coding>
+                    </valueCodeableConcept>
+                </extension>
+                <identifier>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:dac907af-803c-467c-a0c4-770c6fa57e81"/>
+                </identifier>
+                <status value="active"/>
+                <intent value="plan"/>
+                <category>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="52711000146108"/>
+                        <display value="verstrekkingsverzoek"/>
+                    </coding>
+                </category>
+                <medicationReference>
+                    <reference value="Medication/nl-core-DispenseRequest-01-Medication-01"/>
+                    <type value="Medication"/>
+                    <display value="METOCLOPRAMIDE 20MG ZETPIL"/>
+                </medicationReference>
+                <subject>
+                    <reference value="Patient/nl-core-Patient-01"/>
+                    <type value="Patient"/>
+                    <display value="Patient, Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+                </subject>
+                <authoredOn value="2022-03-25T09:00:00+02:00"/>
+                <requester>
+                    <reference value="Organization/nl-core-AdministrationAgreement-01-Organization-01"/>
+                    <type value="Organization"/>
+                    <display value="Healthcare provider (organization), Apotheek De Gulle Gaper"/>
+                </requester>
+                <dispenseRequest>
+                    <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.DispenseLocation">
+                        <valueReference>
+                            <reference value="Location/nl-core-DispenseRequest-01"/>
+                            <type value="Location"/>
+                            <display value="afleverlocatie"/>
+                        </valueReference>
+                    </extension>
+                    <validityPeriod>
+                        <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Duration">
+                            <valueDuration>
+                                <value value="40"/>
+                                <unit value="d"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="d"/>
+                            </valueDuration>
+                        </extension>
+                    </validityPeriod>
+                    <numberOfRepeatsAllowed value="0"/>
+                    <quantity>
+                        <value value="40"/>
+                        <unit value="stuks"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="{stuks}"/>
+                    </quantity>
+                </dispenseRequest>
+            </MedicationRequest>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/Patient/nl-core-Patient-01"/>
+        <resource>
+            <Patient xmlns="http://hl7.org/fhir">
+                <id value="nl-core-Patient-01"/>
+                <meta>
+                    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
+                </meta>
+                <extension url="http://hl7.org/fhir/StructureDefinition/patient-nationality">
+                    <extension url="code">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="urn:oid:2.16.840.1.113883.2.4.4.16.32"/>
+                                <code value="0001"/>
+                                <display value="Nederlandse"/>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                </extension>
+                <identifier>
+                    <system value="http://fhir.nl/fhir/NamingSystem/bsn"/>
+                    <value value="111222333"/>
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <text value="Johanna Petronella Maria (Jo) van Putten-van der Giessen"/>
+                    <family value="van Putten-van der Giessen">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix">
+                            <valueString value="van"/>
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+                            <valueString value="Putten"/>
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix">
+                            <valueString value="van der"/>
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partner-name">
+                            <valueString value="Giessen"/>
+                        </extension>
+                    </family>
+                    <given value="Johanna">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+                            <valueCode value="BR"/>
+                        </extension>
+                    </given>
+                    <given value="Petronella">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+                            <valueCode value="BR"/>
+                        </extension>
+                    </given>
+                    <given value="Maria">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+                            <valueCode value="BR"/>
+                        </extension>
+                    </given>
+                </name>
+                <name>
+                    <use value="usual"/>
+                    <given value="Jo"/>
+                </name>
+                <telecom>
+                    <system value="phone">
+                        <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification">
+                            <valueCodeableConcept>
+                                <coding>
+                                    <system value="http://terminology.hl7.org/CodeSystem/v3-AddressUse"/>
+                                    <code value="MC"/>
+                                    <display value="Mobile Phone"/>
+                                </coding>
+                            </valueCodeableConcept>
+                        </extension>
+                    </system>
+                    <value value="+31611234567"/>
+                </telecom>
+                <telecom>
+                    <system value="email"/>
+                    <value value="giesput@myweb.nl"/>
+                    <use value="home"/>
+                </telecom>
+                <gender value="female">
+                    <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"/>
+                                <code value="F"/>
+                                <display value="Female"/>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                </gender>
+                <birthDate value="1934-04-28"/>
+                <deceasedBoolean value="false"/>
+                <address>
+                    <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="http://terminology.hl7.org/CodeSystem/v3-AddressUse"/>
+                                <code value="HP"/>
+                                <display value="Primary Home"/>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <use value="home"/>
+                    <type value="both"/>
+                    <line value="1e Jacob van Campenstr 15">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                            <valueString value="1e Jacob van Campenstr"/>
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                            <valueString value="15"/>
+                        </extension>
+                    </line>
+                    <city value="Hoogmade"/>
+                    <district value="Kaag en Braassem"/>
+                    <postalCode value="1012 NX"/>
+                    <country value="Nederland">
+                        <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification">
+                            <valueCodeableConcept>
+                                <coding>
+                                    <system value="urn:iso:std:iso:3166"/>
+                                    <version value="2020-10-26T00:00:00"/>
+                                    <code value="NL"/>
+                                    <display value="Nederland"/>
+                                </coding>
+                            </valueCodeableConcept>
+                        </extension>
+                    </country>
+                </address>
+                <maritalStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+                        <code value="D"/>
+                        <display value="Divorced"/>
+                    </coding>
+                </maritalStatus>
+                <multipleBirthBoolean value="true"/>
+                <contact>
+                    <relationship>
+                        <coding>
+                            <system value="urn:oid:2.16.840.1.113883.2.4.3.11.22.472"/>
+                            <code value="01"/>
+                            <display value="Eerste relatie/contactpersoon"/>
+                        </coding>
+                    </relationship>
+                    <relationship>
+                        <coding>
+                            <system value="urn:oid:2.16.840.1.113883.2.4.3.11.22.472"/>
+                            <code value="07"/>
+                            <display value="Hulpverlener"/>
+                        </coding>
+                    </relationship>
+                    <name>
+                        <use value="official"/>
+                        <text value="J.P.M. van Putten-van der Giessen"/>
+                        <family value="van Putten-van der Giessen">
+                            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix">
+                                <valueString value="van"/>
+                            </extension>
+                            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+                                <valueString value="Putten"/>
+                            </extension>
+                            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix">
+                                <valueString value="van der"/>
+                            </extension>
+                            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partner-name">
+                                <valueString value="Giessen"/>
+                            </extension>
+                        </family>
+                        <given value="J.">
+                            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+                                <valueCode value="IN"/>
+                            </extension>
+                        </given>
+                        <given value="P.">
+                            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+                                <valueCode value="IN"/>
+                            </extension>
+                        </given>
+                        <given value="M.">
+                            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+                                <valueCode value="IN"/>
+                            </extension>
+                        </given>
+                    </name>
+                    <telecom>
+                        <system value="phone">
+                            <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification">
+                                <valueCodeableConcept>
+                                    <coding>
+                                        <system value="http://terminology.hl7.org/CodeSystem/v3-AddressUse"/>
+                                        <code value="MC"/>
+                                        <display value="Mobile Phone"/>
+                                    </coding>
+                                </valueCodeableConcept>
+                            </extension>
+                        </system>
+                        <value value="+31611234567"/>
+                    </telecom>
+                    <telecom>
+                        <system value="email"/>
+                        <value value="giesput@myweb.nl"/>
+                        <use value="work"/>
+                    </telecom>
+                    <address>
+                        <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-AddressInformation.AddressType">
+                            <valueCodeableConcept>
+                                <coding>
+                                    <system value="http://terminology.hl7.org/CodeSystem/v3-AddressUse"/>
+                                    <code value="HP"/>
+                                    <display value="Primary Home"/>
+                                </coding>
+                            </valueCodeableConcept>
+                        </extension>
+                        <use value="home"/>
+                        <type value="both"/>
+                        <line value="1e Jacob van Campenstr 15">
+                            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                                <valueString value="1e Jacob van Campenstr"/>
+                            </extension>
+                            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                                <valueString value="15"/>
+                            </extension>
+                        </line>
+                        <city value="Hoogmade"/>
+                        <district value="Kaag en Braassem"/>
+                        <postalCode value="1012 NX"/>
+                        <country value="Nederland">
+                            <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-CodeSpecification">
+                                <valueCodeableConcept>
+                                    <coding>
+                                        <system value="urn:oid:2.16.840.1.113883.2.4.4.16.34"/>
+                                        <version value="2020-04-01T00:00:00"/>
+                                        <code value="6030"/>
+                                        <display value="Nederland"/>
+                                    </coding>
+                                </valueCodeableConcept>
+                            </extension>
+                        </country>
+                    </address>
+                </contact>
+                <communication>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/patient-proficiency">
+                        <extension url="level">
+                            <valueCoding>
+                                <system value="http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityProficiency"/>
+                                <code value="G"/>
+                                <display value="Good"/>
+                            </valueCoding>
+                        </extension>
+                        <extension url="type">
+                            <valueCoding>
+                                <system value="http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode"/>
+                                <code value="RSP"/>
+                                <display value="Received spoken"/>
+                            </valueCoding>
+                        </extension>
+                    </extension>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/patient-proficiency">
+                        <extension url="level">
+                            <valueCoding>
+                                <system value="http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityProficiency"/>
+                                <code value="F"/>
+                                <display value="Fair"/>
+                            </valueCoding>
+                        </extension>
+                        <extension url="type">
+                            <valueCoding>
+                                <system value="http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode"/>
+                                <code value="ESP"/>
+                                <display value="Expressed spoken"/>
+                            </valueCoding>
+                        </extension>
+                    </extension>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/patient-proficiency">
+                        <extension url="level">
+                            <valueCoding>
+                                <system value="http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityProficiency"/>
+                                <code value="G"/>
+                                <display value="Good"/>
+                            </valueCoding>
+                        </extension>
+                        <extension url="type">
+                            <valueCoding>
+                                <system value="http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode"/>
+                                <code value="RWR"/>
+                                <display value="Received written"/>
+                            </valueCoding>
+                        </extension>
+                    </extension>
+                    <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-Comment">
+                        <valueString value="Bij gesprek met arts zoon uitnodigen voor vertalen"/>
+                    </extension>
+                    <language>
+                        <coding>
+                            <system value="urn:oid:1.0.639.1"/>
+                            <code value="nl"/>
+                            <display value="Nederlands"/>
+                        </coding>
+                    </language>
+                </communication>
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/Medication/nl-core-DispenseRequest-01-Medication-01"/>
+        <resource>
+            <Medication xmlns="http://hl7.org/fhir">
+                <id value="nl-core-DispenseRequest-01-Medication-01"/>
+                <meta>
+                    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct"/>
+                </meta>
+                <code>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.113883.2.4.4.1"/>
+                        <code value="63630"/>
+                        <display value="METOCLOPRAMIDE 20MG ZETPIL"/>
+                        <userSelected value="true"/>
+                    </coding>
+                    <text value="METOCLOPRAMIDE 20MG ZETPIL"/>
+                </code>
+            </Medication>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/Organization/nl-core-AdministrationAgreement-01-Organization-01"/>
+        <resource>
+            <Organization xmlns="http://hl7.org/fhir">
+                <id value="nl-core-AdministrationAgreement-01-Organization-01"/>
+                <meta>
+                    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"/>
+                </meta>
+                <name value="Apotheek De Gulle Gaper"/>
+            </Organization>
+        </resource>
+    </entry>
+</Bundle>
