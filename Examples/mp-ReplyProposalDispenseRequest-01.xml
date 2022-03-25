@@ -12,12 +12,8 @@
         <value value="urn:uuid:32df4154-d487-4643-94eb-5ad0aaf30d77"/>
     </identifier>
     <basedOn>
-        <!--<reference value="MedicationRequest/mp-ProposalDispenseRequest-01"/>
-        <type value="MedicationRequest"/>-->
-        <identifier>
-            <system value="urn:ietf:rfc:3986"/>
-            <value value="urn:uuid:dac907af-803c-467c-a0c4-770c6fa57e81"/>
-        </identifier>
+        <reference value="MedicationRequest/mp-ProposalDispenseRequest-01"/>
+        <type value="MedicationRequest"/>
     </basedOn>
     <status value="in-progress"/>
     <subject>
