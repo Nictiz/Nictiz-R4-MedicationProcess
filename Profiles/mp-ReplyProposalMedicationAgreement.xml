@@ -159,8 +159,14 @@
       <path value="Communication.payload" />
       <min value="1" />
     </element>
-    <element id="Communication.payload.extension">
-      <path value="Communication.payload.extension" />
+    <element id="Communication.payload.content[x]">
+      <path value="Communication.payload.content[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Communication.payload.content[x].extension">
+      <path value="Communication.payload.content[x].extension" />
       <slicing>
         <discriminator>
           <type value="value" />
@@ -170,16 +176,34 @@
       </slicing>
       <min value="1" />
     </element>
-    <element id="Communication.payload.extension:contentCodeableConcept">
-      <path value="Communication.payload.extension" />
+    <element id="Communication.payload.content[x].extension:contentCodeableConcept">
+      <path value="Communication.payload.content[x].extension" />
       <sliceName value="contentCodeableConcept" />
-      <comment value="Note that this extension is a pre-adopt of R5, in which it is possible to add a `.payload.content` of type CodeableConcept." />
+      <comment value="This is a pre-adopt of R5 in which the string data type of `.payload.content` is changed to a CodeableConcept." />
       <min value="1" />
+      <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-ReplyProposalMedicationAgreement.Response" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-Communication.Payload.ContentCodeableConcept" />
       </type>
       <isModifier value="false" />
+    </element>
+    <element id="Communication.payload.content[x].extension:contentCodeableConcept.value[x]">
+      <path value="Communication.payload.content[x].extension.value[x]" />
+      <short value="ResponseMedicationAgreement" />
+      <definition value="Response to the proposed medication agreement." />
+      <alias value="AntwoordMedicatieafspraak" />
+      <min value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="Response to the proposed medication agreement." />
+        <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.44--20220302105041" />
+      </binding>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-1364" />
+        <comment value="ResponseMedicationAgreement" />
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>
