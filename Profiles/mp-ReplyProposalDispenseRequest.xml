@@ -83,7 +83,11 @@
       <definition value="Relation to proposal data." />
       <alias value="RelatieVoorstelGegevens" />
       <min value="1" />
-      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-DispenseRequest" />
+      </type>
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
         <map value="mp-dataelement920-544" />
@@ -169,7 +173,6 @@
       <sliceName value="contentCodeableConcept" />
       <comment value="This is a pre-adopt of R5 in which the string data type of `.payload.content` is changed to a CodeableConcept." />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-Communication.Payload.ContentCodeableConcept" />
