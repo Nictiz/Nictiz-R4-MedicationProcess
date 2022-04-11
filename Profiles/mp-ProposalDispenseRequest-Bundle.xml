@@ -170,12 +170,12 @@
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
         <map value="mp-dataelement920-532" />
-        <comment value="AuthorIsHealthProfessional (implicit)" />
+        <comment value="AuthorIsHealthProfessional" />
       </mapping>
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
         <map value="mp-dataelement920-1366" />
-        <comment value="AuthorIsHealthcareProvider (implicit)" />
+        <comment value="AuthorIsHealthcareProvider" />
       </mapping>
     </element>
     <element id="Bundle.entry:patient">
