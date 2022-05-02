@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="nl-core-VariableDosingRegimen" />
-  <url value="http://nictiz.nl/fhir/StructureDefinition/nl-core-VariableDosingRegimen" />
-  <name value="NlcoreVariableDosingRegimen" />
-  <title value="nl core VariableDosingRegimen" />
+  <id value="mp-VariableDosingRegimen" />
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen" />
+  <name value="MpVariableDosingRegimen" />
+  <title value="mp VariableDosingRegimen" />
   <status value="draft" />
   <publisher value="Nictiz" />
   <contact>
@@ -15,7 +15,7 @@
     </telecom>
   </contact>
   <description value="The variable-dosing regimen contains the dosing schedule as prescribed by the (external) prescriber to the patient (or his representative or administrator), specifying the instructions for use in addition to the medication agreement. The dosing schedule can be adjusted, while the medication agreement remains unchanged." />
-  <purpose value="The VariableDosingRegimen has a strong relationship with [nl-core-MedicationAgreement](http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationAgreement). This VariableDosingRegimen profile describes (additional) instructions for MedicationAgreements and is used when it is expected that the MedicationAgreement instructions will need to be adjusted frequently. By separating this into two resources, the original MedicationAgreement does not have to be adjusted as often.  &#xA;&#xA;Unfortunately, a derived profile can not be made because of a fixed and mandatory `category` code. Also, some concepts are not used. This profile reuses extensions made for the MedicationAgreement." />
+  <purpose value="The VariableDosingRegimen has a strong relationship with [mp-MedicationAgreement](http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement). This VariableDosingRegimen profile describes (additional) instructions for MedicationAgreements and is used when it is expected that the MedicationAgreement instructions will need to be adjusted frequently. By separating this into two resources, the original MedicationAgreement does not have to be adjusted as often.  &#xA;&#xA;Unfortunately, a derived profile can not be made because of a fixed and mandatory `category` code. Also, some concepts are not used. This profile reuses extensions made for the MedicationAgreement." />
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -32,7 +32,7 @@
     <element id="MedicationRequest">
       <path value="MedicationRequest" />
       <short value="VariableDosingRegimen" />
-      <alias value="nl-core-VariableDosingRegimen" />
+      <alias value="mp-VariableDosingRegimen" />
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
         <map value="mp-dataelement920-632" />
@@ -360,7 +360,7 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationAgreement" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement" />
       </type>
     </element>
     <element id="MedicationRequest.basedOn:relationMedicationAgreement">
@@ -372,7 +372,7 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationAgreement" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement" />
       </type>
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
@@ -402,7 +402,7 @@
       <alias value="Gebruiksinstructie" />
       <type>
         <code value="Dosage" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-InstructionsForUse.DosageInstructions" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-InstructionsForUse.DosageInstructions" />
       </type>
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
@@ -418,7 +418,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-VariableDosingRegimen" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen" />
       </type>
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
