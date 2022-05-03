@@ -15,13 +15,13 @@
     </telecom>
   </contact>
   <description value="An extension to provide additional information that includes details on the structure of the agreement made that are relevant for pharmacovigilance and fulfillment by the pharmacist. This can be used e.g. to indicate that there was a conscious decision to deviate from the norm or that the agreement is to be structured in a certain way." />
-  <purpose value="This extension represents the MedicationAgreementAdditionalInformation concept of the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) MedicationAgreement-v1.2(2020EN)](https://zibs.nl/wiki/MedicationAgreement-v1.2(2020EN))." />
+  <purpose value="This extension represents MedicationAgreementAdditionalInformation of the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) MedicationAgreement, in a development version that will be released in pre-publication 2022-1. This extension also contains augmentations to the zib based on the transactions of MP9, to provide an extension better suited for implementation purposes." />
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
   <mapping>
-    <identity value="zib-medicationagreement-v1.2-2020EN" />
-    <uri value="https://zibs.nl/wiki/MedicationAgreement-v1.2(2020EN)" />
-    <name value="zib MedicationAgreement-v1.2(2020EN)" />
+    <identity value="Medication-Process-v9-2-0-0" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20220402T205710/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-01-05T132845.html" />
+    <name value="MP9 v2.0.0" />
   </mapping>
   <kind value="complex-type" />
   <abstract value="false" />
@@ -50,8 +50,8 @@
         <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.45--20220310164013" />
       </binding>
       <mapping>
-        <identity value="zib-medicationagreement-v1.2-2020EN" />
-        <map value="NL-CM:9.6.23283" />
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-90" />
         <comment value="MedicationAgreementAdditionalInformation" />
       </mapping>
     </element>
