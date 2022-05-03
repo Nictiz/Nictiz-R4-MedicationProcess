@@ -15,13 +15,13 @@
     </telecom>
   </contact>
   <description value="An extension to provide the reason why the medication was not taken or administered or was taken or administered differently." />
-  <purpose value="This extension represents MedicationAdministrationReasonForDeviation of zib [MedicationAdministration2 v1.1.1 (2020EN)](https://zibs.nl/wiki/MedicationAdministration2-v1.1.1(2020EN))" />
+  <purpose value="This extension represents MedicationAdministrationReasonForDeviation of the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) MedicationAdministration, in a development version that will be released in pre-publication 2022-1. This extension also contains augmentations to the zib based on the transactions of MP9, to provide an extension better suited for implementation purposes." />
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
   <mapping>
-    <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
-    <uri value="https://zibs.nl/wiki/MedicationAdministration2-v1.1.1(2020EN)" />
-    <name value="zib MedicationAdministration2-v1.1.1(2020EN)" />
+    <identity value="Medication-Process-v9-2-0-0" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20220402T205710/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-01-05T132845.html" />
+    <name value="MP9 v2.0.0" />
   </mapping>
   <kind value="complex-type" />
   <abstract value="false" />
@@ -54,8 +54,8 @@
         <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.47--20220311102111" />
       </binding>
       <mapping>
-        <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
-        <map value="NL-CM:9.13.23166" />
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-444" />
         <comment value="MedicationAdministrationReasonForDeviation" />
       </mapping>
     </element>

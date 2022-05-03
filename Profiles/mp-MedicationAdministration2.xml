@@ -90,8 +90,8 @@
         <element id="MedicationAdministration.extension:asAgreedIndicator.value[x]">
             <path value="MedicationAdministration.extension.value[x]"/>
             <mapping>
-                <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
-                <map value="NL-CM:9.13.23167 TO_BE_CHANGED"/>
+                <identity value="Medication-Process-v9-2-0-0"/>
+                <map value="mp-dataelement920-429"/>
                 <comment value="AsAgreedIndicator"/>
             </mapping>
         </element>
