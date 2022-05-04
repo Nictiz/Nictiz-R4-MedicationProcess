@@ -47,7 +47,7 @@
       <alias value="RelatieToedieningsafspraak" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-AdministrationAgreement" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement" />
       </type>
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />

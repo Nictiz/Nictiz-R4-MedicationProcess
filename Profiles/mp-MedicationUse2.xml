@@ -262,7 +262,7 @@
     <element id="MedicationStatement.context">
       <path value="MedicationStatement.context" />
       <short value="RelationContact / RelationEpisodeOfCare" />
-      <comment value="The 'ExtContextEpisodeOfCare' extension is used to capture a reference to a related EpisodeOfCare if both a reference to an Encounter and EpisodeOfCare need to be exchanged. This this `context` element will then contain the reference to the Encounter resource." />
+      <comment value="The 'ExtContextEpisodeOfCare' extension is used to capture a reference to a related EpisodeOfCare if both a reference to an Encounter and an EpisodeOfCare need to be exchanged. This `context` element will then contain the reference to the Encounter resource." />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
@@ -403,7 +403,7 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-                <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationAgreement" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement" />
       </type>
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
@@ -450,8 +450,7 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
-                <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-AdministrationAgreement" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement" />
       </type>
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
@@ -495,6 +494,10 @@
       <definition value="Medication dispense which is the basis for entering the medication use." />
       <alias value="RelatieMedicatieverstrekking" />
       <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationDispense" />
+      </type>
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
         <map value="mp-dataelement920-416" />

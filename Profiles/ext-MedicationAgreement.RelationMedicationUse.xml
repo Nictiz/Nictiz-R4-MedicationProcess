@@ -47,7 +47,7 @@
       <alias value="RelatieMedicatiegebruik" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationUse2" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationUse2" />
       </type>
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />

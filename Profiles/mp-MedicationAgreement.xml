@@ -99,11 +99,14 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period" />
       </type>
     </element>
+    <element id="MedicationRequest.extension:periodOfUse.url">
+      <path value="MedicationRequest.extension.url" />
+      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period" />
+    </element>
     <element id="MedicationRequest.extension:periodOfUse.value[x]">
       <path value="MedicationRequest.extension.value[x]" />
       <short value="PeriodOfUse" />
-            <definition
-                value="**Start date**: This is the time at which the agreement was to take effect (or took effect or will take effect). This is the time at which the instructions for use in this agreement start. In the case of an agreement to discontinue use, this is the start date of the original medication agreement. The end date indicates from when the medication is to be discontinued.&#xD;&#xA;&#xD;&#xA;**Duration**: The intended duration of use. E.g. 5 days or 8 weeks. It is not allowed to indicate the duration in months, because different months have a variable duration in days.&#xD;&#xA;&#xD;&#xA;**End date**: The time at which the period of use ends (or ended or will end). In the case of an agreement to discontinue use, this is the time at which the medication is to be discontinued. To avoid confusion between 'to' and 'up to', the submission of time is always mandatory for the end date.&#xD;&#xA;&#xD;&#xA;With medication for an indefinite period only a start date is indicated."/>
+      <definition value="**Start date**: This is the time at which the agreement was to take effect (or took effect or will take effect). This is the time at which the instructions for use in this agreement start. In the case of an agreement to discontinue use, this is the start date of the original medication agreement. The end date indicates from when the medication is to be discontinued.&#xD;&#xA;&#xD;&#xA;**Duration**: The intended duration of use. E.g. 5 days or 8 weeks. It is not allowed to indicate the duration in months, because different months have a variable duration in days.&#xD;&#xA;&#xD;&#xA;**End date**: The time at which the period of use ends (or ended or will end). In the case of an agreement to discontinue use, this is the time at which the medication is to be discontinued. To avoid confusion between 'to' and 'up to', the submission of time is always mandatory for the end date.&#xD;&#xA;&#xD;&#xA;With medication for an indefinite period only a start date is indicated." />
       <alias value="Gebruiksperiode" />
       <mapping>
         <identity value="zib-medicationagreement-v1.2-2020EN" />
@@ -140,9 +143,9 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier" />
       </type>
     </element>
-    <element id="MedicationRequest.extension:relatedEpisodeOfCare">
+    <element id="MedicationRequest.extension:relationEpisodeOfCare">
       <path value="MedicationRequest.extension" />
-      <sliceName value="relatedEpisodeOfCare" />
+      <sliceName value="relationEpisodeOfCare" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -150,7 +153,7 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-Context-EpisodeOfCare" />
       </type>
     </element>
-    <element id="MedicationRequest.extension:relatedEpisodeOfCare.value[x]">
+    <element id="MedicationRequest.extension:relationEpisodeOfCare.value[x]">
       <path value="MedicationRequest.extension.value[x]" />
       <short value="RelationEpisodeOfCare" />
       <alias value="RelatieZorgepisode" />
@@ -255,7 +258,7 @@
       </slicing>
     </element>
     <element id="MedicationRequest.reported[x]:reportedBoolean">
-            <path value="MedicationRequest.reportedBoolean" />
+      <path value="MedicationRequest.reported[x]" />
       <sliceName value="reportedBoolean" />
       <short value="CopyIndicator" />
       <definition value="An indication whether the resource is original (false) or a copy from a different source (true)." />
@@ -369,15 +372,6 @@
         <comment value="ReasonModificationOrDiscontinuation" />
       </mapping>
     </element>
-        <element id="MedicationRequest.reasonReference">
-            <path value="MedicationRequest.reasonReference" />
-            <type>
-                <code value="Reference" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation" />
-                <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem" />
-            </type>
-        </element>
     <element id="MedicationRequest.reasonReference">
       <path value="MedicationRequest.reasonReference" />
       <short value="PrescriptionReason" />
@@ -388,7 +382,7 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/zib-Problem" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem" />
       </type>
       <mapping>
         <identity value="zib-medicationagreement-v1.2-2020EN" />

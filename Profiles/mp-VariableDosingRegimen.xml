@@ -59,9 +59,9 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier" />
       </type>
     </element>
-    <element id="MedicationRequest.extension:relatedEpisodeOfCare">
+    <element id="MedicationRequest.extension:relationEpisodeOfCare">
       <path value="MedicationRequest.extension" />
-      <sliceName value="relatedEpisodeOfCare" />
+      <sliceName value="relationEpisodeOfCare" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -69,7 +69,7 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-Context-EpisodeOfCare" />
       </type>
     </element>
-    <element id="MedicationRequest.extension:relatedEpisodeOfCare.value[x]">
+    <element id="MedicationRequest.extension:relationEpisodeOfCare.value[x]">
       <path value="MedicationRequest.extension.value[x]" />
       <short value="RelationEpisodeOfCare" />
       <alias value="RelatieZorgepisode" />
@@ -108,6 +108,10 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period" />
       </type>
+    </element>
+    <element id="MedicationRequest.extension:periodOfUse.url">
+      <path value="MedicationRequest.extension.url" />
+      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period" />
     </element>
     <element id="MedicationRequest.extension:periodOfUse.value[x]">
       <path value="MedicationRequest.extension.value[x]" />
@@ -214,7 +218,7 @@
       </slicing>
     </element>
     <element id="MedicationRequest.reported[x]:reportedBoolean">
-      <path value="MedicationRequest.reportedBoolean" />
+      <path value="MedicationRequest.reported[x]" />
       <sliceName value="reportedBoolean" />
       <short value="CopyIndicator" />
       <definition value="An indication whether the resource is original (false) or a copy from a different source (true)." />
@@ -239,7 +243,7 @@
       </slicing>
     </element>
     <element id="MedicationRequest.medication[x]:medicationReference">
-      <path value="MedicationRequest.medicationReference" />
+      <path value="MedicationRequest.medication[x]" />
       <sliceName value="medicationReference" />
       <short value="AgreedMedicine" />
       <definition value="The medicine agreed upon to be used." />
@@ -267,7 +271,6 @@
     <element id="MedicationRequest.encounter">
       <path value="MedicationRequest.encounter" />
       <short value="RelationContact" />
-      <definition value="Relation between this building block and the Contact-building block." />
       <alias value="RelatieContact" />
       <type>
         <code value="Reference" />
@@ -338,14 +341,6 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceRequest" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement" />
-      </type>
     </element>
     <element id="MedicationRequest.basedOn:relationMedicationAgreement">
       <path value="MedicationRequest.basedOn" />

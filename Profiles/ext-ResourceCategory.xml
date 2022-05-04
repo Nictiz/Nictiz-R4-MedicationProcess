@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ext-ResourceCategory" />
   <meta>
-    <lastUpdated value="2021-12-21T19:35:02.4475991+00:00" />
+    <lastUpdated value="2022-05-04T10:11:49.1893825+00:00" />
   </meta>
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-ResourceCategory" />
   <name value="ExtResourceCategory" />
@@ -17,7 +17,7 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="This extension is used to augment a reference with the target resource category, in cases when Reference.type is not precise enough to determine the functional counterpart of the reference.          The value of this extension is  often a semantic code (e.g. the zib's root definition code) identifies the target resource category." />
+  <description value="This extension is used to augment a reference with the target resource category, in cases when `Reference.type` is not precise enough to determine the functional counterpart of the reference and `Reference.identifier` is used. The value of this extension is often a semantic code (e.g. the zib's root definition code) which identifies the target resource category." />
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
