@@ -58,7 +58,7 @@
       <min value="1" />
       <type>
         <code value="Resource" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationAgreement" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement" />
       </type>
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />

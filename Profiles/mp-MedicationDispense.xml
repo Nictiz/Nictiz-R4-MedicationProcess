@@ -191,7 +191,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-DispenseRequest" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest" />
       </type>
       <mapping>
         <identity value="zib-medicationdispense-v2.0.2-2020EN" />
