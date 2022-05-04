@@ -468,6 +468,14 @@
                 <comment value="InstructionsForUse"/>
             </mapping>
         </element>
+    <element id="MedicationRequest.dosageInstruction.additionalInstruction">
+      <path value="MedicationRequest.dosageInstruction.additionalInstruction" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-51" />
+        <comment value="AdditionalInstructions" />
+      </mapping>
+    </element>
         <element id="MedicationRequest.priorPrescription">
             <path value="MedicationRequest.priorPrescription" />
             <short value="RelationMedicationAgreement" />

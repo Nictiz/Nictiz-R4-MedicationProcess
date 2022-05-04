@@ -108,16 +108,6 @@
                 <description value="WCIAv3 Tabel 25 B-codes subset voor aanvullende gebruiksinstructies"/>
                 <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.9--20160407000000"/>
             </binding>
-            <mapping>
-                <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-                <map value="NL-CM:9.12.19944"/>
-                <comment value="AdditionalInstructions"/>
-            </mapping>
-            <mapping>
-                <identity value="Medication-Process-v9-2-0-0"/>
-                <map value="mp-dataelement920-51"/>
-                <comment value="AdditionalInstruction"/>
-            </mapping>
         </element>
         <element id="Dosage.timing">
             <path value="Dosage.timing"/>

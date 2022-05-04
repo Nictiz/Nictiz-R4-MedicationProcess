@@ -599,5 +599,13 @@
                 <comment value="InstructionsForUse"/>
             </mapping>
         </element>
+    <element id="MedicationStatement.dosage.additionalInstruction">
+      <path value="MedicationStatement.dosage.additionalInstruction" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-368" />
+        <comment value="AdditionalInstructions" />
+      </mapping>
+    </element>
     </differential>
 </StructureDefinition>
