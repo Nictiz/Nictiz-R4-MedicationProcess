@@ -48,7 +48,6 @@
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-AnatomicalLocation" />
       </type>
       <binding>
         <strength value="required" />
@@ -59,6 +58,27 @@
         <map value="mp-dataelement920-702" />
         <comment value="InjectionPatchSite" />
       </mapping>
+    </element>
+    <element id="Extension.value[x].extension">
+      <path value="Extension.value[x].extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Extension.value[x].extension:laterality">
+      <path value="Extension.value[x].extension" />
+      <sliceName value="laterality" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AnatomicalLocation.Laterality" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>

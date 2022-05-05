@@ -125,7 +125,6 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.InjectionPatchSite" />
       </type>
-      <isModifier value="false" />
     </element>
     <element id="MedicationAdministration.identifier">
       <path value="MedicationAdministration.identifier" />
