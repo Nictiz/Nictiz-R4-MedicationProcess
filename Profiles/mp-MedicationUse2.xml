@@ -69,7 +69,6 @@
       <path value="MedicationStatement.extension" />
       <sliceName value="prescriber" />
       <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationUse2.Prescriber" />
@@ -399,7 +398,7 @@
       <sliceName value="relationMedicationAgreement" />
       <short value="RelationMedicationAgreement" />
       <definition value="Medication agreement to which the entered medication use refers. In case medication use is recorded as 'as agreed', the agreement to which is referred, is stated here." />
-      <alias value="RelatieMedicatieAfspraak" />
+      <alias value="RelatieMedicatieafspraak" />
       <max value="1" />
       <type>
         <code value="Reference" />
