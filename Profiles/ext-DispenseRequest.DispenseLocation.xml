@@ -45,7 +45,7 @@
       <alias value="Afleverlocatie" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider" />
       </type>
       <mapping>
         <identity value="zib-dispenserequest-v1.0.3-2020EN" />
