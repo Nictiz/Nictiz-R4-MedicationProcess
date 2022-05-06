@@ -160,7 +160,7 @@
       <alias value="Medicatieafspraak" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationAgreement" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement" />
         <aggregation value="bundled" />
       </type>
       <mapping>
@@ -179,7 +179,7 @@
       <alias value="Toedieningsafspraak" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-AdministrationAgreement" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement" />
         <aggregation value="bundled" />
       </type>
       <mapping>
@@ -198,7 +198,7 @@
       <alias value="Medicatiegebruik" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationUse2" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationUse2" />
         <aggregation value="bundled" />
       </type>
       <mapping>

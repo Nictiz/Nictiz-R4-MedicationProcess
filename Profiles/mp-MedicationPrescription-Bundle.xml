@@ -54,7 +54,7 @@
       <min value="1" />
       <type>
         <code value="Resource" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationAgreement" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement" />
       </type>
     </element>
     <element id="Bundle.entry:medicationAgreement.resource.meta">
@@ -95,7 +95,7 @@
       <min value="1" />
       <type>
         <code value="Resource" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-DispenseRequest" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest" />
       </type>
     </element>
     <element id="Bundle.entry:dispenseRequest.resource.meta">

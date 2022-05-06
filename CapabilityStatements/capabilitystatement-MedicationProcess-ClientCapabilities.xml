@@ -2,7 +2,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/capabilitystatement.xsd">
   <id value="MedicationProcess-ClientCapabilities"/>
   <url value="http://nictiz.nl/fhir/CapabilityStatement/MedicationProcess-ClientCapabilities" />
-  <name value="MedicationProcess_Clientcapabilities" />
+  <name value="MedicationProcess_ClientCapabilities" />
   <status value="active" />
   <date value="2021-09-01" />
   <publisher value="Nictiz" />
@@ -24,8 +24,8 @@
     <mode value="client" />
     <resource>
       <type value="MedicationRequest" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationAgreement"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-DispenseRequest"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest"/>
       <interaction>
         <code value="search-type" />
       </interaction>
@@ -55,8 +55,8 @@
     </resource>
     <resource>
       <type value="MedicationDispense" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-AdministrationAgreement"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Dispense"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationDispense"/>
       <interaction>
         <code value="search-type" />
       </interaction>
@@ -91,7 +91,7 @@
     </resource>
     <resource>
       <type value="MedicationAdministration" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationAdministration2"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAdministration2"/>
       <interaction>
         <code value="search-type" />
       </interaction>
@@ -121,7 +121,7 @@
     </resource>
     <resource>
       <type value="MedicationStatement" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationUse2"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationUse2"/>
       <interaction>
         <code value="search-type" />
       </interaction>

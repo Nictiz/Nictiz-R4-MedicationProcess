@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ext-AdministrationAgreement.AdditionalInformation" />
+  <url value="http://nictiz.nl/fhir/StructureDefinition/ext-AdministrationAgreement.AdditionalInformation" />
+  <name value="ExtAdministrationAgreementAdditionalInformation" />
+  <title value="ext AdministrationAgreement.AdditionalInformation" />
+  <status value="draft" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="email" />
+      <value value="info@nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="An extension to provide additional information that includes details on the structure of the agreement made. This element mainly contains information that until now has been structured with ZZ rules. The medication-related topics that are now supported by the ZZ rules are best supported with a system functionality. A process has been started for this by Z-index/KNMP. For now, the following list will be used. This list will be replaced by a thesaurus in the G standard at a later stage." />
+  <purpose value="This extension represents AdministrationAgreementAdditionalInformation of the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) AdministrationAgreement, in a development version that will be released in pre-publication 2022-1. This extension also contains augmentations to the zib based on the transactions of MP9, to provide an extension better suited for implementation purposes." />
+  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="Medication-Process-v9-2-0-0" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20220402T205710/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-01-05T132845.html" />
+    <name value="MP9 v2.0.0" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MedicationDispense" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-AdministrationAgreement.AdditionalInformation" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="AdministrationAgreementAdditionalInformation" />
+      <definition value="Additional information includes details on the structure of the agreement made." />
+      <alias value="ToedieningsafspraakAanvullendeInformatie" />
+      <type>
+        <code value="string" />
+      </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-342" />
+        <comment value="AdministrationAgreementAdditionalInformation" />
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>
