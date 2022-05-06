@@ -228,6 +228,7 @@
       <path value="MedicationRequest.performer" />
       <short value="IntendedSupplier" />
       <definition value="The intended supplier is a pharmacist." />
+      <comment value="Although the nl-core-HealthcareProvider profile (with resource type Location) is the focal profile of the zib HealthcareProvider, this reference is to the nl-core-HealthcareProvider-Organization profile, because the concept is concerned with the organizational information of the intended supplier." />
       <alias value="BeoogdVerstrekker" />
       <type>
         <code value="Reference" />
