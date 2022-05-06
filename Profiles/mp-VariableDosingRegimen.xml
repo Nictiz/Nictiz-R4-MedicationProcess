@@ -15,7 +15,7 @@
     </telecom>
   </contact>
   <description value="The variable-dosing regimen contains the dosing schedule as prescribed by the (external) prescriber to the patient (or his representative or administrator), specifying the instructions for use in addition to the medication agreement. The dosing schedule can be adjusted, while the medication agreement remains unchanged." />
-  <purpose value="The VariableDosingRegimen has a strong relationship with [mp-MedicationAgreement](http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement). This VariableDosingRegimen profile describes (additional) instructions for MedicationAgreements and is used when it is expected that the MedicationAgreement instructions will need to be adjusted frequently. By separating this into two resources, the original MedicationAgreement does not have to be adjusted as often.  &#xA;&#xA;Unfortunately, a derived profile can not be made because of a fixed and mandatory `category` code. Also, some concepts are not used. This profile reuses extensions made for the MedicationAgreement." />
+  <purpose value="The VariableDosingRegimen has a strong relationship with [mp-MedicationAgreement](http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement). This VariableDosingRegimen profile describes (additional) instructions for MedicationAgreements and is used when it is expected that the MedicationAgreement instructions will need to be adjusted frequently. By separating this into two resources, the original MedicationAgreement does not have to be adjusted as often.  &#xA;&#xA;Unfortunately, a derived profile can not be made because of a fixed and mandatory `.category` code. Also, some concepts are not used. This profile reuses extensions made for the MedicationAgreement." />
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -195,7 +195,7 @@
     </element>
     <element id="MedicationRequest.intent">
       <path value="MedicationRequest.intent" />
-      <definition value="Unless `intent` is explicitly recorded and a more appropriate code is known, the value can be set to _order_ because a MedicationAgreement/VariableDosingRegimen should authorize an action for a patient, pharmacist, professional administrator et cetera." />
+      <definition value="Unless `.intent` is explicitly recorded and a more appropriate code is known, the value can be set to _order_ because a VariableDosingRegimen should authorize an action for a patient, pharmacist, professional administrator et cetera." />
     </element>
     <element id="MedicationRequest.category">
       <path value="MedicationRequest.category" />
@@ -346,7 +346,7 @@
       <path value="MedicationRequest.basedOn" />
       <sliceName value="relationMedicationAgreement" />
       <short value="RelationMedicationAgreement" />
-      <definition value="Relation to the medication agreement which is specified in this dosing schedule" />
+      <definition value="Relation to the medication agreement which is specified in this dosing schedule." />
       <alias value="RelatieMedicatieafspraak" />
       <max value="1" />
       <type>

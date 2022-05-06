@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ext-ResourceCategory" />
   <meta>
-    <lastUpdated value="2022-05-04T10:11:49.1893825+00:00" />
+    <lastUpdated value="2022-05-06T15:01:53.8737611+00:00" />
   </meta>
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-ResourceCategory" />
   <name value="ExtResourceCategory" />
@@ -37,7 +37,7 @@
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <definition value="The expected resource category of the target of the reference. &#xD;&#xA;&#xD;&#xA;The ResourceCategory is a semantic code that represents the category of the resource this reference refers to." />
-      <comment value="This element is used to indicate the resource's category of the target of the reference in cases when the Reference.type is not precise enough to determine the functional counterpart of the reference element." />
+      <comment value="This element is used to indicate the resource's category of the target of the reference in cases when the `Reference.type` is not precise enough to determine the functional counterpart of the reference element." />
       <type>
         <code value="CodeableConcept" />
       </type>

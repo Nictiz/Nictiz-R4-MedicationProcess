@@ -235,7 +235,7 @@
     </element>
     <element id="MedicationRequest.intent">
       <path value="MedicationRequest.intent" />
-      <definition value="Unless `intent` is explicitly recorded and a more appropriate code is known, the value can be set to _order_ because a MedicationAgreement should authorize an action for a patient, pharmacist, professional administrator et cetera." />
+      <definition value="Unless `.intent` is explicitly recorded and a more appropriate code is known, the value can be set to _order_ because a MedicationAgreement should authorize an action for a patient, pharmacist, professional administrator et cetera." />
     </element>
     <element id="MedicationRequest.category">
       <path value="MedicationRequest.category" />
@@ -283,11 +283,11 @@
       </slicing>
     </element>
     <element id="MedicationRequest.medication[x]:medicationReference">
-      <path value="MedicationRequest.medication[x]" />
+      <path value="MedicationRequest.medicationReference" />
       <sliceName value="medicationReference" />
       <short value="AgreedMedicine" />
       <definition value="The medicine agreed upon to be used." />
-      <alias value="Afgesprokengeneesmiddel" />
+      <alias value="AfgesprokenGeneesmiddel" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication" />

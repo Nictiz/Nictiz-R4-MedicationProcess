@@ -285,7 +285,7 @@
       <path value="MedicationDispense.performer.actor" />
       <short value="Supplier" />
       <definition value="The supplier (pharmacist) that entered the administration agreement." />
-      <comment value="The 'Supplier' concept of zib AdministrationAgreement is mapped to both `performer.actor` and `location`. This is a Reference to an instance of nl-core-HealthcareProvider-Organization instead of to an instance of nl-core-HealthcareProfessional, because individuals who enter the administration agreement are not recorded." />
+      <comment value="The 'Supplier' concept of zib AdministrationAgreement is mapped to both `.performer.actor` and `.location`. This is a Reference to an instance of nl-core-HealthcareProvider-Organization instead of to an instance of nl-core-HealthcareProfessional, because individuals who enter the administration agreement are not recorded." />
       <alias value="Verstrekker" />
       <type>
         <code value="Reference" />
@@ -307,7 +307,7 @@
       <path value="MedicationDispense.location" />
       <short value="Supplier" />
       <definition value="The supplier (pharmacist) that entered the administration agreement." />
-      <comment value="The 'Supplier' concept of zib AdministrationAgreement is mapped to both `performer.actor` and `location`. Details of the physical location of the supplier of the administration agreement can be referenced here." />
+      <comment value="The 'Supplier' concept of zib AdministrationAgreement is mapped to both `.performer.actor` and `.location`. Details of the physical location of the supplier of the administration agreement can be referenced here." />
       <alias value="Verstrekker" />
       <type>
         <code value="Reference" />

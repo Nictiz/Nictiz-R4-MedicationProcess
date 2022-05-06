@@ -16,6 +16,7 @@
   </contact>
   <description value="The dispense request is the request of a prescriber to the pharmacist to dispense medication(s) to the patient to support current medication agreements. The prescriber asks them to dispense a certain amount of medicine or to dispense medicine(s) for a period of use." />
   <purpose value="This MedicationRequest resource represents the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) DispenseRequest, in a development version that will be released in pre-publication 2022-1. This profile also contains augmentations to the zib with elements found in the transactions of MP9, to provide a profile better suited for implementation purposes." />
+  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="zib-dispenserequest-v1.0.3-2020EN" />
@@ -129,7 +130,7 @@
     </element>
     <element id="MedicationRequest.intent">
       <path value="MedicationRequest.intent" />
-      <comment value="Unless `intent` is explicitly recorded and a more appropriate code is known, the value can be set to _order_ because a DispenseRequest should authorize an action for a patient, pharmacist, professional administrator et cetera." />
+      <comment value="Unless `.intent` is explicitly recorded and a more appropriate code is known, the value can be set to _order_ because a DispenseRequest should authorize an action for a patient, pharmacist, professional administrator et cetera." />
     </element>
     <element id="MedicationRequest.category">
       <path value="MedicationRequest.category" />

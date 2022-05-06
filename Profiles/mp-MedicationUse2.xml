@@ -261,7 +261,7 @@
     <element id="MedicationStatement.context">
       <path value="MedicationStatement.context" />
       <short value="RelationContact / RelationEpisodeOfCare" />
-      <comment value="The 'ExtContextEpisodeOfCare' extension is used to capture a reference to a related EpisodeOfCare if both a reference to an Encounter and an EpisodeOfCare need to be exchanged. This `context` element will then contain the reference to the Encounter resource." />
+      <comment value="The 'ExtContextEpisodeOfCare' extension is used to capture a reference to a related EpisodeOfCare if both a reference to an Encounter and an EpisodeOfCare need to be exchanged. This `.context` element will then contain the reference to the Encounter resource." />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />

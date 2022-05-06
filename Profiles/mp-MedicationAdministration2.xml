@@ -106,7 +106,7 @@
     </element>
     <element id="MedicationAdministration.extension:medicationAdministrationReasonForDeviation.value[x]">
       <path value="MedicationAdministration.extension.value[x]" />
-      <comment value="This MedicationAdministrationReasonForDeviation extension has overlap with `statusReason`. Both concepts allow the documentation of reasons why an administration did not take place, potentially resulting in duplicated information in both places. This extension, however, has a broader scope because it also covers the reasons why administrations are performed differently than the agreement." />
+      <comment value="This MedicationAdministrationReasonForDeviation extension has overlap with `.statusReason`. Both concepts allow the documentation of reasons why an administration did not take place, potentially resulting in duplicated information in both places. This extension, however, has a broader scope because it also covers the reasons why administrations are performed differently than the agreement." />
     </element>
     <element id="MedicationAdministration.extension:pharmaceuticalTreatmentIdentifier">
       <path value="MedicationAdministration.extension" />
@@ -205,7 +205,7 @@
     <element id="MedicationAdministration.context">
       <path value="MedicationAdministration.context" />
       <short value="RelationContact / RelationEpisodeOfCare" />
-      <comment value="The 'ExtContextEpisodeOfCare' extension is used to capture a reference to a related EpisodeOfCare if both a reference to an Encounter and an EpisodeOfCare need to be exchanged. This `context` element will then contain the reference to the Encounter resource." />
+      <comment value="The 'ExtContextEpisodeOfCare' extension is used to capture a reference to a related EpisodeOfCare if both a reference to an Encounter and an EpisodeOfCare need to be exchanged. This `.context` element will then contain the reference to the Encounter resource." />
       <alias value="RelatieContact" />
       <alias value="RelatieZorgepisode" />
       <type>
@@ -478,7 +478,6 @@
       <sliceName value="rateQuantity" />
       <short value="AdministeringSpeed / nominalValue" />
       <definition value="The administering speed is used in slow administration of liquid. In practice, the measuring unit is almost always ml/hour. Entering an interval (such as 0-10 ml/hour) is also a commonly used option. &#xA;For example, with an administering speed of 10ml/hour: &#xD;&#xA;- amount = 10,&#xD;&#xA;- dose unit = ml          &#xD;&#xA;- time unit = hour&#xD;&#xA;&#xD;&#xA;Optionally a translation to NHG table Gebruiksvoorschriften(Table 25) is also allowed." />
-      <comment value="The extension MedicationAdministration2AdministeringSpeedRange extends `.rate[x]` with the Range datatype to allow population of the minimumValue and the maximumValue of the zib Range." />
       <alias value="Toedieningssnelheid" />
       <alias value="nominaleWaarde" />
       <type>
