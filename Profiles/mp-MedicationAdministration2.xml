@@ -237,9 +237,9 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="MedicationAdministration.context.extension:relatedEpisodeOfCare">
+    <element id="MedicationAdministration.context.extension:relationEpisodeOfCare">
       <path value="MedicationAdministration.context.extension" />
-      <sliceName value="relatedEpisodeOfCare" />
+      <sliceName value="relationEpisodeOfCare" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -247,7 +247,7 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-Context-EpisodeOfCare" />
       </type>
     </element>
-    <element id="MedicationAdministration.context.extension:relatedEpisodeOfCare.value[x]">
+    <element id="MedicationAdministration.context.extension:relationEpisodeOfCare.value[x]">
       <path value="MedicationAdministration.context.extension.value[x]" />
       <short value="RelatedEpisodeOfCare" />
       <alias value="RelatieZorgepisode" />
