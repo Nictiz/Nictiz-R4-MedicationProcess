@@ -14,7 +14,7 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="An extension to provide a reason for this agreement. This will often be the same reason as the one for the medication agreement.&#xD;&#xA;&#xD;&#xA;This field has the option to - if applicable - enter a specific reason for the administration agreement. Examples include: substitution, transfer to GDS, patient request for different product, etc." />
+  <description value="An extension to provide a reason for modification or discontinuation of this agreement. This will often be the same reason as the one for modification or discontinuation of the medication agreement.&#xD;&#xA;&#xD;&#xA;This field has the option to - if applicable - enter a specific reason for modification or discontinuation of the administration agreement." />
   <purpose value="This extension represents AdministrationAgreementReasonModificationOrDiscontinuation of the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) AdministrationAgreement, in a development version that will be released in pre-publication 2022-1. This extension also contains augmentations to the zib based on the transactions of MP9, to provide an extension better suited for implementation purposes." />
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
