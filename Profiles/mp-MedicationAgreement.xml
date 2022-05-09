@@ -283,7 +283,7 @@
       </slicing>
     </element>
     <element id="MedicationRequest.medication[x]:medicationReference">
-      <path value="MedicationRequest.medicationReference" />
+      <path value="MedicationRequest.medication[x]" />
       <sliceName value="medicationReference" />
       <short value="AgreedMedicine" />
       <definition value="The medicine agreed upon to be used." />

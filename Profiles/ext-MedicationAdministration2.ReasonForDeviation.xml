@@ -15,7 +15,7 @@
     </telecom>
   </contact>
   <description value="An extension to provide the reason why the medication was not taken or administered or was taken or administered differently." />
-  <purpose value="This extension represents MedicationAdministrationReasonForDeviation of the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) MedicationAdministration, in a development version that will be released in pre-publication 2022-1. This extension also contains augmentations to the zib based on the transactions of MP9, to provide an extension better suited for implementation purposes." />
+  <purpose value="This extension represents MedicationAdministrationReasonForDeviation of the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) MedicationAdministration2, in a development version that will be released in pre-publication 2022-1. This extension also contains augmentations to the zib based on the transactions of MP9, to provide an extension better suited for implementation purposes." />
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -45,7 +45,7 @@
       <path value="Extension.value[x]" />
       <short value="MedicationAdministrationReasonForDeviation" />
       <definition value="Reason why the medication was not taken or administered or was taken or administered differently. Here, you can choose to enter text or one of the codes." />
-      <alias value="MedicatieToedieningRedenVanAfwijken" />
+      <alias value="MedicatietoedieningRedenVanAfwijken" />
       <type>
         <code value="CodeableConcept" />
       </type>

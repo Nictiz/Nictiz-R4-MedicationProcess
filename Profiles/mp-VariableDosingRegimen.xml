@@ -159,7 +159,7 @@
       <alias value="WisselendDoseerschemaStopType" />
       <binding>
         <strength value="required" />
-        <description value="WisselendDoseerschemaStopTypeCodelijst restricts StopType values, based on the valueset named MedicatieafspraakStopTypeCodelijst, which are are applicable for StopType in MedicationAgreement, AdministrationAgreement and MedicationUse." />
+        <description value="WisselendDoseerschemaStopTypeCodelijst restricts StopType values, based on the ValueSet named MedicatieafspraakStopTypeCodelijst, which are applicable for StopType in MedicationAgreement, AdministrationAgreement and MedicationUse2." />
         <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.39--20210609152454" />
       </binding>
       <mapping>

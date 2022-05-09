@@ -3,7 +3,7 @@
   <id value="ext-MedicationOverview.SourceOrganization" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationOverview.SourceOrganization" />
   <name value="ExtMedicationOverviewSourceOrganization" />
-  <title value="Ext MedicatonOverview Source Organization" />
+  <title value="Ext MedicatonOverview.SourceOrganization" />
   <status value="draft" />
   <publisher value="Nictiz" />
   <contact>

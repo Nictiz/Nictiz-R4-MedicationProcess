@@ -14,7 +14,7 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="An extension to provide the agreed dosage amount from the MedicationAgreement or AdministrationAgreement for which the MedicationAdministration applies." />
+  <description value="An extension to provide the amount of the product in the medication agreement, administration agreement or variable-dosing regimen on which this administration is based." />
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -43,7 +43,7 @@
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <short value="AgreedAmount" />
-      <definition value="The agreed dosage amount from the MedicationAgreement or AdministrationAgreement for which this administration applies." />
+      <definition value="The amount of the product in the medication agreement, administration agreement or variable-dosing regimen on which this administration is based. Because multiple dosages can be recorded in one medication agreement/admininistration agreement/variable-dosing regimen, for example the administered dosage can differ from the agreed amount." />
       <alias value="AfgesprokenHoeveelheid" />
       <type>
         <code value="Quantity" />

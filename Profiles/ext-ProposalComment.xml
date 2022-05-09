@@ -3,7 +3,7 @@
   <id value="ext-ProposalComment" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-ProposalComment" />
   <name value="ExtProposalComment" />
-  <title value="ext Proposal Comment" />
+  <title value="ext ProposalComment" />
   <status value="draft" />
   <publisher value="Nictiz" />
   <contact>

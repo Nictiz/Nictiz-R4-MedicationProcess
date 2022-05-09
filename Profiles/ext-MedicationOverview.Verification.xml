@@ -3,7 +3,7 @@
   <id value="ext-MedicationOverview.Verification" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationOverview.Verification" />
   <name value="ExtMedicationOverviewVerification" />
-  <title value="Ext MedicatonOverview Verification" />
+  <title value="Ext MedicatonOverview.Verification" />
   <status value="draft" />
   <publisher value="Nictiz" />
   <contact>

@@ -3,7 +3,7 @@
   <id value="ext-Communication.Payload.ContentCodeableConcept" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-Communication.Payload.ContentCodeableConcept" />
   <name value="ExtCommunicationPayloadContentCodeableConcept" />
-  <title value="ext Communication Payload ContentCodeableConcept" />
+  <title value="ext Communication.Payload.ContentCodeableConcept" />
   <status value="draft" />
   <publisher value="Nictiz" />
   <contact>

@@ -30,7 +30,7 @@
     </element>
     <element id="Bundle.total">
       <path value="Bundle.total" />
-      <comment value="The total value contains the number of matching HCIMs: MedicationAgreement, AdministrationAgreement and MedicationUse. Other included resources, such as Medication resources, are not included in the total." />
+      <comment value="The total value contains the number of matching HCIMs: MedicationAgreement, AdministrationAgreement and MedicationUse2. Other included resources, such as Medication resources, are not included in the total." />
     </element>
     <element id="Bundle.entry">
       <path value="Bundle.entry" />
