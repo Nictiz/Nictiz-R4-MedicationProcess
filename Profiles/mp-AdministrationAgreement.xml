@@ -256,7 +256,7 @@
       <sliceName value="medicationReference" />
       <short value="MedicineForAdministrationAgreement" />
       <definition value="Medicine in the AdministrationAgreement." />
-      <alias value="GeneesmiddelBijToedieningsAfspraak" />
+      <alias value="GeneesmiddelBijToedieningsafspraak" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication" />
