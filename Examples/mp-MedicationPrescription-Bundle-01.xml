@@ -6,7 +6,6 @@
         <value value="urn:uuid:ddeb79db-5c56-4032-a8c7-1f4769b0d74f"/>
     </identifier>
     <type value="transaction"/>
-    <total value="8"/>
     <link>
         <relation value="self"/>
         <url value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/Bundle?identifier=ddeb79db-5c56-4032-a8c7-1f4769b0d74f"/>
