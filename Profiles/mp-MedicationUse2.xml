@@ -37,7 +37,7 @@
     <element id="MedicationStatement">
       <path value="MedicationStatement" />
       <short value="MedicationUse" />
-      <comment value="Replaced the incorrect comment of FHIR R4 with this sentence." />
+      <comment value="The original comment on MedicationStatement present in FHIR R4 is incorrect and should not be taken into account while interpreting this profile (that comment has been removed in later FHIR releases)." />
       <alias value="Medicatiegebruik" />
       <mapping>
         <identity value="zib-medicationuse2-v1.1.1-2020EN" />

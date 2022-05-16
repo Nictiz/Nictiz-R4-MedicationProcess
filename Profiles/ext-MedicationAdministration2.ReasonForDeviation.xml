@@ -44,7 +44,7 @@
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <short value="MedicationAdministrationReasonForDeviation" />
-      <definition value="Reason why the medication was not taken or administered or was taken or administered differently. Here, you can choose to enter text or one of the codes." />
+      <definition value="Reason why the medication was not taken or administered or was taken or administered differently." />
       <alias value="MedicatietoedieningRedenVanAfwijken" />
       <type>
         <code value="CodeableConcept" />
