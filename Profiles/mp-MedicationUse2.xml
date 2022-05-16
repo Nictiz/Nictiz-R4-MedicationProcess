@@ -387,8 +387,8 @@
       <path value="MedicationStatement.derivedFrom" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="extension.valueCodeableConcept" />
+          <type value="pattern" />
+          <path value="extension.value" />
         </discriminator>
         <rules value="open" />
       </slicing>
