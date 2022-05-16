@@ -180,18 +180,5 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyWeight" />
       </type>
     </element>
-    <element id="Bundle.entry:laboratoryTestResult">
-      <path value="Bundle.entry" />
-      <sliceName value="laboratoryTestResult" />
-      <max value="1" />
-    </element>
-    <element id="Bundle.entry:laboratoryTestResult.resource">
-      <path value="Bundle.entry.resource" />
-      <min value="1" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-LaboratoryTestResult" />
-      </type>
-    </element>
   </differential>
 </StructureDefinition>

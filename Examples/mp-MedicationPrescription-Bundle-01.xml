@@ -669,10 +669,4 @@
             </Observation>
         </resource>
     </entry>
-    <!--<entry>
-        <fullUrl value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/Observation/nl-core-LaboratoryTestResult-01"/>
-        <resource>
-            
-        </resource>
-    </entry>-->
 </Bundle>
