@@ -18,7 +18,7 @@
                 <meta>
                     <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-AdministrationAgreement"/>
                     <tag>
-                        <system value="http://hl7.org/fhir/ValueSet/common-tags"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/common-tags"/>
                         <code value="actionable"/>
                     </tag>
                 </meta>
@@ -125,7 +125,7 @@
                 <meta>
                     <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationDispense"/>
                     <tag>
-                        <system value="http://hl7.org/fhir/ValueSet/common-tags"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/common-tags"/>
                         <code value="actionable"/>
                     </tag>
                 </meta>
