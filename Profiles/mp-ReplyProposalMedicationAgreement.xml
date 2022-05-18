@@ -60,7 +60,7 @@
       <min value="1" />
       <max value="1" />
       <patternCoding>
-        <system value="http://hl7.org/fhir/ValueSet/common-tags" />
+        <system value="http://terminology.hl7.org/CodeSystem/common-tags" />
         <code value="actionable" />
       </patternCoding>
     </element>
