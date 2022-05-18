@@ -130,10 +130,6 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period" />
       </type>
     </element>
-    <element id="MedicationDispense.extension:periodOfUse.url">
-      <path value="MedicationDispense.extension.url" />
-      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period" />
-    </element>
     <element id="MedicationDispense.extension:periodOfUse.value[x]">
       <path value="MedicationDispense.extension.value[x]" />
       <short value="PeriodOfUse" />
@@ -187,7 +183,6 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationDispense.DistributionForm" />
       </type>
-      <isModifier value="false" />
     </element>
     <element id="MedicationDispense.extension:distributionForm.value[x]">
       <path value="MedicationDispense.extension.value[x]" />

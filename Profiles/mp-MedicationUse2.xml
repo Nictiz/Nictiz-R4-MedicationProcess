@@ -162,7 +162,7 @@
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
         <map value="mp-dataelement920-626" />
-        <comment value="AuthorIsPatient (AuthorIsPatient = true when the Author extension refers to the same Patient as subject)" />
+        <comment value="AuthorIsPatient (implicit; AuthorIsPatient = true when this element refers to the same Patient as subject)" />
       </mapping>
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />

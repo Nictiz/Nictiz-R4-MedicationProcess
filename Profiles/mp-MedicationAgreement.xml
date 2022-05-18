@@ -107,10 +107,6 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period" />
       </type>
     </element>
-    <element id="MedicationRequest.extension:periodOfUse.url">
-      <path value="MedicationRequest.extension.url" />
-      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period" />
-    </element>
     <element id="MedicationRequest.extension:periodOfUse.value[x]">
       <path value="MedicationRequest.extension.value[x]" />
       <short value="PeriodOfUse" />

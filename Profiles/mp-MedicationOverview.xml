@@ -127,7 +127,7 @@
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
         <map value="mp-dataelement920-503" />
-        <comment value="AuthorIsPatient (implicit)" />
+        <comment value="AuthorIsPatient (implicit; AuthorIsPatient = true when this element refers to the same Patient as subject)" />
       </mapping>
     </element>
     <element id="List.source.extension">

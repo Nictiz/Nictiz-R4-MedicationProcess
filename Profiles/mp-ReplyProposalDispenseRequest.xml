@@ -177,7 +177,6 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-Communication.Payload.ContentCodeableConcept" />
       </type>
-      <isModifier value="false" />
     </element>
     <element id="Communication.payload.content[x].extension:contentCodeableConcept.value[x]">
       <path value="Communication.payload.content[x].extension.value[x]" />
