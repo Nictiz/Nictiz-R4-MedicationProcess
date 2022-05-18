@@ -64,6 +64,14 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationDispense.MedicationDispenseAdditionalInformation" />
       </type>
     </element>
+    <element id="MedicationDispense.extension:medicationDispenseAdditionalInformation.value[x]">
+      <path value="MedicationDispense.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-357" />
+        <comment value="MedicationDispenseAdditionalInformation" />
+      </mapping>
+    </element>
     <element id="MedicationDispense.extension:requestDate">
       <path value="MedicationDispense.extension" />
       <sliceName value="requestDate" />
@@ -72,6 +80,14 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationDispense.RequestDate" />
       </type>
+    </element>
+    <element id="MedicationDispense.extension:requestDate.value[x]">
+      <path value="MedicationDispense.extension.value[x]" />
+      <mapping>
+        <identity value="zib-medicationdispense-v2.0.2-2020EN" />
+        <map value="NL-CM:9.9.22500" />
+        <comment value="RequestDate" />
+      </mapping>
     </element>
     <element id="MedicationDispense.extension:distributionForm">
       <path value="MedicationDispense.extension" />
@@ -82,6 +98,14 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationDispense.DistributionForm" />
       </type>
     </element>
+    <element id="MedicationDispense.extension:distributionForm.value[x]">
+      <path value="MedicationDispense.extension.value[x]" />
+      <mapping>
+        <identity value="zib-medicationdispense-v2.0.2-2020EN" />
+        <map value="NL-CM:9.9.20927" />
+        <comment value="DistributionForm" />
+      </mapping>
+    </element>
     <element id="MedicationDispense.extension:pharmaceuticalTreatmentIdentifier">
       <path value="MedicationDispense.extension" />
       <sliceName value="pharmaceuticalTreatmentIdentifier" />
@@ -90,6 +114,14 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier" />
       </type>
+    </element>
+    <element id="MedicationDispense.extension:pharmaceuticalTreatmentIdentifier.value[x]">
+      <path value="MedicationDispense.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-42" />
+        <comment value="Identification" />
+      </mapping>
     </element>
     <element id="MedicationDispense.identifier">
       <path value="MedicationDispense.identifier" />

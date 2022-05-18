@@ -69,6 +69,14 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAgreement.MedicationAgreementAdditionalInformation" />
       </type>
     </element>
+    <element id="MedicationRequest.extension:medicationAgreementAdditionalInformation.value[x]">
+      <path value="MedicationRequest.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-90" />
+        <comment value="MedicationAgreementAdditionalInformation" />
+      </mapping>
+    </element>
     <element id="MedicationRequest.extension:renderedDosageInstruction">
       <path value="MedicationRequest.extension" />
       <sliceName value="renderedDosageInstruction" />
@@ -134,6 +142,14 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAgreement.PeriodOfUse.Condition" />
       </type>
     </element>
+    <element id="MedicationRequest.extension:periodOfUse.value[x].extension:condition.value[x]">
+      <path value="MedicationRequest.extension.value[x].extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-1365" />
+        <comment value="Condition" />
+      </mapping>
+    </element>
     <element id="MedicationRequest.extension:pharmaceuticalTreatmentIdentifier">
       <path value="MedicationRequest.extension" />
       <sliceName value="pharmaceuticalTreatmentIdentifier" />
@@ -142,6 +158,14 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier" />
       </type>
+    </element>
+    <element id="MedicationRequest.extension:pharmaceuticalTreatmentIdentifier.value[x]">
+      <path value="MedicationRequest.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-42" />
+        <comment value="Identification" />
+      </mapping>
     </element>
     <element id="MedicationRequest.extension:relationEpisodeOfCare">
       <path value="MedicationRequest.extension" />
@@ -201,6 +225,14 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-InstructionsForUse.RepeatPeriodCyclicalSchedule" />
       </type>
+    </element>
+    <element id="MedicationRequest.modifierExtension:repeatPeriodCyclicalSchedule.value[x]">
+      <path value="MedicationRequest.modifierExtension.value[x]" />
+      <mapping>
+        <identity value="zib-instructionsforuse-v1.2.1-2020EN" />
+        <map value="NL-CM:9.12.22505" />
+        <comment value="RepeatPeriodCyclicalSchedule" />
+      </mapping>
     </element>
     <element id="MedicationRequest.identifier">
       <path value="MedicationRequest.identifier" />
@@ -410,6 +442,14 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAgreement.RelationAdministrationAgreement" />
       </type>
     </element>
+    <element id="MedicationRequest.basedOn.extension:relationAdministrationAgreement.value[x]">
+      <path value="MedicationRequest.basedOn.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-1328" />
+        <comment value="RelationAdministrationAgreement" />
+      </mapping>
+    </element>
     <element id="MedicationRequest.basedOn.extension:relationMedicationUse">
       <path value="MedicationRequest.basedOn.extension" />
       <sliceName value="relationMedicationUse" />
@@ -418,6 +458,14 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAgreement.RelationMedicationUse" />
       </type>
+    </element>
+    <element id="MedicationRequest.basedOn.extension:relationMedicationUse.value[x]">
+      <path value="MedicationRequest.basedOn.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-1327" />
+        <comment value="RelationMedicationUse" />
+      </mapping>
     </element>
     <element id="MedicationRequest.note">
       <path value="MedicationRequest.note" />

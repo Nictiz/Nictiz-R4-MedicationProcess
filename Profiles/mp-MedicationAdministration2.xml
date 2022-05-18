@@ -69,6 +69,14 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.AgreedDateTime" />
       </type>
     </element>
+    <element id="MedicationAdministration.extension:agreedDateTime.value[x]">
+      <path value="MedicationAdministration.extension.value[x]" />
+      <mapping>
+        <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
+        <map value="NL-CM:9.13.23171" />
+        <comment value="AgreedDateTime" />
+      </mapping>
+    </element>
     <element id="MedicationAdministration.extension:doubleCheckPerformed">
       <path value="MedicationAdministration.extension" />
       <sliceName value="doubleCheckPerformed" />
@@ -77,6 +85,14 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.DoubleCheckPerformed" />
       </type>
+    </element>
+    <element id="MedicationAdministration.extension:doubleCheckPerformed.value[x]">
+      <path value="MedicationAdministration.extension.value[x]" />
+      <mapping>
+        <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
+        <map value="NL-CM:9.13.23168" />
+        <comment value="DoubleCheckPerformed" />
+      </mapping>
     </element>
     <element id="MedicationAdministration.extension:asAgreedIndicator">
       <path value="MedicationAdministration.extension" />
@@ -107,6 +123,11 @@
     <element id="MedicationAdministration.extension:medicationAdministrationReasonForDeviation.value[x]">
       <path value="MedicationAdministration.extension.value[x]" />
       <comment value="This MedicationAdministrationReasonForDeviation extension has overlap with `.statusReason`. Both concepts allow the documentation of reasons why an administration did not take place, potentially resulting in duplicated information in both places. This extension, however, has a broader scope because it also covers the reasons why administrations are performed differently than the agreement." />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-444" />
+        <comment value="MedicationAdministrationReasonForDeviation" />
+      </mapping>
     </element>
     <element id="MedicationAdministration.extension:pharmaceuticalTreatmentIdentifier">
       <path value="MedicationAdministration.extension" />
@@ -117,6 +138,14 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier" />
       </type>
     </element>
+    <element id="MedicationAdministration.extension:pharmaceuticalTreatmentIdentifier.value[x]">
+      <path value="MedicationAdministration.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-42" />
+        <comment value="Identification" />
+      </mapping>
+    </element>
     <element id="MedicationAdministration.extension:injectionPatchSite">
       <path value="MedicationAdministration.extension" />
       <sliceName value="injectionPatchSite" />
@@ -125,6 +154,14 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.InjectionPatchSite" />
       </type>
+    </element>
+    <element id="MedicationAdministration.extension:injectionPatchSite.value[x]">
+      <path value="MedicationAdministration.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-702" />
+        <comment value="InjectionPatchSite" />
+      </mapping>
     </element>
     <element id="MedicationAdministration.identifier">
       <path value="MedicationAdministration.identifier" />
@@ -432,6 +469,14 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.AgreedAmount" />
       </type>
+    </element>
+    <element id="MedicationAdministration.dosage.extension:agreedAmount.value[x]">
+      <path value="MedicationAdministration.dosage.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-1172" />
+        <comment value="AgreedAmount" />
+      </mapping>
     </element>
     <element id="MedicationAdministration.dosage.route">
       <path value="MedicationAdministration.dosage.route" />

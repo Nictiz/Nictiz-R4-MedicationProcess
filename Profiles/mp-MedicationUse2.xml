@@ -24,6 +24,11 @@
     <name value="zib MedicationUse2-v1.1.1(2020EN)" />
   </mapping>
   <mapping>
+    <identity value="zib-instructionsforuse-v1.2.1-2020EN" />
+    <uri value="https://zibs.nl/wiki/InstructionsForUse-v1.2.1(2020EN)" />
+    <name value="zib InstructionsForUse-v1.2.1(2020EN)" />
+  </mapping>
+  <mapping>
     <identity value="Medication-Process-v9-2-0-0" />
     <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20220402T205710/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-01-05T132845.html" />
     <name value="MP9 v2.0.0" />
@@ -74,6 +79,14 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationUse2.Prescriber" />
       </type>
     </element>
+    <element id="MedicationStatement.extension:prescriber.value[x]">
+      <path value="MedicationStatement.extension.value[x]" />
+      <mapping>
+        <identity value="zib-medicationuse2-v1.1.1-2020EN" />
+        <map value="NL-CM:9.11.23290" />
+        <comment value="Prescriber" />
+      </mapping>
+    </element>
     <element id="MedicationStatement.extension:asAgreedIndicator">
       <path value="MedicationStatement.extension" />
       <sliceName value="asAgreedIndicator" />
@@ -100,6 +113,14 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier" />
       </type>
     </element>
+    <element id="MedicationStatement.extension:pharmaceuticalTreatmentIdentifier.value[x]">
+      <path value="MedicationStatement.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-42" />
+        <comment value="Identification" />
+      </mapping>
+    </element>
     <element id="MedicationStatement.extension:copyIndicator">
       <path value="MedicationStatement.extension" />
       <sliceName value="copyIndicator" />
@@ -125,6 +146,29 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationUse2.Author" />
       </type>
+    </element>
+    <element id="MedicationStatement.extension:author.value[x]">
+      <path value="MedicationStatement.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-623" />
+        <comment value="Author" />
+      </mapping>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-624" />
+        <comment value="AuthorIsHealthcareProvider" />
+      </mapping>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-626" />
+        <comment value="AuthorIsPatient (AuthorIsPatient = true when the Author extension refers to the same Patient as subject)" />
+      </mapping>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-627" />
+        <comment value="AuthorIsHealthProfessional" />
+      </mapping>
     </element>
     <element id="MedicationStatement.modifierExtension">
       <path value="MedicationStatement.modifierExtension" />
@@ -164,6 +208,14 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-InstructionsForUse.RepeatPeriodCyclicalSchedule" />
       </type>
+    </element>
+    <element id="MedicationStatement.modifierExtension:repeatPeriodCyclicalSchedule.value[x]">
+      <path value="MedicationStatement.modifierExtension.value[x]" />
+      <mapping>
+        <identity value="zib-instructionsforuse-v1.2.1-2020EN" />
+        <map value="NL-CM:9.12.22505" />
+        <comment value="RepeatPeriodCyclicalSchedule" />
+      </mapping>
     </element>
     <element id="MedicationStatement.identifier">
       <path value="MedicationStatement.identifier" />

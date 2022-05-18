@@ -17,11 +17,6 @@
   <description value="An extension to provide a relation to a MedicationUse2 on which the MedicationAgreement is based." />
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="Medication-Process-v9-2-0-0" />
-    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20220402T205710/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-01-05T132845.html" />
-    <name value="MP9 v2.0.0" />
-  </mapping>
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
@@ -49,11 +44,6 @@
         <code value="Reference" />
         <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationUse2" />
       </type>
-      <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-1327" />
-        <comment value="RelationMedicationUse" />
-      </mapping>
     </element>
   </differential>
 </StructureDefinition>

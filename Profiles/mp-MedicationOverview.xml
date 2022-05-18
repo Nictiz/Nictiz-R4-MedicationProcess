@@ -58,6 +58,16 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationOverview.Verification" />
       </type>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-506" />
+        <comment value="VerificationPatient" />
+      </mapping>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-509" />
+        <comment value="VerificationHealthProfessional" />
+      </mapping>
     </element>
     <element id="List.code">
       <path value="List.code" />
@@ -139,6 +149,14 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationOverview.SourceOrganization" />
       </type>
+    </element>
+    <element id="List.source.extension:organization.value[x]">
+      <path value="List.source.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-504" />
+        <comment value="AuthorIsHealthcareProvider" />
+      </mapping>
     </element>
     <element id="List.entry">
       <path value="List.entry" />

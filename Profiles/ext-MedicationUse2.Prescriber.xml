@@ -18,11 +18,6 @@
   <purpose value="This extension represents the Prescriber concept of the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) [MedicationUse2 v1.1.1 (2020EN)](https://zibs.nl/wiki/MedicationUse2-v1.1.1(2020EN))." />
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="zib-medicationuse2-v1.1.1-2020EN" />
-    <uri value="https://zibs.nl/wiki/MedicationUse2-v1.1.1(2020EN)" />
-    <name value="zib MedicationUse2-v1.1.1(2020EN)" />
-  </mapping>
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
@@ -51,11 +46,6 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-NlCoreHealthProfessionalReference" />
         <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole" />
       </type>
-      <mapping>
-        <identity value="zib-medicationuse2-v1.1.1-2020EN" />
-        <map value="NL-CM:9.11.23290" />
-        <comment value="Prescriber" />
-      </mapping>
     </element>
   </differential>
 </StructureDefinition>

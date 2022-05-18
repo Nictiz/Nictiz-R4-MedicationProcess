@@ -64,6 +64,14 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.AdditionalWishes" />
       </type>
     </element>
+    <element id="MedicationRequest.extension:additionalWishes.value[x]">
+      <path value="MedicationRequest.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-287" />
+        <comment value="AdditionalWishes" />
+      </mapping>
+    </element>
     <element id="MedicationRequest.extension:pharmaceuticalTreatmentIdentifier">
       <path value="MedicationRequest.extension" />
       <sliceName value="pharmaceuticalTreatmentIdentifier" />
@@ -73,6 +81,14 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier" />
       </type>
     </element>
+    <element id="MedicationRequest.extension:pharmaceuticalTreatmentIdentifier.value[x]">
+      <path value="MedicationRequest.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-42" />
+        <comment value="Identification" />
+      </mapping>
+    </element>
     <element id="MedicationRequest.extension:financialIndicationCode">
       <path value="MedicationRequest.extension" />
       <sliceName value="financialIndicationCode" />
@@ -81,6 +97,14 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.FinancialIndicationCode" />
       </type>
+    </element>
+    <element id="MedicationRequest.extension:financialIndicationCode.value[x]">
+      <path value="MedicationRequest.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-592" />
+        <comment value="FinancialIndicationCode" />
+      </mapping>
     </element>
     <element id="MedicationRequest.extension:relationEpisodeOfCare">
       <path value="MedicationRequest.extension" />
@@ -308,6 +332,14 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.DispenseLocation" />
       </type>
+    </element>
+    <element id="MedicationRequest.dispenseRequest.extension:dispenseLocation.value[x]">
+      <path value="MedicationRequest.dispenseRequest.extension.value[x]" />
+      <mapping>
+        <identity value="zib-dispenserequest-v1.0.3-2020EN" />
+        <map value="NL-CM:9.10.20068" />
+        <comment value="DispenseLocation" />
+      </mapping>
     </element>
     <element id="MedicationRequest.dispenseRequest.validityPeriod">
       <path value="MedicationRequest.dispenseRequest.validityPeriod" />

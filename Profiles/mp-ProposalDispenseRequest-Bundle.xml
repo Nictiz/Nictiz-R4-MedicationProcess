@@ -105,11 +105,23 @@
       <path value="Bundle.entry.resource.extension" />
       <sliceName value="proposalComment" />
       <min value="0" />
+      <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-ProposalComment" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-Comment" />
       </type>
       <isModifier value="false" />
+    </element>
+    <element id="Bundle.entry:proposalDispenseRequest.resource.extension:proposalComment.value[x]">
+      <path value="Bundle.entry.resource.extension.value[x]" />
+      <label value="Toelichting" />
+      <short value="Comment" />
+      <definition value="Comments regarding the proposal." />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-538" />
+        <comment value="Comment" />
+      </mapping>
     </element>
     <element id="Bundle.entry:proposalDispenseRequest.resource.identifier">
       <path value="Bundle.entry.resource.identifier" />

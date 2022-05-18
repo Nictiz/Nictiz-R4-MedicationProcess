@@ -24,6 +24,11 @@
     <name value="zib AdministrationAgreement-v1.0.3(2020EN)" />
   </mapping>
   <mapping>
+    <identity value="zib-instructionsforuse-v1.2.1-2020EN" />
+    <uri value="https://zibs.nl/wiki/InstructionsForUse-v1.2.1(2020EN)" />
+    <name value="zib InstructionsForUse-v1.2.1(2020EN)" />
+  </mapping>
+  <mapping>
     <identity value="Medication-Process-v9-2-0-0" />
     <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20220402T205710/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-01-05T132845.html" />
     <name value="MP9 v2.0.0" />
@@ -64,6 +69,14 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdministrationAgreement.AdditionalInformation" />
       </type>
     </element>
+    <element id="MedicationDispense.extension:additionalInformation.value[x]">
+      <path value="MedicationDispense.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-342" />
+        <comment value="AdministrationAgreementAdditionalInformation" />
+      </mapping>
+    </element>
     <element id="MedicationDispense.extension:reasonModificationOrDiscontinuation">
       <path value="MedicationDispense.extension" />
       <sliceName value="reasonModificationOrDiscontinuation" />
@@ -73,6 +86,14 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdministrationAgreement.ReasonModificationOrDiscontinuation" />
       </type>
     </element>
+    <element id="MedicationDispense.extension:reasonModificationOrDiscontinuation.value[x]">
+      <path value="MedicationDispense.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-333" />
+        <comment value="AdministrationAgreementReasonModificationOrDiscontinuation" />
+      </mapping>
+    </element>
     <element id="MedicationDispense.extension:administrationAgreementDateTime">
       <path value="MedicationDispense.extension" />
       <sliceName value="administrationAgreementDateTime" />
@@ -81,6 +102,14 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdministrationAgreement.AdministrationAgreementDateTime" />
       </type>
+    </element>
+    <element id="MedicationDispense.extension:administrationAgreementDateTime.value[x]">
+      <path value="MedicationDispense.extension.value[x]" />
+      <mapping>
+        <identity value="zib-administrationagreement-v1.0.3-2020EN" />
+        <map value="NL-CM:9.8.20133" />
+        <comment value="AdministrationAgreementDateTime" />
+      </mapping>
     </element>
     <element id="MedicationDispense.extension:renderedDosageInstruction">
       <path value="MedicationDispense.extension" />
@@ -142,6 +171,14 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier" />
       </type>
     </element>
+    <element id="MedicationDispense.extension:pharmaceuticalTreatmentIdentifier.value[x]">
+      <path value="MedicationDispense.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-42" />
+        <comment value="Identification" />
+      </mapping>
+    </element>
     <element id="MedicationDispense.extension:distributionForm">
       <path value="MedicationDispense.extension" />
       <sliceName value="distributionForm" />
@@ -198,6 +235,14 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-InstructionsForUse.RepeatPeriodCyclicalSchedule" />
       </type>
+    </element>
+    <element id="MedicationDispense.modifierExtension:repeatPeriodCyclicalSchedule.value[x]">
+      <path value="MedicationDispense.modifierExtension.value[x]" />
+      <mapping>
+        <identity value="zib-instructionsforuse-v1.2.1-2020EN" />
+        <map value="NL-CM:9.12.22505" />
+        <comment value="RepeatPeriodCyclicalSchedule" />
+      </mapping>
     </element>
     <element id="MedicationDispense.identifier">
       <path value="MedicationDispense.identifier" />
