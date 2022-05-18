@@ -110,7 +110,6 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-Comment" />
       </type>
-      <isModifier value="false" />
     </element>
     <element id="Bundle.entry:proposalMedicationAgreement.resource.extension:proposalComment.value[x]">
       <path value="Bundle.entry.resource.extension.value[x]" />

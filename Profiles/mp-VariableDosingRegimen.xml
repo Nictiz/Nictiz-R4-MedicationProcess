@@ -144,23 +144,6 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="MedicationRequest.modifierExtension:repeatPeriodCyclicalSchedule">
-      <path value="MedicationRequest.modifierExtension" />
-      <sliceName value="repeatPeriodCyclicalSchedule" />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-InstructionsForUse.RepeatPeriodCyclicalSchedule" />
-      </type>
-    </element>
-    <element id="MedicationRequest.modifierExtension:repeatPeriodCyclicalSchedule.value[x]">
-      <path value="MedicationRequest.modifierExtension.value[x]" />
-      <mapping>
-        <identity value="zib-instructionsforuse-v1.2.1-2020EN" />
-        <map value="NL-CM:9.12.22505" />
-        <comment value="RepeatPeriodCyclicalSchedule" />
-      </mapping>
-    </element>
     <element id="MedicationRequest.modifierExtension:stopType">
       <path value="MedicationRequest.modifierExtension" />
       <sliceName value="stopType" />
@@ -183,6 +166,23 @@
         <identity value="Medication-Process-v9-2-0-0" />
         <map value="mp-dataelement920-1171" />
         <comment value="VariableDosingRegimenStopType" />
+      </mapping>
+    </element>
+    <element id="MedicationRequest.modifierExtension:repeatPeriodCyclicalSchedule">
+      <path value="MedicationRequest.modifierExtension" />
+      <sliceName value="repeatPeriodCyclicalSchedule" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-InstructionsForUse.RepeatPeriodCyclicalSchedule" />
+      </type>
+    </element>
+    <element id="MedicationRequest.modifierExtension:repeatPeriodCyclicalSchedule.value[x]">
+      <path value="MedicationRequest.modifierExtension.value[x]" />
+      <mapping>
+        <identity value="zib-instructionsforuse-v1.2.1-2020EN" />
+        <map value="NL-CM:9.12.22505" />
+        <comment value="RepeatPeriodCyclicalSchedule" />
       </mapping>
     </element>
     <element id="MedicationRequest.identifier">

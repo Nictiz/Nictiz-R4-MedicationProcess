@@ -183,7 +183,6 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationDispense.DistributionForm" />
       </type>
-      <isModifier value="false" />
     </element>
     <element id="MedicationDispense.extension:distributionForm.value[x]">
       <path value="MedicationDispense.extension.value[x]" />
