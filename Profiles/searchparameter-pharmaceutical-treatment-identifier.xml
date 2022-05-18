@@ -13,7 +13,7 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="Searches on the value provided in the pharmaceutical treatment identifier extension ('http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier') in the following resources: 
+  <description value="Searches on the value provided in the pharmaceutical treatment identifier extension (http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier) in the following resources: 
     * [MedicationRequest](http://hl7.org/fhir/r4/medicationrequest.html)
     * [MedicationDispense](http://hl7.org/fhir/r4/medicationdispense.html)
     * [MedicationStatement](http://hl7.org/fhir/r4/medicationstatement.html)

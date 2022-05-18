@@ -16,7 +16,7 @@
   <description value="The classification or categorization of the resource. Works on multiple resources:
     * [MedicationDispense](http://hl7.org/fhir/medicationdispense.html): Return dispenses based on the value of category.
     * [MedicationAdministration](http://hl7.org/fhir/medicationadministration.html): Return administrations based on the value of category."/>
-  <purpose value="To select instances based the value of the `category` element for resources that do not have a SearchParameter defined by the base FHIR spec for this element."/>
+  <purpose value="To select instances based the value of the `.category` element for resources that do not have a SearchParameter defined by the base FHIR spec for this element."/>
   <code value="category"/>
   <base value="MedicationDispense"/>
   <base value="MedicationAdministration"/>
