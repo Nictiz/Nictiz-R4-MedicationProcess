@@ -28,6 +28,7 @@
     <mode value="client"/>
     <resource>
       <type value="MedicationRequest"/>
+      <documentation value="Minimal requirements for a client to fulfill the 'Send medication data' transaction (system role: MP-MGS)."/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest"/>
@@ -200,6 +201,7 @@
     <mode value="server"/>
     <resource>
       <type value="MedicationRequest"/>
+      <documentation value="Minimal requirements for a server to fulfill the 'Receive medication data' transaction (system role: MP-MGO)."/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest"/>

@@ -26,6 +26,7 @@
   <format value="json"/>
   <rest>
     <mode value="client"/>
+    <documentation value="Minimal requirements for a client to fulfill the 'Retrieve medication data' transaction (system role: MP-MGR)."/>
     <resource>
       <type value="MedicationRequest"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
@@ -198,6 +199,7 @@
   </rest>
   <rest>
     <mode value="server"/>
+    <documentation value="Minimal requirements for a server to fulfill the 'Serve medication data' transaction (system role: MP-MGB)."/>
     <resource>
       <type value="MedicationRequest"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>

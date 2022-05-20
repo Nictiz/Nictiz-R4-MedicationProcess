@@ -26,6 +26,7 @@
   <format value="json"/>
   <rest>
     <mode value="client"/>
+    <documentation value="Minimal requirements for a client to fulfill the 'Send proposal medication agreement' transaction (system role: MP-VMS)."/>
     <resource>
       <type value="Bundle" />
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-ProposalMedicationAgreement-Bundle"/>
@@ -94,6 +95,7 @@
   </rest>
   <rest>
     <mode value="server"/>
+    <documentation value="Minimal requirements for a server to fulfill the 'Receive proposal medication agreement' transaction (system role: MP-VMO)."/>
     <resource>
       <type value="Bundle" />
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-ProposalMedicationAgreement-Bundle"/>

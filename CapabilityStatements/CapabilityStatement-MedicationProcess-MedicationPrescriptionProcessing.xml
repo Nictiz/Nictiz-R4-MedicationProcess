@@ -26,6 +26,7 @@
   <format value="json"/>
   <rest>
     <mode value="client"/>
+    <documentation value="Minimal requirements for a client to fulfill the 'Send medication prescription processing' transaction (system role: MP-VAS)."/>
     <resource>
       <type value="Bundle" />
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationPrescriptionProcessing-Bundle"/>
@@ -100,6 +101,7 @@
   </rest>
   <rest>
     <mode value="server"/>
+    <documentation value="Minimal requirements for a server to fulfill the 'Receive medication prescription processing' transaction (system role: MP-VAO)."/>
     <resource>
       <type value="Bundle" />
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationPrescriptionProcessing-Bundle"/>

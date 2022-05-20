@@ -26,6 +26,7 @@
   <format value="json"/>
   <rest>
     <mode value="client"/>
+    <documentation value="Minimal requirements for a client to fulfill the 'Send reply proposal dispense request' transaction (system role: MP-VVO)."/>
     <resource>
       <type value="Bundle" />
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-ReplyProposalDispenseRequest-Bundle"/>
@@ -58,6 +59,7 @@
   </rest>
   <rest>
     <mode value="server"/>
+    <documentation value="Minimal requirements for a server to fulfill the 'Receive reply proposal dispense request' transaction (system role: MP-VVS)."/>
     <resource>
       <type value="Bundle" />
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-ReplyProposalDispenseRequest-Bundle"/>
