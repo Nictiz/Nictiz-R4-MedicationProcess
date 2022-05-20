@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CapabilityStatement xmlns="http://hl7.org/fhir"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/capabilitystatement.xsd">
+  <id value="MedicationProcess-ReplyProposalDispenseRequest"/>
+  <url value="http://nictiz.nl/fhir/CapabilityStatement/MedicationProcess-ReplyProposalDispenseRequest"/>
+  <version value="0.0.1"/>
+  <name value="MedicationProcess_ReplyProposalDispenseRequest"/>
+  <status value="active"/>
+  <date value="2022-06-01"/>
+  <publisher value="Nictiz"/>
+  <contact>
+    <name value="Nictiz"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.nictiz.nl"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="This CapabilityStatement describes the minimal requirements for a client/server to fulfill the 'Send/Receive reply proposal dispense request' transaction within Medication Process 9 (MP9) version 2.0.0. See [Landingspagina Medicatieproces](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces) for additional information."/>
+  <purpose value="This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide of the corresponding information standard should be consulted."/>
+  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
+  <kind value="requirements"/>
+  <fhirVersion value="4.0.1"/>
+  <format value="xml"/>
+  <format value="json"/>
+  <rest>
+    <mode value="client"/>
+    <resource>
+      <type value="Bundle" />
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-ReplyProposalDispenseRequest-Bundle"/>
+    </resource>
+    <resource>
+      <type value="Communication"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-ReplyProposalDispenseRequest"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Patient"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+      </searchParam>
+    </resource>
+    <interaction>
+      <code value="transaction"/>
+    </interaction>
+  </rest>
+  <rest>
+    <mode value="server"/>
+    <resource>
+      <type value="Bundle" />
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-ReplyProposalDispenseRequest-Bundle"/>
+    </resource>
+    <resource>
+      <type value="Communication"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-ReplyProposalDispenseRequest"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Patient"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+      </searchParam>
+    </resource>
+    <interaction>
+      <code value="transaction"/>
+    </interaction>
+  </rest>
+</CapabilityStatement>
