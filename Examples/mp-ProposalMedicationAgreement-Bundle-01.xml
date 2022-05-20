@@ -98,6 +98,10 @@
                 </dosageInstruction>
             </MedicationRequest>
         </resource>
+        <request>
+            <method value="POST"/>
+            <url value="MedicationRequest"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/Patient/nl-core-Patient-01"/>
@@ -421,6 +425,10 @@
                 </code>
             </Medication>
         </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Medication"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/PractitionerRole/nl-core-MedicationAgreement-01-PractitionerRole-01"/>
@@ -437,6 +445,10 @@
                 </practitioner>
             </PractitionerRole>
         </resource>
+        <request>
+            <method value="POST"/>
+            <url value="PractitionerRole"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/PractitionerRole/nl-core-MedicationAgreement-01-Practitioner-01"/>
@@ -462,6 +474,10 @@
                 </name>
             </Practitioner>
         </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Practitioner"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/Observation/mp-BodyWeight-01"/>
@@ -500,6 +516,10 @@
                 </valueQuantity>
             </Observation>
         </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Observation"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/Observation/nl-core-BodyHeight-01"/>
@@ -557,5 +577,9 @@
                 </component>
             </Observation>
         </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Observation"/>
+        </request>
     </entry>
 </Bundle>

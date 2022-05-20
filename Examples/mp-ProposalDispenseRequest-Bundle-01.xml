@@ -88,6 +88,10 @@
                 </dispenseRequest>
             </MedicationRequest>
         </resource>
+        <request>
+            <method value="POST"/>
+            <url value="MedicationRequest"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/Patient/nl-core-Patient-01"/>
@@ -391,6 +395,10 @@
                 </communication>
             </Patient>
         </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Patient"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/Medication/nl-core-DispenseRequest-01-Medication-01"/>
@@ -411,6 +419,10 @@
                 </code>
             </Medication>
         </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Medication"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/Organization/nl-core-AdministrationAgreement-01-Organization-01"/>
@@ -423,5 +435,9 @@
                 <name value="Apotheek De Gulle Gaper"/>
             </Organization>
         </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Organization"/>
+        </request>
     </entry>
 </Bundle>

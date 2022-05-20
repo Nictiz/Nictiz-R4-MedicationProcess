@@ -116,6 +116,10 @@
                 </dosageInstruction>
             </MedicationDispense>
         </resource>
+        <request>
+            <method value="POST"/>
+            <url value="MedicationDispense"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/MedicationDispense/mp-MedicationDispense-01"/>
@@ -175,6 +179,10 @@
                 </daysSupply>
             </MedicationDispense>
         </resource>
+        <request>
+            <method value="POST"/>
+            <url value="MedicationDispense"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/Patient/nl-core-Patient-01"/>
@@ -478,6 +486,10 @@
                 </communication>
             </Patient>
         </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Patient"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/Medication/nl-core-AdministrationAgreement-01-Medication-01"/>
@@ -498,6 +510,10 @@
                 </code>
             </Medication>
         </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Medication"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/Medication/nl-core-MedicationDispense-01-Medication-01"/>
@@ -518,6 +534,10 @@
                 </code>
             </Medication>
         </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Medication"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/Organization/nl-core-AdministrationAgreement-01-Organization-01"/>
@@ -530,6 +550,10 @@
                 <name value="Apotheek De Gulle Gaper"/>
             </Organization>
         </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Organization"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/PractitionerRole/nl-core-MedicationAgreement-01-PractitionerRole-01"/>
@@ -546,6 +570,10 @@
                 </practitioner>
             </PractitionerRole>
         </resource>
+        <request>
+            <method value="POST"/>
+            <url value="PractitionerRole"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="http://nictiz2.wildfhir.org/fhir3-0-2-i2/PractitionerRole/nl-core-MedicationAgreement-01-Practitioner-01"/>
@@ -571,5 +599,9 @@
                 </name>
             </Practitioner>
         </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Practitioner"/>
+        </request>
     </entry>
 </Bundle>
