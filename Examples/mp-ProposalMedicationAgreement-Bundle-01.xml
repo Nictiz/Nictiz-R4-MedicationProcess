@@ -16,7 +16,7 @@
             <MedicationRequest>
                 <id value="mp-ProposalMedicationAgreement-01"/>
                 <meta>
-                    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationAgreement"/>
+                    <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
                     <tag>
                         <system value="http://terminology.hl7.org/CodeSystem/common-tags"/>
                         <code value="actionable"/>

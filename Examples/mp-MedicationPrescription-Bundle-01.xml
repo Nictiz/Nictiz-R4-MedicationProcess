@@ -16,7 +16,7 @@
             <MedicationRequest>
                 <id value="mp-MedicationAgreement-01"/>
                 <meta>
-                    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationAgreement"/>
+                    <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
                     <tag>
                         <system value="http://terminology.hl7.org/CodeSystem/common-tags"/>
                         <code value="actionable"/>
@@ -109,7 +109,7 @@
             <MedicationRequest>
                 <id value="mp-DispenseRequest-01"/>
                 <meta>
-                    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-DispenseRequest"/>
+                    <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest"/>
                     <tag>
                         <system value="http://terminology.hl7.org/CodeSystem/common-tags"/>
                         <code value="actionable"/>
@@ -156,7 +156,7 @@
                 <dispenseRequest>
                     <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.DispenseLocation">
                         <valueReference>
-                            <reference value="Location/nl-core-DispenseRequest-01"/>
+                            <reference value="Location/nl-core-DispenseRequest-01-Location-01"/>
                             <type value="Location"/>
                             <display value="afleverlocatie"/>
                         </valueReference>

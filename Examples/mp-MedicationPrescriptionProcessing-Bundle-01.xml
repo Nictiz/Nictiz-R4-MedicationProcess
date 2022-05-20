@@ -16,7 +16,7 @@
             <MedicationDispense>
                 <id value="mp-AdministrationAgreement-01"/>
                 <meta>
-                    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-AdministrationAgreement"/>
+                    <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement"/>
                     <tag>
                         <system value="http://terminology.hl7.org/CodeSystem/common-tags"/>
                         <code value="actionable"/>
@@ -127,7 +127,7 @@
             <MedicationDispense>
                 <id value="mp-MedicationDispense-01"/>
                 <meta>
-                    <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicationDispense"/>
+                    <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationDispense"/>
                     <tag>
                         <system value="http://terminology.hl7.org/CodeSystem/common-tags"/>
                         <code value="actionable"/>
