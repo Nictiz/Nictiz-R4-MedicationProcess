@@ -35,34 +35,6 @@
       <interaction>
         <code value="create"/>
       </interaction>
-      <searchInclude value="MedicationRequest:patient"/>
-      <searchInclude value="MedicationRequest:medication"/>
-      <searchParam>
-        <name value="patient"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="pharmaceutical-treatment-identifier"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="category"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="medication"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="period-of-use"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
-        <type value="date"/>
-      </searchParam>
     </resource>
     <resource>
       <type value="MedicationDispense"/>
@@ -71,39 +43,6 @@
       <interaction>
         <code value="create"/>
       </interaction>
-      <searchInclude value="MedicationDispense:patient"/>
-      <searchInclude value="MedicationDispense:medication"/>
-      <searchParam>
-        <name value="patient"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="pharmaceutical-treatment-identifier"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="category"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/category"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="medication"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="period-of-use"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
-        <type value="date"/>
-      </searchParam>
-      <searchParam>
-        <name value="whenhandedover"/>
-        <type value="date"/>
-      </searchParam>
     </resource>
     <resource>
       <type value="MedicationStatement"/>
@@ -111,29 +50,6 @@
       <interaction>
         <code value="create"/>
       </interaction>
-      <searchInclude value="MedicationStatement:patient"/>
-      <searchInclude value="MedicationStatement:medication"/>
-      <searchParam>
-        <name value="patient"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="pharmaceutical-treatment-identifier"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="category"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="medication"/>
-        <type value="reference"/>
-      </searchParam>
     </resource>
     <resource>
       <type value="MedicationAdministration"/>
@@ -141,34 +57,6 @@
       <interaction>
         <code value="create"/>
       </interaction>
-      <searchInclude value="MedicationAdministration:patient"/>
-      <searchInclude value="MedicationAdministration:medication"/>
-      <searchParam>
-        <name value="patient"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="pharmaceutical-treatment-identifier"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="category"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/category"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="medication"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="effective-time"/>
-        <type value="date"/>
-      </searchParam>
     </resource>
     <resource>
       <type value="Patient"/>
@@ -176,10 +64,6 @@
       <interaction>
         <code value="create"/>
       </interaction>
-      <searchParam>
-        <name value="identifier"/>
-        <type value="token"/>
-      </searchParam>
     </resource>
     <resource>
       <type value="Medication"/>
@@ -187,11 +71,6 @@
       <interaction>
         <code value="create"/>
       </interaction>
-      <searchParam>
-        <name value="code"/>
-        <type value="token"/>
-        <documentation value="This search parameter only needs to be supported as a chained search parameter (i.e. as `medication.code` on MedicationRequest, MedicationDispense, MedicationStatement and MedicationAdministration)."/>
-      </searchParam>
     </resource>
     <interaction>
       <code value="search-system"/>
@@ -208,34 +87,6 @@
       <interaction>
         <code value="create"/>
       </interaction>
-      <searchInclude value="MedicationRequest:patient"/>
-      <searchInclude value="MedicationRequest:medication"/>
-      <searchParam>
-        <name value="patient"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="pharmaceutical-treatment-identifier"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="category"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="medication"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="period-of-use"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
-        <type value="date"/>
-      </searchParam>
     </resource>
     <resource>
       <type value="MedicationDispense"/>
@@ -244,39 +95,6 @@
       <interaction>
         <code value="create"/>
       </interaction>
-      <searchInclude value="MedicationDispense:patient"/>
-      <searchInclude value="MedicationDispense:medication"/>
-      <searchParam>
-        <name value="patient"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="pharmaceutical-treatment-identifier"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="category"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/category"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="medication"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="period-of-use"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
-        <type value="date"/>
-      </searchParam>
-      <searchParam>
-        <name value="whenhandedover"/>
-        <type value="date"/>
-      </searchParam>
     </resource>
     <resource>
       <type value="MedicationStatement"/>
@@ -284,29 +102,6 @@
       <interaction>
         <code value="create"/>
       </interaction>
-      <searchInclude value="MedicationStatement:patient"/>
-      <searchInclude value="MedicationStatement:medication"/>
-      <searchParam>
-        <name value="patient"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="pharmaceutical-treatment-identifier"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="category"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="medication"/>
-        <type value="reference"/>
-      </searchParam>
     </resource>
     <resource>
       <type value="MedicationAdministration"/>
@@ -314,34 +109,6 @@
       <interaction>
         <code value="create"/>
       </interaction>
-      <searchInclude value="MedicationAdministration:patient"/>
-      <searchInclude value="MedicationAdministration:medication"/>
-      <searchParam>
-        <name value="patient"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="pharmaceutical-treatment-identifier"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="category"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/category"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="medication"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="effective-time"/>
-        <type value="date"/>
-      </searchParam>
     </resource>
     <resource>
       <type value="Patient"/>
@@ -349,10 +116,6 @@
       <interaction>
         <code value="create"/>
       </interaction>
-      <searchParam>
-        <name value="identifier"/>
-        <type value="token"/>
-      </searchParam>
     </resource>
     <resource>
       <type value="Medication"/>
@@ -360,11 +123,6 @@
       <interaction>
         <code value="create"/>
       </interaction>
-      <searchParam>
-        <name value="code"/>
-        <type value="token"/>
-        <documentation value="This search parameter only needs to be supported as a chained search parameter (i.e. as `medication.code` on MedicationRequest, MedicationDispense, MedicationStatement and MedicationAdministration)."/>
-      </searchParam>
     </resource>
     <interaction>
       <code value="search-system"/>

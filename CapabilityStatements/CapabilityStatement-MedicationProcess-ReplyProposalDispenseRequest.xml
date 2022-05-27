@@ -37,10 +37,6 @@
       <interaction>
         <code value="create"/>
       </interaction>
-      <searchParam>
-        <name value="identifier"/>
-        <type value="token"/>
-      </searchParam>
     </resource>
     <resource>
       <type value="Patient"/>
@@ -48,10 +44,6 @@
       <interaction>
         <code value="create"/>
       </interaction>
-      <searchParam>
-        <name value="identifier"/>
-        <type value="token"/>
-      </searchParam>
     </resource>
     <interaction>
       <code value="transaction"/>
@@ -70,10 +62,6 @@
       <interaction>
         <code value="create"/>
       </interaction>
-      <searchParam>
-        <name value="identifier"/>
-        <type value="token"/>
-      </searchParam>
     </resource>
     <resource>
       <type value="Patient"/>
@@ -81,10 +69,6 @@
       <interaction>
         <code value="create"/>
       </interaction>
-      <searchParam>
-        <name value="identifier"/>
-        <type value="token"/>
-      </searchParam>
     </resource>
     <interaction>
       <code value="transaction"/>
