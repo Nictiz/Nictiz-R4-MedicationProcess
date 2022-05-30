@@ -37,7 +37,7 @@
       <path value="Bundle.entry" />
       <slicing>
         <discriminator>
-          <type value="type" />
+          <type value="profile" />
           <path value="resource" />
         </discriminator>
         <rules value="open" />
@@ -193,7 +193,6 @@
     <element id="Bundle.entry:patient">
       <path value="Bundle.entry" />
       <sliceName value="patient" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Bundle.entry:patient.resource">
@@ -212,7 +211,6 @@
     <element id="Bundle.entry:pharmaceuticalProduct">
       <path value="Bundle.entry" />
       <sliceName value="pharmaceuticalProduct" />
-      <min value="1" />
     </element>
     <element id="Bundle.entry:pharmaceuticalProduct.resource">
       <path value="Bundle.entry.resource" />
