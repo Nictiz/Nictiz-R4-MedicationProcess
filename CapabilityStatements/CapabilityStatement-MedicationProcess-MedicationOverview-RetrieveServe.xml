@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CapabilityStatement xmlns="http://hl7.org/fhir"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/capabilitystatement.xsd">
+  <id value="MedicationProcess-MedicationOverview-RetrieveServe"/>
+  <url value="http://nictiz.nl/fhir/CapabilityStatement/MedicationProcess-MedicationOverview-RetrieveServe"/>
+  <version value="0.0.1"/>
+  <name value="MedicationProcess_MedicationOverview_RetrieveServe"/>
+  <status value="active"/>
+  <date value="2022-06-01"/>
+  <publisher value="Nictiz"/>
+  <contact>
+    <name value="Nictiz"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.nictiz.nl"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="This CapabilityStatement describes the minimal requirements for a client/server to fulfill the 'Retrieve/Serve medication overview' transaction within Medication Process 9 (MP9) version 2.0.0. See [Landingspagina Medicatieproces](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces) for additional information."/>
+  <purpose value="This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide of the corresponding information standard should be consulted."/>
+  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
+  <kind value="requirements"/>
+  <fhirVersion value="4.0.1"/>
+  <format value="xml"/>
+  <format value="json"/>
+  <rest>
+    <mode value="client"/>
+    <documentation value="Minimal requirements for a client to fulfill the 'Retrieve medication overview' transaction (system role: MP-MOR)."/>
+    <resource>
+      <type value="Bundle" />
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationOverview-Bundle"/>
+    </resource>
+    <resource>
+      <type value="List" />
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationOverview"/>
+    </resource>
+    <resource>
+      <type value="MedicationRequest"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchInclude value="MedicationRequest:patient"/>
+      <searchInclude value="MedicationRequest:medication"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <name value="pharmaceutical-treatment-identifier"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <name value="category"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <name value="medication"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="period-of-use"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
+        <type value="date"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="MedicationDispense"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchInclude value="MedicationDispense:patient"/>
+      <searchInclude value="MedicationDispense:medication"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <name value="pharmaceutical-treatment-identifier"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <name value="category"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/category"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <name value="medication"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="period-of-use"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
+        <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <name value="whenhandedover"/>
+        <type value="date"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="MedicationStatement"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationUse2"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchInclude value="MedicationStatement:patient"/>
+      <searchInclude value="MedicationStatement:medication"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <name value="pharmaceutical-treatment-identifier"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <name value="category"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <name value="medication"/>
+        <type value="reference"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Patient"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Medication"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <name value="code"/>
+        <type value="token"/>
+        <documentation value="This search parameter only needs to be supported as a chained search parameter (i.e. as `medication.code` on MedicationRequest, MedicationDispense and MedicationStatement)."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Observation"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyHeight"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyWeight"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <name value="code"/>
+        <type value="token"/>
+      </searchParam>
+    </resource>
+    <interaction>
+      <code value="search-system"/>
+    </interaction>
+    <operation>
+      <name value="Medication-Overview"/>
+      <definition value="http://nictiz.nl/fhir/OperationDefinition/Medication-Overview"/>
+    </operation>
+  </rest>
+  <rest>
+    <mode value="server"/>
+    <documentation value="Minimal requirements for a server to fulfill the 'Serve medication overview' transaction (system role: MP-MOB)."/>
+    <resource>
+      <type value="Bundle" />
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationOverview-Bundle"/>
+    </resource>
+    <resource>
+      <type value="List" />
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationOverview"/>
+    </resource>
+    <resource>
+      <type value="MedicationRequest"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchInclude value="MedicationRequest:patient"/>
+      <searchInclude value="MedicationRequest:medication"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <name value="pharmaceutical-treatment-identifier"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <name value="category"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <name value="medication"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="period-of-use"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
+        <type value="date"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="MedicationDispense"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchInclude value="MedicationDispense:patient"/>
+      <searchInclude value="MedicationDispense:medication"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <name value="pharmaceutical-treatment-identifier"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <name value="category"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/category"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <name value="medication"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="period-of-use"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
+        <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <name value="whenhandedover"/>
+        <type value="date"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="MedicationStatement"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationUse2"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchInclude value="MedicationStatement:patient"/>
+      <searchInclude value="MedicationStatement:medication"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <name value="pharmaceutical-treatment-identifier"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <name value="category"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <name value="medication"/>
+        <type value="reference"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Patient"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Medication"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <name value="code"/>
+        <type value="token"/>
+        <documentation value="This search parameter only needs to be supported as a chained search parameter (i.e. as `medication.code` on MedicationRequest, MedicationDispense and MedicationStatement)."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Observation"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyHeight"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyWeight"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <name value="code"/>
+        <type value="token"/>
+      </searchParam>
+    </resource>
+    <interaction>
+      <code value="search-system"/>
+    </interaction>
+    <operation>
+      <name value="Medication-Overview"/>
+      <definition value="http://nictiz.nl/fhir/OperationDefinition/Medication-Overview"/>
+    </operation>
+  </rest>
+</CapabilityStatement>
