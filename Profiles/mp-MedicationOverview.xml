@@ -225,6 +225,17 @@
         <comment value="MedicationUse" />
       </mapping>
     </element>
+    <element id="List.entry:pharmaceuticalProduct">
+      <path value="List.entry" />
+      <sliceName value="pharmaceuticalProduct" />
+    </element>
+    <element id="List.entry:pharmaceuticalProduct.item">
+      <path value="List.entry.item" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct" />
+      </type>
+    </element>
     <element id="List.entry:bodyHeight">
       <path value="List.entry" />
       <sliceName value="bodyHeight" />
