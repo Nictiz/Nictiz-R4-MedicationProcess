@@ -41,7 +41,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="2" />
+      <min value="1" />
     </element>
     <element id="Bundle.entry:list">
       <path value="Bundle.entry" />

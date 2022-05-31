@@ -42,7 +42,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="3" />
+      <min value="1" />
     </element>
     <element id="Bundle.entry:proposalMedicationAgreement">
       <path value="Bundle.entry" />
