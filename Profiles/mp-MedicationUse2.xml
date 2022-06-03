@@ -381,7 +381,7 @@
       <alias value="Gebruiksperiode" />
       <type>
         <code value="Period" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-TimeInterval" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-TimeInterval" />
       </type>
       <mapping>
         <identity value="zib-medicationuse2-v1.1.1-2020EN" />
