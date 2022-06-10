@@ -61,6 +61,34 @@
         <code value="create"/>
       </interaction>
     </resource>
+    <resource>
+      <type value="PractitionerRole"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Practitioner"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Location"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Organization"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
     <interaction>
       <code value="transaction"/>
     </interaction>
@@ -98,6 +126,34 @@
       <type value="Observation"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyHeight"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyWeight"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>    
+    <resource>
+      <type value="PractitionerRole"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Practitioner"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Location"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Organization"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"/>
       <interaction>
         <code value="create"/>
       </interaction>

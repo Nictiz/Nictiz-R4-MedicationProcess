@@ -193,6 +193,46 @@
         <documentation value="This search parameter only needs to be supported as a chained search parameter (i.e. as `medication.code` on MedicationRequest, MedicationDispense, MedicationStatement and MedicationAdministration)."/>
       </searchParam>
     </resource>
+    <resource>
+      <type value="RelatedPerson"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson"/>
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle. For a client support of the read interaction is mandatory."/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="PractitionerRole"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"/>
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle. For a client support of the read interaction is mandatory."/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Practitioner"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"/>
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle. For a client support of the read interaction is mandatory."/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Location"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"/>
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle. For a client support of the read interaction is mandatory."/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Organization"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"/>
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle. For a client support of the read interaction is mandatory."/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+    </resource>
     <interaction>
       <code value="search-system"/>
     </interaction>
@@ -365,6 +405,31 @@
         <type value="token"/>
         <documentation value="This search parameter only needs to be supported as a chained search parameter (i.e. as `medication.code` on MedicationRequest, MedicationDispense, MedicationStatement and MedicationAdministration)."/>
       </searchParam>
+    </resource>
+    <resource>
+      <type value="RelatedPerson"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson"/>
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle."/>
+    </resource>
+    <resource>
+      <type value="PractitionerRole"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"/>
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle."/>
+    </resource>
+    <resource>
+      <type value="Practitioner"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"/>
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle."/>
+    </resource>
+    <resource>
+      <type value="Location"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"/>
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle."/>
+    </resource>
+    <resource>
+      <type value="Organization"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"/>
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle."/>
     </resource>
     <interaction>
       <code value="search-system"/>

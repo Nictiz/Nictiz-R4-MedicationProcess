@@ -72,6 +72,41 @@
         <code value="create"/>
       </interaction>
     </resource>
+    <resource>
+      <type value="RelatedPerson"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="PractitionerRole"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Practitioner"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Location"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Organization"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
     <interaction>
       <code value="search-system"/>
     </interaction>
@@ -120,6 +155,41 @@
     <resource>
       <type value="Medication"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="RelatedPerson"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="PractitionerRole"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Practitioner"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Location"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Organization"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"/>
       <interaction>
         <code value="create"/>
       </interaction>
