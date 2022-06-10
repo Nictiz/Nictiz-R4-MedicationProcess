@@ -2,12 +2,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/capabilitystatement.xsd">
-  <id value="MedicationProcess-MedicationPrescriptionProcessing"/>
-  <url value="http://nictiz.nl/fhir/CapabilityStatement/MedicationProcess-MedicationPrescriptionProcessing"/>
+  <id value="mp-ProposalMedicationAgreement"/>
+  <url value="http://nictiz.nl/fhir/CapabilityStatement/mp-ProposalMedicationAgreement"/>
   <version value="0.0.1"/>
-  <name value="MedicationProcess_MedicationPrescriptionProcessing"/>
+  <name value="mp ProposalMedicationAgreement"/>
   <status value="active"/>
-  <date value="2022-06-01"/>
+  <date value="2022-06-15"/>
   <publisher value="Nictiz"/>
   <contact>
     <name value="Nictiz"/>
@@ -17,7 +17,7 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="This CapabilityStatement describes the minimal requirements for a client/server to fulfill the 'Send/Receive medication prescription processing' transaction within Medication Process 9 (MP9) version 2.0.0. See [Landingspagina Medicatieproces](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces) for additional information."/>
+  <description value="This CapabilityStatement describes the minimal requirements for a client/server to fulfill the 'Send/Receive proposal medication agreement' transaction within Medication Process 9 (MP9) version 2.0.0. See [Landingspagina Medicatieproces](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces) for additional information."/>
   <purpose value="This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide of the corresponding information standard should be consulted."/>
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
   <kind value="requirements"/>
@@ -26,15 +26,14 @@
   <format value="json"/>
   <rest>
     <mode value="client"/>
-    <documentation value="Minimal requirements for a client to fulfill the 'Send medication prescription processing' transaction (system role: MP-VAS)."/>
+    <documentation value="Minimal requirements for a client to fulfill the 'Send proposal medication agreement' transaction (system role: MP-VMS)."/>
     <resource>
       <type value="Bundle" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationPrescriptionProcessing-Bundle"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-ProposalMedicationAgreement-Bundle"/>
     </resource>
     <resource>
-      <type value="MedicationDispense"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationDispense"/>
+      <type value="MedicationRequest"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
       <interaction>
         <code value="create"/>
       </interaction>
@@ -49,6 +48,28 @@
     <resource>
       <type value="Medication"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Observation"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyHeight"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyWeight"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="PractitionerRole"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Practitioner"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"/>
       <interaction>
         <code value="create"/>
       </interaction>
@@ -73,15 +94,14 @@
   </rest>
   <rest>
     <mode value="server"/>
-    <documentation value="Minimal requirements for a server to fulfill the 'Receive medication prescription processing' transaction (system role: MP-VAO)."/>
+    <documentation value="Minimal requirements for a server to fulfill the 'Receive proposal medication agreement' transaction (system role: MP-VMO)."/>
     <resource>
       <type value="Bundle" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationPrescriptionProcessing-Bundle"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-ProposalMedicationAgreement-Bundle"/>
     </resource>
     <resource>
-      <type value="MedicationDispense"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationDispense"/>
+      <type value="MedicationRequest"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
       <interaction>
         <code value="create"/>
       </interaction>
@@ -96,6 +116,28 @@
     <resource>
       <type value="Medication"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Observation"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyHeight"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyWeight"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="PractitionerRole"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Practitioner"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"/>
       <interaction>
         <code value="create"/>
       </interaction>

@@ -2,12 +2,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/capabilitystatement.xsd">
-  <id value="MedicationProcess-MedicationOverview-RetrieveServe"/>
-  <url value="http://nictiz.nl/fhir/CapabilityStatement/MedicationProcess-MedicationOverview-RetrieveServe"/>
+  <id value="mp-MedicationOverview.RetrieveServe"/>
+  <url value="http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationOverview.RetrieveServe"/>
   <version value="0.0.1"/>
-  <name value="MedicationProcess_MedicationOverview_RetrieveServe"/>
+  <name value="mp MedicationOverview.RetrieveServe"/>
   <status value="active"/>
-  <date value="2022-06-01"/>
+  <date value="2022-06-15"/>
   <publisher value="Nictiz"/>
   <contact>
     <name value="Nictiz"/>
