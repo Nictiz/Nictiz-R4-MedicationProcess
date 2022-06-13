@@ -146,7 +146,7 @@
       <mapping>
         <identity value="zib-instructionsforuse-v1.2.1-2020EN" />
         <map value="NL-CM:9.12.19950" />
-        <comment value="Interval (implicit, main mapping is on .frequency, .period and .periodMax)" />
+        <comment value="Interval (implicit, main mapping is on `.frequency`, `.period` and `.periodMax`)" />
       </mapping>
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />

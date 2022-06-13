@@ -139,7 +139,7 @@
       <mapping>
         <identity value="zib-medicationdispense-v2.0.2-2020EN" />
         <map value="NL-CM:9.9.20272" />
-        <comment value="MedicationDispenseDateTime (implicit, main mapping is on MedicationDispense.whenHandedOver)" />
+        <comment value="MedicationDispenseDateTime (implicit, main mapping is on `.whenHandedOver`)" />
       </mapping>
     </element>
     <element id="MedicationDispense.category">
@@ -299,7 +299,7 @@
       <mapping>
         <identity value="zib-medicationdispense-v2.0.2-2020EN" />
         <map value="NL-CM:9.9.20925" />
-        <comment value="DispenseLocation. Use Location.name." />
+        <comment value="DispenseLocation. Use `Location.name`." />
       </mapping>
     </element>
     <element id="MedicationDispense.note">

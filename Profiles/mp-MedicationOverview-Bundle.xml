@@ -15,7 +15,7 @@
     </telecom>
   </contact>
   <description value="Profile on the Bundle resource which represents the structure of the Retrieve MedicationOverview transaction conform information standard ['Medication Process'](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). The output of the ['$medication-overview'](https://simplifier.net/medicationprocess/medication-overview) operation SHALL conform to this profile." />
-  <purpose value="To define the body of the Retrieve MedicationOverview transaction. This profile should provide guidance for servers in constructing the medication-overview operation outcome and enabling validation against it. For clients this profile should be helpful in expecting the response format of the medication-overview outcome." />
+  <purpose value="To define the body of the Retrieve MedicationOverview transaction. This profile should provide guidance for servers in constructing the medication-overview operation outcome and enabling validation against it. For clients this profile should be helpful in expecting the response format of the medication-overview operation outcome." />
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />

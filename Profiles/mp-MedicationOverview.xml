@@ -32,6 +32,7 @@
     <element id="List">
       <path value="List" />
       <short value="DocumentData" />
+      <definition value="Document data." />
       <alias value="Documentgegevens" />
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
