@@ -49,12 +49,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="0" />
+      <min value="1" />
     </element>
     <element id="List.extension:verification">
       <path value="List.extension" />
       <sliceName value="verification" />
-      <min value="0" />
+      <min value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationOverview.Verification" />
