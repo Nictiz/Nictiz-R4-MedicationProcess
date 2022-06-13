@@ -70,6 +70,69 @@
         <comment value="VerificationHealthProfessional" />
       </mapping>
     </element>
+    <element id="List.extension:verification.extension">
+      <path value="List.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="List.extension:verification.extension:verificationPatient">
+      <path value="List.extension.extension" />
+      <sliceName value="verificationPatient" />
+      <min value="1" />
+    </element>
+    <element id="List.extension:verification.extension:verificationPatient.value[x]">
+      <path value="List.extension.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-507" />
+        <comment value="VerifiedWithPatient?" />
+      </mapping>
+    </element>
+    <element id="List.extension:verification.extension:verificationPatientDate">
+      <path value="List.extension.extension" />
+      <sliceName value="verificationPatientDate" />
+      <min value="0" />
+    </element>
+    <element id="List.extension:verification.extension:verificationPatientDate.value[x]">
+      <path value="List.extension.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-508" />
+        <comment value="VerificationDate" />
+      </mapping>
+    </element>
+    <element id="List.extension:verification.extension:verificationHealthProfessional">
+      <path value="List.extension.extension" />
+      <sliceName value="verificationHealthProfessional" />
+      <min value="1" />
+    </element>
+    <element id="List.extension:verification.extension:verificationHealthProfessional.value[x]">
+      <path value="List.extension.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-510" />
+        <comment value="VerifiedWithHealthProfessional?" />
+      </mapping>
+    </element>
+    <element id="List.extension:verification.extension:verificationHealthProfessionalDate">
+      <path value="List.extension.extension" />
+      <sliceName value="verificationHealthProfessionalDate" />
+      <min value="0" />
+    </element>
+    <element id="List.extension:verification.extension:verificationHealthProfessionalDate.value[x]">
+      <path value="List.extension.extension.value[x]" />
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-511" />
+        <comment value="VerificationDate" />
+      </mapping>
+    </element>
     <element id="List.code">
       <path value="List.code" />
       <min value="1" />
@@ -98,7 +161,7 @@
     <element id="List.date">
       <path value="List.date" />
       <short value="DocumentDate" />
-      <definition value="The date that the medication overview was prepared." />
+      <definition value="The time at which the medication overview was prepared." />
       <alias value="DocumentDatum" />
       <min value="1" />
       <mapping>
