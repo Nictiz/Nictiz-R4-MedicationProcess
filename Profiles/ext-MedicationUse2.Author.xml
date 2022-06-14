@@ -40,7 +40,6 @@
       <short value="Author" />
       <definition value="Information on who is the author of the MedicationUse2." />
       <alias value="Auteur" />
-      <min value="1" />
       <type>
         <code value="Reference" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-NlCoreHealthProfessionalReference" />

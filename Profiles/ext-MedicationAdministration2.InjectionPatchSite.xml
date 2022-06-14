@@ -40,7 +40,6 @@
       <short value="InjectionPatchSite" />
       <definition value="Site of the patient's body where an injection has been administered or where adhesive medical dressing has been applied." />
       <alias value="PrikPlakLocatie" />
-      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
