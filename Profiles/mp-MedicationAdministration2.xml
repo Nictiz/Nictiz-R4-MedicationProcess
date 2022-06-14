@@ -77,23 +77,6 @@
         <comment value="AgreedDateTime" />
       </mapping>
     </element>
-    <element id="MedicationAdministration.extension:doubleCheckPerformed">
-      <path value="MedicationAdministration.extension" />
-      <sliceName value="doubleCheckPerformed" />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.DoubleCheckPerformed" />
-      </type>
-    </element>
-    <element id="MedicationAdministration.extension:doubleCheckPerformed.value[x]">
-      <path value="MedicationAdministration.extension.value[x]" />
-      <mapping>
-        <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
-        <map value="NL-CM:9.13.23168" />
-        <comment value="DoubleCheckPerformed" />
-      </mapping>
-    </element>
     <element id="MedicationAdministration.extension:asAgreedIndicator">
       <path value="MedicationAdministration.extension" />
       <sliceName value="asAgreedIndicator" />
