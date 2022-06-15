@@ -18,7 +18,7 @@
     <base value="MedicationRequest"/>
     <base value="MedicationDispense"/>
     <type value="special"/>
-    <expression value="MedicationRequest.extension('http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period').value and MedicationRequest.extension('http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period').value.extension('http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Duration').value| MedicationDispense.extension('http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period').value and MedicationDispense.extension('http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period').value.extension('http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Duration').value"/>
+    <expression value="MedicationRequest.extension('http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period').value and MedicationRequest.extension('http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period').value.extension('http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Duration').value | MedicationDispense.extension('http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period').value and MedicationDispense.extension('http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period').value.extension('http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Duration').value"/>
     <comparator value="eq"/>
     <comparator value="le"/>
     <comparator value="lt"/>
