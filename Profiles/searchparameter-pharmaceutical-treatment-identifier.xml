@@ -3,7 +3,7 @@
   <id value="pharmaceutical-treatment-identifier"/>
   <url value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier" />
   <name value="PharmaceuticalTreatmentIdentifier" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />

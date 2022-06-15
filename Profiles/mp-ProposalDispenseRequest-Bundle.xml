@@ -4,7 +4,7 @@
   <url value="http://nictiz.nl/fhir/StructureDefinition/mp-ProposalDispenseRequest-Bundle" />
   <name value="MpProposalDispenseRequestBundle" />
   <title value="mp ProposalDispenseRequest Bundle" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />

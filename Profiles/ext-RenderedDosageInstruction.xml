@@ -4,7 +4,7 @@
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-RenderedDosageInstruction" />
   <name value="ExtRenderedDosageInstruction" />
   <title value="ext RenderedDosageInstruction" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />

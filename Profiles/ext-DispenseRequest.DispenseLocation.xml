@@ -4,7 +4,7 @@
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.DispenseLocation" />
   <name value="ExtDispenseRequestDispenseLocation" />
   <title value="ext DispenseRequest.DispenseLocation" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />

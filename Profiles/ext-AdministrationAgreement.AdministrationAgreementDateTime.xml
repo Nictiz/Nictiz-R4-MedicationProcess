@@ -4,7 +4,7 @@
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-AdministrationAgreement.AdministrationAgreementDateTime" />
   <name value="ExtAdministrationAgreementAdministrationAgreementDateTime" />
   <title value="ext AdministrationAgreement.AdministrationAgreementDateTime" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />

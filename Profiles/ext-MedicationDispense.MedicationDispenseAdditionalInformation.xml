@@ -4,7 +4,7 @@
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationDispense.MedicationDispenseAdditionalInformation" />
   <name value="ExtMedicationDispenseMedicationDispenseAdditionalInformation" />
   <title value="ext MedicationDispense.MedicationDispenseAdditionalInformation" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />

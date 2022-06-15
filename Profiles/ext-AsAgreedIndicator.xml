@@ -4,7 +4,7 @@
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-AsAgreedIndicator" />
   <name value="ExtAsAgreedIndicator" />
   <title value="ext AsAgreedIndicator" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />

@@ -4,7 +4,7 @@
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.InjectionPatchSite" />
   <name value="ExtMedicationAdministration2InjectionPatchSite" />
   <title value="ext MedicationAdministration2.InjectionPatchSite" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />

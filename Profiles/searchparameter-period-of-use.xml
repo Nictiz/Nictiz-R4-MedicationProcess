@@ -2,7 +2,7 @@
     <id value="period-of-use"/>
     <url value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
     <name value="PeriodOfUse"/>
-    <status value="draft"/>
+    <status value="active"/>
     <publisher value="Nictiz"/>
     <contact>
         <name value="Nictiz"/>

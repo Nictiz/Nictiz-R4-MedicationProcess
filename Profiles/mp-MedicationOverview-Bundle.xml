@@ -4,7 +4,7 @@
   <url value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationOverview-Bundle" />
   <name value="MpMedicationOverviewBundle" />
   <title value="mp MedicationOverview Bundle" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />

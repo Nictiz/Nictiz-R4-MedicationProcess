@@ -6,7 +6,7 @@
       <url value="http://nictiz.nl/fhir/ConceptMap/MedicatieToedieningStatusCodelijst-to-MedicationAdministrationStatusCodes"/>
       <name value="MedicatieToedieningStatusCodelijst_to_MedicationAdministrationStatusCodes"/>
       <title value="MedicatieToedieningStatusCodelijst to MedicationAdministrationStatusCodes"/>
-      <status value="draft"/>
+      <status value="active"/>
       <publisher value="Nictiz"/>
       <contact>
             <name value="Nictiz"/>

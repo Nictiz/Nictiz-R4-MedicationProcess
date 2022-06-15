@@ -4,7 +4,7 @@
   <url value="http://nictiz.nl/fhir/StructureDefinition/mp-InstructionsForUse.DosageInstructions" />
   <name value="MpInstructionsForUseDosageInstructions" />
   <title value="mp InstructionsForUse.DosageInstructions" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />

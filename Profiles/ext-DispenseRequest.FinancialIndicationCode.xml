@@ -4,7 +4,7 @@
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.FinancialIndicationCode" />
   <name value="ExtDispenseRequestFinancialIndicationCode" />
   <title value="ext DispenseRequest.FinancialIndicationCode" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />

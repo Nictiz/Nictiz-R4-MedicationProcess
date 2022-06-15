@@ -4,7 +4,7 @@
   <url value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement" />
   <name value="MpAdministrationAgreement" />
   <title value="mp AdministrationAgreement" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />

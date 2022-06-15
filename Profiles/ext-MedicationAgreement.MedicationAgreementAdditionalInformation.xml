@@ -4,7 +4,7 @@
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAgreement.MedicationAgreementAdditionalInformation" />
   <name value="ExtMedicationAgreementMedicationAgreementAdditionalInformation" />
   <title value="ext MedicationAgreement.MedicationAgreementAdditionalInformation" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />

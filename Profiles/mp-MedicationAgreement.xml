@@ -4,7 +4,7 @@
   <url value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement" />
   <name value="MpMedicationAgreement" />
   <title value="mp MedicationAgreement" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />

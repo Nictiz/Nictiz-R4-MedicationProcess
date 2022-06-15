@@ -4,7 +4,7 @@
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAgreement.PeriodOfUse.Condition" />
   <name value="ExtMedicationAgreementPeriodOfUseCondition" />
   <title value="ext MedicationAgreement.PeriodOfUse.Condition" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />

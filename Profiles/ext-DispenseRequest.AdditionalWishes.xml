@@ -4,7 +4,7 @@
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.AdditionalWishes" />
   <name value="ExtDispenseRequestAdditionalWishes" />
   <title value="ext DispenseRequest.AdditionalWishes" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />

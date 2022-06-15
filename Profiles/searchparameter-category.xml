@@ -3,7 +3,7 @@
   <url value="http://nictiz.nl/fhir/SearchParameter/category" />
   <version value="1.0.0"/>
   <name value="Category" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />

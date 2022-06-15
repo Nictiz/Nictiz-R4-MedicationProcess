@@ -4,7 +4,7 @@
   <url value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationPrescriptionProcessing-Bundle" />
   <name value="MpMedicationPrescriptionProcessingBundle" />
   <title value="mp MedicationPrescriptionProcessing Bundle" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Nictiz" />
   <contact>
     <name value="Nictiz" />
