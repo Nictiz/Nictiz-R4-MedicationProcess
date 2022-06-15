@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ext-Dosage-AsNeededFor" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-Dosage-AsNeededFor" />
+  <version value="1.0.0" />
   <name value="ExtDosageAsNeededFor" />
   <title value="ext Dosage AsNeededFor" />
   <status value="active" />

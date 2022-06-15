@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="mp-AdministrationAgreement" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement" />
+  <version value="1.0.0" />
   <name value="MpAdministrationAgreement" />
   <title value="mp AdministrationAgreement" />
   <status value="active" />

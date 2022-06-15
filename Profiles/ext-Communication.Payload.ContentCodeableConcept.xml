@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ext-Communication.Payload.ContentCodeableConcept" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-Communication.Payload.ContentCodeableConcept" />
+  <version value="1.0.0" />
   <name value="ExtCommunicationPayloadContentCodeableConcept" />
   <title value="ext Communication.Payload.ContentCodeableConcept" />
   <status value="active" />

@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="mp-InstructionsForUse.DosageInstructions" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/mp-InstructionsForUse.DosageInstructions" />
+  <version value="1.0.0" />
   <name value="MpInstructionsForUseDosageInstructions" />
   <title value="mp InstructionsForUse.DosageInstructions" />
   <status value="active" />
