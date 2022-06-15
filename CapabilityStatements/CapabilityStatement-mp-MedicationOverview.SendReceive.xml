@@ -114,12 +114,8 @@
       </interaction>
     </resource>
     <interaction>
-      <code value="search-system"/>
+      <code value="transaction"/>
     </interaction>
-    <operation>
-      <name value="Medication-Overview"/>
-      <definition value="http://nictiz.nl/fhir/OperationDefinition/Medication-Overview"/>
-    </operation>
   </rest>
   <rest>
     <mode value="server"/>
@@ -211,11 +207,7 @@
       </interaction>
     </resource>
     <interaction>
-      <code value="search-system"/>
+      <code value="transaction"/>
     </interaction>
-    <operation>
-      <name value="Medication-Overview"/>
-      <definition value="http://nictiz.nl/fhir/OperationDefinition/Medication-Overview"/>
-    </operation>
   </rest>
 </CapabilityStatement>

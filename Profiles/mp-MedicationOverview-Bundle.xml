@@ -14,8 +14,8 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="Profile on the Bundle resource which represents the structure of the Retrieve MedicationOverview transaction conform information standard ['Medication Process'](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). The output of the ['$medication-overview'](https://simplifier.net/medicationprocess/medication-overview) operation SHALL conform to this profile." />
-  <purpose value="To define the body of the Retrieve MedicationOverview transaction. This profile should provide guidance for servers in constructing the medication-overview operation outcome and enabling validation against it. For clients this profile should be helpful in expecting the response format of the medication-overview operation outcome." />
+  <description value="Profile on the Bundle resource which represents the structure of the Retrieve and Send MedicationOverview transactions conform information standard ['Medication Process'](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). The output of the ['$medication-overview'](https://simplifier.net/medicationprocess/medication-overview) operation (used in the former transaction) SHALL conform to this profile." />
+  <purpose value="To define the body of the Retrieve and Send MedicationOverview transactions. Moreover, this profile should provide guidance for servers in constructing the medication-overview operation outcome and enabling validation against it. For clients this profile should be helpful in expecting the response format of the medication-overview operation outcome." />
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -26,11 +26,11 @@
   <differential>
     <element id="Bundle.type">
       <path value="Bundle.type" />
-      <fixedCode value="searchset" />
+      <comment value="In the Retrieve and Send MedicationOverview transactions this element should have the value 'searchset' and 'transaction', respectively." />
     </element>
     <element id="Bundle.total">
       <path value="Bundle.total" />
-      <comment value="The total value contains the number of matching HCIMs: MedicationAgreement, AdministrationAgreement and MedicationUse2. Other included resources, such as Medication resources, are not included in the total." />
+      <comment value="The total value contains the number of matching HCIMs: MedicationAgreement, AdministrationAgreement and MedicationUse2. Other included resources, such as Medication resources, are not included in the total. Note that this element is only used in the Retrieve MedicationOverview transaction." />
     </element>
     <element id="Bundle.entry">
       <path value="Bundle.entry" />
