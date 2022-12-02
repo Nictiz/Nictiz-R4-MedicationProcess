@@ -229,31 +229,6 @@
         </coding>
       </patternCodeableConcept>
     </element>
-    <element id="MedicationRequest.reported[x]">
-      <path value="MedicationRequest.reported[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationRequest.reported[x]:reportedBoolean">
-      <path value="MedicationRequest.reported[x]" />
-      <sliceName value="reportedBoolean" />
-      <short value="CopyIndicator" />
-      <definition value="An indication whether the resource is original (false) or a copy from a different source (true)." />
-      <alias value="KopieIndicator" />
-      <type>
-        <code value="boolean" />
-      </type>
-      <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-693" />
-        <comment value="CopyIndicator" />
-      </mapping>
-    </element>
     <element id="MedicationRequest.medication[x]">
       <path value="MedicationRequest.medication[x]" />
       <slicing>
@@ -275,6 +250,9 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication" />
         <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct" />
       </type>
+      <binding>
+        <strength value="example" />
+      </binding>
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
         <map value="mp-dataelement920-1362" />
@@ -345,6 +323,9 @@
       <alias value="RedenWijzigenOfStaken" />
       <max value="1" />
       <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="MedicationRequestReason" />
+        </extension>
         <strength value="required" />
         <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.54--20220324145220" />
       </binding>
