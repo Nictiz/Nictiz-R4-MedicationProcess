@@ -206,12 +206,10 @@
       <path value="MedicationDispense.extension" />
       <sliceName value="relationAdministrationAgreement" />
       <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-RelationAdministrationAgreement" />
       </type>
-      <isModifier value="false" />
     </element>
     <element id="MedicationDispense.extension:relationAdministrationAgreement.value[x]">
       <path value="MedicationDispense.extension.value[x]" />
