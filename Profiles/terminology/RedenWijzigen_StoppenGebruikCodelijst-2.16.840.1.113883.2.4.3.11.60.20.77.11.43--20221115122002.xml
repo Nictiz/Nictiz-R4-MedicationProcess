@@ -1,27 +1,27 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-   <id value="2.16.840.1.113883.2.4.3.11.60.20.77.11.42--20220222180251"/>
+   <id value="2.16.840.1.113883.2.4.3.11.60.20.77.11.43--20221115122002"/>
    <meta>
       <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
       <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
    </meta>
    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
       <valuePeriod>
-         <start value="2022-02-22T18:02:51+00:00"/>
+         <start value="2022-11-15T12:20:02+00:00"/>
       </valuePeriod>
    </extension>
-   <url value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.42--20220222180251"/>
+   <url value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.43--20221115122002"/>
    <identifier>
       <use value="official"/>
       <system value="urn:ietf:rfc:3986"/>
-      <value value="urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.11.42"/>
+      <value value="urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.11.43"/>
    </identifier>
-   <version value="2022-02-22T18:02:51"/>
-   <name value="RedenWijzigen_StakenCodelijst"/>
-   <title value="RedenWijzigen-StakenCodelijst"/>
-   <status value="active"/>
+   <version value="2022-11-15T12:20:02"/>
+   <name value="RedenWijzigen_StoppenGebruikCodelijst"/>
+   <title value="RedenWijzigen-StoppenGebruikCodelijst"/>
+   <status value="draft"/>
    <experimental value="false"/>
    <publisher value="Nictiz"/>
-   <description value="RedenWijzigen-StakenCodelijst"/>
+   <description value="RedenWijzigen-StoppenGebruikCodelijst"/>
    <immutable value="false"/>
    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
    <compose>
@@ -82,7 +82,7 @@
                   <code value="900000000000003001"/>
                   <display value="Fully specified name"/>
                </use>
-               <value value="Drug interaction (finding)"/>
+               <value value="Drug interaction (disorder)"/>
             </designation>
          </concept>
          <concept>
@@ -119,7 +119,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="aanpassing toedieningswijze"/>
+               <valueString value="toedieningsweg voldoet niet  "/>
             </extension>
             <code value="112191000146101"/>
             <display value="medicatietoedieningsweg voldoet niet"/>
@@ -234,7 +234,7 @@
                <valueString value="correctie"/>
             </extension>
             <code value="159691000146109"/>
-            <display value="foutieve registratie"/>
+            <display value="foutieve registratie van medicatie"/>
             <designation>
                <language value="en-US"/>
                <use>
@@ -242,7 +242,7 @@
                   <code value="900000000000003001"/>
                   <display value="Fully specified name"/>
                </use>
-               <value value="Incorrect registration (finding)"/>
+               <value value="Incorrect registration of medication (finding)"/>
             </designation>
          </concept>
          <concept>
@@ -279,10 +279,10 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="loopt in andere medicamenteuze behandeling"/>
+               <valueString value="volgens afspraak"/>
             </extension>
-            <code value="160161000146108"/>
-            <display value="dubbele registratie van medicamenteuze behandeling"/>
+            <code value="112221000146107"/>
+            <display value="medicatiegebruik van patiënt volgens afspraak"/>
             <designation>
                <language value="en-US"/>
                <use>
@@ -290,7 +290,7 @@
                   <code value="900000000000003001"/>
                   <display value="Fully specified name"/>
                </use>
-               <value value="Duplicate registration of medication treatment (finding)"/>
+               <value value="Patient takes medication as prescribed (finding)"/>
             </designation>
          </concept>
       </include>

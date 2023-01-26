@@ -397,11 +397,11 @@
       <max value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.42--20220222180251" />
+        <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.42--20221114132525" />
       </binding>
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-89" />
+        <map value="mp-dataelement920-89 [DEPRECATED]" />
         <comment value="ReasonModificationOrDiscontinuation" />
       </mapping>
     </element>
