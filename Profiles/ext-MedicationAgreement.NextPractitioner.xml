@@ -39,7 +39,7 @@
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <short value="NextPractitioner" />
-      <definition value="The author of the medicationagreement, which was stopped during admission, that needs to be restarted after discharge." />
+      <definition value="The author of the medication agreement, which was stopped during admission, that needs to be restarted after discharge." />
       <alias value="VolgendeBehandelaar" />
       <type>
         <code value="Reference" />
