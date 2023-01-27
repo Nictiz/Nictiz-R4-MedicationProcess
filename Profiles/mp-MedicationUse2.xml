@@ -242,7 +242,7 @@
       <path value="MedicationStatement.status" />
       <short value="UseIndicator" />
       <definition value="Status may contain information on the stop type, the manner in which this medication is discontinued (temporary or definitive) and if the medicine is used or not." />
-      <comment value="Wordt bijgewerkt in MP-737." />
+      <comment value="This element is mapped to the zib concept NL-CM:9.11.22399 (UseIndicator), and is moreover implicitly mapped to NL-CM:9.11.22663 (PeriodOfUse) and mp-dataelement9x-408 (MedicationUseStopType).&#xD;&#xA;Unless the status is explicitly recorded, the following guidance applies:&#xD;&#xA;&#xD;&#xA;* When the value of MedicationUseStopType is _385655000_, `.status` will usually be set to _on-hold_.&#xD;&#xA;* When the value of MedicationUseStopType is _410546004_, `.status` will usually be set to _stopped_.&#xD;&#xA;* When the value of UseIndicator is _false_, `.status` will be set to _not-taken_.&#xD;&#xA;* When PeriodOfUse is empty, `.status` will usually be set to _unknown_.&#xD;&#xA;* In all other cases, `.status` will usually be set to _active_. Note that this simplifed representation of `.status` (not taking into account the actual values of PeriodOfUse or the value of MedicationUseDateTime) preadopts the use of `.status` in the current R5 build of the MedicationUsage resource type." />
       <alias value="GebruikIndicator" />
       <mapping>
         <identity value="zib-medicationuse2-v1.1.1-2020EN" />
