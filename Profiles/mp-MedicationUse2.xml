@@ -191,13 +191,13 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-StopType" />
       </type>
     </element>
-    <element id="MedicationRequest.modifierExtension:stopType.value[x]">
-      <path value="MedicationRequest.modifierExtension.value[x]" />
+    <element id="MedicationStatement.modifierExtension:stopType.value[x]">
+      <path value="MedicationStatement.modifierExtension.value[x]" />
       <short value="MedicationUseStopType" />
       <alias value="MedicatiegebruikStopType" />
       <binding>
         <strength value="required" />
-        <description value="MedicatiegebruikStopTypeCodelijst restricts StopType values, based on the ValueSet StopTypeCodelijst, which are applicable for StopType in MedicationAgreement, AdministrationAgreement." />
+        <description value="MedicatiegebruikStopTypeCodelijst restricts StopType values, based on the ValueSet StopTypeCodelijst, which are applicable for StopType in MedicationAgreement and AdministrationAgreement." />
         <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.55--20230119145802" />
       </binding>
       <mapping>
