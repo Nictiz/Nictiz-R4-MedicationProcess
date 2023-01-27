@@ -96,7 +96,7 @@
       <path value="MedicationDispense.extension.value[x]" />
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-333" />
+        <map value="mp-dataelement920-333 [DEPRECATED]" />
         <comment value="AdministrationAgreementReasonModificationOrDiscontinuation" />
       </mapping>
     </element>
