@@ -108,6 +108,26 @@
         <description value="WCIAv3 Tabel 25 B-codes subset voor aanvullende gebruiksinstructies" />
         <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.9--20160407000000" />
       </binding>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement92-51" />
+        <comment value="AdditionalInstructions" />
+      </mapping>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement92-649" />
+        <comment value="AdditionalInstructions" />
+      </mapping>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement92-300" />
+        <comment value="AdditionalInstructions" />
+      </mapping>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement92-368" />
+        <comment value="AdditionalInstructions" />
+      </mapping>
     </element>
     <element id="Dosage.timing">
       <path value="Dosage.timing" />
@@ -152,6 +172,21 @@
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
         <map value="mp-dataelement920-271" />
+        <comment value="(negative of) IsFlexible" />
+      </mapping>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-672" />
+        <comment value="(negative of) IsFlexible" />
+      </mapping>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-580" />
+        <comment value="(negative of) IsFlexible" />
+      </mapping>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-412" />
         <comment value="(negative of) IsFlexible" />
       </mapping>
     </element>
@@ -416,6 +451,21 @@
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
         <map value="mp-dataelement920-272" />
+        <comment value="Description" />
+      </mapping>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-677" />
+        <comment value="Description" />
+      </mapping>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-582" />
+        <comment value="Description" />
+      </mapping>
+      <mapping>
+        <identity value="Medication-Process-v9-2-0-0" />
+        <map value="mp-dataelement920-514" />
         <comment value="Description" />
       </mapping>
     </element>
