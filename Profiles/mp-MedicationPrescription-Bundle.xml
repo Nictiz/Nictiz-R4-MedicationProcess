@@ -153,6 +153,54 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct" />
       </type>
     </element>
+    <element id="Bundle.entry:healthProfessional-PractitionerRole">
+      <path value="Bundle.entry" />
+      <sliceName value="healthProfessional-PractitionerRole" />
+    </element>
+    <element id="Bundle.entry:healthProfessional-PractitionerRole.resource">
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole" />
+      </type>
+    </element>
+    <element id="Bundle.entry:healthProfessional-Practitioner">
+      <path value="Bundle.entry" />
+      <sliceName value="healthProfessional-Practitioner" />
+    </element>
+    <element id="Bundle.entry:healthProfessional-Practitioner.resource">
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner" />
+      </type>
+    </element>
+    <element id="Bundle.entry:healthcareProvider">
+      <path value="Bundle.entry" />
+      <sliceName value="healthcareProvider" />
+    </element>
+    <element id="Bundle.entry:healthcareProvider.resource">
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider" />
+      </type>
+    </element>
+    <element id="Bundle.entry:healthcareProvider-Organization">
+      <path value="Bundle.entry" />
+      <sliceName value="healthcareProvider-Organization" />
+    </element>
+    <element id="Bundle.entry:healthcareProvider-Organization.resource">
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization" />
+      </type>
+    </element>
     <element id="Bundle.entry:bodyHeight">
       <path value="Bundle.entry" />
       <sliceName value="bodyHeight" />
