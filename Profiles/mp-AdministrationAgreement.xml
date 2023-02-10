@@ -284,7 +284,7 @@
     <element id="MedicationDispense.status">
       <path value="MedicationDispense.status" />
       <definition value="A code specifying the state of the set of dispense events. In the event of an error correction, the value is set to _entered-in-error_." />
-      <comment value="Wordt bijgewerkt in MP-970" />
+      <comment value="The AdministrationAgreement building block does not provide much information on the logistical status as is intended by the ValueSet binding on this element. Therefore, if a system is unable to infer the status, `.status` will usually be set to _unknown_." />
       <mapping>
         <identity value="zib-administrationagreement-v1.0.3-2020EN" />
         <map value="NL-CM:9.8.23034" />
@@ -293,7 +293,7 @@
       <mapping>
         <identity value="zib-administrationagreement-v1.0.3-2020EN" />
         <map value="NL-CM:9.8.22660" />
-        <comment value="PeriodOfUse (implicit, main mapping is on the extensions ext-TimeInterval.Period and ext-TimeInterval.Duration)" />
+        <comment value="PeriodOfUse (implicit, main mapping is on the extensions ext-TimeInterval.Period and ext-TimeInterval.Duration) [DEPRECATED]" />
       </mapping>
       <mapping>
         <identity value="zib-administrationagreement-v1.0.3-2020EN" />
