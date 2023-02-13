@@ -3,7 +3,7 @@
   <id value="mp-PharmaceuticalProduct" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct" />
   <name value="MpPharmaceuticalProduct" />
-  <title value="nl core PharmaceuticalProduct" />
+  <title value="mp PharmaceuticalProduct" />
   <status value="draft" />
   <publisher value="Nictiz" />
   <contact>
@@ -73,7 +73,7 @@
     <element id="Medication.code">
       <path value="Medication.code" />
       <short value="MedicationCode" />
-      <definition value="Coding medication in the Netherlands is done on the basis of the G-standaard (issued by Z-index), which is filled under the direction of Royal Dutch Pharmacists Association (KNMP).&#xD;&#xA;&#xD;&#xA;The coded medication can be expressed as:&#xD;&#xA;&#xD;&#xA;* ZI number&#xD;&#xA;&#xD;&#xA;* Trade product code (HPK)&#xD;&#xA;&#xD;&#xA;* Prescription code (PRK)&#xD;&#xA;&#xD;&#xA;* Generic product code (GPK)&#xD;&#xA;&#xD;&#xA;* Substance Name Code (SNK)&#xD;&#xA;&#xD;&#xA;* Substance Name Code, in combination with Route of Administration (SSK)&#xD;&#xA;&#xD;&#xA;The ZI number represents the trade product and the package size.&#xD;&#xA;The HPK is the trade product as registered and marketed by the manufacturer.&#xD;&#xA;The PRK contains all GPK information supplemented with information needed to prescribe the right product. This level is intended to facilitate generic prescription of drugs.&#xD;&#xA;The GPK defines the pharmaceutical characteristics of a product: ingredients, strengths, units, pharmaceutical form and route of administration.&#xD;&#xA;The SNK is the (active) compound.&#xD;&#xA;The SSK is the combination of the active compund and route of administration.&#xD;&#xA;&#xD;&#xA;Further information about the G-Standaard levels see https://www.z-index.nl.&#xD;&#xA;&#xD;&#xA;So-called 90.000.000 numbers are used in local IT systems. The 90.000.000 number is used in accordance with national agreements." />
+      <definition value="Coding medication in the Netherlands is done on the basis of the G-standaard (issued by Z-index), which is filled under the direction of Royal Dutch Pharmacists Association (KNMP).&#xD;&#xA;&#xD;&#xA;The coded medication can be expressed as:&#xD;&#xA;&#xD;&#xA;* ZI number&#xD;&#xA;* Trade product code (HPK)&#xD;&#xA;* Prescription code (PRK)&#xD;&#xA;* Generic product code (GPK)&#xD;&#xA;* Substance Name Code (SNK)&#xD;&#xA;* Substance Name Code, in combination with Route of Administration (SSK)&#xD;&#xA;&#xD;&#xA;The ZI number represents the trade product and the package size.&#xD;&#xA;The HPK is the trade product as registered and marketed by the manufacturer.&#xD;&#xA;The PRK contains all GPK information supplemented with information needed to prescribe the right product. This level is intended to facilitate generic prescription of drugs.&#xD;&#xA;The GPK defines the pharmaceutical characteristics of a product: ingredients, strengths, units, pharmaceutical form and route of administration.&#xD;&#xA;The SNK is the (active) compound.&#xD;&#xA;The SSK is the combination of the active compund and route of administration.&#xD;&#xA;&#xD;&#xA;Further information about the G-Standaard levels see https://www.z-index.nl.&#xD;&#xA;&#xD;&#xA;So-called 90.000.000 numbers are used in local IT systems. The 90.000.000 number is used in accordance with national agreements." />
       <alias value="ProductCode" />
       <binding>
         <strength value="extensible" />
@@ -86,7 +86,7 @@
       </mapping>
       <mapping>
         <identity value="MP9-3" />
-        <map value="	mp-dataelement9x-261" />
+        <map value="mp-dataelement9x-261" />
         <comment value="MedicationCode" />
       </mapping>
     </element>
