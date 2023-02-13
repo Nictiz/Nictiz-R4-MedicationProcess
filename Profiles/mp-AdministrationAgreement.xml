@@ -319,18 +319,17 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="MedicationDispense.category.extension:category">
+    <element id="MedicationDispense.category.extension:additionalCategory">
       <path value="MedicationDispense.category.extension" />
-      <sliceName value="category" />
+      <sliceName value="additionalCategory" />
       <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-Category" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdditionalCategory" />
       </type>
       <isModifier value="false" />
     </element>
-    <element id="MedicationDispense.category.extension:category.value[x]">
+    <element id="MedicationDispense.category.extension:additionalCategory.value[x]">
       <path value="MedicationDispense.category.extension.value[x]" />
       <short value="Type of medication dispense" />
       <definition value="Indicates the type of medication dispense (for example, where the medication is expected to be consumed or administered (i.e. inpatient or outpatient))" />
