@@ -150,7 +150,7 @@
       <min value="1" />
       <type>
         <code value="Resource" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct" />
       </type>
     </element>
     <element id="Bundle.entry:healthProfessional-PractitionerRole">

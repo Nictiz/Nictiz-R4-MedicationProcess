@@ -298,7 +298,7 @@
       <path value="List.entry.item" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct" />
       </type>
     </element>
     <element id="List.entry:bodyHeight">

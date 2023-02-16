@@ -48,7 +48,7 @@
     </resource>
     <resource>
       <type value="Medication"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"/>
       <interaction>
         <code value="create"/>
       </interaction>
@@ -95,7 +95,7 @@
     </resource>
     <resource>
       <type value="Medication"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-PharmaceuticalProduct"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"/>
       <interaction>
         <code value="create"/>
       </interaction>
