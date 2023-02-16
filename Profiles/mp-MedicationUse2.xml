@@ -290,6 +290,36 @@
         </coding>
       </patternCodeableConcept>
     </element>
+    <element id="MedicationStatement.category.extension">
+      <path value="MedicationStatement.category.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="MedicationStatement.category.extension:additionalCategory">
+      <path value="MedicationStatement.category.extension" />
+      <sliceName value="additionalCategory" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdditionalCategory" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="MedicationStatement.category.extension:additionalCategory.value[x]">
+      <path value="MedicationStatement.category.extension.value[x]" />
+      <short value="Type of medication usage" />
+      <definition value="Indicates where the medication is expected to be consumed or administered." />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/medication-statement-category" />
+      </binding>
+    </element>
     <element id="MedicationStatement.medication[x]">
       <path value="MedicationStatement.medication[x]" />
       <slicing>
