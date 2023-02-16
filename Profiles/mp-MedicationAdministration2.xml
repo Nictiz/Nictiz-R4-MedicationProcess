@@ -333,7 +333,7 @@
     <element id="MedicationAdministration.performer">
       <path value="MedicationAdministration.performer" />
       <short value="Administrator" />
-      <definition value="The healthcare provider that the person who realized the administration works for. This is an organization for which the professional responsible for administration works, the patient himself or, for example, the informal carer." />
+      <definition value="(The healthcare provider of) the person who realized the administration. It refers to either the organization for which the professional responsible for administration works, the patient himself or, for example, the informal carer." />
       <alias value="Toediener" />
       <max value="1" />
       <mapping>
@@ -350,7 +350,7 @@
     <element id="MedicationAdministration.performer.actor">
       <path value="MedicationAdministration.performer.actor" />
       <short value="Patient / HealthcareProvider / Caregiver" />
-      <definition value="The healthcare provider that the person who realized the administration works for. This is an organization for which the professional responsible for administration works, the patient himself or, for example, the informal carer." />
+      <definition value="(The healthcare provider of) the person who realized the administration. It refers to either the organization for which the professional responsible for administration works, the patient himself or, for example, the informal carer." />
       <comment value="Whenever a health professional is responsible for the medication administration, the healthcare provider that professional works for is referred to in `PractitionerRole.organization`." />
       <alias value="Patiënt" />
       <alias value="Zorgaanbieder" />
