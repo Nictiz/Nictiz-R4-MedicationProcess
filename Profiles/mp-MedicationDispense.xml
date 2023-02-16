@@ -292,11 +292,6 @@
       <definition value="Dispense location" />
       <comment value="The `Location.name` elements holds the DispenseLocation information." />
       <alias value="Afleverlocatie" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider" />
-      </type>
       <mapping>
         <identity value="zib-medicationdispense-v2.0.2-2020EN" />
         <map value="NL-CM:9.9.20925" />
