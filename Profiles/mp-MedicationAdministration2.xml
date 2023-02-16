@@ -333,21 +333,27 @@
     <element id="MedicationAdministration.performer">
       <path value="MedicationAdministration.performer" />
       <short value="Administrator" />
-      <definition value="The concept describes the person who administered the product. This is a professional authorised administrator, the patient themselves or the caregiver, for example." />
+      <definition value="(The healthcare provider of) the person who realized the administration. It refers to either the organization for which the professional responsible for administration works, the patient himself or, for example, the informal carer." />
       <alias value="Toediener" />
       <max value="1" />
       <mapping>
         <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
         <map value="NL-CM:9.13.21196" />
+        <comment value="Administrator [DEPRECATED]" />
+      </mapping>
+      <mapping>
+        <identity value="MP9-3" />
+        <map value="mp-dataelement9x-437" />
         <comment value="Administrator" />
       </mapping>
     </element>
     <element id="MedicationAdministration.performer.actor">
       <path value="MedicationAdministration.performer.actor" />
-      <short value="Patient / HealthProfessional / Caregiver" />
-      <definition value="The concept describes the person who administered the product. This is a professional authorised administrator." />
+      <short value="Patient / HealthcareProvider / Caregiver" />
+      <definition value="(The healthcare provider of) the person who realized the administration. It refers to either the organization for which the professional responsible for administration works, the patient himself or, for example, the informal carer." />
+      <comment value="Whenever a HealthcareProvider is responsible for the medication administration, this concept refers to a PractitionerRole instance in which the nl-core-HealthcareProvider-Organization instance is referred to in `PractitionerRole.organization`. This use of the PractitionerRole resource type is described in the current FHIR build as: 'For use cases where an organization has activities where a practitioner is not defined/pre-allocated for a specific role (e.g. an un-named surgeon at XYZ Hospital), a PractitionerRole resource can be used with an empty Practitioner property, and the other relevant role properties populated'." />
       <alias value="Patiënt" />
-      <alias value="Zorgverlener" />
+      <alias value="Zorgaanbieder" />
       <alias value="Mantelzorger" />
       <type>
         <code value="Reference" />
@@ -369,12 +375,17 @@
       <mapping>
         <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
         <map value="NL-CM:9.13.23172" />
-        <comment value="HealthProfessional" />
+        <comment value="HealthProfessional [DEPRECATED]" />
       </mapping>
       <mapping>
         <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
         <map value="NL-CM:9.13.23355" />
         <comment value="Caregiver" />
+      </mapping>
+      <mapping>
+        <identity value="MP9-3" />
+        <map value="mp-dataelement9x-1378" />
+        <comment value="HealthcareProvider" />
       </mapping>
     </element>
     <element id="MedicationAdministration.request">
