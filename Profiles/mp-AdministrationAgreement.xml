@@ -316,6 +316,36 @@
         </coding>
       </patternCodeableConcept>
     </element>
+    <element id="MedicationDispense.category.extension">
+      <path value="MedicationDispense.category.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="MedicationDispense.category.extension:additionalCategory">
+      <path value="MedicationDispense.category.extension" />
+      <sliceName value="additionalCategory" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdditionalCategory" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="MedicationDispense.category.extension:additionalCategory.value[x]">
+      <path value="MedicationDispense.category.extension.value[x]" />
+      <short value="Type of medication dispense" />
+      <definition value="Indicates the type of medication dispense (for example, where the medication is expected to be consumed or administered (i.e. inpatient or outpatient))" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/medicationdispense-category" />
+      </binding>
+    </element>
     <element id="MedicationDispense.medication[x]">
       <path value="MedicationDispense.medication[x]" />
       <slicing>
