@@ -204,6 +204,9 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication" />
         <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct" />
       </type>
+      <binding>
+        <strength value="example" />
+      </binding>
       <mapping>
         <identity value="zib-medicationdispense-v2.0.2-2020EN" />
         <map value="NL-CM:9.9.22259" />
