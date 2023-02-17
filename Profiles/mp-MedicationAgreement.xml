@@ -435,8 +435,8 @@
       </binding>
       <mapping>
         <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-89 [DEPRECATED]" />
-        <comment value="ReasonModificationOrDiscontinuation" />
+        <map value="mp-dataelement920-89" />
+        <comment value="ReasonModificationOrDiscontinuation [DEPRECATED]" />
       </mapping>
     </element>
     <element id="MedicationRequest.reasonReference">
