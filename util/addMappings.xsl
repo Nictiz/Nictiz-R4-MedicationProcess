@@ -37,17 +37,17 @@
     
     <xsl:template name="_editMP92Mapping">
         <mapping>
-            <identity value="mp-dataset-mp9-200-20220105" />
-            <uri value="https://decor.nictiz.nl/ad/#/mp-/datasets/dataset/2.16.840.1.113883.2.4.3.11.60.20.77.1.4/2022-01-05T13:28:45" />
-            <name value="ART-DECOR Dataset MP9 2.0.0 20220105" />
+            <identity value="mp-dataset-mp9-200-20220402" />
+            <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20220402T205710/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-01-05T132845.html" />
+            <name value="ART-DECOR Dataset MP9 2.0.0 20220402" />
         </mapping>
     </xsl:template>
     
     <xsl:template name="_editMP93Mapping">
         <mapping>
-            <identity value="mp-dataset-mp9-300-beta1-20220630" />
-            <uri value="TODO" />
-            <name value="ART-DECOR Dataset MP9 3.0.0-beta.1 20220630" />
+            <identity value="mp-dataset-mp9-300-beta1-20230217" />
+            <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20230217T123829/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
+            <name value="ART-DECOR Dataset MP9 3.0.0-beta.1 20230217" />
         </mapping>
     </xsl:template>
     
@@ -63,7 +63,7 @@
             <!-- Otherwise, add MP9-3 mapping -->
             <xsl:otherwise>
                 <mapping>
-                    <identity value="mp-dataset-mp9-300-20220630"/>
+                    <identity value="mp-dataset-mp9-300-20230217"/>
                     <map value="{replace(f:map/@value, 'mp-dataelement920-', 'mp-dataelement9x-')}"/>
                     <comment value="{f:comment/@value}"/>
                 </mapping>
@@ -72,11 +72,11 @@
     </xsl:template>
     
     <xsl:template match="f:element/f:mapping/f:identity[@value = 'Medication-Process-v9-2-0-0']">
-        <identity value="mp-dataset-mp9-200-20220105"/>
+        <identity value="mp-dataset-mp9-200-20220402"/>
     </xsl:template>
     
     <xsl:template match="f:element/f:mapping/f:identity[@value = 'MP9-3']">
-        <identity value="mp-dataset-mp9-300-20220630"/>
+        <identity value="mp-dataset-mp9-300-20230217"/>
     </xsl:template>
     
 </xsl:stylesheet>
