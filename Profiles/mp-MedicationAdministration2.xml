@@ -1,570 +1,625 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="mp-MedicationAdministration2" />
-  <url value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAdministration2" />
-  <version value="1.0.0" />
-  <name value="MpMedicationAdministration2" />
-  <title value="mp MedicationAdministration2" />
-  <status value="active" />
-  <publisher value="Nictiz" />
+  <id value="mp-MedicationAdministration2"/>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAdministration2"/>
+  <version value="1.0.0"/>
+  <name value="MpMedicationAdministration2"/>
+  <title value="mp MedicationAdministration2"/>
+  <status value="active"/>
+  <publisher value="Nictiz"/>
   <contact>
-    <name value="Nictiz" />
+    <name value="Nictiz"/>
     <telecom>
-      <system value="url" />
-      <value value="https://www.nictiz.nl" />
-      <use value="work" />
+      <system value="url"/>
+      <value value="https://www.nictiz.nl"/>
+      <use value="work"/>
     </telecom>
   </contact>
-  <description value="Medication administration is the registration of the individual administrations of the medicine on the patient by the administrator (e.g. a nurse or patient themselves), in relation to the entered agreements." />
-  <purpose value="This MedicationAdministration resource represents the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) MedicationAdministration2, in a development version that will be released in pre-publication 2022-1. This profile also contains augmentations to the zib with elements found in the transactions of MP9, to provide a profile better suited for implementation purposes." />
-  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
-  <fhirVersion value="4.0.1" />
+  <description value="Medication administration is the registration of the individual administrations of the medicine on the patient by the administrator (e.g. a nurse or patient themselves), in relation to the entered agreements."/>
+  <purpose value="This MedicationAdministration resource represents the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) MedicationAdministration2, in a development version that will be released in pre-publication 2022-1. This profile also contains augmentations to the zib with elements found in the transactions of MP9, to provide a profile better suited for implementation purposes."/>
+  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
+  <fhirVersion value="4.0.1"/>
   <mapping>
-    <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
-    <uri value="https://zibs.nl/wiki/MedicationAdministration2-v1.1.1(2020EN)" />
-    <name value="zib MedicationAdministration2-v1.1.1(2020EN)" />
+    <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
+    <uri value="https://zibs.nl/wiki/MedicationAdministration2-v1.1.1(2020EN)"/>
+    <name value="zib MedicationAdministration2-v1.1.1(2020EN)"/>
   </mapping>
   <mapping>
-    <identity value="zib-range-v1.0.1-2020EN" />
-    <uri value="https://zibs.nl/wiki/Range-v1.0.1(2020EN)" />
-    <name value="zib Range-v1.0.1(2020EN)" />
+    <identity value="zib-range-v1.0.1-2020EN"/>
+    <uri value="https://zibs.nl/wiki/Range-v1.0.1(2020EN)"/>
+    <name value="zib Range-v1.0.1(2020EN)"/>
   </mapping>
   <mapping>
-    <identity value="Medication-Process-v9-2-0-0" />
-    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20220402T205710/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-01-05T132845.html" />
-    <name value="MP9 v2.0.0" />
+    <identity value="mp-dataset-mp9-200-20220402"/>
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20220402T205710/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-01-05T132845.html"/>
+    <name value="ART-DECOR Dataset MP9 2.0.0 20220402"/>
   </mapping>
-  <kind value="resource" />
-  <abstract value="true" />
-  <type value="MedicationAdministration" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration" />
-  <derivation value="constraint" />
+  <mapping>
+    <identity value="mp-dataset-mp9-300-beta1-20230217"/>
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20230217T123829/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
+    <name value="ART-DECOR Dataset MP9 3.0.0-beta.1 20230217"/>
+  </mapping>
+  <kind value="resource"/>
+  <abstract value="true"/>
+  <type value="MedicationAdministration"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="MedicationAdministration">
-      <path value="MedicationAdministration" />
-      <short value="MedicationAdministration" />
-      <alias value="Medicatietoediening" />
+      <path value="MedicationAdministration"/>
+      <short value="MedicationAdministration"/>
+      <alias value="Medicatietoediening"/>
       <mapping>
-        <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
-        <map value="NL-CM:9.13.20928" />
-        <comment value="MedicationAdministration" />
+        <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
+        <map value="NL-CM:9.13.20928"/>
+        <comment value="MedicationAdministration"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.extension">
-      <path value="MedicationAdministration.extension" />
+      <path value="MedicationAdministration.extension"/>
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="url" />
+          <type value="value"/>
+          <path value="url"/>
         </discriminator>
-        <rules value="open" />
+        <rules value="open"/>
       </slicing>
-      <min value="0" />
+      <min value="0"/>
     </element>
     <element id="MedicationAdministration.extension:agreedDateTime">
-      <path value="MedicationAdministration.extension" />
-      <sliceName value="agreedDateTime" />
-      <min value="0" />
+      <path value="MedicationAdministration.extension"/>
+      <sliceName value="agreedDateTime"/>
+      <min value="0"/>
       <type>
-        <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.AgreedDateTime" />
+        <code value="Extension"/>
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.AgreedDateTime"/>
       </type>
     </element>
     <element id="MedicationAdministration.extension:agreedDateTime.value[x]">
-      <path value="MedicationAdministration.extension.value[x]" />
+      <path value="MedicationAdministration.extension.value[x]"/>
       <mapping>
-        <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
-        <map value="NL-CM:9.13.23171" />
-        <comment value="AgreedDateTime" />
+        <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
+        <map value="NL-CM:9.13.23171"/>
+        <comment value="AgreedDateTime"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.extension:asAgreedIndicator">
-      <path value="MedicationAdministration.extension" />
-      <sliceName value="asAgreedIndicator" />
-      <min value="0" />
+      <path value="MedicationAdministration.extension"/>
+      <sliceName value="asAgreedIndicator"/>
+      <min value="0"/>
       <type>
-        <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AsAgreedIndicator" />
+        <code value="Extension"/>
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AsAgreedIndicator"/>
       </type>
     </element>
     <element id="MedicationAdministration.extension:asAgreedIndicator.value[x]">
-      <path value="MedicationAdministration.extension.value[x]" />
+      <path value="MedicationAdministration.extension.value[x]"/>
       <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-429" />
-        <comment value="AsAgreedIndicator" />
+        <identity value="mp-dataset-mp9-200-20220402"/>
+        <map value="mp-dataelement920-429"/>
+        <comment value="AsAgreedIndicator"/>
+      </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-20230217"/>
+        <map value="mp-dataelement9x-429"/>
+        <comment value="AsAgreedIndicator"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.extension:medicationAdministrationReasonForDeviation">
-      <path value="MedicationAdministration.extension" />
-      <sliceName value="medicationAdministrationReasonForDeviation" />
-      <min value="0" />
+      <path value="MedicationAdministration.extension"/>
+      <sliceName value="medicationAdministrationReasonForDeviation"/>
+      <min value="0"/>
       <type>
-        <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.ReasonForDeviation" />
+        <code value="Extension"/>
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.ReasonForDeviation"/>
       </type>
     </element>
     <element id="MedicationAdministration.extension:medicationAdministrationReasonForDeviation.value[x]">
-      <path value="MedicationAdministration.extension.value[x]" />
-      <comment value="This MedicationAdministrationReasonForDeviation extension has overlap with `.statusReason`. Both concepts allow the documentation of reasons why an administration did not take place, potentially resulting in duplicated information in both places. This extension, however, has a broader scope because it also covers the reasons why administrations are performed differently than the agreement." />
+      <path value="MedicationAdministration.extension.value[x]"/>
+      <comment value="This MedicationAdministrationReasonForDeviation extension has overlap with `.statusReason`. Both concepts allow the documentation of reasons why an administration did not take place, potentially resulting in duplicated information in both places. This extension, however, has a broader scope because it also covers the reasons why administrations are performed differently than the agreement."/>
       <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-444" />
-        <comment value="MedicationAdministrationReasonForDeviation" />
+        <identity value="mp-dataset-mp9-200-20220402"/>
+        <map value="mp-dataelement920-444"/>
+        <comment value="MedicationAdministrationReasonForDeviation"/>
+      </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-20230217"/>
+        <map value="mp-dataelement9x-444"/>
+        <comment value="MedicationAdministrationReasonForDeviation"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.extension:pharmaceuticalTreatmentIdentifier">
-      <path value="MedicationAdministration.extension" />
-      <sliceName value="pharmaceuticalTreatmentIdentifier" />
-      <min value="0" />
+      <path value="MedicationAdministration.extension"/>
+      <sliceName value="pharmaceuticalTreatmentIdentifier"/>
+      <min value="0"/>
       <type>
-        <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier" />
+        <code value="Extension"/>
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier"/>
       </type>
     </element>
     <element id="MedicationAdministration.extension:pharmaceuticalTreatmentIdentifier.value[x]">
-      <path value="MedicationAdministration.extension.value[x]" />
+      <path value="MedicationAdministration.extension.value[x]"/>
       <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-42" />
-        <comment value="Identification" />
+        <identity value="mp-dataset-mp9-200-20220402"/>
+        <map value="mp-dataelement920-42"/>
+        <comment value="Identification"/>
+      </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-20230217"/>
+        <map value="mp-dataelement9x-42"/>
+        <comment value="Identification"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.extension:injectionPatchSite">
-      <path value="MedicationAdministration.extension" />
-      <sliceName value="injectionPatchSite" />
-      <min value="0" />
+      <path value="MedicationAdministration.extension"/>
+      <sliceName value="injectionPatchSite"/>
+      <min value="0"/>
       <type>
-        <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.InjectionPatchSite" />
+        <code value="Extension"/>
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.InjectionPatchSite"/>
       </type>
     </element>
     <element id="MedicationAdministration.extension:injectionPatchSite.value[x]">
-      <path value="MedicationAdministration.extension.value[x]" />
+      <path value="MedicationAdministration.extension.value[x]"/>
       <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-702" />
-        <comment value="InjectionPatchSite" />
+        <identity value="mp-dataset-mp9-200-20220402"/>
+        <map value="mp-dataelement920-702"/>
+        <comment value="InjectionPatchSite"/>
+      </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-20230217"/>
+        <map value="mp-dataelement9x-702"/>
+        <comment value="InjectionPatchSite"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.identifier">
-      <path value="MedicationAdministration.identifier" />
-      <short value="Identification" />
-      <alias value="Identificatie" />
+      <path value="MedicationAdministration.identifier"/>
+      <short value="Identification"/>
+      <alias value="Identificatie"/>
       <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-447" />
-        <comment value="Identification" />
+        <identity value="mp-dataset-mp9-200-20220402"/>
+        <map value="mp-dataelement920-447"/>
+        <comment value="Identification"/>
+      </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-20230217"/>
+        <map value="mp-dataelement9x-447"/>
+        <comment value="Identification"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.status">
-      <path value="MedicationAdministration.status" />
-      <short value="MedicationAdministrationStatus" />
-      <definition value="The status of the administration, as a description of the stage within the administering process. Only the status codes ‘completed’ and ‘cancelled’ apply to indivisible products (such as tablets or suppositories). For divisible products (such as infusions), doses can also be ‘suspended’ or ‘aborted’.  &#xD;&#xA;&#xD;&#xA;When documenting this, the following interpretations are used: &#xD;&#xA;&#xD;&#xA;- Active: The product is administered.&#xD;&#xA;- Interrupted: Use has (temporarily) been interrupted, because of a side effect, for example. Later, the patient and/or doctor can decide whether or not to resume or discontinue use.&#xD;&#xA;- Discontinued: Administration has stopped.&#xD;&#xA;- Completed: Administration has been completed.&#xD;&#xA;- Not started: The product was never administered." />
-      <alias value="MedicatietoedieningStatus" />
+      <path value="MedicationAdministration.status"/>
+      <short value="MedicationAdministrationStatus"/>
+      <definition value="The status of the administration, as a description of the stage within the administering process. Only the status codes ‘completed’ and ‘cancelled’ apply to indivisible products (such as tablets or suppositories). For divisible products (such as infusions), doses can also be ‘suspended’ or ‘aborted’.  &#xD;&#xA;&#xD;&#xA;When documenting this, the following interpretations are used: &#xD;&#xA;&#xD;&#xA;- Active: The product is administered.&#xD;&#xA;- Interrupted: Use has (temporarily) been interrupted, because of a side effect, for example. Later, the patient and/or doctor can decide whether or not to resume or discontinue use.&#xD;&#xA;- Discontinued: Administration has stopped.&#xD;&#xA;- Completed: Administration has been completed.&#xD;&#xA;- Not started: The product was never administered."/>
+      <alias value="MedicatietoedieningStatus"/>
       <binding>
-        <strength value="required" />
-        <description value="Use ConceptMap 'MedicatieToedieningStatusCodelijst-to-MedicationAdministrationStatusCodes' to translate zib terminology to profile terminology in ValueSet 'MedicationAdministration Status Codes'" />
+        <strength value="required"/>
+        <description value="Use ConceptMap 'MedicatieToedieningStatusCodelijst-to-MedicationAdministrationStatusCodes' to translate zib terminology to profile terminology in ValueSet 'MedicationAdministration Status Codes'"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/medication-admin-status|4.0.1">
           <extension url="http://hl7.org/fhir/StructureDefinition/11179-permitted-value-conceptmap">
-            <valueCanonical value="http://nictiz.nl/fhir/ConceptMap/MedicatieToedieningStatusCodelijst-to-MedicationAdministrationStatusCodes" />
+            <valueCanonical value="http://nictiz.nl/fhir/ConceptMap/MedicatieToedieningStatusCodelijst-to-MedicationAdministrationStatusCodes"/>
           </extension>
         </valueSet>
       </binding>
       <mapping>
-        <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
-        <map value="NL-CM:9.13.21191" />
-        <comment value="MedicationAdministrationStatus" />
+        <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
+        <map value="NL-CM:9.13.21191"/>
+        <comment value="MedicationAdministrationStatus"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.category">
-      <path value="MedicationAdministration.category" />
-      <min value="1" />
+      <path value="MedicationAdministration.category"/>
+      <min value="1"/>
       <patternCodeableConcept>
         <coding>
-          <system value="http://snomed.info/sct" />
-          <code value="18629005" />
+          <system value="http://snomed.info/sct"/>
+          <code value="18629005"/>
         </coding>
       </patternCodeableConcept>
     </element>
     <element id="MedicationAdministration.category.extension">
-      <path value="MedicationAdministration.category.extension" />
+      <path value="MedicationAdministration.category.extension"/>
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="url" />
+          <type value="value"/>
+          <path value="url"/>
         </discriminator>
-        <rules value="open" />
+        <rules value="open"/>
       </slicing>
-      <min value="0" />
+      <min value="0"/>
     </element>
     <element id="MedicationAdministration.category.extension:additionalCategory">
-      <path value="MedicationAdministration.category.extension" />
-      <sliceName value="additionalCategory" />
-      <min value="0" />
+      <path value="MedicationAdministration.category.extension"/>
+      <sliceName value="additionalCategory"/>
+      <min value="0"/>
       <type>
-        <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdditionalCategory" />
+        <code value="Extension"/>
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdditionalCategory"/>
       </type>
-      <isModifier value="false" />
+      <isModifier value="false"/>
     </element>
     <element id="MedicationAdministration.category.extension:additionalCategory.value[x]">
-      <path value="MedicationAdministration.category.extension.value[x]" />
-      <short value="Type of medication usage" />
-      <definition value="Indicates where the medication is expected to be consumed or administered." />
+      <path value="MedicationAdministration.category.extension.value[x]"/>
+      <short value="Type of medication usage"/>
+      <definition value="Indicates where the medication is expected to be consumed or administered."/>
       <binding>
-        <strength value="preferred" />
-        <valueSet value="http://hl7.org/fhir/ValueSet/medication-admin-category" />
+        <strength value="preferred"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/medication-admin-category"/>
       </binding>
     </element>
     <element id="MedicationAdministration.medication[x]">
-      <path value="MedicationAdministration.medication[x]" />
+      <path value="MedicationAdministration.medication[x]"/>
       <slicing>
         <discriminator>
-          <type value="type" />
-          <path value="$this" />
+          <type value="type"/>
+          <path value="$this"/>
         </discriminator>
-        <rules value="open" />
+        <rules value="open"/>
       </slicing>
     </element>
     <element id="MedicationAdministration.medication[x]:medicationReference">
-      <path value="MedicationAdministration.medication[x]" />
-      <sliceName value="medicationReference" />
-      <short value="AdministrationProduct" />
-      <definition value="The product taken or administered. This is usually medication. Food, blood products, aids and bandages do not strictly fall under the category of medication, but can be reported as well. &#xD;&#xA;&#xD;&#xA;In principle, this will be the prescribed product, but the administrator may substitute it by replacing the product with an equivalent product. For example: two 50mg tablets can be administered instead of one 100mg tablet." />
-      <alias value="ToedieningsProduct" />
+      <path value="MedicationAdministration.medication[x]"/>
+      <sliceName value="medicationReference"/>
+      <short value="AdministrationProduct"/>
+      <definition value="The product taken or administered. This is usually medication. Food, blood products, aids and bandages do not strictly fall under the category of medication, but can be reported as well. &#xD;&#xA;&#xD;&#xA;In principle, this will be the prescribed product, but the administrator may substitute it by replacing the product with an equivalent product. For example: two 50mg tablets can be administered instead of one 100mg tablet."/>
+      <alias value="ToedieningsProduct"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct" />
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication"/>
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"/>
       </type>
       <binding>
-        <strength value="example" />
+        <strength value="example"/>
       </binding>
       <mapping>
-        <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
-        <map value="NL-CM:9.13.20929" />
-        <comment value="AdministrationProduct" />
+        <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
+        <map value="NL-CM:9.13.20929"/>
+        <comment value="AdministrationProduct"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.subject">
-      <path value="MedicationAdministration.subject" />
+      <path value="MedicationAdministration.subject"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient" />
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/>
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
       </type>
     </element>
     <element id="MedicationAdministration.context">
-      <path value="MedicationAdministration.context" />
-      <short value="RelationContact / RelationEpisodeOfCare" />
-      <comment value="The 'ExtContextEpisodeOfCare' extension is used to capture a reference to a related EpisodeOfCare if both a reference to an Encounter and an EpisodeOfCare need to be exchanged. This `.context` element will then contain the reference to the Encounter resource." />
-      <alias value="RelatieContact" />
-      <alias value="RelatieZorgepisode" />
+      <path value="MedicationAdministration.context"/>
+      <short value="RelationContact / RelationEpisodeOfCare"/>
+      <comment value="The 'ExtContextEpisodeOfCare' extension is used to capture a reference to a related EpisodeOfCare if both a reference to an Encounter and an EpisodeOfCare need to be exchanged. This `.context` element will then contain the reference to the Encounter resource."/>
+      <alias value="RelatieContact"/>
+      <alias value="RelatieZorgepisode"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-EpisodeOfCare" />
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/>
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter"/>
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-EpisodeOfCare"/>
       </type>
       <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-1353" />
-        <comment value="RelationContact" />
+        <identity value="mp-dataset-mp9-200-20220402"/>
+        <map value="mp-dataelement920-1353"/>
+        <comment value="RelationContact"/>
       </mapping>
       <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-1355" />
-        <comment value="RelationEpisodeOfCare" />
+        <identity value="mp-dataset-mp9-300-20230217"/>
+        <map value="mp-dataelement9x-1353"/>
+        <comment value="RelationContact"/>
+      </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-200-20220402"/>
+        <map value="mp-dataelement920-1355"/>
+        <comment value="RelationEpisodeOfCare"/>
+      </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-20230217"/>
+        <map value="mp-dataelement9x-1355"/>
+        <comment value="RelationEpisodeOfCare"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.context.extension">
-      <path value="MedicationAdministration.context.extension" />
+      <path value="MedicationAdministration.context.extension"/>
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="url" />
+          <type value="value"/>
+          <path value="url"/>
         </discriminator>
-        <rules value="open" />
+        <rules value="open"/>
       </slicing>
-      <min value="0" />
+      <min value="0"/>
     </element>
     <element id="MedicationAdministration.context.extension:relationEpisodeOfCare">
-      <path value="MedicationAdministration.context.extension" />
-      <sliceName value="relationEpisodeOfCare" />
-      <min value="0" />
-      <max value="1" />
+      <path value="MedicationAdministration.context.extension"/>
+      <sliceName value="relationEpisodeOfCare"/>
+      <min value="0"/>
+      <max value="1"/>
       <type>
-        <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-Context-EpisodeOfCare" />
+        <code value="Extension"/>
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-Context-EpisodeOfCare"/>
       </type>
     </element>
     <element id="MedicationAdministration.context.extension:relationEpisodeOfCare.value[x]">
-      <path value="MedicationAdministration.context.extension.value[x]" />
-      <short value="RelatedEpisodeOfCare" />
-      <alias value="RelatieZorgepisode" />
+      <path value="MedicationAdministration.context.extension.value[x]"/>
+      <short value="RelatedEpisodeOfCare"/>
+      <alias value="RelatieZorgepisode"/>
       <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-1355" />
-        <comment value="RelationEpisodeOfCare" />
+        <identity value="mp-dataset-mp9-200-20220402"/>
+        <map value="mp-dataelement920-1355"/>
+        <comment value="RelationEpisodeOfCare"/>
+      </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-20230217"/>
+        <map value="mp-dataelement9x-1355"/>
+        <comment value="RelationEpisodeOfCare"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.supportingInformation">
-      <path value="MedicationAdministration.supportingInformation" />
+      <path value="MedicationAdministration.supportingInformation"/>
       <slicing>
         <discriminator>
-          <type value="profile" />
-          <path value="resolve()" />
+          <type value="profile"/>
+          <path value="resolve()"/>
         </discriminator>
-        <rules value="open" />
+        <rules value="open"/>
       </slicing>
     </element>
     <element id="MedicationAdministration.supportingInformation:administrationAgreement">
-      <path value="MedicationAdministration.supportingInformation" />
-      <sliceName value="administrationAgreement" />
-      <short value="AdministrationAgreement" />
-      <definition value="Administration agreement on which this administration is based." />
-      <alias value="Toedieningsafspraak" />
-      <max value="1" />
+      <path value="MedicationAdministration.supportingInformation"/>
+      <sliceName value="administrationAgreement"/>
+      <short value="AdministrationAgreement"/>
+      <definition value="Administration agreement on which this administration is based."/>
+      <alias value="Toedieningsafspraak"/>
+      <max value="1"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement" />
+        <code value="Reference"/>
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement"/>
       </type>
       <mapping>
-        <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
-        <map value="NL-CM:9.13.23237" />
-        <comment value="AdministrationAgreement" />
+        <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
+        <map value="NL-CM:9.13.23237"/>
+        <comment value="AdministrationAgreement"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.effective[x]">
-      <path value="MedicationAdministration.effective[x]" />
+      <path value="MedicationAdministration.effective[x]"/>
       <slicing>
         <discriminator>
-          <type value="type" />
-          <path value="$this" />
+          <type value="type"/>
+          <path value="$this"/>
         </discriminator>
-        <rules value="open" />
+        <rules value="open"/>
       </slicing>
     </element>
     <element id="MedicationAdministration.effective[x]:effectiveDateTime">
-      <path value="MedicationAdministration.effective[x]" />
-      <sliceName value="effectiveDateTime" />
-      <short value="AdministrationDateTime" />
-      <definition value="The date and time at which the medication was administered." />
-      <alias value="ToedieningsDatumTijd" />
+      <path value="MedicationAdministration.effective[x]"/>
+      <sliceName value="effectiveDateTime"/>
+      <short value="AdministrationDateTime"/>
+      <definition value="The date and time at which the medication was administered."/>
+      <alias value="ToedieningsDatumTijd"/>
       <type>
-        <code value="dateTime" />
+        <code value="dateTime"/>
       </type>
       <mapping>
-        <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
-        <map value="NL-CM:9.13.21193" />
-        <comment value="AdministrationDateTime" />
+        <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
+        <map value="NL-CM:9.13.21193"/>
+        <comment value="AdministrationDateTime"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.performer">
-      <path value="MedicationAdministration.performer" />
-      <short value="Administrator" />
-      <definition value="(The healthcare provider of) the person who realized the administration. It refers to either the organization for which the professional responsible for administration works, the patient himself or, for example, the informal carer." />
-      <alias value="Toediener" />
-      <max value="1" />
+      <path value="MedicationAdministration.performer"/>
+      <short value="Administrator"/>
+      <definition value="(The healthcare provider of) the person who realized the administration. It refers to either the organization for which the professional responsible for administration works, the patient himself or, for example, the informal carer."/>
+      <alias value="Toediener"/>
+      <max value="1"/>
       <mapping>
-        <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
-        <map value="NL-CM:9.13.21196" />
-        <comment value="Administrator [DEPRECATED]" />
+        <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
+        <map value="NL-CM:9.13.21196"/>
+        <comment value="Administrator [DEPRECATED]"/>
       </mapping>
       <mapping>
-        <identity value="MP9-3" />
-        <map value="mp-dataelement9x-437" />
-        <comment value="Administrator" />
+        <identity value="mp-dataset-mp9-300-20230217"/>
+        <map value="mp-dataelement9x-437"/>
+        <comment value="Administrator"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.performer.actor">
-      <path value="MedicationAdministration.performer.actor" />
-      <short value="Patient / HealthcareProvider / Caregiver" />
-      <definition value="(The healthcare provider of) the person who realized the administration. It refers to either the organization for which the professional responsible for administration works, the patient himself or, for example, the informal carer." />
-      <comment value="Whenever a HealthcareProvider is responsible for the medication administration, this concept refers to a PractitionerRole instance in which the nl-core-HealthcareProvider-Organization instance is referred to in `PractitionerRole.organization`. This use of the PractitionerRole resource type is described in the current FHIR build as: 'For use cases where an organization has activities where a practitioner is not defined/pre-allocated for a specific role (e.g. an un-named surgeon at XYZ Hospital), a PractitionerRole resource can be used with an empty Practitioner property, and the other relevant role properties populated'." />
-      <alias value="Patiënt" />
-      <alias value="Zorgaanbieder" />
-      <alias value="Mantelzorger" />
+      <path value="MedicationAdministration.performer.actor"/>
+      <short value="Patient / HealthcareProvider / Caregiver"/>
+      <definition value="(The healthcare provider of) the person who realized the administration. It refers to either the organization for which the professional responsible for administration works, the patient himself or, for example, the informal carer."/>
+      <comment value="Whenever a HealthcareProvider is responsible for the medication administration, this concept refers to a PractitionerRole instance in which the nl-core-HealthcareProvider-Organization instance is referred to in `PractitionerRole.organization`. This use of the PractitionerRole resource type is described in the current FHIR build as: 'For use cases where an organization has activities where a practitioner is not defined/pre-allocated for a specific role (e.g. an un-named surgeon at XYZ Hospital), a PractitionerRole resource can be used with an empty Practitioner property, and the other relevant role properties populated'."/>
+      <alias value="Patiënt"/>
+      <alias value="Zorgaanbieder"/>
+      <alias value="Mantelzorger"/>
       <type>
-        <code value="Reference" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-NlCoreHealthProfessionalReference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson" />
+        <code value="Reference"/>
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-NlCoreHealthProfessionalReference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"/>
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson"/>
       </type>
       <mapping>
-        <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
-        <map value="NL-CM:9.13.23380" />
-        <comment value="Patient" />
+        <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
+        <map value="NL-CM:9.13.23380"/>
+        <comment value="Patient"/>
       </mapping>
       <mapping>
-        <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
-        <map value="NL-CM:9.13.23172" />
-        <comment value="HealthProfessional [DEPRECATED]" />
+        <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
+        <map value="NL-CM:9.13.23172"/>
+        <comment value="HealthProfessional [DEPRECATED]"/>
       </mapping>
       <mapping>
-        <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
-        <map value="NL-CM:9.13.23355" />
-        <comment value="Caregiver" />
+        <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
+        <map value="NL-CM:9.13.23355"/>
+        <comment value="Caregiver"/>
       </mapping>
       <mapping>
-        <identity value="MP9-3" />
-        <map value="mp-dataelement9x-1378" />
-        <comment value="HealthcareProvider" />
+        <identity value="mp-dataset-mp9-300-20230217"/>
+        <map value="mp-dataelement9x-1378"/>
+        <comment value="HealthcareProvider"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.request">
-      <path value="MedicationAdministration.request" />
-      <short value="MedicationAgreement" />
-      <definition value="Medication agreement on which this administration is based." />
-      <alias value="Medicatieafspraak" />
+      <path value="MedicationAdministration.request"/>
+      <short value="MedicationAgreement"/>
+      <definition value="Medication agreement on which this administration is based."/>
+      <alias value="Medicatieafspraak"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen" />
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest"/>
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen"/>
       </type>
       <mapping>
-        <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
-        <map value="NL-CM:9.13.23170" />
-        <comment value="MedicationAgreement" />
+        <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
+        <map value="NL-CM:9.13.23170"/>
+        <comment value="MedicationAgreement"/>
       </mapping>
       <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-1325" />
-        <comment value="RelationVariableDosingRegimen" />
+        <identity value="mp-dataset-mp9-200-20220402"/>
+        <map value="mp-dataelement920-1325"/>
+        <comment value="RelationVariableDosingRegimen"/>
+      </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-20230217"/>
+        <map value="mp-dataelement9x-1325"/>
+        <comment value="RelationVariableDosingRegimen"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.request.extension">
-      <path value="MedicationAdministration.request.extension" />
+      <path value="MedicationAdministration.request.extension"/>
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="url" />
+          <type value="value"/>
+          <path value="url"/>
         </discriminator>
-        <rules value="open" />
+        <rules value="open"/>
       </slicing>
-      <min value="0" />
+      <min value="0"/>
     </element>
     <element id="MedicationAdministration.request.extension:resourceCategory">
-      <path value="MedicationAdministration.request.extension" />
-      <sliceName value="resourceCategory" />
-      <min value="0" />
+      <path value="MedicationAdministration.request.extension"/>
+      <sliceName value="resourceCategory"/>
+      <min value="0"/>
       <type>
-        <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-ResourceCategory" />
+        <code value="Extension"/>
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-ResourceCategory"/>
       </type>
     </element>
     <element id="MedicationAdministration.note">
-      <path value="MedicationAdministration.note" />
-      <max value="1" />
+      <path value="MedicationAdministration.note"/>
+      <max value="1"/>
     </element>
     <element id="MedicationAdministration.note.text">
-      <path value="MedicationAdministration.note.text" />
-      <short value="Comment" />
-      <definition value="Comments on administering the medication." />
-      <alias value="Toelichting" />
+      <path value="MedicationAdministration.note.text"/>
+      <short value="Comment"/>
+      <definition value="Comments on administering the medication."/>
+      <alias value="Toelichting"/>
       <mapping>
-        <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
-        <map value="NL-CM:9.13.21337" />
-        <comment value="Comment" />
+        <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
+        <map value="NL-CM:9.13.21337"/>
+        <comment value="Comment"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.dosage.extension">
-      <path value="MedicationAdministration.dosage.extension" />
+      <path value="MedicationAdministration.dosage.extension"/>
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="url" />
+          <type value="value"/>
+          <path value="url"/>
         </discriminator>
-        <rules value="open" />
+        <rules value="open"/>
       </slicing>
-      <min value="0" />
+      <min value="0"/>
     </element>
     <element id="MedicationAdministration.dosage.extension:agreedAmount">
-      <path value="MedicationAdministration.dosage.extension" />
-      <sliceName value="agreedAmount" />
-      <min value="0" />
+      <path value="MedicationAdministration.dosage.extension"/>
+      <sliceName value="agreedAmount"/>
+      <min value="0"/>
       <type>
-        <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.AgreedAmount" />
+        <code value="Extension"/>
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.AgreedAmount"/>
       </type>
     </element>
     <element id="MedicationAdministration.dosage.extension:agreedAmount.value[x]">
-      <path value="MedicationAdministration.dosage.extension.value[x]" />
+      <path value="MedicationAdministration.dosage.extension.value[x]"/>
       <mapping>
-        <identity value="Medication-Process-v9-2-0-0" />
-        <map value="mp-dataelement920-1172" />
-        <comment value="AgreedAmount" />
+        <identity value="mp-dataset-mp9-200-20220402"/>
+        <map value="mp-dataelement920-1172"/>
+        <comment value="AgreedAmount"/>
+      </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-20230217"/>
+        <map value="mp-dataelement9x-1172"/>
+        <comment value="AgreedAmount"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.dosage.route">
-      <path value="MedicationAdministration.dosage.route" />
-      <short value="RouteOfAdministration" />
-      <definition value="The route through which the medication is administered (oral, nasal, intravenous,...)." />
-      <alias value="Toedieningsweg" />
+      <path value="MedicationAdministration.dosage.route"/>
+      <short value="RouteOfAdministration"/>
+      <definition value="The route through which the medication is administered (oral, nasal, intravenous,...)."/>
+      <alias value="Toedieningsweg"/>
       <binding>
-        <strength value="required" />
-        <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.13.2--20200901000000" />
+        <strength value="required"/>
+        <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.13.2--20200901000000"/>
       </binding>
       <mapping>
-        <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
-        <map value="NL-CM:9.13.21195" />
-        <comment value="RouteOfAdministration" />
+        <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
+        <map value="NL-CM:9.13.21195"/>
+        <comment value="RouteOfAdministration"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.dosage.dose">
-      <path value="MedicationAdministration.dosage.dose" />
-      <short value="AdministeredAmount" />
-      <definition value="Amount of the administered product." />
-      <alias value="ToegediendeHoeveelheid" />
+      <path value="MedicationAdministration.dosage.dose"/>
+      <short value="AdministeredAmount"/>
+      <definition value="Amount of the administered product."/>
+      <alias value="ToegediendeHoeveelheid"/>
       <type>
-        <code value="Quantity" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-GstdSimpleQuantity" />
+        <code value="Quantity"/>
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-GstdSimpleQuantity"/>
       </type>
       <mapping>
-        <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
-        <map value="NL-CM:9.13.21194" />
-        <comment value="AdministeredAmount" />
+        <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
+        <map value="NL-CM:9.13.21194"/>
+        <comment value="AdministeredAmount"/>
       </mapping>
     </element>
     <element id="MedicationAdministration.dosage.rate[x]">
-      <path value="MedicationAdministration.dosage.rate[x]" />
+      <path value="MedicationAdministration.dosage.rate[x]"/>
       <slicing>
         <discriminator>
-          <type value="type" />
-          <path value="$this" />
+          <type value="type"/>
+          <path value="$this"/>
         </discriminator>
-        <rules value="open" />
+        <rules value="open"/>
       </slicing>
     </element>
     <element id="MedicationAdministration.dosage.rate[x]:rateQuantity">
-      <path value="MedicationAdministration.dosage.rate[x]" />
-      <sliceName value="rateQuantity" />
-      <short value="AdministeringSpeed / nominalValue" />
-      <definition value="The administering speed is used in slow administration of liquid. In practice, the measuring unit is almost always ml/hour. Entering an interval (such as 0-10 ml/hour) is also a commonly used option. &#xA;For example, with an administering speed of 10ml/hour: &#xD;&#xA;- amount = 10,&#xD;&#xA;- dose unit = ml          &#xD;&#xA;- time unit = hour&#xD;&#xA;&#xD;&#xA;Optionally a translation to NHG table Gebruiksvoorschriften(Table 25) is also allowed." />
-      <alias value="Toedieningssnelheid" />
-      <alias value="nominaleWaarde" />
+      <path value="MedicationAdministration.dosage.rate[x]"/>
+      <sliceName value="rateQuantity"/>
+      <short value="AdministeringSpeed / nominalValue"/>
+      <definition value="The administering speed is used in slow administration of liquid. In practice, the measuring unit is almost always ml/hour. Entering an interval (such as 0-10 ml/hour) is also a commonly used option. &#xA;For example, with an administering speed of 10ml/hour: &#xD;&#xA;- amount = 10,&#xD;&#xA;- dose unit = ml          &#xD;&#xA;- time unit = hour&#xD;&#xA;&#xD;&#xA;Optionally a translation to NHG table Gebruiksvoorschriften(Table 25) is also allowed."/>
+      <alias value="Toedieningssnelheid"/>
+      <alias value="nominaleWaarde"/>
       <type>
-        <code value="Quantity" />
+        <code value="Quantity"/>
       </type>
       <mapping>
-        <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
-        <map value="NL-CM:9.13.23159" />
-        <comment value="AdministeringSpeed" />
+        <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
+        <map value="NL-CM:9.13.23159"/>
+        <comment value="AdministeringSpeed"/>
       </mapping>
       <mapping>
-        <identity value="zib-range-v1.0.1-2020EN" />
-        <map value="NL-CM:20.1.4" />
-        <comment value="nominalValue" />
+        <identity value="zib-range-v1.0.1-2020EN"/>
+        <map value="NL-CM:20.1.4"/>
+        <comment value="nominalValue"/>
       </mapping>
     </element>
   </differential>
