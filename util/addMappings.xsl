@@ -63,7 +63,7 @@
             <!-- Otherwise, add MP9-3 mapping -->
             <xsl:otherwise>
                 <mapping>
-                    <identity value="mp-dataset-mp9-300-20230217"/>
+                    <identity value="mp-dataset-mp9-300-beta1-20230217"/>
                     <map value="{replace(f:map/@value, 'mp-dataelement920-', 'mp-dataelement9x-')}"/>
                     <comment value="{f:comment/@value}"/>
                 </mapping>
@@ -76,7 +76,7 @@
     </xsl:template>
     
     <xsl:template match="f:element/f:mapping/f:identity[@value = 'MP9-3']">
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
     </xsl:template>
     
 </xsl:stylesheet>
