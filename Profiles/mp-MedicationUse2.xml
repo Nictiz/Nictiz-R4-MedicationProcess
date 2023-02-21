@@ -127,7 +127,7 @@
         <comment value="Identification"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-42"/>
         <comment value="Identification"/>
       </mapping>
@@ -149,7 +149,7 @@
         <comment value="CopyIndicator"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-418"/>
         <comment value="CopyIndicator"/>
       </mapping>
@@ -171,7 +171,7 @@
         <comment value="Author"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-623"/>
         <comment value="Author"/>
       </mapping>
@@ -181,7 +181,7 @@
         <comment value="AuthorIsHealthcareProvider"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-624"/>
         <comment value="AuthorIsHealthcareProvider"/>
       </mapping>
@@ -191,7 +191,7 @@
         <comment value="AuthorIsPatient (implicit; AuthorIsPatient = true when this element refers to the same Patient as subject)"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-626"/>
         <comment value="AuthorIsPatient (implicit; AuthorIsPatient = true when this element refers to the same Patient as subject)"/>
       </mapping>
@@ -201,7 +201,7 @@
         <comment value="AuthorIsHealthProfessional"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-627"/>
         <comment value="AuthorIsHealthProfessional"/>
       </mapping>
@@ -241,7 +241,7 @@
         <comment value="MedicationUseStopType [DEPRECATED]"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-408"/>
         <comment value="MedicationUseStopType"/>
       </mapping>
@@ -273,7 +273,7 @@
         <comment value="Identification"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-411"/>
         <comment value="Identification"/>
       </mapping>
@@ -300,7 +300,7 @@
         <comment value="MedicationUseStopType (implicit, main mapping is on the modifier extension ext-StopType) [DEPRECATED]"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-408"/>
         <comment value="MedicationUseStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
       </mapping>
@@ -320,7 +320,7 @@
         <comment value="ReasonModificationOrDiscontinuationOfUse"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-409"/>
         <comment value="ReasonModificationOrDiscontinuationOfUse"/>
       </mapping>
@@ -421,7 +421,7 @@
         <comment value="RelationContact"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-1349"/>
         <comment value="RelationContact"/>
       </mapping>
@@ -431,7 +431,7 @@
         <comment value="RelationEpisodeOfCare"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-1351"/>
         <comment value="RelationEpisodeOfCare"/>
       </mapping>
@@ -467,7 +467,7 @@
         <comment value="RelationEpisodeOfCare"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-1351"/>
         <comment value="RelationEpisodeOfCare"/>
       </mapping>
@@ -529,7 +529,7 @@
         <comment value="Informant"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-593"/>
         <comment value="Informant"/>
       </mapping>
@@ -539,7 +539,7 @@
         <comment value="Person"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-594"/>
         <comment value="Person"/>
       </mapping>
@@ -549,7 +549,7 @@
         <comment value="InformantIsPatient (InformatantIsPatient = true when informationSource refers to the same Patient as subject)"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-620"/>
         <comment value="InformantIsPatient (InformatantIsPatient = true when informationSource refers to the same Patient as subject)"/>
       </mapping>
@@ -559,7 +559,7 @@
         <comment value="InformantIsHealthProfessional"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-621"/>
         <comment value="InformantIsHealthProfessional"/>
       </mapping>
@@ -591,7 +591,7 @@
         <comment value="RelationMedicationAgreement"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-413"/>
         <comment value="RelationMedicationAgreement"/>
       </mapping>
@@ -642,7 +642,7 @@
         <comment value="RelationAdministrationAgreement"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-1329"/>
         <comment value="RelationAdministrationAgreement"/>
       </mapping>
@@ -693,7 +693,7 @@
         <comment value="RelationMedicationDispense"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-416"/>
         <comment value="RelationMedicationDispense"/>
       </mapping>
@@ -792,7 +792,7 @@
         <comment value="AdditionalInstructions"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-368"/>
         <comment value="AdditionalInstructions"/>
       </mapping>

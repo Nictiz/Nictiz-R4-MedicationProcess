@@ -119,7 +119,7 @@
         <comment value="AdditionalInstructions"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement92-51"/>
         <comment value="AdditionalInstructions"/>
       </mapping>
@@ -129,7 +129,7 @@
         <comment value="AdditionalInstructions"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement92-649"/>
         <comment value="AdditionalInstructions"/>
       </mapping>
@@ -139,7 +139,7 @@
         <comment value="AdditionalInstructions"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement92-300"/>
         <comment value="AdditionalInstructions"/>
       </mapping>
@@ -149,7 +149,7 @@
         <comment value="AdditionalInstructions"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement92-368"/>
         <comment value="AdditionalInstructions"/>
       </mapping>
@@ -200,7 +200,7 @@
         <comment value="(negative of) IsFlexible"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-271"/>
         <comment value="(negative of) IsFlexible"/>
       </mapping>
@@ -210,7 +210,7 @@
         <comment value="(negative of) IsFlexible"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-672"/>
         <comment value="(negative of) IsFlexible"/>
       </mapping>
@@ -220,7 +220,7 @@
         <comment value="(negative of) IsFlexible"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-580"/>
         <comment value="(negative of) IsFlexible"/>
       </mapping>
@@ -230,7 +230,7 @@
         <comment value="(negative of) IsFlexible"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-412"/>
         <comment value="(negative of) IsFlexible"/>
       </mapping>
@@ -499,7 +499,7 @@
         <comment value="Description"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-272"/>
         <comment value="Description"/>
       </mapping>
@@ -509,7 +509,7 @@
         <comment value="Description"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-677"/>
         <comment value="Description"/>
       </mapping>
@@ -519,7 +519,7 @@
         <comment value="Description"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-582"/>
         <comment value="Description"/>
       </mapping>
@@ -529,7 +529,7 @@
         <comment value="Description"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-514"/>
         <comment value="Description"/>
       </mapping>

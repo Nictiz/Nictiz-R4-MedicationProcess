@@ -82,7 +82,7 @@
         <comment value="Patient"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-1"/>
         <comment value="Patient"/>
       </mapping>

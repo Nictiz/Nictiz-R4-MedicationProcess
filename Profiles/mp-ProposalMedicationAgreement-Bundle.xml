@@ -72,7 +72,7 @@
         <comment value="Proposal"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-527"/>
         <comment value="Proposal"/>
       </mapping>
@@ -133,7 +133,7 @@
         <comment value="Comment"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-538"/>
         <comment value="Comment"/>
       </mapping>
@@ -150,7 +150,7 @@
         <comment value="Identification"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-528"/>
         <comment value="Identification"/>
       </mapping>
@@ -173,7 +173,7 @@
         <comment value="ProposalDate"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-529"/>
         <comment value="ProposalDate"/>
       </mapping>
@@ -203,7 +203,7 @@
         <comment value="Author"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-530"/>
         <comment value="Author"/>
       </mapping>
@@ -213,7 +213,7 @@
         <comment value="AuthorIsPatient (implicit; AuthorIsPatient = true when this element refers to the same Patient as subject)"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-531"/>
         <comment value="AuthorIsPatient (implicit; AuthorIsPatient = true when this element refers to the same Patient as subject)"/>
       </mapping>
@@ -223,7 +223,7 @@
         <comment value="AuthorIsHealthProfessional"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-532"/>
         <comment value="AuthorIsHealthProfessional"/>
       </mapping>
@@ -233,7 +233,7 @@
         <comment value="AuthorIsHealthcareProvider"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-1366"/>
         <comment value="AuthorIsHealthcareProvider"/>
       </mapping>
@@ -256,7 +256,7 @@
         <comment value="Patient"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-1"/>
         <comment value="Patient"/>
       </mapping>
@@ -278,7 +278,7 @@
         <comment value="PharmaceuticalProduct"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-260"/>
         <comment value="PharmaceuticalProduct"/>
       </mapping>
@@ -349,7 +349,7 @@
         <comment value="BodyHeight"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-448"/>
         <comment value="BodyHeight"/>
       </mapping>
@@ -372,7 +372,7 @@
         <comment value="BodyWeight"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-453"/>
         <comment value="BodyWeight"/>
       </mapping>
