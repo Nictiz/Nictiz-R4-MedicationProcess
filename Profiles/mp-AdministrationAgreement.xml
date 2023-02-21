@@ -104,6 +104,11 @@
         <map value="mp-dataelement920-333"/>
         <comment value="AdministrationAgreementReasonModificationOrDiscontinuation [DEPRECATED]"/>
       </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
+        <map value="mp-dataelement9x-333"/>
+        <comment value="AdministrationAgreementReasonModificationOrDiscontinuation"/>
+      </mapping>
     </element>
     <element id="MedicationDispense.extension:administrationAgreementDateTime">
       <path value="MedicationDispense.extension"/>
