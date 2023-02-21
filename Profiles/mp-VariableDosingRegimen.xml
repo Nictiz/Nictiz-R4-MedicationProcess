@@ -401,6 +401,11 @@
         <map value="mp-dataelement920-639" />
         <comment value="ReasonModificationOrDiscontinuation [DEPRECATED]" />
       </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-639" />
+        <comment value="ReasonModificationOrDiscontinuation" />
+      </mapping>
     </element>
     <element id="MedicationRequest.basedOn">
       <path value="MedicationRequest.basedOn" />
