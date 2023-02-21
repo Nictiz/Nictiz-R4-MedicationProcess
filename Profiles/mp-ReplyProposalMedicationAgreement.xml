@@ -46,7 +46,7 @@
         <comment value="Response"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-539"/>
         <comment value="Response"/>
       </mapping>
@@ -88,7 +88,7 @@
         <comment value="Identification"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-540"/>
         <comment value="Identification"/>
       </mapping>
@@ -110,7 +110,7 @@
         <comment value="RelationToProposalData"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-544"/>
         <comment value="RelationToProposalData"/>
       </mapping>
@@ -132,7 +132,7 @@
         <comment value="Patient"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-1"/>
         <comment value="Patient"/>
       </mapping>
@@ -149,7 +149,7 @@
         <comment value="ResponseDate"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-541"/>
         <comment value="ResponseDate"/>
       </mapping>
@@ -178,7 +178,7 @@
         <comment value="Author"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-542"/>
         <comment value="Author"/>
       </mapping>
@@ -231,7 +231,7 @@
         <comment value="ResponseMedicationAgreement"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-1364"/>
         <comment value="ResponseMedicationAgreement"/>
       </mapping>

@@ -78,7 +78,7 @@
         <comment value="MedicationDispenseAdditionalInformation"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-357"/>
         <comment value="MedicationDispenseAdditionalInformation"/>
       </mapping>
@@ -134,7 +134,7 @@
         <comment value="Identification"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-42"/>
         <comment value="Identification"/>
       </mapping>
@@ -149,7 +149,7 @@
         <comment value="Identification"/>
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
         <map value="mp-dataelement9x-361"/>
         <comment value="Identification"/>
       </mapping>
