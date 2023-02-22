@@ -387,9 +387,6 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication"/>
         <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"/>
       </type>
-      <binding>
-        <strength value="example"/>
-      </binding>
       <mapping>
         <identity value="zib-medicationagreement-v1.2-2020EN"/>
         <map value="NL-CM:9.6.19925"/>

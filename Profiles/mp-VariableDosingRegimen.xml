@@ -300,9 +300,6 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication" />
         <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct" />
       </type>
-      <binding>
-        <strength value="example" />
-      </binding>
       <mapping>
         <identity value="mp-dataset-mp9-200-20220402" />
         <map value="mp-dataelement920-1362" />
