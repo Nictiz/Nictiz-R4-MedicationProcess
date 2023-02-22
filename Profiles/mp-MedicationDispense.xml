@@ -16,7 +16,7 @@
     </telecom>
   </contact>
   <description value="A dispense is the delivery of an amount of medicine to the patient, their administrator or their representative."/>
-  <purpose value="This MedicationDispense resource represents the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) MedicationDispense, in a development version that will be released in pre-publication 2022-1. This profile also contains augmentations to the zib with elements found in the transactions of MP9, to provide a profile better suited for implementation purposes."/>
+  <purpose value="This MedicationDispense resource represents the MedicationDispense building block for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). This profile is based on the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) MedicationDispense, but has no dependency on the corresponding nl-core profile because it contains non-compatible changes. Where compatible, mappings to zib concepts are defined. Additional concepts or concepts that are not compatible with their zib counterparts contain a mapping to the MP9 data set."/>
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
   <fhirVersion value="4.0.1"/>
   <mapping>
