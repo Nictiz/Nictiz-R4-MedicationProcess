@@ -35,7 +35,7 @@
     <name value="ART-DECOR Dataset MP9 3.0.0-beta.1 20230217"/>
   </mapping>
   <kind value="resource"/>
-  <abstract value="true"/>
+  <abstract value="false"/>
   <type value="MedicationRequest"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationRequest"/>
   <derivation value="constraint"/>
