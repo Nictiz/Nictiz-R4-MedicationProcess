@@ -2,7 +2,7 @@
 
 This repository contains HL7 FHIR R4 compliant profiles and related conformance materials for the information standard [MedicationProcess 9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces) Version 3.0.0-beta.1 and higher.
 
-This repository is maintained by the Dutch National Intitute for ICT in Healthcare (Nictiz).
+This repository is maintained by the Dutch National Institute for ICT in Healthcare (Nictiz).
 
 ## Official releases
 
