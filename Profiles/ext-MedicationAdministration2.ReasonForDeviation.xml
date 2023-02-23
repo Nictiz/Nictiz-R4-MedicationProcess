@@ -16,7 +16,7 @@
     </telecom>
   </contact>
   <description value="An extension to provide the reason why the medication was not taken or administered or was taken or administered differently." />
-  <purpose value="This extension represents MedicationAdministrationReasonForDeviation of the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) MedicationAdministration2, in a development version that will be released in pre-publication 2022-1. This extension also contains augmentations to the zib based on the transactions of MP9, to provide an extension better suited for implementation purposes." />
+  <purpose value="This extension represents the MedicationAdministrationReasonForDeviation concept for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)." />
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
