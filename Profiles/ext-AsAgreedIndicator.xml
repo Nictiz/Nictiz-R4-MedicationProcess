@@ -16,7 +16,7 @@
     </telecom>
   </contact>
   <description value="An extension to indicate if the medicine is used or administered as outlined in the medication respectively medication/administration agreement." />
-  <purpose value="This extension represents the AsAgreedIndicator concept of the Dutch zibs ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) [MedicationUse2 v1.1.1 (2020EN)](https://zibs.nl/wiki/MedicationUse2-v1.1.1(2020EN)) and [MedicationAdministration2 v1.1.1 (2020EN)](https://zibs.nl/wiki/MedicationAdministration2-v1.1.1(2020EN))." />
+  <purpose value="This extension represents the AsAgreedIndicator concept for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)." />
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
