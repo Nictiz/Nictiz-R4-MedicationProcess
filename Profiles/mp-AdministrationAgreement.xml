@@ -141,6 +141,14 @@
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-RenderedDosageInstruction" />
       </type>
     </element>
+    <element id="MedicationDispense.extension:renderedDosageInstruction.value[x]">
+      <path value="MedicationDispense.extension.value[x]" />
+      <mapping>
+        <identity value="zib-instructionsforuse-v1.2.1-2020EN" />
+        <map value="NL-CM:9.12.9581" />
+        <comment value="Description" />
+      </mapping>
+    </element>
     <element id="MedicationDispense.extension:periodOfUse">
       <path value="MedicationDispense.extension" />
       <sliceName value="periodOfUse" />
