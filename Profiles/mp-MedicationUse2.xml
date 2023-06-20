@@ -55,6 +55,11 @@
         <map value="NL-CM:9.11.21338" />
         <comment value="MedicationUse" />
       </mapping>
+      <mapping>
+        <identity value="zib-medicationuse2-v1.1.1-2020EN" />
+        <map value="NL-CM:9.11.22504" />
+        <comment value="InstructionsForUse" />
+      </mapping>
     </element>
     <element id="MedicationStatement.extension">
       <path value="MedicationStatement.extension" />
@@ -775,11 +780,6 @@
         <code value="Dosage" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-InstructionsForUse.DosageInstructions" />
       </type>
-      <mapping>
-        <identity value="zib-medicationuse2-v1.1.1-2020EN" />
-        <map value="NL-CM:9.11.22504" />
-        <comment value="InstructionsForUse" />
-      </mapping>
     </element>
   </differential>
 </StructureDefinition>
