@@ -44,7 +44,7 @@
       <alias value="AfgesprokenHoeveelheid" />
       <type>
         <code value="Quantity" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-GstdQuantity" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-GstdSimpleQuantity" />
       </type>
     </element>
   </differential>
