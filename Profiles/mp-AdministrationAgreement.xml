@@ -60,21 +60,9 @@
         <comment value="InstructionsForUse" />
       </mapping>
     </element>
-    <element id="MedicationDispense.extension">
-      <path value="MedicationDispense.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="MedicationDispense.extension:additionalInformation">
       <path value="MedicationDispense.extension" />
       <sliceName value="additionalInformation" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdministrationAgreement.AdditionalInformation" />
@@ -96,7 +84,6 @@
     <element id="MedicationDispense.extension:reasonModificationOrDiscontinuation">
       <path value="MedicationDispense.extension" />
       <sliceName value="reasonModificationOrDiscontinuation" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdministrationAgreement.ReasonModificationOrDiscontinuation" />
@@ -118,7 +105,6 @@
     <element id="MedicationDispense.extension:administrationAgreementDateTime">
       <path value="MedicationDispense.extension" />
       <sliceName value="administrationAgreementDateTime" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdministrationAgreement.AdministrationAgreementDateTime" />
@@ -135,7 +121,6 @@
     <element id="MedicationDispense.extension:renderedDosageInstruction">
       <path value="MedicationDispense.extension" />
       <sliceName value="renderedDosageInstruction" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-RenderedDosageInstruction" />
@@ -152,7 +137,6 @@
     <element id="MedicationDispense.extension:periodOfUse">
       <path value="MedicationDispense.extension" />
       <sliceName value="periodOfUse" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -177,7 +161,6 @@
     <element id="MedicationDispense.extension:copyIndicator">
       <path value="MedicationDispense.extension" />
       <sliceName value="copyIndicator" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-CopyIndicator" />
@@ -199,7 +182,6 @@
     <element id="MedicationDispense.extension:pharmaceuticalTreatmentIdentifier">
       <path value="MedicationDispense.extension" />
       <sliceName value="pharmaceuticalTreatmentIdentifier" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier" />
@@ -221,7 +203,6 @@
     <element id="MedicationDispense.extension:distributionForm">
       <path value="MedicationDispense.extension" />
       <sliceName value="distributionForm" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationDispense.DistributionForm" />
@@ -243,7 +224,6 @@
     <element id="MedicationDispense.extension:relationAdministrationAgreement">
       <path value="MedicationDispense.extension" />
       <sliceName value="relationAdministrationAgreement" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-RelationAdministrationAgreement" />
@@ -257,21 +237,9 @@
         <comment value="RelationAdministrationAgreement" />
       </mapping>
     </element>
-    <element id="MedicationDispense.modifierExtension">
-      <path value="MedicationDispense.modifierExtension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="MedicationDispense.modifierExtension:stopType">
       <path value="MedicationDispense.modifierExtension" />
       <sliceName value="stopType" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-StopType" />
@@ -295,7 +263,6 @@
     <element id="MedicationDispense.modifierExtension:repeatPeriodCyclicalSchedule">
       <path value="MedicationDispense.modifierExtension" />
       <sliceName value="repeatPeriodCyclicalSchedule" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-InstructionsForUse.RepeatPeriodCyclicalSchedule" />
@@ -359,21 +326,9 @@
         </coding>
       </patternCodeableConcept>
     </element>
-    <element id="MedicationDispense.category.extension">
-      <path value="MedicationDispense.category.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="MedicationDispense.category.extension:additionalCategory">
       <path value="MedicationDispense.category.extension" />
       <sliceName value="additionalCategory" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdditionalCategory" />

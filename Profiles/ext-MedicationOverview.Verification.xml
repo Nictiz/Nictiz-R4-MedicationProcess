@@ -40,13 +40,6 @@
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <min value="2" />
     </element>
     <element id="Extension.extension:verificationPatient">
@@ -71,7 +64,6 @@
     <element id="Extension.extension:verificationPatientDate">
       <path value="Extension.extension" />
       <sliceName value="verificationPatientDate" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:verificationPatientDate.url">
@@ -109,7 +101,6 @@
     <element id="Extension.extension:verificationHealthProfessionalDate">
       <path value="Extension.extension" />
       <sliceName value="verificationHealthProfessionalDate" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:verificationHealthProfessionalDate.url">

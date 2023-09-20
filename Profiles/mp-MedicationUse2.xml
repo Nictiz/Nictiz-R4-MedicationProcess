@@ -61,21 +61,9 @@
         <comment value="InstructionsForUse" />
       </mapping>
     </element>
-    <element id="MedicationStatement.extension">
-      <path value="MedicationStatement.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="MedicationStatement.extension:renderedDosageInstruction">
       <path value="MedicationStatement.extension" />
       <sliceName value="renderedDosageInstruction" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-RenderedDosageInstruction" />
@@ -92,7 +80,6 @@
     <element id="MedicationStatement.extension:prescriber">
       <path value="MedicationStatement.extension" />
       <sliceName value="prescriber" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationUse2.Prescriber" />
@@ -109,7 +96,6 @@
     <element id="MedicationStatement.extension:asAgreedIndicator">
       <path value="MedicationStatement.extension" />
       <sliceName value="asAgreedIndicator" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AsAgreedIndicator" />
@@ -126,7 +112,6 @@
     <element id="MedicationStatement.extension:pharmaceuticalTreatmentIdentifier">
       <path value="MedicationStatement.extension" />
       <sliceName value="pharmaceuticalTreatmentIdentifier" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier" />
@@ -148,7 +133,6 @@
     <element id="MedicationStatement.extension:copyIndicator">
       <path value="MedicationStatement.extension" />
       <sliceName value="copyIndicator" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-CopyIndicator" />
@@ -170,7 +154,6 @@
     <element id="MedicationStatement.extension:author">
       <path value="MedicationStatement.extension" />
       <sliceName value="author" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationUse2.Author" />
@@ -219,21 +202,9 @@
         <comment value="AuthorIsHealthProfessional" />
       </mapping>
     </element>
-    <element id="MedicationStatement.modifierExtension">
-      <path value="MedicationStatement.modifierExtension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="MedicationStatement.modifierExtension:stopType">
       <path value="MedicationStatement.modifierExtension" />
       <sliceName value="stopType" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-StopType" />
@@ -262,7 +233,6 @@
     <element id="MedicationStatement.modifierExtension:repeatPeriodCyclicalSchedule">
       <path value="MedicationStatement.modifierExtension" />
       <sliceName value="repeatPeriodCyclicalSchedule" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-InstructionsForUse.RepeatPeriodCyclicalSchedule" />
@@ -348,21 +318,9 @@
         </coding>
       </patternCodeableConcept>
     </element>
-    <element id="MedicationStatement.category.extension">
-      <path value="MedicationStatement.category.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="MedicationStatement.category.extension:additionalCategory">
       <path value="MedicationStatement.category.extension" />
       <sliceName value="additionalCategory" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdditionalCategory" />
@@ -446,21 +404,9 @@
         <comment value="RelationEpisodeOfCare" />
       </mapping>
     </element>
-    <element id="MedicationStatement.context.extension">
-      <path value="MedicationStatement.context.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="MedicationStatement.context.extension:relationEpisodeOfCare">
       <path value="MedicationStatement.context.extension" />
       <sliceName value="relationEpisodeOfCare" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -606,21 +552,9 @@
         <comment value="RelationMedicationAgreement" />
       </mapping>
     </element>
-    <element id="MedicationStatement.derivedFrom:relationMedicationAgreement.extension">
-      <path value="MedicationStatement.derivedFrom.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="MedicationStatement.derivedFrom:relationMedicationAgreement.extension:resourceCategory">
       <path value="MedicationStatement.derivedFrom.extension" />
       <sliceName value="resourceCategory" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-ResourceCategory" />
@@ -657,21 +591,9 @@
         <comment value="RelationAdministrationAgreement" />
       </mapping>
     </element>
-    <element id="MedicationStatement.derivedFrom:relationAdministrationAgreement.extension">
-      <path value="MedicationStatement.derivedFrom.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="MedicationStatement.derivedFrom:relationAdministrationAgreement.extension:resourceCategory">
       <path value="MedicationStatement.derivedFrom.extension" />
       <sliceName value="resourceCategory" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-ResourceCategory" />
@@ -708,21 +630,9 @@
         <comment value="RelationMedicationDispense" />
       </mapping>
     </element>
-    <element id="MedicationStatement.derivedFrom:relationMedicationDispense.extension">
-      <path value="MedicationStatement.derivedFrom.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="MedicationStatement.derivedFrom:relationMedicationDispense.extension:resourceCategory">
       <path value="MedicationStatement.derivedFrom.extension" />
       <sliceName value="resourceCategory" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-ResourceCategory" />
