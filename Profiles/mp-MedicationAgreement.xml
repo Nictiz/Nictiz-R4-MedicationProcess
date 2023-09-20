@@ -54,6 +54,11 @@
         <map value="NL-CM:9.6.9580" />
         <comment value="MedicationAgreement" />
       </mapping>
+      <mapping>
+        <identity value="zib-medicationagreement-v1.2-2020EN" />
+        <map value="NL-CM:9.6.23240" />
+        <comment value="InstructionsForUse" />
+      </mapping>
     </element>
     <element id="MedicationRequest.extension">
       <path value="MedicationRequest.extension" />
@@ -573,11 +578,6 @@
         <code value="Dosage" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-InstructionsForUse.DosageInstructions" />
       </type>
-      <mapping>
-        <identity value="zib-medicationagreement-v1.2-2020EN" />
-        <map value="NL-CM:9.6.23240" />
-        <comment value="InstructionsForUse" />
-      </mapping>
     </element>
     <element id="MedicationRequest.priorPrescription">
       <path value="MedicationRequest.priorPrescription" />
