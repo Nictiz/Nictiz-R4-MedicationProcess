@@ -50,6 +50,11 @@
         <comment value="VariableDosingRegimen" />
       </mapping>
       <mapping>
+        <identity value="mp-dataset-mp9-200-20220402" />
+        <map value="mp-dataelement920-646" />
+        <comment value="InstructionsForUse" />
+      </mapping>
+      <mapping>
         <identity value="mp-dataset-mp9-300-beta1-20230217" />
         <map value="mp-dataelement9x-632" />
         <comment value="VariableDosingRegimen" />
@@ -65,6 +70,11 @@
         <rules value="open" />
       </slicing>
       <min value="0" />
+      <mapping>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-646" />
+        <comment value="InstructionsForUse" />
+      </mapping>
     </element>
     <element id="MedicationRequest.extension:pharmaceuticalTreatmentIdentifier">
       <path value="MedicationRequest.extension" />
@@ -487,16 +497,6 @@
         <code value="Dosage" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-InstructionsForUse.DosageInstructions" />
       </type>
-      <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-646" />
-        <comment value="InstructionsForUse" />
-      </mapping>
-      <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
-        <map value="mp-dataelement9x-646" />
-        <comment value="InstructionsForUse" />
-      </mapping>
     </element>
     <element id="MedicationRequest.priorPrescription">
       <path value="MedicationRequest.priorPrescription" />
