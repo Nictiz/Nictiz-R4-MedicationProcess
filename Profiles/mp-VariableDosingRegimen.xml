@@ -59,6 +59,11 @@
         <map value="mp-dataelement9x-632" />
         <comment value="VariableDosingRegimen" />
       </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-646" />
+        <comment value="InstructionsForUse" />
+      </mapping>
     </element>
     <element id="MedicationRequest.extension">
       <path value="MedicationRequest.extension" />
@@ -70,11 +75,6 @@
         <rules value="open" />
       </slicing>
       <min value="0" />
-      <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
-        <map value="mp-dataelement9x-646" />
-        <comment value="InstructionsForUse" />
-      </mapping>
     </element>
     <element id="MedicationRequest.extension:pharmaceuticalTreatmentIdentifier">
       <path value="MedicationRequest.extension" />
