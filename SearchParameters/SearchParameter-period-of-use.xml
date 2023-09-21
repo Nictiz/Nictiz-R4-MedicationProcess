@@ -1,0 +1,29 @@
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="period-of-use" />
+  <url value="http://nictiz.nl/fhir/SearchParameter/period-of-use" />
+  <version value="1.0.0" />
+  <name value="PeriodOfUse" />
+  <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="url" />
+      <value value="https://www.nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Search based on the PeriodOfUse concept captured in the [ext-TimeInterval.Period](http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period) extension in the MedicationRequest and MedicationDispense resources, and in the `.effectivePeriod` element in the MedicationStatement resource.&#xA;&#xA;This SearchParameter searches the FHIR data type Period in the TimeInterval.Period extension, which is added to profiles on MedicationRequest and MedicationDispense resources, and in the `.effectivePeriod` element in the MedicationStatement resource. This SearchParameter defines a special parameter search as described by the FHIR specification: https://hl7.org/fhir/r4/search.html#special. Servers are expected to take the [ext-TimeInterval.Duration](http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Duration) modifierExtension into account when processing a client's search. This means that either Period.start AND Period.end or Period.start AND Duration or Period.end AND Duration are used to determine the search results. After TimeInterval.Duration has been taken into account, the search parameter functions as a date parameter search: https://hl7.org/fhir/r4/search.html#date. To illustrate the expected behavior: if a Period.start and a Duration are known, but not the Period.end, the Duration should be added to the Period.start date to calculate the Period.end. The calculated Period.end date is then used to determine the search results." />
+  <purpose value="To search MedicationRequest and MedicationDispense resources on the value of the [ext-TimeInterval.Period](http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period) extension, and MedicationStatement resources on the value of the `.effectivePeriod` element." />
+  <code value="period-of-use" />
+  <base value="MedicationRequest" />
+  <base value="MedicationDispense" />
+  <base value="MedicationStatement" />
+  <type value="special" />
+  <expression value="MedicationRequest.extension('http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period').value and MedicationRequest.extension('http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period').value.extension('http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Duration').value | MedicationDispense.extension('http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period').value and MedicationDispense.extension('http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Period').value.extension('http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Duration').value | (MedicationStatement.effective as Period) and (MedicationStatement.effective as Period).extension('http://nictiz.nl/fhir/StructureDefinition/ext-TimeInterval.Duration').value" />
+  <comparator value="eq" />
+  <comparator value="gt" />
+  <comparator value="lt" />
+  <comparator value="ge" />
+  <comparator value="le" />
+</SearchParameter>
