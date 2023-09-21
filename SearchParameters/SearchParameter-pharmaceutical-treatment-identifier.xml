@@ -13,7 +13,7 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="Searches on the value provided in the pharmaceutical treatment identifier extension (http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier) in the following resources:&#xD;&#xA;* [MedicationRequest](http://hl7.org/fhir/r4/medicationrequest.html)&#xD;&#xA;* [MedicationDispense](http://hl7.org/fhir/r4/medicationdispense.html)&#xD;&#xA;* [MedicationStatement](http://hl7.org/fhir/r4/medicationstatement.html)&#xD;&#xA;* [MedicationAdministration](http://hl7.org/r4/medicationadministration.html)" />
+  <description value="Searches on the value provided in the pharmaceutical treatment identifier extension (http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier) in the following resources:&#xD;&#xA;* [MedicationRequest](http://hl7.org/fhir/r4/medicationrequest.html)&#xD;&#xA;* [MedicationDispense](http://hl7.org/fhir/r4/medicationdispense.html)&#xD;&#xA;* [MedicationStatement](http://hl7.org/fhir/r4/medicationstatement.html)&#xD;&#xA;* [MedicationAdministration](http://hl7.org/fhir/r4/medicationadministration.html)" />
   <purpose value="To select the MedicationRequest, MedicationDispense, MedicationAdministration, and MedicationStatement resources based on a specific pharmaceutical treatment identifier." />
   <code value="pharmaceutical-treatment-identifier" />
   <base value="MedicationAdministration" />

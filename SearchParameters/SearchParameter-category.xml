@@ -13,7 +13,7 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="The classification or categorization of the resource. Works on multiple resources:&#xD;&#xA;* [MedicationDispense](http://hl7.org/fhir/medicationdispense.html): Return dispenses based on the value of category.&#xD;&#xA;* [MedicationAdministration](http://hl7.org/fhir/medicationadministration.html): Return administrations based on the value of category." />
+  <description value="The classification or categorization of the resource. Works on multiple resources:&#xD;&#xA;* [MedicationDispense](http://hl7.org/fhir/r4/medicationdispense.html): Return dispenses based on the value of category.&#xD;&#xA;* [MedicationAdministration](http://hl7.org/fhir/r4/medicationadministration.html): Return administrations based on the value of category." />
   <purpose value="To select instances based on the value of the `.category` element for resources that do not have a SearchParameter defined by the base FHIR specification for this element." />
   <code value="category" />
   <base value="MedicationDispense" />
