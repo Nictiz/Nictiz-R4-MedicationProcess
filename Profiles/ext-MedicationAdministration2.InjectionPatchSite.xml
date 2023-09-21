@@ -50,21 +50,9 @@
         <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.53--20220323181942" />
       </binding>
     </element>
-    <element id="Extension.value[x].extension">
-      <path value="Extension.value[x].extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Extension.value[x].extension:laterality">
       <path value="Extension.value[x].extension" />
       <sliceName value="laterality" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />

@@ -56,21 +56,9 @@
         <comment value="DosingInstructions" />
       </mapping>
     </element>
-    <element id="Dosage.extension">
-      <path value="Dosage.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Dosage.extension:asNeeded">
       <path value="Dosage.extension" />
       <sliceName value="asNeeded" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-Dosage-AsNeededFor" />
@@ -165,21 +153,9 @@
         <comment value="AdministeringSchedule" />
       </mapping>
     </element>
-    <element id="Dosage.timing.repeat.extension">
-      <path value="Dosage.timing.repeat.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Dosage.timing.repeat.extension:timingExact">
       <path value="Dosage.timing.repeat.extension" />
       <sliceName value="timingExact" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/timing-exact" />
