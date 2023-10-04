@@ -4,10 +4,10 @@
   xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/capabilitystatement.xsd">
   <id value="mp-MedicationData.RetrieveServe.Base"/>
   <url value="http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationData.RetrieveServe.Base"/>
-  <version value="1.0.0" />
+  <version value="2.0.0-beta.2" />
   <name value="mp MedicationData.RetrieveServe.Base"/>
   <status value="active"/>
-  <date value="2023-09-27"/>
+  <date value="2023-10-04"/>
   <publisher value="Nictiz"/>
   <contact>
     <name value="Nictiz"/>
@@ -17,7 +17,7 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="This CapabilityStatement describes the base requirements for a client/server to fulfill the 'Retrieve/Serve medication data' transaction within Medication Process 9 (MP9) version 3.0.0-beta.2. See [Landingspagina Medicatieproces](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces) for additional information. For the MedMij context the [mp-MedicationData.RetrieveServe.MedMij](http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationData.RetrieveServe.MedMij) CapabilityStatement describes the minimal requirements, while the [mp-MedicationData.RetrieveServe](http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationData.RetrieveServe) CapabilityStatement should be used in any other context."/>
+  <description value="This CapabilityStatement describes the base requirements for a client/server to fulfill the 'Retrieve/Serve medication data' transaction within Medication Process 9 (MP9) version 3.0.0. See [Landingspagina Medicatieproces](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces) for additional information. For the MedMij context the [mp-MedicationData.RetrieveServe.MedMij](http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationData.RetrieveServe.MedMij) CapabilityStatement describes the minimal requirements, while the [mp-MedicationData.RetrieveServe](http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationData.RetrieveServe) CapabilityStatement should be used in any other context."/>
   <purpose value="This CapabilityStatement is informative in nature and is designed as a base for the 'Retrieve/Serve medication data' transaction."/>
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
   <kind value="requirements"/>
