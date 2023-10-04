@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="mp-MedicationPrescriptionProcessing-Bundle"/>
   <url value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationPrescriptionProcessing-Bundle"/>
-  <version value="1.0.0"/>
+  <version value="2.0.0-beta.2"/>
   <name value="MpMedicationPrescriptionProcessingBundle"/>
   <title value="mp MedicationPrescriptionProcessing Bundle"/>
   <status value="active"/>
