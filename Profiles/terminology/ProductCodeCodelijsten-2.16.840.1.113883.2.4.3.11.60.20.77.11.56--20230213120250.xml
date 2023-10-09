@@ -21,7 +21,7 @@
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="Nictiz"/>
-   <description value="&#xD;&#xA;&#xD;&#xA;Value set combining the distinct value sets that the standard MP9 binds to MedicationCode (mp-dataelement9x-261). This value set as such does not exist within the standard MP9 but facilitates referencing all these value sets at the same time.&#xD;&#xA;&#xD;&#xA;"/>
+   <description value="Value set combining the distinct value sets that the standard MP9 binds to MedicationCode (mp-dataelement9x-261). This value set as such does not exist within the standard MP9 but facilitates referencing all these value sets at the same time."/>
    <immutable value="false"/>
    <compose>
       <include>
