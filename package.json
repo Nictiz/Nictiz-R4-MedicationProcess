@@ -1,26 +1,27 @@
 {
-    "name": "nictiz.fhir.nl.r4.medicationprocess9",
-    "version": "2.0.0-beta.1",
-    "homepage": "https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces",
-    "title": "FHIR implementation of Medication Process 9 (MP9)",
-    "description": "NL package of FHIR R4 conformance resources for Medication Process 9 (MP9) version 3.0.0-beta.1.",
-    "dependencies": {"nictiz.fhir.nl.r4.nl-core": "0.8.0-beta.1"},
-    "keywords": [
-        "nl",
-        "Nictiz",
-        "Medicatieoverdracht",
-        "Medicatieproces",
-        "Medicatieproces 9",
-        "MP9",
-        "Medication process",
-        "Medication process 9"
-    ],
-    "author": "Nictiz",
-    "maintainers": [
-        {
-            "name": "Nictiz",
-            "url": "https://www.nictiz.nl"
-        }
-    ],
-    "license": "CC0-1.0"
+  "name": "nictiz.fhir.nl.r4.medicationprocess9",
+  "version": "2.0.0-beta.2",
+  "description": "NL package of FHIR R4 conformance resources for Medication Process 9 (MP9) version 3.0.0-beta.2.",
+  "author": "Nictiz",
+  "dependencies": {
+    "nictiz.fhir.nl.r4.nl-core": "0.9.0-beta.1"
+  },
+  "keywords": [
+    "nl",
+    "Nictiz",
+    "Medicatieoverdracht",
+    "Medicatieproces",
+    "Medicatieproces 9",
+    "MP9",
+    "Medication process",
+    "Medication process 9"
+  ],
+  "license": "CC0-1.0",
+  "homepage": "https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces",
+  "title": "FHIR implementation of Medication Process 9 (MP9)",
+  "maintainers": [
+    {
+      "name": "Nictiz"
+    }
+  ]
 }
