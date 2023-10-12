@@ -252,7 +252,20 @@
     </element>
     <element id="MedicationRequest.category">
       <path value="MedicationRequest.category" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <min value="1" />
+    </element>
+    <element id="MedicationRequest.category:variableDosingRegimenCode">
+      <path value="MedicationRequest.category" />
+      <sliceName value="variableDosingRegimenCode" />
+      <min value="1" />
+      <max value="1" />
       <patternCodeableConcept>
         <coding>
           <system value="http://snomed.info/sct" />

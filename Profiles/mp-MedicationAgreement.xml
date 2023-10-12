@@ -290,7 +290,20 @@
     </element>
     <element id="MedicationRequest.category">
       <path value="MedicationRequest.category" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <min value="1" />
+    </element>
+    <element id="MedicationRequest.category:medicationAgreementCode">
+      <path value="MedicationRequest.category" />
+      <sliceName value="medicationAgreementCode" />
+      <min value="1" />
+      <max value="1" />
       <patternCodeableConcept>
         <coding>
           <system value="http://snomed.info/sct" />
