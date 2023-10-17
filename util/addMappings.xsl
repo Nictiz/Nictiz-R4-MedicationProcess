@@ -46,8 +46,8 @@
     <xsl:template name="_editMP93Mapping">
         <mapping>
             <identity value="mp-dataset-mp9-300-beta1-20230217" />
-            <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20230217T123829/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
-            <name value="ART-DECOR Dataset MP9 3.0.0-beta.1 20230217" />
+            <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20231013T174644/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
+            <name value="ART-DECOR Dataset MP9 3.0.0-beta.2 20231013" />
         </mapping>
     </xsl:template>
     
