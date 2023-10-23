@@ -35,9 +35,9 @@
     <name value="ART-DECOR Dataset MP9 2.0.0 20220402" />
   </mapping>
   <mapping>
-    <identity value="mp-dataset-mp9-300-beta1-20230217" />
-    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20231013T174644/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
-    <name value="ART-DECOR Dataset MP9 3.0.0-beta.2 20231013" />
+    <identity value="mp-dataset-mp9-300-beta2-20231017" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20231017T223005/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
+    <name value="ART-DECOR Dataset MP9 3.0.0-beta.2 20231017" />
   </mapping>
   <kind value="resource" />
   <abstract value="false" />
@@ -76,7 +76,7 @@
         <comment value="MedicationAgreementAdditionalInformation" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-90" />
         <comment value="MedicationAgreementAdditionalInformation" />
       </mapping>
@@ -140,7 +140,7 @@
         <comment value="Condition" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-1365" />
         <comment value="Condition" />
       </mapping>
@@ -161,7 +161,7 @@
         <comment value="Identification" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-42" />
         <comment value="Identification" />
       </mapping>
@@ -184,7 +184,7 @@
         <comment value="RelationEpisodeOfCare" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-843" />
         <comment value="RelationEpisodeOfCare" />
       </mapping>
@@ -201,7 +201,7 @@
     <element id="MedicationRequest.extension:nextPractitioner.value[x]">
       <path value="MedicationRequest.extension.value[x]" />
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-1382" />
         <comment value="NextPractitioner" />
       </mapping>
@@ -224,7 +224,7 @@
         <comment value="MedicationAgreementStopType [DEPRECATED]" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-88" />
         <comment value="MedicationAgreementStopType" />
       </mapping>
@@ -255,7 +255,7 @@
         <comment value="Identification" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-194" />
         <comment value="Identification" />
       </mapping>
@@ -279,7 +279,7 @@
         <comment value="MedicationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType) [DEPRECATED]" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-88" />
         <comment value="MedicationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType)" />
       </mapping>
@@ -336,7 +336,7 @@
         <comment value="CopyIndicator" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-273" />
         <comment value="CopyIndicator" />
       </mapping>
@@ -392,7 +392,7 @@
         <comment value="RelationContact" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-199" />
         <comment value="RelationContact" />
       </mapping>
@@ -446,7 +446,7 @@
         <comment value="ReasonModificationOrDiscontinuation [DEPRECATED]" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-89" />
         <comment value="ReasonModificationOrDiscontinuation" />
       </mapping>
@@ -485,7 +485,7 @@
         <comment value="RelationAdministrationAgreement" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-1328" />
         <comment value="RelationAdministrationAgreement" />
       </mapping>
@@ -506,7 +506,7 @@
         <comment value="RelationMedicationUse" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-1327" />
         <comment value="RelationMedicationUse" />
       </mapping>
@@ -552,7 +552,7 @@
         <comment value="RelationMedicationAgreement" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-195" />
         <comment value="RelationMedicationAgreement" />
       </mapping>

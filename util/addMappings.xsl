@@ -45,9 +45,9 @@
     
     <xsl:template name="_editMP93Mapping">
         <mapping>
-            <identity value="mp-dataset-mp9-300-beta1-20230217" />
-            <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20231013T174644/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
-            <name value="ART-DECOR Dataset MP9 3.0.0-beta.2 20231013" />
+            <identity value="mp-dataset-mp9-300-beta2-20231017" />
+            <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20231017T223005/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
+            <name value="ART-DECOR Dataset MP9 3.0.0-beta.2 20231017" />
         </mapping>
     </xsl:template>
     
@@ -63,7 +63,7 @@
             <!-- Otherwise, add MP9-3 mapping -->
             <xsl:otherwise>
                 <mapping>
-                    <identity value="mp-dataset-mp9-300-beta1-20230217"/>
+                    <identity value="mp-dataset-mp9-300-beta2-20231017"/>
                     <map value="{replace(f:map/@value, 'mp-dataelement920-', 'mp-dataelement9x-')}"/>
                     <comment value="{f:comment/@value}"/>
                 </mapping>
@@ -76,7 +76,7 @@
     </xsl:template>
     
     <xsl:template match="f:element/f:mapping/f:identity[@value = 'MP9-3']">
-        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta2-20231017"/>
     </xsl:template>
     
 </xsl:stylesheet>

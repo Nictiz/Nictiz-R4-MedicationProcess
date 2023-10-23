@@ -35,9 +35,9 @@
     <name value="ART-DECOR Dataset MP9 2.0.0 20220402" />
   </mapping>
   <mapping>
-    <identity value="mp-dataset-mp9-300-beta1-20230217" />
-    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20231013T174644/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
-    <name value="ART-DECOR Dataset MP9 3.0.0-beta.2 20231013" />
+    <identity value="mp-dataset-mp9-300-beta2-20231017" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20231017T223005/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
+    <name value="ART-DECOR Dataset MP9 3.0.0-beta.2 20231017" />
   </mapping>
   <kind value="resource" />
   <abstract value="false" />
@@ -76,7 +76,7 @@
         <comment value="AdministrationAgreementAdditionalInformation" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-342" />
         <comment value="AdministrationAgreementAdditionalInformation" />
       </mapping>
@@ -97,7 +97,7 @@
         <comment value="AdministrationAgreementReasonModificationOrDiscontinuation [DEPRECATED]" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-333" />
         <comment value="AdministrationAgreementReasonModificationOrDiscontinuation" />
       </mapping>
@@ -174,7 +174,7 @@
         <comment value="CopyIndicator" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-345" />
         <comment value="CopyIndicator" />
       </mapping>
@@ -195,7 +195,7 @@
         <comment value="Identification" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-42" />
         <comment value="Identification" />
       </mapping>
@@ -216,7 +216,7 @@
         <comment value="DistributionForm" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-1371" />
         <comment value="DistributionForm" />
       </mapping>
@@ -232,7 +232,7 @@
     <element id="MedicationDispense.extension:relationAdministrationAgreement.value[x]">
       <path value="MedicationDispense.extension.value[x]" />
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-1380" />
         <comment value="RelationAdministrationAgreement" />
       </mapping>
@@ -255,7 +255,7 @@
         <comment value="AdministrationAgreementStopType [DEPRECATED]" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-340" />
         <comment value="AdministrationAgreementStopType" />
       </mapping>
@@ -286,7 +286,7 @@
         <comment value="Identification" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-344" />
         <comment value="Identification" />
       </mapping>
@@ -311,7 +311,7 @@
         <comment value="AdministrationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType) [DEPRECATED]" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-340" />
         <comment value="AdministrationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType)" />
       </mapping>
