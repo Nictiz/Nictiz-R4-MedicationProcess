@@ -20,9 +20,9 @@
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
   <mapping>
-    <identity value="mp-dataset-mp9-200-20220402" />
-    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20220402T205710/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-01-05T132845.html" />
-    <name value="ART-DECOR Dataset MP9 2.0.0 20220402" />
+    <identity value="mp-dataset-mp9-300-beta1-20230217" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20230217T123829/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
+    <name value="ART-DECOR Dataset MP9 3.0.0-beta.1 20230217" />
   </mapping>
   <mapping>
     <identity value="mp-dataset-mp9-300-beta2-20231017" />
@@ -41,8 +41,8 @@
       <definition value="Response to the proposal dispense request." />
       <alias value="Antwoord" />
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-539" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-539" />
         <comment value="Response" />
       </mapping>
       <mapping>
@@ -83,8 +83,8 @@
       <min value="1" />
       <max value="1" />
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-540" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-540" />
         <comment value="Identification" />
       </mapping>
       <mapping>
@@ -105,8 +105,8 @@
         <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest" />
       </type>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-544" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-544" />
         <comment value="RelationToProposalData" />
       </mapping>
       <mapping>
@@ -127,8 +127,8 @@
         <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient" />
       </type>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-1" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-1" />
         <comment value="Patient" />
       </mapping>
       <mapping>
@@ -144,8 +144,8 @@
       <alias value="AntwoordDatum" />
       <min value="1" />
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-541" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-541" />
         <comment value="ResponseDate" />
       </mapping>
       <mapping>
@@ -173,8 +173,8 @@
         <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole" />
       </type>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-542" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-542" />
         <comment value="Author" />
       </mapping>
       <mapping>
@@ -219,8 +219,8 @@
         <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.36--20180412153353" />
       </binding>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-546" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-546" />
         <comment value="ResponseDispenseRequest" />
       </mapping>
       <mapping>

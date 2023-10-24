@@ -30,9 +30,9 @@
     <name value="zib Range-v1.0.1(2020EN)" />
   </mapping>
   <mapping>
-    <identity value="mp-dataset-mp9-200-20220402" />
-    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20220402T205710/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-01-05T132845.html" />
-    <name value="ART-DECOR Dataset MP9 2.0.0 20220402" />
+    <identity value="mp-dataset-mp9-300-beta1-20230217" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20230217T123829/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
+    <name value="ART-DECOR Dataset MP9 3.0.0-beta.1 20230217" />
   </mapping>
   <mapping>
     <identity value="mp-dataset-mp9-300-beta2-20231017" />
@@ -82,8 +82,8 @@
     <element id="MedicationAdministration.extension:asAgreedIndicator.value[x]">
       <path value="MedicationAdministration.extension.value[x]" />
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-429" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-429" />
         <comment value="AsAgreedIndicator" />
       </mapping>
       <mapping>
@@ -104,8 +104,8 @@
       <path value="MedicationAdministration.extension.value[x]" />
       <comment value="This MedicationAdministrationReasonForDeviation extension has overlap with `.statusReason`. Both concepts allow the documentation of reasons why an administration did not take place, potentially resulting in duplicated information in both places. This extension, however, has a broader scope because it also covers the reasons why administrations are performed differently than the agreement." />
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-444" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-444" />
         <comment value="MedicationAdministrationReasonForDeviation" />
       </mapping>
       <mapping>
@@ -125,8 +125,8 @@
     <element id="MedicationAdministration.extension:pharmaceuticalTreatmentIdentifier.value[x]">
       <path value="MedicationAdministration.extension.value[x]" />
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-42" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-42" />
         <comment value="Identification" />
       </mapping>
       <mapping>
@@ -146,8 +146,8 @@
     <element id="MedicationAdministration.extension:injectionPatchSite.value[x]">
       <path value="MedicationAdministration.extension.value[x]" />
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-702" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-702" />
         <comment value="InjectionPatchSite" />
       </mapping>
       <mapping>
@@ -161,8 +161,8 @@
       <short value="Identification" />
       <alias value="Identificatie" />
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-447" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-447" />
         <comment value="Identification" />
       </mapping>
       <mapping>
@@ -258,7 +258,7 @@
     <element id="MedicationAdministration.context">
       <path value="MedicationAdministration.context" />
       <short value="RelationContact / RelationEpisodeOfCare" />
-      <comment value="The 'ExtContextEpisodeOfCare' extension is used to capture a reference to a related EpisodeOfCare if both a reference to an Encounter and an EpisodeOfCare need to be exchanged. This `.context` element will then contain the reference to the Encounter resource." />
+      <comment value="The ext-Context-EpisodeOfCare extension is used to capture a reference to a related EpisodeOfCare if both a reference to an Encounter and an EpisodeOfCare need to be exchanged, or to capture additional EpisodeOfCare resources if multiple related EpisodeOfCare resources need to be exchanged. This `.context` element will then contain the reference to the Encounter resource or the 'first' EpisodeOfCare, respectively." />
       <alias value="RelatieContact" />
       <alias value="RelatieZorgepisode" />
       <type>
@@ -269,8 +269,8 @@
         <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-EpisodeOfCare" />
       </type>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-1353" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-1353" />
         <comment value="RelationContact" />
       </mapping>
       <mapping>
@@ -279,9 +279,9 @@
         <comment value="RelationContact" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-1355" />
-        <comment value="RelationEpisodeOfCare" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-1355" />
+        <comment value="RelationEpisodeOfCare [DEPRECATED]" />
       </mapping>
       <mapping>
         <identity value="mp-dataset-mp9-300-beta2-20231017" />
@@ -302,9 +302,9 @@
       <short value="RelatedEpisodeOfCare" />
       <alias value="RelatieZorgepisode" />
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-1355" />
-        <comment value="RelationEpisodeOfCare" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-1355" />
+        <comment value="RelationEpisodeOfCare [DEPRECATED]" />
       </mapping>
       <mapping>
         <identity value="mp-dataset-mp9-300-beta2-20231017" />
@@ -376,6 +376,11 @@
         <comment value="Administrator [DEPRECATED]" />
       </mapping>
       <mapping>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
+        <map value="mp-dataelement9x-437" />
+        <comment value="Administrator" />
+      </mapping>
+      <mapping>
         <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-437" />
         <comment value="Administrator" />
@@ -417,6 +422,11 @@
         <comment value="Caregiver" />
       </mapping>
       <mapping>
+        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
+        <map value="mp-dataelement9x-1378" />
+        <comment value="HealthcareProvider" />
+      </mapping>
+      <mapping>
         <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-1378" />
         <comment value="HealthcareProvider" />
@@ -439,8 +449,8 @@
         <comment value="MedicationAgreement" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-1325" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-1325" />
         <comment value="RelationVariableDosingRegimen" />
       </mapping>
       <mapping>
@@ -483,9 +493,9 @@
     <element id="MedicationAdministration.dosage.extension:agreedAmount.value[x]">
       <path value="MedicationAdministration.dosage.extension.value[x]" />
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-1172" />
-        <comment value="AgreedAmount" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-1172" />
+        <comment value="AgreedAmount [DEPRECATED]" />
       </mapping>
       <mapping>
         <identity value="mp-dataset-mp9-300-beta2-20231017" />

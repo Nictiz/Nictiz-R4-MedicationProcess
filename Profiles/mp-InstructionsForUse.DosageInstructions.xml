@@ -30,9 +30,9 @@
     <name value="zib Range-v1.0.1(2020EN)" />
   </mapping>
   <mapping>
-    <identity value="mp-dataset-mp9-200-20220402" />
-    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20220402T205710/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-01-05T132845.html" />
-    <name value="ART-DECOR Dataset MP9 2.0.0 20220402" />
+    <identity value="mp-dataset-mp9-300-beta1-20230217" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20230217T123829/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
+    <name value="ART-DECOR Dataset MP9 3.0.0-beta.1 20230217" />
   </mapping>
   <mapping>
     <identity value="mp-dataset-mp9-300-beta2-20231017" />
@@ -102,8 +102,8 @@
         <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.9--20160407000000" />
       </binding>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-51" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-51" />
         <comment value="AdditionalInstructions" />
       </mapping>
       <mapping>
@@ -112,8 +112,8 @@
         <comment value="AdditionalInstructions" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-649" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-649" />
         <comment value="AdditionalInstructions" />
       </mapping>
       <mapping>
@@ -122,8 +122,8 @@
         <comment value="AdditionalInstructions" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-300" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-300" />
         <comment value="AdditionalInstructions" />
       </mapping>
       <mapping>
@@ -132,8 +132,8 @@
         <comment value="AdditionalInstructions" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-368" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-368" />
         <comment value="AdditionalInstructions" />
       </mapping>
       <mapping>
@@ -171,8 +171,8 @@
         <comment value="Interval (implicit, main mapping is on `.frequency`, `.period` and `.periodMax`)" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-271" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-271" />
         <comment value="(negative of) IsFlexible" />
       </mapping>
       <mapping>
@@ -181,8 +181,8 @@
         <comment value="(negative of) IsFlexible" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-672" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-672" />
         <comment value="(negative of) IsFlexible" />
       </mapping>
       <mapping>
@@ -191,8 +191,8 @@
         <comment value="(negative of) IsFlexible" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-580" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-580" />
         <comment value="(negative of) IsFlexible" />
       </mapping>
       <mapping>
@@ -201,8 +201,8 @@
         <comment value="(negative of) IsFlexible" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-412" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-412" />
         <comment value="(negative of) IsFlexible" />
       </mapping>
       <mapping>
@@ -470,8 +470,8 @@
     <element id="Dosage.asNeeded[x]:asNeededCodeableConcept.text">
       <path value="Dosage.asNeeded[x].text" />
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-272" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-272" />
         <comment value="Description" />
       </mapping>
       <mapping>
@@ -480,8 +480,8 @@
         <comment value="Description" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-677" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-677" />
         <comment value="Description" />
       </mapping>
       <mapping>
@@ -490,8 +490,8 @@
         <comment value="Description" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-582" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-582" />
         <comment value="Description" />
       </mapping>
       <mapping>
@@ -500,8 +500,8 @@
         <comment value="Description" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-514" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-514" />
         <comment value="Description" />
       </mapping>
       <mapping>

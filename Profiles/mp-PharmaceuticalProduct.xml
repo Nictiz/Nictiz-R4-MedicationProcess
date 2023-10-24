@@ -25,6 +25,11 @@
     <name value="zib PharmaceuticalProduct-v2.1.2(2020EN)" />
   </mapping>
   <mapping>
+    <identity value="mp-dataset-mp9-300-beta1-20230217" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20230217T123829/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
+    <name value="ART-DECOR Dataset MP9 3.0.0-beta.1 20230217" />
+  </mapping>
+  <mapping>
     <identity value="mp-dataset-mp9-300-beta2-20231017" />
     <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20231017T223005/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
     <name value="ART-DECOR Dataset MP9 3.0.0-beta.2 20231017" />
@@ -72,6 +77,11 @@
         <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN" />
         <map value="NL-CM:9.7.19927" />
         <comment value="MedicationCode [DEPRECATED]" />
+      </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-261" />
+        <comment value="MedicationCode" />
       </mapping>
       <mapping>
         <identity value="mp-dataset-mp9-300-beta2-20231017" />
@@ -160,6 +170,11 @@
       <mapping>
         <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN" />
         <map value="NL-CM:9.7.19934" />
+        <comment value="SubstanceCode [DEPRECATED]" />
+      </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
+        <map value="mp-dataelement9x-267" />
         <comment value="SubstanceCode" />
       </mapping>
     </element>
