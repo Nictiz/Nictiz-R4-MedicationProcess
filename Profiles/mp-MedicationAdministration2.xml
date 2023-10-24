@@ -495,7 +495,7 @@
       <mapping>
         <identity value="mp-dataset-mp9-300-beta1-20230217" />
         <map value="mp-dataelement9x-1172" />
-        <comment value="AgreedAmount [DEPRECATED]" />
+        <comment value="AgreedAmount" />
       </mapping>
       <mapping>
         <identity value="mp-dataset-mp9-300-beta2-20231017" />
