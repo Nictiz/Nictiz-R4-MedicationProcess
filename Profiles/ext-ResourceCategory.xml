@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ext-ResourceCategory" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-ResourceCategory" />
-  <version value="1.0.0" />
+  <version value="2.0.0-beta.2" />
   <name value="ExtResourceCategory" />
   <title value="ext ResourceCategory" />
   <status value="active" />

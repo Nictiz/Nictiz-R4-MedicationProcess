@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="mp-PharmaceuticalProduct" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct" />
+  <version value="2.0.0-beta.2" />
   <name value="MpPharmaceuticalProduct" />
   <title value="mp PharmaceuticalProduct" />
   <status value="active" />
@@ -28,6 +29,11 @@
     <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20230217T123829/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
     <name value="ART-DECOR Dataset MP9 3.0.0-beta.1 20230217" />
   </mapping>
+  <mapping>
+    <identity value="mp-dataset-mp9-300-beta2-20231017" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20231017T223005/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
+    <name value="ART-DECOR Dataset MP9 3.0.0-beta.2 20231017" />
+  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Medication" />
@@ -44,21 +50,9 @@
         <comment value="PharmaceuticalProduct" />
       </mapping>
     </element>
-    <element id="Medication.extension">
-      <path value="Medication.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="Medication.extension:description">
       <path value="Medication.extension" />
       <sliceName value="description" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalProduct.Description" />
@@ -73,7 +67,7 @@
     <element id="Medication.code">
       <path value="Medication.code" />
       <short value="MedicationCode" />
-      <definition value="Coding medication in the Netherlands is done on the basis of the G-standaard (issued by Z-index), which is filled under the direction of Royal Dutch Pharmacists Association (KNMP).&#xD;&#xA;&#xD;&#xA;The coded medication can be expressed as:&#xD;&#xA;&#xD;&#xA;* ZI number&#xD;&#xA;* Trade product code (HPK)&#xD;&#xA;* Prescription code (PRK)&#xD;&#xA;* Generic product code (GPK)&#xD;&#xA;* Substance Name Code (SNK)&#xD;&#xA;* Substance Name Code, in combination with Route of Administration (SSK)&#xD;&#xA;&#xD;&#xA;The ZI number represents the trade product and the package size.&#xD;&#xA;The HPK is the trade product as registered and marketed by the manufacturer.&#xD;&#xA;The PRK contains all GPK information supplemented with information needed to prescribe the right product. This level is intended to facilitate generic prescription of drugs.&#xD;&#xA;The GPK defines the pharmaceutical characteristics of a product: ingredients, strengths, units, pharmaceutical form and route of administration.&#xD;&#xA;The SNK is the (active) compound.&#xD;&#xA;The SSK is the combination of the active compund and route of administration.&#xD;&#xA;&#xD;&#xA;Further information about the G-Standaard levels see https://www.z-index.nl.&#xD;&#xA;&#xD;&#xA;So-called 90.000.000 numbers are used in local IT systems. The 90.000.000 number is used in accordance with national agreements." />
+      <definition value="Coding medication in the Netherlands is done on the basis of the G-standaard (issued by Z-index), which is filled under the direction of Royal Dutch Pharmacists Association (KNMP).&#xD;&#xA;&#xD;&#xA;The coded medication can be expressed as:&#xD;&#xA;&#xD;&#xA;* ZI number&#xD;&#xA;* Trade product code (HPK)&#xD;&#xA;* Prescription code (PRK)&#xD;&#xA;* Generic product code (GPK)&#xD;&#xA;&#xD;&#xA;The ZI number represents the trade product and the package size.&#xD;&#xA;The HPK is the trade product as registered and marketed by the manufacturer.&#xD;&#xA;The PRK contains all GPK information supplemented with information needed to prescribe the right product. This level is intended to facilitate generic prescription of drugs.&#xD;&#xA;The GPK defines the pharmaceutical characteristics of a product: ingredients, strengths, units, pharmaceutical form and route of administration.&#xD;&#xA;&#xD;&#xA;Further information about the G-Standaard levels see &lt;https://www.z-index.nl&gt;.&#xD;&#xA;&#xD;&#xA;So-called 90.000.000 numbers are used in local IT systems. The 90.000.000 number is used in accordance with national agreements." />
       <alias value="ProductCode" />
       <binding>
         <strength value="extensible" />
@@ -86,6 +80,11 @@
       </mapping>
       <mapping>
         <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-261" />
+        <comment value="MedicationCode" />
+      </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-261" />
         <comment value="MedicationCode" />
       </mapping>
@@ -159,7 +158,7 @@
       <path value="Medication.ingredient.item[x]" />
       <sliceName value="itemCodeableConcept" />
       <short value="SubstanceCode" />
-      <definition value="Active substance or excipient. Here, the same codes can be used as for the ProductCode (for dilutions and compounds in particular), but now, the ATC, SSK and SNK codes can also be used to indicate a substance (to list ingredients of local products prepared by the pharmacy). &#xD;&#xA;&#xD;&#xA;* GTIN International Article Number &#xA;* KNMP article number &#xA;* Trade product code (HPK) &#xA;* Prescription code (PRK) &#xA;* Generic product code (GPK) &#xA;* ATC (anatomic therapeutic classification) &#xA;* SSK (substance name code with route of administration) &#xA;* SNK (substance name code)&#xD;&#xA;&#xD;&#xA;For further explanation about ATC see &lt;https://www.whocc.no/atc/structure_and_principles/&gt;" />
+      <definition value="Active substance or excipient. Here, the same codes can be used as for the MedicationCode (for dilutions and compounds in particular), but now, the ATC, SSK and SNK codes can also be used to indicate a substance (to list ingredients of local products prepared by the pharmacy).&#xD;&#xA;&#xD;&#xA;* ZI number&#xD;&#xA;* Trade product code (HPK)&#xD;&#xA;* Prescription code (PRK)&#xD;&#xA;* Generic product code (GPK)&#xD;&#xA;* Anatomical Therapeutic Chemical Classification (ATC)&#xD;&#xA;* Substance Name Code (SNK)&#xD;&#xA;* Substance Name Code, in combination with Route of Administration (SSK)&#xD;&#xA;&#xD;&#xA;For further explanation about ATC see &lt;https://www.whocc.no/atc/structure_and_principles/&gt;." />
       <alias value="IngredientCode" />
       <type>
         <code value="CodeableConcept" />
@@ -171,6 +170,11 @@
       <mapping>
         <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN" />
         <map value="NL-CM:9.7.19934" />
+        <comment value="SubstanceCode [DEPRECATED]" />
+      </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
+        <map value="mp-dataelement9x-267" />
         <comment value="SubstanceCode" />
       </mapping>
     </element>
@@ -198,7 +202,7 @@
       <alias value="IngredientHoeveelheid" />
       <type>
         <code value="Quantity" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-GstdQuantity" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-GstdSimpleQuantity" />
       </type>
       <constraint>
         <key value="qty-3" />
@@ -219,7 +223,7 @@
       <alias value="ProductHoeveelheid" />
       <type>
         <code value="Quantity" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-GstdQuantity" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-GstdSimpleQuantity" />
       </type>
       <constraint>
         <key value="qty-3" />

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ext-MedicationOverview.Verification" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationOverview.Verification" />
-  <version value="1.0.0" />
+  <version value="2.0.0-beta.2" />
   <name value="ExtMedicationOverviewVerification" />
   <title value="Ext MedicatonOverview.Verification" />
   <status value="active" />
@@ -40,13 +40,6 @@
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <min value="2" />
     </element>
     <element id="Extension.extension:verificationPatient">
@@ -71,7 +64,6 @@
     <element id="Extension.extension:verificationPatientDate">
       <path value="Extension.extension" />
       <sliceName value="verificationPatientDate" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:verificationPatientDate.url">
@@ -109,7 +101,6 @@
     <element id="Extension.extension:verificationHealthProfessionalDate">
       <path value="Extension.extension" />
       <sliceName value="verificationHealthProfessionalDate" />
-      <min value="0" />
       <max value="1" />
     </element>
     <element id="Extension.extension:verificationHealthProfessionalDate.url">

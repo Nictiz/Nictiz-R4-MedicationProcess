@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="mp-AdministrationAgreement" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement" />
-  <version value="1.0.0" />
+  <version value="2.0.0-beta.2" />
   <name value="MpAdministrationAgreement" />
   <title value="mp AdministrationAgreement" />
   <status value="active" />
@@ -30,14 +30,14 @@
     <name value="zib InstructionsForUse-v1.2.1(2020EN)" />
   </mapping>
   <mapping>
-    <identity value="mp-dataset-mp9-200-20220402" />
-    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20220402T205710/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-01-05T132845.html" />
-    <name value="ART-DECOR Dataset MP9 2.0.0 20220402" />
-  </mapping>
-  <mapping>
     <identity value="mp-dataset-mp9-300-beta1-20230217" />
     <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20230217T123829/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
     <name value="ART-DECOR Dataset MP9 3.0.0-beta.1 20230217" />
+  </mapping>
+  <mapping>
+    <identity value="mp-dataset-mp9-300-beta2-20231017" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20231017T223005/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
+    <name value="ART-DECOR Dataset MP9 3.0.0-beta.2 20231017" />
   </mapping>
   <kind value="resource" />
   <abstract value="false" />
@@ -54,22 +54,15 @@
         <map value="NL-CM:9.8.20132" />
         <comment value="AdministrationAgreement" />
       </mapping>
-    </element>
-    <element id="MedicationDispense.extension">
-      <path value="MedicationDispense.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
+      <mapping>
+        <identity value="zib-administrationagreement-v1.0.3-2020EN" />
+        <map value="NL-CM:9.8.22098" />
+        <comment value="InstructionsForUse" />
+      </mapping>
     </element>
     <element id="MedicationDispense.extension:additionalInformation">
       <path value="MedicationDispense.extension" />
       <sliceName value="additionalInformation" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdministrationAgreement.AdditionalInformation" />
@@ -78,12 +71,12 @@
     <element id="MedicationDispense.extension:additionalInformation.value[x]">
       <path value="MedicationDispense.extension.value[x]" />
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-342" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-342" />
         <comment value="AdministrationAgreementAdditionalInformation" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-342" />
         <comment value="AdministrationAgreementAdditionalInformation" />
       </mapping>
@@ -91,7 +84,6 @@
     <element id="MedicationDispense.extension:reasonModificationOrDiscontinuation">
       <path value="MedicationDispense.extension" />
       <sliceName value="reasonModificationOrDiscontinuation" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdministrationAgreement.ReasonModificationOrDiscontinuation" />
@@ -100,12 +92,12 @@
     <element id="MedicationDispense.extension:reasonModificationOrDiscontinuation.value[x]">
       <path value="MedicationDispense.extension.value[x]" />
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-333" />
-        <comment value="AdministrationAgreementReasonModificationOrDiscontinuation [DEPRECATED]" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-333" />
+        <comment value="AdministrationAgreementReasonModificationOrDiscontinuation" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-333" />
         <comment value="AdministrationAgreementReasonModificationOrDiscontinuation" />
       </mapping>
@@ -113,7 +105,6 @@
     <element id="MedicationDispense.extension:administrationAgreementDateTime">
       <path value="MedicationDispense.extension" />
       <sliceName value="administrationAgreementDateTime" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdministrationAgreement.AdministrationAgreementDateTime" />
@@ -130,16 +121,22 @@
     <element id="MedicationDispense.extension:renderedDosageInstruction">
       <path value="MedicationDispense.extension" />
       <sliceName value="renderedDosageInstruction" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-RenderedDosageInstruction" />
       </type>
     </element>
+    <element id="MedicationDispense.extension:renderedDosageInstruction.value[x]">
+      <path value="MedicationDispense.extension.value[x]" />
+      <mapping>
+        <identity value="zib-instructionsforuse-v1.2.1-2020EN" />
+        <map value="NL-CM:9.12.9581" />
+        <comment value="Description" />
+      </mapping>
+    </element>
     <element id="MedicationDispense.extension:periodOfUse">
       <path value="MedicationDispense.extension" />
       <sliceName value="periodOfUse" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -164,7 +161,6 @@
     <element id="MedicationDispense.extension:copyIndicator">
       <path value="MedicationDispense.extension" />
       <sliceName value="copyIndicator" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-CopyIndicator" />
@@ -173,12 +169,12 @@
     <element id="MedicationDispense.extension:copyIndicator.value[x]">
       <path value="MedicationDispense.extension.value[x]" />
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-345" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-345" />
         <comment value="CopyIndicator" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-345" />
         <comment value="CopyIndicator" />
       </mapping>
@@ -186,7 +182,6 @@
     <element id="MedicationDispense.extension:pharmaceuticalTreatmentIdentifier">
       <path value="MedicationDispense.extension" />
       <sliceName value="pharmaceuticalTreatmentIdentifier" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier" />
@@ -195,12 +190,12 @@
     <element id="MedicationDispense.extension:pharmaceuticalTreatmentIdentifier.value[x]">
       <path value="MedicationDispense.extension.value[x]" />
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-42" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-42" />
         <comment value="Identification" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-42" />
         <comment value="Identification" />
       </mapping>
@@ -208,7 +203,6 @@
     <element id="MedicationDispense.extension:distributionForm">
       <path value="MedicationDispense.extension" />
       <sliceName value="distributionForm" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationDispense.DistributionForm" />
@@ -217,12 +211,12 @@
     <element id="MedicationDispense.extension:distributionForm.value[x]">
       <path value="MedicationDispense.extension.value[x]" />
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-1371" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-1371" />
         <comment value="DistributionForm" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-1371" />
         <comment value="DistributionForm" />
       </mapping>
@@ -230,7 +224,6 @@
     <element id="MedicationDispense.extension:relationAdministrationAgreement">
       <path value="MedicationDispense.extension" />
       <sliceName value="relationAdministrationAgreement" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-RelationAdministrationAgreement" />
@@ -243,22 +236,15 @@
         <map value="mp-dataelement9x-1380" />
         <comment value="RelationAdministrationAgreement" />
       </mapping>
-    </element>
-    <element id="MedicationDispense.modifierExtension">
-      <path value="MedicationDispense.modifierExtension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
+      <mapping>
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
+        <map value="mp-dataelement9x-1380" />
+        <comment value="RelationAdministrationAgreement" />
+      </mapping>
     </element>
     <element id="MedicationDispense.modifierExtension:stopType">
       <path value="MedicationDispense.modifierExtension" />
       <sliceName value="stopType" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-StopType" />
@@ -278,11 +264,15 @@
         <map value="mp-dataelement9x-340" />
         <comment value="AdministrationAgreementStopType" />
       </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
+        <map value="mp-dataelement9x-340" />
+        <comment value="AdministrationAgreementStopType" />
+      </mapping>
     </element>
     <element id="MedicationDispense.modifierExtension:repeatPeriodCyclicalSchedule">
       <path value="MedicationDispense.modifierExtension" />
       <sliceName value="repeatPeriodCyclicalSchedule" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-InstructionsForUse.RepeatPeriodCyclicalSchedule" />
@@ -301,12 +291,12 @@
       <short value="Identification" />
       <alias value="Identificatie" />
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402" />
-        <map value="mp-dataelement920-344" />
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-344" />
         <comment value="Identification" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-344" />
         <comment value="Identification" />
       </mapping>
@@ -335,6 +325,11 @@
         <map value="mp-dataelement9x-340" />
         <comment value="AdministrationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType)" />
       </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
+        <map value="mp-dataelement9x-340" />
+        <comment value="AdministrationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType)" />
+      </mapping>
     </element>
     <element id="MedicationDispense.category">
       <path value="MedicationDispense.category" />
@@ -346,21 +341,9 @@
         </coding>
       </patternCodeableConcept>
     </element>
-    <element id="MedicationDispense.category.extension">
-      <path value="MedicationDispense.category.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
     <element id="MedicationDispense.category.extension:additionalCategory">
       <path value="MedicationDispense.category.extension" />
       <sliceName value="additionalCategory" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdditionalCategory" />
@@ -496,11 +479,6 @@
         <code value="Dosage" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-InstructionsForUse.DosageInstructions" />
       </type>
-      <mapping>
-        <identity value="zib-administrationagreement-v1.0.3-2020EN" />
-        <map value="NL-CM:9.8.22098" />
-        <comment value="InstructionsForUse" />
-      </mapping>
     </element>
   </differential>
 </StructureDefinition>

@@ -1,380 +1,368 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="mp-ProposalMedicationAgreement-Bundle"/>
-  <url value="http://nictiz.nl/fhir/StructureDefinition/mp-ProposalMedicationAgreement-Bundle"/>
-  <version value="1.0.0"/>
-  <name value="MpProposalMedicationAgreementBundle"/>
-  <title value="mp ProposalMedicationAgreement Bundle"/>
-  <status value="active"/>
-  <publisher value="Nictiz"/>
+  <id value="mp-ProposalMedicationAgreement-Bundle" />
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp-ProposalMedicationAgreement-Bundle" />
+  <version value="2.0.0-beta.2" />
+  <name value="MpProposalMedicationAgreementBundle" />
+  <title value="mp ProposalMedicationAgreement Bundle" />
+  <status value="active" />
+  <publisher value="Nictiz" />
   <contact>
-    <name value="Nictiz"/>
+    <name value="Nictiz" />
     <telecom>
-      <system value="url"/>
-      <value value="https://www.nictiz.nl"/>
-      <use value="work"/>
+      <system value="url" />
+      <value value="https://www.nictiz.nl" />
+      <use value="work" />
     </telecom>
   </contact>
-  <description value="Profile on the Bundle resource which represents the structure of the Send ProposalMedicationAgreement transaction conform information standard ['Medication Process'](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)."/>
-  <purpose value="To define the body of the Send ProposalMedicationAgreement transaction."/>
-  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
-  <fhirVersion value="4.0.1"/>
+  <description value="Profile on the Bundle resource which represents the structure of the Send ProposalMedicationAgreement transaction conform information standard ['Medication Process'](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)." />
+  <purpose value="To define the body of the Send ProposalMedicationAgreement transaction." />
+  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
+  <fhirVersion value="4.0.1" />
   <mapping>
-    <identity value="mp-dataset-mp9-200-20220402"/>
-    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20220402T205710/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-01-05T132845.html"/>
-    <name value="ART-DECOR Dataset MP9 2.0.0 20220402"/>
+    <identity value="mp-dataset-mp9-300-beta1-20230217" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20230217T123829/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
+    <name value="ART-DECOR Dataset MP9 3.0.0-beta.1 20230217" />
   </mapping>
   <mapping>
-    <identity value="mp-dataset-mp9-300-beta1-20230217"/>
-    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20230217T123829/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
-    <name value="ART-DECOR Dataset MP9 3.0.0-beta.1 20230217"/>
+    <identity value="mp-dataset-mp9-300-beta2-20231017" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20231017T223005/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
+    <name value="ART-DECOR Dataset MP9 3.0.0-beta.2 20231017" />
   </mapping>
-  <kind value="resource"/>
-  <abstract value="false"/>
-  <type value="Bundle"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
-  <derivation value="constraint"/>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Bundle" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
+  <derivation value="constraint" />
   <differential>
     <element id="Bundle.type">
-      <path value="Bundle.type"/>
-      <fixedCode value="transaction"/>
+      <path value="Bundle.type" />
+      <fixedCode value="transaction" />
     </element>
     <element id="Bundle.entry">
-      <path value="Bundle.entry"/>
+      <path value="Bundle.entry" />
       <slicing>
         <discriminator>
-          <type value="profile"/>
-          <path value="resource"/>
+          <type value="profile" />
+          <path value="resource" />
         </discriminator>
-        <rules value="open"/>
+        <rules value="open" />
       </slicing>
-      <min value="1"/>
+      <min value="1" />
     </element>
     <element id="Bundle.entry:proposalMedicationAgreement">
-      <path value="Bundle.entry"/>
-      <sliceName value="proposalMedicationAgreement"/>
-      <min value="1"/>
-      <max value="1"/>
+      <path value="Bundle.entry" />
+      <sliceName value="proposalMedicationAgreement" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Bundle.entry:proposalMedicationAgreement.resource">
-      <path value="Bundle.entry.resource"/>
-      <short value="Proposal"/>
-      <definition value="Data of the proposal medication agreement."/>
-      <alias value="Voorstel"/>
-      <min value="1"/>
+      <path value="Bundle.entry.resource" />
+      <short value="Proposal" />
+      <definition value="Data of the proposal medication agreement." />
+      <alias value="Voorstel" />
+      <min value="1" />
       <type>
-        <code value="Resource"/>
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement" />
       </type>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402"/>
-        <map value="mp-dataelement920-527"/>
-        <comment value="Proposal"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-527" />
+        <comment value="Proposal" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
-        <map value="mp-dataelement9x-527"/>
-        <comment value="Proposal"/>
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
+        <map value="mp-dataelement9x-527" />
+        <comment value="Proposal" />
       </mapping>
     </element>
     <element id="Bundle.entry:proposalMedicationAgreement.resource.meta">
-      <path value="Bundle.entry.resource.meta"/>
+      <path value="Bundle.entry.resource.meta" />
     </element>
     <element id="Bundle.entry:proposalMedicationAgreement.resource.meta.tag">
-      <path value="Bundle.entry.resource.meta.tag"/>
+      <path value="Bundle.entry.resource.meta.tag" />
       <slicing>
         <discriminator>
-          <type value="pattern"/>
-          <path value="$this"/>
+          <type value="pattern" />
+          <path value="$this" />
         </discriminator>
-        <rules value="open"/>
+        <rules value="open" />
       </slicing>
-      <min value="1"/>
+      <min value="1" />
     </element>
     <element id="Bundle.entry:proposalMedicationAgreement.resource.meta.tag:actionable">
-      <path value="Bundle.entry.resource.meta.tag"/>
-      <sliceName value="actionable"/>
-      <min value="1"/>
-      <max value="1"/>
+      <path value="Bundle.entry.resource.meta.tag" />
+      <sliceName value="actionable" />
+      <min value="1" />
+      <max value="1" />
       <patternCoding>
-        <system value="http://terminology.hl7.org/CodeSystem/common-tags"/>
-        <code value="actionable"/>
+        <system value="http://terminology.hl7.org/CodeSystem/common-tags" />
+        <code value="actionable" />
       </patternCoding>
     </element>
-    <element id="Bundle.entry:proposalMedicationAgreement.resource.extension">
-      <path value="Bundle.entry.resource.extension"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <rules value="open"/>
-      </slicing>
-      <min value="0"/>
-    </element>
     <element id="Bundle.entry:proposalMedicationAgreement.resource.extension:proposalComment">
-      <path value="Bundle.entry.resource.extension"/>
-      <sliceName value="proposalComment"/>
-      <min value="0"/>
-      <max value="1"/>
+      <path value="Bundle.entry.resource.extension" />
+      <sliceName value="proposalComment" />
+      <max value="1" />
       <type>
-        <code value="Extension"/>
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-Comment"/>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-Comment" />
       </type>
     </element>
     <element id="Bundle.entry:proposalMedicationAgreement.resource.extension:proposalComment.value[x]">
-      <path value="Bundle.entry.resource.extension.value[x]"/>
-      <short value="Comment"/>
-      <definition value="Comments regarding the proposal."/>
-      <alias value="Toelichting"/>
+      <path value="Bundle.entry.resource.extension.value[x]" />
+      <short value="Comment" />
+      <definition value="Comments regarding the proposal." />
+      <alias value="Toelichting" />
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402"/>
-        <map value="mp-dataelement920-538"/>
-        <comment value="Comment"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-538" />
+        <comment value="Comment" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
-        <map value="mp-dataelement9x-538"/>
-        <comment value="Comment"/>
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
+        <map value="mp-dataelement9x-538" />
+        <comment value="Comment" />
       </mapping>
     </element>
     <element id="Bundle.entry:proposalMedicationAgreement.resource.identifier">
-      <path value="Bundle.entry.resource.identifier"/>
-      <definition value="The identification of the proposal. This identification is generated by the system of the person who registers the proposal and is globally unique and eternally persistent."/>
-      <comment value="The Identification (of the MedicationAgreement building block, mp-dataelement9x-194) does not exist within the proposal. The fact that it is overwritten by the Identification (of the proposal) here, therefore does not cause any issues."/>
-      <min value="1"/>
-      <max value="1"/>
+      <path value="Bundle.entry.resource.identifier" />
+      <definition value="The identification of the proposal. This identification is generated by the system of the person who registers the proposal and is globally unique and eternally persistent." />
+      <comment value="The Identification (of the MedicationAgreement building block, mp-dataelement9x-194) does not exist within the proposal. The fact that it is overwritten by the Identification (of the proposal) here, therefore does not cause any issues." />
+      <min value="1" />
+      <max value="1" />
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402"/>
-        <map value="mp-dataelement920-528"/>
-        <comment value="Identification"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-528" />
+        <comment value="Identification" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
-        <map value="mp-dataelement9x-528"/>
-        <comment value="Identification"/>
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
+        <map value="mp-dataelement9x-528" />
+        <comment value="Identification" />
       </mapping>
     </element>
     <element id="Bundle.entry:proposalMedicationAgreement.resource.intent">
-      <path value="Bundle.entry.resource.intent"/>
-      <comment value="Set to _plan_ because this Proposal Medication Agreement is intended to be acted upon by a patient, pharmacist, professional administrator et cetera."/>
-      <fixedCode value="plan"/>
+      <path value="Bundle.entry.resource.intent" />
+      <comment value="Set to _plan_ because this Proposal Medication Agreement is intended to be acted upon by a patient, pharmacist, professional administrator et cetera." />
+      <fixedCode value="plan" />
     </element>
     <element id="Bundle.entry:proposalMedicationAgreement.resource.authoredOn">
-      <path value="Bundle.entry.resource.authoredOn"/>
-      <short value="ProposalDate"/>
-      <definition value="Date of the proposal."/>
-      <comment value="The MedicationAgreementDateTime does not exist within the proposal. The fact that it is overwritten by the ProposalDate here, therefore does not cause any issues."/>
-      <alias value="VoorstelDatum"/>
-      <min value="1"/>
+      <path value="Bundle.entry.resource.authoredOn" />
+      <short value="ProposalDate" />
+      <definition value="Date of the proposal." />
+      <comment value="The MedicationAgreementDateTime does not exist within the proposal. The fact that it is overwritten by the ProposalDate here, therefore does not cause any issues." />
+      <alias value="VoorstelDatum" />
+      <min value="1" />
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402"/>
-        <map value="mp-dataelement920-529"/>
-        <comment value="ProposalDate"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-529" />
+        <comment value="ProposalDate" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
-        <map value="mp-dataelement9x-529"/>
-        <comment value="ProposalDate"/>
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
+        <map value="mp-dataelement9x-529" />
+        <comment value="ProposalDate" />
       </mapping>
     </element>
     <element id="Bundle.entry:proposalMedicationAgreement.resource.requester">
-      <path value="Bundle.entry.resource.requester"/>
-      <short value="Author"/>
-      <definition value="Author of the proposal."/>
-      <comment value="The Prescriber (of the MedicationAgreement building block, mp-dataelement9x-44) does not exist within the proposal. The fact that it is overwritten by the Author (of the proposal) here, therefore does not cause any issues."/>
-      <alias value="Auteur"/>
-      <min value="1"/>
+      <path value="Bundle.entry.resource.requester" />
+      <short value="Author" />
+      <definition value="Author of the proposal." />
+      <comment value="The Prescriber (of the MedicationAgreement building block, mp-dataelement9x-44) does not exist within the proposal. The fact that it is overwritten by the Author (of the proposal) here, therefore does not cause any issues." />
+      <alias value="Auteur" />
+      <min value="1" />
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"/>
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"/>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization" />
       </type>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402"/>
-        <map value="mp-dataelement920-530"/>
-        <comment value="Author"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-530" />
+        <comment value="Author" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
-        <map value="mp-dataelement9x-530"/>
-        <comment value="Author"/>
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
+        <map value="mp-dataelement9x-530" />
+        <comment value="Author" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402"/>
-        <map value="mp-dataelement920-531"/>
-        <comment value="AuthorIsPatient (implicit; AuthorIsPatient = true when this element refers to the same Patient as subject)"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-531" />
+        <comment value="AuthorIsPatient (implicit; AuthorIsPatient = true when this element refers to the same Patient as subject)" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
-        <map value="mp-dataelement9x-531"/>
-        <comment value="AuthorIsPatient (implicit; AuthorIsPatient = true when this element refers to the same Patient as subject)"/>
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
+        <map value="mp-dataelement9x-531" />
+        <comment value="AuthorIsPatient (implicit; AuthorIsPatient = true when this element refers to the same Patient as subject)" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402"/>
-        <map value="mp-dataelement920-532"/>
-        <comment value="AuthorIsHealthProfessional"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-532" />
+        <comment value="AuthorIsHealthProfessional" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
-        <map value="mp-dataelement9x-532"/>
-        <comment value="AuthorIsHealthProfessional"/>
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
+        <map value="mp-dataelement9x-532" />
+        <comment value="AuthorIsHealthProfessional" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402"/>
-        <map value="mp-dataelement920-1366"/>
-        <comment value="AuthorIsHealthcareProvider"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-1366" />
+        <comment value="AuthorIsHealthcareProvider" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
-        <map value="mp-dataelement9x-1366"/>
-        <comment value="AuthorIsHealthcareProvider"/>
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
+        <map value="mp-dataelement9x-1366" />
+        <comment value="AuthorIsHealthcareProvider" />
       </mapping>
     </element>
     <element id="Bundle.entry:patient">
-      <path value="Bundle.entry"/>
-      <sliceName value="patient"/>
-      <max value="1"/>
+      <path value="Bundle.entry" />
+      <sliceName value="patient" />
+      <max value="1" />
     </element>
     <element id="Bundle.entry:patient.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
-        <code value="Resource"/>
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient" />
       </type>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402"/>
-        <map value="mp-dataelement920-1"/>
-        <comment value="Patient"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-1" />
+        <comment value="Patient" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
-        <map value="mp-dataelement9x-1"/>
-        <comment value="Patient"/>
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
+        <map value="mp-dataelement9x-1" />
+        <comment value="Patient" />
       </mapping>
     </element>
     <element id="Bundle.entry:pharmaceuticalProduct">
-      <path value="Bundle.entry"/>
-      <sliceName value="pharmaceuticalProduct"/>
+      <path value="Bundle.entry" />
+      <sliceName value="pharmaceuticalProduct" />
     </element>
     <element id="Bundle.entry:pharmaceuticalProduct.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
-        <code value="Resource"/>
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"/>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct" />
       </type>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402"/>
-        <map value="mp-dataelement920-260"/>
-        <comment value="PharmaceuticalProduct"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-260" />
+        <comment value="PharmaceuticalProduct" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
-        <map value="mp-dataelement9x-260"/>
-        <comment value="PharmaceuticalProduct"/>
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
+        <map value="mp-dataelement9x-260" />
+        <comment value="PharmaceuticalProduct" />
       </mapping>
     </element>
     <element id="Bundle.entry:healthProfessional-PractitionerRole">
-      <path value="Bundle.entry"/>
-      <sliceName value="healthProfessional-PractitionerRole"/>
+      <path value="Bundle.entry" />
+      <sliceName value="healthProfessional-PractitionerRole" />
     </element>
     <element id="Bundle.entry:healthProfessional-PractitionerRole.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
-        <code value="Resource"/>
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"/>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole" />
       </type>
     </element>
     <element id="Bundle.entry:healthProfessional-Practitioner">
-      <path value="Bundle.entry"/>
-      <sliceName value="healthProfessional-Practitioner"/>
+      <path value="Bundle.entry" />
+      <sliceName value="healthProfessional-Practitioner" />
     </element>
     <element id="Bundle.entry:healthProfessional-Practitioner.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
-        <code value="Resource"/>
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"/>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner" />
       </type>
     </element>
     <element id="Bundle.entry:healthcareProvider">
-      <path value="Bundle.entry"/>
-      <sliceName value="healthcareProvider"/>
+      <path value="Bundle.entry" />
+      <sliceName value="healthcareProvider" />
     </element>
     <element id="Bundle.entry:healthcareProvider.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
-        <code value="Resource"/>
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"/>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider" />
       </type>
     </element>
     <element id="Bundle.entry:healthcareProvider-Organization">
-      <path value="Bundle.entry"/>
-      <sliceName value="healthcareProvider-Organization"/>
+      <path value="Bundle.entry" />
+      <sliceName value="healthcareProvider-Organization" />
     </element>
     <element id="Bundle.entry:healthcareProvider-Organization.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
-        <code value="Resource"/>
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"/>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization" />
       </type>
     </element>
     <element id="Bundle.entry:bodyHeight">
-      <path value="Bundle.entry"/>
-      <sliceName value="bodyHeight"/>
-      <max value="1"/>
+      <path value="Bundle.entry" />
+      <sliceName value="bodyHeight" />
+      <max value="1" />
     </element>
     <element id="Bundle.entry:bodyHeight.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
-        <code value="Resource"/>
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyHeight"/>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyHeight" />
       </type>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402"/>
-        <map value="mp-dataelement920-448"/>
-        <comment value="BodyHeight"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-448" />
+        <comment value="BodyHeight" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
-        <map value="mp-dataelement9x-448"/>
-        <comment value="BodyHeight"/>
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
+        <map value="mp-dataelement9x-448" />
+        <comment value="BodyHeight" />
       </mapping>
     </element>
     <element id="Bundle.entry:bodyWeight">
-      <path value="Bundle.entry"/>
-      <sliceName value="bodyWeight"/>
-      <max value="1"/>
+      <path value="Bundle.entry" />
+      <sliceName value="bodyWeight" />
+      <max value="1" />
     </element>
     <element id="Bundle.entry:bodyWeight.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
-        <code value="Resource"/>
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyWeight"/>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyWeight" />
       </type>
       <mapping>
-        <identity value="mp-dataset-mp9-200-20220402"/>
-        <map value="mp-dataelement920-453"/>
-        <comment value="BodyWeight"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
+        <map value="mp-dataelement9x-453" />
+        <comment value="BodyWeight" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
-        <map value="mp-dataelement9x-453"/>
-        <comment value="BodyWeight"/>
+        <identity value="mp-dataset-mp9-300-beta2-20231017" />
+        <map value="mp-dataelement9x-453" />
+        <comment value="BodyWeight" />
       </mapping>
     </element>
   </differential>

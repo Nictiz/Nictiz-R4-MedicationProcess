@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ext-MedicationDispense.MedicationDispenseAdditionalInformation" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationDispense.MedicationDispenseAdditionalInformation" />
-  <version value="1.0.0" />
+  <version value="2.0.0-beta.2" />
   <name value="ExtMedicationDispenseMedicationDispenseAdditionalInformation" />
   <title value="ext MedicationDispense.MedicationDispenseAdditionalInformation" />
   <status value="active" />

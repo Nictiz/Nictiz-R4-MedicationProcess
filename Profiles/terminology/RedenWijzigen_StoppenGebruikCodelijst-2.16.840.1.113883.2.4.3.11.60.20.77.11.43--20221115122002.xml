@@ -293,6 +293,22 @@
                <value value="Patient takes medication as prescribed (finding)"/>
             </designation>
          </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="loopt in andere medicamenteuze behandeling"/>
+            </extension>
+            <code value="180011000146107"/>
+            <display value="dubbele registratie van medicamenteuze behandeling"/>
+            <designation>
+               <language value="en-US"/>
+               <use>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="900000000000003001"/>
+                  <display value="Fully specified name"/>
+               </use>
+               <value value="Double registration of medication treatment"/>
+            </designation>
+         </concept>
       </include>
    </compose>
 </ValueSet>
