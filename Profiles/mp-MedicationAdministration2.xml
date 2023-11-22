@@ -95,6 +95,7 @@
     <element id="MedicationAdministration.extension:medicationAdministrationReasonForDeviation">
       <path value="MedicationAdministration.extension" />
       <sliceName value="medicationAdministrationReasonForDeviation" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.ReasonForDeviation" />
@@ -376,7 +377,7 @@
         <comment value="Administrator [DEPRECATED]" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
         <map value="mp-dataelement9x-437" />
         <comment value="Administrator" />
       </mapping>
@@ -422,7 +423,7 @@
         <comment value="Caregiver" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
         <map value="mp-dataelement9x-1378" />
         <comment value="HealthcareProvider" />
       </mapping>
