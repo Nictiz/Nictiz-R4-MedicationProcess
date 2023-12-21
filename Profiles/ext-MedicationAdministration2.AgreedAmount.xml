@@ -39,9 +39,33 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <short value="AgreedAmount" />
       <definition value="The amount of the product in the medication agreement, administration agreement or variable-dosing regimen on which this administration is based. Because multiple dosages can be recorded in one medication agreement/admininistration agreement/variable-dosing regimen, for example the administered dosage can differ from the agreed amount." />
       <alias value="AfgesprokenHoeveelheid" />
+      <type>
+        <code value="Quantity" />
+      </type>
+      <type>
+        <code value="Range" />
+      </type>
+    </element>
+    <element id="Extension.value[x]:valueRange">
+      <path value="Extension.value[x]" />
+      <sliceName value="valueRange" />
+      <type>
+        <code value="Range" />
+      </type>
+    </element>
+    <element id="Extension.value[x]:valueQuantity">
+      <path value="Extension.value[x]" />
+      <sliceName value="valueQuantity" />
       <type>
         <code value="Quantity" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-GstdSimpleQuantity" />
