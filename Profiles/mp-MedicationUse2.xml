@@ -384,7 +384,8 @@
     </element>
     <element id="MedicationStatement.context">
       <path value="MedicationStatement.context" />
-      <short value="RelationContact / RelationEpisodeOfCare" />
+      <short value="RelationEncounter / RelationEpisodeOfCare" />
+      <alias value="RelatieContact" />
       <comment value="The ext-Context-EpisodeOfCare extension is used to capture a reference to a related EpisodeOfCare if both a reference to an Encounter and an EpisodeOfCare need to be exchanged, or to capture additional EpisodeOfCare resources if multiple related EpisodeOfCare resources need to be exchanged. This `.context` element will then contain the reference to the Encounter resource or the 'first' EpisodeOfCare, respectively." />
       <type>
         <code value="Reference" />
@@ -402,6 +403,11 @@
         <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-1349" />
         <comment value="RelationContact" />
+      </mapping>
+       <mapping>
+        <identity value="mp-dataset-mp9-300-beta3-TODO" />
+        <map value="mp-dataelement9x-1349" />
+        <comment value="RelationEncounter" />
       </mapping>
       <mapping>
         <identity value="mp-dataset-mp9-300-beta1-20230217" />
