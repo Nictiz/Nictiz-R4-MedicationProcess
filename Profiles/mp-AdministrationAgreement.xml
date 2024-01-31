@@ -60,27 +60,6 @@
         <comment value="InstructionsForUse" />
       </mapping>
     </element>
-    <element id="MedicationDispense.extension:additionalInformation">
-      <path value="MedicationDispense.extension" />
-      <sliceName value="additionalInformation" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdministrationAgreement.AdditionalInformation" />
-      </type>
-    </element>
-    <element id="MedicationDispense.extension:additionalInformation.value[x]">
-      <path value="MedicationDispense.extension.value[x]" />
-      <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
-        <map value="mp-dataelement9x-342" />
-        <comment value="AdministrationAgreementAdditionalInformation" />
-      </mapping>
-      <mapping>
-        <identity value="mp-dataset-mp9-300-beta2-20231017" />
-        <map value="mp-dataelement9x-342" />
-        <comment value="AdministrationAgreementAdditionalInformation" />
-      </mapping>
-    </element>
     <element id="MedicationDispense.extension:reasonModificationOrDiscontinuation">
       <path value="MedicationDispense.extension" />
       <sliceName value="reasonModificationOrDiscontinuation" />
