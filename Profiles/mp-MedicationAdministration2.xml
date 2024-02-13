@@ -482,27 +482,6 @@
         <comment value="Comment" />
       </mapping>
     </element>
-    <element id="MedicationAdministration.dosage.extension:agreedAmount">
-      <path value="MedicationAdministration.dosage.extension" />
-      <sliceName value="agreedAmount" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.AgreedAmount" />
-      </type>
-    </element>
-    <element id="MedicationAdministration.dosage.extension:agreedAmount.value[x]">
-      <path value="MedicationAdministration.dosage.extension.value[x]" />
-      <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
-        <map value="mp-dataelement9x-1172" />
-        <comment value="AgreedAmount" />
-      </mapping>
-      <mapping>
-        <identity value="mp-dataset-mp9-300-beta2-20231017" />
-        <map value="mp-dataelement9x-1172" />
-        <comment value="AgreedAmount" />
-      </mapping>
-    </element>
     <element id="MedicationAdministration.dosage.route">
       <path value="MedicationAdministration.dosage.route" />
       <short value="RouteOfAdministration" />
