@@ -84,22 +84,6 @@
       <text value="voorbeeld toelichting in vrije tekst"/>
    </note>
    <dosage>
-      <extension url="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.AgreedAmount">
-         <valueQuantity>
-            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation">
-               <valueQuantity>
-                  <value value="1"/>
-                  <unit value="stuk"/>
-                  <system value="urn:oid:2.16.840.1.113883.2.4.4.1.900.2"/>
-                  <code value="245"/>
-               </valueQuantity>
-            </extension>
-            <value value="1"/>
-            <unit value="stuk"/>
-            <system value="http://unitsofmeasure.org"/>
-            <code value="1"/>
-         </valueQuantity>
-      </extension>
       <route>
          <coding>
             <system value="urn:oid:2.16.840.1.113883.2.4.4.9"/>
