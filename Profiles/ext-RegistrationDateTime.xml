@@ -48,7 +48,7 @@
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <short value="RegistrationDateTime" />
-      <definition value="Date and time the medication adiministration was recorded. Registration date + time are required (order of the registrations must be clear in cases with multiple registrations on one day)." />
+      <definition value="Date and time a certain agreement, variable dosing regimen or administration was recorded. Registration date + time are required (order of the registrations must be clear in cases with multiple registrations on one day)." />
       <alias value="RegistratieDatumTijd" />
       <type>
         <code value="dateTime" />
