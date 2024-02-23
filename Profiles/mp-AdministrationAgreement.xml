@@ -242,6 +242,19 @@
         <comment value="RelationAdministrationAgreement" />
       </mapping>
     </element>
+    <element id="MedicationDispense.extension:registrationDateTime">
+      <path value="MedicationDispense.extension" />
+      <sliceName value="registrationDateTime" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-RegistrationDateTime" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="MedicationDispense.extension:registrationDateTime.value[x]">
+      <path value="MedicationDispense.extension.value[x]" />
+      <definition value="Date and time the administration agreement was recorded. Registration date + time are required (order of the registrations must be clear in cases with multiple registrations on one day)." />
+    </element>
     <element id="MedicationDispense.modifierExtension:stopType">
       <path value="MedicationDispense.modifierExtension" />
       <sliceName value="stopType" />

@@ -92,22 +92,6 @@
         <comment value="AsAgreedIndicator" />
       </mapping>
     </element>
-      <element id="MedicationAdministration.extension:registrationDateTime">
-      <path value="MedicationAdministration.extension" />
-      <sliceName value="registrationDateTime" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.RegistrationDateTime" />
-      </type>
-    </element>
-    <element id="MedicationAdministration.extension:registrationDateTime.value[x]">
-      <path value="MedicationAdministration.extension.value[x]" />
-       <mapping>
-        <identity value="mp-dataset-mp9-300-beta3-TODO" />
-        <map value="mp-dataelement9x-1482" />
-        <comment value="RegistrationDateTime" />
-      </mapping>
-    </element>
     <element id="MedicationAdministration.extension:medicationAdministrationReasonForDeviation">
       <path value="MedicationAdministration.extension" />
       <sliceName value="medicationAdministrationReasonForDeviation" />
@@ -171,6 +155,19 @@
         <map value="mp-dataelement9x-702" />
         <comment value="InjectionPatchSite" />
       </mapping>
+    </element>
+    <element id="MedicationAdministration.extension:registrationDateTime">
+      <path value="MedicationAdministration.extension" />
+      <sliceName value="registrationDateTime" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-RegistrationDateTime" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="MedicationAdministration.extension:registrationDateTime.value[x]">
+      <path value="MedicationAdministration.extension.value[x]" />
+      <definition value="Date and time the medication administration was recorded. Registration date + time are required (order of the registrations must be clear in cases with multiple registrations on one day)." />
     </element>
     <element id="MedicationAdministration.identifier">
       <path value="MedicationAdministration.identifier" />
