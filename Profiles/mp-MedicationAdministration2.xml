@@ -368,7 +368,7 @@
     <element id="MedicationAdministration.performer">
       <path value="MedicationAdministration.performer" />
       <short value="Administrator" />
-      <definition value="(The healthcare provider of) the person who realized the administration. It refers to either the organization for which the professional responsible for administration works, the patient himself or, for example, the informal carer." />
+      <definition value="The concept describes the person who administered the product. This is a professional authorised administrator, the patient themselves or the informal carer, for example." />
       <alias value="Toediener" />
       <max value="1" />
       <mapping>
@@ -389,11 +389,9 @@
     </element>
     <element id="MedicationAdministration.performer.actor">
       <path value="MedicationAdministration.performer.actor" />
-      <short value="Patient / HealthcareProvider / Caregiver" />
-      <definition value="(The healthcare provider of) the person who realized the administration. It refers to either the organization for which the professional responsible for administration works, the patient himself or, for example, the informal carer." />
-      <comment value="Whenever a HealthcareProvider is responsible for the medication administration, this concept refers to a PractitionerRole instance in which the nl-core-HealthcareProvider-Organization instance is referred to in `PractitionerRole.organization`. This use of the PractitionerRole resource type is described in the current FHIR build as: 'For use cases where an organization has activities where a practitioner is not defined/pre-allocated for a specific role (e.g. an un-named surgeon at XYZ Hospital), a PractitionerRole resource can be used with an empty Practitioner property, and the other relevant role properties populated'." />
+      <short value="Patient / HealthProfessional / Caregiver" />
       <alias value="Patiënt" />
-      <alias value="Zorgaanbieder" />
+      <alias value="Zorgverlener" />
       <alias value="Mantelzorger" />
       <type>
         <code value="Reference" />
@@ -415,7 +413,7 @@
       <mapping>
         <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
         <map value="NL-CM:9.13.23172" />
-        <comment value="HealthProfessional [DEPRECATED]" />
+        <comment value="HealthProfessional" />
       </mapping>
       <mapping>
         <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
@@ -425,12 +423,12 @@
       <mapping>
         <identity value="mp-dataset-mp9-300-beta1-20230217" />
         <map value="mp-dataelement9x-1378" />
-        <comment value="HealthcareProvider" />
+        <comment value="HealthcareProvider (DEPRECATED)" />
       </mapping>
       <mapping>
         <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-1378" />
-        <comment value="HealthcareProvider" />
+        <comment value="HealthcareProvider (DEPRECATED)" />
       </mapping>
     </element>
     <element id="MedicationAdministration.request">
