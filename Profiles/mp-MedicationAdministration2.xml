@@ -92,6 +92,22 @@
         <comment value="AsAgreedIndicator" />
       </mapping>
     </element>
+      <element id="MedicationAdministration.extension:registrationDateTime">
+      <path value="MedicationAdministration.extension" />
+      <sliceName value="registrationDateTime" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.RegistrationDateTime" />
+      </type>
+    </element>
+    <element id="MedicationAdministration.extension:registrationDateTime.value[x]">
+      <path value="MedicationAdministration.extension.value[x]" />
+       <mapping>
+        <identity value="mp-dataset-mp9-300-beta3-TODO" />
+        <map value="mp-dataelement9x-1482" />
+        <comment value="RegistrationDateTime" />
+      </mapping>
+    </element>
     <element id="MedicationAdministration.extension:medicationAdministrationReasonForDeviation">
       <path value="MedicationAdministration.extension" />
       <sliceName value="medicationAdministrationReasonForDeviation" />
