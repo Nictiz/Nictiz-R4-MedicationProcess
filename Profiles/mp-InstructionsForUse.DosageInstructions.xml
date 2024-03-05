@@ -638,28 +638,7 @@
       <path value="Dosage.doseAndRate.rate[x].low" />
       <short value="minimumValue" />
       <definition value="The minimal value of the range. The boundary is inclusive." />
-      <comment value="If the low element is missing, the low boundary is not known." />
       <alias value="minimumWaarde" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="SN (see also Range) or CQ" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="PQ, IVL&lt;PQ&gt;, MO, CO, depending on the values" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="NR.1" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="./low" />
-      </mapping>
       <mapping>
         <identity value="zib-range-v1.0.1-2020EN" />
         <map value="NL-CM:20.1.2" />
@@ -670,28 +649,7 @@
       <path value="Dosage.doseAndRate.rate[x].high" />
       <short value="maximumValue" />
       <definition value="The maximum value of the range. The boundary is inclusive." />
-      <comment value="If the high element is missing, the high boundary is not known." />
       <alias value="maximumWaarde" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="SN (see also Range) or CQ" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="PQ, IVL&lt;PQ&gt;, MO, CO, depending on the values" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="NR.2" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="./high" />
-      </mapping>
       <mapping>
         <identity value="zib-range-v1.0.1-2020EN" />
         <map value="NL-CM:20.1.3" />
