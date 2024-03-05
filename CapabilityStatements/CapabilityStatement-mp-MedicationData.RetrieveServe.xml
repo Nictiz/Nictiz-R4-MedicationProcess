@@ -34,12 +34,22 @@
         <name value="patient"/>
         <type value="reference"/>
       </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="This search parameter only needs to be supported combined with the ':Patient' modifier (i.e. as `subject:Patient`)."/>
+      </searchParam>
     </resource>
     <resource>
       <type value="MedicationDispense"/>
       <searchParam>
         <name value="patient"/>
         <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="This search parameter only needs to be supported combined with the ':Patient' modifier (i.e. as `subject:Patient`)."/>
       </searchParam>
     </resource>
     <resource>
@@ -48,12 +58,22 @@
         <name value="patient"/>
         <type value="reference"/>
       </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="This search parameter only needs to be supported combined with the ':Patient' modifier (i.e. as `subject:Patient`)."/>
+      </searchParam>
     </resource>
     <resource>
       <type value="MedicationAdministration"/>
       <searchParam>
         <name value="patient"/>
         <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="This search parameter only needs to be supported combined with the ':Patient' modifier (i.e. as `subject:Patient`)."/>
       </searchParam>
     </resource>
     <resource>
@@ -76,12 +96,22 @@
         <name value="patient"/>
         <type value="reference"/>
       </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="This search parameter only needs to be supported combined with the ':Patient' modifier (i.e. as `subject:Patient`)."/>
+      </searchParam>
     </resource>
     <resource>
       <type value="MedicationDispense"/>
       <searchParam>
         <name value="patient"/>
         <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="This search parameter only needs to be supported combined with the ':Patient' modifier (i.e. as `subject:Patient`)."/>
       </searchParam>
     </resource>
     <resource>
@@ -90,12 +120,22 @@
         <name value="patient"/>
         <type value="reference"/>
       </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="This search parameter only needs to be supported combined with the ':Patient' modifier (i.e. as `subject:Patient`)."/>
+      </searchParam>
     </resource>
     <resource>
       <type value="MedicationAdministration"/>
       <searchParam>
         <name value="patient"/>
         <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="This search parameter only needs to be supported combined with the ':Patient' modifier (i.e. as `subject:Patient`)."/>
       </searchParam>
     </resource>
     <resource>
