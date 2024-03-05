@@ -122,6 +122,11 @@
         <name value="medication"/>
         <type value="reference"/>
       </searchParam>
+      <searchParam>
+        <name value="period-of-use"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
+        <type value="date"/>
+      </searchParam>
     </resource>
     <resource>
       <type value="MedicationAdministration"/>
@@ -311,6 +316,11 @@
       <searchParam>
         <name value="medication"/>
         <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="period-of-use"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
+        <type value="date"/>
       </searchParam>
     </resource>
     <resource>
