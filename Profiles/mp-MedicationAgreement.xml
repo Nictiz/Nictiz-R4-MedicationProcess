@@ -223,7 +223,6 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-RegistrationDateTime" />
       </type>
-      <isModifier value="false" />
     </element>
     <element id="MedicationRequest.extension:registrationDateTime.value[x]">
       <path value="MedicationRequest.extension.value[x]" />
