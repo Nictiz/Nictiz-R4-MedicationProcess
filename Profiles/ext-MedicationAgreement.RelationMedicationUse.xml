@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ext-MedicationAgreement.RelationMedicationUse" />
-  <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAgreement.RelationMedicationUse" />
-  <version value="2.0.0-beta.3" />
-  <name value="ExtMedicationAgreementRelationMedicationUse" />
-  <title value="ext MedicationAgreement.RelationMedicationUse" />
-  <status value="active" />
-  <publisher value="Nictiz" />
-  <contact>
-    <name value="Nictiz" />
-    <telecom>
-      <system value="url" />
-      <value value="https://www.nictiz.nl" />
-      <use value="work" />
-    </telecom>
-  </contact>
-  <description value="An extension to provide a relation to a MedicationUse2 on which the MedicationAgreement is based." />
-  <purpose value="This extension represents the RelationMedicationUse concept for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)." />
-  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
-  <fhirVersion value="4.0.1" />
-  <kind value="complex-type" />
-  <abstract value="false" />
-  <context>
-    <type value="element" />
-    <expression value="MedicationRequest.basedOn" />
-  </context>
-  <type value="Extension" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <max value="1" />
-    </element>
-    <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAgreement.RelationMedicationUse" />
-    </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]" />
-      <short value="RelationMedicationUse" />
-      <definition value="A reference to a MedicationUse2 on which the MedicationAgreement is based." />
-      <alias value="RelatieMedicatiegebruik" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationUse2" />
-      </type>
-    </element>
-  </differential>
+   <id value="ext-MedicationAgreement.RelationMedicationUse"/>
+   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAgreement.RelationMedicationUse"/>
+   <version value="2.0.0-beta.3"/>
+   <name value="ExtMedicationAgreementRelationMedicationUse"/>
+   <title value="ext MedicationAgreement.RelationMedicationUse"/>
+   <status value="active"/>
+   <publisher value="Nictiz"/>
+   <contact>
+      <name value="Nictiz"/>
+      <telecom>
+         <system value="url"/>
+         <value value="https://www.nictiz.nl"/>
+         <use value="work"/>
+      </telecom>
+   </contact>
+   <description value="An extension to provide a relation to a MedicationUse2 on which the MedicationAgreement is based."/>
+   <purpose value="This extension represents the RelationMedicationUse concept for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)."/>
+   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
+   <fhirVersion value="4.0.1"/>
+   <kind value="complex-type"/>
+   <abstract value="false"/>
+   <context>
+      <type value="element"/>
+      <expression value="MedicationRequest.basedOn"/>
+   </context>
+   <type value="Extension"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="Extension">
+         <path value="Extension"/>
+         <max value="1"/>
+      </element>
+      <element id="Extension.url">
+         <path value="Extension.url"/>
+         <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAgreement.RelationMedicationUse"/>
+      </element>
+      <element id="Extension.value[x]">
+         <path value="Extension.value[x]"/>
+         <short value="RelationMedicationUse"/>
+         <definition value="A reference to a MedicationUse2 on which the MedicationAgreement is based."/>
+         <alias value="RelatieMedicatiegebruik"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationUse2"/>
+         </type>
+      </element>
+   </differential>
 </StructureDefinition>

@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <OperationDefinition xmlns="http://hl7.org/fhir">
-  <id value="Medication-Overview" />
-  <url value="http://nictiz.nl/fhir/OperationDefinition/Medication-Overview" />
-  <version value="2.0.0-beta.3" />
-  <name value="MedicationOverview" />
-  <status value="active" />
-  <kind value="operation" />
-  <experimental value="false" />
-  <publisher value="Nictiz" />
+  <id value="Medication-Overview"/>
+  <url value="http://nictiz.nl/fhir/OperationDefinition/Medication-Overview"/>
+  <version value="2.0.0-beta.3"/>
+  <name value="MedicationOverview"/>
+  <status value="active"/>
+  <kind value="operation"/>
+  <experimental value="false"/>
+  <publisher value="Nictiz"/>
   <contact>
-    <name value="Nictiz" />
+    <name value="Nictiz"/>
     <telecom>
-      <system value="url" />
-      <value value="https://www.nictiz.nl" />
-      <use value="work" />
+      <system value="url"/>
+      <value value="https://www.nictiz.nl"/>
+      <use value="work"/>
     </telecom>
   </contact>
-  <description value="The *medication-overview* operation provides a simple method for a client to request a patient's current Medication Overview based on the information standard ['Medication Process'](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). The response is a Bundle of type 'searchset' and needs to conform to the profile listed in the operationdefinition-profile extension. At a minimum a List resource is returned, along with any other resources that the server has available for the Medication Overview. The server also returns whatever resources are needed to support the Medication Overview - e.g. linked practitioners, organizations, etc. If there are no medication related clinical resources, this operation SHALL return an empty List resource containing an appropriate value for the `.emptyReason` element." />
-  <purpose value="To describe how to retrieve and provide a Medication Overview conform the Medication Process information standard. This operation removes the complexity of requesting the medication overview from the client to the server." />
-  <code value="medication-overview" />
-  <comment value="This operation assumes that the server has identified and secured the context appropriately, and can either associate the authorization context with a single patient, or determine whether the context has the rights to the nominated patient, if there is one." />
-  <system value="true" />
-  <type value="false" />
-  <instance value="false" />
+  <description value="The *medication-overview* operation provides a simple method for a client to request a patient's current Medication Overview based on the information standard ['Medication Process'](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). The response is a Bundle of type 'searchset' and needs to conform to the profile listed in the operationdefinition-profile extension. At a minimum a List resource is returned, along with any other resources that the server has available for the Medication Overview. The server also returns whatever resources are needed to support the Medication Overview - e.g. linked practitioners, organizations, etc. If there are no medication related clinical resources, this operation SHALL return an empty List resource containing an appropriate value for the `.emptyReason` element."/>
+  <purpose value="To describe how to retrieve and provide a Medication Overview conform the Medication Process information standard. This operation removes the complexity of requesting the medication overview from the client to the server."/>
+  <code value="medication-overview"/>
+  <comment value="This operation assumes that the server has identified and secured the context appropriately, and can either associate the authorization context with a single patient, or determine whether the context has the rights to the nominated patient, if there is one."/>
+  <system value="true"/>
+  <type value="false"/>
+  <instance value="false"/>
   <parameter>
-    <name value="patient" />
-    <use value="in" />
-    <min value="0" />
-    <max value="1" />
-    <documentation value="The identifier of a patient for which this operation is executed. This parameter is not necessary if the operation is executed in context of a specific authenticated and authorized patient." />
-    <type value="Identifier" />
+    <name value="patient"/>
+    <use value="in"/>
+    <min value="0"/>
+    <max value="1"/>
+    <documentation value="The identifier of a patient for which this operation is executed. This parameter is not necessary if the operation is executed in context of a specific authenticated and authorized patient."/>
+    <type value="Identifier"/>
   </parameter>
   <parameter>
     <extension url="http://hl7.org/fhir/StructureDefinition/operationdefinition-profile">
-      <valueUri value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationOverview-Bundle" />
+      <valueUri value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationOverview-Bundle"/>
     </extension>
-    <name value="return" />
-    <use value="out" />
-    <min value="1" />
-    <max value="1" />
-    <documentation value="The patient's current medication overview based on the information standard ['Medication Process'](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). The Bundle shall be compliant with the mp-MedicationOverview-Bundle profile." />
-    <type value="Bundle" />
+    <name value="return"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="The patient's current medication overview based on the information standard ['Medication Process'](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). The Bundle shall be compliant with the mp-MedicationOverview-Bundle profile."/>
+    <type value="Bundle"/>
   </parameter>
 </OperationDefinition>
