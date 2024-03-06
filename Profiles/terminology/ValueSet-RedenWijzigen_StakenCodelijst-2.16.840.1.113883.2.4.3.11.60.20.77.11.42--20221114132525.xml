@@ -1,27 +1,40 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-   <id value="2.16.840.1.113883.2.4.3.11.60.20.77.11.49--20221115120643"/>
+   <id value="2.16.840.1.113883.2.4.3.11.60.20.77.11.42--20221114132525"/>
    <meta>
+      <lastUpdated value="2022-11-14T13:29:07Z"/>
+      <source value="http://decor.nictiz.nl/fhir/4.0/mp-"/>
       <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
       <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+      <tag>
+         <system value="http://hl7.org/fhir/FHIR-version"/>
+         <code value="4.0.1"/>
+      </tag>
    </meta>
    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
       <valuePeriod>
-         <start value="2022-11-15T12:06:43+00:00"/>
+         <start value="2022-11-14T13:25:25Z"/>
       </valuePeriod>
    </extension>
-   <url value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.49--20221115120643"/>
+   <url value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.42--20221114132525"/>
    <identifier>
       <use value="official"/>
       <system value="urn:ietf:rfc:3986"/>
-      <value value="urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.11.49"/>
+      <value value="urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.11.42"/>
    </identifier>
-   <version value="2022-11-15T12:06:43"/>
-   <name value="Toedieningsafspraak_RedenWijzigen_StakenCodelijst"/>
-   <title value="Toedieningsafspraak-RedenWijzigen-StakenCodelijst"/>
+   <version value="2022-11-14T13:25:25"/>
+   <name value="RedenWijzigen_StakenCodelijst"/>
+   <title value="RedenWijzigen-StakenCodelijst"/>
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="Nictiz"/>
-   <description value="Toedieningsafspraak-RedenWijzigen-StakenCodelijst"/>
+   <contact>
+      <name value="Nictiz"/>
+      <telecom>
+         <system value="phone"/>
+         <value value="070-3173450"/>
+      </telecom>
+   </contact>
+   <description value="RedenWijzigen-StakenCodelijst"/>
    <immutable value="false"/>
    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
    <compose>
@@ -83,7 +96,7 @@
                   <code value="900000000000003001"/>
                   <display value="Fully specified name"/>
                </use>
-               <value value="Drug interaction (disorder)"/>
+               <value value="Drug interaction (finding)"/>
             </designation>
          </concept>
          <concept>
@@ -120,7 +133,7 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="toedieningsweg voldoet niet"/>
+               <valueString value="aanpassing toedieningswijze"/>
             </extension>
             <code value="112191000146101"/>
             <display value="medicatietoedieningsweg voldoet niet"/>
@@ -276,54 +289,6 @@
                   <display value="Fully specified name"/>
                </use>
                <value value="Change in lab value (finding)"/>
-            </designation>
-         </concept>
-         <concept>
-            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="substitutie"/>
-            </extension>
-            <code value="160151000146105"/>
-            <display value="geneesmiddelsubstitutie"/>
-            <designation>
-               <language value="en-US"/>
-               <use>
-                  <system value="http://snomed.info/sct"/>
-                  <code value="900000000000003001"/>
-                  <display value="Fully specified name"/>
-               </use>
-               <value value="Substitution of medication (finding)"/>
-            </designation>
-         </concept>
-         <concept>
-            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="overgang naar GDS"/>
-            </extension>
-            <code value="160141000146107"/>
-            <display value="overgang naar geneesmiddeldistributiesysteem"/>
-            <designation>
-               <language value="en-US"/>
-               <use>
-                  <system value="http://snomed.info/sct"/>
-                  <code value="900000000000003001"/>
-                  <display value="Fully specified name"/>
-               </use>
-               <value value="Change of provision of medication to monitored dosage system (situation)"/>
-            </designation>
-         </concept>
-         <concept>
-            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="medicatie niet verstrekt aan patiënt"/>
-            </extension>
-            <code value="182850000"/>
-            <display value="medicatie niet verstrekt"/>
-            <designation>
-               <language value="en-US"/>
-               <use>
-                  <system value="http://snomed.info/sct"/>
-                  <code value="900000000000003001"/>
-                  <display value="Fully specified name"/>
-               </use>
-               <value value="Drugs not issued (finding)"/>
             </designation>
          </concept>
          <concept>

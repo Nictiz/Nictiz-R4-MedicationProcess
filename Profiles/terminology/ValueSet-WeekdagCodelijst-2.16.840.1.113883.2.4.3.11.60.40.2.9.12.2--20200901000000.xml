@@ -1,23 +1,28 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-   <id value="2.16.840.1.113883.2.4.3.11.60.40.2.9.12.4--20200901000000"/>
+   <id value="2.16.840.1.113883.2.4.3.11.60.40.2.9.12.2--20200901000000"/>
    <meta>
+      <source value="http://decor.nictiz.nl/fhir/4.0/zib2020bbr-"/>
       <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
       <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+      <tag>
+         <system value="http://hl7.org/fhir/FHIR-version"/>
+         <code value="4.0.1"/>
+      </tag>
    </meta>
    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
       <valuePeriod>
-         <start value="2020-09-01T00:00:00+00:00"/>
+         <start value="2020-09-01T00:00:00Z"/>
       </valuePeriod>
    </extension>
-   <url value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.12.4--20200901000000"/>
+   <url value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.12.2--20200901000000"/>
    <identifier>
       <use value="official"/>
       <system value="urn:ietf:rfc:3986"/>
-      <value value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.2.9.12.4"/>
+      <value value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.2.9.12.2"/>
    </identifier>
    <version value="2020-09-01T00:00:00"/>
-   <name value="ZonodigCriteriumCodelijst"/>
-   <title value="ZonodigCriteriumCodelijst"/>
+   <name value="WeekdagCodelijst"/>
+   <title value="WeekdagCodelijst"/>
    <status value="active"/>
    <experimental value="false"/>
    <publisher value="Registratie aan de bron"/>
@@ -32,14 +37,18 @@
          <value value="https://www.zibs.nl"/>
       </telecom>
    </contact>
-   <description value="ZonodigCriteriumCodelijst"/>
+   <description value="WeekdagCodelijst"/>
    <immutable value="false"/>
+   <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
    <compose>
       <include>
-         <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+         <system value="http://snomed.info/sct"/>
          <concept>
-            <code value="OTH"/>
-            <display value="Other"/>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="maandag"/>
+            </extension>
+            <code value="307145004"/>
+            <display value="maandag"/>
             <designation>
                <language value="en-US"/>
                <use>
@@ -47,7 +56,7 @@
                   <code value="900000000000013009"/>
                   <display value="Synonym"/>
                </use>
-               <value value="Other"/>
+               <value value="Monday"/>
             </designation>
             <designation>
                <language value="nl-NL"/>
@@ -56,12 +65,15 @@
                   <code value="900000000000013009"/>
                   <display value="Synonym"/>
                </use>
-               <value value="Anders"/>
+               <value value="maandag"/>
             </designation>
          </concept>
          <concept>
-            <code value="NI"/>
-            <display value="Geen Informatie"/>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="dinsdag"/>
+            </extension>
+            <code value="307147007"/>
+            <display value="dinsdag"/>
             <designation>
                <language value="en-US"/>
                <use>
@@ -69,7 +81,7 @@
                   <code value="900000000000013009"/>
                   <display value="Synonym"/>
                </use>
-               <value value="No information"/>
+               <value value="Tuesday"/>
             </designation>
             <designation>
                <language value="nl-NL"/>
@@ -78,28 +90,24 @@
                   <code value="900000000000013009"/>
                   <display value="Synonym"/>
                </use>
-               <value value="Geen informatie"/>
-            </designation>
-         </concept>
-      </include>
-      <include>
-         <system value="https://referentiemodel.nhg.org/tabellen/nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek"/>
-         <concept>
-            <code value="1022"/>
-            <display value="Bij een aanval"/>
-            <designation>
-               <language value="nl-NL"/>
-               <use>
-                  <system value="http://snomed.info/sct"/>
-                  <code value="900000000000013009"/>
-                  <display value="Synonym"/>
-               </use>
-               <value value="Bij een aanval"/>
+               <value value="dinsdag"/>
             </designation>
          </concept>
          <concept>
-            <code value="1023"/>
-            <display value="Bij benauwdheid"/>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="woensdag"/>
+            </extension>
+            <code value="307148002"/>
+            <display value="woensdag"/>
+            <designation>
+               <language value="en-US"/>
+               <use>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="900000000000013009"/>
+                  <display value="Synonym"/>
+               </use>
+               <value value="Wednesday"/>
+            </designation>
             <designation>
                <language value="nl-NL"/>
                <use>
@@ -107,12 +115,24 @@
                   <code value="900000000000013009"/>
                   <display value="Synonym"/>
                </use>
-               <value value="Bij benauwdheid"/>
+               <value value="woensdag"/>
             </designation>
          </concept>
          <concept>
-            <code value="1024"/>
-            <display value="Bij diarree"/>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="donderdag"/>
+            </extension>
+            <code value="307149005"/>
+            <display value="donderdag"/>
+            <designation>
+               <language value="en-US"/>
+               <use>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="900000000000013009"/>
+                  <display value="Synonym"/>
+               </use>
+               <value value="Thursday"/>
+            </designation>
             <designation>
                <language value="nl-NL"/>
                <use>
@@ -120,12 +140,24 @@
                   <code value="900000000000013009"/>
                   <display value="Synonym"/>
                </use>
-               <value value="Bij diarree"/>
+               <value value="donderdag"/>
             </designation>
          </concept>
          <concept>
-            <code value="1028"/>
-            <display value="Bij pijn"/>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="vrijdag"/>
+            </extension>
+            <code value="307150005"/>
+            <display value="vrijdag"/>
+            <designation>
+               <language value="en-US"/>
+               <use>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="900000000000013009"/>
+                  <display value="Synonym"/>
+               </use>
+               <value value="Friday"/>
+            </designation>
             <designation>
                <language value="nl-NL"/>
                <use>
@@ -133,12 +165,24 @@
                   <code value="900000000000013009"/>
                   <display value="Synonym"/>
                </use>
-               <value value="Bij pijn"/>
+               <value value="vrijdag"/>
             </designation>
          </concept>
          <concept>
-            <code value="1121"/>
-            <display value="Bij jeuk"/>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="zaterdag"/>
+            </extension>
+            <code value="307151009"/>
+            <display value="zaterdag"/>
+            <designation>
+               <language value="en-US"/>
+               <use>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="900000000000013009"/>
+                  <display value="Synonym"/>
+               </use>
+               <value value="Saturday"/>
+            </designation>
             <designation>
                <language value="nl-NL"/>
                <use>
@@ -146,25 +190,24 @@
                   <code value="900000000000013009"/>
                   <display value="Synonym"/>
                </use>
-               <value value="Bij jeuk"/>
+               <value value="zaterdag"/>
             </designation>
          </concept>
          <concept>
-            <code value="1137"/>
-            <display value="Zo nodig"/>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="zondag"/>
+            </extension>
+            <code value="307146003"/>
+            <display value="zondag"/>
             <designation>
-               <language value="nl-NL"/>
+               <language value="en-US"/>
                <use>
                   <system value="http://snomed.info/sct"/>
                   <code value="900000000000013009"/>
                   <display value="Synonym"/>
                </use>
-               <value value="Zo nodig"/>
+               <value value="Sunday"/>
             </designation>
-         </concept>
-         <concept>
-            <code value="1144"/>
-            <display value="Bij hoofdpijn"/>
             <designation>
                <language value="nl-NL"/>
                <use>
@@ -172,72 +215,7 @@
                   <code value="900000000000013009"/>
                   <display value="Synonym"/>
                </use>
-               <value value="Bij hoofdpijn"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="1145"/>
-            <display value="Bij koorts"/>
-            <designation>
-               <language value="nl-NL"/>
-               <use>
-                  <system value="http://snomed.info/sct"/>
-                  <code value="900000000000013009"/>
-                  <display value="Synonym"/>
-               </use>
-               <value value="Bij koorts"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="1146"/>
-            <display value="Bij hoge koorts"/>
-            <designation>
-               <language value="nl-NL"/>
-               <use>
-                  <system value="http://snomed.info/sct"/>
-                  <code value="900000000000013009"/>
-                  <display value="Synonym"/>
-               </use>
-               <value value="Bij hoge koorts"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="1147"/>
-            <display value="Bij koorts en/of pijn"/>
-            <designation>
-               <language value="nl-NL"/>
-               <use>
-                  <system value="http://snomed.info/sct"/>
-                  <code value="900000000000013009"/>
-                  <display value="Synonym"/>
-               </use>
-               <value value="Bij koorts en/of pijn"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="1387"/>
-            <display value="Bij hoest"/>
-            <designation>
-               <language value="nl-NL"/>
-               <use>
-                  <system value="http://snomed.info/sct"/>
-                  <code value="900000000000013009"/>
-                  <display value="Synonym"/>
-               </use>
-               <value value="Bij hoest"/>
-            </designation>
-         </concept>
-         <concept>
-            <code value="1540"/>
-            <display value="Bij menstruatiepijnen"/>
-            <designation>
-               <language value="nl-NL"/>
-               <use>
-                  <system value="http://snomed.info/sct"/>
-                  <code value="900000000000013009"/>
-                  <display value="Synonym"/>
-               </use>
-               <value value="Bij menstruatiepijnen"/>
+               <value value="zondag"/>
             </designation>
          </concept>
       </include>
