@@ -25,9 +25,9 @@
     <name value="zib DispenseRequest-v1.0.3(2020EN)" />
   </mapping>
   <mapping>
-    <identity value="mp-dataset-mp9-300-beta1-20230217"/>
-    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20230217T123829/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
-    <name value="ART-DECOR Dataset MP9 3.0.0-beta.1 20230217"/>
+    <identity value="mp-dataset-mp9-300-beta1-20230217" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20230217T123829/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
+    <name value="ART-DECOR Dataset MP9 3.0.0-beta.1 20230217" />
   </mapping>
   <mapping>
     <identity value="mp-dataset-mp9-300-beta2-20231017" />
@@ -66,7 +66,7 @@
     <element id="MedicationRequest.extension:additionalWishes.value[x]">
       <path value="MedicationRequest.extension.value[x]" />
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
         <map value="mp-dataelement9x-287" />
         <comment value="AdditionalWishes" />
       </mapping>
@@ -87,7 +87,7 @@
     <element id="MedicationRequest.extension:pharmaceuticalTreatmentIdentifier.value[x]">
       <path value="MedicationRequest.extension.value[x]" />
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
         <map value="mp-dataelement9x-42" />
         <comment value="Identification" />
       </mapping>
@@ -108,7 +108,7 @@
     <element id="MedicationRequest.extension:financialIndicationCode.value[x]">
       <path value="MedicationRequest.extension.value[x]" />
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
         <map value="mp-dataelement9x-592" />
         <comment value="FinancialIndicationCode" />
       </mapping>
