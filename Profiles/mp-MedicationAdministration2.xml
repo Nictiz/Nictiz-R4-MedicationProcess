@@ -39,6 +39,11 @@
     <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20231017T223005/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
     <name value="ART-DECOR Dataset MP9 3.0.0-beta.2 20231017" />
   </mapping>
+  <mapping>
+    <identity value="mp-dataset-mp9-300-beta3-20240229" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20240229T110214/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
+    <name value="ART-DECOR Dataset MP9 3.0.0-beta.3 20240229" />
+  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="MedicationAdministration" />
@@ -156,6 +161,23 @@
         <comment value="InjectionPatchSite" />
       </mapping>
     </element>
+    <element id="MedicationAdministration.extension:registrationDateTime">
+      <path value="MedicationAdministration.extension" />
+      <sliceName value="registrationDateTime" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-RegistrationDateTime" />
+      </type>
+    </element>
+    <element id="MedicationAdministration.extension:registrationDateTime.value[x]">
+      <path value="MedicationAdministration.extension.value[x]" />
+      <definition value="Date and time the medication administration was recorded. Registration date + time are required (order of the registrations must be clear in cases with multiple registrations on one day)." />
+      <mapping>
+        <identity value="mp-dataset-mp9-300-beta3-20240229" />
+        <map value="mp-dataelement9x-1482" />
+        <comment value="RegistrationDateTime" />
+      </mapping>
+    </element>
     <element id="MedicationAdministration.identifier">
       <path value="MedicationAdministration.identifier" />
       <short value="Identification" />
@@ -175,6 +197,7 @@
       <path value="MedicationAdministration.status" />
       <short value="MedicationAdministrationStatus" />
       <definition value="The status of the administration, as a description of the stage within the administering process. Only the status codes ‘completed’ and ‘cancelled’ apply to indivisible products (such as tablets or suppositories). For divisible products (such as infusions), doses can also be ‘suspended’ or ‘aborted’.  &#xD;&#xA;&#xD;&#xA;When documenting this, the following interpretations are used: &#xD;&#xA;&#xD;&#xA;- Active: The product is administered.&#xD;&#xA;- Interrupted: Use has (temporarily) been interrupted, because of a side effect, for example. Later, the patient and/or doctor can decide whether or not to resume or discontinue use.&#xD;&#xA;- Discontinued: Administration has stopped.&#xD;&#xA;- Completed: Administration has been completed.&#xD;&#xA;- Not started: The product was never administered." />
+      <comment value="If no value for MedicationAdministrationStatus is present, and the system is thus unable to infer the status, `.status` will be set to _unknown_." />
       <alias value="MedicatietoedieningStatus" />
       <binding>
         <strength value="required" />
@@ -208,7 +231,6 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdditionalCategory" />
       </type>
-      <isModifier value="false" />
     </element>
     <element id="MedicationAdministration.category.extension:additionalCategory.value[x]">
       <path value="MedicationAdministration.category.extension.value[x]" />
@@ -372,7 +394,7 @@
     <element id="MedicationAdministration.performer">
       <path value="MedicationAdministration.performer" />
       <short value="Administrator" />
-      <definition value="(The healthcare provider of) the person who realized the administration. It refers to either the organization for which the professional responsible for administration works, the patient himself or, for example, the informal carer." />
+      <definition value="The concept describes the person who administered the product. This is a professional authorised administrator, the patient themselves or the informal carer, for example." />
       <alias value="Toediener" />
       <max value="1" />
       <mapping>
@@ -381,7 +403,7 @@
         <comment value="Administrator [DEPRECATED]" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
         <map value="mp-dataelement9x-437" />
         <comment value="Administrator" />
       </mapping>
@@ -393,11 +415,9 @@
     </element>
     <element id="MedicationAdministration.performer.actor">
       <path value="MedicationAdministration.performer.actor" />
-      <short value="Patient / HealthcareProvider / Caregiver" />
-      <definition value="(The healthcare provider of) the person who realized the administration. It refers to either the organization for which the professional responsible for administration works, the patient himself or, for example, the informal carer." />
-      <comment value="Whenever a HealthcareProvider is responsible for the medication administration, this concept refers to a PractitionerRole instance in which the nl-core-HealthcareProvider-Organization instance is referred to in `PractitionerRole.organization`. This use of the PractitionerRole resource type is described in the current FHIR build as: 'For use cases where an organization has activities where a practitioner is not defined/pre-allocated for a specific role (e.g. an un-named surgeon at XYZ Hospital), a PractitionerRole resource can be used with an empty Practitioner property, and the other relevant role properties populated'." />
+      <short value="Patient / HealthProfessional / Caregiver" />
       <alias value="Patiënt" />
-      <alias value="Zorgaanbieder" />
+      <alias value="Zorgverlener" />
       <alias value="Mantelzorger" />
       <type>
         <code value="Reference" />
@@ -419,7 +439,7 @@
       <mapping>
         <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
         <map value="NL-CM:9.13.23172" />
-        <comment value="HealthProfessional [DEPRECATED]" />
+        <comment value="HealthProfessional" />
       </mapping>
       <mapping>
         <identity value="zib-medicationadministration2-v1.1.1-2020EN" />
@@ -427,14 +447,14 @@
         <comment value="Caregiver" />
       </mapping>
       <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217"/>
+        <identity value="mp-dataset-mp9-300-beta1-20230217" />
         <map value="mp-dataelement9x-1378" />
-        <comment value="HealthcareProvider" />
+        <comment value="HealthcareProvider (DEPRECATED)" />
       </mapping>
       <mapping>
         <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-1378" />
-        <comment value="HealthcareProvider" />
+        <comment value="HealthcareProvider (DEPRECATED)" />
       </mapping>
     </element>
     <element id="MedicationAdministration.request">
@@ -487,32 +507,6 @@
         <comment value="Comment" />
       </mapping>
     </element>
-    <element id="MedicationAdministration.dosage.extension:agreedAmount">
-      <path value="MedicationAdministration.dosage.extension" />
-      <sliceName value="agreedAmount" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.AgreedAmount" />
-      </type>
-    </element>
-    <element id="MedicationAdministration.dosage.extension:agreedAmount.value[x]">
-      <path value="MedicationAdministration.dosage.extension.value[x]" />
-      <mapping>
-        <identity value="mp-dataset-mp9-300-beta1-20230217" />
-        <map value="mp-dataelement9x-1172" />
-        <comment value="AgreedAmount" />
-      </mapping>
-      <mapping>
-        <identity value="mp-dataset-mp9-300-beta2-20231017" />
-        <map value="mp-dataelement9x-1172" />
-        <comment value="AgreedAmount" />
-      </mapping>
-      <mapping>
-        <identity value="mp-dataset-mp9-300-beta3-ntb" />
-        <map value="mp-dataelement9x-1172" />
-        <comment value="AgreedAmount" />
-      </mapping>
-    </element>
     <element id="MedicationAdministration.dosage.route">
       <path value="MedicationAdministration.dosage.route" />
       <short value="RouteOfAdministration" />
@@ -557,7 +551,7 @@
       <path value="MedicationAdministration.dosage.rate[x]" />
       <sliceName value="rateQuantity" />
       <short value="AdministeringSpeed / nominalValue" />
-      <definition value="The administering speed is used in slow administration of liquid. In practice, the measuring unit is almost always ml/hour. Entering an interval (such as 0-10 ml/hour) is also a commonly used option. &#xA;For example, with an administering speed of 10ml/hour: &#xD;&#xA;- amount = 10,&#xD;&#xA;- dose unit = ml          &#xD;&#xA;- time unit = hour&#xD;&#xA;&#xD;&#xA;Optionally a translation to NHG table Gebruiksvoorschriften(Table 25) is also allowed." />
+      <definition value="The administering speed is used in slow administration of liquid. In practice, the measuring unit is almost always ml/hour.&#xD;&#xA;&#xA;For example, with an administering speed of 10ml/hour: &#xD;&#xA;* value = 10&#xD;&#xA;* unit = ml/hour" />
       <alias value="Toedieningssnelheid" />
       <alias value="nominaleWaarde" />
       <type>
