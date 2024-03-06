@@ -34,6 +34,11 @@
     <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20231017T223005/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
     <name value="ART-DECOR Dataset MP9 3.0.0-beta.2 20231017" />
   </mapping>
+  <mapping>
+    <identity value="mp-dataset-mp9-300-beta3-20240229" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20240229T110214/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
+    <name value="ART-DECOR Dataset MP9 3.0.0-beta.3 20240229" />
+  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="MedicationRequest" />
@@ -169,6 +174,11 @@
     <element id="MedicationRequest.extension:registrationDateTime.value[x]">
       <path value="MedicationRequest.extension.value[x]" />
       <definition value="Date and time the variable-dosing regimen was recorded. Registration date + time are required (order of the registrations must be clear in cases with multiple registrations on one day)." />
+      <mapping>
+        <identity value="mp-dataset-mp9-300-beta3-20240229" />
+        <map value="mp-dataelement9x-1483" />
+        <comment value="RegistrationDateTime" />
+      </mapping>
     </element>
     <element id="MedicationRequest.modifierExtension:stopType">
       <path value="MedicationRequest.modifierExtension" />
