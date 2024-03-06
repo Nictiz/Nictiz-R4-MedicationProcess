@@ -116,6 +116,11 @@
       <mapping>
         <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-444" />
+        <comment value="MedicationAdministrationReasonForDeviation [DEPRECATED]" />
+      </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-beta3-20240229" />
+        <map value="mp-dataelement9x-444" />
         <comment value="MedicationAdministrationReasonForDeviation" />
       </mapping>
     </element>
@@ -449,12 +454,12 @@
       <mapping>
         <identity value="mp-dataset-mp9-300-beta1-20230217" />
         <map value="mp-dataelement9x-1378" />
-        <comment value="HealthcareProvider (DEPRECATED)" />
+        <comment value="HealthcareProvider [DEPRECATED]" />
       </mapping>
       <mapping>
         <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-1378" />
-        <comment value="HealthcareProvider (DEPRECATED)" />
+        <comment value="HealthcareProvider [DEPRECATED]" />
       </mapping>
     </element>
     <element id="MedicationAdministration.request">
