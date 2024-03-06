@@ -4,10 +4,10 @@
   xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/capabilitystatement.xsd">
   <id value="mp-MedicationData.RetrieveServe.MedMij"/>
   <url value="http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationData.RetrieveServe.MedMij"/>
-  <version value="2.0.0-beta.2" />
+  <version value="2.0.0-beta.3"/>
   <name value="mp MedicationData.RetrieveServe.MedMij"/>
   <status value="active"/>
-  <date value="2023-10-04"/>
+  <date value="2024-03-06"/>
   <publisher value="Nictiz"/>
   <contact>
     <name value="Nictiz"/>

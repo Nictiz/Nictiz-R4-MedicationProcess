@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns="http://hl7.org/fhir"
     xmlns:f="http://hl7.org/fhir"
     xmlns:saxon="http://saxon.sf.net/"
     exclude-result-prefixes="#all"
-    version="2.0">
+    version="2.0" >
     
-    <xsl:output indent="yes" saxon:indent-spaces="2"/>
+    <xsl:output indent="yes" encoding="utf-8"/>
     
     <xsl:template match="node()|@*">
         <xsl:copy>
@@ -15,68 +15,50 @@
         </xsl:copy>
     </xsl:template>
     
-    <!-- Edit MP9-2 mapping to conventions at https://informatiestandaarden.nictiz.nl/wiki/FHIR:V1.0_FHIR_Profiling_Guidelines_R4#Current_implementation -->
-    <xsl:template match="f:StructureDefinition/f:mapping[f:identity/@value = 'Medication-Process-v9-2-0-0']">
-        <xsl:call-template name="_editMP92Mapping"/>
-    </xsl:template>
+    <xsl:variable name="antepenultimateRelease" select="'mp-dataset-mp9-300-beta1-20230217'"/>
+    <xsl:variable name="penultimateRelease" select="'mp-dataset-mp9-300-beta2-20231017'"/>
+    <xsl:variable name="currentRelease" select="'mp-dataset-mp9-300-beta3-20240229'"/>
+    <xsl:variable name="currentReleaseUri" select="'https://decor.nictiz.nl/pub/medicatieproces/mp-html-20240229T110214/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html'"/>
+    <xsl:variable name="currentReleaseName" select="'ART-DECOR Dataset MP9 3.0.0-beta.3 20240229'"/>
     
-    <!-- Add MP9-3 mapping declaration to profiles where it isn't present yet -->
-    <xsl:template match="f:StructureDefinition/f:mapping[f:identity/@value = 'Medication-Process-v9-2-0-0'][not(following-sibling::*[1][self::f:mapping/f:identity/@value = 'MP9-3'])]">
-        <!-- Either copy or edit following conventions at https://informatiestandaarden.nictiz.nl/wiki/FHIR:V1.0_FHIR_Profiling_Guidelines_R4#Current_implementation -->
-        <!--<xsl:copy>
-            <xsl:apply-templates select="node()|@*"/>
-        </xsl:copy>-->
-        <xsl:call-template name="_editMP92Mapping"/>
-        <xsl:call-template name="_editMP93Mapping"/>
-    </xsl:template>
+    <!-- Remove mapping declarations to antepenultimate release -->
+    <xsl:template match="f:StructureDefinition/f:mapping[f:identity/@value = $antepenultimateRelease]"/>
+    <xsl:template match="f:element/f:mapping[f:identity/@value = $antepenultimateRelease]"/>
     
-    <!-- Where MP9-3 mapping is already present, update it -->
-    <xsl:template match="f:StructureDefinition/f:mapping[f:identity/@value = 'MP9-3']">
-        <xsl:call-template name="_editMP93Mapping"/>
-    </xsl:template>
-    
-    <xsl:template name="_editMP92Mapping">
-        <mapping>
-            <identity value="mp-dataset-mp9-200-20220402" />
-            <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20220402T205710/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-01-05T132845.html" />
-            <name value="ART-DECOR Dataset MP9 2.0.0 20220402" />
-        </mapping>
-    </xsl:template>
-    
-    <xsl:template name="_editMP93Mapping">
-        <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017" />
-            <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20231017T223005/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
-            <name value="ART-DECOR Dataset MP9 3.0.0-beta.2 20231017" />
-        </mapping>
-    </xsl:template>
-    
-    <xsl:template match="f:element/f:mapping[f:identity/@value = 'Medication-Process-v9-2-0-0']">
+    <!-- Add mapping declaration to current release in all profiles where it isn't present yet -->
+    <xsl:template match="f:StructureDefinition/f:mapping[f:identity/@value = $penultimateRelease][not(following-sibling::*[1][self::f:mapping/f:identity/@value = $currentRelease])]">
         <xsl:copy>
-            <xsl:apply-templates select="node()"/>
+            <xsl:apply-templates select="node()|@*"/>
+        </xsl:copy>
+        <xsl:call-template name="_addCurrentReleaseMapping"/>
+    </xsl:template>
+    
+    <xsl:template match="f:element/f:mapping[f:identity/@value = $penultimateRelease]">
+        <xsl:copy>
+            <xsl:apply-templates select="node()|@*"/>
         </xsl:copy>
         <xsl:choose>
-            <!-- If this mapping is deprecated, don't add MP9-3 -->
+            <!-- If this mapping is deprecated, don't add mapping to current release -->
             <xsl:when test="contains(f:comment/@value, '[DEPRECATED]')"/>
-            <!-- If this mapping is already followed by an MP9-3 mapping, do nothing -->
-            <xsl:when test="following-sibling::*[1][self::f:mapping/f:identity/@value = 'MP9-3']"/>
-            <!-- Otherwise, add MP9-3 mapping -->
+            <!-- If this mapping is already followed by a mapping to current release, do nothing -->
+            <xsl:when test="following-sibling::*[1][self::f:mapping/f:identity/@value = $currentRelease]"/>
+            <!-- Otherwise, add mapping to current release -->
             <xsl:otherwise>
                 <mapping>
-                    <identity value="mp-dataset-mp9-300-beta2-20231017"/>
-                    <map value="{replace(f:map/@value, 'mp-dataelement920-', 'mp-dataelement9x-')}"/>
+                    <identity value="{$currentRelease}"/>
+                    <map value="{f:map/@value}"/>
                     <comment value="{f:comment/@value}"/>
                 </mapping>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
     
-    <xsl:template match="f:element/f:mapping/f:identity[@value = 'Medication-Process-v9-2-0-0']">
-        <identity value="mp-dataset-mp9-200-20220402"/>
-    </xsl:template>
-    
-    <xsl:template match="f:element/f:mapping/f:identity[@value = 'MP9-3']">
-        <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+    <xsl:template name="_addCurrentReleaseMapping">
+        <mapping>
+            <identity value="{$currentRelease}"/>
+            <uri value="{$currentReleaseUri}"/>
+            <name value="{$currentReleaseName}"/>
+        </mapping>
     </xsl:template>
     
 </xsl:stylesheet>

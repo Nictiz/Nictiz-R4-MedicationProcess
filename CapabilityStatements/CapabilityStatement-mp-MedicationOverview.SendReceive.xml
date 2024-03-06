@@ -4,10 +4,10 @@
   xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/capabilitystatement.xsd">
   <id value="mp-MedicationOverview.SendReceive"/>
   <url value="http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationOverview.SendReceive"/>
-  <version value="2.0.0-beta.2" />
+  <version value="2.0.0-beta.3"/>
   <name value="mp MedicationOverview.SendReceive"/>
   <status value="active"/>
-  <date value="2023-10-04"/>
+  <date value="2024-03-06"/>
   <publisher value="Nictiz"/>
   <contact>
     <name value="Nictiz"/>
@@ -28,11 +28,11 @@
     <mode value="client"/>
     <documentation value="Minimal requirements for a client to fulfill the 'Send medication overview' transaction (system role: MP-MOS)."/>
     <resource>
-      <type value="Bundle" />
+      <type value="Bundle"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationOverview-Bundle"/>
     </resource>
     <resource>
-      <type value="List" />
+      <type value="List"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationOverview"/>
     </resource>
     <resource>
@@ -121,11 +121,11 @@
     <mode value="server"/>
     <documentation value="Minimal requirements for a server to fulfill the 'Receive medication overview' transaction (system role: MP-MOO)."/>
     <resource>
-      <type value="Bundle" />
+      <type value="Bundle"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationOverview-Bundle"/>
     </resource>
     <resource>
-      <type value="List" />
+      <type value="List"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationOverview"/>
     </resource>
     <resource>

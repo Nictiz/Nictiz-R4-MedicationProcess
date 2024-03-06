@@ -1,128 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ext-MedicationOverview.Verification" />
-  <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationOverview.Verification" />
-  <version value="2.0.0-beta.2" />
-  <name value="ExtMedicationOverviewVerification" />
-  <title value="Ext MedicatonOverview.Verification" />
-  <status value="active" />
-  <publisher value="Nictiz" />
-  <contact>
-    <name value="Nictiz" />
-    <telecom>
-      <system value="url" />
-      <value value="https://www.nictiz.nl" />
-      <use value="work" />
-    </telecom>
-  </contact>
-  <description value="Extension to capture if a patient and/or health professional verified the medication overview and the corresponding date the verification took place." />
-  <purpose value="To indicate if and when a medication overview is verified with a patient or health professional." />
-  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
-  <fhirVersion value="4.0.1" />
-  <kind value="complex-type" />
-  <abstract value="false" />
-  <context>
-    <type value="element" />
-    <expression value="List" />
-  </context>
-  <type value="Extension" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <short value="VerificationPatient / VerificationHealthProfessional" />
-      <definition value="Verification with patient and health professional." />
-      <alias value="VerificatiePatiënt" />
-      <alias value="VerificatieZorgverlener" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension">
-      <path value="Extension.extension" />
-      <min value="2" />
-    </element>
-    <element id="Extension.extension:verificationPatient">
-      <path value="Extension.extension" />
-      <sliceName value="verificationPatient" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:verificationPatient.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="verificationPatient" />
-    </element>
-    <element id="Extension.extension:verificationPatient.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <short value="VerifiedWithPatient?" />
-      <definition value="Verified with patient?" />
-      <alias value="GeverifieerdMetPatiënt?" />
-      <type>
-        <code value="boolean" />
-      </type>
-    </element>
-    <element id="Extension.extension:verificationPatientDate">
-      <path value="Extension.extension" />
-      <sliceName value="verificationPatientDate" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:verificationPatientDate.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="verificationPatientDate" />
-    </element>
-    <element id="Extension.extension:verificationPatientDate.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <short value="VerificationDate" />
-      <definition value="Date of verification." />
-      <alias value="VerificatieDatum" />
-      <type>
-        <code value="dateTime" />
-      </type>
-    </element>
-    <element id="Extension.extension:verificationHealthProfessional">
-      <path value="Extension.extension" />
-      <sliceName value="verificationHealthProfessional" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:verificationHealthProfessional.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="verificationHealthProfessional" />
-    </element>
-    <element id="Extension.extension:verificationHealthProfessional.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <short value="VerifiedWithHealthProfessional?" />
-      <definition value="Verified with health professional?" />
-      <alias value="GeverifieerdMetZorgverlener?" />
-      <type>
-        <code value="boolean" />
-      </type>
-    </element>
-    <element id="Extension.extension:verificationHealthProfessionalDate">
-      <path value="Extension.extension" />
-      <sliceName value="verificationHealthProfessionalDate" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:verificationHealthProfessionalDate.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="verificationHealthProfessionalDate" />
-    </element>
-    <element id="Extension.extension:verificationHealthProfessionalDate.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <short value="VerificationDate" />
-      <definition value="Date of verification." />
-      <alias value="VerificatieDatum" />
-      <type>
-        <code value="dateTime" />
-      </type>
-    </element>
-    <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationOverview.Verification" />
-    </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]" />
-      <max value="0" />
-    </element>
-  </differential>
+   <id value="ext-MedicationOverview.Verification"/>
+   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationOverview.Verification"/>
+   <version value="2.0.0-beta.3"/>
+   <name value="ExtMedicationOverviewVerification"/>
+   <title value="Ext MedicatonOverview.Verification"/>
+   <status value="active"/>
+   <publisher value="Nictiz"/>
+   <contact>
+      <name value="Nictiz"/>
+      <telecom>
+         <system value="url"/>
+         <value value="https://www.nictiz.nl"/>
+         <use value="work"/>
+      </telecom>
+   </contact>
+   <description value="Extension to capture if a patient and/or health professional verified the medication overview and the corresponding date the verification took place."/>
+   <purpose value="To indicate if and when a medication overview is verified with a patient or health professional."/>
+   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
+   <fhirVersion value="4.0.1"/>
+   <kind value="complex-type"/>
+   <abstract value="false"/>
+   <context>
+      <type value="element"/>
+      <expression value="List"/>
+   </context>
+   <type value="Extension"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="Extension">
+         <path value="Extension"/>
+         <short value="VerificationPatient / VerificationHealthProfessional"/>
+         <definition value="Verification with patient and health professional."/>
+         <alias value="VerificatiePatiënt"/>
+         <alias value="VerificatieZorgverlener"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Extension.extension">
+         <path value="Extension.extension"/>
+         <min value="2"/>
+      </element>
+      <element id="Extension.extension:verificationPatient">
+         <path value="Extension.extension"/>
+         <sliceName value="verificationPatient"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Extension.extension:verificationPatient.url">
+         <path value="Extension.extension.url"/>
+         <fixedUri value="verificationPatient"/>
+      </element>
+      <element id="Extension.extension:verificationPatient.value[x]">
+         <path value="Extension.extension.value[x]"/>
+         <short value="VerifiedWithPatient?"/>
+         <definition value="Verified with patient?"/>
+         <alias value="GeverifieerdMetPatiënt?"/>
+         <type>
+            <code value="boolean"/>
+         </type>
+      </element>
+      <element id="Extension.extension:verificationPatientDate">
+         <path value="Extension.extension"/>
+         <sliceName value="verificationPatientDate"/>
+         <max value="1"/>
+      </element>
+      <element id="Extension.extension:verificationPatientDate.url">
+         <path value="Extension.extension.url"/>
+         <fixedUri value="verificationPatientDate"/>
+      </element>
+      <element id="Extension.extension:verificationPatientDate.value[x]">
+         <path value="Extension.extension.value[x]"/>
+         <short value="VerificationDate"/>
+         <definition value="Date of verification."/>
+         <alias value="VerificatieDatum"/>
+         <type>
+            <code value="dateTime"/>
+         </type>
+      </element>
+      <element id="Extension.extension:verificationHealthProfessional">
+         <path value="Extension.extension"/>
+         <sliceName value="verificationHealthProfessional"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Extension.extension:verificationHealthProfessional.url">
+         <path value="Extension.extension.url"/>
+         <fixedUri value="verificationHealthProfessional"/>
+      </element>
+      <element id="Extension.extension:verificationHealthProfessional.value[x]">
+         <path value="Extension.extension.value[x]"/>
+         <short value="VerifiedWithHealthProfessional?"/>
+         <definition value="Verified with health professional?"/>
+         <alias value="GeverifieerdMetZorgverlener?"/>
+         <type>
+            <code value="boolean"/>
+         </type>
+      </element>
+      <element id="Extension.extension:verificationHealthProfessionalDate">
+         <path value="Extension.extension"/>
+         <sliceName value="verificationHealthProfessionalDate"/>
+         <max value="1"/>
+      </element>
+      <element id="Extension.extension:verificationHealthProfessionalDate.url">
+         <path value="Extension.extension.url"/>
+         <fixedUri value="verificationHealthProfessionalDate"/>
+      </element>
+      <element id="Extension.extension:verificationHealthProfessionalDate.value[x]">
+         <path value="Extension.extension.value[x]"/>
+         <short value="VerificationDate"/>
+         <definition value="Date of verification."/>
+         <alias value="VerificatieDatum"/>
+         <type>
+            <code value="dateTime"/>
+         </type>
+      </element>
+      <element id="Extension.url">
+         <path value="Extension.url"/>
+         <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationOverview.Verification"/>
+      </element>
+      <element id="Extension.value[x]">
+         <path value="Extension.value[x]"/>
+         <max value="0"/>
+      </element>
+   </differential>
 </StructureDefinition>

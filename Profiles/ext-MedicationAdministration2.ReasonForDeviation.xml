@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ext-MedicationAdministration2.ReasonForDeviation" />
-  <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.ReasonForDeviation" />
-  <version value="2.0.0-beta.2" />
-  <name value="ExtMedicationAdministration2ReasonForDeviation" />
-  <title value="ext MedicationAdministration2.ReasonForDeviation" />
-  <status value="active" />
-  <publisher value="Nictiz" />
-  <contact>
-    <name value="Nictiz" />
-    <telecom>
-      <system value="url" />
-      <value value="https://www.nictiz.nl" />
-      <use value="work" />
-    </telecom>
-  </contact>
-  <description value="An extension to provide the reason why the medication was not taken or administered or was taken or administered differently." />
-  <purpose value="This extension represents the MedicationAdministrationReasonForDeviation concept for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)." />
-  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
-  <fhirVersion value="4.0.1" />
-  <kind value="complex-type" />
-  <abstract value="false" />
-  <context>
-    <type value="element" />
-    <expression value="MedicationAdministration" />
-  </context>
-  <type value="Extension" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.ReasonForDeviation" />
-    </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]" />
-      <short value="MedicationAdministrationReasonForDeviation" />
-      <definition value="Reason why the medication was not taken or administered or was taken or administered differently." />
-      <alias value="MedicatietoedieningRedenVanAfwijken" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.47--20220311102111" />
-      </binding>
-    </element>
-  </differential>
+   <id value="ext-MedicationAdministration2.ReasonForDeviation"/>
+   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.ReasonForDeviation"/>
+   <version value="2.0.0-beta.3"/>
+   <name value="ExtMedicationAdministration2ReasonForDeviation"/>
+   <title value="ext MedicationAdministration2.ReasonForDeviation"/>
+   <status value="active"/>
+   <publisher value="Nictiz"/>
+   <contact>
+      <name value="Nictiz"/>
+      <telecom>
+         <system value="url"/>
+         <value value="https://www.nictiz.nl"/>
+         <use value="work"/>
+      </telecom>
+   </contact>
+   <description value="An extension to provide the reason why the medication was not taken or administered or was taken or administered differently."/>
+   <purpose value="This extension represents the MedicationAdministrationReasonForDeviation concept for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)."/>
+   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
+   <fhirVersion value="4.0.1"/>
+   <kind value="complex-type"/>
+   <abstract value="false"/>
+   <context>
+      <type value="element"/>
+      <expression value="MedicationAdministration"/>
+   </context>
+   <type value="Extension"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="Extension.url">
+         <path value="Extension.url"/>
+         <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.ReasonForDeviation"/>
+      </element>
+      <element id="Extension.value[x]">
+         <path value="Extension.value[x]"/>
+         <short value="MedicationAdministrationReasonForDeviation"/>
+         <definition value="Reason why the medication was not taken or administered or was taken or administered differently."/>
+         <alias value="MedicatietoedieningRedenVanAfwijken"/>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <binding>
+            <strength value="required"/>
+            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.47--20240131165054"/>
+         </binding>
+      </element>
+   </differential>
 </StructureDefinition>

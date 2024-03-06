@@ -4,10 +4,10 @@
   xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/capabilitystatement.xsd">
   <id value="mp-MedicationData.RetrieveServe.Base"/>
   <url value="http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationData.RetrieveServe.Base"/>
-  <version value="2.0.0-beta.2" />
+  <version value="2.0.0-beta.3"/>
   <name value="mp MedicationData.RetrieveServe.Base"/>
   <status value="active"/>
-  <date value="2023-10-04"/>
+  <date value="2024-03-06"/>
   <publisher value="Nictiz"/>
   <contact>
     <name value="Nictiz"/>
@@ -121,6 +121,11 @@
       <searchParam>
         <name value="medication"/>
         <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="period-of-use"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
+        <type value="date"/>
       </searchParam>
     </resource>
     <resource>
@@ -311,6 +316,11 @@
       <searchParam>
         <name value="medication"/>
         <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="period-of-use"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
+        <type value="date"/>
       </searchParam>
     </resource>
     <resource>

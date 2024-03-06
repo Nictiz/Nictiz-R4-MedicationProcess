@@ -4,10 +4,10 @@
   xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/capabilitystatement.xsd">
   <id value="mp-ReplyProposalMedicationAgreement"/>
   <url value="http://nictiz.nl/fhir/CapabilityStatement/mp-ReplyProposalMedicationAgreement"/>
-  <version value="2.0.0-beta.2" />
+  <version value="2.0.0-beta.3"/>
   <name value="mp ReplyProposalMedicationAgreement"/>
   <status value="active"/>
-  <date value="2023-10-04"/>
+  <date value="2024-03-06"/>
   <publisher value="Nictiz"/>
   <contact>
     <name value="Nictiz"/>
@@ -28,7 +28,7 @@
     <mode value="client"/>
     <documentation value="Minimal requirements for a client to fulfill the 'Send reply proposal medication agreement' transaction (system role: MP-VMO)."/>
     <resource>
-      <type value="Bundle" />
+      <type value="Bundle"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-ReplyProposalMedicationAgreement-Bundle"/>
     </resource>
     <resource>
@@ -81,7 +81,7 @@
     <mode value="server"/>
     <documentation value="Minimal requirements for a server to fulfill the 'Receive reply proposal medication agreement' transaction (system role: MP-VMS)."/>
     <resource>
-      <type value="Bundle" />
+      <type value="Bundle"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-ReplyProposalMedicationAgreement-Bundle"/>
     </resource>
     <resource>
