@@ -1,165 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="mp-MedicationPrescriptionProcessing-Bundle"/>
-  <url value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationPrescriptionProcessing-Bundle"/>
-  <version value="2.0.0-beta.2"/>
-  <name value="MpMedicationPrescriptionProcessingBundle"/>
-  <title value="mp MedicationPrescriptionProcessing Bundle"/>
-  <status value="active"/>
-  <publisher value="Nictiz"/>
+  <id value="mp-MedicationPrescriptionProcessing-Bundle" />
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationPrescriptionProcessing-Bundle" />
+  <version value="2.0.0-beta.3" />
+  <name value="MpMedicationPrescriptionProcessingBundle" />
+  <title value="mp MedicationPrescriptionProcessing Bundle" />
+  <status value="active" />
+  <publisher value="Nictiz" />
   <contact>
-    <name value="Nictiz"/>
+    <name value="Nictiz" />
     <telecom>
-      <system value="url"/>
-      <value value="https://www.nictiz.nl"/>
-      <use value="work"/>
+      <system value="url" />
+      <value value="https://www.nictiz.nl" />
+      <use value="work" />
     </telecom>
   </contact>
-  <description value="Profile on the Bundle resource which represents the structure of the Send MedicationPrescriptionProcessing transaction conform information standard ['Medication Process'](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)."/>
-  <purpose value="To define the body of the Send MedicationPrescriptionProcessing transaction."/>
-  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
-  <fhirVersion value="4.0.1"/>
-  <kind value="resource"/>
-  <abstract value="false"/>
-  <type value="Bundle"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
-  <derivation value="constraint"/>
+  <description value="Profile on the Bundle resource which represents the structure of the Send MedicationPrescriptionProcessing transaction conform information standard ['Medication Process'](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)." />
+  <purpose value="To define the body of the Send MedicationPrescriptionProcessing transaction." />
+  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Bundle" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
+  <derivation value="constraint" />
   <differential>
     <element id="Bundle.type">
-      <path value="Bundle.type"/>
-      <fixedCode value="transaction"/>
+      <path value="Bundle.type" />
+      <fixedCode value="transaction" />
     </element>
     <element id="Bundle.entry">
-      <path value="Bundle.entry"/>
+      <path value="Bundle.entry" />
       <slicing>
         <discriminator>
-          <type value="profile"/>
-          <path value="resource"/>
+          <type value="profile" />
+          <path value="resource" />
         </discriminator>
-        <rules value="open"/>
+        <rules value="open" />
       </slicing>
-      <min value="1"/>
+      <min value="1" />
     </element>
     <element id="Bundle.entry:administrationAgreement">
-      <path value="Bundle.entry"/>
-      <sliceName value="administrationAgreement"/>
-      <min value="1"/>
+      <path value="Bundle.entry" />
+      <sliceName value="administrationAgreement" />
+      <min value="1" />
     </element>
     <element id="Bundle.entry:administrationAgreement.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
-        <code value="Resource"/>
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement"/>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement" />
       </type>
     </element>
     <element id="Bundle.entry:administrationAgreement.resource.meta">
-      <path value="Bundle.entry.resource.meta"/>
+      <path value="Bundle.entry.resource.meta" />
     </element>
     <element id="Bundle.entry:administrationAgreement.resource.meta.tag">
-      <path value="Bundle.entry.resource.meta.tag"/>
+      <path value="Bundle.entry.resource.meta.tag" />
       <slicing>
         <discriminator>
-          <type value="pattern"/>
-          <path value="$this"/>
+          <type value="pattern" />
+          <path value="$this" />
         </discriminator>
-        <rules value="open"/>
+        <rules value="open" />
       </slicing>
-      <min value="1"/>
+      <min value="1" />
     </element>
     <element id="Bundle.entry:administrationAgreement.resource.meta.tag:actionable">
-      <path value="Bundle.entry.resource.meta.tag"/>
-      <sliceName value="actionable"/>
-      <min value="1"/>
-      <max value="1"/>
+      <path value="Bundle.entry.resource.meta.tag" />
+      <sliceName value="actionable" />
+      <min value="1" />
+      <max value="1" />
       <patternCoding>
-        <system value="http://terminology.hl7.org/CodeSystem/common-tags"/>
-        <code value="actionable"/>
+        <system value="http://terminology.hl7.org/CodeSystem/common-tags" />
+        <code value="actionable" />
       </patternCoding>
     </element>
     <element id="Bundle.entry:medicationDispense">
-      <path value="Bundle.entry"/>
-      <sliceName value="medicationDispense"/>
+      <path value="Bundle.entry" />
+      <sliceName value="medicationDispense" />
     </element>
     <element id="Bundle.entry:medicationDispense.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
-        <code value="Resource"/>
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationDispense"/>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationDispense" />
       </type>
     </element>
     <element id="Bundle.entry:medicationDispense.resource.meta">
-      <path value="Bundle.entry.resource.meta"/>
+      <path value="Bundle.entry.resource.meta" />
     </element>
     <element id="Bundle.entry:medicationDispense.resource.meta.tag">
-      <path value="Bundle.entry.resource.meta.tag"/>
+      <path value="Bundle.entry.resource.meta.tag" />
       <slicing>
         <discriminator>
-          <type value="pattern"/>
-          <path value="$this"/>
+          <type value="pattern" />
+          <path value="$this" />
         </discriminator>
-        <rules value="open"/>
+        <rules value="open" />
       </slicing>
-      <min value="1"/>
+      <min value="1" />
     </element>
     <element id="Bundle.entry:medicationDispense.resource.meta.tag:actionable">
-      <path value="Bundle.entry.resource.meta.tag"/>
-      <sliceName value="actionable"/>
-      <min value="1"/>
-      <max value="1"/>
+      <path value="Bundle.entry.resource.meta.tag" />
+      <sliceName value="actionable" />
+      <min value="1" />
+      <max value="1" />
       <patternCoding>
-        <system value="http://terminology.hl7.org/CodeSystem/common-tags"/>
-        <code value="actionable"/>
+        <system value="http://terminology.hl7.org/CodeSystem/common-tags" />
+        <code value="actionable" />
       </patternCoding>
     </element>
     <element id="Bundle.entry:patient">
-      <path value="Bundle.entry"/>
-      <sliceName value="patient"/>
-      <max value="1"/>
+      <path value="Bundle.entry" />
+      <sliceName value="patient" />
+      <max value="1" />
     </element>
     <element id="Bundle.entry:patient.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
-        <code value="Resource"/>
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient" />
       </type>
     </element>
     <element id="Bundle.entry:pharmaceuticalProduct">
-      <path value="Bundle.entry"/>
-      <sliceName value="pharmaceuticalProduct"/>
+      <path value="Bundle.entry" />
+      <sliceName value="pharmaceuticalProduct" />
     </element>
     <element id="Bundle.entry:pharmaceuticalProduct.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
-        <code value="Resource"/>
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"/>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct" />
       </type>
     </element>
     <element id="Bundle.entry:healthcareProvider">
-      <path value="Bundle.entry"/>
-      <sliceName value="healthcareProvider"/>
+      <path value="Bundle.entry" />
+      <sliceName value="healthcareProvider" />
     </element>
     <element id="Bundle.entry:healthcareProvider.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
-        <code value="Resource"/>
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"/>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider" />
       </type>
     </element>
     <element id="Bundle.entry:healthcareProvider-Organization">
-      <path value="Bundle.entry"/>
-      <sliceName value="healthcareProvider-Organization"/>
+      <path value="Bundle.entry" />
+      <sliceName value="healthcareProvider-Organization" />
     </element>
     <element id="Bundle.entry:healthcareProvider-Organization.resource">
-      <path value="Bundle.entry.resource"/>
-      <min value="1"/>
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
-        <code value="Resource"/>
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"/>
+        <code value="Resource" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization" />
       </type>
     </element>
   </differential>
