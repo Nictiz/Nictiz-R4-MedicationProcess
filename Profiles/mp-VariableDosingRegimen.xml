@@ -168,7 +168,7 @@
     </element>
     <element id="MedicationRequest.extension:registrationDateTime.value[x]">
       <path value="MedicationRequest.extension.value[x]" />
-      <definition value="Date and time the variable dose regimen was recorded. Registration date + time are required (order of the registrations must be clear in cases with multiple registrations on one day)." />
+      <definition value="Date and time the variable-dosing regimen was recorded. Registration date + time are required (order of the registrations must be clear in cases with multiple registrations on one day)." />
     </element>
     <element id="MedicationRequest.modifierExtension:stopType">
       <path value="MedicationRequest.modifierExtension" />
