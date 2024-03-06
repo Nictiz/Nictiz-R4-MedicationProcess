@@ -2,46 +2,46 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/capabilitystatement.xsd">
-  <id value="mp-MedicationData.RetrieveServe.MedMij"/>
-  <url value="http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationData.RetrieveServe.MedMij"/>
-  <version value="2.0.0-beta.2" />
-  <name value="mp MedicationData.RetrieveServe.MedMij"/>
-  <status value="active"/>
-  <date value="2023-10-04"/>
-  <publisher value="Nictiz"/>
+  <id value="mp-MedicationData.RetrieveServe.MedMij" />
+  <url value="http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationData.RetrieveServe.MedMij" />
+  <version value="2.0.0-beta.3" />
+  <name value="mp MedicationData.RetrieveServe.MedMij" />
+  <status value="active" />
+  <date value="2024-03-06" />
+  <publisher value="Nictiz" />
   <contact>
-    <name value="Nictiz"/>
+    <name value="Nictiz" />
     <telecom>
-      <system value="url"/>
-      <value value="https://www.nictiz.nl"/>
-      <use value="work"/>
+      <system value="url" />
+      <value value="https://www.nictiz.nl" />
+      <use value="work" />
     </telecom>
   </contact>
-  <description value="This CapabilityStatement describes the minimal requirements for a client/server to fulfill the 'Retrieve/Serve medication data' transaction in the MedMij context within Medication Process 9 (MP9) version 3.0. See [Landingspagina Medicatieproces](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces) for additional information."/>
-  <purpose value="This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide of the corresponding information standard should be consulted."/>
-  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
-  <kind value="requirements"/>
-  <imports value="http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationData.RetrieveServe.Base"/>
-  <fhirVersion value="4.0.1"/>
-  <format value="xml"/>
-  <format value="json"/>
+  <description value="This CapabilityStatement describes the minimal requirements for a client/server to fulfill the 'Retrieve/Serve medication data' transaction in the MedMij context within Medication Process 9 (MP9) version 3.0. See [Landingspagina Medicatieproces](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces) for additional information." />
+  <purpose value="This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide of the corresponding information standard should be consulted." />
+  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
+  <kind value="requirements" />
+  <imports value="http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationData.RetrieveServe.Base" />
+  <fhirVersion value="4.0.1" />
+  <format value="xml" />
+  <format value="json" />
   <rest>
-    <mode value="client"/>
-    <documentation value="Minimal requirements for a client to fulfill the 'Retrieve medication data' transaction (system role: MP-MGR)."/>
+    <mode value="client" />
+    <documentation value="Minimal requirements for a client to fulfill the 'Retrieve medication data' transaction (system role: MP-MGR)." />
     <resource>
-      <type value="Patient"/>
-      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle. For a client support of the read interaction is mandatory."/>
+      <type value="Patient" />
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle. For a client support of the read interaction is mandatory." />
       <interaction>
-        <code value="read"/>
+        <code value="read" />
       </interaction>
     </resource>
   </rest>
   <rest>
-    <mode value="server"/>
-    <documentation value="Minimal requirements for a server to fulfill the 'Serve medication data' transaction (system role: MP-MGB)."/>
+    <mode value="server" />
+    <documentation value="Minimal requirements for a server to fulfill the 'Serve medication data' transaction (system role: MP-MGB)." />
     <resource>
-      <type value="Patient"/>
-      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle."/>
+      <type value="Patient" />
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle." />
     </resource>
   </rest>
 </CapabilityStatement>

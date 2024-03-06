@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ext-MedicationAgreement.PeriodOfUse.Condition" />
   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAgreement.PeriodOfUse.Condition" />
-  <version value="2.0.0-beta.2" />
+  <version value="2.0.0-beta.3" />
   <name value="ExtMedicationAgreementPeriodOfUseCondition" />
   <title value="ext MedicationAgreement.PeriodOfUse.Condition" />
   <status value="active" />
