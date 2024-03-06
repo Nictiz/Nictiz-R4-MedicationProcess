@@ -410,7 +410,7 @@
     </element>
     <element id="MedicationRequest.encounter">
       <path value="MedicationRequest.encounter" />
-      <short value="RelationContact" />
+      <short value="RelationEncounter" />
       <alias value="RelatieContact" />
       <type>
         <code value="Reference" />
@@ -426,6 +426,11 @@
         <identity value="mp-dataset-mp9-300-beta2-20231017" />
         <map value="mp-dataelement9x-199" />
         <comment value="RelationContact" />
+      </mapping>
+         <mapping>
+        <identity value="mp-dataset-mp9-300-beta3-20240229" />
+        <map value="mp-dataelement9x-199" />
+        <comment value="RelationEncounter" />
       </mapping>
     </element>
     <element id="MedicationRequest.authoredOn">
