@@ -231,7 +231,6 @@
         <code value="Extension" />
         <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdditionalCategory" />
       </type>
-      <isModifier value="false" />
     </element>
     <element id="MedicationAdministration.category.extension:additionalCategory.value[x]">
       <path value="MedicationAdministration.category.extension.value[x]" />
