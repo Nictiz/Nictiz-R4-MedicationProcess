@@ -105,6 +105,7 @@
       </interaction>
       <searchInclude value="MedicationStatement:patient"/>
       <searchInclude value="MedicationStatement:medication"/>
+      <searchInclude value="MedicationStatement:author"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -126,6 +127,11 @@
         <name value="period-of-use"/>
         <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
         <type value="date"/>
+      </searchParam>
+         <searchParam>
+        <name value="author"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-author"/>
+        <type value="reference"/>
       </searchParam>
     </resource>
     <resource>
@@ -300,6 +306,7 @@
       </interaction>
       <searchInclude value="MedicationStatement:patient"/>
       <searchInclude value="MedicationStatement:medication"/>
+      <searchInclude value="MedicationStatement:author"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -321,6 +328,11 @@
         <name value="period-of-use"/>
         <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
         <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <name value="author"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/author"/>
+        <type value="reference"/>
       </searchParam>
     </resource>
     <resource>
