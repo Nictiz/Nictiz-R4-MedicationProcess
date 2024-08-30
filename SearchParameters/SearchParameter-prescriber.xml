@@ -1,8 +1,8 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
-  <id value="author"/>
-  <url value="http://nictiz.nl/fhir/SearchParameter/author"/>
+  <id value="prescriber"/>
+  <url value="http://nictiz.nl/fhir/SearchParameter/prescriber"/>
   <version value="2.0.0-beta.5"/>
-  <name value="author"/>
+  <name value="Prescriber"/>
   <status value="active"/>
   <publisher value="Nictiz"/>
   <contact>
@@ -13,9 +13,9 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="Search based on the reference provided in the author extension (http://nictiz.nl/fhir/StructureDefinition/ext-MedicationUse2.Author) in the resource:&#xD;&#xA;* [MedicationStatement](http://hl7.org/fhir/r4/medicationstatement.html)&#xD;&#xA;)"/>
-  <purpose value="To select instances of the MedicationStatement based on the author."/>
-  <code value="author"/>
+  <description value="Search based on the reference provided in the prescriber extension (http://nictiz.nl/fhir/StructureDefinition/ext-MedicationUse2.Author) in the resource:&#xD;&#xA;* [MedicationStatement](http://hl7.org/fhir/r4/medicationstatement.html)&#xD;&#xA;)"/>
+  <purpose value="To select instances of the MedicationStatement resource based on the prescriber."/>
+  <code value="prescriber"/>
   <base value="MedicationStatement"/>
   <type value="reference"/>
   <expression value="MedicationStatement.extension('http://nictiz.nl/fhir/StructureDefinition/ext-MedicationUse2.Author')"/>
