@@ -2,7 +2,7 @@
   <id value="author"/>
   <url value="http://nictiz.nl/fhir/SearchParameter/author"/>
   <version value="2.0.0-beta.5"/>
-  <name value="author"/>
+  <name value="Author"/>
   <status value="active"/>
   <publisher value="Nictiz"/>
   <contact>
