@@ -31,12 +31,28 @@
       <type value="MedicationRequest"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchInclude value="MedicationRequest:reason"/>
+      <searchParam>
+        <name value="reason"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/reason"/>
+        <type value="reference"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="MedicationRequest"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest"/>
       <interaction>
         <code value="search-type"/>
       </interaction>
       <searchInclude value="MedicationRequest:patient"/>
       <searchInclude value="MedicationRequest:medication"/>
+      <searchInclude value="MedicationRequest:dispense-location"/>
+      <searchInclude value="MedicationRequest:next-practitioner"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -59,6 +75,16 @@
         <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
         <type value="date"/>
       </searchParam>
+      <searchParam>
+        <name value="dispense-location"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/dispense-location"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="next-practitioner"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/next-practitioner"/>
+        <type value="reference"/>
+      </searchParam>
     </resource>
     <resource>
       <type value="MedicationDispense"/>
@@ -69,6 +95,7 @@
       </interaction>
       <searchInclude value="MedicationDispense:patient"/>
       <searchInclude value="MedicationDispense:medication"/>
+      <searchInclude value="MedicationDispense:location"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -95,6 +122,11 @@
       <searchParam>
         <name value="whenhandedover"/>
         <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <name value="location"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/location"/>
+        <type value="reference"/>
       </searchParam>
     </resource>
     <resource>
@@ -232,12 +264,28 @@
       <type value="MedicationRequest"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchInclude value="MedicationRequest:reason"/>
+      <searchParam>
+        <name value="reason"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/reason"/>
+        <type value="reference"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="MedicationRequest"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest"/>
       <interaction>
         <code value="search-type"/>
       </interaction>
       <searchInclude value="MedicationRequest:patient"/>
       <searchInclude value="MedicationRequest:medication"/>
+      <searchInclude value="MedicationRequest:dispense-location"/>
+      <searchInclude value="MedicationRequest:next-practitioner"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -260,6 +308,16 @@
         <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
         <type value="date"/>
       </searchParam>
+      <searchParam>
+        <name value="dispense-location"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/dispense-location"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="next-practitioner"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/next-practitioner"/>
+        <type value="reference"/>
+      </searchParam>
     </resource>
     <resource>
       <type value="MedicationDispense"/>
@@ -270,6 +328,7 @@
       </interaction>
       <searchInclude value="MedicationDispense:patient"/>
       <searchInclude value="MedicationDispense:medication"/>
+      <searchInclude value="MedicationDispense:location"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -296,6 +355,11 @@
       <searchParam>
         <name value="whenhandedover"/>
         <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <name value="location"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/location"/>
+        <type value="reference"/>
       </searchParam>
     </resource>
     <resource>
