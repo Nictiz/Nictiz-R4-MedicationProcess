@@ -49,7 +49,7 @@
       </interaction>
       <searchInclude value="MedicationRequest:dispense-location"/>
       <searchParam>
-        <name value="reason"/>
+        <name value="dispense-location"/>
         <definition value="http://nictiz.nl/fhir/SearchParameter/dispense-location"/>
         <type value="reference"/>
       </searchParam>
@@ -206,6 +206,7 @@
       </interaction>
       <searchInclude value="MedicationAdministration:patient"/>
       <searchInclude value="MedicationAdministration:medication"/>
+      <searchInclude value="MedicationAdministration:performer"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -222,6 +223,10 @@
       </searchParam>
       <searchParam>
         <name value="medication"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="performer"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -486,6 +491,7 @@
       </interaction>
       <searchInclude value="MedicationAdministration:patient"/>
       <searchInclude value="MedicationAdministration:medication"/>
+      <searchInclude value="MedicationAdministration:performer"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -502,6 +508,10 @@
       </searchParam>
       <searchParam>
         <name value="medication"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="performer"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
