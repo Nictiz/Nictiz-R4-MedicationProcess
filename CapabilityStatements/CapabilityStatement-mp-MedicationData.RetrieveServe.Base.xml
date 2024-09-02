@@ -260,6 +260,21 @@
       <interaction>
         <code value="read"/>
       </interaction>
+      <searchInclude value="PractitionerRole:organization"/>
+      <searchInclude value="PractitionerRole:practitioner"/>
+      <searchInclude value="PractitionerRole:location"/>
+      <searchParam>
+        <name value="organization"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="practitioner"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="location"/>
+        <type value="reference"/>
+      </searchParam>
     </resource>
     <resource>
       <type value="Practitioner"/>
@@ -519,6 +534,21 @@
       <type value="PractitionerRole"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"/>
       <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle."/>
+      <searchInclude value="PractitionerRole:organization"/>
+      <searchInclude value="PractitionerRole:practitioner"/>
+      <searchInclude value="PractitionerRole:location"/>
+      <searchParam>
+        <name value="organization"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="practitioner"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="location"/>
+        <type value="reference"/>
+      </searchParam>
     </resource>
     <resource>
       <type value="Practitioner"/>
