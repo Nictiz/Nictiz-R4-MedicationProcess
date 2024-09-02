@@ -65,6 +65,8 @@
       <searchInclude value="MedicationRequest:patient"/>
       <searchInclude value="MedicationRequest:medication"/>
       <searchInclude value="MedicationRequest:next-practitioner"/>
+      <searchInclude value="MedicationRequest:requester"/>
+      <searchInclude value="MedicationRequest:performer"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -80,6 +82,14 @@
       </searchParam>
       <searchParam>
         <name value="medication"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="requester"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="performer"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -103,6 +113,8 @@
       <searchInclude value="MedicationDispense:patient"/>
       <searchInclude value="MedicationDispense:medication"/>
       <searchInclude value="MedicationDispense:location"/>
+      <searchInclude value="MedicationDispense:performer"/>
+      <searchInclude value="MedicationDispense:destination"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -135,6 +147,14 @@
         <definition value="http://nictiz.nl/fhir/SearchParameter/location"/>
         <type value="reference"/>
       </searchParam>
+      <searchParam>
+        <name value="performer"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="destination"/>
+        <type value="reference"/>
+      </searchParam>
     </resource>
     <resource>
       <type value="MedicationStatement"/>
@@ -145,6 +165,7 @@
       <searchInclude value="MedicationStatement:patient"/>
       <searchInclude value="MedicationStatement:medication"/>
       <searchInclude value="MedicationStatement:author"/>
+      <searchInclude value="MedicationStatement:source"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -160,6 +181,10 @@
       </searchParam>
       <searchParam>
         <name value="medication"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="source"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -305,6 +330,8 @@
       <searchInclude value="MedicationRequest:patient"/>
       <searchInclude value="MedicationRequest:medication"/>
       <searchInclude value="MedicationRequest:next-practitioner"/>
+      <searchInclude value="MedicationRequest:requester"/>
+      <searchInclude value="MedicationRequest:performer"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -320,6 +347,14 @@
       </searchParam>
       <searchParam>
         <name value="medication"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="requester"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="performer"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -343,6 +378,8 @@
       <searchInclude value="MedicationDispense:patient"/>
       <searchInclude value="MedicationDispense:medication"/>
       <searchInclude value="MedicationDispense:location"/>
+      <searchInclude value="MedicationDispense:destination"/>
+      <searchInclude value="MedicationDispense:performer"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -375,6 +412,14 @@
         <definition value="http://nictiz.nl/fhir/SearchParameter/location"/>
         <type value="reference"/>
       </searchParam>
+      <searchParam>
+        <name value="destination"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="performer"/>
+        <type value="reference"/>
+      </searchParam>
     </resource>
     <resource>
       <type value="MedicationStatement"/>
@@ -385,6 +430,7 @@
       <searchInclude value="MedicationStatement:patient"/>
       <searchInclude value="MedicationStatement:medication"/>
       <searchInclude value="MedicationStatement:author"/>
+      <searchInclude value="MedicationStatement:source"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -400,6 +446,10 @@
       </searchParam>
       <searchParam>
         <name value="medication"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="source"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
