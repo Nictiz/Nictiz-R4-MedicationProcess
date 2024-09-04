@@ -66,7 +66,7 @@
       <searchInclude value="MedicationRequest:medication"/>
       <searchInclude value="MedicationRequest:next-practitioner"/>
       <searchInclude value="MedicationRequest:requester"/>
-      <searchInclude value="MedicationRequest:performer"/>
+      <searchInclude value="MedicationRequest:intended-performer"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -89,7 +89,7 @@
         <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="performer"/>
+        <name value="intended-performer"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -351,7 +351,7 @@
       <searchInclude value="MedicationRequest:medication"/>
       <searchInclude value="MedicationRequest:next-practitioner"/>
       <searchInclude value="MedicationRequest:requester"/>
-      <searchInclude value="MedicationRequest:performer"/>
+      <searchInclude value="MedicationRequest:intended-performer"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -374,7 +374,7 @@
         <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="performer"/>
+        <name value="intended-performer"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
