@@ -18,5 +18,5 @@
   <code value="prescriber"/>
   <base value="MedicationStatement"/>
   <type value="reference"/>
-  <expression value="MedicationStatement.extension('http://nictiz.nl/fhir/StructureDefinition/ext-MedicationUse2.Prescriber}')"/>
+  <expression value="MedicationStatement.extension('http://nictiz.nl/fhir/StructureDefinition/ext-MedicationUse2.Prescriber')"/>
 </SearchParameter>
