@@ -1,0 +1,22 @@
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="location"/>
+  <url value="http://nictiz.nl/fhir/SearchParameter/location"/>
+  <version value="2.0.0-beta.5"/>
+  <name value="Location"/>
+  <status value="active"/>
+  <publisher value="Nictiz"/>
+  <contact>
+    <name value="Nictiz"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.nictiz.nl"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Search based on the location referenced in the [MedicationDispense](http://hl7.org/fhir/r4/medicationdispense.html) resource"/>
+  <purpose value="To select instances of MedicationDispense based on the location."/>
+  <code value="location"/>
+  <base value="MedicationDispense"/>
+  <type value="reference"/>
+  <expression value="MedicationDispense.location"/>
+</SearchParameter>

@@ -31,12 +31,42 @@
       <type value="MedicationRequest"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchInclude value="MedicationRequest:reason"/>
+      <searchParam>
+        <name value="reason"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/reason"/>
+        <type value="reference"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="MedicationRequest"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchInclude value="MedicationRequest:dispense-location"/>
+      <searchParam>
+        <name value="dispense-location"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/dispense-location"/>
+        <type value="reference"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="MedicationRequest"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest"/>
       <interaction>
         <code value="search-type"/>
       </interaction>
       <searchInclude value="MedicationRequest:patient"/>
       <searchInclude value="MedicationRequest:medication"/>
+      <searchInclude value="MedicationRequest:next-practitioner"/>
+      <searchInclude value="MedicationRequest:requester"/>
+      <searchInclude value="MedicationRequest:intended-performer"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -55,9 +85,22 @@
         <type value="reference"/>
       </searchParam>
       <searchParam>
+        <name value="requester"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="intended-performer"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
         <name value="period-of-use"/>
         <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
         <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <name value="next-practitioner"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/next-practitioner"/>
+        <type value="reference"/>
       </searchParam>
     </resource>
     <resource>
@@ -69,6 +112,9 @@
       </interaction>
       <searchInclude value="MedicationDispense:patient"/>
       <searchInclude value="MedicationDispense:medication"/>
+      <searchInclude value="MedicationDispense:location"/>
+      <searchInclude value="MedicationDispense:performer"/>
+      <searchInclude value="MedicationDispense:destination"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -96,6 +142,19 @@
         <name value="whenhandedover"/>
         <type value="date"/>
       </searchParam>
+      <searchParam>
+        <name value="location"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/location"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="performer"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="destination"/>
+        <type value="reference"/>
+      </searchParam>
     </resource>
     <resource>
       <type value="MedicationStatement"/>
@@ -105,6 +164,8 @@
       </interaction>
       <searchInclude value="MedicationStatement:patient"/>
       <searchInclude value="MedicationStatement:medication"/>
+      <searchInclude value="MedicationStatement:author"/>
+      <searchInclude value="MedicationStatement:source"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -123,9 +184,18 @@
         <type value="reference"/>
       </searchParam>
       <searchParam>
+        <name value="source"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
         <name value="period-of-use"/>
         <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
         <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <name value="author"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/author"/>
+        <type value="reference"/>
       </searchParam>
     </resource>
     <resource>
@@ -136,6 +206,7 @@
       </interaction>
       <searchInclude value="MedicationAdministration:patient"/>
       <searchInclude value="MedicationAdministration:medication"/>
+      <searchInclude value="MedicationAdministration:performer"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -152,6 +223,10 @@
       </searchParam>
       <searchParam>
         <name value="medication"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="performer"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -190,6 +265,21 @@
       <interaction>
         <code value="read"/>
       </interaction>
+      <searchInclude value="PractitionerRole:organization"/>
+      <searchInclude value="PractitionerRole:practitioner"/>
+      <searchInclude value="PractitionerRole:location"/>
+      <searchParam>
+        <name value="organization"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="practitioner"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="location"/>
+        <type value="reference"/>
+      </searchParam>
     </resource>
     <resource>
       <type value="Practitioner"/>
@@ -226,12 +316,42 @@
       <type value="MedicationRequest"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchInclude value="MedicationRequest:reason"/>
+      <searchParam>
+        <name value="reason"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/reason"/>
+        <type value="reference"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="MedicationRequest"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest"/>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <searchInclude value="MedicationRequest:dispense-location"/>
+      <searchParam>
+        <name value="reason"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/dispense-location"/>
+        <type value="reference"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="MedicationRequest"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest"/>
       <interaction>
         <code value="search-type"/>
       </interaction>
       <searchInclude value="MedicationRequest:patient"/>
       <searchInclude value="MedicationRequest:medication"/>
+      <searchInclude value="MedicationRequest:next-practitioner"/>
+      <searchInclude value="MedicationRequest:requester"/>
+      <searchInclude value="MedicationRequest:intended-performer"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -250,9 +370,22 @@
         <type value="reference"/>
       </searchParam>
       <searchParam>
+        <name value="requester"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="intended-performer"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
         <name value="period-of-use"/>
         <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
         <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <name value="next-practitioner"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/next-practitioner"/>
+        <type value="reference"/>
       </searchParam>
     </resource>
     <resource>
@@ -264,6 +397,9 @@
       </interaction>
       <searchInclude value="MedicationDispense:patient"/>
       <searchInclude value="MedicationDispense:medication"/>
+      <searchInclude value="MedicationDispense:location"/>
+      <searchInclude value="MedicationDispense:destination"/>
+      <searchInclude value="MedicationDispense:performer"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -291,6 +427,19 @@
         <name value="whenhandedover"/>
         <type value="date"/>
       </searchParam>
+      <searchParam>
+        <name value="location"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/location"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="destination"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="performer"/>
+        <type value="reference"/>
+      </searchParam>
     </resource>
     <resource>
       <type value="MedicationStatement"/>
@@ -300,6 +449,8 @@
       </interaction>
       <searchInclude value="MedicationStatement:patient"/>
       <searchInclude value="MedicationStatement:medication"/>
+      <searchInclude value="MedicationStatement:author"/>
+      <searchInclude value="MedicationStatement:source"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -318,9 +469,18 @@
         <type value="reference"/>
       </searchParam>
       <searchParam>
+        <name value="source"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
         <name value="period-of-use"/>
         <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
         <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <name value="author"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/author"/>
+        <type value="reference"/>
       </searchParam>
     </resource>
     <resource>
@@ -331,6 +491,7 @@
       </interaction>
       <searchInclude value="MedicationAdministration:patient"/>
       <searchInclude value="MedicationAdministration:medication"/>
+      <searchInclude value="MedicationAdministration:performer"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -347,6 +508,10 @@
       </searchParam>
       <searchParam>
         <name value="medication"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="performer"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -379,6 +544,21 @@
       <type value="PractitionerRole"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"/>
       <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle."/>
+      <searchInclude value="PractitionerRole:organization"/>
+      <searchInclude value="PractitionerRole:practitioner"/>
+      <searchInclude value="PractitionerRole:location"/>
+      <searchParam>
+        <name value="organization"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="practitioner"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="location"/>
+        <type value="reference"/>
+      </searchParam>
     </resource>
     <resource>
       <type value="Practitioner"/>
