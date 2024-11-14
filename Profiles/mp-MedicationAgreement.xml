@@ -92,7 +92,7 @@
       <element id="MedicationRequest.extension:renderedDosageInstruction.value[x]">
          <path value="MedicationRequest.extension.value[x]"/>
          <short value="Description"/>
-         <definition value="Textual description of the complete instructions for use including the period of use."/>
+         <definition value="Textual description of the complete instructions for use."/>
          <alias value="Omschrijving"/>
          <mapping>
             <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
