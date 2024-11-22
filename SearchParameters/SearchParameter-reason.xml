@@ -1,7 +1,7 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="reason"/>
   <url value="http://nictiz.nl/fhir/SearchParameter/reason"/>
-  <version value="2.0.0-beta.5"/>
+  <version value="2.0.0-beta.6"/>
   <name value="Reason"/>
   <status value="active"/>
   <publisher value="Nictiz"/>
