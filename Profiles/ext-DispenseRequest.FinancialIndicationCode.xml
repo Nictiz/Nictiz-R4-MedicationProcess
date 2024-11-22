@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="ext-DispenseRequest.FinancialIndicationCode"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.FinancialIndicationCode"/>
-   <version value="2.0.0-beta.5"/>
+   <version value="2.0.0-beta.6"/>
    <name value="ExtDispenseRequestFinancialIndicationCode"/>
    <title value="ext DispenseRequest.FinancialIndicationCode"/>
    <status value="active"/>

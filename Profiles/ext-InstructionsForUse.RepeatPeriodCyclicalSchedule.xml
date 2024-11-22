@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="ext-InstructionsForUse.RepeatPeriodCyclicalSchedule"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/ext-InstructionsForUse.RepeatPeriodCyclicalSchedule"/>
-   <version value="2.0.0-beta.5"/>
+   <version value="2.0.0-beta.6"/>
    <name value="ExtInstructionsForUseRepeatPeriodCyclicalSchedule"/>
    <title value="ext InstructionsForUse.RepeatPeriodCyclicalSchedule"/>
    <status value="active"/>
