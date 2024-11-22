@@ -1,0 +1,22 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <id value="2.16.840.1.113883.2.4.3.11.60.20.77.5.2.14.2051"/>
+   <language value="en-US"/>
+   <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+      <valuePeriod>
+         <start value="2024-11-22T14:51:30Z"/>
+      </valuePeriod>
+   </extension>
+   <url value="urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.14.2051"/>
+   <identifier>
+      <use value="official"/>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.14.2051"/>
+   </identifier>
+   <version value="2024-11-22T14:51:30"/>
+   <name value="MedicationprocessVVadditionalwishes"/>
+   <title value="Medicationprocess VV additional wishes"/>
+   <status value="unknown"/>
+   <publisher value="ART-DECOR"/>
+   <description value="Medicationprocess VV additional wishes"/>
+   <content value="not-present"/>
+</CodeSystem>
