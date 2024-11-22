@@ -13,7 +13,7 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="Search based on the next practitioner extension (http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAgreement.NextPractitioner) referenced in the [MedicationRequest](http://hl7.org/fhir/r4/medicationrequest.html) resource"/>
+  <description value="Search based on the next practitioner extension (&lt;http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAgreement.NextPractitioner&gt;) referenced in the MedicationRequest resource"/>
   <purpose value="To select instances of the MedicationRequest resource based on the next practitioner."/>
   <code value="next-practitioner"/>
   <base value="MedicationRequest"/>

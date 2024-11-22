@@ -13,7 +13,7 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="Search based on the dispense location extension (http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.DispenseLocation) referenced in the [MedicationRequest](http://hl7.org/fhir/r4/medicationrequest.html) resource"/>
+  <description value="Search based on the dispense location extension (&lt;http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.DispenseLocation&gt;) referenced in the MedicationRequest resource"/>
   <purpose value="To select instances of the MedicationRequest resource based on the dispense location."/>
   <code value="dispense-location"/>
   <base value="MedicationRequest"/>

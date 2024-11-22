@@ -13,7 +13,7 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="Search based on the reference provided in the prescriber extension (http://nictiz.nl/fhir/StructureDefinition/ext-MedicationUse2.Prescriber) in the resource:&#xD;&#xA;* [MedicationStatement](http://hl7.org/fhir/r4/medicationstatement.html)&#xD;&#xA;)"/>
+  <description value="Search based on the reference provided in the prescriber extension (&lt;http://nictiz.nl/fhir/StructureDefinition/ext-MedicationUse2.Prescriber&gt;) in the MedicationStatement resource.)"/>
   <purpose value="To select instances of the MedicationStatement resource based on the prescriber."/>
   <code value="prescriber"/>
   <base value="MedicationStatement"/>
