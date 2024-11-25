@@ -373,7 +373,7 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-TODO"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-1325"/>
             <comment value="RelationVariableDosingRegimen"/>
          </mapping>
