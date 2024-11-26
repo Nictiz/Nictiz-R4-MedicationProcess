@@ -31,33 +31,6 @@
       <type value="MedicationRequest"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen"/>
-      <interaction>
-        <code value="search-type"/>
-      </interaction>
-      <searchInclude value="MedicationRequest:reason"/>
-      <searchParam>
-        <name value="reason"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/reason"/>
-        <type value="reference"/>
-      </searchParam>
-    </resource>
-    <resource>
-      <type value="MedicationRequest"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest"/>
-      <interaction>
-        <code value="search-type"/>
-      </interaction>
-      <searchInclude value="MedicationRequest:dispense-location"/>
-      <searchParam>
-        <name value="dispense-location"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/dispense-location"/>
-        <type value="reference"/>
-      </searchParam>
-    </resource>
-    <resource>
-      <type value="MedicationRequest"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest"/>
       <interaction>
         <code value="search-type"/>
@@ -67,6 +40,8 @@
       <searchInclude value="MedicationRequest:next-practitioner"/>
       <searchInclude value="MedicationRequest:requester"/>
       <searchInclude value="MedicationRequest:intended-performer"/>
+      <searchInclude value="MedicationRequest:dispense-location"/>
+      <searchInclude value="MedicationRequest:reason"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -101,6 +76,18 @@
         <name value="next-practitioner"/>
         <definition value="http://nictiz.nl/fhir/SearchParameter/next-practitioner"/>
         <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="dispense-location"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/dispense-location"/>
+        <type value="reference"/>
+        <documentation value='This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-DispenseRequest profile. In this case the _include of the dispense-location needs to be supported as well.'/>
+      </searchParam>
+      <searchParam>
+        <name value="reason"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/reason"/>
+        <type value="reference"/>
+        <documentation value='This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-MedicationAgreement and mp-VariableDosingRegimen profiles. In these cases the _include of the reason needs to be supported as well.'/>
       </searchParam>
     </resource>
     <resource>
@@ -316,33 +303,6 @@
       <type value="MedicationRequest"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen"/>
-      <interaction>
-        <code value="search-type"/>
-      </interaction>
-      <searchInclude value="MedicationRequest:reason"/>
-      <searchParam>
-        <name value="reason"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/reason"/>
-        <type value="reference"/>
-      </searchParam>
-    </resource>
-    <resource>
-      <type value="MedicationRequest"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest"/>
-      <interaction>
-        <code value="search-type"/>
-      </interaction>
-      <searchInclude value="MedicationRequest:dispense-location"/>
-      <searchParam>
-        <name value="reason"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/dispense-location"/>
-        <type value="reference"/>
-      </searchParam>
-    </resource>
-    <resource>
-      <type value="MedicationRequest"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest"/>
       <interaction>
         <code value="search-type"/>
@@ -352,6 +312,8 @@
       <searchInclude value="MedicationRequest:next-practitioner"/>
       <searchInclude value="MedicationRequest:requester"/>
       <searchInclude value="MedicationRequest:intended-performer"/>
+      <searchInclude value="MedicationRequest:dispense-location"/>
+      <searchInclude value="MedicationRequest:reason"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -386,6 +348,18 @@
         <name value="next-practitioner"/>
         <definition value="http://nictiz.nl/fhir/SearchParameter/next-practitioner"/>
         <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="dispense-location"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/dispense-location"/>
+        <type value="reference"/>
+        <documentation value="This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-DispenseRequest profile. In this case the _include of the dispense-location needs to be supported as well."/>
+      </searchParam>
+      <searchParam>
+        <name value="reason"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/reason"/>
+        <type value="reference"/>
+        <documentation value="This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-MedicationAgreement and mp-VariableDosingRegimen profiles. In these cases the _include of the reason needs to be supported as well."/>
       </searchParam>
     </resource>
     <resource>
