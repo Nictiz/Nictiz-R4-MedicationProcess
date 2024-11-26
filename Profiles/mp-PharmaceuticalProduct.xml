@@ -1,247 +1,247 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="mp-PharmaceuticalProduct"/>
-   <url value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"/>
-   <version value="2.0.0-beta.6"/>
-   <name value="MpPharmaceuticalProduct"/>
-   <title value="mp PharmaceuticalProduct"/>
-   <status value="active"/>
-   <publisher value="Nictiz"/>
-   <contact>
-      <name value="Nictiz"/>
-      <telecom>
-         <system value="url"/>
-         <value value="https://www.nictiz.nl"/>
-         <use value="work"/>
-      </telecom>
-   </contact>
-   <description value="The prescribed substance is usually medication. However, medical aids and bandages can also be prescribed and supplied via the pharmacy. Food and blood products do not strictly belong in the medication category, but can be prescribed and supplied by a pharmacy as well.&#xD;&#xA;&#xD;&#xA;A type of medication can be indicated with **a single code**. That code can be chosen from several possible coding systems (concretely: GPK, PRK, HPK or article numbers). Correct use of these codes in the software systems will sufficiently record the composition of the product used, making a complete product specification unnecessary.&#xD;&#xA;&#xD;&#xA;In addition to a primary code, **alternative codes** from other coding systems can also be entered (so that the GPK can be sent along in the event that the patient was registered based on PRK, for example).&#xD;&#xA;&#xD;&#xA;Entering multiple ingredients will enable you to display a compound product. If one of the composite parts is liquid, the dosage will be given in milliliters; otherwise it will be given in ‘units’.&#xD;&#xA;&#xD;&#xA;In that case, the **composition of the medication** can be specified implicitly (with the use of a medication code) or explicitly, for example by listing the (active) ingredient(s) of the medication.&#xD;&#xA;&#xD;&#xA;**Magistral prescriptions** can be entered as well. This can be done by means of the option listed above to enter coded ingredients and/or by entering the composition and preparation method as free text.&#xD;&#xA;This is a partial information model."/>
-   <purpose value="This Medication resource represents the PharmaceuticalProduct building block for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). This profile is based on the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) PharmaceuticalProduct, but has no dependency on the corresponding nl-core profile because it contains non-compatible changes. Where compatible, mappings to zib concepts are defined. Additional concepts or concepts that are not compatible with their zib counterparts contain a mapping to the MP9 data set."/>
-   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
-   <fhirVersion value="4.0.1"/>
-   <mapping>
-      <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN"/>
-      <uri value="https://zibs.nl/wiki/PharmaceuticalProduct-v2.1.2(2020EN)"/>
-      <name value="zib PharmaceuticalProduct-v2.1.2(2020EN)"/>
-   </mapping>
-   <mapping>
-      <identity value="mp-dataset-mp9-300-beta3-20240229"/>
-      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20240229T110214/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
-      <name value="ART-DECOR Dataset MP9 3.0.0-beta.3 20240229"/>
-   </mapping>
-   <mapping>
-      <identity value="mp-dataset-mp9-300-beta4-20241118"/>
-      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20241118T151205/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
-      <name value="ART-DECOR Dataset MP9 3.0.0-beta.4 20241118"/>
-   </mapping>
-   <kind value="resource"/>
-   <abstract value="false"/>
-   <type value="Medication"/>
-   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Medication"/>
-   <derivation value="constraint"/>
-   <differential>
-      <element id="Medication">
-         <path value="Medication"/>
-         <short value="PharmaceuticalProduct"/>
-         <alias value="FarmaceutischProduct"/>
-         <mapping>
-            <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN"/>
-            <map value="NL-CM:9.7.19926"/>
-            <comment value="PharmaceuticalProduct"/>
-         </mapping>
-      </element>
-      <element id="Medication.extension:description">
-         <path value="Medication.extension"/>
-         <sliceName value="description"/>
-         <type>
-            <code value="Extension"/>
-            <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalProduct.Description"/>
-         </type>
-         <constraint>
-            <key value="ext-1"/>
-            <severity value="error"/>
-            <human value="Must have either extensions or value[x], not both"/>
-            <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
-         </constraint>
-      </element>
-      <element id="Medication.code">
-         <path value="Medication.code"/>
-         <short value="MedicationCode"/>
-         <definition value="Coding medication in the Netherlands is done on the basis of the G-standaard (issued by Z-index), which is filled under the direction of Royal Dutch Pharmacists Association (KNMP).&#xD;&#xA;&#xD;&#xA;The coded medication can be expressed as:&#xD;&#xA;&#xD;&#xA;* ZI number&#xD;&#xA;* Trade product code (HPK)&#xD;&#xA;* Prescription code (PRK)&#xD;&#xA;* Generic product code (GPK)&#xD;&#xA;&#xD;&#xA;The ZI number represents the trade product and the package size.&#xD;&#xA;The HPK is the trade product as registered and marketed by the manufacturer.&#xD;&#xA;The PRK contains all GPK information supplemented with information needed to prescribe the right product. This level is intended to facilitate generic prescription of drugs.&#xD;&#xA;The GPK defines the pharmaceutical characteristics of a product: ingredients, strengths, units, pharmaceutical form and route of administration.&#xD;&#xA;&#xD;&#xA;Further information about the G-Standaard levels see &lt;https://www.z-index.nl&gt;.&#xD;&#xA;&#xD;&#xA;So-called 90.000.000 numbers are used in local IT systems. The 90.000.000 number is used in accordance with national agreements."/>
-         <comment value="Depending on the context of use, the code that was actually selected by the user (prescriber, dispenser, etc.) will have the `coding.userSelected` set to _true_.  As described in the coding datatype: &#34;A coding may be marked as a &#34;userSelected&#34; if a user selected the particular coded value in a user interface (e.g. the user selects an item in a pick-list). If a user selected coding exists, it is the preferred choice for performing translations etc. Other codes can only be literal translations to alternative code systems, or codes at a lower level of granularity (e.g. a generic code for a vendor-specific primary one).&#xD;&#xA;If there is no coding available, it is preferred to omit this `.coding` element. Receiving systems should anticipate on the possibility of receiving a NullFlavor from sending systems."/>
-         <alias value="ProductCode"/>
-         <binding>
-            <strength value="extensible"/>
-            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.56--20230213120250"/>
-         </binding>
-         <mapping>
-            <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN"/>
-            <map value="NL-CM:9.7.19927"/>
-            <comment value="MedicationCode [DEPRECATED]"/>
-         </mapping>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
-            <map value="mp-dataelement9x-261"/>
-            <comment value="MedicationCode"/>
-         </mapping>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
-            <map value="mp-dataelement9x-261"/>
-            <comment value="MedicationCode"/>
-         </mapping>
-      </element>
-      <element id="Medication.code.text">
-         <path value="Medication.code.text"/>
-         <short value="Medication"/>
-         <definition value="For medication which has no code, enter the complete name of the pharmaceutical product here."/>
-         <alias value="ProductNaam"/>
-         <mapping>
-            <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN"/>
-            <map value="NL-CM:9.7.19929"/>
-            <comment value="Medication"/>
-         </mapping>
-      </element>
-      <element id="Medication.manufacturer">
-         <path value="Medication.manufacturer"/>
-         <constraint>
-            <key value="ref-1"/>
-            <severity value="error"/>
-            <human value="SHALL have a contained resource if a local reference is provided"/>
-            <source value="http://hl7.org/fhir/StructureDefinition/Medication"/>
-         </constraint>
-      </element>
-      <element id="Medication.form">
-         <path value="Medication.form"/>
-         <short value="PharmaceuticalForm"/>
-         <definition value="The pharmaceutical form indicates the form of the medication. Examples include: tablet, suppository, infusion liquid, ointment. If the product has a GPK code in the G standard, the form will be known in the G standard. For products without a code (free text, preparation by the pharmacy), the means of administration can be entered."/>
-         <alias value="FarmaceutischeVorm"/>
-         <binding>
-            <strength value="required"/>
-            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.8--20200901000000"/>
-         </binding>
-         <mapping>
-            <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN"/>
-            <map value="NL-CM:9.7.19931"/>
-            <comment value="PharmaceuticalForm"/>
-         </mapping>
-      </element>
-      <element id="Medication.amount">
-         <path value="Medication.amount"/>
-         <constraint>
-            <key value="rat-1"/>
-            <severity value="error"/>
-            <human value="Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present"/>
-            <source value="http://hl7.org/fhir/StructureDefinition/Medication"/>
-         </constraint>
-      </element>
-      <element id="Medication.ingredient">
-         <path value="Medication.ingredient"/>
-         <short value="Ingredient"/>
-         <definition value="A product contains one or more active substances and excipients. These are usually determined by the product code. For medication prepared or compounded by the local pharmacy, each ingredient must be entered separately.&#xD;&#xA;&#xD;&#xA;The active substances play an important role, as they: a) determine the pharmacotherapeutic effect of the medication and b) serve as the basis for the indication of the strength of the medication (e.g. 200mg)."/>
-         <alias value="Ingredient"/>
-         <mapping>
-            <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN"/>
-            <map value="NL-CM:9.7.19932"/>
-            <comment value="Ingredient"/>
-         </mapping>
-      </element>
-      <element id="Medication.ingredient.item[x]">
-         <path value="Medication.ingredient.item[x]"/>
-         <slicing>
-            <discriminator>
-               <type value="type"/>
-               <path value="$this"/>
-            </discriminator>
-            <rules value="open"/>
-         </slicing>
-      </element>
-      <element id="Medication.ingredient.item[x]:itemCodeableConcept">
-         <path value="Medication.ingredient.item[x]"/>
-         <sliceName value="itemCodeableConcept"/>
-         <short value="SubstanceCode"/>
-         <definition value="Active substance or excipient. Here, the same codes can be used as for the MedicationCode (for dilutions and compounds in particular), but now, the ATC, SSK and SNK codes can also be used to indicate a substance (to list ingredients of local products prepared by the pharmacy).&#xD;&#xA;&#xD;&#xA;* ZI number&#xD;&#xA;* Trade product code (HPK)&#xD;&#xA;* Prescription code (PRK)&#xD;&#xA;* Generic product code (GPK)&#xD;&#xA;* Anatomical Therapeutic Chemical Classification (ATC)&#xD;&#xA;* Substance Name Code (SNK)&#xD;&#xA;* Substance Name Code, in combination with Route of Administration (SSK)&#xD;&#xA;&#xD;&#xA;For further explanation about ATC see &lt;https://www.whocc.no/atc/structure_and_principles/&gt;."/>
-         <alias value="IngredientCode"/>
-         <type>
-            <code value="CodeableConcept"/>
-         </type>
-         <binding>
-            <strength value="required"/>
-            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.121.11.13--20200901000000"/>
-         </binding>
-         <mapping>
-            <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN"/>
-            <map value="NL-CM:9.7.19934"/>
-            <comment value="SubstanceCode [DEPRECATED]"/>
-         </mapping>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
-            <map value="mp-dataelement9x-267"/>
-            <comment value="SubstanceCode"/>
-         </mapping>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
-            <map value="mp-dataelement9x-267"/>
-            <comment value="SubstanceCode"/>
-         </mapping>
-      </element>
-      <element id="Medication.ingredient.strength">
-         <path value="Medication.ingredient.strength"/>
-         <short value="Concentration"/>
-         <definition value="The relative amount of this ingredient in this product.&#xD;&#xA;Calculation of Concentration = Ingredient Amount ÷ Product Amount.&#xD;&#xA;&#xD;&#xA;This could be a concentration if the medication is dissolved in liquid, for example."/>
-         <alias value="Sterkte"/>
-         <constraint>
-            <key value="rat-1"/>
-            <severity value="error"/>
-            <human value="Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present"/>
-            <source value="http://hl7.org/fhir/StructureDefinition/Medication"/>
-         </constraint>
-         <mapping>
-            <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN"/>
-            <map value="NL-CM:9.7.19933"/>
-            <comment value="Concentration"/>
-         </mapping>
-      </element>
-      <element id="Medication.ingredient.strength.numerator">
-         <path value="Medication.ingredient.strength.numerator"/>
-         <short value="IngredientAmount"/>
-         <definition value="The amount and unit of this ingredient. This is the numerator for the calculation of the concentration. The unit should be selected from the G-Standard (Table 902)."/>
-         <alias value="IngredientHoeveelheid"/>
-         <type>
-            <code value="Quantity"/>
-            <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-GstdSimpleQuantity"/>
-         </type>
-         <constraint>
-            <key value="qty-3"/>
-            <severity value="error"/>
-            <human value="If a code for the unit is present, the system SHALL also be present"/>
-            <source value="http://hl7.org/fhir/StructureDefinition/Ratio"/>
-         </constraint>
-         <mapping>
-            <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN"/>
-            <map value="NL-CM:9.7.22277"/>
-            <comment value="IngredientAmount"/>
-         </mapping>
-      </element>
-      <element id="Medication.ingredient.strength.denominator">
-         <path value="Medication.ingredient.strength.denominator"/>
-         <short value="ProductAmount"/>
-         <definition value="Amount of the product. This is the denominator for the calculation of the concentration. Optionally a translation to NHG table Gebruiksvoorschriften(Table 25) is also allowed."/>
-         <alias value="ProductHoeveelheid"/>
-         <type>
-            <code value="Quantity"/>
-            <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-GstdSimpleQuantity"/>
-         </type>
-         <constraint>
-            <key value="qty-3"/>
-            <severity value="error"/>
-            <human value="If a code for the unit is present, the system SHALL also be present"/>
-            <source value="http://hl7.org/fhir/StructureDefinition/Ratio"/>
-         </constraint>
-         <mapping>
-            <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN"/>
-            <map value="NL-CM:9.7.22278"/>
-            <comment value="ProductAmount"/>
-         </mapping>
-      </element>
-   </differential>
+  <id value="mp-PharmaceuticalProduct" />
+  <url value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct" />
+  <version value="2.0.0-beta.6" />
+  <name value="MpPharmaceuticalProduct" />
+  <title value="mp PharmaceuticalProduct" />
+  <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="url" />
+      <value value="https://www.nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="The prescribed substance is usually medication. However, medical aids and bandages can also be prescribed and supplied via the pharmacy. Food and blood products do not strictly belong in the medication category, but can be prescribed and supplied by a pharmacy as well.&#xD;&#xA;&#xD;&#xA;A type of medication can be indicated with **a single code**. That code can be chosen from several possible coding systems (concretely: GPK, PRK, HPK or article numbers). Correct use of these codes in the software systems will sufficiently record the composition of the product used, making a complete product specification unnecessary.&#xD;&#xA;&#xD;&#xA;In addition to a primary code, **alternative codes** from other coding systems can also be entered (so that the GPK can be sent along in the event that the patient was registered based on PRK, for example).&#xD;&#xA;&#xD;&#xA;Entering multiple ingredients will enable you to display a compound product. If one of the composite parts is liquid, the dosage will be given in milliliters; otherwise it will be given in ‘units’.&#xD;&#xA;&#xD;&#xA;In that case, the **composition of the medication** can be specified implicitly (with the use of a medication code) or explicitly, for example by listing the (active) ingredient(s) of the medication.&#xD;&#xA;&#xD;&#xA;**Magistral prescriptions** can be entered as well. This can be done by means of the option listed above to enter coded ingredients and/or by entering the composition and preparation method as free text.&#xD;&#xA;This is a partial information model." />
+  <purpose value="This Medication resource represents the PharmaceuticalProduct building block for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). This profile is based on the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) PharmaceuticalProduct, but has no dependency on the corresponding nl-core profile because it contains non-compatible changes. Where compatible, mappings to zib concepts are defined. Additional concepts or concepts that are not compatible with their zib counterparts contain a mapping to the MP9 data set." />
+  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN" />
+    <uri value="https://zibs.nl/wiki/PharmaceuticalProduct-v2.1.2(2020EN)" />
+    <name value="zib PharmaceuticalProduct-v2.1.2(2020EN)" />
+  </mapping>
+  <mapping>
+    <identity value="mp-dataset-mp9-300-beta3-20240229" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20240229T110214/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
+    <name value="ART-DECOR Dataset MP9 3.0.0-beta.3 20240229" />
+  </mapping>
+  <mapping>
+    <identity value="mp-dataset-mp9-300-beta4-20241118" />
+    <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20241118T151205/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
+    <name value="ART-DECOR Dataset MP9 3.0.0-beta.4 20241118" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Medication" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Medication" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Medication">
+      <path value="Medication" />
+      <short value="PharmaceuticalProduct" />
+      <alias value="FarmaceutischProduct" />
+      <mapping>
+        <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN" />
+        <map value="NL-CM:9.7.19926" />
+        <comment value="PharmaceuticalProduct" />
+      </mapping>
+    </element>
+    <element id="Medication.extension:description">
+      <path value="Medication.extension" />
+      <sliceName value="description" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalProduct.Description" />
+      </type>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource" />
+      </constraint>
+    </element>
+    <element id="Medication.code">
+      <path value="Medication.code" />
+      <short value="MedicationCode" />
+      <definition value="Coding medication in the Netherlands is done on the basis of the G-standaard (issued by Z-index), which is filled under the direction of Royal Dutch Pharmacists Association (KNMP).&#xD;&#xA;&#xD;&#xA;The coded medication can be expressed as:&#xD;&#xA;&#xD;&#xA;* ZI number&#xD;&#xA;* Trade product code (HPK)&#xD;&#xA;* Prescription code (PRK)&#xD;&#xA;* Generic product code (GPK)&#xD;&#xA;&#xD;&#xA;The ZI number represents the trade product and the package size.&#xD;&#xA;The HPK is the trade product as registered and marketed by the manufacturer.&#xD;&#xA;The PRK contains all GPK information supplemented with information needed to prescribe the right product. This level is intended to facilitate generic prescription of drugs.&#xD;&#xA;The GPK defines the pharmaceutical characteristics of a product: ingredients, strengths, units, pharmaceutical form and route of administration.&#xD;&#xA;&#xD;&#xA;Further information about the G-Standaard levels see &lt;https://www.z-index.nl&gt;.&#xD;&#xA;&#xD;&#xA;So-called 90.000.000 numbers are used in local IT systems. The 90.000.000 number is used in accordance with national agreements." />
+      <comment value="Depending on the context of use, the code that was actually selected by the user (prescriber, dispenser, etc.) will have the `.coding.userSelected` set to _true_.  As described in the coding datatype: &quot;A coding may be marked as a &quot;userSelected&quot; if a user selected the particular coded value in a user interface (e.g. the user selects an item in a pick-list). If a user selected coding exists, it is the preferred choice for performing translations etc. Other codes can only be literal translations to alternative code systems, or codes at a lower level of granularity (e.g. a generic code for a vendor-specific primary one).&#xD;&#xA;If there is no coding available, it is preferred to omit this `.coding` element. Receiving systems should anticipate on the possibility of receiving a NullFlavor from sending systems." />
+      <alias value="ProductCode" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.56--20230213120250" />
+      </binding>
+      <mapping>
+        <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN" />
+        <map value="NL-CM:9.7.19927" />
+        <comment value="MedicationCode [DEPRECATED]" />
+      </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-beta3-20240229" />
+        <map value="mp-dataelement9x-261" />
+        <comment value="MedicationCode" />
+      </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-beta4-20241118" />
+        <map value="mp-dataelement9x-261" />
+        <comment value="MedicationCode" />
+      </mapping>
+    </element>
+    <element id="Medication.code.text">
+      <path value="Medication.code.text" />
+      <short value="Medication" />
+      <definition value="For medication which has no code, enter the complete name of the pharmaceutical product here." />
+      <alias value="ProductNaam" />
+      <mapping>
+        <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN" />
+        <map value="NL-CM:9.7.19929" />
+        <comment value="Medication" />
+      </mapping>
+    </element>
+    <element id="Medication.manufacturer">
+      <path value="Medication.manufacturer" />
+      <constraint>
+        <key value="ref-1" />
+        <severity value="error" />
+        <human value="SHALL have a contained resource if a local reference is provided" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Medication" />
+      </constraint>
+    </element>
+    <element id="Medication.form">
+      <path value="Medication.form" />
+      <short value="PharmaceuticalForm" />
+      <definition value="The pharmaceutical form indicates the form of the medication. Examples include: tablet, suppository, infusion liquid, ointment. If the product has a GPK code in the G standard, the form will be known in the G standard. For products without a code (free text, preparation by the pharmacy), the means of administration can be entered." />
+      <alias value="FarmaceutischeVorm" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.8--20200901000000" />
+      </binding>
+      <mapping>
+        <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN" />
+        <map value="NL-CM:9.7.19931" />
+        <comment value="PharmaceuticalForm" />
+      </mapping>
+    </element>
+    <element id="Medication.amount">
+      <path value="Medication.amount" />
+      <constraint>
+        <key value="rat-1" />
+        <severity value="error" />
+        <human value="Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Medication" />
+      </constraint>
+    </element>
+    <element id="Medication.ingredient">
+      <path value="Medication.ingredient" />
+      <short value="Ingredient" />
+      <definition value="A product contains one or more active substances and excipients. These are usually determined by the product code. For medication prepared or compounded by the local pharmacy, each ingredient must be entered separately.&#xD;&#xA;&#xD;&#xA;The active substances play an important role, as they: a) determine the pharmacotherapeutic effect of the medication and b) serve as the basis for the indication of the strength of the medication (e.g. 200mg)." />
+      <alias value="Ingredient" />
+      <mapping>
+        <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN" />
+        <map value="NL-CM:9.7.19932" />
+        <comment value="Ingredient" />
+      </mapping>
+    </element>
+    <element id="Medication.ingredient.item[x]">
+      <path value="Medication.ingredient.item[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept">
+      <path value="Medication.ingredient.item[x]" />
+      <sliceName value="itemCodeableConcept" />
+      <short value="SubstanceCode" />
+      <definition value="Active substance or excipient. Here, the same codes can be used as for the MedicationCode (for dilutions and compounds in particular), but now, the ATC, SSK and SNK codes can also be used to indicate a substance (to list ingredients of local products prepared by the pharmacy).&#xD;&#xA;&#xD;&#xA;* ZI number&#xD;&#xA;* Trade product code (HPK)&#xD;&#xA;* Prescription code (PRK)&#xD;&#xA;* Generic product code (GPK)&#xD;&#xA;* Anatomical Therapeutic Chemical Classification (ATC)&#xD;&#xA;* Substance Name Code (SNK)&#xD;&#xA;* Substance Name Code, in combination with Route of Administration (SSK)&#xD;&#xA;&#xD;&#xA;For further explanation about ATC see &lt;https://www.whocc.no/atc/structure_and_principles/&gt;." />
+      <alias value="IngredientCode" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.121.11.13--20200901000000" />
+      </binding>
+      <mapping>
+        <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN" />
+        <map value="NL-CM:9.7.19934" />
+        <comment value="SubstanceCode [DEPRECATED]" />
+      </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-beta3-20240229" />
+        <map value="mp-dataelement9x-267" />
+        <comment value="SubstanceCode" />
+      </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-beta4-20241118" />
+        <map value="mp-dataelement9x-267" />
+        <comment value="SubstanceCode" />
+      </mapping>
+    </element>
+    <element id="Medication.ingredient.strength">
+      <path value="Medication.ingredient.strength" />
+      <short value="Concentration" />
+      <definition value="The relative amount of this ingredient in this product.&#xD;&#xA;Calculation of Concentration = Ingredient Amount ÷ Product Amount.&#xD;&#xA;&#xD;&#xA;This could be a concentration if the medication is dissolved in liquid, for example." />
+      <alias value="Sterkte" />
+      <constraint>
+        <key value="rat-1" />
+        <severity value="error" />
+        <human value="Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Medication" />
+      </constraint>
+      <mapping>
+        <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN" />
+        <map value="NL-CM:9.7.19933" />
+        <comment value="Concentration" />
+      </mapping>
+    </element>
+    <element id="Medication.ingredient.strength.numerator">
+      <path value="Medication.ingredient.strength.numerator" />
+      <short value="IngredientAmount" />
+      <definition value="The amount and unit of this ingredient. This is the numerator for the calculation of the concentration. The unit should be selected from the G-Standard (Table 902)." />
+      <alias value="IngredientHoeveelheid" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-GstdSimpleQuantity" />
+      </type>
+      <constraint>
+        <key value="qty-3" />
+        <severity value="error" />
+        <human value="If a code for the unit is present, the system SHALL also be present" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Ratio" />
+      </constraint>
+      <mapping>
+        <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN" />
+        <map value="NL-CM:9.7.22277" />
+        <comment value="IngredientAmount" />
+      </mapping>
+    </element>
+    <element id="Medication.ingredient.strength.denominator">
+      <path value="Medication.ingredient.strength.denominator" />
+      <short value="ProductAmount" />
+      <definition value="Amount of the product. This is the denominator for the calculation of the concentration. Optionally a translation to NHG table Gebruiksvoorschriften(Table 25) is also allowed." />
+      <alias value="ProductHoeveelheid" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-GstdSimpleQuantity" />
+      </type>
+      <constraint>
+        <key value="qty-3" />
+        <severity value="error" />
+        <human value="If a code for the unit is present, the system SHALL also be present" />
+        <source value="http://hl7.org/fhir/StructureDefinition/Ratio" />
+      </constraint>
+      <mapping>
+        <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN" />
+        <map value="NL-CM:9.7.22278" />
+        <comment value="ProductAmount" />
+      </mapping>
+    </element>
+  </differential>
 </StructureDefinition>
