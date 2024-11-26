@@ -2,7 +2,7 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
   <id value="Medication-Overview"/>
   <url value="http://nictiz.nl/fhir/OperationDefinition/Medication-Overview"/>
-  <version value="2.0.0-beta.5"/>
+  <version value="2.0.0-beta.6"/>
   <name value="MedicationOverview"/>
   <status value="active"/>
   <kind value="operation"/>

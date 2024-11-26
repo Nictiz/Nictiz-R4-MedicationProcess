@@ -1,0 +1,22 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <id value="2.16.528.1.1007.8.1"/>
+   <language value="en-US"/>
+   <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+      <valuePeriod>
+         <start value="2024-11-25T12:58:11Z"/>
+      </valuePeriod>
+   </extension>
+   <url value="urn:oid:2.16.528.1.1007.8.1"/>
+   <identifier>
+      <use value="official"/>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="urn:oid:2.16.528.1.1007.8.1"/>
+   </identifier>
+   <version value="2024-11-25T12:58:11"/>
+   <name value="IndicationcodeofaddondrugsaslistedintheAddOnDatabase"/>
+   <title value="Indication code of add-on drugs as listed in the AddOnDatabase"/>
+   <status value="unknown"/>
+   <publisher value="ART-DECOR"/>
+   <description value="Indication code of add-on drugs as listed in the AddOnDatabase"/>
+   <content value="not-present"/>
+</CodeSystem>

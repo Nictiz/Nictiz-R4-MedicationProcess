@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="mp-ProposalMedicationAgreement-Bundle"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/mp-ProposalMedicationAgreement-Bundle"/>
-   <version value="2.0.0-beta.5"/>
+   <version value="2.0.0-beta.6"/>
    <name value="MpProposalMedicationAgreementBundle"/>
    <title value="mp ProposalMedicationAgreement Bundle"/>
    <status value="active"/>
@@ -20,14 +20,14 @@
    <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
    <fhirVersion value="4.0.1"/>
    <mapping>
-      <identity value="mp-dataset-mp9-300-beta2-20231017"/>
-      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20231017T223005/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
-      <name value="ART-DECOR Dataset MP9 3.0.0-beta.2 20231017"/>
-   </mapping>
-   <mapping>
       <identity value="mp-dataset-mp9-300-beta3-20240229"/>
       <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20240229T110214/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
       <name value="ART-DECOR Dataset MP9 3.0.0-beta.3 20240229"/>
+   </mapping>
+   <mapping>
+      <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20241118T151205/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
+      <name value="ART-DECOR Dataset MP9 3.0.0-beta.4 20241118"/>
    </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
@@ -67,12 +67,12 @@
             <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-527"/>
             <comment value="Proposal"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-527"/>
             <comment value="Proposal"/>
          </mapping>
@@ -116,12 +116,12 @@
          <definition value="Comments regarding the proposal."/>
          <alias value="Toelichting"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-538"/>
             <comment value="Comment"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-538"/>
             <comment value="Comment"/>
          </mapping>
@@ -133,12 +133,12 @@
          <min value="1"/>
          <max value="1"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-528"/>
             <comment value="Identification"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-528"/>
             <comment value="Identification"/>
          </mapping>
@@ -156,12 +156,12 @@
          <alias value="VoorstelDatum"/>
          <min value="1"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-529"/>
             <comment value="ProposalDate"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-529"/>
             <comment value="ProposalDate"/>
          </mapping>
@@ -186,19 +186,14 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
-            <map value="mp-dataelement9x-530"/>
-            <comment value="Author"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-530"/>
             <comment value="Author"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
-            <map value="mp-dataelement9x-531"/>
-            <comment value="AuthorIsPatient (implicit; AuthorIsPatient = true when this element refers to the same Patient as subject)"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <map value="mp-dataelement9x-530"/>
+            <comment value="Author"/>
          </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-beta3-20240229"/>
@@ -206,9 +201,9 @@
             <comment value="AuthorIsPatient (implicit; AuthorIsPatient = true when this element refers to the same Patient as subject)"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
-            <map value="mp-dataelement9x-532"/>
-            <comment value="AuthorIsHealthProfessional"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <map value="mp-dataelement9x-531"/>
+            <comment value="AuthorIsPatient (implicit; AuthorIsPatient = true when this element refers to the same Patient as subject)"/>
          </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-beta3-20240229"/>
@@ -216,12 +211,17 @@
             <comment value="AuthorIsHealthProfessional"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <map value="mp-dataelement9x-532"/>
+            <comment value="AuthorIsHealthProfessional"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-1366"/>
             <comment value="AuthorIsHealthcareProvider"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-1366"/>
             <comment value="AuthorIsHealthcareProvider"/>
          </mapping>
@@ -239,12 +239,12 @@
             <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-1"/>
             <comment value="Patient"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-1"/>
             <comment value="Patient"/>
          </mapping>
@@ -261,12 +261,12 @@
             <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-260"/>
             <comment value="PharmaceuticalProduct"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-260"/>
             <comment value="PharmaceuticalProduct"/>
          </mapping>
@@ -332,12 +332,12 @@
             <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyHeight"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-448"/>
             <comment value="BodyHeight"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-448"/>
             <comment value="BodyHeight"/>
          </mapping>
@@ -355,12 +355,12 @@
             <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-BodyWeight"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-453"/>
             <comment value="BodyWeight"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-453"/>
             <comment value="BodyWeight"/>
          </mapping>

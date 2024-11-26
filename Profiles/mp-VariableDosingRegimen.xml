@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="mp-VariableDosingRegimen"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen"/>
-   <version value="2.0.0-beta.5"/>
+   <version value="2.0.0-beta.6"/>
    <name value="MpVariableDosingRegimen"/>
    <title value="mp VariableDosingRegimen"/>
    <status value="active"/>
@@ -25,14 +25,14 @@
       <name value="zib InstructionsForUse-v1.2.1(2020EN)"/>
    </mapping>
    <mapping>
-      <identity value="mp-dataset-mp9-300-beta2-20231017"/>
-      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20231017T223005/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
-      <name value="ART-DECOR Dataset MP9 3.0.0-beta.2 20231017"/>
-   </mapping>
-   <mapping>
       <identity value="mp-dataset-mp9-300-beta3-20240229"/>
       <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20240229T110214/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
       <name value="ART-DECOR Dataset MP9 3.0.0-beta.3 20240229"/>
+   </mapping>
+   <mapping>
+      <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20241118T151205/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
+      <name value="ART-DECOR Dataset MP9 3.0.0-beta.4 20241118"/>
    </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
@@ -45,22 +45,22 @@
          <short value="VariableDosingRegimen"/>
          <alias value="WisselendDoseerschema"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
-            <map value="mp-dataelement9x-632"/>
-            <comment value="VariableDosingRegimen"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-632"/>
             <comment value="VariableDosingRegimen"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <map value="mp-dataelement9x-632"/>
+            <comment value="VariableDosingRegimen"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-646"/>
             <comment value="InstructionsForUse"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-646"/>
             <comment value="InstructionsForUse"/>
          </mapping>
@@ -76,12 +76,12 @@
       <element id="MedicationRequest.extension:pharmaceuticalTreatmentIdentifier.value[x]">
          <path value="MedicationRequest.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-42"/>
             <comment value="Identification"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-42"/>
             <comment value="Identification"/>
          </mapping>
@@ -99,12 +99,12 @@
          <short value="RelationEpisodeOfCare"/>
          <alias value="RelatieZorgepisode"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-1343"/>
             <comment value="RelationEpisodeOfCare"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-1343"/>
             <comment value="RelationEpisodeOfCare"/>
          </mapping>
@@ -120,15 +120,15 @@
       <element id="MedicationRequest.extension:renderedDosageInstruction.value[x]">
          <path value="MedicationRequest.extension.value[x]"/>
          <short value="Description"/>
-         <definition value="Textual description of the complete instructions for use including the period of use."/>
+         <definition value="Textual description of the complete instructions for use."/>
          <alias value="Omschrijving"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-647"/>
             <comment value="Description"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-647"/>
             <comment value="Description"/>
          </mapping>
@@ -152,12 +152,12 @@
             <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-TimeInterval"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-635"/>
             <comment value="PeriodOfUse"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-635"/>
             <comment value="PeriodOfUse"/>
          </mapping>
@@ -175,6 +175,11 @@
          <definition value="Date and time the variable-dosing regimen was recorded. Registration date + time are required (order of the registrations must be clear in cases with multiple registrations on one day)."/>
          <mapping>
             <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <map value="mp-dataelement9x-1483"/>
+            <comment value="RegistrationDateTime"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-1483"/>
             <comment value="RegistrationDateTime"/>
          </mapping>
@@ -197,12 +202,12 @@
             <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.48--20230112155455"/>
          </binding>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-1171"/>
             <comment value="VariableDosingRegimenStopType"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-1171"/>
             <comment value="VariableDosingRegimenStopType"/>
          </mapping>
@@ -229,12 +234,12 @@
          <definition value="Identification of the variable-dosing regimen. This is generated by the system of the prescriber and is globally unique and eternally persistent."/>
          <alias value="Identificatie"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-633"/>
             <comment value="Identification"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-633"/>
             <comment value="Identification"/>
          </mapping>
@@ -243,22 +248,22 @@
          <path value="MedicationRequest.status"/>
          <comment value="This element is implictly mapped to the concepts mp-dataelement9x-635 (PeriodOfUse) and mp-dataelement9x-1171 (VariableDosingRegimenStopType).&#xD;&#xA;Unless the status is explicitly recorded, the following guidance applies:&#xD;&#xA;&#xD;&#xA;* When the value of PeriodOfUse.startDateTime is in the past and PeriodOfUse.endDateTime exists and its value is in the future, `.status` will usually be set to _active_.&#xD;&#xA;* When the value of PeriodOfUse.startDateTime is in the future, `.status` will usually be set to _active_.&#xD;&#xA;* When PeriodOfUse.endDateTime exists and its value is in the past and VariableDosingRegimenStopType has no value, `.status` will usually be set to _completed_.&#xD;&#xA;* When PeriodOfUse.endDateTime exists and its value is in the past and the value of VariableDosingRegimenStopType is _410546004_, `.status` will usually be set to _stopped_.&#xD;&#xA;* When PeriodOfUse.Duration and PeriodOfUse.startDateTime are known, PeriodOfUse.endDateTime can be deduced and the previous rules apply. &#xD;&#xA;* When a system is unable to infer the status, `.status` will be set to _unknown_. The _unknown_ code is not to be used to convey other statuses. The _unknown_ code should be used when one of the statuses applies, but the authoring system doesn't know the current state of the VariableDosingRegimen."/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
-            <map value="mp-dataelement9x-635"/>
-            <comment value="PeriodOfUse (implicit, main mapping is on the extensions ext-TimeInterval.Period and ext-TimeInterval.Duration)"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-635"/>
             <comment value="PeriodOfUse (implicit, main mapping is on the extensions ext-TimeInterval.Period and ext-TimeInterval.Duration)"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <map value="mp-dataelement9x-635"/>
+            <comment value="PeriodOfUse (implicit, main mapping is on the extensions ext-TimeInterval.Period and ext-TimeInterval.Duration)"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-1171"/>
             <comment value="VariableDosingRegimenStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-1171"/>
             <comment value="VariableDosingRegimenStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
          </mapping>
@@ -312,12 +317,12 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-1362"/>
             <comment value="AgreedMedicine"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-1362"/>
             <comment value="AgreedMedicine"/>
          </mapping>
@@ -341,12 +346,12 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-1341"/>
-            <comment value="RelationContact"/>
+            <comment value="RelationEncounter"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-1341"/>
             <comment value="RelationEncounter"/>
          </mapping>
@@ -357,12 +362,12 @@
          <definition value="Date and time the variable-dosing regimen was created. Appointment date + time are required (order of the appointments must be clear in cases with multiple appointments on one day)."/>
          <alias value="WisselendDoseerschemaDatumTijd"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-634"/>
             <comment value="VariableDosingRegimenDateTime"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-634"/>
             <comment value="VariableDosingRegimenDateTime"/>
          </mapping>
@@ -384,12 +389,12 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-642"/>
             <comment value="Author"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-642"/>
             <comment value="Author"/>
          </mapping>
@@ -405,12 +410,12 @@
             <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.54--20221114181621"/>
          </binding>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-639"/>
             <comment value="ReasonModificationOrDiscontinuation"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-639"/>
             <comment value="ReasonModificationOrDiscontinuation"/>
          </mapping>
@@ -437,12 +442,12 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-640"/>
             <comment value="RelationMedicationAgreement"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-640"/>
             <comment value="RelationMedicationAgreement"/>
          </mapping>
@@ -457,12 +462,12 @@
          <definition value="Comments on the variable-dosing regimen."/>
          <alias value="Toelichting"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-694"/>
             <comment value="Comment"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-694"/>
             <comment value="Comment"/>
          </mapping>
@@ -488,12 +493,12 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-1319"/>
             <comment value="RelationVariableDosingRegimen"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-1319"/>
             <comment value="RelationVariableDosingRegimen"/>
          </mapping>

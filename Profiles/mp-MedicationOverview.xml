@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="mp-MedicationOverview"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationOverview"/>
-   <version value="2.0.0-beta.5"/>
+   <version value="2.0.0-beta.6"/>
    <name value="MpMedicationOverview"/>
    <title value="mp MedicationOverview"/>
    <status value="active"/>
@@ -20,14 +20,14 @@
    <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
    <fhirVersion value="4.0.1"/>
    <mapping>
-      <identity value="mp-dataset-mp9-300-beta2-20231017"/>
-      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20231017T223005/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
-      <name value="ART-DECOR Dataset MP9 3.0.0-beta.2 20231017"/>
-   </mapping>
-   <mapping>
       <identity value="mp-dataset-mp9-300-beta3-20240229"/>
       <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20240229T110214/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
       <name value="ART-DECOR Dataset MP9 3.0.0-beta.3 20240229"/>
+   </mapping>
+   <mapping>
+      <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20241118T151205/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
+      <name value="ART-DECOR Dataset MP9 3.0.0-beta.4 20241118"/>
    </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
@@ -41,12 +41,12 @@
          <definition value="Document data."/>
          <alias value="Documentgegevens"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-500"/>
             <comment value="DocumentData"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-500"/>
             <comment value="DocumentData"/>
          </mapping>
@@ -63,22 +63,22 @@
             <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationOverview.Verification"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
-            <map value="mp-dataelement9x-506"/>
-            <comment value="VerificationPatient"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-506"/>
             <comment value="VerificationPatient"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <map value="mp-dataelement9x-506"/>
+            <comment value="VerificationPatient"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-509"/>
             <comment value="VerificationHealthProfessional"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-509"/>
             <comment value="VerificationHealthProfessional"/>
          </mapping>
@@ -90,12 +90,12 @@
       <element id="List.extension:verification.extension:verificationPatient.value[x]">
          <path value="List.extension.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-507"/>
             <comment value="VerifiedWithPatient?"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-507"/>
             <comment value="VerifiedWithPatient?"/>
          </mapping>
@@ -107,12 +107,12 @@
       <element id="List.extension:verification.extension:verificationPatientDate.value[x]">
          <path value="List.extension.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-508"/>
             <comment value="VerificationDate"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-508"/>
             <comment value="VerificationDate"/>
          </mapping>
@@ -124,12 +124,12 @@
       <element id="List.extension:verification.extension:verificationHealthProfessional.value[x]">
          <path value="List.extension.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-510"/>
             <comment value="VerifiedWithHealthProfessional?"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-510"/>
             <comment value="VerifiedWithHealthProfessional?"/>
          </mapping>
@@ -141,12 +141,12 @@
       <element id="List.extension:verification.extension:verificationHealthProfessionalDate.value[x]">
          <path value="List.extension.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-511"/>
             <comment value="VerificationDate"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-511"/>
             <comment value="VerificationDate"/>
          </mapping>
@@ -171,12 +171,12 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-1"/>
             <comment value="Patient"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-1"/>
             <comment value="Patient"/>
          </mapping>
@@ -188,12 +188,12 @@
          <alias value="DocumentDatum"/>
          <min value="1"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-501"/>
             <comment value="DocumentDate"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-501"/>
             <comment value="DocumentDate"/>
          </mapping>
@@ -212,22 +212,22 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
-            <map value="mp-dataelement9x-502"/>
-            <comment value="Author"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-502"/>
             <comment value="Author"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <map value="mp-dataelement9x-502"/>
+            <comment value="Author"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-503"/>
             <comment value="AuthorIsPatient (implicit; AuthorIsPatient = true when this element refers to the same Patient as subject)"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-503"/>
             <comment value="AuthorIsPatient (implicit; AuthorIsPatient = true when this element refers to the same Patient as subject)"/>
          </mapping>
@@ -243,12 +243,12 @@
       <element id="List.source.extension:organization.value[x]">
          <path value="List.source.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-504"/>
             <comment value="AuthorIsHealthcareProvider"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-504"/>
             <comment value="AuthorIsHealthcareProvider"/>
          </mapping>
@@ -277,12 +277,12 @@
             <aggregation value="bundled"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-43"/>
             <comment value="MedicationAgreement"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-43"/>
             <comment value="MedicationAgreement"/>
          </mapping>
@@ -301,12 +301,12 @@
             <aggregation value="bundled"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-294"/>
             <comment value="AdministrationAgreement"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-294"/>
             <comment value="AdministrationAgreement"/>
          </mapping>
@@ -325,12 +325,12 @@
             <aggregation value="bundled"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-362"/>
             <comment value="MedicationUse"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-362"/>
             <comment value="MedicationUse"/>
          </mapping>
@@ -361,12 +361,12 @@
             <aggregation value="bundled"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-448"/>
             <comment value="BodyHeight"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-448"/>
             <comment value="BodyHeight"/>
          </mapping>
@@ -386,12 +386,12 @@
             <aggregation value="bundled"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta2-20231017"/>
+            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
             <map value="mp-dataelement9x-453"/>
             <comment value="BodyWeight"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta3-20240229"/>
+            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
             <map value="mp-dataelement9x-453"/>
             <comment value="BodyWeight"/>
          </mapping>

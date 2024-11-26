@@ -1,0 +1,22 @@
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="dispense-location"/>
+  <url value="http://nictiz.nl/fhir/SearchParameter/dispense-location"/>
+  <version value="2.0.0-beta.6"/>
+  <name value="DispenseLocation"/>
+  <status value="active"/>
+  <publisher value="Nictiz"/>
+  <contact>
+    <name value="Nictiz"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.nictiz.nl"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Search based on the dispense location extension (&lt;http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.DispenseLocation&gt;) referenced in the MedicationRequest resource."/>
+  <purpose value="To select instances of the MedicationRequest resource based on the dispense location."/>
+  <code value="dispense-location"/>
+  <base value="MedicationRequest"/>
+  <type value="reference"/>
+  <expression value="MedicationRequest.dispenseRequest.extension('http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.DispenseLocation')"/>
+</SearchParameter>
