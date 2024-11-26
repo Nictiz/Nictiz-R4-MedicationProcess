@@ -81,13 +81,13 @@
         <name value="dispense-location"/>
         <definition value="http://nictiz.nl/fhir/SearchParameter/dispense-location"/>
         <type value="reference"/>
-        <documentation value='This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-DispenseRequest profiles.  In these cases the _include of the dispense-location needs to be supported as well.'/>
+        <documentation value='This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-DispenseRequest profile. In this case the _include of the dispense-location needs to be supported as well.'/>
       </searchParam>
       <searchParam>
         <name value="reason"/>
         <definition value="http://nictiz.nl/fhir/SearchParameter/reason"/>
         <type value="reference"/>
-        <documentation value='This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-MedicationAgreement and Mp-VariableDosingRegimen profiles.'/>
+        <documentation value='This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-MedicationAgreement and mp-VariableDosingRegimen profiles.'/>
       </searchParam>
     </resource>
     <resource>
@@ -353,7 +353,7 @@
         <name value="dispense-location"/>
         <definition value="http://nictiz.nl/fhir/SearchParameter/dispense-location"/>
         <type value="reference"/>
-        <documentation value="This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-DispenseRequest profiles. In these cases the _include of the dispense-location needs to be supported as well."
+        <documentation value="This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-DispenseRequest profile. In this case the _include of the dispense-location needs to be supported as well."
       </searchParam>
       <searchParam>
         <name value="reason"/>
