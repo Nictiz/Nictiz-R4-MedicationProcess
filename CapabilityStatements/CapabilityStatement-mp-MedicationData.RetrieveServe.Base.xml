@@ -42,6 +42,9 @@
       <searchInclude value="MedicationRequest:intended-performer"/>
       <searchInclude value="MedicationRequest:dispense-location"/>
       <searchInclude value="MedicationRequest:reason"/>
+      <searchInclude value="PractitionerRole:organization"/>
+      <searchInclude value="PractitionerRole:practitioner"/>
+      <searchInclude value="PractitionerRole:location"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -102,6 +105,9 @@
       <searchInclude value="MedicationDispense:location"/>
       <searchInclude value="MedicationDispense:performer"/>
       <searchInclude value="MedicationDispense:destination"/>
+      <searchInclude value="PractitionerRole:organization"/>
+      <searchInclude value="PractitionerRole:practitioner"/>
+      <searchInclude value="PractitionerRole:location"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -153,6 +159,9 @@
       <searchInclude value="MedicationStatement:medication"/>
       <searchInclude value="MedicationStatement:author"/>
       <searchInclude value="MedicationStatement:source"/>
+      <searchInclude value="PractitionerRole:organization"/>
+      <searchInclude value="PractitionerRole:practitioner"/>
+      <searchInclude value="PractitionerRole:location"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -194,6 +203,9 @@
       <searchInclude value="MedicationAdministration:patient"/>
       <searchInclude value="MedicationAdministration:medication"/>
       <searchInclude value="MedicationAdministration:performer"/>
+      <searchInclude value="PractitionerRole:organization"/>
+      <searchInclude value="PractitionerRole:practitioner"/>
+      <searchInclude value="PractitionerRole:location"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -314,6 +326,9 @@
       <searchInclude value="MedicationRequest:intended-performer"/>
       <searchInclude value="MedicationRequest:dispense-location"/>
       <searchInclude value="MedicationRequest:reason"/>
+      <searchInclude value="PractitionerRole:organization"/>
+      <searchInclude value="PractitionerRole:practitioner"/>
+      <searchInclude value="PractitionerRole:location"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -374,6 +389,9 @@
       <searchInclude value="MedicationDispense:location"/>
       <searchInclude value="MedicationDispense:destination"/>
       <searchInclude value="MedicationDispense:performer"/>
+      <searchInclude value="PractitionerRole:organization"/>
+      <searchInclude value="PractitionerRole:practitioner"/>
+      <searchInclude value="PractitionerRole:location"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -425,6 +443,9 @@
       <searchInclude value="MedicationStatement:medication"/>
       <searchInclude value="MedicationStatement:author"/>
       <searchInclude value="MedicationStatement:source"/>
+      <searchInclude value="PractitionerRole:organization"/>
+      <searchInclude value="PractitionerRole:practitioner"/>
+      <searchInclude value="PractitionerRole:location"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
@@ -466,6 +487,9 @@
       <searchInclude value="MedicationAdministration:patient"/>
       <searchInclude value="MedicationAdministration:medication"/>
       <searchInclude value="MedicationAdministration:performer"/>
+      <searchInclude value="PractitionerRole:organization"/>
+      <searchInclude value="PractitionerRole:practitioner"/>
+      <searchInclude value="PractitionerRole:location"/>
       <searchParam>
         <name value="identifier"/>
         <type value="token"/>
