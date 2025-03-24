@@ -1,6 +1,6 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="location"/>
-  <url value="http://nictiz.nl/fhir/SearchParameter/location"/>
+  <url value="http://nictiz.nl/fhir/SearchParameter/MedicationDispense-location"/>
   <version value="2.0.0-beta.6"/>
   <name value="Location"/>
   <status value="active"/>

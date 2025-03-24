@@ -1,6 +1,6 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="next-practitioner"/>
-  <url value="http://nictiz.nl/fhir/SearchParameter/next-practitioner"/>
+  <url value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-next-practitioner"/>
   <version value="2.0.0-beta.6"/>
   <name value="NextPractitioner"/>
   <status value="active"/>
