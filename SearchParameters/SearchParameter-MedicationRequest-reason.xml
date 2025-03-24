@@ -1,5 +1,5 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
-  <id value="reason"/>
+  <id value="MedicationRequest-reason"/>
   <url value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-reason"/>
   <version value="2.0.0-beta.6"/>
   <name value="Reason"/>

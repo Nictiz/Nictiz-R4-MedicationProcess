@@ -1,5 +1,5 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
-  <id value="author"/>
+  <id value="MedicationStatement-author"/>
   <url value="http://nictiz.nl/fhir/SearchParameter/MedicationStatement-author"/>
   <version value="2.0.0-beta.6"/>
   <name value="Author"/>
