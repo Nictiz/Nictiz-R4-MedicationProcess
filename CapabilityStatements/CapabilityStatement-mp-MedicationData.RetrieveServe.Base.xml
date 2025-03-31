@@ -74,18 +74,18 @@
       </searchParam>
       <searchParam>
         <name value="next-practitioner"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/next-practitioner"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-next-practitioner"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
         <name value="dispense-location"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/dispense-location"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-dispense-location"/>
         <type value="reference"/>
         <documentation value='This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-DispenseRequest profile. In this case the _include of the dispense-location needs to be supported as well.'/>
       </searchParam>
       <searchParam>
         <name value="reason"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/reason"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-reason"/>
         <type value="reference"/>
         <documentation value='This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-MedicationAgreement and mp-VariableDosingRegimen profiles. In these cases the _include of the reason needs to be supported as well.'/>
       </searchParam>
@@ -131,7 +131,7 @@
       </searchParam>
       <searchParam>
         <name value="location"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/location"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationDispense-location"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -181,7 +181,7 @@
       </searchParam>
       <searchParam>
         <name value="author"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/author"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationStatement-author"/>
         <type value="reference"/>
       </searchParam>
     </resource>
@@ -346,18 +346,18 @@
       </searchParam>
       <searchParam>
         <name value="next-practitioner"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/next-practitioner"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-next-practitioner"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
         <name value="dispense-location"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/dispense-location"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-dispense-location"/>
         <type value="reference"/>
         <documentation value="This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-DispenseRequest profile. In this case the _include of the dispense-location needs to be supported as well."/>
       </searchParam>
       <searchParam>
         <name value="reason"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/reason"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-reason"/>
         <type value="reference"/>
         <documentation value="This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-MedicationAgreement and mp-VariableDosingRegimen profiles. In these cases the _include of the reason needs to be supported as well."/>
       </searchParam>
@@ -403,7 +403,7 @@
       </searchParam>
       <searchParam>
         <name value="location"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/location"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationDispense-location"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -453,7 +453,7 @@
       </searchParam>
       <searchParam>
         <name value="author"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/author"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationStatement-author"/>
         <type value="reference"/>
       </searchParam>
     </resource>
