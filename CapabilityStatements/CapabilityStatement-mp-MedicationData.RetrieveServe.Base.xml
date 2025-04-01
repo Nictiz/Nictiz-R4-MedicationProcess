@@ -152,6 +152,7 @@
       <searchInclude value="MedicationStatement:patient"/>
       <searchInclude value="MedicationStatement:medication"/>
       <searchInclude value="MedicationStatement:author"/>
+      <searchInclude value="MedicationStatement:prescriber"/>
       <searchInclude value="MedicationStatement:source"/>
       <searchParam>
         <name value="identifier"/>
@@ -182,6 +183,11 @@
       <searchParam>
         <name value="author"/>
         <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationStatement-author"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="prescriber"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationStatement-prescriber"/>
         <type value="reference"/>
       </searchParam>
     </resource>
@@ -424,6 +430,7 @@
       <searchInclude value="MedicationStatement:patient"/>
       <searchInclude value="MedicationStatement:medication"/>
       <searchInclude value="MedicationStatement:author"/>
+      <searchInclude value="MedicationStatement:prescriber"/>
       <searchInclude value="MedicationStatement:source"/>
       <searchParam>
         <name value="identifier"/>
@@ -454,6 +461,11 @@
       <searchParam>
         <name value="author"/>
         <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationStatement-author"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="prescriber"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationStatement-prescriber"/>
         <type value="reference"/>
       </searchParam>
     </resource>
