@@ -1,58 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="ext-RegistrationDateTime"/>
-   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-RegistrationDateTime"/>
-   <version value="2.0.0-beta.6"/>
-   <name value="ExtRegistrationDateTime"/>
-   <title value="ext RegistrationDateTime"/>
-   <status value="active"/>
-   <publisher value="Nictiz"/>
-   <contact>
-      <name value="Nictiz"/>
-      <telecom>
-         <system value="url"/>
-         <value value="https://www.nictiz.nl"/>
-         <use value="work"/>
-      </telecom>
-   </contact>
-   <description value="An extension to provide the date and time a certain medication agreement, variable-dosing regimen, administration agreement or medication administration was recorded.&#xD;&#xA;&#xD;&#xA;For the medication administration this extension can be seen as a pre-adopt of the `MedicationAdministration.recorded` element that has been added in FHIR R5."/>
-   <purpose value="This extension represents the RegistrationDateTime concept for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)."/>
-   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
-   <fhirVersion value="4.0.1"/>
-   <kind value="complex-type"/>
-   <abstract value="false"/>
-   <context>
-      <type value="element"/>
-      <expression value="MedicationAdministration"/>
-   </context>
-   <context>
-      <type value="element"/>
-      <expression value="MedicationDispense"/>
-   </context>
-   <context>
-      <type value="element"/>
-      <expression value="MedicationRequest"/>
-   </context>
-   <type value="Extension"/>
-   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
-   <derivation value="constraint"/>
-   <differential>
-      <element id="Extension">
-         <path value="Extension"/>
-         <max value="1"/>
-      </element>
-      <element id="Extension.url">
-         <path value="Extension.url"/>
-         <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-RegistrationDateTime"/>
-      </element>
-      <element id="Extension.value[x]">
-         <path value="Extension.value[x]"/>
-         <short value="RegistrationDateTime"/>
-         <definition value="Date and time a certain agreement, variable dosing regimen or administration was recorded. Registration date + time are required (order of the registrations must be clear in cases with multiple registrations on one day)."/>
-         <alias value="RegistratieDatumTijd"/>
-         <type>
-            <code value="dateTime"/>
-         </type>
-      </element>
-   </differential>
+  <id value="ext-RegistrationDateTime" />
+  <url value="http://nictiz.nl/fhir/StructureDefinition/ext-RegistrationDateTime" />
+  <version value="2.0.0-beta.6" />
+  <name value="ExtRegistrationDateTime" />
+  <title value="ext RegistrationDateTime" />
+  <status value="active" />
+  <publisher value="Nictiz" />
+  <contact>
+    <name value="Nictiz" />
+    <telecom>
+      <system value="url" />
+      <value value="https://www.nictiz.nl" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="An extension to provide the date and time a certain medication agreement, variable-dosing regimen, administration agreement or medication administration was recorded.&#xD;&#xA;&#xD;&#xA;For the medication administration this extension can be seen as a pre-adopt of the `MedicationAdministration.recorded` element that has been added in FHIR R5." />
+  <purpose value="This extension represents the RegistrationDateTime concept for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)." />
+  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MedicationAdministration" />
+  </context>
+  <context>
+    <type value="element" />
+    <expression value="MedicationDispense" />
+  </context>
+  <context>
+    <type value="element" />
+    <expression value="MedicationRequest" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <max value="0" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-RegistrationDateTime" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="RegistrationDateTime" />
+      <definition value="The date and time when the &lt;&lt;naam bouwsteen&gt;&gt; was recorded. RegistrationDateTime is used to accurately determine the chronological order of agreements. Therefore, the date and time are mandatory. These values are immutable. When consulting or receiving this &lt;&lt;naam bouwsteen&gt;&gt;, the original RegistrationDateTime remains unchanged. &#xD;&#xA;&#xD;&#xA;Note: This data element differs from the data element RegistrationDateTime in zib RegistratieGegevens-v1.1.1 (2024NL). In zib RegistratieGegevens-v1.1.1 (2024NL), RegistrationDateTime refers to the date and time when the data was recorded. This may be the initial registration or the date and time when data was transferred. The zib concept RegistrationDateTime is not applied in MP9." />
+      <alias value="RegistratieDatumTijd" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+  </differential>
 </StructureDefinition>
