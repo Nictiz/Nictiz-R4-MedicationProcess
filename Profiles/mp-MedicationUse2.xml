@@ -316,6 +316,11 @@
       <mapping>
         <identity value="mp-dataset-mp9-300-beta4-20241118" />
         <map value="mp-dataelement9x-409" />
+        <comment value="ReasonModificationOrDiscontinuationOfUse [DEPRECATED]" />
+      </mapping>
+      <mapping>
+        <identity value="mp-dataset-mp9-300-rc1-TODO" />
+        <map value="mp-dataelement9x-409" />
         <comment value="ReasonModificationOrDiscontinuationOfUse" />
       </mapping>
     </element>
