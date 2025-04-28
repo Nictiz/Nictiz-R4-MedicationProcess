@@ -163,7 +163,7 @@
       <sliceName value="condition" />
       <type>
         <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAgreement.PeriodOfUse.Condition" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-PeriodOfUse.Condition" />
       </type>
       <isModifier value="false" />
     </element>
