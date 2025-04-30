@@ -158,6 +158,22 @@
         <comment value="PeriodOfUse" />
       </mapping>
     </element>
+    <element id="MedicationDispense.extension:periodOfUse.value[x].extension:condition">
+      <path value="MedicationDispense.extension.value[x].extension" />
+      <sliceName value="condition" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-PeriodOfUse.Condition" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="MedicationDispense.extension:periodOfUse.value[x].extension:condition.value[x]">
+      <path value="MedicationDispense.extension.value[x].extension.value[x]" />
+      <mapping>
+        <identity value="mp-dataset-mp9-300-beta5-TODO" />
+        <map value="mp-dataelement9x-1484" />
+      </mapping>
+    </element>
     <element id="MedicationDispense.extension:copyIndicator">
       <path value="MedicationDispense.extension" />
       <sliceName value="copyIndicator" />
