@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ext-PeriodOfUse.Condition" />
-  <url value="http://nictiz.nl/fhir/StructureDefinition/ext-PeriodOfUse.Condition" />
-  <name value="ExtPeriodOfUseCondition" />
-  <title value="ext-PeriodOfUse.Condition" />
-  <status value="active" />
-  <publisher value="Nictiz" />
-  <contact>
-    <name value="Nictiz" />
-    <telecom>
-      <system value="url" />
-      <value value="https://www.nictiz.nl" />
-      <use value="work" />
-    </telecom>
-  </contact>
-  <description value="An extension to provide a Condition to a PeriodOfUse." />
-  <purpose value="This extension represents the PeriodOfUse.Condition concept for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)." />
-  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
-  <fhirVersion value="4.0.1" />
-  <kind value="complex-type" />
-  <abstract value="false" />
-  <context>
-    <type value="element" />
-    <expression value="Period" />
-  </context>
-  <type value="Extension" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <max value="1" />
-    </element>
-    <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-PeriodOfUse.Condition" />
-    </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]" />
-      <short value="Condition" />
-      <definition value="Element to indicate that the start or end date is uncertain.&#xD;&#xA;&#xD;&#xA;In certain situations the start or end date can depend on another piece of information. This is, for example, the case when a patient has to start or stop medication a few days before hospital admission. In that case this element is used to indicate (in free text): ‘start X days before hospital admission’ or ‘stop X days before hospital admission’. By doing this, it is clear that the entered start or end date is uncertain when the MedicationAgreement is being exchanged." />
-      <type>
-        <code value="string" />
-      </type>
-    </element>
-  </differential>
+   <id value="ext-PeriodOfUse.Condition"/>
+   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-PeriodOfUse.Condition"/>
+   <name value="ExtPeriodOfUseCondition"/>
+   <title value="ext-PeriodOfUse.Condition"/>
+   <status value="active"/>
+   <publisher value="Nictiz"/>
+   <contact>
+      <name value="Nictiz"/>
+      <telecom>
+         <system value="url"/>
+         <value value="https://www.nictiz.nl"/>
+         <use value="work"/>
+      </telecom>
+   </contact>
+   <description value="An extension to provide a Condition to a PeriodOfUse."/>
+   <purpose value="This extension represents the PeriodOfUse.Condition concept for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)."/>
+   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
+   <fhirVersion value="4.0.1"/>
+   <kind value="complex-type"/>
+   <abstract value="false"/>
+   <context>
+      <type value="element"/>
+      <expression value="Period"/>
+   </context>
+   <type value="Extension"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="Extension">
+         <path value="Extension"/>
+         <max value="1"/>
+      </element>
+      <element id="Extension.url">
+         <path value="Extension.url"/>
+         <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-PeriodOfUse.Condition"/>
+      </element>
+      <element id="Extension.value[x]">
+         <path value="Extension.value[x]"/>
+         <short value="Condition"/>
+         <definition value="Element to indicate that the start or end date is uncertain.&#xD;&#xA;&#xD;&#xA;In certain situations the start or end date can depend on another piece of information. This is, for example, the case when a patient has to start or stop medication a few days before hospital admission. In that case this element is used to indicate (in free text): ‘start X days before hospital admission’ or ‘stop X days before hospital admission’. By doing this, it is clear that the entered start or end date is uncertain when the MedicationAgreement is being exchanged."/>
+         <type>
+            <code value="string"/>
+         </type>
+      </element>
+   </differential>
 </StructureDefinition>

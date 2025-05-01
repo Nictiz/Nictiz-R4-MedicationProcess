@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ext-DispenseRequest.FinancialIndicationCode" />
-  <url value="http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.FinancialIndicationCode" />
-  <version value="2.0.0-beta.6" />
-  <name value="ExtDispenseRequestFinancialIndicationCode" />
-  <title value="ext DispenseRequest.FinancialIndicationCode" />
-  <status value="active" />
-  <publisher value="Nictiz" />
-  <contact>
-    <name value="Nictiz" />
-    <telecom>
-      <system value="url" />
-      <value value="https://www.nictiz.nl" />
-      <use value="work" />
-    </telecom>
-  </contact>
-  <description value="An extension that captures a financial indication code for reimbursement of a pharmaceutical product." />
-  <purpose value="This extension represents the FinancialIndicationCode concept for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)." />
-  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
-  <fhirVersion value="4.0.1" />
-  <kind value="complex-type" />
-  <abstract value="false" />
-  <context>
-    <type value="element" />
-    <expression value="MedicationRequest" />
-  </context>
-  <type value="Extension" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <max value="1" />
-    </element>
-    <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.FinancialIndicationCode" />
-    </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]" />
-      <short value="FinancialIndicationCode" />
-      <definition value="A financial indication code used for reimbursement of the pharmaceutical product." />
-      <comment value="Applies to medication which is reimbursed based on the financial indication code.&#xD;&#xA; &#xD;&#xA;In this element, several code systems can be used:&#xD;&#xA; &#xD;&#xA;* List indication codes (https://www.ordz.nl/huisartsen/documents/magazines/2022/05/lijst_indicatiecodes_huisartsen_2020/lijst-indicatiecodes-huisarts). Relevant for, among others, general practitioner care and mental health care. These values are exchanged using NullFlavor 'OTH' with the actual code (description) added as free text.&#xD;&#xA; &#xD;&#xA;* Declaration of add-on medicines. Relevant within specialist medical care. Codes from G-standard file 132 (Indication ID). INID: This field provides the indication ID, which connects the Z-Index number from the ZINR field with the corresponding indication(s). The indication ID is provided by the CIBG. (code 8 positions long)." />
-      <alias value="FinancieleIndicatiecode" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.57--20241101000000" />
-      </binding>
-    </element>
-  </differential>
+   <id value="ext-DispenseRequest.FinancialIndicationCode"/>
+   <url value="http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.FinancialIndicationCode"/>
+   <version value="2.0.0-rc.1"/>
+   <name value="ExtDispenseRequestFinancialIndicationCode"/>
+   <title value="ext DispenseRequest.FinancialIndicationCode"/>
+   <status value="active"/>
+   <publisher value="Nictiz"/>
+   <contact>
+      <name value="Nictiz"/>
+      <telecom>
+         <system value="url"/>
+         <value value="https://www.nictiz.nl"/>
+         <use value="work"/>
+      </telecom>
+   </contact>
+   <description value="An extension that captures a financial indication code for reimbursement of a pharmaceutical product."/>
+   <purpose value="This extension represents the FinancialIndicationCode concept for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)."/>
+   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
+   <fhirVersion value="4.0.1"/>
+   <kind value="complex-type"/>
+   <abstract value="false"/>
+   <context>
+      <type value="element"/>
+      <expression value="MedicationRequest"/>
+   </context>
+   <type value="Extension"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="Extension">
+         <path value="Extension"/>
+         <max value="1"/>
+      </element>
+      <element id="Extension.url">
+         <path value="Extension.url"/>
+         <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.FinancialIndicationCode"/>
+      </element>
+      <element id="Extension.value[x]">
+         <path value="Extension.value[x]"/>
+         <short value="FinancialIndicationCode"/>
+         <definition value="A financial indication code used for reimbursement of the pharmaceutical product."/>
+         <comment value="Applies to medication which is reimbursed based on the financial indication code.&#xD;&#xA; &#xD;&#xA;In this element, several code systems can be used:&#xD;&#xA; &#xD;&#xA;* List indication codes (https://www.ordz.nl/huisartsen/documents/magazines/2022/05/lijst_indicatiecodes_huisartsen_2020/lijst-indicatiecodes-huisarts). Relevant for, among others, general practitioner care and mental health care. These values are exchanged using NullFlavor 'OTH' with the actual code (description) added as free text.&#xD;&#xA; &#xD;&#xA;* Declaration of add-on medicines. Relevant within specialist medical care. Codes from G-standard file 132 (Indication ID). INID: This field provides the indication ID, which connects the Z-Index number from the ZINR field with the corresponding indication(s). The indication ID is provided by the CIBG. (code 8 positions long)."/>
+         <alias value="FinancieleIndicatiecode"/>
+         <type>
+            <code value="CodeableConcept"/>
+         </type>
+         <binding>
+            <strength value="required"/>
+            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.57--20241101000000"/>
+         </binding>
+      </element>
+   </differential>
 </StructureDefinition>
