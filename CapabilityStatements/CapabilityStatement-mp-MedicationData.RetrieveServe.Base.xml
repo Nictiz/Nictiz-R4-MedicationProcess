@@ -2,495 +2,495 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/capabilitystatement.xsd">
-  <id value="mp-MedicationData.RetrieveServe.Base" />
-  <url value="http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationData.RetrieveServe.Base" />
-  <version value="2.0.0-rc.1" />
-  <name value="mp MedicationData.RetrieveServe.Base" />
-  <status value="active" />
-  <date value="2024-11-22" />
-  <publisher value="Nictiz" />
+  <id value="mp-MedicationData.RetrieveServe.Base"/>
+  <url value="http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationData.RetrieveServe.Base"/>
+  <version value="2.0.0-rc.1"/>
+  <name value="mp MedicationData.RetrieveServe.Base"/>
+  <status value="active"/>
+  <date value="2024-11-22"/>
+  <publisher value="Nictiz"/>
   <contact>
-    <name value="Nictiz" />
+    <name value="Nictiz"/>
     <telecom>
-      <system value="url" />
-      <value value="https://www.nictiz.nl" />
-      <use value="work" />
+      <system value="url"/>
+      <value value="https://www.nictiz.nl"/>
+      <use value="work"/>
     </telecom>
   </contact>
-  <description value="This CapabilityStatement describes the base requirements for a client/server to fulfill the 'Retrieve/Serve medication data' transaction within Medication Process 9 (MP9) version 3.0. See [Landingspagina Medicatieproces](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces) for additional information. For the MedMij context the [mp-MedicationData.RetrieveServe.MedMij](http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationData.RetrieveServe.MedMij) CapabilityStatement describes the minimal requirements, while the [mp-MedicationData.RetrieveServe](http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationData.RetrieveServe) CapabilityStatement should be used in any other context." />
-  <purpose value="This CapabilityStatement is informative in nature and is designed as a base for the 'Retrieve/Serve medication data' transaction." />
-  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
-  <kind value="requirements" />
-  <fhirVersion value="4.0.1" />
-  <format value="xml" />
-  <format value="json" />
+  <description value="This CapabilityStatement describes the base requirements for a client/server to fulfill the 'Retrieve/Serve medication data' transaction within Medication Process 9 (MP9) version 3.0. See [Landingspagina Medicatieproces](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces) for additional information. For the MedMij context the [mp-MedicationData.RetrieveServe.MedMij](http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationData.RetrieveServe.MedMij) CapabilityStatement describes the minimal requirements, while the [mp-MedicationData.RetrieveServe](http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationData.RetrieveServe) CapabilityStatement should be used in any other context."/>
+  <purpose value="This CapabilityStatement is informative in nature and is designed as a base for the 'Retrieve/Serve medication data' transaction."/>
+  <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
+  <kind value="requirements"/>
+  <fhirVersion value="4.0.1"/>
+  <format value="xml"/>
+  <format value="json"/>
   <rest>
-    <mode value="client" />
-    <documentation value="Minimal requirements for a client to fulfill the 'Retrieve medication data' transaction (system role: MP-MGR)." />
+    <mode value="client"/>
+    <documentation value="Minimal requirements for a client to fulfill the 'Retrieve medication data' transaction (system role: MP-MGR)."/>
     <resource>
-      <type value="MedicationRequest" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest" />
+      <type value="MedicationRequest"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest"/>
       <interaction>
-        <code value="search-type" />
+        <code value="search-type"/>
       </interaction>
-      <searchInclude value="MedicationRequest:patient" />
-      <searchInclude value="MedicationRequest:medication" />
-      <searchInclude value="MedicationRequest:next-practitioner" />
-      <searchInclude value="MedicationRequest:requester" />
-      <searchInclude value="MedicationRequest:intended-performer" />
-      <searchInclude value="MedicationRequest:dispense-location" />
-      <searchInclude value="MedicationRequest:reason" />
+      <searchInclude value="MedicationRequest:patient"/>
+      <searchInclude value="MedicationRequest:medication"/>
+      <searchInclude value="MedicationRequest:next-practitioner"/>
+      <searchInclude value="MedicationRequest:requester"/>
+      <searchInclude value="MedicationRequest:intended-performer"/>
+      <searchInclude value="MedicationRequest:dispense-location"/>
+      <searchInclude value="MedicationRequest:reason"/>
       <searchParam>
-        <name value="identifier" />
-        <type value="token" />
+        <name value="identifier"/>
+        <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="pharmaceutical-treatment-identifier" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier" />
-        <type value="token" />
+        <name value="pharmaceutical-treatment-identifier"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
+        <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="category" />
-        <type value="token" />
+        <name value="category"/>
+        <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="medication" />
-        <type value="reference" />
+        <name value="medication"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="requester" />
-        <type value="reference" />
+        <name value="requester"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="intended-performer" />
-        <type value="reference" />
+        <name value="intended-performer"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="period-of-use" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use" />
-        <type value="date" />
+        <name value="period-of-use"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
+        <type value="date"/>
       </searchParam>
       <searchParam>
-        <name value="next-practitioner" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-next-practitioner" />
-        <type value="reference" />
+        <name value="next-practitioner"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-next-practitioner"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="dispense-location" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-dispense-location" />
-        <type value="reference" />
+        <name value="dispense-location"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-dispense-location"/>
+        <type value="reference"/>
         <documentation value='This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-DispenseRequest profile. In this case the _include of the dispense-location needs to be supported as well.'/>
       </searchParam>
       <searchParam>
-        <name value="reason" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-reason" />
-        <type value="reference" />
+        <name value="reason"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-reason"/>
+        <type value="reference"/>
         <documentation value='This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-MedicationAgreement and mp-VariableDosingRegimen profiles. In these cases the _include of the reason needs to be supported as well.'/>
       </searchParam>
     </resource>
     <resource>
-      <type value="MedicationDispense" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationDispense" />
+      <type value="MedicationDispense"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationDispense"/>
       <interaction>
-        <code value="search-type" />
+        <code value="search-type"/>
       </interaction>
-      <searchInclude value="MedicationDispense:patient" />
-      <searchInclude value="MedicationDispense:medication" />
-      <searchInclude value="MedicationDispense:location" />
-      <searchInclude value="MedicationDispense:performer" />
-      <searchInclude value="MedicationDispense:destination" />
+      <searchInclude value="MedicationDispense:patient"/>
+      <searchInclude value="MedicationDispense:medication"/>
+      <searchInclude value="MedicationDispense:location"/>
+      <searchInclude value="MedicationDispense:performer"/>
+      <searchInclude value="MedicationDispense:destination"/>
       <searchParam>
-        <name value="identifier" />
-        <type value="token" />
+        <name value="identifier"/>
+        <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="pharmaceutical-treatment-identifier" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier" />
-        <type value="token" />
+        <name value="pharmaceutical-treatment-identifier"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
+        <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="category" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/category" />
-        <type value="token" />
+        <name value="category"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/category"/>
+        <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="medication" />
-        <type value="reference" />
+        <name value="medication"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="period-of-use" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use" />
-        <type value="date" />
+        <name value="period-of-use"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
+        <type value="date"/>
       </searchParam>
       <searchParam>
-        <name value="whenhandedover" />
-        <type value="date" />
+        <name value="whenhandedover"/>
+        <type value="date"/>
       </searchParam>
       <searchParam>
-        <name value="location" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationDispense-location" />
-        <type value="reference" />
+        <name value="location"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationDispense-location"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="performer" />
-        <type value="reference" />
+        <name value="performer"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="destination" />
-        <type value="reference" />
+        <name value="destination"/>
+        <type value="reference"/>
       </searchParam>
     </resource>
     <resource>
-      <type value="MedicationStatement" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationUse2" />
+      <type value="MedicationStatement"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationUse2"/>
       <interaction>
-        <code value="search-type" />
+        <code value="search-type"/>
       </interaction>
-      <searchInclude value="MedicationStatement:patient" />
-      <searchInclude value="MedicationStatement:medication" />
-      <searchInclude value="MedicationStatement:author" />
-      <searchInclude value="MedicationStatement:prescriber" />
-      <searchInclude value="MedicationStatement:source" />
+      <searchInclude value="MedicationStatement:patient"/>
+      <searchInclude value="MedicationStatement:medication"/>
+      <searchInclude value="MedicationStatement:author"/>
+      <searchInclude value="MedicationStatement:prescriber"/>
+      <searchInclude value="MedicationStatement:source"/>
       <searchParam>
-        <name value="identifier" />
-        <type value="token" />
+        <name value="identifier"/>
+        <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="pharmaceutical-treatment-identifier" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier" />
-        <type value="token" />
+        <name value="pharmaceutical-treatment-identifier"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
+        <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="category" />
-        <type value="token" />
+        <name value="category"/>
+        <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="medication" />
-        <type value="reference" />
+        <name value="medication"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="source" />
-        <type value="reference" />
+        <name value="source"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="period-of-use" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use" />
-        <type value="date" />
+        <name value="period-of-use"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
+        <type value="date"/>
       </searchParam>
       <searchParam>
-        <name value="author" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationStatement-author" />
-        <type value="reference" />
+        <name value="author"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationStatement-author"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="prescriber" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationStatement-prescriber" />
-        <type value="reference" />
+        <name value="prescriber"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationStatement-prescriber"/>
+        <type value="reference"/>
       </searchParam>
     </resource>
     <resource>
-      <type value="Patient" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient" />
+      <type value="Patient"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
     </resource>
     <resource>
-      <type value="Medication" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct" />
+      <type value="Medication"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"/>
       <interaction>
-        <code value="search-type" />
+        <code value="search-type"/>
       </interaction>
       <searchParam>
-        <name value="code" />
-        <type value="token" />
-        <documentation value="This search parameter only needs to be supported as a chained search parameter (i.e. as `medication.code` on MedicationRequest, MedicationDispense, and MedicationStatement)." />
+        <name value="code"/>
+        <type value="token"/>
+        <documentation value="This search parameter only needs to be supported as a chained search parameter (i.e. as `medication.code` on MedicationRequest, MedicationDispense, and MedicationStatement)."/>
       </searchParam>
     </resource>
     <resource>
-      <type value="RelatedPerson" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson" />
-      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle. For a client support of the read interaction is mandatory." />
+      <type value="RelatedPerson"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson"/>
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle. For a client support of the read interaction is mandatory."/>
       <interaction>
-        <code value="read" />
-      </interaction>
-    </resource>
-    <resource>
-      <type value="PractitionerRole" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole" />
-      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle. For a client support of the read interaction is mandatory." />
-      <interaction>
-        <code value="read" />
-      </interaction>
-      <searchInclude value="PractitionerRole:organization" />
-      <searchInclude value="PractitionerRole:practitioner" />
-      <searchInclude value="PractitionerRole:location" />
-      <searchParam>
-        <name value="organization" />
-        <type value="reference" />
-      </searchParam>
-      <searchParam>
-        <name value="practitioner" />
-        <type value="reference" />
-      </searchParam>
-      <searchParam>
-        <name value="location" />
-        <type value="reference" />
-      </searchParam>
-    </resource>
-    <resource>
-      <type value="Practitioner" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner" />
-      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle. For a client support of the read interaction is mandatory." />
-      <interaction>
-        <code value="read" />
+        <code value="read"/>
       </interaction>
     </resource>
     <resource>
-      <type value="Location" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider" />
-      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle. For a client support of the read interaction is mandatory." />
+      <type value="PractitionerRole"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"/>
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle. For a client support of the read interaction is mandatory."/>
       <interaction>
-        <code value="read" />
+        <code value="read"/>
+      </interaction>
+      <searchInclude value="PractitionerRole:organization"/>
+      <searchInclude value="PractitionerRole:practitioner"/>
+      <searchInclude value="PractitionerRole:location"/>
+      <searchParam>
+        <name value="organization"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="practitioner"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="location"/>
+        <type value="reference"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Practitioner"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"/>
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle. For a client support of the read interaction is mandatory."/>
+      <interaction>
+        <code value="read"/>
       </interaction>
     </resource>
     <resource>
-      <type value="Organization" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization" />
-      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle. For a client support of the read interaction is mandatory." />
+      <type value="Location"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"/>
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle. For a client support of the read interaction is mandatory."/>
       <interaction>
-        <code value="read" />
+        <code value="read"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="Organization"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"/>
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle. For a client support of the read interaction is mandatory."/>
+      <interaction>
+        <code value="read"/>
       </interaction>
     </resource>
     <interaction>
-      <code value="search-system" />
+      <code value="search-system"/>
     </interaction>
   </rest>
   <rest>
-    <mode value="server" />
-    <documentation value="Minimal requirements for a server to fulfill the 'Serve medication data' transaction (system role: MP-MGB)." />
+    <mode value="server"/>
+    <documentation value="Minimal requirements for a server to fulfill the 'Serve medication data' transaction (system role: MP-MGB)."/>
     <resource>
-      <type value="MedicationRequest" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest" />
+      <type value="MedicationRequest"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest"/>
       <interaction>
-        <code value="search-type" />
+        <code value="search-type"/>
       </interaction>
-      <searchInclude value="MedicationRequest:patient" />
-      <searchInclude value="MedicationRequest:medication" />
-      <searchInclude value="MedicationRequest:next-practitioner" />
-      <searchInclude value="MedicationRequest:requester" />
-      <searchInclude value="MedicationRequest:intended-performer" />
-      <searchInclude value="MedicationRequest:dispense-location" />
-      <searchInclude value="MedicationRequest:reason" />
+      <searchInclude value="MedicationRequest:patient"/>
+      <searchInclude value="MedicationRequest:medication"/>
+      <searchInclude value="MedicationRequest:next-practitioner"/>
+      <searchInclude value="MedicationRequest:requester"/>
+      <searchInclude value="MedicationRequest:intended-performer"/>
+      <searchInclude value="MedicationRequest:dispense-location"/>
+      <searchInclude value="MedicationRequest:reason"/>
       <searchParam>
-        <name value="identifier" />
-        <type value="token" />
+        <name value="identifier"/>
+        <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="pharmaceutical-treatment-identifier" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier" />
-        <type value="token" />
+        <name value="pharmaceutical-treatment-identifier"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
+        <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="category" />
-        <type value="token" />
+        <name value="category"/>
+        <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="medication" />
-        <type value="reference" />
+        <name value="medication"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="requester" />
-        <type value="reference" />
+        <name value="requester"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="intended-performer" />
-        <type value="reference" />
+        <name value="intended-performer"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="period-of-use" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use" />
-        <type value="date" />
+        <name value="period-of-use"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
+        <type value="date"/>
       </searchParam>
       <searchParam>
-        <name value="next-practitioner" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-next-practitioner" />
-        <type value="reference" />
+        <name value="next-practitioner"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-next-practitioner"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="dispense-location" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-dispense-location" />
-        <type value="reference" />
-        <documentation value="This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-DispenseRequest profile. In this case the _include of the dispense-location needs to be supported as well." />
+        <name value="dispense-location"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-dispense-location"/>
+        <type value="reference"/>
+        <documentation value="This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-DispenseRequest profile. In this case the _include of the dispense-location needs to be supported as well."/>
       </searchParam>
       <searchParam>
-        <name value="reason" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-reason" />
-        <type value="reference" />
-        <documentation value="This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-MedicationAgreement and mp-VariableDosingRegimen profiles. In these cases the _include of the reason needs to be supported as well." />
+        <name value="reason"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-reason"/>
+        <type value="reference"/>
+        <documentation value="This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-MedicationAgreement and mp-VariableDosingRegimen profiles. In these cases the _include of the reason needs to be supported as well."/>
       </searchParam>
     </resource>
     <resource>
-      <type value="MedicationDispense" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationDispense" />
+      <type value="MedicationDispense"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationDispense"/>
       <interaction>
-        <code value="search-type" />
+        <code value="search-type"/>
       </interaction>
-      <searchInclude value="MedicationDispense:patient" />
-      <searchInclude value="MedicationDispense:medication" />
-      <searchInclude value="MedicationDispense:location" />
-      <searchInclude value="MedicationDispense:destination" />
-      <searchInclude value="MedicationDispense:performer" />
+      <searchInclude value="MedicationDispense:patient"/>
+      <searchInclude value="MedicationDispense:medication"/>
+      <searchInclude value="MedicationDispense:location"/>
+      <searchInclude value="MedicationDispense:destination"/>
+      <searchInclude value="MedicationDispense:performer"/>
       <searchParam>
-        <name value="identifier" />
-        <type value="token" />
+        <name value="identifier"/>
+        <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="pharmaceutical-treatment-identifier" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier" />
-        <type value="token" />
+        <name value="pharmaceutical-treatment-identifier"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
+        <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="category" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/category" />
-        <type value="token" />
+        <name value="category"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/category"/>
+        <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="medication" />
-        <type value="reference" />
+        <name value="medication"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="period-of-use" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use" />
-        <type value="date" />
+        <name value="period-of-use"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
+        <type value="date"/>
       </searchParam>
       <searchParam>
-        <name value="whenhandedover" />
-        <type value="date" />
+        <name value="whenhandedover"/>
+        <type value="date"/>
       </searchParam>
       <searchParam>
-        <name value="location" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationDispense-location" />
-        <type value="reference" />
+        <name value="location"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationDispense-location"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="destination" />
-        <type value="reference" />
+        <name value="destination"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="performer" />
-        <type value="reference" />
+        <name value="performer"/>
+        <type value="reference"/>
       </searchParam>
     </resource>
     <resource>
-      <type value="MedicationStatement" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationUse2" />
+      <type value="MedicationStatement"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationUse2"/>
       <interaction>
-        <code value="search-type" />
+        <code value="search-type"/>
       </interaction>
-      <searchInclude value="MedicationStatement:patient" />
-      <searchInclude value="MedicationStatement:medication" />
-      <searchInclude value="MedicationStatement:author" />
-      <searchInclude value="MedicationStatement:prescriber" />
-      <searchInclude value="MedicationStatement:source" />
+      <searchInclude value="MedicationStatement:patient"/>
+      <searchInclude value="MedicationStatement:medication"/>
+      <searchInclude value="MedicationStatement:author"/>
+      <searchInclude value="MedicationStatement:prescriber"/>
+      <searchInclude value="MedicationStatement:source"/>
       <searchParam>
-        <name value="identifier" />
-        <type value="token" />
+        <name value="identifier"/>
+        <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="pharmaceutical-treatment-identifier" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier" />
-        <type value="token" />
+        <name value="pharmaceutical-treatment-identifier"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
+        <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="category" />
-        <type value="token" />
+        <name value="category"/>
+        <type value="token"/>
       </searchParam>
       <searchParam>
-        <name value="medication" />
-        <type value="reference" />
+        <name value="medication"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="source" />
-        <type value="reference" />
+        <name value="source"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="period-of-use" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use" />
-        <type value="date" />
+        <name value="period-of-use"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
+        <type value="date"/>
       </searchParam>
       <searchParam>
-        <name value="author" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationStatement-author" />
-        <type value="reference" />
+        <name value="author"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationStatement-author"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="prescriber" />
-        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationStatement-prescriber" />
-        <type value="reference" />
+        <name value="prescriber"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationStatement-prescriber"/>
+        <type value="reference"/>
       </searchParam>
     </resource>
     <resource>
-      <type value="Patient" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient" />
+      <type value="Patient"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
     </resource>
     <resource>
-      <type value="Medication" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct" />
+      <type value="Medication"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"/>
       <interaction>
-        <code value="search-type" />
+        <code value="search-type"/>
       </interaction>
       <searchParam>
-        <name value="code" />
-        <type value="token" />
-        <documentation value="This search parameter only needs to be supported as a chained search parameter (i.e. as `medication.code` on MedicationRequest, MedicationDispense and MedicationStatement)." />
+        <name value="code"/>
+        <type value="token"/>
+        <documentation value="This search parameter only needs to be supported as a chained search parameter (i.e. as `medication.code` on MedicationRequest, MedicationDispense and MedicationStatement)."/>
       </searchParam>
     </resource>
     <resource>
-      <type value="RelatedPerson" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson" />
-      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle." />
+      <type value="RelatedPerson"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson"/>
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle."/>
     </resource>
     <resource>
-      <type value="PractitionerRole" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole" />
-      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle." />
-      <searchInclude value="PractitionerRole:organization" />
-      <searchInclude value="PractitionerRole:practitioner" />
-      <searchInclude value="PractitionerRole:location" />
+      <type value="PractitionerRole"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"/>
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle."/>
+      <searchInclude value="PractitionerRole:organization"/>
+      <searchInclude value="PractitionerRole:practitioner"/>
+      <searchInclude value="PractitionerRole:location"/>
       <searchParam>
-        <name value="organization" />
-        <type value="reference" />
-      </searchParam>
-      <searchParam>
-        <name value="practitioner" />
-        <type value="reference" />
+        <name value="organization"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="location" />
-        <type value="reference" />
+        <name value="practitioner"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="location"/>
+        <type value="reference"/>
       </searchParam>
     </resource>
     <resource>
-      <type value="Practitioner" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner" />
-      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle." />
+      <type value="Practitioner"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner"/>
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle."/>
     </resource>
     <resource>
-      <type value="Location" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider" />
-      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle." />
+      <type value="Location"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"/>
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle."/>
     </resource>
     <resource>
-      <type value="Organization" />
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization" />
-      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle." />
+      <type value="Organization"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"/>
+      <documentation value="This is a secondary resource that needs to be resolvable, either by supporting a read interaction or explicitly including it in the Bundle."/>
     </resource>
     <interaction>
-      <code value="search-system" />
+      <code value="search-system"/>
     </interaction>
   </rest>
 </CapabilityStatement>
