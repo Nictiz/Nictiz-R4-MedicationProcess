@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/capabilitystatement.xsd">
   <id value="mp-MedicationData.RetrieveServe.Base"/>
   <url value="http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationData.RetrieveServe.Base"/>
-  <version value="2.0.0-beta.6"/>
+  <version value="2.0.0-rc.1"/>
   <name value="mp MedicationData.RetrieveServe.Base"/>
   <status value="active"/>
   <date value="2024-11-22"/>
@@ -74,18 +74,18 @@
       </searchParam>
       <searchParam>
         <name value="next-practitioner"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/next-practitioner"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-next-practitioner"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
         <name value="dispense-location"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/dispense-location"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-dispense-location"/>
         <type value="reference"/>
         <documentation value='This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-DispenseRequest profile. In this case the _include of the dispense-location needs to be supported as well.'/>
       </searchParam>
       <searchParam>
         <name value="reason"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/reason"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-reason"/>
         <type value="reference"/>
         <documentation value='This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-MedicationAgreement and mp-VariableDosingRegimen profiles. In these cases the _include of the reason needs to be supported as well.'/>
       </searchParam>
@@ -131,7 +131,7 @@
       </searchParam>
       <searchParam>
         <name value="location"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/location"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationDispense-location"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -152,6 +152,7 @@
       <searchInclude value="MedicationStatement:patient"/>
       <searchInclude value="MedicationStatement:medication"/>
       <searchInclude value="MedicationStatement:author"/>
+      <searchInclude value="MedicationStatement:prescriber"/>
       <searchInclude value="MedicationStatement:source"/>
       <searchParam>
         <name value="identifier"/>
@@ -181,44 +182,13 @@
       </searchParam>
       <searchParam>
         <name value="author"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/author"/>
-        <type value="reference"/>
-      </searchParam>
-    </resource>
-    <resource>
-      <type value="MedicationAdministration"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAdministration2"/>
-      <interaction>
-        <code value="search-type"/>
-      </interaction>
-      <searchInclude value="MedicationAdministration:patient"/>
-      <searchInclude value="MedicationAdministration:medication"/>
-      <searchInclude value="MedicationAdministration:performer"/>
-      <searchParam>
-        <name value="identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="pharmaceutical-treatment-identifier"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="category"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/category"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="medication"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationStatement-author"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="performer"/>
+        <name value="prescriber"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationStatement-prescriber"/>
         <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="effective-time"/>
-        <type value="date"/>
       </searchParam>
     </resource>
     <resource>
@@ -234,7 +204,7 @@
       <searchParam>
         <name value="code"/>
         <type value="token"/>
-        <documentation value="This search parameter only needs to be supported as a chained search parameter (i.e. as `medication.code` on MedicationRequest, MedicationDispense, MedicationStatement and MedicationAdministration)."/>
+        <documentation value="This search parameter only needs to be supported as a chained search parameter (i.e. as `medication.code` on MedicationRequest, MedicationDispense, and MedicationStatement)."/>
       </searchParam>
     </resource>
     <resource>
@@ -346,18 +316,18 @@
       </searchParam>
       <searchParam>
         <name value="next-practitioner"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/next-practitioner"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-next-practitioner"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
         <name value="dispense-location"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/dispense-location"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-dispense-location"/>
         <type value="reference"/>
         <documentation value="This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-DispenseRequest profile. In this case the _include of the dispense-location needs to be supported as well."/>
       </searchParam>
       <searchParam>
         <name value="reason"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/reason"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-reason"/>
         <type value="reference"/>
         <documentation value="This search parameter only needs to be supported for MedicationRequest resources that conform to the mp-MedicationAgreement and mp-VariableDosingRegimen profiles. In these cases the _include of the reason needs to be supported as well."/>
       </searchParam>
@@ -403,7 +373,7 @@
       </searchParam>
       <searchParam>
         <name value="location"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/location"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationDispense-location"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -424,6 +394,7 @@
       <searchInclude value="MedicationStatement:patient"/>
       <searchInclude value="MedicationStatement:medication"/>
       <searchInclude value="MedicationStatement:author"/>
+      <searchInclude value="MedicationStatement:prescriber"/>
       <searchInclude value="MedicationStatement:source"/>
       <searchParam>
         <name value="identifier"/>
@@ -453,44 +424,13 @@
       </searchParam>
       <searchParam>
         <name value="author"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/author"/>
-        <type value="reference"/>
-      </searchParam>
-    </resource>
-    <resource>
-      <type value="MedicationAdministration"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAdministration2"/>
-      <interaction>
-        <code value="search-type"/>
-      </interaction>
-      <searchInclude value="MedicationAdministration:patient"/>
-      <searchInclude value="MedicationAdministration:medication"/>
-      <searchInclude value="MedicationAdministration:performer"/>
-      <searchParam>
-        <name value="identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="pharmaceutical-treatment-identifier"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="category"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/category"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="medication"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationStatement-author"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
-        <name value="performer"/>
+        <name value="prescriber"/>
+        <definition value="http://nictiz.nl/fhir/SearchParameter/MedicationStatement-prescriber"/>
         <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="effective-time"/>
-        <type value="date"/>
       </searchParam>
     </resource>
     <resource>
@@ -506,7 +446,7 @@
       <searchParam>
         <name value="code"/>
         <type value="token"/>
-        <documentation value="This search parameter only needs to be supported as a chained search parameter (i.e. as `medication.code` on MedicationRequest, MedicationDispense, MedicationStatement and MedicationAdministration)."/>
+        <documentation value="This search parameter only needs to be supported as a chained search parameter (i.e. as `medication.code` on MedicationRequest, MedicationDispense and MedicationStatement)."/>
       </searchParam>
     </resource>
     <resource>

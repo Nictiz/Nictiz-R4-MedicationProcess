@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/capabilitystatement.xsd">
   <id value="mp-MedicationData.SendReceive"/>
   <url value="http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationData.SendReceive"/>
-  <version value="2.0.0-beta.6"/>
+  <version value="2.0.0-rc.1"/>
   <name value="mp MedicationData.SendReceive"/>
   <status value="active"/>
   <date value="2024-11-22"/>
@@ -47,13 +47,6 @@
     <resource>
       <type value="MedicationStatement"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationUse2"/>
-      <interaction>
-        <code value="create"/>
-      </interaction>
-    </resource>
-    <resource>
-      <type value="MedicationAdministration"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAdministration2"/>
       <interaction>
         <code value="create"/>
       </interaction>
@@ -134,13 +127,6 @@
     <resource>
       <type value="MedicationStatement"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationUse2"/>
-      <interaction>
-        <code value="create"/>
-      </interaction>
-    </resource>
-    <resource>
-      <type value="MedicationAdministration"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAdministration2"/>
       <interaction>
         <code value="create"/>
       </interaction>

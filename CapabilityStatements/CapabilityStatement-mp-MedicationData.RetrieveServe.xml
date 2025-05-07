@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/capabilitystatement.xsd">
   <id value="mp-MedicationData.RetrieveServe"/>
   <url value="http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationData.RetrieveServe"/>
-  <version value="2.0.0-beta.6"/>
+  <version value="2.0.0-rc.1"/>
   <name value="mp MedicationData.RetrieveServe"/>
   <status value="active"/>
   <date value="2024-11-22"/>
@@ -65,18 +65,6 @@
       </searchParam>
     </resource>
     <resource>
-      <type value="MedicationAdministration"/>
-      <searchParam>
-        <name value="patient"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="subject"/>
-        <type value="reference"/>
-        <documentation value="This search parameter only needs to be supported combined with the ':Patient' modifier (i.e. as `subject:Patient`)."/>
-      </searchParam>
-    </resource>
-    <resource>
       <type value="Patient"/>
       <interaction>
         <code value="search-type"/>
@@ -116,18 +104,6 @@
     </resource>
     <resource>
       <type value="MedicationStatement"/>
-      <searchParam>
-        <name value="patient"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="subject"/>
-        <type value="reference"/>
-        <documentation value="This search parameter only needs to be supported combined with the ':Patient' modifier (i.e. as `subject:Patient`)."/>
-      </searchParam>
-    </resource>
-    <resource>
-      <type value="MedicationAdministration"/>
       <searchParam>
         <name value="patient"/>
         <type value="reference"/>

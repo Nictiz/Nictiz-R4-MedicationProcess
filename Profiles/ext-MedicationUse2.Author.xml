@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="ext-MedicationUse2.Author"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationUse2.Author"/>
-   <version value="2.0.0-beta.6"/>
+   <version value="2.0.0-rc.1"/>
    <name value="ExtMedicationUse2Author"/>
    <title value="ext MedicationUse2.Author"/>
    <status value="active"/>
