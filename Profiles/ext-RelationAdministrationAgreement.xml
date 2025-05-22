@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="ext-RelationAdministrationAgreement"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/ext-RelationAdministrationAgreement"/>
-   <version value="2.0.0-beta.6"/>
+   <version value="2.0.0-rc.1"/>
    <name value="ExtRelationAdministrationAgreement"/>
    <title value="ext RelationAdministrationAgreement"/>
    <status value="active"/>

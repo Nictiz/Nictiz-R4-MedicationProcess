@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="ext-MedicationAdministration2.AgreedDateTime"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.AgreedDateTime"/>
-   <version value="2.0.0-beta.6"/>
+   <version value="2.0.0-rc.1"/>
    <name value="ExtMedicationAdministration2AgreedDateTime"/>
    <title value="ext MedicationAdministration2.AgreedDateTime"/>
    <status value="active"/>
