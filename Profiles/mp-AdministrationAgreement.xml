@@ -171,7 +171,7 @@
          <path value="MedicationDispense.extension.value[x].extension.value[x]"/>
          <definition value="Element to indicate that the start or end date is uncertain.&#xD;&#xA;&#xD;&#xA;In certain situations the start or end date can depend on another piece of information. This is, for example, the case when a patient has to start or stop medication a few days before hospital admission. In that case this element is used to indicate (in free text): ‘start X days before hospital admission’ or ‘stop X days before hospital admission’. By doing this, it is clear that the entered start or end date is uncertain when the AdministrationAgreement is being exchanged."/>
          <mapping>
-        <identity value="mp-dataset-mp9-300-beta5-TODO" />
+        <identity value="mp-dataset-mp9-300-rc1-20250522" />
             <map value="mp-dataelement9x-1484"/>
          </mapping>
       </element>
