@@ -39,8 +39,8 @@
       <element id="Extension.value[x]">
          <path value="Extension.value[x]"/>
          <short value="Condition"/>
-         <alias value="Criterium"/>
          <definition value="Element to indicate that the start or end date is uncertain.&#xD;&#xA;&#xD;&#xA;In certain situations the start or end date can depend on another piece of information. This is, for example, the case when a patient has to start or stop medication a few days before hospital admission. In that case this element is used to indicate (in free text): ‘start X days before hospital admission’ or ‘stop X days before hospital admission’. By doing this, it is clear that the entered start or end date is uncertain when the MedicationAgreement or AdministrationAgreement is being exchanged."/>
+         <alias value="Criterium"/>
          <type>
             <code value="string"/>
          </type>
