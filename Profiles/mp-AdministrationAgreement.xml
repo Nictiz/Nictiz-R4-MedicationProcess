@@ -35,9 +35,9 @@
       <name value="ART-DECOR Dataset MP9 3.0.0-beta.4 20241118"/>
    </mapping>
    <mapping>
-      <identity value="mp-dataset-mp9-300-rc1-20250429"/>
-      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20250429T134736/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
-      <name value="ART-DECOR Dataset MP9 3.0.0-rc.1 20250429"/>
+      <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20250522T132618/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
+      <name value="ART-DECOR Dataset MP9 3.0.0-rc.1 20250522"/>
    </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
@@ -76,7 +76,7 @@
             <comment value="AdministrationAgreementAdditionalInformation"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250429"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-342"/>
             <comment value="AdministrationAgreementAdditionalInformation"/>
          </mapping>
@@ -97,7 +97,7 @@
             <comment value="AdministrationAgreementReasonModificationOrDiscontinuation"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250429"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-333"/>
             <comment value="AdministrationAgreementReasonModificationOrDiscontinuation"/>
          </mapping>
@@ -169,10 +169,11 @@
       </element>
       <element id="MedicationDispense.extension:periodOfUse.value[x].extension:condition.value[x]">
          <path value="MedicationDispense.extension.value[x].extension.value[x]"/>
+         <definition value="Element to indicate that the start or end date is uncertain.&#xD;&#xA;&#xD;&#xA;In certain situations the start or end date can depend on another piece of information. This is, for example, the case when a patient has to start or stop medication a few days before hospital admission. In that case this element is used to indicate (in free text): ‘start X days before hospital admission’ or ‘stop X days before hospital admission’. By doing this, it is clear that the entered start or end date is uncertain when the AdministrationAgreement is being exchanged."/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250429"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-1484"/>
-         </mapping>
+         </mapping>          
       </element>
       <element id="MedicationDispense.extension:copyIndicator">
          <path value="MedicationDispense.extension"/>
@@ -190,7 +191,7 @@
             <comment value="CopyIndicator"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250429"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-345"/>
             <comment value="CopyIndicator"/>
          </mapping>
@@ -211,7 +212,7 @@
             <comment value="Identification"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250429"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-42"/>
             <comment value="Identification"/>
          </mapping>
@@ -232,7 +233,7 @@
             <comment value="DistributionForm"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250429"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-1371"/>
             <comment value="DistributionForm"/>
          </mapping>
@@ -253,7 +254,7 @@
             <comment value="RelationAdministrationAgreement"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250429"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-1380"/>
             <comment value="RelationAdministrationAgreement"/>
          </mapping>
@@ -275,7 +276,7 @@
             <comment value="RegistrationDateTime"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250429"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-1481"/>
             <comment value="RegistrationDateTime"/>
          </mapping>
@@ -303,7 +304,7 @@
             <comment value="AdministrationAgreementStopType"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250429"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-340"/>
             <comment value="AdministrationAgreementStopType"/>
          </mapping>
@@ -334,7 +335,7 @@
             <comment value="Identification"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250429"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-344"/>
             <comment value="Identification"/>
          </mapping>
@@ -364,7 +365,7 @@
             <comment value="AdministrationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250429"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-340"/>
             <comment value="AdministrationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
          </mapping>

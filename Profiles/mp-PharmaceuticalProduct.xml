@@ -30,9 +30,9 @@
       <name value="ART-DECOR Dataset MP9 3.0.0-beta.4 20241118"/>
    </mapping>
    <mapping>
-      <identity value="mp-dataset-mp9-300-rc1-20250429"/>
-      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20250429T134736/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
-      <name value="ART-DECOR Dataset MP9 3.0.0-rc.1 20250429"/>
+      <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20250522T132618/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
+      <name value="ART-DECOR Dataset MP9 3.0.0-rc.1 20250522"/>
    </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
@@ -85,7 +85,7 @@
             <comment value="MedicationCode"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250429"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-261"/>
             <comment value="MedicationCode"/>
          </mapping>
@@ -179,7 +179,7 @@
             <comment value="SubstanceCode"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250429"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-267"/>
             <comment value="SubstanceCode"/>
          </mapping>

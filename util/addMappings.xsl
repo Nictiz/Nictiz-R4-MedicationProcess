@@ -17,9 +17,9 @@
     
     <xsl:variable name="antepenultimateRelease" select="'mp-dataset-mp9-300-beta3-20240229'"/>
     <xsl:variable name="penultimateRelease" select="'mp-dataset-mp9-300-beta4-20241118'"/>
-    <xsl:variable name="currentRelease" select="'mp-dataset-mp9-300-rc1-20250429'"/>
-    <xsl:variable name="currentReleaseUri" select="'https://decor.nictiz.nl/pub/medicatieproces/mp-html-20250429T134736/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html'"/>
-    <xsl:variable name="currentReleaseName" select="'ART-DECOR Dataset MP9 3.0.0-rc.1 20250429'"/>
+    <xsl:variable name="currentRelease" select="'mp-dataset-mp9-300-rc1-20250522'"/>
+    <xsl:variable name="currentReleaseUri" select="'https://decor.nictiz.nl/pub/medicatieproces/mp-html-20250522T132618/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html'"/>
+    <xsl:variable name="currentReleaseName" select="'ART-DECOR Dataset MP9 3.0.0-rc.1 20250522'"/>
     
     <!-- Remove mapping declarations to antepenultimate release -->
     <xsl:template match="f:StructureDefinition/f:mapping[f:identity/@value = $antepenultimateRelease]"/>
