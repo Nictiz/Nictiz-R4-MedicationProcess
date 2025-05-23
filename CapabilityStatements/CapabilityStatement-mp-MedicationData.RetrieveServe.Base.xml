@@ -192,42 +192,6 @@
       </searchParam>
     </resource>
     <resource>
-      <type value="MedicationAdministration"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAdministration2"/>
-      <interaction>
-        <code value="search-type"/>
-      </interaction>
-      <searchInclude value="MedicationAdministration:patient"/>
-      <searchInclude value="MedicationAdministration:medication"/>
-      <searchInclude value="MedicationAdministration:performer"/>
-      <searchParam>
-        <name value="identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="pharmaceutical-treatment-identifier"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="category"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/category"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="medication"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="performer"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="effective-time"/>
-        <type value="date"/>
-      </searchParam>
-    </resource>
-    <resource>
       <type value="Patient"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
     </resource>
@@ -240,7 +204,7 @@
       <searchParam>
         <name value="code"/>
         <type value="token"/>
-        <documentation value="This search parameter only needs to be supported as a chained search parameter (i.e. as `medication.code` on MedicationRequest, MedicationDispense, MedicationStatement and MedicationAdministration)."/>
+        <documentation value="This search parameter only needs to be supported as a chained search parameter (i.e. as `medication.code` on MedicationRequest, MedicationDispense, and MedicationStatement)."/>
       </searchParam>
     </resource>
     <resource>
@@ -470,42 +434,6 @@
       </searchParam>
     </resource>
     <resource>
-      <type value="MedicationAdministration"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAdministration2"/>
-      <interaction>
-        <code value="search-type"/>
-      </interaction>
-      <searchInclude value="MedicationAdministration:patient"/>
-      <searchInclude value="MedicationAdministration:medication"/>
-      <searchInclude value="MedicationAdministration:performer"/>
-      <searchParam>
-        <name value="identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="pharmaceutical-treatment-identifier"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="category"/>
-        <definition value="http://nictiz.nl/fhir/SearchParameter/category"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <name value="medication"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="performer"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <name value="effective-time"/>
-        <type value="date"/>
-      </searchParam>
-    </resource>
-    <resource>
       <type value="Patient"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
     </resource>
@@ -518,7 +446,7 @@
       <searchParam>
         <name value="code"/>
         <type value="token"/>
-        <documentation value="This search parameter only needs to be supported as a chained search parameter (i.e. as `medication.code` on MedicationRequest, MedicationDispense, MedicationStatement and MedicationAdministration)."/>
+        <documentation value="This search parameter only needs to be supported as a chained search parameter (i.e. as `medication.code` on MedicationRequest, MedicationDispense and MedicationStatement)."/>
       </searchParam>
     </resource>
     <resource>

@@ -52,13 +52,6 @@
       </interaction>
     </resource>
     <resource>
-      <type value="MedicationAdministration"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAdministration2"/>
-      <interaction>
-        <code value="create"/>
-      </interaction>
-    </resource>
-    <resource>
       <type value="Patient"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
       <interaction>
@@ -134,13 +127,6 @@
     <resource>
       <type value="MedicationStatement"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationUse2"/>
-      <interaction>
-        <code value="create"/>
-      </interaction>
-    </resource>
-    <resource>
-      <type value="MedicationAdministration"/>
-      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAdministration2"/>
       <interaction>
         <code value="create"/>
       </interaction>

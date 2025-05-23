@@ -13,13 +13,12 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="Searches on the value provided in the pharmaceutical treatment identifier extension (&lt;http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier&gt;) in the following resources:&#xD;&#xA;* MedicationRequest &#xD;&#xA;* MedicationDispense &#xD;&#xA;* MedicationStatement &#xD;&#xA;* MedicationAdministration"/>
-  <purpose value="To select the MedicationRequest, MedicationDispense, MedicationAdministration, and MedicationStatement resources based on a specific pharmaceutical treatment identifier."/>
+  <description value="Searches on the value provided in the pharmaceutical treatment identifier extension (&lt;http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier&gt;) in the following resources:&#xD;&#xA;* MedicationRequest &#xD;&#xA;* MedicationDispense &#xD;&#xA;* MedicationStatement"/>
+  <purpose value="To select the MedicationRequest, MedicationDispense and MedicationStatement resources based on a specific pharmaceutical treatment identifier."/>
   <code value="pharmaceutical-treatment-identifier"/>
-  <base value="MedicationAdministration"/>
   <base value="MedicationStatement"/>
   <base value="MedicationRequest"/>
   <base value="MedicationDispense"/>
   <type value="token"/>
-  <expression value="MedicationRequest.extension('http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier') | MedicationDispense.extension('http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier') | MedicationAdministration.extension('http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier') | MedicationStatement.extension('http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier')"/>
+  <expression value="MedicationRequest.extension('http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier') | MedicationDispense.extension('http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier') | MedicationStatement.extension('http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier')"/>
 </SearchParameter>
