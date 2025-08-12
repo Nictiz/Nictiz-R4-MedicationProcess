@@ -52,6 +52,13 @@
       </interaction>
     </resource>
     <resource>
+      <type value="MedicationAdministration"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAdministration2"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
       <type value="Patient"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
       <interaction>
@@ -103,7 +110,7 @@
     <interaction>
       <code value="search-system"/>
     </interaction>
-  </rest>
+  </rest> 
   <rest>
     <mode value="server"/>
     <documentation value="Minimal requirements for a server to fulfill the 'Receive medication data' transaction (system role: MP-MGO)."/>
@@ -127,6 +134,13 @@
     <resource>
       <type value="MedicationStatement"/>
       <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationUse2"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+    </resource>
+    <resource>
+      <type value="MedicationAdministration"/>
+      <supportedProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAdministration2"/>
       <interaction>
         <code value="create"/>
       </interaction>

@@ -18,5 +18,5 @@
   <code value="category"/>
   <base value="MedicationDispense"/>
   <type value="token"/>
-  <expression value="MedicationDispense.category"/>
+  <expression value="MedicationDispense.category | MedicationAdministration.category"/>
 </SearchParameter>

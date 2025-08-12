@@ -65,7 +65,19 @@
       </searchParam>
     </resource>
     <resource>
-      <type value="Patient"/>
+      <type value="MedicationAdministration"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="This search parameter only needs to be supported combined with the ':Patient' modifier (i.e. as `subject:Patient`)."/>
+      </searchParam>
+    </resource> 
+    <resource>      
+    <type value="Patient"/>
       <interaction>
         <code value="search-type"/>
       </interaction>
@@ -102,8 +114,20 @@
         <documentation value="This search parameter only needs to be supported combined with the ':Patient' modifier (i.e. as `subject:Patient`)."/>
       </searchParam>
     </resource>
-    <resource>
+     <resource>
       <type value="MedicationStatement"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="This search parameter only needs to be supported combined with the ':Patient' modifier (i.e. as `subject:Patient`)."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="MedicationAdministration"/>
       <searchParam>
         <name value="patient"/>
         <type value="reference"/>
