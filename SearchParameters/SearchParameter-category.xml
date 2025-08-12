@@ -17,6 +17,7 @@
   <purpose value="To select instances based on the value of the `.category` element for resources that do not have a SearchParameter defined by the base FHIR specification for this element."/>
   <code value="category"/>
   <base value="MedicationDispense"/>
+  <base value="MedicationAdministration"/>
   <type value="token"/>
   <expression value="MedicationDispense.category | MedicationAdministration.category"/>
 </SearchParameter>
