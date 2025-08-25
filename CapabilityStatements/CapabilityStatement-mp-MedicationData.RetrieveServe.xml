@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/capabilitystatement.xsd">
   <id value="mp-MedicationData.RetrieveServe"/>
   <url value="http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationData.RetrieveServe"/>
-  <version value="2.0.0-rc.1"/>
+  <version value="2.0.0-rc.2"/>
   <name value="mp MedicationData.RetrieveServe"/>
   <status value="active"/>
   <date value="2024-11-22"/>
