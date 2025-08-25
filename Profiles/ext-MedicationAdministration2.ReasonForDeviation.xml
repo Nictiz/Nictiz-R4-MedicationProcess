@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="ext-MedicationAdministration2.ReasonForDeviation"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.ReasonForDeviation"/>
-   <version value="2.0.0-rc.1"/>
+   <version value="2.0.0-rc.2"/>
    <name value="ExtMedicationAdministration2ReasonForDeviation"/>
    <title value="ext MedicationAdministration2.ReasonForDeviation"/>
    <status value="active"/>

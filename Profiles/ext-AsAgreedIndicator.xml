@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="ext-AsAgreedIndicator"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/ext-AsAgreedIndicator"/>
-   <version value="2.0.0-rc.1"/>
+   <version value="2.0.0-rc.2"/>
    <name value="ExtAsAgreedIndicator"/>
    <title value="ext AsAgreedIndicator"/>
    <status value="active"/>
