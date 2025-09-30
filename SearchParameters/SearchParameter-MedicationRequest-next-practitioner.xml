@@ -18,5 +18,5 @@
   <code value="next-practitioner"/>
   <base value="MedicationRequest"/>
   <type value="reference"/>
-  <expression value="MedicationRequest.extension('http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAgreement.NextPractitioner')"/>
+  <expression value="MedicationRequest.extension('http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAgreement.NextPractitioner').value"/>
 </SearchParameter>

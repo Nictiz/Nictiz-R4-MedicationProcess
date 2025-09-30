@@ -18,5 +18,5 @@
   <code value="author"/>
   <base value="MedicationStatement"/>
   <type value="reference"/>
-  <expression value="MedicationStatement.extension('http://nictiz.nl/fhir/StructureDefinition/ext-MedicationUse2.Author')"/>
+  <expression value="MedicationStatement.extension('http://nictiz.nl/fhir/StructureDefinition/ext-MedicationUse2.Author').value"/>
 </SearchParameter>

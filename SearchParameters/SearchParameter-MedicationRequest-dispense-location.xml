@@ -18,5 +18,5 @@
   <code value="dispense-location"/>
   <base value="MedicationRequest"/>
   <type value="reference"/>
-  <expression value="MedicationRequest.dispenseRequest.extension('http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.DispenseLocation')"/>
+  <expression value="MedicationRequest.dispenseRequest.extension('http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.DispenseLocation').value"/>
 </SearchParameter>
