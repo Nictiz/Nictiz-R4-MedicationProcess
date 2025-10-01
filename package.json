@@ -1,6 +1,6 @@
 {
   "name": "nictiz.fhir.nl.r4.medicationprocess9",
-  "version": "2.0.0-rc.2",
+  "version": "2.0.0-rc.3",
   "description": "NL package of FHIR R4 conformance resources for Medication Process 9 (MP9) version 3.0.0-rc.1.",
   "author": "Nictiz",
   "keywords": [

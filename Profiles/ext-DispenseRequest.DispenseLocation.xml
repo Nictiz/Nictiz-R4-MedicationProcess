@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="ext-DispenseRequest.DispenseLocation"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.DispenseLocation"/>
-   <version value="2.0.0-rc.2"/>
+   <version value="2.0.0-rc.3"/>
    <name value="ExtDispenseRequestDispenseLocation"/>
    <title value="ext DispenseRequest.DispenseLocation"/>
    <status value="active"/>
