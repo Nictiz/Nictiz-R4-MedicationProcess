@@ -1,7 +1,7 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="MedicationRequest-next-practitioner"/>
   <url value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-next-practitioner"/>
-  <version value="2.0.0-rc.2"/>
+  <version value="2.0.0-rc.3"/>
   <name value="NextPractitioner"/>
   <status value="active"/>
   <publisher value="Nictiz"/>
@@ -18,5 +18,5 @@
   <code value="next-practitioner"/>
   <base value="MedicationRequest"/>
   <type value="reference"/>
-  <expression value="MedicationRequest.extension('http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAgreement.NextPractitioner')"/>
+  <expression value="MedicationRequest.extension('http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAgreement.NextPractitioner').value"/>
 </SearchParameter>

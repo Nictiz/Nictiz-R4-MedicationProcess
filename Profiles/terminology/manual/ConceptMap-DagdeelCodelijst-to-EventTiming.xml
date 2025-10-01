@@ -4,7 +4,7 @@
     <valueBoolean value="true"/>
   </extension>
   <url value="http://nictiz.nl/fhir/ConceptMap/DagdeelCodelijst-to-EventTiming"/>
-  <version value="2.0.0-rc.2"/>
+  <version value="2.0.0-rc.3"/>
   <name value="DagdeelCodelijst_to_EventTiming"/>
   <title value="DagdeelCodelijst to EventTiming"/>
   <status value="active"/>

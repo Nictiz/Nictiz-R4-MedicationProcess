@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="mp-ReplyProposalDispenseRequest-Bundle"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/mp-ReplyProposalDispenseRequest-Bundle"/>
-   <version value="2.0.0-rc.2"/>
+   <version value="2.0.0-rc.3"/>
    <name value="MpReplyProposalDispenseRequestBundle"/>
    <title value="mp ReplyProposalDispenseRequest Bundle"/>
    <status value="active"/>

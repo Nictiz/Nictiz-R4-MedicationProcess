@@ -1,7 +1,7 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="pharmaceutical-treatment-identifier"/>
   <url value="http://nictiz.nl/fhir/SearchParameter/pharmaceutical-treatment-identifier"/>
-  <version value="2.0.0-rc.2"/>
+  <version value="2.0.0-rc.3"/>
   <name value="PharmaceuticalTreatmentIdentifier"/>
   <status value="active"/>
   <publisher value="Nictiz"/>
