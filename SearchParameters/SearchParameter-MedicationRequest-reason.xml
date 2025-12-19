@@ -18,5 +18,8 @@
   <code value="reason"/>
   <base value="MedicationRequest"/>
   <type value="reference"/>
+  <target value="Condition"/>
+  <target value="Observation"/>
+  <target value="DiagnosticReport"/>
   <expression value="MedicationRequest.reasonReference"/>
 </SearchParameter>
