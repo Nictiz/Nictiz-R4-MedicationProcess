@@ -289,7 +289,7 @@
       <element id="MedicationDispense.daysSupply">
          <path value="MedicationDispense.daysSupply"/>
          <short value="DurationOfUse"/>
-         <definition value="The period in which the medication is expected to be used. The value depends on the dose and the dispensed amount."/>
+         <definition value="The duration in days of the period in which the medication is expected to be used. The value depends on the dose and the dispensed amount."/>
          <alias value="Verbruiksduur"/>
          <mapping>
             <identity value="zib-medicationdispense-v2.0.2-2020EN"/>
