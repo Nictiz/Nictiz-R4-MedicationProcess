@@ -189,9 +189,14 @@
       </element>
       <element id="Communication.payload.content[x]">
          <path value="Communication.payload.content[x]"/>
+         <short value="ResponseMedicationAgreementExplanation"/>
+         <definition value="Explanation (free text) for the response to the proposed medication agreement."/>
+         <alias value="AntwoordMedicatieafspraakToelichting"/>
          <type>
             <code value="string"/>
          </type>
+         <min value="0"/>
+         <max value="1"/>
       </element>
       <element id="Communication.payload.content[x].extension">
          <path value="Communication.payload.content[x].extension"/>
@@ -209,14 +214,14 @@
       </element>
       <element id="Communication.payload.content[x].extension:contentCodeableConcept.value[x]">
          <path value="Communication.payload.content[x].extension.value[x]"/>
-         <short value="ResponseMedicationAgreement"/>
-         <definition value="Response to the proposed medication agreement."/>
-         <alias value="AntwoordMedicatieafspraak"/>
+         <short value="ResponseMedicationAgreementDecision"/>
+         <definition value="Decision for the response to the proposed medication agreement."/>
+         <alias value="AntwoordMedicatieafspraakBesluit"/>
          <min value="1"/>
          <binding>
             <strength value="required"/>
-            <description value="Response to the proposed medication agreement."/>
-            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.44--20220302105041"/>
+            <description value="Decision for the response to the proposed medication agreement."/>
+            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.44--20251217150448"/>
          </binding>
          <mapping>
             <identity value="mp-dataset-mp9-300-beta4-20241118"/>
