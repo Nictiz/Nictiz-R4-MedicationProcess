@@ -50,6 +50,12 @@
             <map value="mp-dataelement9x-539"/>
             <comment value="Response"/>
          </mapping>
+         <constraint>
+            <key value="mp-2033-ma-1"/>
+            <severity value="error"/>
+            <human value="If the decision is 'accepted' (11) or 'accepted with changes' (12), the relation to the new MedicationAgreement SHALL be present; otherwise it SHALL be absent."/>
+            <expression value="(payload.content.extension.value.ofType(CodeableConcept).coding.code.intersect({'11','12'}).exists()) = extension.where(url='http://nictiz.nl/fhir/StructureDefinition/ext-mp-RelationToNewMedicationAgreement').exists()"/>
+         </constraint>
       </element>
       <element id="Communication.meta">
          <path value="Communication.meta"/>
@@ -183,6 +189,44 @@
             <comment value="Author"/>
          </mapping>
       </element>
+      <!-- MP-2033: relation to the accepted (new) MedicationAgreement -->
+      <element id="Communication.extension">
+         <path value="Communication.extension"/>
+         <slicing>
+            <discriminator>
+               <type value="value"/>
+               <path value="url"/>
+            </discriminator>
+            <rules value="open"/>
+         </slicing>
+      </element>
+      
+      <element id="Communication.extension:relationToNewMedicationAgreement">
+         <path value="Communication.extension"/>
+         <sliceName value="relationToNewMedicationAgreement"/>
+         <short value="RelationToNewMedicationAgreement"/>
+         <definition value="Relation from this reply to the new medication agreement building block that is accepted (possibly with changes)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="Extension"/>
+         </type>
+      </element>
+      
+      <element id="Communication.extension:relationToNewMedicationAgreement.url">
+         <path value="Communication.extension.url"/>
+         <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-mp-RelationToNewMedicationAgreement"/>
+      </element>
+      
+      <element id="Communication.extension:relationToNewMedicationAgreement.value[x]">
+         <path value="Communication.extension.value[x]"/>
+         <min value="1"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
+         </type>
+      </element>
+
       <element id="Communication.payload">
          <path value="Communication.payload"/>
          <min value="1"/>
