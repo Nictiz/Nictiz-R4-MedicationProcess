@@ -61,11 +61,7 @@
         <min value="1"/>
         <max value="1"/>
         <type value="Bundle"/>
-        <documentation value="Bundle containing the results after applying the latest stop logic per MBH for the given patient (and optional filters). 
-                              
-                              When the operation is invoked in the context of a specific kind (e.g. on MedicationRequest, MedicationAgreement or AdministrationAgreement, or via a search where only one kind is being queried), the Bundle SHALL at least contain the building blocks of that kind that are active or represent the latest stop per MBH, including latest stopped building blocks of that kind even if their PeriodOfUse lies outside the searched period.
-                              
-                              If the include-details parameter is true, the Bundle MAY additionally contain other related resources. For example the underlying MedicationAgreement, AdministrationAgreement and VariableDosingRegimen resources used to determine the latest stop."/>
+        <documentation value="Bundle containing the results after applying the latest stop logic per MBH for the given patient (and any optional filters).&#xA;&#xA;When the operation is invoked in the context of a specific kind (MA, TA or WDS), the Bundle SHALL at least contain the building blocks of that kind that are active or represent the latest stop per MBH, including latest stopped building blocks of that kind even if their PeriodOfUse lies outside the searched period."/>
     </parameter>
-
+    
 </OperationDefinition>
