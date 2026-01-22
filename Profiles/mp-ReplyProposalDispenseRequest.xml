@@ -54,7 +54,7 @@
             <key value="mp-2033-vv-1"/>
             <severity value="error"/>
             <human value="If the decision is 'accepted' (11) or 'accepted with changes' (12), the relation to the new DispenseRequest SHALL be present; otherwise it SHALL be absent."/>
-            <expression value="(payload.content.extension.value.ofType(CodeableConcept).coding.code.intersect({'11','12'}).exists()) = extension.where(url='http://nictiz.nl/fhir/StructureDefinition/ext-mp-RelationToNewDispenseRequest').exists()"/>
+            <expression value="(payload.content.extension.value.ofType(CodeableConcept).coding.code.intersect({'11','12'}).exists()) = extension.where(url='http://nictiz.nl/fhir/StructureDefinition/ext-Communication.RelationToNewDispenseRequest').exists()"/>
          </constraint>
       </element>
       <element id="Communication.meta">
@@ -219,7 +219,7 @@
       
       <element id="Communication.extension:relationToNewDispenseRequest.url">
          <path value="Communication.extension.url"/>
-         <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-mp-RelationToNewDispenseRequest"/>
+         <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-Communication.RelationToNewDispenseRequest"/>
       </element>
       
       <element id="Communication.extension:relationToNewDispenseRequest.value[x]">
