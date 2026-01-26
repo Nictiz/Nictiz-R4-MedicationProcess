@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="ext-RelationToNewMedicationAgreement"/>
+    <url value="http://nictiz.nl/fhir/StructureDefinition/ext-Communication.RelationToNewMedicationAgreement"/>
+    <version value="2.0.0-rc.3"/>
+    <name value="ExtCommunicationRelationToNewMedicationAgreement"/>
+    <title value="ext Communication.RelationToNewMedicationAgreement"/>
+    <status value="active"/>
+    <publisher value="Nictiz"/>
+    <description value="Relation from a reply (Communication) to the newly created MedicationAgreement that results from an accepted or accepted-with-changes proposal."/>
+    <fhirVersion value="4.0.1"/>    
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>    
+    <context>
+        <type value="element"/>
+        <expression value="Communication"/>
+    </context>    
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+            <short value="Relation to new MedicationAgreement"/>
+        </element>        
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-Communication.RelationToNewMedicationAgreement"/>
+        </element>
+        
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <short value="Reference to the new MedicationAgreement"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

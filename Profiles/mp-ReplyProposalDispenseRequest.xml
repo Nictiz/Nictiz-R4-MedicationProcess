@@ -50,6 +50,12 @@
             <map value="mp-dataelement9x-539"/>
             <comment value="Response"/>
          </mapping>
+         <constraint>
+            <key value="mp-2033-vv-1"/>
+            <severity value="error"/>
+            <human value="If the decision is 'accepted' (11) or 'accepted with changes' (12), the relation to the new DispenseRequest SHALL be present; otherwise it SHALL be absent."/>
+            <expression value="(payload.content.extension.value.ofType(CodeableConcept).coding.code.intersect({'11','12'}).exists()) = extension.where(url='http://nictiz.nl/fhir/StructureDefinition/ext-Communication.RelationToNewDispenseRequest').exists()"/>
+         </constraint>
       </element>
       <element id="Communication.meta">
          <path value="Communication.meta"/>
@@ -187,15 +193,58 @@
             <comment value="Author"/>
          </mapping>
       </element>
+      <!-- MP-2033: relation to the accepted (new) DispenseRequest -->
+      <element id="Communication.extension">
+         <path value="Communication.extension"/>
+         <slicing>
+            <discriminator>
+               <type value="value"/>
+               <path value="url"/>
+            </discriminator>
+            <rules value="open"/>
+         </slicing>
+      </element>
+      
+      <element id="Communication.extension:relationToNewDispenseRequest">
+         <path value="Communication.extension"/>
+         <sliceName value="relationToNewDispenseRequest"/>
+         <short value="RelationToNewDispenseRequest"/>
+         <definition value="Relation from this reply to the new dispense request building block that is accepted (possibly with changes)."/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="Extension"/>
+         </type>
+      </element>
+      
+      <element id="Communication.extension:relationToNewDispenseRequest.url">
+         <path value="Communication.extension.url"/>
+         <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-Communication.RelationToNewDispenseRequest"/>
+      </element>
+      
+      <element id="Communication.extension:relationToNewDispenseRequest.value[x]">
+         <path value="Communication.extension.value[x]"/>
+         <min value="1"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest"/>
+         </type>
+      </element>
+
       <element id="Communication.payload">
          <path value="Communication.payload"/>
          <min value="1"/>
       </element>
       <element id="Communication.payload.content[x]">
          <path value="Communication.payload.content[x]"/>
+         <short value="ResponseDispenseRequestExplanation"/>
+         <definition value="Explanation (free text) for the response to the proposed dispense request."/>
+         <alias value="AntwoordVerstrekkingsverzoekToelichting"/>
          <type>
             <code value="string"/>
          </type>
+         <min value="0"/>
+         <max value="1"/>
       </element>
       <element id="Communication.payload.content[x].extension">
          <path value="Communication.payload.content[x].extension"/>
@@ -213,14 +262,14 @@
       </element>
       <element id="Communication.payload.content[x].extension:contentCodeableConcept.value[x]">
          <path value="Communication.payload.content[x].extension.value[x]"/>
-         <short value="ResponseDispenseRequest"/>
-         <definition value="Response to the proposed dispense request."/>
-         <alias value="AntwoordVerstrekkingsverzoek"/>
+         <short value="ResponseDispenseRequestDecision"/>
+         <definition value="Decision for the response to the proposed dispense request."/>
+         <alias value="AntwoordVerstrekkingsverzoekBesluit"/>
          <min value="1"/>
          <binding>
             <strength value="required"/>
-            <description value="Response to the proposed dispense request."/>
-            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.36--20180412153353"/>
+            <description value="Decision for the response to the proposed dispense request."/>
+            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.36--20251217150952"/>
          </binding>
          <mapping>
             <identity value="mp-dataset-mp9-300-beta4-20241118"/>
