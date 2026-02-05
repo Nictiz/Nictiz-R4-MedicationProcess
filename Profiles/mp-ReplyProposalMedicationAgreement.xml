@@ -15,7 +15,7 @@
          <use value="work"/>
       </telecom>
    </contact>
-   <description value="Profile on the Communication resource which represents the reply proposal medication agreement conform information standard ['Medication Process'](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces)."/>
+   <description value="The response proposal medication agreement is a response from the prescriber to the proposal medication agreement. In this response, the prescriber indicates whether they agree (after which an (adjusted) medication agreement will follow) or disagree (and the reason for this)."/>
    <purpose value="To define the reply proposal medication agreement as stated in the information standard Medication Process."/>
    <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
    <fhirVersion value="4.0.1"/>
