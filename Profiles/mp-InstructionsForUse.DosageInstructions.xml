@@ -453,6 +453,7 @@
       <sliceName value="asNeededCodeableConcept" />
       <short value="Condition" />
       <definition value="Condition for administration of medication can be:&#xD;&#xA;&#xD;&#xA;*a measured physiological value (plasma glucose level, body temperature, blood pressure);&#xD;&#xA;*a symptom or other condition (headache, itching).&#xD;&#xA;&#xD;&#xA;Relevant “as needed” conditions from NHG Table 25 form the value list for transmitting this concept in coded form. The conditions supported in the G-standard are included in file 362. The textual description of that code must always be provided as well.&#xD;&#xA;&#xD;&#xA;Physiological measurements or other conditions that are not included in the “as needed” conditions of NHG Table 25 can be expressed in free text using the OTH code." />
+      <comment value="If only one 'asNeeded' concept is exchanged within a Dosage, use Dosage.asNeeded[x]. Otherwise use the extension Dosage.extension:asNeeded.value[x] for when multiple 'asNeeded' concepts are to be exchanged.&#xD;&#xA;&#xD;&#xA;Can express &quot;as needed&quot; without a reason by setting the Boolean = True.  In this case the CodeableConcept is not populated.  Or you can express &quot;as needed&quot; with a reason by including the CodeableConcept.  In this case the Boolean is assumed to be True.  If you set the Boolean to False, then the dose is given according to the schedule and is not &quot;prn&quot; or &quot;as needed&quot;." />
       <alias value="Criterium" />
       <type>
         <code value="CodeableConcept" />

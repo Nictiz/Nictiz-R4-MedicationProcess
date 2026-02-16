@@ -209,7 +209,7 @@
     <element id="Medication.ingredient.strength.numerator">
       <path value="Medication.ingredient.strength.numerator" />
       <short value="IngredientAmount" />
-      <definition value="The amount and unit of this ingredient. This is the numerator for the calculation of the concentration. The unit must be selected from the G-Standard; the supported units are listed in file 902, thesaurus number 2." />
+      <definition value="The amount and unit of this ingredient. This is the numerator for the calculation of the concentration. The unit in the extension .extension:gstdSimpleQuantity must be selected from the G-Standard; the supported units are listed in file 902, thesaurus number 2." />
       <alias value="IngredientHoeveelheid" />
       <type>
         <code value="Quantity" />
