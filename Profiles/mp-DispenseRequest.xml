@@ -380,7 +380,7 @@
       <element id="MedicationRequest.dispenseRequest.validityPeriod">
          <path value="MedicationRequest.dispenseRequest.validityPeriod"/>
          <short value="ValidityPeriod"/>
-         <definition value="The period during which dispensing is authorized. This is a logistical validity period (from when until when the supplier may dispense), not the therapeutic period of use of the medication."/>
+         <definition value="During the approved period of use, the pharmacist has permission to dispense medicine so that the patient has a sufficient amount of medication. In many cases, the approved period of use can be described by only an end date: the approved end date of use."/>
          <alias value="Verbruiksperiode"/>
          <type>
             <code value="Period"/>
