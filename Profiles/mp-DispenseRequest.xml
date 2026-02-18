@@ -154,7 +154,7 @@
     <element id="MedicationRequest.status">
       <path value="MedicationRequest.status" />
       <short value="CanceledIndicator" />
-      <comment value="This element is implicitly mapped to the zib concept NL-CM:9.10.20062 (PeriodOfUse). Unless a more appropriate status is recorded, the following guidance applies:&#xD;&#xA;&#xD;&#xA;* When the value of CanceledIndicator is _true_, `.status` will be set to _entered-in-error_.&#xD;&#xA;* When PeriodOfUse.startDateTime is absent and the value of PeriodOfUse.endDateTime is in the future, `.status` will usually be set to _active_.&#xD;&#xA;* When the value of PeriodOfUse.startDateTime is in the past or the future and PeriodOfUse.endDateTime is absent or its value is in the future, `.status` will usually be set to _active_.&#xD;&#xA;* When PeriodOfUse.endDateTime exists and its value is in the past, `.status` will usually be set to _completed_.&#xD;&#xA;* When PeriodOfUse.Duration and PeriodOfUse.startDateTime are known, PeriodOfUse.endDateTime can be deduced and the previous rules apply. &#xD;&#xA;* When a system is unable to infer the status, `.status` will be set to _unknown_. The _unknown_ code is not to be used to convey other statuses. The _unknown_ code should be used when one of the statuses applies, but the authoring system doesn't know the current state of the DispenseRequest." />
+      <comment value="This element is implicitly mapped to ValidityPeriod . Unless a more appropriate status is recorded, the following guidance applies:&#xD;&#xA;&#xD;&#xA;* When the value of CanceledIndicator is _true_, `.status` will be set to _entered-in-error_.&#xD;&#xA;* When dispenseRequest.validityPeriod.startDateTime is absent and dispenseRequest.validityPeriod.endDateTime is in the future, `.status` will usually be set to _active_.&#xD;&#xA;* When dispenseRequest.validityPeriod.startDateTime is in the past or the future and dispenseRequest.validityPeriod.endDateTime is absent or its value is in the future, `.status` will usually be set to _active_.&#xD;&#xA;* When dispenseRequest.validityPeriod.endDateTime exists and its value is in the past, `.status` will usually be set to _completed_.&#xD;&#xA;* When dispenseRequest.validityPeriod.duration and dispenseRequest.validityPeriod.startDateTime are known, the end date can be deduced and the previous rules apply.&#xD;&#xA;* When a system is unable to infer the status, `.status` will be set to _unknown_. The _unknown_ code is not to be used to convey other statuses. The _unknown_ code should be used when one of the statuses applies, but the authoring system doesn't know the current state of the DispenseRequest."/>
       <alias value="GeannuleerdIndicator" />
       <mapping>
         <identity value="mp-dataset-mp9-300-beta4-20241118" />
@@ -169,7 +169,7 @@
       <mapping>
         <identity value="zib-dispenserequest-v1.0.3-2020EN" />
         <map value="NL-CM:9.10.20062" />
-        <comment value="PeriodOfUse (implicit, main mapping is on `.dispenseRequest.validityPeriod` and extension ext-TimeInterval.Duration)" />
+        <comment value="NL-CM:9.10.20062 (PeriodOfUse) [DEPRECATED] - status is derived from validityPeriod in this profile."/>
       </mapping>
     </element>
     <element id="MedicationRequest.intent">
@@ -379,8 +379,8 @@
     </element>
     <element id="MedicationRequest.dispenseRequest.validityPeriod">
       <path value="MedicationRequest.dispenseRequest.validityPeriod" />
-      <short value="PeriodOfUse" />
-      <definition value="During the approved period of use, the pharmacist has permission to dispense medicine so that the patient has a sufficient amount of medication. In many cases, the approved period of use can be described by only an end date: the approved end date of use." />
+      <short value="ValidityPeriod"/>
+      <definition value="During the approved validity period, the pharmacist has permission to dispense medicine so that the patient has a sufficient amount of medication. In many cases, the approved validity period can be described by only an end date: the approved end date of use."/>
       <alias value="Verbruiksperiode" />
       <type>
         <code value="Period" />
@@ -389,7 +389,17 @@
       <mapping>
         <identity value="zib-dispenserequest-v1.0.3-2020EN" />
         <map value="NL-CM:9.10.20062" />
-        <comment value="PeriodOfUse" />
+        <comment value="PeriodOfUse [DEPRECATED]"/>
+      </mapping> 
+      <mapping>
+         <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+         <map value="2.16.840.1.113883.2.4.3.11.60.20.77.2.4.280"/>
+         <comment value="Verbruiksperiode (MP concept)"/>
+      </mapping>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+         <map value="2.16.840.1.113883.2.4.3.11.60.20.77.2.4.280"/>
+         <comment value="Verbruiksperiode (MP concept)"/>
       </mapping>
     </element>
     <element id="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">
