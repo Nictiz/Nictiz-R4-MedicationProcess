@@ -20,14 +20,14 @@
    <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
    <fhirVersion value="4.0.1"/>
    <mapping>
-      <identity value="mp-dataset-mp9-300-beta4-20241118"/>
-      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20241118T151205/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
-      <name value="ART-DECOR Dataset MP9 3.0.0-beta.4 20241118"/>
-   </mapping>
-   <mapping>
       <identity value="mp-dataset-mp9-300-rc1-20250522"/>
       <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20250522T132618/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
       <name value="ART-DECOR Dataset MP9 3.0.0-rc.1 20250522"/>
+   </mapping>
+   <mapping>
+      <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20260213T112547/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
+      <name value="ART-DECOR Dataset MP9 3.0.0-rc.2 20260213"/>
    </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
@@ -41,12 +41,12 @@
          <definition value="Response to the proposal medication agreement."/>
          <alias value="Antwoord"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-539"/>
             <comment value="Response"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-539"/>
             <comment value="Response"/>
          </mapping>
@@ -90,12 +90,12 @@
          <min value="1"/>
          <max value="1"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-540"/>
             <comment value="Identification"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-540"/>
             <comment value="Identification"/>
          </mapping>
@@ -114,16 +114,16 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
-            <map value="mp-dataelement9x-544"/>
-            <comment value="RelationToProposalData"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-544"/>
             <comment value="RelationToProposalData"/>
          </mapping>
-      </element>      
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-544"/>
+            <comment value="RelationToProposalData"/>
+         </mapping>
+      </element>
       <element id="Communication.subject">
          <path value="Communication.subject"/>
          <short value="Patient"/>
@@ -136,12 +136,12 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-1"/>
             <comment value="Patient"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1"/>
             <comment value="Patient"/>
          </mapping>
@@ -153,12 +153,12 @@
          <alias value="AntwoordDatum"/>
          <min value="1"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-541"/>
             <comment value="ResponseDate"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-541"/>
             <comment value="ResponseDate"/>
          </mapping>
@@ -182,12 +182,12 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-542"/>
             <comment value="Author"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-542"/>
             <comment value="Author"/>
          </mapping>
@@ -203,7 +203,6 @@
             <rules value="open"/>
          </slicing>
       </element>
-      
       <element id="Communication.extension:relationToNewMedicationAgreement">
          <path value="Communication.extension"/>
          <sliceName value="relationToNewMedicationAgreement"/>
@@ -215,12 +214,10 @@
             <code value="Extension"/>
          </type>
       </element>
-      
       <element id="Communication.extension:relationToNewMedicationAgreement.url">
          <path value="Communication.extension.url"/>
          <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/ext-Communication.RelationToNewMedicationAgreement"/>
       </element>
-      
       <element id="Communication.extension:relationToNewMedicationAgreement.value[x]">
          <path value="Communication.extension.value[x]"/>
          <min value="1"/>
@@ -229,7 +226,6 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
          </type>
       </element>
-
       <element id="Communication.payload">
          <path value="Communication.payload"/>
          <min value="1"/>
@@ -271,12 +267,12 @@
             <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.44--20251217150448"/>
          </binding>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-1364"/>
             <comment value="ResponseMedicationAgreement"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1364"/>
             <comment value="ResponseMedicationAgreement"/>
          </mapping>

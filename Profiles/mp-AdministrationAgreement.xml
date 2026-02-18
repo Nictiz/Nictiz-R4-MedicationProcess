@@ -30,14 +30,14 @@
       <name value="zib InstructionsForUse-v1.2.1(2020EN)"/>
    </mapping>
    <mapping>
-      <identity value="mp-dataset-mp9-300-beta4-20241118"/>
-      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20241118T151205/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
-      <name value="ART-DECOR Dataset MP9 3.0.0-beta.4 20241118"/>
-   </mapping>
-   <mapping>
       <identity value="mp-dataset-mp9-300-rc1-20250522"/>
       <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20250522T132618/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
       <name value="ART-DECOR Dataset MP9 3.0.0-rc.1 20250522"/>
+   </mapping>
+   <mapping>
+      <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20260213T112547/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
+      <name value="ART-DECOR Dataset MP9 3.0.0-rc.2 20260213"/>
    </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
@@ -71,12 +71,12 @@
       <element id="MedicationDispense.extension:additionalInformation.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-342"/>
             <comment value="AdministrationAgreementAdditionalInformation"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-342"/>
             <comment value="AdministrationAgreementAdditionalInformation"/>
          </mapping>
@@ -92,12 +92,12 @@
       <element id="MedicationDispense.extension:reasonModificationOrDiscontinuation.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-333"/>
             <comment value="AdministrationAgreementReasonModificationOrDiscontinuation"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-333"/>
             <comment value="AdministrationAgreementReasonModificationOrDiscontinuation"/>
          </mapping>
@@ -173,7 +173,12 @@
          <mapping>
             <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-1484"/>
-         </mapping>          
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-1484"/>
+            <comment value=""/>
+         </mapping>
       </element>
       <element id="MedicationDispense.extension:copyIndicator">
          <path value="MedicationDispense.extension"/>
@@ -186,12 +191,12 @@
       <element id="MedicationDispense.extension:copyIndicator.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-345"/>
             <comment value="CopyIndicator"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-345"/>
             <comment value="CopyIndicator"/>
          </mapping>
@@ -207,12 +212,12 @@
       <element id="MedicationDispense.extension:pharmaceuticalTreatmentIdentifier.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-42"/>
             <comment value="Identification"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-42"/>
             <comment value="Identification"/>
          </mapping>
@@ -228,12 +233,12 @@
       <element id="MedicationDispense.extension:distributionForm.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-1371"/>
             <comment value="DistributionForm"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1371"/>
             <comment value="DistributionForm"/>
          </mapping>
@@ -249,12 +254,12 @@
       <element id="MedicationDispense.extension:relationAdministrationAgreement.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-1380"/>
             <comment value="RelationAdministrationAgreement"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1380"/>
             <comment value="RelationAdministrationAgreement"/>
          </mapping>
@@ -271,12 +276,12 @@
          <path value="MedicationDispense.extension.value[x]"/>
          <definition value="The date and time when the AdministrationAgreement was recorded. RegistrationDateTime is used to accurately determine the chronological order of agreements. Therefore, the date and time are mandatory. These values are immutable. When consulting or receiving this AdministrationAgreement, the original RegistrationDateTime remains unchanged.&#xD;&#xA;&#xD;&#xA;Note: This data element differs from the data element RegistrationDateTime in zib RegistratieGegevens-v1.1.1 (2024NL). In zib RegistratieGegevens-v1.1.1 (2024NL), RegistrationDateTime refers to the date and time when the data was recorded. This may be the initial registration or the date and time when data was transferred. The zib concept RegistrationDateTime is not applied in MP9."/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-1481"/>
             <comment value="RegistrationDateTime"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1481"/>
             <comment value="RegistrationDateTime"/>
          </mapping>
@@ -299,12 +304,12 @@
             <comment value="AdministrationAgreementStopType [DEPRECATED]"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-340"/>
             <comment value="AdministrationAgreementStopType"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-340"/>
             <comment value="AdministrationAgreementStopType"/>
          </mapping>
@@ -330,12 +335,12 @@
          <short value="Identification"/>
          <alias value="Identificatie"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-344"/>
             <comment value="Identification"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-344"/>
             <comment value="Identification"/>
          </mapping>
@@ -360,12 +365,12 @@
             <comment value="AdministrationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType) [DEPRECATED]"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-340"/>
             <comment value="AdministrationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-340"/>
             <comment value="AdministrationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
          </mapping>

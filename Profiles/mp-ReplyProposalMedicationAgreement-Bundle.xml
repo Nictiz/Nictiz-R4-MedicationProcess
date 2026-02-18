@@ -20,14 +20,14 @@
    <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
    <fhirVersion value="4.0.1"/>
    <mapping>
-      <identity value="mp-dataset-mp9-300-beta4-20241118"/>
-      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20241118T151205/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
-      <name value="ART-DECOR Dataset MP9 3.0.0-beta.4 20241118"/>
-   </mapping>
-   <mapping>
       <identity value="mp-dataset-mp9-300-rc1-20250522"/>
       <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20250522T132618/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
       <name value="ART-DECOR Dataset MP9 3.0.0-rc.1 20250522"/>
+   </mapping>
+   <mapping>
+      <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20260213T112547/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
+      <name value="ART-DECOR Dataset MP9 3.0.0-rc.2 20260213"/>
    </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
@@ -47,7 +47,6 @@
          <min value="0"/>
          <max value="1"/>
       </element>
-      
       <element id="Bundle.entry">
          <path value="Bundle.entry"/>
          <slicing>
@@ -72,7 +71,7 @@
             <code value="Resource"/>
             <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-ReplyProposalMedicationAgreement"/>
          </type>
-      </element>      
+      </element>
       <element id="Bundle.entry:patient">
          <path value="Bundle.entry"/>
          <sliceName value="patient"/>
@@ -86,12 +85,12 @@
             <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-1"/>
             <comment value="Patient"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1"/>
             <comment value="Patient"/>
          </mapping>
