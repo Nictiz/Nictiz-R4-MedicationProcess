@@ -169,7 +169,12 @@
          <mapping>
             <identity value="zib-dispenserequest-v1.0.3-2020EN" />
             <map value="NL-CM:9.10.20062" />
-            <comment value="NL-CM:9.10.20062 (PeriodOfUse) [DEPRECATED] - status is derived from validityPeriod in this profile." />
+            <comment value="PeriodOfUse [DEPRECATED] (implicit, main mapping is on `.dispenseRequest.validityPeriod` and extension ext-TimeInterval.Duration)"/>
+         </mapping>
+         <mapping>
+             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+             <map value="mp-dataelement9x-280"/>
+             <comment value="ValidityPeriod (implicit, main mapping is on `.dispenseRequest.validityPeriod` and extension ext-TimeInterval.Duration)"/>
          </mapping>
       </element>
       <element id="MedicationRequest.intent">
@@ -391,16 +396,11 @@
             <map value="NL-CM:9.10.20062" />
             <comment value="PeriodOfUse [DEPRECATED]"/>
          </mapping>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522" />
-            <map value="2.16.840.1.113883.2.4.3.11.60.20.77.2.4.280" />
-            <comment value="Verbruiksperiode (MP concept)" />
-         </mapping>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213" />
-            <map value="2.16.840.1.113883.2.4.3.11.60.20.77.2.4.280" />
-            <comment value="Verbruiksperiode (MP concept)" />
-         </mapping>
+        <mapping>
+          <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+          <map value="mp-dataelement9x-280"/>
+          <comment value="ValidityPeriod"/>
+        </mapping>
       </element>
       <element id="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">
          <path value="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed" />
