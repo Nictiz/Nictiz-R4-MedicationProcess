@@ -35,7 +35,7 @@
          <value value="070-3173450"/>
       </telecom>
    </contact>
-   <description value="Value set combining the distinct value sets that the                     standard MP9 binds to MedicationCode (mp-dataelement9x-261). This value set as                     such does not exist within the standard MP9 but facilitates referencing all                     these value sets at the same time."/>
+   <description value="Value set combining the distinct value sets that the standard MP9 binds to MedicationCode (mp-dataelement9x-261). This value set as such does not exist within the standard MP9 but facilitates referencing all these value sets at the same time."/>
    <immutable value="false"/>
    <compose>
       <include>

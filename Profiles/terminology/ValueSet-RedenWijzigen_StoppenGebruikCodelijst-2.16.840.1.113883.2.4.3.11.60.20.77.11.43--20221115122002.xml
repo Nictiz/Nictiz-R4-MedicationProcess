@@ -1,7 +1,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="2.16.840.1.113883.2.4.3.11.60.20.77.11.43--20221115122002"/>
    <meta>
-      <lastUpdated value="2023-10-10T10:34:18Z"/>
+      <lastUpdated value="2026-02-09T12:41:35Z"/>
       <source value="http://decor.nictiz.nl/fhir/4.0/mp-"/>
       <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
       <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
@@ -26,7 +26,7 @@
    <title value="RedenWijzigen-StoppenGebruikCodelijst"/>
    <status value="draft"/>
    <experimental value="false"/>
-   <date value="2023-10-10T10:34:18Z"/>
+   <date value="2026-02-09T12:41:35Z"/>
    <publisher value="Nictiz"/>
    <contact>
       <name value="Nictiz"/>
@@ -197,10 +197,10 @@
          </concept>
          <concept>
             <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-               <valueString value="hervatten beleid vorige voorschrijver"/>
+               <valueString value="hervatten beleid vorige zorgverlener"/>
             </extension>
             <code value="112261000146100"/>
-            <display value="hervatten van beleid van vorige voorschrijver"/>
+            <display value="hervatten van beleid van vorige zorgverlener"/>
             <designation>
                <language value="en-US"/>
                <use>
@@ -208,7 +208,7 @@
                   <code value="900000000000003001"/>
                   <display value="Fully specified name"/>
                </use>
-               <value value="Treatment previous prescriber continued (situation)"/>
+               <value value="Treatment previous health professional continued (situation)"/>
             </designation>
          </concept>
          <concept>

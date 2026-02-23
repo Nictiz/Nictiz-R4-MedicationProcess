@@ -1,7 +1,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="2.16.840.1.113883.2.4.3.11.60.20.77.11.45--20220310164013"/>
    <meta>
-      <lastUpdated value="2022-04-01T14:15:51Z"/>
+      <lastUpdated value="2026-02-09T13:02:53Z"/>
       <source value="http://decor.nictiz.nl/fhir/4.0/mp-"/>
       <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
       <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
@@ -24,9 +24,9 @@
    <version value="2022-03-10T16:40:13"/>
    <name value="AanvInfoMA"/>
    <title value="Aanvullende Informatie voor MA"/>
-   <status value="active"/>
+   <status value="draft"/>
    <experimental value="false"/>
-   <date value="2022-04-01T14:15:51Z"/>
+   <date value="2026-02-09T13:02:53Z"/>
    <publisher value="Nictiz"/>
    <contact>
       <name value="Nictiz"/>
@@ -62,11 +62,15 @@
          </concept>
          <concept>
             <code value="6"/>
-            <display value="Wijziging in GDS per direct"/>
+            <display value="Direct op toedienlijst of in GDS"/>
          </concept>
          <concept>
             <code value="7"/>
-            <display value="Wijziging in GDS per rolwissel"/>
+            <display value="Per volgende GDS-rolwissel op toedienlijst"/>
+         </concept>
+         <concept>
+            <code value="11"/>
+            <display value="Na reguliere voorschriftverwerking op toedienlijst of in GDS"/>
          </concept>
          <concept>
             <code value="8"/>
