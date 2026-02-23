@@ -1,7 +1,7 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="category"/>
   <url value="http://nictiz.nl/fhir/SearchParameter/category"/>
-  <version value="2.0.0-rc.3"/>
+  <version value="2.0.0-rc.4"/>
   <name value="Category"/>
   <status value="active"/>
   <publisher value="Nictiz"/>
