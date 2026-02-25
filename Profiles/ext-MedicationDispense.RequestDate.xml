@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="ext-MedicationDispense.RequestDate"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationDispense.RequestDate"/>
-   <version value="2.0.0-rc.4"/>
+   <version value="2.0.0-rc.6"/>
    <name value="ExtMedicationDispenseRequestDate"/>
    <title value="ext MedicationDispense.RequestDate"/>
    <status value="active"/>

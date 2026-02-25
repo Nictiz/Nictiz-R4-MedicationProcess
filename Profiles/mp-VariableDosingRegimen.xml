@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="mp-VariableDosingRegimen"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/mp-VariableDosingRegimen"/>
-   <version value="2.0.0-rc.4"/>
+   <version value="2.0.0-rc.6"/>
    <name value="MpVariableDosingRegimen"/>
    <title value="mp VariableDosingRegimen"/>
    <status value="active"/>
