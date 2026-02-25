@@ -25,13 +25,15 @@
     <purpose value="To provide a deterministic, server-side application of the 'latest stop per MBH' rule in the MedicationProcess, so that clients can obtain a consistent view of stopped and ongoing medication without having to reimplement stop logic themselves."/>
     <affectsState value="false"/>
     <code value="latest-stops"/>
-    <system value="true"/>
-    <type value="true"/>
-    <instance value="false"/>
-    
+
     <!-- The resource types this OperationDefinition applies to -->
     <resource value="MedicationRequest"/>
     <resource value="MedicationDispense"/> <!--AdministrationAgreement-->   
+    
+    <system value="true"/>
+    <type value="true"/>
+    <instance value="false"/>
+
     <!-- Input parameters -->
     <parameter>
         <name value="patient"/>
