@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="mp-MedicationAgreement"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
-   <version value="2.0.0-rc.4"/>
+   <version value="2.0.0-rc.3"/>
    <name value="MpMedicationAgreement"/>
    <title value="mp MedicationAgreement"/>
    <status value="active"/>
@@ -138,11 +138,12 @@
          <mapping>
             <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-1365"/>
+            <comment value="Condition"/>
          </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1365"/>
-            <comment value=""/>
+            <comment value="Condition"/>
          </mapping>
       </element>
       <element id="MedicationRequest.extension:pharmaceuticalTreatmentIdentifier">
