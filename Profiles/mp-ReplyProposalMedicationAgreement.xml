@@ -45,7 +45,7 @@
             <severity value="error"/>
             <human value="If the decision is 'accepted' (11) or 'accepted with changes' (12), the relation to the new MedicationAgreement SHALL be present; otherwise it SHALL be absent."/>
             <expression value="(payload.content.extension.value.ofType(CodeableConcept).coding.code.intersect({'11','12'}).exists()) = extension.where(url='http://nictiz.nl/fhir/StructureDefinition/ext-Communication.RelationToNewMedicationAgreement').exists()"/>
-         </constraint>         
+         </constraint>        
          <mapping>
             <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-539"/>
