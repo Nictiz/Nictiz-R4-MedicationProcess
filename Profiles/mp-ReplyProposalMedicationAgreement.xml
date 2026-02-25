@@ -40,22 +40,22 @@
          <short value="Response"/>
          <definition value="Response to the proposal medication agreement."/>
          <alias value="Antwoord"/>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-            <map value="mp-dataelement9x-539"/>
-            <comment value="Response"/>
-         </mapping>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
-            <map value="mp-dataelement9x-539"/>
-            <comment value="Response"/>
-         </mapping>
          <constraint>
             <key value="mp-2033-ma-1"/>
             <severity value="error"/>
             <human value="If the decision is 'accepted' (11) or 'accepted with changes' (12), the relation to the new MedicationAgreement SHALL be present; otherwise it SHALL be absent."/>
             <expression value="(payload.content.extension.value.ofType(CodeableConcept).coding.code.intersect({'11','12'}).exists()) = extension.where(url='http://nictiz.nl/fhir/StructureDefinition/ext-Communication.RelationToNewMedicationAgreement').exists()"/>
-         </constraint>
+         </constraint>        
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <map value="mp-dataelement9x-539"/>
+            <comment value="Response"/>
+         </mapping>         
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-539"/>
+            <comment value="Response"/>
+         </mapping>
       </element>
       <element id="Communication.meta">
          <path value="Communication.meta"/>

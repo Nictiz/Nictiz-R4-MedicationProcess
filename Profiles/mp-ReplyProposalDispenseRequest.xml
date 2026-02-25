@@ -40,6 +40,12 @@
          <short value="Response"/>
          <definition value="Response to the proposal dispense request."/>
          <alias value="Antwoord"/>
+         <constraint>
+            <key value="mp-2033-vv-1"/>
+            <severity value="error"/>
+            <human value="If the decision is 'accepted' (11) or 'accepted with changes' (12), the relation to the new DispenseRequest SHALL be present; otherwise it SHALL be absent."/>
+            <expression value="(payload.content.extension.value.ofType(CodeableConcept).coding.code.intersect({'11','12'}).exists()) = extension.where(url='http://nictiz.nl/fhir/StructureDefinition/ext-Communication.RelationToNewDispenseRequest').exists()"/>
+         </constraint>        
          <mapping>
             <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-539"/>
@@ -50,12 +56,6 @@
             <map value="mp-dataelement9x-539"/>
             <comment value="Response"/>
          </mapping>
-         <constraint>
-            <key value="mp-2033-vv-1"/>
-            <severity value="error"/>
-            <human value="If the decision is 'accepted' (11) or 'accepted with changes' (12), the relation to the new DispenseRequest SHALL be present; otherwise it SHALL be absent."/>
-            <expression value="(payload.content.extension.value.ofType(CodeableConcept).coding.code.intersect({'11','12'}).exists()) = extension.where(url='http://nictiz.nl/fhir/StructureDefinition/ext-Communication.RelationToNewDispenseRequest').exists()"/>
-         </constraint>
       </element>
       <element id="Communication.meta">
          <path value="Communication.meta"/>
