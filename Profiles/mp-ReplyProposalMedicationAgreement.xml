@@ -235,11 +235,11 @@
          <short value="ResponseMedicationAgreementExplanation"/>
          <definition value="Explanation (free text) for the response to the proposed medication agreement."/>
          <alias value="AntwoordMedicatieafspraakToelichting"/>
+         <min value="0"/>
+         <max value="1"/>
          <type>
             <code value="string"/>
          </type>
-         <min value="0"/>
-         <max value="1"/>
       </element>
       <element id="Communication.payload.content[x].extension">
          <path value="Communication.payload.content[x].extension"/>
