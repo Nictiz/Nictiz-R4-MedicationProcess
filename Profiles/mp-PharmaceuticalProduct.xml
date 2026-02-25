@@ -107,6 +107,8 @@
             <key value="ref-1" />
             <severity value="error" />
             <human value="SHALL have a contained resource if a local reference is provided" />
+            <expression value="hasValue() or (children().count() > id.count())" />
+            <xpath value="@value|f:*|h:div" />
             <source value="http://hl7.org/fhir/StructureDefinition/Medication" />
          </constraint>
       </element>
@@ -136,6 +138,8 @@
             <key value="rat-1" />
             <severity value="error" />
             <human value="Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present" />
+            <expression value="hasValue() or (children().count() > id.count())" />
+            <xpath value="@value|f:*|h:div" />
             <source value="http://hl7.org/fhir/StructureDefinition/Medication" />
          </constraint>
       </element>
@@ -198,6 +202,8 @@
             <key value="rat-1" />
             <severity value="error" />
             <human value="Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present" />
+            <expression value="hasValue() or (children().count() > id.count())" />
+            <xpath value="@value|f:*|h:div" />
             <source value="http://hl7.org/fhir/StructureDefinition/Medication" />
          </constraint>
          <mapping>
@@ -219,6 +225,8 @@
             <key value="qty-3" />
             <severity value="error" />
             <human value="If a code for the unit is present, the system SHALL also be present" />
+            <expression value="code.empty() or system.exists()" />
+            <xpath value="not(exists(f:code)) or exists(f:system)" />
             <source value="http://hl7.org/fhir/StructureDefinition/Ratio" />
          </constraint>
          <mapping>
@@ -245,6 +253,8 @@
             <key value="qty-3" />
             <severity value="error" />
             <human value="If a code for the unit is present, the system SHALL also be present" />
+            <expression value="code.empty() or system.exists()" />
+            <xpath value="not(exists(f:code)) or exists(f:system)" />
             <source value="http://hl7.org/fhir/StructureDefinition/Ratio" />
          </constraint>
          <mapping>
