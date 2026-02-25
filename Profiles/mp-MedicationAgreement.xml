@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="mp-MedicationAgreement"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
-   <version value="2.0.0-rc.4"/>
+   <version value="2.0.0-rc.6"/>
    <name value="MpMedicationAgreement"/>
    <title value="mp MedicationAgreement"/>
    <status value="active"/>

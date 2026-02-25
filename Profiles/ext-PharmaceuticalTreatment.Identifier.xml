@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="ext-PharmaceuticalTreatment.Identifier"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/ext-PharmaceuticalTreatment.Identifier"/>
-   <version value="2.0.0-rc.4"/>
+   <version value="2.0.0-rc.6"/>
    <name value="ExtPharmaceuticalTreatmentIdentifier"/>
    <title value="ext PharmaceuticalTreatment.Identifier"/>
    <status value="active"/>
