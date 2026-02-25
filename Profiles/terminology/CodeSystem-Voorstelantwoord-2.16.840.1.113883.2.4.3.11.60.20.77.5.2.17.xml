@@ -1,22 +1,22 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-   <id value="2.16.840.1.113883.2.4.3.11.60.20.77.5.3.8"/>
+   <id value="2.16.840.1.113883.2.4.3.11.60.20.77.5.2.17"/>
    <language value="en-US"/>
    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
       <valuePeriod>
-         <start value="2026-02-20T09:35:53Z"/>
+         <start value="2026-02-20T09:35:50Z"/>
       </valuePeriod>
    </extension>
-   <url value="urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.3.8"/>
+   <url value="urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.17"/>
    <identifier>
       <use value="official"/>
       <system value="urn:ietf:rfc:3986"/>
-      <value value="urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.3.8"/>
+      <value value="urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.17"/>
    </identifier>
-   <version value="2026-02-20T09:35:53"/>
-   <name value="Dispensemethod"/>
-   <title value="Dispense method"/>
+   <version value="2026-02-20T09:35:50"/>
+   <name value="Voorstelantwoord"/>
+   <title value="Voorstel antwoord"/>
    <status value="unknown"/>
    <publisher value="ART-DECOR"/>
-   <description value="Dispense method"/>
+   <description value="Voorstel antwoord"/>
    <content value="not-present"/>
 </CodeSystem>

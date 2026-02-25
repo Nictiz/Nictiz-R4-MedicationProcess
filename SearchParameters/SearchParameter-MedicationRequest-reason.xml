@@ -1,7 +1,7 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="MedicationRequest-reason"/>
   <url value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-reason"/>
-  <version value="2.0.0-rc.3"/>
+  <version value="2.0.0-rc.4"/>
   <name value="Reason"/>
   <status value="active"/>
   <publisher value="Nictiz"/>
@@ -18,5 +18,8 @@
   <code value="reason"/>
   <base value="MedicationRequest"/>
   <type value="reference"/>
+  <target value="Condition"/>
+  <target value="Observation"/>
+  <target value="DiagnosticReport"/>
   <expression value="MedicationRequest.reasonReference"/>
 </SearchParameter>

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="mp-MedicationDispense"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationDispense"/>
-   <version value="2.0.0-rc.3"/>
+   <version value="2.0.0-rc.4"/>
    <name value="MpMedicationDispense"/>
    <title value="mp MedicationDispense"/>
    <status value="active"/>
@@ -15,7 +15,7 @@
          <use value="work"/>
       </telecom>
    </contact>
-   <description value="A dispense is the delivery of an amount of medicine to the patient, their administrator or their representative."/>
+   <description value="A medication dispense is the provision of a supply of a medicine to the patient, their representative or administrator."/>
    <purpose value="This MedicationDispense resource represents the MedicationDispense building block for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). This profile is based on the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) MedicationDispense, but has no dependency on the corresponding nl-core profile because it contains non-compatible changes. Where compatible, mappings to zib concepts are defined. Additional concepts or concepts that are not compatible with their zib counterparts contain a mapping to the MP9 data set."/>
    <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
    <fhirVersion value="4.0.1"/>
@@ -25,14 +25,14 @@
       <name value="zib MedicationDispense-v2.0.2(2020EN)"/>
    </mapping>
    <mapping>
-      <identity value="mp-dataset-mp9-300-beta4-20241118"/>
-      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20241118T151205/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
-      <name value="ART-DECOR Dataset MP9 3.0.0-beta.4 20241118"/>
-   </mapping>
-   <mapping>
       <identity value="mp-dataset-mp9-300-rc1-20250522"/>
       <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20250522T132618/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
       <name value="ART-DECOR Dataset MP9 3.0.0-rc.1 20250522"/>
+   </mapping>
+   <mapping>
+      <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20260213T112547/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
+      <name value="ART-DECOR Dataset MP9 3.0.0-rc.2 20260213"/>
    </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
@@ -61,12 +61,12 @@
       <element id="MedicationDispense.extension:medicationDispenseAdditionalInformation.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-357"/>
             <comment value="MedicationDispenseAdditionalInformation"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-357"/>
             <comment value="MedicationDispenseAdditionalInformation"/>
          </mapping>
@@ -114,12 +114,12 @@
       <element id="MedicationDispense.extension:pharmaceuticalTreatmentIdentifier.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-42"/>
             <comment value="Identification"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-42"/>
             <comment value="Identification"/>
          </mapping>
@@ -129,12 +129,12 @@
          <short value="Identification"/>
          <alias value="Identificatie"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-361"/>
             <comment value="Identification"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-361"/>
             <comment value="Identification"/>
          </mapping>
@@ -274,7 +274,7 @@
       <element id="MedicationDispense.quantity">
          <path value="MedicationDispense.quantity"/>
          <short value="DispensedAmount"/>
-         <definition value="Number of units of the product (measured based on the relevant product code) supplied. Optionally a translation to NHG table Gebruiksvoorschriften(Table 25) is also allowed which is captured using the iso21090-PQ-translation extension."/>
+         <definition value="Number of units of the product that has been dispensed. The number of units is described in the unit associated with the product, which usually refers to a number of pieces or doses. For the unit, it is mandatory to use both a G-standard unit from file 902, thesaurus number 2, and a UCUM unit. A translation to NHG Table 25 “Usage Instruction” is optional, but may not replace the mandatory designation in G-standard and UCUM."/>
          <alias value="VerstrekteHoeveelheid"/>
          <type>
             <code value="Quantity"/>
@@ -283,13 +283,18 @@
          <mapping>
             <identity value="zib-medicationdispense-v2.0.2-2020EN"/>
             <map value="NL-CM:9.9.20923"/>
+            <comment value="DispensedAmount [DEPRECATED]"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-358"/>
             <comment value="DispensedAmount"/>
          </mapping>
       </element>
       <element id="MedicationDispense.daysSupply">
          <path value="MedicationDispense.daysSupply"/>
          <short value="DurationOfUse"/>
-         <definition value="The period in which the medication is expected to be used. The value depends on the dose and the dispensed amount."/>
+         <definition value="The duration in days of the period in which the medication is expected to be used. The value depends on the dose and the dispensed amount."/>
          <alias value="Verbruiksduur"/>
          <mapping>
             <identity value="zib-medicationdispense-v2.0.2-2020EN"/>

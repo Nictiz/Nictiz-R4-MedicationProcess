@@ -1,7 +1,7 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="MedicationStatement-author"/>
   <url value="http://nictiz.nl/fhir/SearchParameter/MedicationStatement-author"/>
-  <version value="2.0.0-rc.3"/>
+  <version value="2.0.0-rc.4"/>
   <name value="Author"/>
   <status value="active"/>
   <publisher value="Nictiz"/>
@@ -18,5 +18,9 @@
   <code value="author"/>
   <base value="MedicationStatement"/>
   <type value="reference"/>
+  <target value="Patient"/>
+  <target value="PractitionerRole"/>
+  <target value="Organization"/>
+  <target value="Location"/>
   <expression value="MedicationStatement.extension('http://nictiz.nl/fhir/StructureDefinition/ext-MedicationUse2.Author').value"/>
 </SearchParameter>

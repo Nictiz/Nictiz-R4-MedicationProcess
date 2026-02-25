@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="mp-InstructionsForUse.DosageInstructions"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/mp-InstructionsForUse.DosageInstructions"/>
-   <version value="2.0.0-rc.3"/>
+   <version value="2.0.0-rc.4"/>
    <name value="MpInstructionsForUseDosageInstructions"/>
    <title value="mp InstructionsForUse.DosageInstructions"/>
    <status value="active"/>
@@ -30,14 +30,14 @@
       <name value="zib Range-v1.0.1(2020EN)"/>
    </mapping>
    <mapping>
-      <identity value="mp-dataset-mp9-300-beta4-20241118"/>
-      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20241118T151205/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
-      <name value="ART-DECOR Dataset MP9 3.0.0-beta.4 20241118"/>
-   </mapping>
-   <mapping>
       <identity value="mp-dataset-mp9-300-rc1-20250522"/>
       <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20250522T132618/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
       <name value="ART-DECOR Dataset MP9 3.0.0-rc.1 20250522"/>
+   </mapping>
+   <mapping>
+      <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20260213T112547/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
+      <name value="ART-DECOR Dataset MP9 3.0.0-rc.2 20260213"/>
    </mapping>
    <kind value="complex-type"/>
    <abstract value="false"/>
@@ -103,18 +103,13 @@
             <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.9--20160407000000"/>
          </binding>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
-            <map value="mp-dataelement9x-51"/>
-            <comment value="AdditionalInstructions"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-51"/>
             <comment value="AdditionalInstructions"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
-            <map value="mp-dataelement9x-649"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-51"/>
             <comment value="AdditionalInstructions"/>
          </mapping>
          <mapping>
@@ -123,8 +118,8 @@
             <comment value="AdditionalInstructions"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
-            <map value="mp-dataelement9x-300"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-649"/>
             <comment value="AdditionalInstructions"/>
          </mapping>
          <mapping>
@@ -133,12 +128,17 @@
             <comment value="AdditionalInstructions"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-300"/>
+            <comment value="AdditionalInstructions"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-368"/>
             <comment value="AdditionalInstructions"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-368"/>
             <comment value="AdditionalInstructions"/>
          </mapping>
@@ -172,18 +172,13 @@
             <comment value="Interval (implicit, main mapping is on `.frequency`, `.period` and `.periodMax`)"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
-            <map value="mp-dataelement9x-271"/>
-            <comment value="(negative of) IsFlexible"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-271"/>
             <comment value="(negative of) IsFlexible"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
-            <map value="mp-dataelement9x-672"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-271"/>
             <comment value="(negative of) IsFlexible"/>
          </mapping>
          <mapping>
@@ -192,8 +187,8 @@
             <comment value="(negative of) IsFlexible"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
-            <map value="mp-dataelement9x-580"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-672"/>
             <comment value="(negative of) IsFlexible"/>
          </mapping>
          <mapping>
@@ -202,12 +197,17 @@
             <comment value="(negative of) IsFlexible"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-580"/>
+            <comment value="(negative of) IsFlexible"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-412"/>
             <comment value="(negative of) IsFlexible"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-412"/>
             <comment value="(negative of) IsFlexible"/>
          </mapping>
@@ -452,7 +452,8 @@
          <path value="Dosage.asNeeded[x]"/>
          <sliceName value="asNeededCodeableConcept"/>
          <short value="Condition"/>
-         <definition value="The condition for administering medication can be:&#xD;&#xA;&#xD;&#xA;* a physiological measurement value (plasma glucose concentration, body temperature, blood pressure);&#xD;&#xA;* a symptom or other circumstance (in the event of a headache, or itch).&#xD;&#xA;&#xD;&#xA;Supplemental information from G-standard bst362 make up the list of values for coded entering of this concept. Also always include the textual description of that code. Physiological measurement values or other conditions that do not occur in bst362 do not need to be coded. These can be expressed in free text in the Description concept."/>
+         <definition value="Condition for administration of medication can be:&#xD;&#xA;&#xD;&#xA;*a measured physiological value (plasma glucose level, body temperature, blood pressure);&#xD;&#xA;*a symptom or other condition (headache, itching).&#xD;&#xA;&#xD;&#xA;Relevant “as needed” conditions from NHG Table 25 form the value list for transmitting this concept in coded form. The conditions supported in the G-standard are included in file 362. The textual description of that code must always be provided as well.&#xD;&#xA;&#xD;&#xA;Physiological measurements or other conditions that are not included in the “as needed” conditions of NHG Table 25 can be expressed in free text using the OTH code."/>
+         <comment value="If only one 'asNeeded' concept is exchanged within a Dosage, use Dosage.asNeeded[x]. Otherwise use the extension Dosage.extension:asNeeded.value[x] for when multiple 'asNeeded' concepts are to be exchanged.&#xD;&#xA;&#xD;&#xA;Can express &#34;as needed&#34; without a reason by setting the Boolean = True.  In this case the CodeableConcept is not populated.  Or you can express &#34;as needed&#34; with a reason by including the CodeableConcept.  In this case the Boolean is assumed to be True.  If you set the Boolean to False, then the dose is given according to the schedule and is not &#34;prn&#34; or &#34;as needed&#34;."/>
          <alias value="Criterium"/>
          <type>
             <code value="CodeableConcept"/>
@@ -464,24 +465,39 @@
          <mapping>
             <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
             <map value="NL-CM:9.12.19945"/>
+            <comment value="Condition [DEPRECATED]"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-321"/>
+            <comment value="Condition"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-72"/>
+            <comment value="Condition"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-389"/>
+            <comment value="Condition"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-676"/>
             <comment value="Condition"/>
          </mapping>
       </element>
       <element id="Dosage.asNeeded[x]:asNeededCodeableConcept.text">
          <path value="Dosage.asNeeded[x].text"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
-            <map value="mp-dataelement9x-272"/>
-            <comment value="Description"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-272"/>
             <comment value="Description"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
-            <map value="mp-dataelement9x-677"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-272"/>
             <comment value="Description"/>
          </mapping>
          <mapping>
@@ -490,8 +506,8 @@
             <comment value="Description"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
-            <map value="mp-dataelement9x-582"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-677"/>
             <comment value="Description"/>
          </mapping>
          <mapping>
@@ -500,12 +516,17 @@
             <comment value="Description"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-beta4-20241118"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-582"/>
+            <comment value="Description"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-514"/>
             <comment value="Description"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-514"/>
             <comment value="Description"/>
          </mapping>
@@ -513,7 +534,7 @@
       <element id="Dosage.route">
          <path value="Dosage.route"/>
          <short value="RouteOfAdministration"/>
-         <definition value="The route through which the medication is administered (oral, nasal, intravenous, etc.)."/>
+         <definition value="The route through which the medication is administered (oral, nasal, intravenous, etc.). The routes of administration supported in the G-standard are included in file 902, thesaurus number 7."/>
          <comment value="Please note that in contrast to the zib, this RouteOfAdministration concept is grouped under the DosingInstructions concept. This `.route` element shall have the same value when there are multiple DosingInstructions."/>
          <alias value="Toedieningsweg"/>
          <binding>
@@ -523,6 +544,31 @@
          <mapping>
             <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
             <map value="NL-CM:9.12.19941"/>
+            <comment value="RouteOfAdministration [DEPRECATED]"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-303"/>
+            <comment value="RouteOfAdministration"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-430"/>
+            <comment value="RouteOfAdministration"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-54"/>
+            <comment value="RouteOfAdministration"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-371"/>
+            <comment value="RouteOfAdministration"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-648"/>
             <comment value="RouteOfAdministration"/>
          </mapping>
       </element>
@@ -536,11 +582,31 @@
             <rules value="open"/>
          </slicing>
          <short value="Dose"/>
-         <definition value="The dose indicates the amount/unit per administration. The unit can be any unit that can occur with this particular medicine."/>
+         <definition value="The dose indicates the amount/unit per administration. The unit can be any unit that can occur with this particular medicine. For liquids and other divisible products, a volume measure (preferably &#34;ml&#34;) will usually be used.&#xD;&#xA;&#xD;&#xA;In many cases, the prescriber may want to specify the dosage in units of weight of the active substance.&#xD;&#xA;&#xD;&#xA;If only the substance is indicated and not the product, then the amount of that substance is specified. For example, Paracetamol 1000 mg is equivalent to Paracetamol 500 mg tablets, 2 tablets (or units).&#xD;&#xA;&#xD;&#xA;The dosage is sometimes indicated in a calculation, which often uses the patient's body weight or body surface area as a parameter. However, the calculation remains nothing more than a tool to aid decision-making.&#xD;&#xA;&#xD;&#xA;In continuous administration, alongside the administration speed, the dose can be specified (e.g., 20 ml in a syringe or 500 ml in a bag), but it is often omitted.&#xD;&#xA;&#xD;&#xA;Even a general dosing recommendation such as 'Use according to protocol' or 'See instructions for use' can be adequate. Then, no dose is specified."/>
          <alias value="Keerdosis"/>
          <mapping>
             <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
             <map value="NL-CM:9.12.19940"/>
+            <comment value="Dose [DEPRECATED]"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-316"/>
+            <comment value="Dose"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-67"/>
+            <comment value="Dose"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-384"/>
+            <comment value="Dose"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-655"/>
             <comment value="Dose"/>
          </mapping>
       </element>

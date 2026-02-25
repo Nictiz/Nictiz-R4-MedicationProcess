@@ -1,7 +1,7 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="MedicationRequest-dispense-location"/>
   <url value="http://nictiz.nl/fhir/SearchParameter/MedicationRequest-dispense-location"/>
-  <version value="2.0.0-rc.3"/>
+  <version value="2.0.0-rc.4"/>
   <name value="DispenseLocation"/>
   <status value="active"/>
   <publisher value="Nictiz"/>
@@ -18,5 +18,6 @@
   <code value="dispense-location"/>
   <base value="MedicationRequest"/>
   <type value="reference"/>
+  <target value="Location"/>
   <expression value="MedicationRequest.dispenseRequest.extension('http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.DispenseLocation').value"/>
 </SearchParameter>
