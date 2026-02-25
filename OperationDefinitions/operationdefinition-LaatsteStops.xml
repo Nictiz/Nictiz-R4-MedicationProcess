@@ -7,8 +7,7 @@
     <title value="Latest stops per pharmaceutical treatment (MBH)"/>
     <status value="active"/>
     <kind value="operation"/>
-    <experimental value="false"/>
-    <affectsState value="false"/>
+    <experimental value="false"/>    
     <publisher value="Nictiz"/>
     <contact>
         <name value="Nictiz"/>
@@ -17,14 +16,14 @@
             <value value="https://www.nictiz.nl"/>
             <use value="work"/>
         </telecom>
-    </contact>
-    
+    </contact>    
     <description value="This operation determines, for a given patient, the latest stop per pharmaceutical treatment (MBH) based on MedicationAgreement (MedicatieAfspraak, MA), AdministrationAgreement (ToedieningsAfspraak, TA) and MedicationRequest resources representing a VariableDosingRegimen (WisselendDoseerSchema, WDS) in the source system.
                         
                         When invoked in the context of a specific kind of building block (e.g. MedicationAgreement/MA, AdministrationAgreement/TA or VariableDosingRegimen/WDS), the server SHALL return the active and latest stopped building blocks of that kind for each pharmaceutical treatment/MBH.
                         
                         If requested (e.g. via the include-details parameter), the server MAY also return the underlying MedicationAgreement, AdministrationAgreement and VariableDosingRegimen resources that were used to determine the latest stop per MBH."/>
     <purpose value="To provide a deterministic, server-side application of the 'latest stop per MBH' rule in the MedicationProcess, so that clients can obtain a consistent view of stopped and ongoing medication without having to reimplement stop logic themselves."/>
+    <affectsState value="false"/>
     <code value="latest-stops"/>
     <system value="true"/>
     <type value="true"/>
