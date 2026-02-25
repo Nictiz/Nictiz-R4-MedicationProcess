@@ -18,8 +18,8 @@
   <code value="prescriber"/>
   <base value="MedicationStatement"/>
   <type value="reference"/>
+  <expression value="MedicationStatement.extension('http://nictiz.nl/fhir/StructureDefinition/ext-MedicationUse2.Prescriber').value"/>
   <target value="PractitionerRole"/>
   <target value="Organization"/>
   <target value="Location"/>
-  <expression value="MedicationStatement.extension('http://nictiz.nl/fhir/StructureDefinition/ext-MedicationUse2.Prescriber').value"/>
 </SearchParameter>

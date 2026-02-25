@@ -138,11 +138,12 @@
          <mapping>
             <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-1365"/>
+            <comment value="Condition"/>
          </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1365"/>
-            <comment value=""/>
+            <comment value="Condition"/>
          </mapping>
       </element>
       <element id="MedicationRequest.extension:pharmaceuticalTreatmentIdentifier">

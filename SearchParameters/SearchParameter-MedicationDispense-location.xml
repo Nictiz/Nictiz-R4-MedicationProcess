@@ -18,6 +18,6 @@
   <code value="location"/>
   <base value="MedicationDispense"/>
   <type value="reference"/>
-  <target value="Location"/>
   <expression value="MedicationDispense.location"/>
+  <target value="Location"/>  
 </SearchParameter>
