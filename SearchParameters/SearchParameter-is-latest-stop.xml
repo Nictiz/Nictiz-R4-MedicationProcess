@@ -23,5 +23,5 @@ When false or absent, no latest-stop logic is applied and results are based sole
     <base value="MedicationRequest"/>
     <base value="MedicationDispense"/>
     <base value="MedicationStatement"/>    
-    <type value="token"/>
+    <type value="special"/>
 </SearchParameter>
