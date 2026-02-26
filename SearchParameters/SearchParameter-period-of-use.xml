@@ -1,7 +1,7 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="period-of-use"/>
   <url value="http://nictiz.nl/fhir/SearchParameter/period-of-use"/>
-  <version value="2.0.0-rc.6"/>
+  <version value="2.0.0-rc.7"/>
   <name value="PeriodOfUse"/>
   <status value="active"/>
   <publisher value="Nictiz"/>

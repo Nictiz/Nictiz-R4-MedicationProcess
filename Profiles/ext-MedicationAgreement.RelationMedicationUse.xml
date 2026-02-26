@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="ext-MedicationAgreement.RelationMedicationUse"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAgreement.RelationMedicationUse"/>
-   <version value="2.0.0-rc.6"/>
+   <version value="2.0.0-rc.7"/>
    <name value="ExtMedicationAgreementRelationMedicationUse"/>
    <title value="ext MedicationAgreement.RelationMedicationUse"/>
    <status value="active"/>

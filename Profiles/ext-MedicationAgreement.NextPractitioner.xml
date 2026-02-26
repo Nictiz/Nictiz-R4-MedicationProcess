@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="ext-MedicationAgreement.NextPractitioner"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAgreement.NextPractitioner"/>
-   <version value="2.0.0-rc.6"/>
+   <version value="2.0.0-rc.7"/>
    <name value="ExtMedicationAgreementNextPractitioner"/>
    <title value="ext MedicationAgreement.NextPractitioner"/>
    <status value="active"/>

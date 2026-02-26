@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="mp-MedicationDispense"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationDispense"/>
-   <version value="2.0.0-rc.6"/>
+   <version value="2.0.0-rc.7"/>
    <name value="MpMedicationDispense"/>
    <title value="mp MedicationDispense"/>
    <status value="active"/>
