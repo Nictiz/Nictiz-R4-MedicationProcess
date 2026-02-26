@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/capabilitystatement.xsd">
   <id value="mp-ProposalDispenseRequest"/>
   <url value="http://nictiz.nl/fhir/CapabilityStatement/mp-ProposalDispenseRequest"/>
-  <version value="2.0.0-rc.6"/>
+  <version value="2.0.0-rc.7"/>
   <name value="mp ProposalDispenseRequest"/>
   <status value="active"/>
   <date value="2024-11-22"/>

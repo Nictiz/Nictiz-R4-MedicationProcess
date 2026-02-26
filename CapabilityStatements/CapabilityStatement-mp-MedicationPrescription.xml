@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/capabilitystatement.xsd">
   <id value="mp-MedicationPrescription"/>
   <url value="http://nictiz.nl/fhir/CapabilityStatement/mp-MedicationPrescription"/>
-  <version value="2.0.0-rc.6"/>
+  <version value="2.0.0-rc.7"/>
   <name value="mp MedicationPrescription"/>
   <status value="active"/>
   <date value="2024-11-22"/>

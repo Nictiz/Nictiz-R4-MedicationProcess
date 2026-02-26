@@ -2,7 +2,7 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
     <id value="mp-latest-stops"/>
     <url value="http://nictiz.nl/fhir/OperationDefinition/mp-latest-stops"/>
-    <version value="2.0.0-rc.6"/>
+    <version value="2.0.0-rc.7"/>
     <name value="MpLatestStops"/>
     <title value="Latest stops per pharmaceutical treatment (MBH)"/>
     <status value="active"/>
