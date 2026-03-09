@@ -171,7 +171,6 @@
          <min value="1"/>
          <type>
             <code value="Reference"/>
-            <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-NlCoreHealthProfessionalReference"/>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
