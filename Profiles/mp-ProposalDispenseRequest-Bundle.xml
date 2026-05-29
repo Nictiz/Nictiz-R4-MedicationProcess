@@ -35,10 +35,6 @@
    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
    <derivation value="constraint"/>
    <differential>
-      <element id="Bundle.type">
-         <path value="Bundle.type"/>
-         <fixedCode value="transaction"/>
-      </element>
       <element id="Bundle.identifier">
          <path value="Bundle.identifier"/>
          <short value="ProposalIdentification"/>
@@ -56,6 +52,10 @@
             <map value="mp-dataelement9x-528"/>
             <comment value="Identification"/>
          </mapping>
+      </element>
+      <element id="Bundle.type">
+         <path value="Bundle.type"/>
+         <fixedCode value="transaction"/>
       </element>
       <element id="Bundle.entry">
          <path value="Bundle.entry"/>
