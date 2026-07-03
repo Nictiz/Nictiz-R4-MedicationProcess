@@ -7,7 +7,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-419"/>
-         <comment>MedicationAdministration</comment>
+         <comment value="MedicationAdministration"/>
       </mapping>
       <old_mapping name="Medicatietoediening"
                    code="9.13.20928"
@@ -15,7 +15,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-419"/>
-         <comment>MedicationAdministration</comment>
+         <comment value="MedicationAdministration"/>
       </mapping>
       <old_mapping name="Medicatietoediening"
                    code="9.13.20928"
@@ -23,7 +23,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-419"/>
-         <comment>MedicationAdministration</comment>
+         <comment value="MedicationAdministration"/>
       </mapping>
    </concept>
    <concept>
@@ -33,7 +33,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-427"/>
-         <comment>AgreedDateTime</comment>
+         <comment value="AgreedDateTime"/>
       </mapping>
    </concept>
    <concept>
@@ -47,7 +47,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-420"/>
-         <comment>AdministrationProduct</comment>
+         <comment value="AdministrationProduct"/>
       </mapping>
       <old_mapping name="ToedieningsProduct"
                    code="9.13.20929"
@@ -55,7 +55,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-420"/>
-         <comment>AdministrationProduct</comment>
+         <comment value="AdministrationProduct"/>
       </mapping>
    </concept>
    <concept>
@@ -73,7 +73,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-437"/>
-         <comment>Administrator</comment>
+         <comment value="Administrator"/>
       </mapping>
       <old_mapping name="Toediener"
                    code="9.13.21196"
@@ -81,7 +81,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-437"/>
-         <comment>Administrator</comment>
+         <comment value="Administrator"/>
       </mapping>
    </concept>
    <concept>
@@ -91,7 +91,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-438"/>
-         <comment>Patient</comment>
+         <comment value="Patient"/>
       </mapping>
       <old_mapping name="Patiënt"
                    code="9.13.23380"
@@ -99,7 +99,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-438"/>
-         <comment>Patient</comment>
+         <comment value="Patient"/>
       </mapping>
    </concept>
    <concept>
@@ -109,7 +109,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-440"/>
-         <comment>HealthProfessional</comment>
+         <comment value="HealthProfessional"/>
       </mapping>
       <old_mapping name="Zorgverlener"
                    code="9.13.23172"
@@ -117,7 +117,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-1432"/>
-         <comment>HealthProfessional</comment>
+         <comment value="HealthProfessional"/>
       </mapping>
    </concept>
    <concept>
@@ -127,7 +127,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-442"/>
-         <comment>Caregiver</comment>
+         <comment value="Caregiver"/>
       </mapping>
    </concept>
    <concept>
@@ -141,7 +141,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-446"/>
-         <comment>Comment</comment>
+         <comment value="Comment"/>
       </mapping>
    </concept>
    <concept>
@@ -151,7 +151,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-430"/>
-         <comment>RouteOfAdministration</comment>
+         <comment value="RouteOfAdministration"/>
       </mapping>
    </concept>
    <concept>
@@ -161,7 +161,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-428"/>
-         <comment>AdministeredAmount</comment>
+         <comment value="AdministeredAmount"/>
       </mapping>
       <old_mapping name="ToegediendeHoeveelheid"
                    code="9.13.21194"
@@ -169,7 +169,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-428"/>
-         <comment>AdministeredAmount</comment>
+         <comment value="AdministeredAmount"/>
       </mapping>
    </concept>
    <concept>

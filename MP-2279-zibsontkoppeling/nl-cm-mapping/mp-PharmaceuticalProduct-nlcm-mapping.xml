@@ -7,7 +7,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-260"/>
-         <comment>PharmaceuticalProduct</comment>
+         <comment value="PharmaceuticalProduct"/>
       </mapping>
       <old_mapping name="FarmaceutischProduct"
                    code="9.7.19926"
@@ -15,7 +15,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-260"/>
-         <comment>PharmaceuticalProduct</comment>
+         <comment value="PharmaceuticalProduct"/>
       </mapping>
    </concept>
    <concept>
@@ -25,7 +25,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-261"/>
-         <comment>MedicationCode</comment>
+         <comment value="MedicationCode"/>
       </mapping>
    </concept>
    <concept>
@@ -35,7 +35,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-264"/>
-         <comment>Medication</comment>
+         <comment value="Medication"/>
       </mapping>
    </concept>
    <concept>
@@ -45,7 +45,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-263"/>
-         <comment>PharmaceuticalForm</comment>
+         <comment value="PharmaceuticalForm"/>
       </mapping>
    </concept>
    <concept>
@@ -55,7 +55,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-266"/>
-         <comment>Ingredient</comment>
+         <comment value="Ingredient"/>
       </mapping>
       <old_mapping name="Ingredient"
                    code="9.7.19932"
@@ -63,7 +63,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-266"/>
-         <comment>Ingredient</comment>
+         <comment value="Ingredient"/>
       </mapping>
    </concept>
    <concept>
@@ -77,7 +77,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-268"/>
-         <comment>Concentration</comment>
+         <comment value="Concentration"/>
       </mapping>
       <old_mapping name="Sterkte"
                    code="9.7.19933"
@@ -85,7 +85,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-268"/>
-         <comment>Concentration</comment>
+         <comment value="Concentration"/>
       </mapping>
    </concept>
    <concept>
@@ -95,7 +95,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-269"/>
-         <comment>IngredientAmount</comment>
+         <comment value="IngredientAmount"/>
       </mapping>
       <old_mapping name="IngredientHoeveelheid"
                    code="9.7.22277"
@@ -103,7 +103,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-269"/>
-         <comment>IngredientAmount</comment>
+         <comment value="IngredientAmount"/>
       </mapping>
    </concept>
    <concept>
@@ -113,7 +113,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-270"/>
-         <comment>ProductAmount</comment>
+         <comment value="ProductAmount"/>
       </mapping>
       <old_mapping name="ProductHoeveelheid"
                    code="9.7.22278"
@@ -121,7 +121,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-270"/>
-         <comment>ProductAmount</comment>
+         <comment value="ProductAmount"/>
       </mapping>
    </concept>
 </resultaat>

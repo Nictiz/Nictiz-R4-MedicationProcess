@@ -7,7 +7,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-346"/>
-         <comment>MedicationDispense</comment>
+         <comment value="MedicationDispense"/>
       </mapping>
       <old_mapping name="Medicatieverstrekking"
                    code="9.9.20270"
@@ -15,7 +15,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-346"/>
-         <comment>MedicationDispense</comment>
+         <comment value="MedicationDispense"/>
       </mapping>
    </concept>
    <concept>
@@ -27,7 +27,7 @@
          <mapping>
             <identity value="mp-dataset-mp9-300-rc3-TODO"/>
             <map value="mp-dataelement9x-354"/>
-            <comment>RequestDate</comment>
+            <comment value="RequestDate"/>
          </mapping>
       </old-mapping>
    </concept>
@@ -40,7 +40,7 @@
          <mapping>
             <identity value="mp-dataset-mp9-300-rc3-TODO"/>
             <map value="mp-dataelement9x-355"/>
-            <comment>DistributionForm</comment>
+            <comment value="DistributionForm"/>
          </mapping>
       </old-mapping>
    </concept>
@@ -51,7 +51,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-353"/>
-         <comment>MedicationDispenseDateTime</comment>
+         <comment value="MedicationDispenseDateTime"/>
       </mapping>
    </concept>
    <concept>
@@ -61,7 +61,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-351"/>
-         <comment>DispensedMedicine</comment>
+         <comment value="DispensedMedicine"/>
       </mapping>
    </concept>
    <concept>
@@ -71,7 +71,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-347"/>
-         <comment>Supplier</comment>
+         <comment value="Supplier"/>
       </mapping>
       <old_mapping name="Verstrekker"
                    code="9.9.20858"
@@ -79,7 +79,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-347"/>
-         <comment>Supplier</comment>
+         <comment value="Supplier"/>
       </mapping>
    </concept>
    <concept>
@@ -89,7 +89,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-349"/>
-         <comment>RelationDispenseRequest</comment>
+         <comment value="RelationDispenseRequest"/>
       </mapping>
    </concept>
    <concept>
@@ -99,7 +99,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-358"/>
-         <comment>DispensedAmount</comment>
+         <comment value="DispensedAmount"/>
       </mapping>
       <old_mapping name="VerstrekteHoeveelheid"
                    code="9.9.20923"
@@ -107,7 +107,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-358"/>
-         <comment>DispensedAmount</comment>
+         <comment value="DispensedAmount"/>
       </mapping>
    </concept>
    <concept>
@@ -117,7 +117,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-356"/>
-         <comment>DurationOfUse</comment>
+         <comment value="DurationOfUse"/>
       </mapping>
       <old_mapping name="Verbruiksduur"
                    code="9.9.20924"
@@ -125,7 +125,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-356"/>
-         <comment>DurationOfUse</comment>
+         <comment value="DurationOfUse"/>
       </mapping>
    </concept>
    <concept>
@@ -137,7 +137,7 @@
          <mapping>
             <identity value="mp-dataset-mp9-300-rc3-TODO"/>
             <map value="mp-dataelement9x-359"/>
-            <comment>DispenseLocation</comment>
+            <comment value="DispenseLocation"/>
          </mapping>
       </old-mapping>
    </concept>
@@ -148,7 +148,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-360"/>
-         <comment>Comment</comment>
+         <comment value="Comment"/>
       </mapping>
    </concept>
 </resultaat>

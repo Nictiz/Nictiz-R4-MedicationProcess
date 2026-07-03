@@ -7,7 +7,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-43"/>
-         <comment>MedicationAgreement</comment>
+         <comment value="MedicationAgreement"/>
       </mapping>
       <old_mapping name="Medicatieafspraak"
                    code="9.6.9580"
@@ -15,7 +15,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-43"/>
-         <comment>MedicationAgreement</comment>
+         <comment value="MedicationAgreement"/>
       </mapping>
       <old_mapping name="Medicatieafspraak"
                    code="9.6.9580"
@@ -23,7 +23,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-43"/>
-         <comment>MedicationAgreement</comment>
+         <comment value="MedicationAgreement"/>
       </mapping>
    </concept>
    <concept>
@@ -33,7 +33,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-50"/>
-         <comment>InstructionsForUse</comment>
+         <comment value="InstructionsForUse"/>
       </mapping>
       <old_mapping name="Gebruiksinstructie"
                    code="9.6.23240"
@@ -41,7 +41,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-50"/>
-         <comment>InstructionsForUse</comment>
+         <comment value="InstructionsForUse"/>
       </mapping>
    </concept>
    <concept>
@@ -51,7 +51,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-52"/>
-         <comment>Description</comment>
+         <comment value="Description"/>
       </mapping>
       <old_mapping name="Omschrijving"
                    code="9.12.9581"
@@ -59,7 +59,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-647"/>
-         <comment>Description</comment>
+         <comment value="Description"/>
       </mapping>
       <old_mapping name="Omschrijving"
                    code="9.12.9581"
@@ -67,7 +67,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-301"/>
-         <comment>Description</comment>
+         <comment value="Description"/>
       </mapping>
       <old_mapping name="Omschrijving"
                    code="9.12.9581"
@@ -75,7 +75,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-369"/>
-         <comment>Description</comment>
+         <comment value="Description"/>
       </mapping>
    </concept>
    <concept>
@@ -85,7 +85,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-84"/>
-         <comment>PeriodOfUse</comment>
+         <comment value="PeriodOfUse"/>
       </mapping>
       <old_mapping name="Gebruiksperiode"
                    code="9.6.19936"
@@ -93,7 +93,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-635"/>
-         <comment>PeriodOfUse</comment>
+         <comment value="PeriodOfUse"/>
       </mapping>
       <old_mapping name="Gebruiksperiode"
                    code="9.6.19936"
@@ -101,7 +101,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-84"/>
-         <comment>PeriodOfUse</comment>
+         <comment value="PeriodOfUse"/>
       </mapping>
       <old_mapping name="Gebruiksperiode"
                    code="9.6.19936"
@@ -109,7 +109,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-84"/>
-         <comment>PeriodOfUse</comment>
+         <comment value="PeriodOfUse"/>
       </mapping>
       <old_mapping name="Gebruiksperiode"
                    code="9.6.19936"
@@ -117,7 +117,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-635"/>
-         <comment>PeriodOfUse</comment>
+         <comment value="PeriodOfUse"/>
       </mapping>
    </concept>
    <concept>
@@ -127,7 +127,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-88"/>
-         <comment>MedicationAgreementStopType</comment>
+         <comment value="MedicationAgreementStopType"/>
       </mapping>
       <old_mapping name="MedicatieafspraakStopType"
                    code="9.6.19954"
@@ -135,7 +135,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-88"/>
-         <comment>MedicationAgreementStopType</comment>
+         <comment value="MedicationAgreementStopType"/>
       </mapping>
    </concept>
    <concept>
@@ -149,7 +149,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-48"/>
-         <comment>AgreedMedicine</comment>
+         <comment value="AgreedMedicine"/>
       </mapping>
    </concept>
    <concept>
@@ -159,7 +159,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-83"/>
-         <comment>MedicationAgreementDateTime</comment>
+         <comment value="MedicationAgreementDateTime"/>
       </mapping>
    </concept>
    <concept>
@@ -169,7 +169,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-44"/>
-         <comment>Prescriber</comment>
+         <comment value="Prescriber"/>
       </mapping>
       <old_mapping name="Voorschrijver"
                    code="9.6.1030"
@@ -177,7 +177,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-44"/>
-         <comment>Prescriber</comment>
+         <comment value="Prescriber"/>
       </mapping>
    </concept>
    <concept>
@@ -187,7 +187,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-46"/>
-         <comment>PrescriptionReason</comment>
+         <comment value="PrescriptionReason"/>
       </mapping>
       <old_mapping name="RedenVanVoorschrijven"
                    code="9.6.23133"
@@ -195,7 +195,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-46"/>
-         <comment>PrescriptionReason</comment>
+         <comment value="PrescriptionReason"/>
       </mapping>
    </concept>
    <concept>
@@ -205,7 +205,7 @@
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-91"/>
-         <comment>Comment</comment>
+         <comment value="Comment"/>
       </mapping>
    </concept>
 </resultaat>
