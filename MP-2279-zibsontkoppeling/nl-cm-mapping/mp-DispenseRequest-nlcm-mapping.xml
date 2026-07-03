@@ -27,6 +27,24 @@
       </mapping>
    </concept>
    <concept>
+      <old_mapping name="Verbruiksperiode"
+                   code="9.10.20062"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.10.20062"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-280"/>
+         <comment value="PeriodOfUse"/>
+      </mapping>
+      <old_mapping name="Verbruiksperiode"
+                   code="9.10.20062"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.10.20062"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-280"/>
+         <comment value="ValidityPeriod"/>
+      </mapping>
+   </concept>
+   <concept>
       <old_mapping name="TeVerstrekkenGeneesmiddel"
                    code="9.10.22249"
                    zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.10.22249"/>
@@ -107,5 +125,23 @@
             <comment value="NumberOfRefills"/>
          </mapping>
       </old-mapping>
+   </concept>
+   <concept>
+      <old_mapping name="TeVerstrekkenHoeveelheid"
+                   code="9.10.19964"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.10.19964"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-285"/>
+         <comment value="Amount"/>
+      </mapping>
+      <old_mapping name="TeVerstrekkenHoeveelheid"
+                   code="9.10.19964"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.10.19964"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-285"/>
+         <comment value="Amount"/>
+      </mapping>
    </concept>
 </resultaat>
