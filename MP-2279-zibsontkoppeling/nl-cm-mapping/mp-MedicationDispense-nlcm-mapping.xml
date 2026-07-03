@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resultaat input-bestand="mp-MedicationDispense.xml">
+   <concept>
+      <old_mapping name="Medicatieverstrekking"
+                   code="9.9.20270"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.9.20270"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-346"/>
+         <comment>MedicationDispense</comment>
+      </mapping>
+      <old_mapping name="Medicatieverstrekking"
+                   code="9.9.20270"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.9.20270"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-346"/>
+         <comment>MedicationDispense</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 9.9.22500</melding>
+      <melding>maar wél een inherit gevonden naar MP9 3.0.0-rc in mp-decor.xml</melding>
+      <old-mapping name="AanschrijfDatum"
+                   code="9.9.22500"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.9.22500">
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-354"/>
+            <comment>RequestDate</comment>
+         </mapping>
+      </old-mapping>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 9.9.20927</melding>
+      <melding>maar wél een inherit gevonden naar MP9 3.0.0-rc in mp-decor.xml</melding>
+      <old-mapping name="Distributievorm"
+                   code="9.9.20927"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.9.20927">
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-355"/>
+            <comment>DistributionForm</comment>
+         </mapping>
+      </old-mapping>
+   </concept>
+   <concept>
+      <old_mapping name="MedicatieverstrekkingsDatumTijd"
+                   code="9.9.20272"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.9.20272"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-353"/>
+         <comment>MedicationDispenseDateTime</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <old_mapping name="VerstrektGeneesmiddel"
+                   code="9.9.22259"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.9.22259"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-351"/>
+         <comment>DispensedMedicine</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <old_mapping name="Verstrekker"
+                   code="9.9.20858"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.9.20858"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-347"/>
+         <comment>Supplier</comment>
+      </mapping>
+      <old_mapping name="Verstrekker"
+                   code="9.9.20858"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.9.20858"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-347"/>
+         <comment>Supplier</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <old_mapping name="RelatieVerstrekkingsverzoek"
+                   code="9.9.22396"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.9.22396"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-349"/>
+         <comment>RelationDispenseRequest</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <old_mapping name="VerstrekteHoeveelheid"
+                   code="9.9.20923"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.9.20923"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-358"/>
+         <comment>DispensedAmount</comment>
+      </mapping>
+      <old_mapping name="VerstrekteHoeveelheid"
+                   code="9.9.20923"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.9.20923"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-358"/>
+         <comment>DispensedAmount</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <old_mapping name="Verbruiksduur"
+                   code="9.9.20924"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.9.20924"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-356"/>
+         <comment>DurationOfUse</comment>
+      </mapping>
+      <old_mapping name="Verbruiksduur"
+                   code="9.9.20924"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.9.20924"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-356"/>
+         <comment>DurationOfUse</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 9.9.20925</melding>
+      <melding>maar wél een inherit gevonden naar MP9 3.0.0-rc in mp-decor.xml</melding>
+      <old-mapping name="Afleverlocatie"
+                   code="9.9.20925"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.9.20925">
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-359"/>
+            <comment>DispenseLocation</comment>
+         </mapping>
+      </old-mapping>
+   </concept>
+   <concept>
+      <old_mapping name="Toelichting"
+                   code="9.9.22276"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.9.22276"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-360"/>
+         <comment>Comment</comment>
+      </mapping>
+   </concept>
+</resultaat>

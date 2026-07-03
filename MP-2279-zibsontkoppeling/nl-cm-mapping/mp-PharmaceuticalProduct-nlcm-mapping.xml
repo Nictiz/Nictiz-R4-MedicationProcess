@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resultaat input-bestand="mp-PharmaceuticalProduct.xml">
+   <concept>
+      <old_mapping name="FarmaceutischProduct"
+                   code="9.7.19926"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.7.19926"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-260"/>
+         <comment>PharmaceuticalProduct</comment>
+      </mapping>
+      <old_mapping name="FarmaceutischProduct"
+                   code="9.7.19926"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.7.19926"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-260"/>
+         <comment>PharmaceuticalProduct</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <old_mapping name="ProductCode"
+                   code="9.7.19927"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.7.19927"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-261"/>
+         <comment>MedicationCode</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <old_mapping name="ProductNaam"
+                   code="9.7.19929"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.7.19929"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-264"/>
+         <comment>Medication</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <old_mapping name="FarmaceutischeVorm"
+                   code="9.7.19931"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.7.19931"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-263"/>
+         <comment>PharmaceuticalForm</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <old_mapping name="Ingredient"
+                   code="9.7.19932"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.7.19932"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-266"/>
+         <comment>Ingredient</comment>
+      </mapping>
+      <old_mapping name="Ingredient"
+                   code="9.7.19932"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.7.19932"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-266"/>
+         <comment>Ingredient</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 9.7.19934</melding>
+      <error>Controleer mp-decor.xml! Inherit naar een concept uit MP9 3.0.0-rc bestaat niet!</error>
+   </concept>
+   <concept>
+      <old_mapping name="Sterkte"
+                   code="9.7.19933"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.7.19933"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-268"/>
+         <comment>Concentration</comment>
+      </mapping>
+      <old_mapping name="Sterkte"
+                   code="9.7.19933"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.7.19933"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-268"/>
+         <comment>Concentration</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <old_mapping name="IngredientHoeveelheid"
+                   code="9.7.22277"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.7.22277"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-269"/>
+         <comment>IngredientAmount</comment>
+      </mapping>
+      <old_mapping name="IngredientHoeveelheid"
+                   code="9.7.22277"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.7.22277"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-269"/>
+         <comment>IngredientAmount</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <old_mapping name="ProductHoeveelheid"
+                   code="9.7.22278"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.7.22278"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-270"/>
+         <comment>ProductAmount</comment>
+      </mapping>
+      <old_mapping name="ProductHoeveelheid"
+                   code="9.7.22278"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.7.22278"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-270"/>
+         <comment>ProductAmount</comment>
+      </mapping>
+   </concept>
+</resultaat>

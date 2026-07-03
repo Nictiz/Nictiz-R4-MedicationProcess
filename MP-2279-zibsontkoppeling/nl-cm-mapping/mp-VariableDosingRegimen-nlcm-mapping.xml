@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resultaat input-bestand="mp-VariableDosingRegimen.xml">
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 9.12.22505</melding>
+      <melding>geen inherit in mp-decor.xml voor HerhaalperiodeCyclischSchema</melding>
+   </concept>
+</resultaat>
