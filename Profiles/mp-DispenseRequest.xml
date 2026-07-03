@@ -176,6 +176,11 @@
              <map value="mp-dataelement9x-280"/>
              <comment value="ValidityPeriod (implicit, main mapping is on `.dispenseRequest.validityPeriod` and extension ext-TimeInterval.Duration)"/>
          </mapping>
+         <mapping>
+             <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+             <map value="mp-dataelement9x-280"/>
+             <comment value="ValidityPeriod (implicit, main mapping is on `.dispenseRequest.validityPeriod` and extension ext-TimeInterval.Duration)"/>
+         </mapping>
       </element>
       <element id="MedicationRequest.intent">
          <path value="MedicationRequest.intent" />
