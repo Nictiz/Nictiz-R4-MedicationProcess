@@ -47,7 +47,12 @@
          <mapping>
             <identity value="zib-dispenserequest-v1.0.3-2020EN" />
             <map value="NL-CM:9.10.19963" />
-            <comment value="DispenseRequest" />
+            <comment value="DispenseRequest [DEPRECATED]" />
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-274"/>
+            <comment value="DispenseRequest"/>
          </mapping>
       </element>
       <element id="MedicationRequest.extension:additionalWishes">
@@ -167,11 +172,6 @@
             <comment value="CanceledIndicator" />
          </mapping>
          <mapping>
-            <identity value="zib-dispenserequest-v1.0.3-2020EN" />
-            <map value="NL-CM:9.10.20062" />
-            <comment value="PeriodOfUse [DEPRECATED] (implicit, main mapping is on `.dispenseRequest.validityPeriod` and extension ext-TimeInterval.Duration)"/>
-         </mapping>
-         <mapping>
              <identity value="mp-dataset-mp9-300-rc2-20260213"/>
              <map value="mp-dataelement9x-280"/>
              <comment value="ValidityPeriod (implicit, main mapping is on `.dispenseRequest.validityPeriod` and extension ext-TimeInterval.Duration)"/>
@@ -228,7 +228,12 @@
          <mapping>
             <identity value="zib-dispenserequest-v1.0.3-2020EN" />
             <map value="NL-CM:9.10.22249" />
-            <comment value="MedicineToBeDispensed" />
+            <comment value="MedicineToBeDispensed [DEPRECATED]" />
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-277"/>
+            <comment value="MedicineToBeDispensed"/>
          </mapping>
       </element>
       <element id="MedicationRequest.subject">
@@ -268,7 +273,12 @@
          <mapping>
             <identity value="zib-dispenserequest-v1.0.3-2020EN" />
             <map value="NL-CM:9.10.20060" />
-            <comment value="DispenseRequestDate" />
+            <comment value="DispenseRequestDate [DEPRECATED]" />
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-279"/>
+            <comment value="DispenseRequestDate"/>
          </mapping>
       </element>
       <element id="MedicationRequest.requester">
@@ -317,7 +327,12 @@
          <mapping>
             <identity value="zib-dispenserequest-v1.0.3-2020EN" />
             <map value="NL-CM:9.10.19966" />
-            <comment value="IntendedSupplier" />
+            <comment value="IntendedSupplier [DEPRECATED]" />
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-275"/>
+            <comment value="IntendedSupplier"/>
          </mapping>
       </element>
       <element id="MedicationRequest.basedOn">
@@ -363,7 +378,12 @@
          <mapping>
             <identity value="zib-dispenserequest-v1.0.3-2020EN" />
             <map value="NL-CM:9.10.22274" />
-            <comment value="Comment" />
+            <comment value="Comment [DEPRECATED]" />
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-288"/>
+            <comment value="Comment"/>
          </mapping>
       </element>
       <element id="MedicationRequest.dispenseRequest.extension:dispenseLocation">
@@ -379,7 +399,12 @@
          <mapping>
             <identity value="zib-dispenserequest-v1.0.3-2020EN" />
             <map value="NL-CM:9.10.20068" />
-            <comment value="DispenseLocation" />
+            <comment value="DispenseLocation [DEPRECATED]" />
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-286"/>
+            <comment value="DispenseLocation"/>
          </mapping>
       </element>
       <element id="MedicationRequest.dispenseRequest.validityPeriod">
@@ -391,16 +416,16 @@
             <code value="Period" />
             <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-TimeInterval" />
          </type>
-         <mapping>
-            <identity value="zib-dispenserequest-v1.0.3-2020EN" />
-            <map value="NL-CM:9.10.20062" />
-            <comment value="PeriodOfUse [DEPRECATED]"/>
-         </mapping>
         <mapping>
           <identity value="mp-dataset-mp9-300-rc2-20260213"/>
           <map value="mp-dataelement9x-280"/>
           <comment value="ValidityPeriod"/>
         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-280"/>
+            <comment value="ValidityPeriod"/>
+         </mapping>
       </element>
       <element id="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">
          <path value="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed" />
@@ -410,7 +435,12 @@
          <mapping>
             <identity value="zib-dispenserequest-v1.0.3-2020EN" />
             <map value="NL-CM:9.10.22120" />
-            <comment value="NumberOfRefills" />
+            <comment value="NumberOfRefills [DEPRECATED]" />
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-284"/>
+            <comment value="NumberOfRefills"/>
          </mapping>
       </element>
       <element id="MedicationRequest.dispenseRequest.quantity">
@@ -423,12 +453,12 @@
             <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-GstdSimpleQuantity" />
          </type>
          <mapping>
-            <identity value="zib-dispenserequest-v1.0.3-2020EN" />
-            <map value="NL-CM:9.10.19964" />
-            <comment value="Amount [DEPRECATED]" />
+            <identity value="mp-dataset-mp9-300-rc2-20260213" />
+            <map value="mp-dataelement9x-285" />
+            <comment value="Amount" />
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213" />
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
             <map value="mp-dataelement9x-285" />
             <comment value="Amount" />
          </mapping>

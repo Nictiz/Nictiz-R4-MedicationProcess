@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resultaat input-bestand="mp-DispenseRequest.xml">
    <concept>
+      <!-- oude mapping op deprecated gezet en nieuwe mapping eronder toegevoegd -->
       <old_mapping name="Verstrekkingsverzoek"
                    code="9.10.19963"
                    zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.10.19963"/>
@@ -27,6 +28,8 @@
       </mapping>
    </concept>
    <concept>
+      <!-- mp mapping bestond al voor CancaledIndicator - zib mapping stond al op deprecated en is verwijderd -->
+      <!-- validiy period is ook een eigen element - zib mapping verwijderd en mapping toegevoegd -->
       <old_mapping name="Verbruiksperiode"
                    code="9.10.20062"
                    zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.10.20062"/>
@@ -45,6 +48,7 @@
       </mapping>
    </concept>
    <concept>
+      <!-- oude mapping op deprecated gezet en nieuwe mapping eronder toegevoegd -->
       <old_mapping name="TeVerstrekkenGeneesmiddel"
                    code="9.10.22249"
                    zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.10.22249"/>
@@ -55,6 +59,7 @@
       </mapping>
    </concept>
    <concept>
+      <!-- oude mapping op deprecated gezet en nieuwe mapping eronder toegevoegd -->
       <old_mapping name="VerstrekkingsverzoekDatum"
                    code="9.10.20060"
                    zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.10.20060"/>
@@ -73,6 +78,7 @@
       </mapping>
    </concept>
    <concept>
+      <!-- oude mapping op deprecated gezet en nieuwe mapping eronder toegevoegd -->
       <old_mapping name="BeoogdVerstrekker"
                    code="9.10.19966"
                    zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.10.19966"/>
@@ -91,6 +97,7 @@
       </mapping>
    </concept>
    <concept>
+      <!-- oude mapping op deprecated gezet en nieuwe mapping eronder toegevoegd -->
       <old_mapping name="Toelichting"
                    code="9.10.22274"
                    zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.10.22274"/>
@@ -101,6 +108,7 @@
       </mapping>
    </concept>
    <concept>
+      <!-- oude mapping op deprecated gezet en nieuwe mapping eronder toegevoegd -->
       <melding>geen relationship[@type='SPEC'] voor 9.10.20068</melding>
       <melding>maar wél een inherit gevonden naar MP9 3.0.0-rc in mp-decor.xml</melding>
       <old-mapping name="Afleverlocatie"
@@ -114,6 +122,7 @@
       </old-mapping>
    </concept>
    <concept>
+      <!-- zibmapping op deprecated en nieuwe mapping toegevoegd -->
       <melding>geen relationship[@type='SPEC'] voor 9.10.22120</melding>
       <melding>maar wél een inherit gevonden naar MP9 3.0.0-rc in mp-decor.xml</melding>
       <old-mapping name="AantalHerhalingen"
@@ -127,6 +136,7 @@
       </old-mapping>
    </concept>
    <concept>
+      <!-- deprecated zib mapping verwijderd en nieuwe rc2 toegevoegd -->
       <old_mapping name="TeVerstrekkenHoeveelheid"
                    code="9.10.19964"
                    zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.10.19964"/>
