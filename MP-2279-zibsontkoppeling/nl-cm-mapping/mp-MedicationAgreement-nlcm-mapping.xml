@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resultaat input-bestand="mp-MedicationAgreement.xml">
+   <concept>
+      <old_mapping name="Medicatieafspraak"
+                   code="9.6.9580"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.6.9580"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-43"/>
+         <comment>MedicationAgreement</comment>
+      </mapping>
+      <old_mapping name="Medicatieafspraak"
+                   code="9.6.9580"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.6.9580"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-43"/>
+         <comment>MedicationAgreement</comment>
+      </mapping>
+      <old_mapping name="Medicatieafspraak"
+                   code="9.6.9580"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.6.9580"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-43"/>
+         <comment>MedicationAgreement</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <old_mapping name="Gebruiksinstructie"
+                   code="9.6.23240"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.6.23240"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-50"/>
+         <comment>InstructionsForUse</comment>
+      </mapping>
+      <old_mapping name="Gebruiksinstructie"
+                   code="9.6.23240"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.6.23240"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-50"/>
+         <comment>InstructionsForUse</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <old_mapping name="Omschrijving"
+                   code="9.12.9581"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.12.9581"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-52"/>
+         <comment>Description</comment>
+      </mapping>
+      <old_mapping name="Omschrijving"
+                   code="9.12.9581"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.12.9581"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-647"/>
+         <comment>Description</comment>
+      </mapping>
+      <old_mapping name="Omschrijving"
+                   code="9.12.9581"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.12.9581"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-301"/>
+         <comment>Description</comment>
+      </mapping>
+      <old_mapping name="Omschrijving"
+                   code="9.12.9581"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.12.9581"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-369"/>
+         <comment>Description</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <old_mapping name="Gebruiksperiode"
+                   code="9.6.19936"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.6.19936"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-84"/>
+         <comment>PeriodOfUse</comment>
+      </mapping>
+      <old_mapping name="Gebruiksperiode"
+                   code="9.6.19936"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.6.19936"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-635"/>
+         <comment>PeriodOfUse</comment>
+      </mapping>
+      <old_mapping name="Gebruiksperiode"
+                   code="9.6.19936"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.6.19936"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-84"/>
+         <comment>PeriodOfUse</comment>
+      </mapping>
+      <old_mapping name="Gebruiksperiode"
+                   code="9.6.19936"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.6.19936"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-84"/>
+         <comment>PeriodOfUse</comment>
+      </mapping>
+      <old_mapping name="Gebruiksperiode"
+                   code="9.6.19936"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.6.19936"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-635"/>
+         <comment>PeriodOfUse</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <old_mapping name="MedicatieafspraakStopType"
+                   code="9.6.19954"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.6.19954"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-88"/>
+         <comment>MedicationAgreementStopType</comment>
+      </mapping>
+      <old_mapping name="MedicatieafspraakStopType"
+                   code="9.6.19954"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.6.19954"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-88"/>
+         <comment>MedicationAgreementStopType</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 9.12.22505</melding>
+      <melding>geen inherit in mp-decor.xml voor HerhaalperiodeCyclischSchema</melding>
+   </concept>
+   <concept>
+      <old_mapping name="AfgesprokenGeneesmiddel"
+                   code="9.6.19925"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.6.19925"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-48"/>
+         <comment>AgreedMedicine</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <old_mapping name="MedicatieafspraakDatumTijd"
+                   code="9.6.19757"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.6.19757"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-83"/>
+         <comment>MedicationAgreementDateTime</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <old_mapping name="Voorschrijver"
+                   code="9.6.1030"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.6.1030"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-44"/>
+         <comment>Prescriber</comment>
+      </mapping>
+      <old_mapping name="Voorschrijver"
+                   code="9.6.1030"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.6.1030"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-44"/>
+         <comment>Prescriber</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <old_mapping name="RedenVanVoorschrijven"
+                   code="9.6.23133"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.6.23133"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-46"/>
+         <comment>PrescriptionReason</comment>
+      </mapping>
+      <old_mapping name="RedenVanVoorschrijven"
+                   code="9.6.23133"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.6.23133"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-46"/>
+         <comment>PrescriptionReason</comment>
+      </mapping>
+   </concept>
+   <concept>
+      <old_mapping name="Toelichting"
+                   code="9.6.22273"
+                   zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.6.22273"/>
+      <mapping>
+         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+         <map value="mp-dataelement9x-91"/>
+         <comment>Comment</comment>
+      </mapping>
+   </concept>
+</resultaat>

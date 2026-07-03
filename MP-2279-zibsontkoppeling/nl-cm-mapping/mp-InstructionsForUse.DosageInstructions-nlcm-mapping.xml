@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resultaat input-bestand="mp-InstructionsForUse.DosageInstructions.xml">
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 9.12.22095</melding>
+      <melding>geen inherit in mp-decor.xml voor Doseerinstructie</melding>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 9.12.19945</melding>
+      <melding>geen inherit in mp-decor.xml voor Criterium</melding>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 9.12.22503</melding>
+      <melding>geen inherit in mp-decor.xml voor Volgnummer</melding>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 9.12.19948</melding>
+      <melding>geen inherit in mp-decor.xml voor Toedieningsschema</melding>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 9.12.19950</melding>
+      <melding>geen inherit in mp-decor.xml voor Interval</melding>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 9.12.22506</melding>
+      <melding>geen inherit in mp-decor.xml voor Doseerduur</melding>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 9.12.19949</melding>
+      <melding>geen inherit in mp-decor.xml voor Frequentie</melding>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 20.1.2</melding>
+      <melding>geen inherit in mp-decor.xml voor minimumWaarde</melding>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 20.1.4</melding>
+      <melding>geen inherit in mp-decor.xml voor nominaleWaarde</melding>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 20.1.3</melding>
+      <melding>geen inherit in mp-decor.xml voor maximumWaarde</melding>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 9.12.23141</melding>
+      <melding>geen inherit in mp-decor.xml voor Toedieningsduur</melding>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 9.12.19952</melding>
+      <melding>geen inherit in mp-decor.xml voor Weekdag</melding>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 9.12.19951</melding>
+      <melding>geen inherit in mp-decor.xml voor Toedientijd</melding>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 9.12.19953</melding>
+      <melding>geen inherit in mp-decor.xml voor Dagdeel</melding>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 9.12.19941</melding>
+      <melding>geen inherit in mp-decor.xml voor Toedieningsweg</melding>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 9.12.19940</melding>
+      <melding>geen inherit in mp-decor.xml voor Keerdosis</melding>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 9.12.19942</melding>
+      <melding>geen inherit in mp-decor.xml voor Toedieningssnelheid</melding>
+   </concept>
+   <concept>
+      <melding>geen relationship[@type='SPEC'] voor 9.12.19946</melding>
+      <melding>geen inherit in mp-decor.xml voor MaximaleDosering</melding>
+   </concept>
+</resultaat>
