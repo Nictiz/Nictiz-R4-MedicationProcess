@@ -83,7 +83,7 @@
                                         <xsl:attribute name="value" select="concat('mp-dataelement9x-', $mp-element-9x-id)"></xsl:attribute>
                                     </map>
                                     <comment>
-                                        <xsl:value-of select="$name_eng"></xsl:value-of>
+                                        <xsl:attribute name="value" select="$name_eng"></xsl:attribute>
                                     </comment>
                                 </mapping>
                             </xsl:for-each>
@@ -135,7 +135,7 @@
                                                                 <xsl:attribute name="value" select="concat('mp-dataelement9x-', $mp-element-9x-id)"></xsl:attribute>
                                                             </map>
                                                             <comment>
-                                                                <xsl:value-of select="$name_eng"></xsl:value-of>
+                                                                <xsl:attribute name="value" select="$name_eng"></xsl:attribute>
                                                             </comment>
                                                         </mapping>
                                                     </old-mapping>
