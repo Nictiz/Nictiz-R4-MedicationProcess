@@ -58,22 +58,27 @@
       <old_mapping name="Omschrijving"
                    code="9.12.9581"
                    zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.12.9581"/>
+      <!-- MA.gebruiksinstructie.omschrijving -->
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-52"/>
          <comment value="Description"/>
       </mapping>
+      
       <old_mapping name="Omschrijving"
                    code="9.12.9581"
                    zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.12.9581"/>
+      <!-- WDS.gebruiksinstructie.omschrijving-->
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-647"/>
          <comment value="Description"/>
       </mapping>
+      
       <old_mapping name="Omschrijving"
                    code="9.12.9581"
                    zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.12.9581"/>
+      <!--TA.gebruiksinstructie.omschrijving-->
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-301"/>
@@ -82,6 +87,7 @@
       <old_mapping name="Omschrijving"
                    code="9.12.9581"
                    zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.12.9581"/>
+      <!--MGB.gebruiksinstructie.omschrijving-->
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-369"/>
@@ -107,6 +113,7 @@
       </mapping>
    </concept>
    <concept>
+      <!-- bestond al en ZIB mapping verwijderd omdat het al op deprecated stond -->
       <old_mapping name="ToedieningsafspraakStopType"
                    code="9.8.22498"
                    zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.8.22498"/>
@@ -125,10 +132,12 @@
       </mapping>
    </concept>
    <concept>
+      <!-- herhaalperiode cyclisch schema zit via 9.2 en via een ander concept in de decor bestanden dus handmatig opgezocht-->
       <melding>geen relationship[@type='SPEC'] voor 9.12.22505</melding>
       <melding>geen inherit in mp-decor.xml voor HerhaalperiodeCyclischSchema</melding>
    </concept>
    <concept>
+      <!-- status bevat alleen deprecated mappings naar de zibs, deze zijn verwijderd -->
       <old_mapping name="GeannuleerdIndicator"
                    code="9.8.23034"
                    zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.8.23034"/>
