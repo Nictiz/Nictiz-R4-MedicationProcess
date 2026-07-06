@@ -48,6 +48,7 @@
       <old_mapping name="Omschrijving"
                    code="9.12.9581"
                    zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.12.9581"/>
+      <!-- MA.gebruiksinstructie.omschrijving -->
       <mapping>
          <identity value="mp-dataset-mp9-300-rc3-TODO"/>
          <map value="mp-dataelement9x-52"/>
