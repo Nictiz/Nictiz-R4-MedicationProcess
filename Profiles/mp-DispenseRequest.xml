@@ -45,11 +45,6 @@
          <short value="DispenseRequest" />
          <alias value="Verstrekkingsverzoek" />
          <mapping>
-            <identity value="zib-dispenserequest-v1.0.3-2020EN" />
-            <map value="NL-CM:9.10.19963" />
-            <comment value="DispenseRequest [DEPRECATED]" />
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc3-TODO"/>
             <map value="mp-dataelement9x-274"/>
             <comment value="DispenseRequest"/>
@@ -231,11 +226,6 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct" />
          </type>
          <mapping>
-            <identity value="zib-dispenserequest-v1.0.3-2020EN" />
-            <map value="NL-CM:9.10.22249" />
-            <comment value="MedicineToBeDispensed [DEPRECATED]" />
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc3-TODO"/>
             <map value="mp-dataelement9x-277"/>
             <comment value="MedicineToBeDispensed"/>
@@ -275,11 +265,6 @@
          <short value="DispenseRequestDate" />
          <definition value="Time at which the dispense request is entered." />
          <alias value="VerstrekkingsverzoekDatum" />
-         <mapping>
-            <identity value="zib-dispenserequest-v1.0.3-2020EN" />
-            <map value="NL-CM:9.10.20060" />
-            <comment value="DispenseRequestDate [DEPRECATED]" />
-         </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc3-TODO"/>
             <map value="mp-dataelement9x-279"/>
@@ -330,11 +315,6 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization" />
          </type>
          <mapping>
-            <identity value="zib-dispenserequest-v1.0.3-2020EN" />
-            <map value="NL-CM:9.10.19966" />
-            <comment value="IntendedSupplier [DEPRECATED]" />
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc3-TODO"/>
             <map value="mp-dataelement9x-275"/>
             <comment value="IntendedSupplier"/>
@@ -381,11 +361,6 @@
          <definition value="Explanation for the dispense request. This explanation can contain e.g. information on why a prescriber submits a dispense request that deviates from the norm, e.g. an extra dispense request needed because the patient has lost the medication." />
          <alias value="Toelichting" />
          <mapping>
-            <identity value="zib-dispenserequest-v1.0.3-2020EN" />
-            <map value="NL-CM:9.10.22274" />
-            <comment value="Comment [DEPRECATED]" />
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc3-TODO"/>
             <map value="mp-dataelement9x-288"/>
             <comment value="Comment"/>
@@ -401,11 +376,6 @@
       </element>
       <element id="MedicationRequest.dispenseRequest.extension:dispenseLocation.value[x]">
          <path value="MedicationRequest.dispenseRequest.extension.value[x]" />
-         <mapping>
-            <identity value="zib-dispenserequest-v1.0.3-2020EN" />
-            <map value="NL-CM:9.10.20068" />
-            <comment value="DispenseLocation [DEPRECATED]" />
-         </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc3-TODO"/>
             <map value="mp-dataelement9x-286"/>
@@ -437,11 +407,6 @@
          <short value="NumberOfRefills" />
          <definition value="The number of additional times the medication may be dispensed after the first time. In the case of Amount: The total amount that may be dispensed is: (Number of refills + 1) x amount to be dispensed.In the case of Period of Use:The total period of use is: (Number of refills + 1) x period of use" />
          <alias value="AantalHerhalingen" />
-         <mapping>
-            <identity value="zib-dispenserequest-v1.0.3-2020EN" />
-            <map value="NL-CM:9.10.22120" />
-            <comment value="NumberOfRefills [DEPRECATED]" />
-         </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc3-TODO"/>
             <map value="mp-dataelement9x-284"/>
