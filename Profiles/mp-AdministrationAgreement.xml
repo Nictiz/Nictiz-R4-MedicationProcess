@@ -52,11 +52,21 @@
          <mapping>
             <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
             <map value="NL-CM:9.8.20132"/>
+            <comment value="AdministrationAgreement [DEPRECATED]"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-294"/>
             <comment value="AdministrationAgreement"/>
          </mapping>
          <mapping>
             <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
             <map value="NL-CM:9.8.22098"/>
+            <comment value="InstructionsForUse [DEPRECATED]"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-299"/>
             <comment value="InstructionsForUse"/>
          </mapping>
       </element>
@@ -115,6 +125,11 @@
          <mapping>
             <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
             <map value="NL-CM:9.8.20133"/>
+            <comment value="AdministrationAgreementDateTime [DEPRECATED]"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-332"/>
             <comment value="AdministrationAgreementDateTime"/>
          </mapping>
       </element>
@@ -131,6 +146,11 @@
          <mapping>
             <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
             <map value="NL-CM:9.12.9581"/>
+            <comment value="Description [DEPRECATED]"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-301"/>
             <comment value="Description"/>
          </mapping>
       </element>
@@ -155,6 +175,11 @@
          <mapping>
             <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
             <map value="NL-CM:9.8.22660"/>
+            <comment value="PeriodOfUse [DEPRECATED]"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-334"/>
             <comment value="PeriodOfUse"/>
          </mapping>
       </element>
@@ -300,17 +325,17 @@
          <short value="AdministrationAgreementStopType"/>
          <alias value="ToedieningsafspraakStopType"/>
          <mapping>
-            <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
-            <map value="NL-CM:9.8.22498"/>
-            <comment value="AdministrationAgreementStopType [DEPRECATED]"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-340"/>
             <comment value="AdministrationAgreementStopType"/>
          </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-340"/>
+            <comment value="AdministrationAgreementStopType"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
             <map value="mp-dataelement9x-340"/>
             <comment value="AdministrationAgreementStopType"/>
          </mapping>
@@ -328,6 +353,11 @@
          <mapping>
             <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
             <map value="NL-CM:9.12.22505"/>
+            <comment value="RepeatPeriodCyclicalSchedule [DEPRECATED]"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-302"/>
             <comment value="RepeatPeriodCyclicalSchedule"/>
          </mapping>
       </element>
@@ -351,27 +381,17 @@
          <definition value="A code specifying the state of the set of dispense events. In the event of an error correction, the value is set to _entered-in-error_."/>
          <comment value="The AdministrationAgreement building block does not provide much information on the logistical status as is intended by the ValueSet binding on this element. Therefore, if a system is unable to infer the status, `.status` will usually be set to _unknown_."/>
          <mapping>
-            <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
-            <map value="NL-CM:9.8.23034"/>
-            <comment value="CanceledIndicator [DEPRECATED]"/>
-         </mapping>
-         <mapping>
-            <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
-            <map value="NL-CM:9.8.22660"/>
-            <comment value="PeriodOfUse (implicit, main mapping is on the extensions ext-TimeInterval.Period and ext-TimeInterval.Duration) [DEPRECATED]"/>
-         </mapping>
-         <mapping>
-            <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
-            <map value="NL-CM:9.8.22498"/>
-            <comment value="AdministrationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType) [DEPRECATED]"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-340"/>
             <comment value="AdministrationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
          </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-340"/>
+            <comment value="AdministrationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
             <map value="mp-dataelement9x-340"/>
             <comment value="AdministrationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
          </mapping>
@@ -427,6 +447,11 @@
          <mapping>
             <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
             <map value="NL-CM:9.8.20237"/>
+            <comment value="MedicineForAdministrationAgreement [DEPRECATED]"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-297"/>
             <comment value="MedicineForAdministrationAgreement"/>
          </mapping>
       </element>
@@ -462,6 +487,11 @@
          <mapping>
             <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
             <map value="NL-CM:9.8.22097"/>
+            <comment value="Supplier [DEPRECATED]"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-295"/>
             <comment value="Supplier"/>
          </mapping>
       </element>
@@ -479,6 +509,11 @@
          <mapping>
             <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
             <map value="NL-CM:9.8.22097"/>
+            <comment value="Supplier [DEPRECATED]"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-295"/>
             <comment value="Supplier"/>
          </mapping>
       </element>
@@ -496,7 +531,12 @@
          <mapping>
             <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
             <map value="NL-CM:9.8.22394"/>
-            <comment value="MedicationAgreement"/>
+            <comment value="MedicationAgreement [DEPRECATED]"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-338"/>
+            <comment value="RelationMedicationAgreement"/>
          </mapping>
       </element>
       <element id="MedicationDispense.note">
@@ -511,6 +551,11 @@
          <mapping>
             <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
             <map value="NL-CM:9.8.22275"/>
+            <comment value="Comment [DEPRECATED]"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-343"/>
             <comment value="Comment"/>
          </mapping>
       </element>
