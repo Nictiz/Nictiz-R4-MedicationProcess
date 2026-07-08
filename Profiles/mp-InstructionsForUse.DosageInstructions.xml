@@ -18,17 +18,7 @@
    <description value="Instructions for the use or administration of the medication, e.g. dose and route of administration. In the medication building block MedicationUse, this is the pattern of use established by the patient or which the patient followed."/>
    <purpose value="This Dosage data type profile _mainly_ represents the DosingInstructions concept of the sub building block InstructionsForUse, for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). This profile is based on the medication building block InstructionsForUse and contains mappings to the MP9 data set.&#xA;&#xA;This profile also includes the concepts AdditionalInstructions and RouteOfAdministration. These concepts are placed on the same level as DosingInstructions in the medication building block, but are in FHIR part of the Dosage data type. As a consequence, these concepts may be duplicated if this Dosage profile is instantiated multiple times.&#xA;&#xA;This profile should be used in medication related resources that define dosage instructions and supplemented by the extensions [ext-RenderedDosageInstruction](http://nictiz.nl/fhir/StructureDefinition/ext-RenderedDosageInstruction) and [ext-InstructionsForUse.RepeatPeriodCyclicalSchedule](http://nictiz.nl/fhir/StructureDefinition/ext-InstructionsForUse.RepeatPeriodCyclicalSchedule) to implement the remaining concepts Description and RepeatPeriodCyclicalSchedule."/>
    <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
-   <fhirVersion value="4.0.1"/>
-   <mapping>
-      <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-      <uri value="https://zibs.nl/wiki/InstructionsForUse-v1.2.1(2020EN)"/>
-      <name value="zib InstructionsForUse-v1.2.1(2020EN)"/>
-   </mapping>
-   <mapping>
-      <identity value="zib-range-v1.0.1-2020EN"/>
-      <uri value="https://zibs.nl/wiki/Range-v1.0.1(2020EN)"/>
-      <name value="zib Range-v1.0.1(2020EN)"/>
-   </mapping>
+   <fhirVersion value="4.0.1"/>>
    <mapping>
       <identity value="mp-dataset-mp9-300-rc1-20250522"/>
       <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20250522T132618/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
@@ -52,8 +42,23 @@
          <comment value="This element _mostly_ represents the DosingInstructions container from zib InstructionsForUse, but also includes the AdditionalInstructions and RouteOfAdministration concepts, which are normally placed on the same level as this container. As a result, these concepts are **duplicated** in every repetition of this element, even though these concepts should be present just once according to the zib.&#xD;&#xA;&#xD;&#xA;This element does not contain a mapping to the Dosage container from zib InstructionsForUse. However, all child concepts of the Dosage concept are mapped. If an instance of zib container DosingInstructions contains multiple Dosage containers, each of these results in a separate instance of the FHIR Dosage data type conforming to this profile, wherein `.sequence` (zib concept SequenceNumber) and `.timing.repeat.bounds[x]:boundsDuration` (zib concept DoseDuration) are equal."/>
          <alias value="Doseerinstructie"/>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.22095"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-55"/>
+            <comment value="DosingInstructions"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-651"/>
+            <comment value="DosingInstructions"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-304"/>
+            <comment value="DosingInstructions"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-372"/>
             <comment value="DosingInstructions"/>
          </mapping>
       </element>
@@ -75,8 +80,23 @@
             <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.12.4--20200901000000"/>
          </binding>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.19945"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-72"/>
+            <comment value="Condition"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-676"/>
+            <comment value="Condition"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-321"/>
+            <comment value="Condition"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-389"/>
             <comment value="Condition"/>
          </mapping>
       </element>
@@ -86,8 +106,23 @@
          <definition value="This indicates the sequence of the dosing instructions within the medication agreement."/>
          <alias value="Volgnummer"/>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.22503"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-57"/>
+            <comment value="SequenceNumber"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-653"/>
+            <comment value="SequenceNumber"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-306"/>
+            <comment value="SequenceNumber"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-374"/>
             <comment value="SequenceNumber"/>
          </mapping>
       </element>
@@ -149,8 +184,23 @@
          <definition value="Specifications of the times at which the medication is to be administered. This is indicated as follows:&#xD;&#xA;* Time(s) (16:00) or indications (“before meals”) at which the medication is to be taken each day.&#xD;&#xA;* A specific number of times the medication is to be taken each day (&#34;3x a day&#34;), indicated with the frequency.&#xD;&#xA;* A time interval between consecutive doses (“Every 2 hours”, “every 3 days”), indicated with the word Interval.&#xD;&#xA;* Combined periods with an interval and duration (“1 daily for three out of four weeks: the pill schedule”)&#xD;&#xA;&#xD;&#xA;If a certain medication is not to be taken daily, the aforementioned can be combined with daily indications:&#xD;&#xA;&#xD;&#xA;* One or more week days on which the medication is to be administered (e.g. “Monday, Wednesday, Friday”)&#xD;&#xA;* ”3x a week”, “2x a month”.&#xD;&#xA;&#xD;&#xA;The specified administration “infinite” is automatically to be repeated until:&#xD;&#xA;* The end date and time has been reached&#xD;&#xA;* The total administration duration has been reached (14 days)&#xD;&#xA;* A specific amount of administrations has been reached (“20 doses”), to be entered in the Frequency concept."/>
          <alias value="Toedieningsschema"/>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.19948"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-74"/>
+            <comment value="AdministeringSchedule"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-662"/>
+            <comment value="AdministeringSchedule"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-323"/>
+            <comment value="AdministeringSchedule"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-391"/>
             <comment value="AdministeringSchedule"/>
          </mapping>
       </element>
@@ -167,8 +217,23 @@
          <definition value="Indicates that the timing as specified by `.frequency`, `.period` and `.periodUnit` should be strictly interpreted. This is the case when the zib concept Interval is expressed using these elements (as opposed to the zib concept Frequency).&#xD;&#xA;&#xD;&#xA;The times can be chosen freely, but distribution throughout the day is more precise, and the interval between times is important (e.g. in the case of antibiotics). In the case of Baxter packs and intramural care, such a prescription is used to draw up a (location-specific) outline for distribution times (logistics)."/>
          <comment value="Notes on the zib concepts Frequency and Interval:&#xA;1. An interval (in FHIR) is just a normal frequency of 1 (combined with a period based on the interval length) and is represented in FHIR as just another frequency using `.frequency` (set to 1), `.period` and `.periodUnit`. However, the zib differentiates between the two concepts in the timing precision (the Interval concept defines precise intervals while the Frequency concept defines approximate intervals). When the interval is precise, this is communicated using the extension in `.extension:timingExact`.&#xA;2. On the other hand, the zib Frequency concept might be used to express a single-use, non-repeating series by omitting the time unit. In FHIR, this is _not_ represented as a frequency, but with the `.count` element.&#xA;3. Lastly, the Frequency concept may be used to express either a single nominal value or a range. A range is represented by respectively setting the minimum and maximum value to `.frequency` and `.frequencyMax`, or to `.count` and `.countMax` for single-use events. A nominal value is expressed by setting its value to `.frequency` or to `.count` for single-use events, and leaving `.frequencyMax` and `.countMax` unpopulated.&#xA;&#xA;In summary:&#xA;* zib concept Frequency:&#xA;    * With time unit:&#xA;        * Nominal value: `.frequency`, `.period` and `.periodUnit`&#xA;        * Range: `.frequency`, `.frequencyMax`, `.period` and `.periodUnit`&#xA;    * Without time unit:&#xA;        * Nominal value: `.count`&#xA;        * Range: `.count` and `.countMax`&#xA;* zib concept Interval: `.frequency` (set to 1), `.period`, `.periodUnit` and `.extension:timingExact` (set to _true_)"/>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.19950"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-82"/>
+            <comment value="Interval (implicit, main mapping is on `.frequency`, `.period` and `.periodMax`)"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-673"/>
+            <comment value="Interval (implicit, main mapping is on `.frequency`, `.period` and `.periodMax`)"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-331"/>
+            <comment value="Interval (implicit, main mapping is on `.frequency`, `.period` and `.periodMax`)"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-399"/>
             <comment value="Interval (implicit, main mapping is on `.frequency`, `.period` and `.periodMax`)"/>
          </mapping>
          <mapping>
@@ -232,8 +297,23 @@
             <code value="Duration"/>
          </type>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.22506"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-56"/>
+            <comment value="DoseDuration"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-652"/>
+            <comment value="DoseDuration"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-305"/>
+            <comment value="DoseDuration"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-373"/>
             <comment value="DoseDuration"/>
          </mapping>
       </element>
@@ -246,18 +326,63 @@
          <alias value="nominaleWaarde"/>
          <alias value="minimumWaarde"/>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.19949"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-75"/>
             <comment value="Frequency (single use only)"/>
          </mapping>
          <mapping>
-            <identity value="zib-range-v1.0.1-2020EN"/>
-            <map value="NL-CM:20.1.2"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-663"/>
+            <comment value="Frequency (single use only)"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-324"/>
+            <comment value="Frequency (single use only)"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-392"/>
+            <comment value="Frequency (single use only)"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-76"/>
             <comment value="minimumValue"/>
          </mapping>
          <mapping>
-            <identity value="zib-range-v1.0.1-2020EN"/>
-            <map value="NL-CM:20.1.4"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-664"/>
+            <comment value="minimumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-325"/>
+            <comment value="minimumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-393"/>
+            <comment value="minimumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-78"/>
+            <comment value="nominalValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-666"/>
+            <comment value="nominalValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-327"/>
+            <comment value="nominalValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-395"/>
             <comment value="nominalValue"/>
          </mapping>
       </element>
@@ -269,13 +394,43 @@
          <alias value="Frequentie"/>
          <alias value="maximumWaarde"/>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.19949"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-75"/>
             <comment value="Frequency"/>
          </mapping>
          <mapping>
-            <identity value="zib-range-v1.0.1-2020EN"/>
-            <map value="NL-CM:20.1.3"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-663"/>
+            <comment value="Frequency"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-324"/>
+            <comment value="Frequency"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-392"/>
+            <comment value="Frequency"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-77"/>
+            <comment value="maximumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-667"/>
+            <comment value="maximumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-326"/>
+            <comment value="maximumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-394"/>
             <comment value="maximumValue"/>
          </mapping>
       </element>
@@ -285,8 +440,23 @@
          <definition value="The duration of administration defines the length of time during which the drug is administered and is mainly used in the slow parenteral administration of fluids. The `durationUnit` defines the time unit."/>
          <alias value="Toedieningsduur"/>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.23141"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-63"/>
+            <comment value="DurationOfAdministration"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-689"/>
+            <comment value="DurationOfAdministration"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-312"/>
+            <comment value="DurationOfAdministration"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="380"/>
             <comment value="DurationOfAdministration"/>
          </mapping>
       </element>
@@ -296,8 +466,23 @@
          <definition value="The units of time, in UCUM units, for the duration of administration of time during which the drug is administered."/>
          <alias value="Toedieningsduur"/>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.23141"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-63"/>
+            <comment value="DurationOfAdministration"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-689"/>
+            <comment value="DurationOfAdministration"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-312"/>
+            <comment value="DurationOfAdministration"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="380"/>
             <comment value="DurationOfAdministration"/>
          </mapping>
       </element>
@@ -311,24 +496,84 @@
          <alias value="nominaleWaarde"/>
          <alias value="Interval"/>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.19949"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-82"/>
+            <comment value="Interval"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-673"/>
+            <comment value="Interval"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-331"/>
+            <comment value="Interval"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-399"/>
+            <comment value="Interval"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-75"/>
             <comment value="Frequency"/>
          </mapping>
          <mapping>
-            <identity value="zib-range-v1.0.1-2020EN"/>
-            <map value="NL-CM:20.1.2"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-663"/>
+            <comment value="Frequency"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-324"/>
+            <comment value="Frequency"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-392"/>
+            <comment value="Frequency"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-76"/>
             <comment value="minimumValue"/>
          </mapping>
          <mapping>
-            <identity value="zib-range-v1.0.1-2020EN"/>
-            <map value="NL-CM:20.1.4"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-664"/>
+            <comment value="minimumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-325"/>
+            <comment value="minimumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-393"/>
+            <comment value="minimumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-78"/>
             <comment value="nominalValue"/>
          </mapping>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.19950"/>
-            <comment value="Interval"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-666"/>
+            <comment value="nominalValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-327"/>
+            <comment value="nominalValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-395"/>
+            <comment value="nominalValue"/>
          </mapping>
       </element>
       <element id="Dosage.timing.repeat.frequencyMax">
@@ -338,14 +583,44 @@
          <alias value="maximumWaarde"/>
          <alias value="Frequentie"/>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.19949"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-77"/>
+            <comment value="maximumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-667"/>
+            <comment value="maximumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-326"/>
+            <comment value="maximumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-394"/>
+            <comment value="maximumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-75"/>
             <comment value="Frequency"/>
          </mapping>
          <mapping>
-            <identity value="zib-range-v1.0.1-2020EN"/>
-            <map value="NL-CM:20.1.3"/>
-            <comment value="maximumValue"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-663"/>
+            <comment value="Frequency"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-324"/>
+            <comment value="Frequency"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-392"/>
+            <comment value="Frequency"/>
          </mapping>
       </element>
       <element id="Dosage.timing.repeat.period">
@@ -356,13 +631,43 @@
          <alias value="Frequentie"/>
          <alias value="Interval"/>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.19949"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-75"/>
             <comment value="Frequency"/>
          </mapping>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.19950"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-663"/>
+            <comment value="Frequency"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-324"/>
+            <comment value="Frequency"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-392"/>
+            <comment value="Frequency"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-82"/>
+            <comment value="Interval"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-673"/>
+            <comment value="Interval"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-331"/>
+            <comment value="Interval"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-399"/>
             <comment value="Interval"/>
          </mapping>
       </element>
@@ -374,13 +679,43 @@
          <alias value="Frequentie"/>
          <alias value="Interval"/>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.19949"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-75"/>
             <comment value="Frequency. When frequency is used, set `.extension.timingExact` to false."/>
          </mapping>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.19950"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-663"/>
+            <comment value="Frequency. When frequency is used, set `.extension.timingExact` to false."/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-324"/>
+            <comment value="Frequency. When frequency is used, set `.extension.timingExact` to false."/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-392"/>
+            <comment value="Frequency. When frequency is used, set `.extension.timingExact` to false."/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-82"/>
+            <comment value="Interval"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-673"/>
+            <comment value="Interval"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-331"/>
+            <comment value="Interval"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-399"/>
             <comment value="Interval"/>
          </mapping>
       </element>
@@ -400,8 +735,23 @@
             </valueSet>
          </binding>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.19952"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-79"/>
+            <comment value="WeekDay"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-669"/>
+            <comment value="WeekDay"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-328"/>
+            <comment value="WeekDay"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-396"/>
             <comment value="WeekDay"/>
          </mapping>
       </element>
@@ -412,14 +762,29 @@
          <comment value="If there's a `.timeOfDay`, there cannot be a `.when`, or vice versa."/>
          <alias value="Toedientijd"/>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.19951"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-81"/>
+            <comment value="AdministrationTime"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-671"/>
+            <comment value="AdministrationTime"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-330"/>
+            <comment value="AdministrationTime"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-398"/>
             <comment value="AdministrationTime"/>
          </mapping>
       </element>
       <element id="Dosage.timing.repeat.when">
          <path value="Dosage.timing.repeat.when"/>
-         <short value="TimeOfDay"/>
+         <short value="PartOfDay"/>
          <definition value="Time of day: morning, afternoon, evening, night."/>
          <comment value="If there's a `.timeOfDay`, there cannot be a `.when`, or vice versa."/>
          <alias value="Dagdeel"/>
@@ -433,9 +798,24 @@
             </valueSet>
          </binding>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.19953"/>
-            <comment value="TimeOfDay"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-80"/>
+            <comment value="PartOfDay"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-670"/>
+            <comment value="PartOfDay"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-329"/>
+            <comment value="PartOfDay"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-397"/>
+            <comment value="PartOfDay"/>
          </mapping>
       </element>
       <element id="Dosage.asNeeded[x]">
@@ -463,11 +843,6 @@
             <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.12.4--20200901000000"/>
          </binding>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.19945"/>
-            <comment value="Condition [DEPRECATED]"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-321"/>
             <comment value="Condition"/>
@@ -484,6 +859,26 @@
          </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-676"/>
+            <comment value="Condition"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-321"/>
+            <comment value="Condition"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-72"/>
+            <comment value="Condition"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-389"/>
+            <comment value="Condition"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
             <map value="mp-dataelement9x-676"/>
             <comment value="Condition"/>
          </mapping>
@@ -542,11 +937,6 @@
             <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.12.1--20200901000000"/>
          </binding>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.19941"/>
-            <comment value="RouteOfAdministration [DEPRECATED]"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-303"/>
             <comment value="RouteOfAdministration"/>
@@ -571,6 +961,31 @@
             <map value="mp-dataelement9x-648"/>
             <comment value="RouteOfAdministration"/>
          </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-303"/>
+            <comment value="RouteOfAdministration"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-430"/>
+            <comment value="RouteOfAdministration"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-54"/>
+            <comment value="RouteOfAdministration"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-371"/>
+            <comment value="RouteOfAdministration"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-648"/>
+            <comment value="RouteOfAdministration"/>
+         </mapping>
       </element>
       <element id="Dosage.doseAndRate.dose[x]">
          <path value="Dosage.doseAndRate.dose[x]"/>
@@ -584,11 +999,6 @@
          <short value="Dose"/>
          <definition value="The dose indicates the amount/unit per administration. The unit can be any unit that can occur with this particular medicine. For liquids and other divisible products, a volume measure (preferably &#34;ml&#34;) will usually be used.&#xD;&#xA;&#xD;&#xA;In many cases, the prescriber may want to specify the dosage in units of weight of the active substance.&#xD;&#xA;&#xD;&#xA;If only the substance is indicated and not the product, then the amount of that substance is specified. For example, Paracetamol 1000 mg is equivalent to Paracetamol 500 mg tablets, 2 tablets (or units).&#xD;&#xA;&#xD;&#xA;The dosage is sometimes indicated in a calculation, which often uses the patient's body weight or body surface area as a parameter. However, the calculation remains nothing more than a tool to aid decision-making.&#xD;&#xA;&#xD;&#xA;In continuous administration, alongside the administration speed, the dose can be specified (e.g., 20 ml in a syringe or 500 ml in a bag), but it is often omitted.&#xD;&#xA;&#xD;&#xA;Even a general dosing recommendation such as 'Use according to protocol' or 'See instructions for use' can be adequate. Then, no dose is specified."/>
          <alias value="Keerdosis"/>
-         <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.19940"/>
-            <comment value="Dose [DEPRECATED]"/>
-         </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-316"/>
@@ -606,6 +1016,26 @@
          </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-655"/>
+            <comment value="Dose"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-316"/>
+            <comment value="Dose"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-67"/>
+            <comment value="Dose"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-384"/>
+            <comment value="Dose"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
             <map value="mp-dataelement9x-655"/>
             <comment value="Dose"/>
          </mapping>
@@ -627,8 +1057,23 @@
             <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-GstdSimpleQuantity"/>
          </type>
          <mapping>
-            <identity value="zib-range-v1.0.1-2020EN"/>
-            <map value="NL-CM:20.1.2"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-68"/>
+            <comment value="minimumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-657"/>
+            <comment value="minimumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-317"/>
+            <comment value="minimumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-385"/>
             <comment value="minimumValue"/>
          </mapping>
       </element>
@@ -642,8 +1087,23 @@
             <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-GstdSimpleQuantity"/>
          </type>
          <mapping>
-            <identity value="zib-range-v1.0.1-2020EN"/>
-            <map value="NL-CM:20.1.3"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-69"/>
+            <comment value="maximumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-659"/>
+            <comment value="maximumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-318"/>
+            <comment value="maximumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-386"/>
             <comment value="maximumValue"/>
          </mapping>
       </element>
@@ -658,8 +1118,23 @@
             <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-GstdSimpleQuantity"/>
          </type>
          <mapping>
-            <identity value="zib-range-v1.0.1-2020EN"/>
-            <map value="NL-CM:20.1.4"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-70"/>
+            <comment value="nominalValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-658"/>
+            <comment value="nominalValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-319"/>
+            <comment value="nominalValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-387"/>
             <comment value="nominalValue"/>
          </mapping>
       </element>
@@ -676,8 +1151,23 @@
          <definition value="The administering speed is used in slow administration of liquid. In practice, the measuring unit is almost always ml/hour, but can also be parametric with i.e. body weight or body surface area (in the case of a MedicationAgreement, VariableDosingRegimen or AdministrationAgreement). Entering an interval (such as 0-10 ml/hour) is also a commonly used option.&#xD;&#xA;&#xA;For example, with an administering speed of 10ml/hour:&#xD;&#xA;* value = 10&#xD;&#xA;* unit = ml/hour"/>
          <alias value="Toedieningssnelheid"/>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.19942"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-59"/>
+            <comment value="AdministeringSpeed"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-682"/>
+            <comment value="AdministeringSpeed"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-308"/>
+            <comment value="AdministeringSpeed"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-376"/>
             <comment value="AdministeringSpeed"/>
          </mapping>
       </element>
@@ -694,8 +1184,23 @@
          <definition value="The minimal value of the range. The boundary is inclusive."/>
          <alias value="minimumWaarde"/>
          <mapping>
-            <identity value="zib-range-v1.0.1-2020EN"/>
-            <map value="NL-CM:20.1.2"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-60"/>
+            <comment value="minimumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-684"/>
+            <comment value="minimumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-309"/>
+            <comment value="minimumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-377"/>
             <comment value="minimumValue"/>
          </mapping>
       </element>
@@ -705,8 +1210,23 @@
          <definition value="The maximum value of the range. The boundary is inclusive."/>
          <alias value="maximumWaarde"/>
          <mapping>
-            <identity value="zib-range-v1.0.1-2020EN"/>
-            <map value="NL-CM:20.1.3"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-61"/>
+            <comment value="maximumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-686"/>
+            <comment value="maximumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-310"/>
+            <comment value="maximumValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-378"/>
             <comment value="maximumValue"/>
          </mapping>
       </element>
@@ -720,8 +1240,23 @@
             <code value="Quantity"/>
          </type>
          <mapping>
-            <identity value="zib-range-v1.0.1-2020EN"/>
-            <map value="NL-CM:20.1.4"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-62"/>
+            <comment value="nominalValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-685"/>
+            <comment value="nominalValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-311"/>
+            <comment value="nominalValue"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-379"/>
             <comment value="nominalValue"/>
          </mapping>
       </element>
@@ -731,8 +1266,23 @@
          <definition value="A maximum dose maximizes (in time) the usage of a drug in an 'as needed' prescription."/>
          <alias value="MaximaleDosering"/>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.19946"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-73"/>
+            <comment value="MaximumDose"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-678"/>
+            <comment value="MaximumDose"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-322"/>
+            <comment value="MaximumDose"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-390"/>
             <comment value="MaximumDose"/>
          </mapping>
       </element>
