@@ -4,11 +4,7 @@
       <old_mapping name="Medicatietoediening"
                    code="9.13.20928"
                    zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.13.20928"/>
-      <mapping>
-         <identity value="mp-dataset-mp9-300-rc3-TODO"/>
-         <map value="mp-dataelement9x-419"/>
-         <comment value="MedicationAdministration"/>
-      </mapping>
+
       <old_mapping name="Medicatietoediening"
                    code="9.13.20928"
                    zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.13.20928"/>
@@ -37,6 +33,8 @@
       </mapping>
    </concept>
    <concept>
+      <!-- opgezocht in mp-decor en inherit 2.16.840.1.113883.2.4.3.11.60.20.77.2.4.445 -->
+         <!-- <concept id="2.16.840.1.113883.2.4.3.11.60.20.77.2.4.445" effectiveDate="2022-06-30T00:00:00" statusCode="draft" type="item" versionLabel="MP9 3.0.0-beta" lastModifiedDate="2026-02-09T10:03:00">-->
       <melding>geen relationship[@type='SPEC'] voor 9.13.21191</melding>
       <error>Controleer mp-decor.xml! Inherit naar een concept uit MP9 3.0.0-rc bestaat niet!</error>
    </concept>
@@ -59,10 +57,15 @@
       </mapping>
    </concept>
    <concept>
+      <!-- 9.13.23237 komt niet voor in mp-decor dus gezocht in art decor naar id van RelatieToedieningsafspraak in de MTD
+         id in art decor: 2.16.840.1.113883.2.4.3.11.60.20.77.2.4.1324 -->
+      <!-- ook short en alias aangepast naar RelationAdministrationAgreement/RelatieToedieningsafspraak-->
       <melding>geen relationship[@type='SPEC'] voor 9.13.23237</melding>
       <melding>geen inherit in mp-decor.xml voor Toedieningsafspraak</melding>
    </concept>
    <concept>
+      <!-- inherit is naar een MP9.2 concept -->
+      <!-- 2.16.840.1.113883.2.4.3.11.60.20.77.2.4.426 -->
       <melding>geen relationship[@type='SPEC'] voor 9.13.21193</melding>
       <error>Controleer mp-decor.xml! Inherit naar een concept uit MP9 3.0.0-rc bestaat niet!</error>
    </concept>
@@ -85,6 +88,7 @@
       </mapping>
    </concept>
    <concept>
+      <!-- niet aangepast -->
       <old_mapping name="Patiënt"
                    code="9.13.23380"
                    zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.13.23380"/>
@@ -103,6 +107,7 @@
       </mapping>
    </concept>
    <concept>
+      <!-- niet aangepast -->
       <old_mapping name="Zorgverlener"
                    code="9.13.23172"
                    zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.13.23172"/>
@@ -121,6 +126,7 @@
       </mapping>
    </concept>
    <concept>
+      <!-- niet aangepast -->
       <old_mapping name="Mantelzorger"
                    code="9.13.23355"
                    zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.13.23355"/>
@@ -131,6 +137,8 @@
       </mapping>
    </concept>
    <concept>
+      <!-- RelatieMedicatieafspraak opgezocht in art decor 2.16.840.1.113883.2.4.3.11.60.20.77.2.4.432 -->
+      <!-- ook short en alias aangepast -->
       <melding>geen relationship[@type='SPEC'] voor 9.13.23170</melding>
       <melding>geen inherit in mp-decor.xml voor Medicatieafspraak</melding>
    </concept>
@@ -173,6 +181,8 @@
       </mapping>
    </concept>
    <concept>
+      <!--toedieningssnelheid 2.16.840.1.113883.2.4.3.11.60.20.77.2.4.1330 -->
+      <!-- nominaleWaarde 2.16.840.1.113883.2.4.3.11.60.20.77.2.4.1336 -->
       <melding>geen relationship[@type='SPEC'] voor 9.13.23159</melding>
       <melding>geen inherit in mp-decor.xml voor Toedieningssnelheid</melding>
    </concept>
