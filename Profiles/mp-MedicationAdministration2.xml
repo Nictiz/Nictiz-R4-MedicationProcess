@@ -16,19 +16,9 @@
       </telecom>
    </contact>
    <description value="A medication administration is the separate administration of a medicine to the patient by the administrator."/>
-   <purpose value="This MedicationAdministration resource represents the MedicationAdministration2 building block for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). This profile is based on the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) MedicationAdministration2, but has no dependency on the corresponding nl-core profile because it contains non-compatible changes. Where compatible, mappings to zib concepts are defined. Additional concepts or concepts that are not compatible with their zib counterparts contain a mapping to the MP9 data set."/>
+   <purpose value="This MedicationAdministration resource represents the MedicationAdministration2 building block for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). This profile is based on the medication building block MedicationAdministration and contains mappings to the MP9 data set."/>
    <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
    <fhirVersion value="4.0.1"/>
-   <mapping>
-      <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
-      <uri value="https://zibs.nl/wiki/MedicationAdministration2-v1.1.1(2020EN)"/>
-      <name value="zib MedicationAdministration2-v1.1.1(2020EN)"/>
-   </mapping>
-   <mapping>
-      <identity value="zib-range-v1.0.1-2020EN"/>
-      <uri value="https://zibs.nl/wiki/Range-v1.0.1(2020EN)"/>
-      <name value="zib Range-v1.0.1(2020EN)"/>
-   </mapping>
    <mapping>
       <identity value="mp-dataset-mp9-300-rc1-20250522"/>
       <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20250522T132618/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
@@ -50,8 +40,8 @@
          <short value="MedicationAdministration"/>
          <alias value="Medicatietoediening"/>
          <mapping>
-            <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.13.20928"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-419"/>
             <comment value="MedicationAdministration"/>
          </mapping>
       </element>
@@ -66,8 +56,8 @@
       <element id="MedicationAdministration.extension:agreedDateTime.value[x]">
          <path value="MedicationAdministration.extension.value[x]"/>
          <mapping>
-            <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.13.23171"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-427"/>
             <comment value="AgreedDateTime"/>
          </mapping>
       </element>
@@ -188,8 +178,8 @@
             </valueSet>
          </binding>
          <mapping>
-            <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.13.21191"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-445"/>
             <comment value="MedicationAdministrationStatus"/>
          </mapping>
       </element>
@@ -242,8 +232,8 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"/>
          </type>
          <mapping>
-            <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.13.20929"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-420"/>
             <comment value="AdministrationProduct"/>
          </mapping>
       </element>
@@ -326,18 +316,18 @@
       <element id="MedicationAdministration.supportingInformation:administrationAgreement">
          <path value="MedicationAdministration.supportingInformation"/>
          <sliceName value="administrationAgreement"/>
-         <short value="AdministrationAgreement"/>
+         <short value="RelationAdministrationAgreement"/>
          <definition value="Administration agreement on which this administration is based."/>
-         <alias value="Toedieningsafspraak"/>
+         <alias value="RelatieToedieningsafspraak"/>
          <max value="1"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement"/>
          </type>
          <mapping>
-            <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.13.23237"/>
-            <comment value="AdministrationAgreement"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-1324"/>
+            <comment value="RelationAdministrationAgreement"/>
          </mapping>
       </element>
       <element id="MedicationAdministration.supportingInformation:variableDosingRegimen">
@@ -382,8 +372,8 @@
             <code value="dateTime"/>
          </type>
          <mapping>
-            <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.13.21193"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-426"/>
             <comment value="AdministrationDateTime"/>
          </mapping>
       </element>
@@ -394,17 +384,17 @@
          <alias value="Toediener"/>
          <max value="1"/>
          <mapping>
-            <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.13.21196"/>
-            <comment value="Administrator [DEPRECATED]"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-437"/>
             <comment value="Administrator"/>
          </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-437"/>
+            <comment value="Administrator"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
             <map value="mp-dataelement9x-437"/>
             <comment value="Administrator"/>
          </mapping>
@@ -445,18 +435,18 @@
       </element>
       <element id="MedicationAdministration.request">
          <path value="MedicationAdministration.request"/>
-         <short value="MedicationAgreement"/>
+         <short value="RelationMedicationAgreement"/>
          <definition value="Medication agreement on which this administration is based."/>
-         <alias value="Medicatieafspraak"/>
+         <alias value="RelatieMedicatieafspraak"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest"/>
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
          </type>
          <mapping>
-            <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.13.23170"/>
-            <comment value="MedicationAgreement"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-432"/>
+            <comment value="RelationMedicationAgreement"/>
          </mapping>
       </element>
       <element id="MedicationAdministration.note">
@@ -469,8 +459,8 @@
          <definition value="Comments on administering the medication."/>
          <alias value="Toelichting"/>
          <mapping>
-            <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.13.21337"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-446"/>
             <comment value="Comment"/>
          </mapping>
       </element>
@@ -484,8 +474,8 @@
             <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.13.2--20200901000000"/>
          </binding>
          <mapping>
-            <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.13.21195"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-430"/>
             <comment value="RouteOfAdministration"/>
          </mapping>
       </element>
@@ -499,8 +489,8 @@
             <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-GstdSimpleQuantity"/>
          </type>
          <mapping>
-            <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.13.21194"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-428"/>
             <comment value="AdministeredAmount"/>
          </mapping>
       </element>
@@ -525,14 +515,14 @@
             <code value="Quantity"/>
          </type>
          <mapping>
-            <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.13.23159"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-1330"/>
             <comment value="AdministeringSpeed"/>
          </mapping>
          <mapping>
-            <identity value="zib-range-v1.0.1-2020EN"/>
-            <map value="NL-CM:20.1.4"/>
-            <comment value="nominalValue"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-1336"/>
+            <comment value="NominalValue"/>
          </mapping>
       </element>
    </differential>
