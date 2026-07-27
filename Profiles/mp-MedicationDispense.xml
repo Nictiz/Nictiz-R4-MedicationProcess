@@ -16,14 +16,9 @@
       </telecom>
    </contact>
    <description value="A medication dispense is the provision of a supply of a medicine to the patient, their representative or administrator."/>
-   <purpose value="This MedicationDispense resource represents the MedicationDispense building block for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). This profile is based on the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) MedicationDispense, but has no dependency on the corresponding nl-core profile because it contains non-compatible changes. Where compatible, mappings to zib concepts are defined. Additional concepts or concepts that are not compatible with their zib counterparts contain a mapping to the MP9 data set."/>
+   <purpose value="This MedicationDispense resource represents the MedicationDispense building block for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). This profile is based on the medication building block MedicationDispense and contains mappings to the MP9 data set."/>
    <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
    <fhirVersion value="4.0.1"/>
-   <mapping>
-      <identity value="zib-medicationdispense-v2.0.2-2020EN"/>
-      <uri value="https://zibs.nl/wiki/MedicationDispense-v2.0.2(2020EN)"/>
-      <name value="zib MedicationDispense-v2.0.2(2020EN)"/>
-   </mapping>
    <mapping>
       <identity value="mp-dataset-mp9-300-rc1-20250522"/>
       <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20250522T132618/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
@@ -45,8 +40,8 @@
          <short value="MedicationDispense"/>
          <alias value="Medicatieverstrekking"/>
          <mapping>
-            <identity value="zib-medicationdispense-v2.0.2-2020EN"/>
-            <map value="NL-CM:9.9.20270"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-346"/>
             <comment value="MedicationDispense"/>
          </mapping>
       </element>
@@ -82,8 +77,8 @@
       <element id="MedicationDispense.extension:requestDate.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="zib-medicationdispense-v2.0.2-2020EN"/>
-            <map value="NL-CM:9.9.22500"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-354"/>
             <comment value="RequestDate"/>
          </mapping>
       </element>
@@ -98,8 +93,8 @@
       <element id="MedicationDispense.extension:distributionForm.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="zib-medicationdispense-v2.0.2-2020EN"/>
-            <map value="NL-CM:9.9.20927"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-355"/>
             <comment value="DistributionForm"/>
          </mapping>
       </element>
@@ -143,8 +138,8 @@
          <path value="MedicationDispense.status"/>
          <comment value="Sending systems that don't record an explicit status can use the following guidance to infer a value from the zib:&#xD;&#xA;&#xD;&#xA;* When MedicationDispenseDateTime exists and its value is in the past, `.status` will usually be set to _completed_.&#xD;&#xA;&#xD;&#xA;Moreover, it is expected that in most use cases only actual, executed, medication dispenses are exchanged which result in a _completed_ value."/>
          <mapping>
-            <identity value="zib-medicationdispense-v2.0.2-2020EN"/>
-            <map value="NL-CM:9.9.20272"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-353"/>
             <comment value="MedicationDispenseDateTime (implicit, main mapping is on `.whenHandedOver`)"/>
          </mapping>
       </element>
@@ -197,8 +192,8 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"/>
          </type>
          <mapping>
-            <identity value="zib-medicationdispense-v2.0.2-2020EN"/>
-            <map value="NL-CM:9.9.22259"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-351"/>
             <comment value="DispensedMedicine"/>
          </mapping>
       </element>
@@ -232,8 +227,8 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"/>
          </type>
          <mapping>
-            <identity value="zib-medicationdispense-v2.0.2-2020EN"/>
-            <map value="NL-CM:9.9.20858"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-347"/>
             <comment value="Supplier"/>
          </mapping>
       </element>
@@ -249,16 +244,16 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"/>
          </type>
          <mapping>
-            <identity value="zib-medicationdispense-v2.0.2-2020EN"/>
-            <map value="NL-CM:9.9.20858"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-347"/>
             <comment value="Supplier"/>
          </mapping>
       </element>
       <element id="MedicationDispense.authorizingPrescription">
          <path value="MedicationDispense.authorizingPrescription"/>
-         <short value="DispenseRequest"/>
+         <short value="RelationDispenseRequest"/>
          <definition value="Relationship to the dispense request."/>
-         <alias value="Verstrekkingsverzoek"/>
+         <alias value="RelatieVerstrekkingsverzoek"/>
          <max value="1"/>
          <type>
             <code value="Reference"/>
@@ -266,9 +261,9 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest"/>
          </type>
          <mapping>
-            <identity value="zib-medicationdispense-v2.0.2-2020EN"/>
-            <map value="NL-CM:9.9.22396"/>
-            <comment value="DispenseRequest"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-349"/>
+            <comment value="RelationDispenseRequest"/>
          </mapping>
       </element>
       <element id="MedicationDispense.quantity">
@@ -281,12 +276,12 @@
             <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-GstdSimpleQuantity"/>
          </type>
          <mapping>
-            <identity value="zib-medicationdispense-v2.0.2-2020EN"/>
-            <map value="NL-CM:9.9.20923"/>
-            <comment value="DispensedAmount [DEPRECATED]"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-358"/>
+            <comment value="DispensedAmount"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
             <map value="mp-dataelement9x-358"/>
             <comment value="DispensedAmount"/>
          </mapping>
@@ -297,8 +292,8 @@
          <definition value="The duration in days of the period in which the medication is expected to be used. The value depends on the dose and the dispensed amount."/>
          <alias value="Verbruiksduur"/>
          <mapping>
-            <identity value="zib-medicationdispense-v2.0.2-2020EN"/>
-            <map value="NL-CM:9.9.20924"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-356"/>
             <comment value="DurationOfUse"/>
          </mapping>
       </element>
@@ -308,8 +303,8 @@
          <definition value="The time at which the medicine was supplied. The date and time at which the medicine is delivered. Note: this is the time at which the medicine was delivered to the patient (or their administrator/representative) and not the request date."/>
          <alias value="MedicatieverstrekkingsDatumTijd"/>
          <mapping>
-            <identity value="zib-medicationdispense-v2.0.2-2020EN"/>
-            <map value="NL-CM:9.9.20272"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-353"/>
             <comment value="MedicationDispenseDateTime"/>
          </mapping>
       </element>
@@ -320,8 +315,8 @@
          <comment value="The `Location.name` elements holds the DispenseLocation information."/>
          <alias value="Afleverlocatie"/>
          <mapping>
-            <identity value="zib-medicationdispense-v2.0.2-2020EN"/>
-            <map value="NL-CM:9.9.20925"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-359"/>
             <comment value="DispenseLocation. Use `Location.name`."/>
          </mapping>
       </element>
@@ -335,8 +330,8 @@
          <definition value="Comments on the dispense."/>
          <alias value="Toelichting"/>
          <mapping>
-            <identity value="zib-medicationdispense-v2.0.2-2020EN"/>
-            <map value="NL-CM:9.9.22276"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-360"/>
             <comment value="Comment"/>
          </mapping>
       </element>

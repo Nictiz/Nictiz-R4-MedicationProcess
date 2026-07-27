@@ -83,6 +83,7 @@
       </mapping>
    </concept>
    <concept>
+      <!-- also updated short and alias -->
       <old_mapping name="RelatieVerstrekkingsverzoek"
                    code="9.9.22396"
                    zib_concept="2.16.840.1.113883.2.4.3.11.60.40.1.9.9.22396"/>
