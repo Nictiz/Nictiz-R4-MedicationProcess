@@ -16,14 +16,9 @@
       </telecom>
    </contact>
    <description value="A dispense request is a request from a prescriber to the supplier to dispense medication to the patient in line with the corresponding medication agreements."/>
-   <purpose value="This MedicationRequest resource represents the DispenseRequest building block for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). This profile is based on the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) DispenseRequest, but has no dependency on the corresponding nl-core profile because it contains non-compatible changes. Where compatible, mappings to zib concepts are defined. Additional concepts or concepts that are not compatible with their zib counterparts contain a mapping to the MP9 data set." />
+   <purpose value="This MedicationRequest resource represents the DispenseRequest building block for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). This profile is based on the medication building blockt DispenseRequest and contains mappings to the MP9 data set." />
    <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
    <fhirVersion value="4.0.1" />
-   <mapping>
-      <identity value="zib-dispenserequest-v1.0.3-2020EN" />
-      <uri value="https://zibs.nl/wiki/DispenseRequest-v1.0.3(2020EN)" />
-      <name value="zib DispenseRequest-v1.0.3(2020EN)" />
-   </mapping>
    <mapping>
       <identity value="mp-dataset-mp9-300-rc1-20250522" />
       <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20250522T132618/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html" />
@@ -45,9 +40,9 @@
          <short value="DispenseRequest" />
          <alias value="Verstrekkingsverzoek" />
          <mapping>
-            <identity value="zib-dispenserequest-v1.0.3-2020EN" />
-            <map value="NL-CM:9.10.19963" />
-            <comment value="DispenseRequest" />
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-274"/>
+            <comment value="DispenseRequest"/>
          </mapping>
       </element>
       <element id="MedicationRequest.extension:additionalWishes">
@@ -167,12 +162,12 @@
             <comment value="CanceledIndicator" />
          </mapping>
          <mapping>
-            <identity value="zib-dispenserequest-v1.0.3-2020EN" />
-            <map value="NL-CM:9.10.20062" />
-            <comment value="PeriodOfUse [DEPRECATED] (implicit, main mapping is on `.dispenseRequest.validityPeriod` and extension ext-TimeInterval.Duration)"/>
+             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+             <map value="mp-dataelement9x-280"/>
+             <comment value="ValidityPeriod (implicit, main mapping is on `.dispenseRequest.validityPeriod` and extension ext-TimeInterval.Duration)"/>
          </mapping>
          <mapping>
-             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+             <identity value="mp-dataset-mp9-300-rc3-TODO"/>
              <map value="mp-dataelement9x-280"/>
              <comment value="ValidityPeriod (implicit, main mapping is on `.dispenseRequest.validityPeriod` and extension ext-TimeInterval.Duration)"/>
          </mapping>
@@ -226,9 +221,9 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct" />
          </type>
          <mapping>
-            <identity value="zib-dispenserequest-v1.0.3-2020EN" />
-            <map value="NL-CM:9.10.22249" />
-            <comment value="MedicineToBeDispensed" />
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-277"/>
+            <comment value="MedicineToBeDispensed"/>
          </mapping>
       </element>
       <element id="MedicationRequest.subject">
@@ -266,9 +261,9 @@
          <definition value="Time at which the dispense request is entered." />
          <alias value="VerstrekkingsverzoekDatum" />
          <mapping>
-            <identity value="zib-dispenserequest-v1.0.3-2020EN" />
-            <map value="NL-CM:9.10.20060" />
-            <comment value="DispenseRequestDate" />
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-279"/>
+            <comment value="DispenseRequestDate"/>
          </mapping>
       </element>
       <element id="MedicationRequest.requester">
@@ -315,9 +310,9 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization" />
          </type>
          <mapping>
-            <identity value="zib-dispenserequest-v1.0.3-2020EN" />
-            <map value="NL-CM:9.10.19966" />
-            <comment value="IntendedSupplier" />
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-275"/>
+            <comment value="IntendedSupplier"/>
          </mapping>
       </element>
       <element id="MedicationRequest.basedOn">
@@ -361,9 +356,9 @@
          <definition value="Explanation for the dispense request. This explanation can contain e.g. information on why a prescriber submits a dispense request that deviates from the norm, e.g. an extra dispense request needed because the patient has lost the medication." />
          <alias value="Toelichting" />
          <mapping>
-            <identity value="zib-dispenserequest-v1.0.3-2020EN" />
-            <map value="NL-CM:9.10.22274" />
-            <comment value="Comment" />
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-288"/>
+            <comment value="Comment"/>
          </mapping>
       </element>
       <element id="MedicationRequest.dispenseRequest.extension:dispenseLocation">
@@ -377,9 +372,9 @@
       <element id="MedicationRequest.dispenseRequest.extension:dispenseLocation.value[x]">
          <path value="MedicationRequest.dispenseRequest.extension.value[x]" />
          <mapping>
-            <identity value="zib-dispenserequest-v1.0.3-2020EN" />
-            <map value="NL-CM:9.10.20068" />
-            <comment value="DispenseLocation" />
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-286"/>
+            <comment value="DispenseLocation"/>
          </mapping>
       </element>
       <element id="MedicationRequest.dispenseRequest.validityPeriod">
@@ -391,16 +386,16 @@
             <code value="Period" />
             <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-TimeInterval" />
          </type>
-         <mapping>
-            <identity value="zib-dispenserequest-v1.0.3-2020EN" />
-            <map value="NL-CM:9.10.20062" />
-            <comment value="PeriodOfUse [DEPRECATED]"/>
-         </mapping>
         <mapping>
           <identity value="mp-dataset-mp9-300-rc2-20260213"/>
           <map value="mp-dataelement9x-280"/>
           <comment value="ValidityPeriod"/>
         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-280"/>
+            <comment value="ValidityPeriod"/>
+         </mapping>
       </element>
       <element id="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">
          <path value="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed" />
@@ -408,9 +403,9 @@
          <definition value="The number of additional times the medication may be dispensed after the first time. In the case of Amount: The total amount that may be dispensed is: (Number of refills + 1) x amount to be dispensed.In the case of Period of Use:The total period of use is: (Number of refills + 1) x period of use" />
          <alias value="AantalHerhalingen" />
          <mapping>
-            <identity value="zib-dispenserequest-v1.0.3-2020EN" />
-            <map value="NL-CM:9.10.22120" />
-            <comment value="NumberOfRefills" />
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-284"/>
+            <comment value="NumberOfRefills"/>
          </mapping>
       </element>
       <element id="MedicationRequest.dispenseRequest.quantity">
@@ -423,12 +418,12 @@
             <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-GstdSimpleQuantity" />
          </type>
          <mapping>
-            <identity value="zib-dispenserequest-v1.0.3-2020EN" />
-            <map value="NL-CM:9.10.19964" />
-            <comment value="Amount [DEPRECATED]" />
+            <identity value="mp-dataset-mp9-300-rc2-20260213" />
+            <map value="mp-dataelement9x-285" />
+            <comment value="Amount" />
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213" />
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
             <map value="mp-dataelement9x-285" />
             <comment value="Amount" />
          </mapping>
