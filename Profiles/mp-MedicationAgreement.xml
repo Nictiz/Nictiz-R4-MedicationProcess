@@ -414,17 +414,6 @@
             <comment value="RelationEncounter"/>
          </mapping>
       </element>
-      <element id="MedicationRequest.authoredOn">
-         <path value="MedicationRequest.authoredOn"/>
-         <short value="MedicationAgreementDateTime"/>
-         <definition value="The time at which the agreement was made. Appointment date + time are required (order of the appointments must be clear in cases with multiple appointments on one day)"/>
-         <alias value="MedicatieafspraakDatumTijd"/>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
-            <map value="mp-dataelement9x-83"/>
-            <comment value="MedicationAgreementDateTime"/>
-         </mapping>
-      </element>
       <element id="MedicationRequest.requester">
          <path value="MedicationRequest.requester"/>
          <short value="Prescriber"/>
