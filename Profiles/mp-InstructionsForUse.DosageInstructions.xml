@@ -77,7 +77,7 @@
          <alias value="Criterium"/>
          <binding>
             <strength value="required"/>
-            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.12.4--20200901000000"/>
+            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.59--20260713075855"/>
          </binding>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc3-TODO"/>
@@ -840,7 +840,7 @@
          </type>
          <binding>
             <strength value="required"/>
-            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.12.4--20200901000000"/>
+            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.59--20260713075855"/>
          </binding>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
@@ -934,7 +934,7 @@
          <alias value="Toedieningsweg"/>
          <binding>
             <strength value="required"/>
-            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.12.1--20200901000000"/>
+            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.63--20260713091451"/>
          </binding>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
