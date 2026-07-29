@@ -135,7 +135,7 @@
       </element>
       <element id="MedicationAdministration.extension:registrationDateTime.value[x]">
          <path value="MedicationAdministration.extension.value[x]"/>
-         <definition value="The date and time when the MedicationAdministration was recorded. RegistrationDateTime is used to accurately determine the chronological order of agreements. Therefore, the date and time are mandatory. These values are immutable. When consulting or receiving this MedicationAdministration, the original RegistrationDateTime remains unchanged.&#xA;&#xA;Note: This data element differs from the data element RegistrationDateTime in zib RegistratieGegevens-v1.1.1 (2024NL). In zib RegistratieGegevens-v1.1.1 (2024NL), RegistrationDateTime refers to the date and time when the data was recorded. This may be the initial registration or the date and time when data was transferred. The zib concept RegistrationDateTime is not applied in MP9."/>
+         <definition value="The date and time when the MedicationAdministration was recorded. RegistrationDateTime is used to accurately determine the chronological order of agreements. Therefore, the date and time are mandatory. These values are immutable. When consulting or receiving this MedicationAdministration, the original RegistrationDateTime remains unchanged."/>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-1482"/>
@@ -471,7 +471,7 @@
          <alias value="Toedieningsweg"/>
          <binding>
             <strength value="required"/>
-            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.13.2--20200901000000"/>
+            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.63--20260713091451"/>
          </binding>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc3-TODO"/>

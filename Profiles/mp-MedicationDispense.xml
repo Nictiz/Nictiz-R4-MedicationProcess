@@ -136,7 +136,7 @@
       </element>
       <element id="MedicationDispense.status">
          <path value="MedicationDispense.status"/>
-         <comment value="Sending systems that don't record an explicit status can use the following guidance to infer a value from the zib:&#xD;&#xA;&#xD;&#xA;* When MedicationDispenseDateTime exists and its value is in the past, `.status` will usually be set to _completed_.&#xD;&#xA;&#xD;&#xA;Moreover, it is expected that in most use cases only actual, executed, medication dispenses are exchanged which result in a _completed_ value."/>
+         <comment value="Sending systems that don't record an explicit status can use the following guidance to infer a value from the medication building block mp-dataelement9x-353 (MedicationDispenseDateTime):&#xD;&#xA;&#xD;&#xA;* When MedicationDispenseDateTime exists and its value is in the past, `.status` will usually be set to _completed_.&#xD;&#xA;&#xD;&#xA;Moreover, it is expected that in most use cases only actual, executed, medication dispenses are exchanged which result in a _completed_ value."/>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc3-TODO"/>
             <map value="mp-dataelement9x-353"/>
@@ -214,7 +214,7 @@
          <path value="MedicationDispense.performer.actor"/>
          <short value="Supplier"/>
          <definition value="In almost all cases, the supplier will be a pharmacist. It could also be supplied by a webshop (in case of an online order), a drug store or a foreign pharmacist."/>
-         <comment value="The 'Supplier' concept of zib MedicationDispense is mapped to both `.performer.actor` and `.location`. This is a Reference to an instance of nl-core-HealthcareProvider-Organization instead of to an instance of nl-core-HealthcareProfessional, because individuals who enter the medication dispense are not recorded."/>
+         <comment value="The 'Supplier' concept of the medication building block MedicationDispense is mapped to both `.performer.actor` and `.location`. This is a Reference to an instance of nl-core-HealthcareProvider-Organization instead of to an instance of nl-core-HealthcareProfessional, because individuals who enter the medication dispense are not recorded."/>
          <alias value="Verstrekker"/>
          <type>
             <code value="Reference"/>
@@ -236,7 +236,7 @@
          <path value="MedicationDispense.location"/>
          <short value="Supplier"/>
          <definition value="In almost all cases, the supplier will be a pharmacist. It could also be supplied by a webshop (in case of an online order), a drug store or a foreign pharmacist."/>
-         <comment value="The 'Supplier' concept of zib MedicationDispense is mapped to both `.performer.actor` and `.location`. Details of the physical location of the supplier of the medication dispense can be referenced here."/>
+         <comment value="The 'Supplier' concept of the medication building block MedicationDispense is mapped to both `.performer.actor` and `.location`. Details of the physical location of the supplier of the medication dispense can be referenced here."/>
          <alias value="Verstrekker"/>
          <type>
             <code value="Reference"/>
