@@ -52,7 +52,7 @@
       <element id="Extension.value[x]">
          <path value="Extension.value[x]"/>
          <short value="RegistrationDateTime"/>
-         <definition value="The date and time when a certain agreement, variable dosing regimen or administation was recorded. RegistrationDateTime is used to accurately determine the chronological order of agreements. Therefore, the date and time are mandatory. These values are immutable. When consulting or receiving this agreement, variable dosing regimen or administation, the original RegistrationDateTime remains unchanged."/>
+         <definition value="The date and time when a certain agreement, variable dosing regimen or administration was recorded. RegistrationDateTime is used to accurately determine the chronological order of agreements. Therefore, the date and time are mandatory. These values are immutable. When consulting or receiving this agreement, variable dosing regimen or administration, the original RegistrationDateTime remains unchanged."/>
          <alias value="RegistratieDatumTijd"/>
          <type>
             <code value="dateTime"/>
