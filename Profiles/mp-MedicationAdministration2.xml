@@ -135,7 +135,7 @@
       </element>
       <element id="MedicationAdministration.extension:registrationDateTime.value[x]">
          <path value="MedicationAdministration.extension.value[x]"/>
-         <definition value="The date and time when the MedicationAdministration was recorded. RegistrationDateTime is used to accurately determine the chronological order of agreements. Therefore, the date and time are mandatory. These values are immutable. When consulting or receiving this MedicationAdministration, the original RegistrationDateTime remains unchanged.&#xA;&#xA;Note: This data element differs from the data element RegistrationDateTime in zib RegistratieGegevens-v1.1.1 (2024NL). In zib RegistratieGegevens-v1.1.1 (2024NL), RegistrationDateTime refers to the date and time when the data was recorded. This may be the initial registration or the date and time when data was transferred. The zib concept RegistrationDateTime is not applied in MP9."/>
+         <definition value="The date and time when the MedicationAdministration was recorded. RegistrationDateTime is used to accurately determine the chronological order of agreements. Therefore, the date and time are mandatory. These values are immutable. When consulting or receiving this MedicationAdministration, the original RegistrationDateTime remains unchanged."/>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-1482"/>
@@ -165,23 +165,9 @@
       <element id="MedicationAdministration.status">
          <path value="MedicationAdministration.status"/>
          <short value="MedicationAdministrationStatus"/>
-         <definition value="The status of the administration, as a description of the stage within the administering process. Only the status codes ‘completed’ and ‘cancelled’ apply to indivisible products (such as tablets or suppositories). For divisible products (such as infusions), doses can also be ‘suspended’ or ‘aborted’.  &#xD;&#xA;&#xD;&#xA;When documenting this, the following interpretations are used: &#xD;&#xA;&#xD;&#xA;- Active: The product is administered.&#xD;&#xA;- Interrupted: Use has (temporarily) been interrupted, because of a side effect, for example. Later, the patient and/or doctor can decide whether or not to resume or discontinue use.&#xD;&#xA;- Discontinued: Administration has stopped.&#xD;&#xA;- Completed: Administration has been completed.&#xD;&#xA;- Not started: The product was never administered."/>
+         <definition value="The status of the administration, as a description of the stage within the administering process. Servers SHALL only expose MedicationAdministration resources with status = `completed`."/>
          <comment value="If no value for MedicationAdministrationStatus is present, and the system is thus unable to infer the status, `.status` will be set to _unknown_."/>
          <alias value="MedicatietoedieningStatus"/>
-         <binding>
-            <strength value="required"/>
-            <description value="Use ConceptMap 'MedicatieToedieningStatusCodelijst-to-MedicationAdministrationStatusCodes' to translate zib terminology to profile terminology in ValueSet 'MedicationAdministration Status Codes'"/>
-            <valueSet value="http://hl7.org/fhir/ValueSet/medication-admin-status|4.0.1">
-               <extension url="http://hl7.org/fhir/StructureDefinition/11179-permitted-value-conceptmap">
-                  <valueCanonical value="http://nictiz.nl/fhir/ConceptMap/MedicatieToedieningStatusCodelijst-to-MedicationAdministrationStatusCodes"/>
-               </extension>
-            </valueSet>
-         </binding>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
-            <map value="mp-dataelement9x-445"/>
-            <comment value="MedicationAdministrationStatus"/>
-         </mapping>
       </element>
       <element id="MedicationAdministration.category">
          <path value="MedicationAdministration.category"/>
@@ -471,7 +457,7 @@
          <alias value="Toedieningsweg"/>
          <binding>
             <strength value="required"/>
-            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.13.2--20200901000000"/>
+            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.63--20260713091451"/>
          </binding>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc3-TODO"/>

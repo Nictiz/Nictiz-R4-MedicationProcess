@@ -265,7 +265,7 @@
       </element>
       <element id="MedicationDispense.extension:registrationDateTime.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
-         <definition value="The date and time when the AdministrationAgreement was recorded. RegistrationDateTime is used to accurately determine the chronological order of agreements. Therefore, the date and time are mandatory. These values are immutable. When consulting or receiving this AdministrationAgreement, the original RegistrationDateTime remains unchanged.&#xD;&#xA;&#xD;&#xA;Note: This data element differs from the data element RegistrationDateTime in zib RegistratieGegevens-v1.1.1 (2024NL). In zib RegistratieGegevens-v1.1.1 (2024NL), RegistrationDateTime refers to the date and time when the data was recorded. This may be the initial registration or the date and time when data was transferred. The zib concept RegistrationDateTime is not applied in MP9."/>
+         <definition value="The date and time when the AdministrationAgreement was recorded. RegistrationDateTime is used to accurately determine the chronological order of agreements. Therefore, the date and time are mandatory. These values are immutable. When consulting or receiving this AdministrationAgreement, the original RegistrationDateTime remains unchanged."/>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-1481"/>
@@ -427,7 +427,7 @@
          <path value="MedicationDispense.performer.actor"/>
          <short value="Supplier"/>
          <definition value="The supplier (pharmacist) that entered the administration agreement."/>
-         <comment value="The 'Supplier' concept of zib AdministrationAgreement is mapped to both `.performer.actor` and `.location`. This is a Reference to an instance of nl-core-HealthcareProvider-Organization instead of to an instance of nl-core-HealthcareProfessional, because individuals who enter the administration agreement are not recorded."/>
+         <comment value="The 'Supplier' concept of the medication building block AdministrationAgreement is mapped to both `.performer.actor` and `.location`. This is a Reference to an instance of nl-core-HealthcareProvider-Organization instead of to an instance of nl-core-HealthcareProfessional, because individuals who enter the administration agreement are not recorded."/>
          <alias value="Verstrekker"/>
          <type>
             <code value="Reference"/>
@@ -449,7 +449,7 @@
          <path value="MedicationDispense.location"/>
          <short value="Supplier"/>
          <definition value="The supplier (pharmacist) that entered the administration agreement."/>
-         <comment value="The 'Supplier' concept of zib AdministrationAgreement is mapped to both `.performer.actor` and `.location`. Details of the physical location of the supplier of the administration agreement can be referenced here."/>
+         <comment value="The 'Supplier' concept of medication building block AdministrationAgreement is mapped to both `.performer.actor` and `.location`. Details of the physical location of the supplier of the administration agreement can be referenced here."/>
          <alias value="Verstrekker"/>
          <type>
             <code value="Reference"/>
