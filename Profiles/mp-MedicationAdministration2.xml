@@ -404,18 +404,18 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson"/>
          </type>
          <mapping>
-            <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.13.23380"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-438"/>
             <comment value="Patient"/>
          </mapping>
          <mapping>
-            <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.13.23172"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-1432"/>
             <comment value="HealthProfessional"/>
          </mapping>
          <mapping>
-            <identity value="zib-medicationadministration2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.13.23355"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-442"/>
             <comment value="Caregiver"/>
          </mapping>
       </element>
