@@ -45,22 +45,6 @@
             <comment value="MedicationAdministration"/>
          </mapping>
       </element>
-      <element id="MedicationAdministration.extension:agreedDateTime">
-         <path value="MedicationAdministration.extension"/>
-         <sliceName value="agreedDateTime"/>
-         <type>
-            <code value="Extension"/>
-            <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationAdministration2.AgreedDateTime"/>
-         </type>
-      </element>
-      <element id="MedicationAdministration.extension:agreedDateTime.value[x]">
-         <path value="MedicationAdministration.extension.value[x]"/>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
-            <map value="mp-dataelement9x-427"/>
-            <comment value="AgreedDateTime"/>
-         </mapping>
-      </element>
       <element id="MedicationAdministration.extension:medicationAdministrationReasonForDeviation">
          <path value="MedicationAdministration.extension"/>
          <sliceName value="medicationAdministrationReasonForDeviation"/>

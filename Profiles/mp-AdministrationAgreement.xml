@@ -50,26 +50,6 @@
             <comment value="InstructionsForUse"/>
          </mapping>
       </element>
-      <element id="MedicationDispense.extension:additionalInformation">
-         <path value="MedicationDispense.extension"/>
-         <sliceName value="additionalInformation"/>
-         <type>
-            <code value="Extension"/>
-            <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdministrationAgreement.AdditionalInformation"/>
-         </type>
-      </element>
-      <element id="MedicationDispense.extension:additionalInformation.value[x]">
-         <path value="MedicationDispense.extension.value[x]"/>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-            <map value="mp-dataelement9x-342"/>
-            <comment value="AdministrationAgreementAdditionalInformation"/>
-         </mapping>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
-            <map value="mp-dataelement9x-342"/>
-            <comment value="AdministrationAgreementAdditionalInformation"/>
-         </mapping>
       </element>
       <element id="MedicationDispense.extension:reasonModificationOrDiscontinuation">
          <path value="MedicationDispense.extension"/>
@@ -90,22 +70,6 @@
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-333"/>
             <comment value="AdministrationAgreementReasonModificationOrDiscontinuation"/>
-         </mapping>
-      </element>
-      <element id="MedicationDispense.extension:administrationAgreementDateTime">
-         <path value="MedicationDispense.extension"/>
-         <sliceName value="administrationAgreementDateTime"/>
-         <type>
-            <code value="Extension"/>
-            <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdministrationAgreement.AdministrationAgreementDateTime"/>
-         </type>
-      </element>
-      <element id="MedicationDispense.extension:administrationAgreementDateTime.value[x]">
-         <path value="MedicationDispense.extension.value[x]"/>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
-            <map value="mp-dataelement9x-332"/>
-            <comment value="AdministrationAgreementDateTime"/>
          </mapping>
       </element>
       <element id="MedicationDispense.extension:renderedDosageInstruction">
