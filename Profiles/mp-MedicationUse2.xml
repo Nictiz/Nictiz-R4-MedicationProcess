@@ -16,19 +16,9 @@
       </telecom>
    </contact>
    <description value="Medication use is a statement about the patient's historical, current or intended use of a medicine. The statement can be recorded by the patient themselves, but also by a healthcare professional or a representative of the patient."/>
-   <purpose value="This MedicationStatement resource represents the MedicationUse2 building block for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). This profile is based on the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) PharmaceuticalProduct, but has no dependency on the corresponding nl-core profile because it contains non-compatible changes. Where compatible, mappings to zib concepts are defined. Additional concepts or concepts that are not compatible with their zib counterparts contain a mapping to the MP9 data set."/>
+   <purpose value="This MedicationStatement resource represents the MedicationUse2 building block for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). This profile is based on the medication building block MedicationUse and contains mappings to the MP9 data set."/>
    <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
    <fhirVersion value="4.0.1"/>
-   <mapping>
-      <identity value="zib-medicationuse2-v1.1.1-2020EN"/>
-      <uri value="https://zibs.nl/wiki/MedicationUse2-v1.1.1(2020EN)"/>
-      <name value="zib MedicationUse2-v1.1.1(2020EN)"/>
-   </mapping>
-   <mapping>
-      <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-      <uri value="https://zibs.nl/wiki/InstructionsForUse-v1.2.1(2020EN)"/>
-      <name value="zib InstructionsForUse-v1.2.1(2020EN)"/>
-   </mapping>
    <mapping>
       <identity value="mp-dataset-mp9-300-rc1-20250522"/>
       <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20250522T132618/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
@@ -51,13 +41,13 @@
          <comment value="The original comment on MedicationStatement present in FHIR R4 is incorrect and should not be taken into account while interpreting this profile (that comment has been removed in later FHIR releases)."/>
          <alias value="Medicatiegebruik"/>
          <mapping>
-            <identity value="zib-medicationuse2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.11.21338"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-362"/>
             <comment value="MedicationUse"/>
          </mapping>
          <mapping>
-            <identity value="zib-medicationuse2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.11.22504"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-367"/>
             <comment value="InstructionsForUse"/>
          </mapping>
       </element>
@@ -72,8 +62,8 @@
       <element id="MedicationStatement.extension:renderedDosageInstruction.value[x]">
          <path value="MedicationStatement.extension.value[x]"/>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.9581"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-369"/>
             <comment value="Description"/>
          </mapping>
       </element>
@@ -88,8 +78,8 @@
       <element id="MedicationStatement.extension:prescriber.value[x]">
          <path value="MedicationStatement.extension.value[x]"/>
          <mapping>
-            <identity value="zib-medicationuse2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.11.23290"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-363"/>
             <comment value="Prescriber"/>
          </mapping>
       </element>
@@ -104,8 +94,8 @@
       <element id="MedicationStatement.extension:asAgreedIndicator.value[x]">
          <path value="MedicationStatement.extension.value[x]"/>
          <mapping>
-            <identity value="zib-medicationuse2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.11.22492"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-405"/>
             <comment value="AsAgreedIndicator"/>
          </mapping>
       </element>
@@ -220,17 +210,17 @@
             <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.55--20230119145802"/>
          </binding>
          <mapping>
-            <identity value="zib-medicationuse2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.11.23132"/>
-            <comment value="MedicationUseStopType [DEPRECATED]"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc1-20250522"/>
             <map value="mp-dataelement9x-408"/>
             <comment value="MedicationUseStopType"/>
          </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-408"/>
+            <comment value="MedicationUseStopType"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
             <map value="mp-dataelement9x-408"/>
             <comment value="MedicationUseStopType"/>
          </mapping>
@@ -246,8 +236,8 @@
       <element id="MedicationStatement.modifierExtension:repeatPeriodCyclicalSchedule.value[x]">
          <path value="MedicationStatement.modifierExtension.value[x]"/>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.22505"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-370"/>
             <comment value="RepeatPeriodCyclicalSchedule"/>
          </mapping>
       </element>
@@ -270,22 +260,17 @@
          <path value="MedicationStatement.status"/>
          <short value="UseIndicator"/>
          <definition value="Status may contain information on the stop type, the manner in which this medication is discontinued (temporary or definitive) and if the medicine is used or not."/>
-         <comment value="This element is mapped to the zib concept NL-CM:9.11.22399 (UseIndicator), and is moreover implicitly mapped to NL-CM:9.11.22663 (PeriodOfUse) and mp-dataelement9x-408 (MedicationUseStopType).&#xD;&#xA;Unless the status is explicitly recorded, the following guidance applies:&#xD;&#xA;&#xD;&#xA;* When the value of MedicationUseStopType is _385655000_, `.status` will usually be set to _on-hold_.&#xD;&#xA;* When the value of MedicationUseStopType is _410546004_, `.status` will usually be set to _stopped_.&#xD;&#xA;* When the value of UseIndicator is _false_ and MedicationUseStopType is empty, `.status` will be set to _not-taken_.&#xD;&#xA;* When PeriodOfUse is empty, `.status` will usually be set to _unknown_.&#xD;&#xA;* In all other cases, `.status` will usually be set to _active_. Note that this simplifed representation of `.status` (not taking into account the actual values of PeriodOfUse or the value of MedicationUseDateTime) pre-adopts the use of `.status` in the current R5 build of the MedicationStatement resource type."/>
+         <comment value="This element is mapped to mp-dataelement9x-406 (UseIndicator), and is moreover implicitly mapped to mp-dataelement9x-401 (PeriodOfUse) and mp-dataelement9x-408 (MedicationUseStopType).&#xD;&#xA;Unless the status is explicitly recorded, the following guidance applies:&#xD;&#xA;&#xD;&#xA;* When the value of MedicationUseStopType is _385655000_, `.status` will usually be set to _on-hold_.&#xD;&#xA;* When the value of MedicationUseStopType is _410546004_, `.status` will usually be set to _stopped_.&#xD;&#xA;* When the value of UseIndicator is _false_ and MedicationUseStopType is empty, `.status` will be set to _not-taken_.&#xD;&#xA;* When PeriodOfUse is empty, `.status` will usually be set to _unknown_.&#xD;&#xA;* In all other cases, `.status` will usually be set to _active_. Note that this simplified representation of `.status` (not taking into account the actual values of PeriodOfUse or the value of MedicationUseDateTime) pre-adopts the use of `.status` in the current R5 build of the MedicationStatement resource type."/>
          <alias value="GebruikIndicator"/>
          <mapping>
-            <identity value="zib-medicationuse2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.11.22399"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-406"/>
             <comment value="UseIndicator"/>
          </mapping>
          <mapping>
-            <identity value="zib-medicationuse2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.11.22663"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-401"/>
             <comment value="PeriodOfUse (implicit, main mapping is on `.effective[x]:effectivePeriod` and extension ext-TimeInterval.Duration)"/>
-         </mapping>
-         <mapping>
-            <identity value="zib-medicationuse2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.11.23132"/>
-            <comment value="MedicationUseStopType (implicit, main mapping is on the modifier extension ext-StopType) [DEPRECATED]"/>
          </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc1-20250522"/>
@@ -294,6 +279,11 @@
          </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-408"/>
+            <comment value="MedicationUseStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
             <map value="mp-dataelement9x-408"/>
             <comment value="MedicationUseStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
          </mapping>
@@ -368,8 +358,8 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"/>
          </type>
          <mapping>
-            <identity value="zib-medicationuse2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.11.21339"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-365"/>
             <comment value="ProductUsed"/>
          </mapping>
       </element>
@@ -460,8 +450,8 @@
             <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-TimeInterval"/>
          </type>
          <mapping>
-            <identity value="zib-medicationuse2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.11.22663"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-401"/>
             <comment value="PeriodOfUse"/>
          </mapping>
       </element>
@@ -471,8 +461,8 @@
          <definition value="Date on which this use is entered."/>
          <alias value="MedicatiegebruikDatumTijd"/>
          <mapping>
-            <identity value="zib-medicationuse2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.11.22398"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-400"/>
             <comment value="MedicationUseDateTime"/>
          </mapping>
       </element>
@@ -680,8 +670,8 @@
          <alias value="RedenGebruik"/>
          <min value="1"/>
          <mapping>
-            <identity value="zib-medicationuse2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.11.22491"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-407"/>
             <comment value="ReasonForUse"/>
          </mapping>
       </element>
@@ -695,8 +685,8 @@
          <definition value="Comments on the medication use."/>
          <alias value="Toelichting"/>
          <mapping>
-            <identity value="zib-medicationuse2-v1.1.1-2020EN"/>
-            <map value="NL-CM:9.11.21624"/>
+            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <map value="mp-dataelement9x-410"/>
             <comment value="Comment"/>
          </mapping>
       </element>
