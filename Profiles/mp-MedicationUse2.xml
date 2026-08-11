@@ -20,14 +20,14 @@
    <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
    <fhirVersion value="4.0.1"/>
    <mapping>
-      <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20250522T132618/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
-      <name value="ART-DECOR Dataset MP9 3.0.0-rc.1 20250522"/>
-   </mapping>
-   <mapping>
       <identity value="mp-dataset-mp9-300-rc2-20260213"/>
       <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20260213T112547/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
       <name value="ART-DECOR Dataset MP9 3.0.0-rc.2 20260213"/>
+   </mapping>
+   <mapping>
+      <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20260728T110127/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
+      <name value="ART-DECOR Dataset MP9 3.0.0-rc.3 20260728"/>
    </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
@@ -41,12 +41,12 @@
          <comment value="The original comment on MedicationStatement present in FHIR R4 is incorrect and should not be taken into account while interpreting this profile (that comment has been removed in later FHIR releases)."/>
          <alias value="Medicatiegebruik"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-362"/>
             <comment value="MedicationUse"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-367"/>
             <comment value="InstructionsForUse"/>
          </mapping>
@@ -62,7 +62,7 @@
       <element id="MedicationStatement.extension:renderedDosageInstruction.value[x]">
          <path value="MedicationStatement.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-369"/>
             <comment value="Description"/>
          </mapping>
@@ -78,7 +78,7 @@
       <element id="MedicationStatement.extension:prescriber.value[x]">
          <path value="MedicationStatement.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-363"/>
             <comment value="Prescriber"/>
          </mapping>
@@ -94,7 +94,7 @@
       <element id="MedicationStatement.extension:asAgreedIndicator.value[x]">
          <path value="MedicationStatement.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-405"/>
             <comment value="AsAgreedIndicator"/>
          </mapping>
@@ -110,12 +110,12 @@
       <element id="MedicationStatement.extension:pharmaceuticalTreatmentIdentifier.value[x]">
          <path value="MedicationStatement.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-42"/>
             <comment value="Identification"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-42"/>
             <comment value="Identification"/>
          </mapping>
@@ -131,12 +131,12 @@
       <element id="MedicationStatement.extension:copyIndicator.value[x]">
          <path value="MedicationStatement.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-418"/>
             <comment value="CopyIndicator"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-418"/>
             <comment value="CopyIndicator"/>
          </mapping>
@@ -152,19 +152,14 @@
       <element id="MedicationStatement.extension:author.value[x]">
          <path value="MedicationStatement.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-            <map value="mp-dataelement9x-623"/>
-            <comment value="Author"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-623"/>
             <comment value="Author"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-            <map value="mp-dataelement9x-624"/>
-            <comment value="AuthorIsHealthcareProvider"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-623"/>
+            <comment value="Author"/>
          </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
@@ -172,9 +167,9 @@
             <comment value="AuthorIsHealthcareProvider"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-            <map value="mp-dataelement9x-626"/>
-            <comment value="AuthorIsPatient (implicit; AuthorIsPatient = true when this element refers to the same Patient as subject)"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-624"/>
+            <comment value="AuthorIsHealthcareProvider"/>
          </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
@@ -182,12 +177,17 @@
             <comment value="AuthorIsPatient (implicit; AuthorIsPatient = true when this element refers to the same Patient as subject)"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-626"/>
+            <comment value="AuthorIsPatient (implicit; AuthorIsPatient = true when this element refers to the same Patient as subject)"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-627"/>
             <comment value="AuthorIsHealthProfessional"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-627"/>
             <comment value="AuthorIsHealthProfessional"/>
          </mapping>
@@ -210,17 +210,12 @@
             <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.55--20230119145802"/>
          </binding>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-            <map value="mp-dataelement9x-408"/>
-            <comment value="MedicationUseStopType"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-408"/>
             <comment value="MedicationUseStopType"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-408"/>
             <comment value="MedicationUseStopType"/>
          </mapping>
@@ -236,7 +231,7 @@
       <element id="MedicationStatement.modifierExtension:repeatPeriodCyclicalSchedule.value[x]">
          <path value="MedicationStatement.modifierExtension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-370"/>
             <comment value="RepeatPeriodCyclicalSchedule"/>
          </mapping>
@@ -246,12 +241,12 @@
          <short value="Identification"/>
          <alias value="Identificatie"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-411"/>
             <comment value="Identification"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-411"/>
             <comment value="Identification"/>
          </mapping>
@@ -263,19 +258,14 @@
          <comment value="This element is mapped to mp-dataelement9x-406 (UseIndicator), and is moreover implicitly mapped to mp-dataelement9x-401 (PeriodOfUse) and mp-dataelement9x-408 (MedicationUseStopType).&#xD;&#xA;Unless the status is explicitly recorded, the following guidance applies:&#xD;&#xA;&#xD;&#xA;* When the value of MedicationUseStopType is _385655000_, `.status` will usually be set to _on-hold_.&#xD;&#xA;* When the value of MedicationUseStopType is _410546004_, `.status` will usually be set to _stopped_.&#xD;&#xA;* When the value of UseIndicator is _false_ and MedicationUseStopType is empty, `.status` will be set to _not-taken_.&#xD;&#xA;* When PeriodOfUse is empty, `.status` will usually be set to _unknown_.&#xD;&#xA;* In all other cases, `.status` will usually be set to _active_. Note that this simplified representation of `.status` (not taking into account the actual values of PeriodOfUse or the value of MedicationUseDateTime) pre-adopts the use of `.status` in the current R5 build of the MedicationStatement resource type."/>
          <alias value="GebruikIndicator"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-406"/>
             <comment value="UseIndicator"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-401"/>
             <comment value="PeriodOfUse (implicit, main mapping is on `.effective[x]:effectivePeriod` and extension ext-TimeInterval.Duration)"/>
-         </mapping>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-            <map value="mp-dataelement9x-408"/>
-            <comment value="MedicationUseStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
          </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
@@ -283,7 +273,7 @@
             <comment value="MedicationUseStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-408"/>
             <comment value="MedicationUseStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
          </mapping>
@@ -299,12 +289,12 @@
             <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.43--20221115122002"/>
          </binding>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-409"/>
             <comment value="ReasonModificationOrDiscontinuationOfUse"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-409"/>
             <comment value="ReasonModificationOrDiscontinuationOfUse"/>
          </mapping>
@@ -358,7 +348,7 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-365"/>
             <comment value="ProductUsed"/>
          </mapping>
@@ -386,22 +376,22 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-EpisodeOfCare"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-            <map value="mp-dataelement9x-1349"/>
-            <comment value="RelationEncounter"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1349"/>
             <comment value="RelationEncounter"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-1349"/>
+            <comment value="RelationEncounter"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1351"/>
             <comment value="RelationEpisodeOfCare"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-1351"/>
             <comment value="RelationEpisodeOfCare"/>
          </mapping>
@@ -419,12 +409,12 @@
          <short value="RelationEpisodeOfCare"/>
          <alias value="RelatieZorgepisode"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1351"/>
             <comment value="RelationEpisodeOfCare"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-1351"/>
             <comment value="RelationEpisodeOfCare"/>
          </mapping>
@@ -450,7 +440,7 @@
             <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-TimeInterval"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-401"/>
             <comment value="PeriodOfUse"/>
          </mapping>
@@ -461,7 +451,7 @@
          <definition value="Date on which this use is entered."/>
          <alias value="MedicatiegebruikDatumTijd"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-400"/>
             <comment value="MedicationUseDateTime"/>
          </mapping>
@@ -481,19 +471,14 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-            <map value="mp-dataelement9x-593"/>
-            <comment value="Informant"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-593"/>
             <comment value="Informant"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-            <map value="mp-dataelement9x-594"/>
-            <comment value="Person"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-593"/>
+            <comment value="Informant"/>
          </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
@@ -501,9 +486,9 @@
             <comment value="Person"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-            <map value="mp-dataelement9x-620"/>
-            <comment value="InformantIsPatient (InformantIsPatient = true when informationSource refers to the same Patient as subject)"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-594"/>
+            <comment value="Person"/>
          </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
@@ -511,12 +496,17 @@
             <comment value="InformantIsPatient (InformantIsPatient = true when informationSource refers to the same Patient as subject)"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-620"/>
+            <comment value="InformantIsPatient (InformantIsPatient = true when informationSource refers to the same Patient as subject)"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-621"/>
             <comment value="InformantIsHealthProfessional"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-621"/>
             <comment value="InformantIsHealthProfessional"/>
          </mapping>
@@ -543,12 +533,12 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-413"/>
             <comment value="RelationMedicationAgreement"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-413"/>
             <comment value="RelationMedicationAgreement"/>
          </mapping>
@@ -582,12 +572,12 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1329"/>
             <comment value="RelationAdministrationAgreement"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-1329"/>
             <comment value="RelationAdministrationAgreement"/>
          </mapping>
@@ -621,12 +611,12 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationDispense"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-416"/>
             <comment value="RelationMedicationDispense"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-416"/>
             <comment value="RelationMedicationDispense"/>
          </mapping>
@@ -670,7 +660,7 @@
          <alias value="RedenGebruik"/>
          <min value="1"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-407"/>
             <comment value="ReasonForUse"/>
          </mapping>
@@ -685,7 +675,7 @@
          <definition value="Comments on the medication use."/>
          <alias value="Toelichting"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-410"/>
             <comment value="Comment"/>
          </mapping>

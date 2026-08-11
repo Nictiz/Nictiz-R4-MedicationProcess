@@ -20,14 +20,14 @@
    <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
    <fhirVersion value="4.0.1"/>
    <mapping>
-      <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20250522T132618/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
-      <name value="ART-DECOR Dataset MP9 3.0.0-rc.1 20250522"/>
-   </mapping>
-   <mapping>
       <identity value="mp-dataset-mp9-300-rc2-20260213"/>
       <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20260213T112547/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
       <name value="ART-DECOR Dataset MP9 3.0.0-rc.2 20260213"/>
+   </mapping>
+   <mapping>
+      <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20260728T110127/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
+      <name value="ART-DECOR Dataset MP9 3.0.0-rc.3 20260728"/>
    </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
@@ -40,16 +40,15 @@
          <short value="AdministrationAgreement"/>
          <alias value="Toedieningsafspraak"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-294"/>
             <comment value="AdministrationAgreement"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-299"/>
             <comment value="InstructionsForUse"/>
          </mapping>
-      </element>
       </element>
       <element id="MedicationDispense.extension:reasonModificationOrDiscontinuation">
          <path value="MedicationDispense.extension"/>
@@ -62,12 +61,12 @@
       <element id="MedicationDispense.extension:reasonModificationOrDiscontinuation.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-333"/>
             <comment value="AdministrationAgreementReasonModificationOrDiscontinuation"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-333"/>
             <comment value="AdministrationAgreementReasonModificationOrDiscontinuation"/>
          </mapping>
@@ -83,7 +82,7 @@
       <element id="MedicationDispense.extension:renderedDosageInstruction.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-301"/>
             <comment value="Description"/>
          </mapping>
@@ -107,7 +106,7 @@
             <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-TimeInterval"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-334"/>
             <comment value="PeriodOfUse"/>
          </mapping>
@@ -125,12 +124,12 @@
          <path value="MedicationDispense.extension.value[x].extension.value[x]"/>
          <definition value="Element to indicate that the start or end date is uncertain.&#xD;&#xA;&#xD;&#xA;In certain situations the start or end date can depend on another piece of information. This is, for example, the case when a patient has to start or stop medication a few days before hospital admission. In that case this element is used to indicate (in free text): ‘start X days before hospital admission’ or ‘stop X days before hospital admission’. By doing this, it is clear that the entered start or end date is uncertain when the AdministrationAgreement is being exchanged."/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1484"/>
             <comment value="Condition"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-1484"/>
             <comment value="Condition"/>
          </mapping>
@@ -146,12 +145,12 @@
       <element id="MedicationDispense.extension:copyIndicator.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-345"/>
             <comment value="CopyIndicator"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-345"/>
             <comment value="CopyIndicator"/>
          </mapping>
@@ -167,12 +166,12 @@
       <element id="MedicationDispense.extension:pharmaceuticalTreatmentIdentifier.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-42"/>
             <comment value="Identification"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-42"/>
             <comment value="Identification"/>
          </mapping>
@@ -188,12 +187,12 @@
       <element id="MedicationDispense.extension:distributionForm.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1371"/>
             <comment value="DistributionForm"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-1371"/>
             <comment value="DistributionForm"/>
          </mapping>
@@ -209,12 +208,12 @@
       <element id="MedicationDispense.extension:relationAdministrationAgreement.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1380"/>
             <comment value="RelationAdministrationAgreement"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-1380"/>
             <comment value="RelationAdministrationAgreement"/>
          </mapping>
@@ -231,12 +230,12 @@
          <path value="MedicationDispense.extension.value[x]"/>
          <definition value="The date and time when the AdministrationAgreement was recorded. RegistrationDateTime is used to accurately determine the chronological order of agreements. Therefore, the date and time are mandatory. These values are immutable. When consulting or receiving this AdministrationAgreement, the original RegistrationDateTime remains unchanged."/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1481"/>
             <comment value="RegistrationDateTime"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-1481"/>
             <comment value="RegistrationDateTime"/>
          </mapping>
@@ -254,17 +253,12 @@
          <short value="AdministrationAgreementStopType"/>
          <alias value="ToedieningsafspraakStopType"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-            <map value="mp-dataelement9x-340"/>
-            <comment value="AdministrationAgreementStopType"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-340"/>
             <comment value="AdministrationAgreementStopType"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-340"/>
             <comment value="AdministrationAgreementStopType"/>
          </mapping>
@@ -280,7 +274,7 @@
       <element id="MedicationDispense.modifierExtension:repeatPeriodCyclicalSchedule.value[x]">
          <path value="MedicationDispense.modifierExtension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-302"/>
             <comment value="RepeatPeriodCyclicalSchedule"/>
          </mapping>
@@ -290,12 +284,12 @@
          <short value="Identification"/>
          <alias value="Identificatie"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-344"/>
             <comment value="Identification"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-344"/>
             <comment value="Identification"/>
          </mapping>
@@ -305,17 +299,12 @@
          <definition value="A code specifying the state of the set of dispense events. In the event of an error correction, the value is set to _entered-in-error_."/>
          <comment value="The AdministrationAgreement building block does not provide much information on the logistical status as is intended by the ValueSet binding on this element. Therefore, if a system is unable to infer the status, `.status` will usually be set to _unknown_."/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-            <map value="mp-dataelement9x-340"/>
-            <comment value="AdministrationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-340"/>
             <comment value="AdministrationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-340"/>
             <comment value="AdministrationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
          </mapping>
@@ -369,7 +358,7 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-297"/>
             <comment value="MedicineForAdministrationAgreement"/>
          </mapping>
@@ -404,7 +393,7 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-295"/>
             <comment value="Supplier"/>
          </mapping>
@@ -421,7 +410,7 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-295"/>
             <comment value="Supplier"/>
          </mapping>
@@ -438,7 +427,7 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-338"/>
             <comment value="RelationMedicationAgreement"/>
          </mapping>
@@ -453,7 +442,7 @@
          <definition value="Comments on the administration agreement."/>
          <alias value="Toelichting"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-343"/>
             <comment value="Comment"/>
          </mapping>

@@ -20,14 +20,14 @@
    <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
    <fhirVersion value="4.0.1"/>
    <mapping>
-      <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20250522T132618/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
-      <name value="ART-DECOR Dataset MP9 3.0.0-rc.1 20250522"/>
-   </mapping>
-   <mapping>
       <identity value="mp-dataset-mp9-300-rc2-20260213"/>
       <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20260213T112547/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
       <name value="ART-DECOR Dataset MP9 3.0.0-rc.2 20260213"/>
+   </mapping>
+   <mapping>
+      <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20260728T110127/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
+      <name value="ART-DECOR Dataset MP9 3.0.0-rc.3 20260728"/>
    </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
@@ -40,7 +40,7 @@
          <short value="MedicationDispense"/>
          <alias value="Medicatieverstrekking"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-346"/>
             <comment value="MedicationDispense"/>
          </mapping>
@@ -56,12 +56,12 @@
       <element id="MedicationDispense.extension:medicationDispenseAdditionalInformation.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-357"/>
             <comment value="MedicationDispenseAdditionalInformation"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-357"/>
             <comment value="MedicationDispenseAdditionalInformation"/>
          </mapping>
@@ -77,7 +77,7 @@
       <element id="MedicationDispense.extension:requestDate.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-354"/>
             <comment value="RequestDate"/>
          </mapping>
@@ -93,7 +93,7 @@
       <element id="MedicationDispense.extension:distributionForm.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-355"/>
             <comment value="DistributionForm"/>
          </mapping>
@@ -109,12 +109,12 @@
       <element id="MedicationDispense.extension:pharmaceuticalTreatmentIdentifier.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-42"/>
             <comment value="Identification"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-42"/>
             <comment value="Identification"/>
          </mapping>
@@ -124,12 +124,12 @@
          <short value="Identification"/>
          <alias value="Identificatie"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-361"/>
             <comment value="Identification"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-361"/>
             <comment value="Identification"/>
          </mapping>
@@ -138,7 +138,7 @@
          <path value="MedicationDispense.status"/>
          <comment value="Sending systems that don't record an explicit status can use the following guidance to infer a value from the medication building block mp-dataelement9x-353 (MedicationDispenseDateTime):&#xD;&#xA;&#xD;&#xA;* When MedicationDispenseDateTime exists and its value is in the past, `.status` will usually be set to _completed_.&#xD;&#xA;&#xD;&#xA;Moreover, it is expected that in most use cases only actual, executed, medication dispenses are exchanged which result in a _completed_ value."/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-353"/>
             <comment value="MedicationDispenseDateTime (implicit, main mapping is on `.whenHandedOver`)"/>
          </mapping>
@@ -192,7 +192,7 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-351"/>
             <comment value="DispensedMedicine"/>
          </mapping>
@@ -227,7 +227,7 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-347"/>
             <comment value="Supplier"/>
          </mapping>
@@ -244,7 +244,7 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-347"/>
             <comment value="Supplier"/>
          </mapping>
@@ -261,7 +261,7 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-DispenseRequest"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-349"/>
             <comment value="RelationDispenseRequest"/>
          </mapping>
@@ -281,7 +281,7 @@
             <comment value="DispensedAmount"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-358"/>
             <comment value="DispensedAmount"/>
          </mapping>
@@ -292,7 +292,7 @@
          <definition value="The duration in days of the period in which the medication is expected to be used. The value depends on the dose and the dispensed amount."/>
          <alias value="Verbruiksduur"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-356"/>
             <comment value="DurationOfUse"/>
          </mapping>
@@ -303,7 +303,7 @@
          <definition value="The time at which the medicine was supplied. The date and time at which the medicine is delivered. Note: this is the time at which the medicine was delivered to the patient (or their administrator/representative) and not the request date."/>
          <alias value="MedicatieverstrekkingsDatumTijd"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-353"/>
             <comment value="MedicationDispenseDateTime"/>
          </mapping>
@@ -315,7 +315,7 @@
          <comment value="The `Location.name` elements holds the DispenseLocation information."/>
          <alias value="Afleverlocatie"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-359"/>
             <comment value="DispenseLocation. Use `Location.name`."/>
          </mapping>
@@ -330,7 +330,7 @@
          <definition value="Comments on the dispense."/>
          <alias value="Toelichting"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-TODO"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-360"/>
             <comment value="Comment"/>
          </mapping>
