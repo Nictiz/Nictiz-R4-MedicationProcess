@@ -1,7 +1,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-   <id value="2.16.840.1.113883.2.4.3.11.60.40.2.9.12.3--20200901000000"/>
+   <id value="2.16.840.1.113883.2.4.3.11.60.20.77.11.61--20260713085911"/>
    <meta>
-      <source value="http://decor.nictiz.nl/fhir/4.0/zib2020bbr-"/>
+      <lastUpdated value="2026-07-13T09:23:49Z"/>
       <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
       <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
       <tag>
@@ -11,30 +11,30 @@
    </meta>
    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
       <valuePeriod>
-         <start value="2020-09-01T00:00:00Z"/>
+         <start value="2026-07-13T08:59:11Z"/>
       </valuePeriod>
    </extension>
-   <url value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.12.3--20200901000000"/>
+   <extension url="http://hl7.org/fhir/StructureDefinition/web-source">
+      <valueUrl value="http://decor.nictiz.nl/decor/services/RetrieveValueSet?prefix=mp-&amp;version=&amp;id=2.16.840.1.113883.2.4.3.11.60.20.77.11.61&amp;effectiveDate=2026-07-13T08:59:11"/>
+   </extension>
+   <url value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.61--20260713085911"/>
    <identifier>
       <use value="official"/>
       <system value="urn:ietf:rfc:3986"/>
-      <value value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.2.9.12.3"/>
+      <value value="urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.11.61"/>
    </identifier>
-   <version value="2020-09-01T00:00:00"/>
+   <version value="2026-07-13T08:59:11"/>
    <name value="DagdeelCodelijst"/>
    <title value="DagdeelCodelijst"/>
-   <status value="active"/>
+   <status value="draft"/>
    <experimental value="false"/>
-   <publisher value="Registratie aan de bron"/>
+   <date value="2026-07-13T09:23:49Z"/>
+   <publisher value="Nictiz"/>
    <contact>
-      <name value="Registratie aan de bron"/>
+      <name value="Nictiz"/>
       <telecom>
-         <system value="url"/>
-         <value value="https://www.registratieaandebron.nl"/>
-      </telecom>
-      <telecom>
-         <system value="url"/>
-         <value value="https://www.zibs.nl"/>
+         <system value="phone"/>
+         <value value="070-3173450"/>
       </telecom>
    </contact>
    <description value="DagdeelCodelijst"/>

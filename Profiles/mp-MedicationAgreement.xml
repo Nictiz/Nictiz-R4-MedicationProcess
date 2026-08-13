@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="mp-MedicationAgreement"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
-   <version value="2.0.0-rc.7"/>
+   <version value="2.0.0-rc.8"/>
    <name value="MpMedicationAgreement"/>
    <title value="mp MedicationAgreement"/>
    <status value="active"/>
@@ -16,28 +16,18 @@
       </telecom>
    </contact>
    <description value="A medication agreement is an agreement between the prescriber and the patient regarding the use of medication by that patient. An agreement to stop or change medication use is also a medication agreement."/>
-   <purpose value="This MedicationRequest resource represents the MedicationAgreement building block for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). This profile is based on the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) MedicationAgreement, but has no dependency on the corresponding nl-core profile because it contains non-compatible changes. Where compatible, mappings to zib concepts are defined. Additional concepts or concepts that are not compatible with their zib counterparts contain a mapping to the MP9 data set."/>
+   <purpose value="This MedicationRequest resource represents the MedicationAgreement building block for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). This profile is based on the medication building block MedicationAgreement and contains mappings to the MP9 data set."/>
    <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
    <fhirVersion value="4.0.1"/>
-   <mapping>
-      <identity value="zib-medicationagreement-v1.2-2020EN"/>
-      <uri value="https://zibs.nl/wiki/MedicationAgreement-v1.2(2020EN)"/>
-      <name value="zib MedicationAgreement-v1.2(2020EN)"/>
-   </mapping>
-   <mapping>
-      <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-      <uri value="https://zibs.nl/wiki/InstructionsForUse-v1.2.1(2020EN)"/>
-      <name value="zib InstructionsForUse-v1.2.1(2020EN)"/>
-   </mapping>
-   <mapping>
-      <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20250522T132618/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
-      <name value="ART-DECOR Dataset MP9 3.0.0-rc.1 20250522"/>
-   </mapping>
    <mapping>
       <identity value="mp-dataset-mp9-300-rc2-20260213"/>
       <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20260213T112547/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
       <name value="ART-DECOR Dataset MP9 3.0.0-rc.2 20260213"/>
+   </mapping>
+   <mapping>
+      <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20260728T110127/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
+      <name value="ART-DECOR Dataset MP9 3.0.0-rc.3 20260728"/>
    </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
@@ -50,13 +40,13 @@
          <short value="MedicationAgreement"/>
          <alias value="Medicatieafspraak"/>
          <mapping>
-            <identity value="zib-medicationagreement-v1.2-2020EN"/>
-            <map value="NL-CM:9.6.9580"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-43"/>
             <comment value="MedicationAgreement"/>
          </mapping>
          <mapping>
-            <identity value="zib-medicationagreement-v1.2-2020EN"/>
-            <map value="NL-CM:9.6.23240"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-50"/>
             <comment value="InstructionsForUse"/>
          </mapping>
       </element>
@@ -71,12 +61,12 @@
       <element id="MedicationRequest.extension:medicationAgreementAdditionalInformation.value[x]">
          <path value="MedicationRequest.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-90"/>
             <comment value="MedicationAgreementAdditionalInformation"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-90"/>
             <comment value="MedicationAgreementAdditionalInformation"/>
          </mapping>
@@ -95,8 +85,8 @@
          <definition value="Textual description of the complete instructions for use."/>
          <alias value="Omschrijving"/>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.9581"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-52"/>
             <comment value="Description"/>
          </mapping>
       </element>
@@ -119,8 +109,8 @@
             <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-TimeInterval"/>
          </type>
          <mapping>
-            <identity value="zib-medicationagreement-v1.2-2020EN"/>
-            <map value="NL-CM:9.6.19936"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-84"/>
             <comment value="PeriodOfUse"/>
          </mapping>
       </element>
@@ -136,12 +126,12 @@
          <path value="MedicationRequest.extension.value[x].extension.value[x]"/>
          <definition value="Element to indicate that the start or end date is uncertain.&#xD;&#xA;&#xD;&#xA;In certain situations the start or end date can depend on another piece of information. This is, for example, the case when a patient has to start or stop medication a few days before hospital admission. In that case this element is used to indicate (in free text): ‘start X days before hospital admission’ or ‘stop X days before hospital admission’. By doing this, it is clear that the entered start or end date is uncertain when the MedicationAgreement is being exchanged."/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1365"/>
             <comment value="Condition"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-1365"/>
             <comment value="Condition"/>
          </mapping>
@@ -157,12 +147,12 @@
       <element id="MedicationRequest.extension:pharmaceuticalTreatmentIdentifier.value[x]">
          <path value="MedicationRequest.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-42"/>
             <comment value="Identification"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-42"/>
             <comment value="Identification"/>
          </mapping>
@@ -180,12 +170,12 @@
          <short value="RelationEpisodeOfCare"/>
          <alias value="RelatieZorgepisode"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-843"/>
             <comment value="RelationEpisodeOfCare"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-843"/>
             <comment value="RelationEpisodeOfCare"/>
          </mapping>
@@ -201,12 +191,12 @@
       <element id="MedicationRequest.extension:nextPractitioner.value[x]">
          <path value="MedicationRequest.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1382"/>
             <comment value="NextPractitioner"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-1382"/>
             <comment value="NextPractitioner"/>
          </mapping>
@@ -221,14 +211,14 @@
       </element>
       <element id="MedicationRequest.extension:registrationDateTime.value[x]">
          <path value="MedicationRequest.extension.value[x]"/>
-         <definition value="The date and time when the MedicationAgreement was recorded. RegistrationDateTime is used to accurately determine the chronological order of agreements. Therefore, the date and time are mandatory. These values are immutable. When consulting or receiving this MedicationAgreement, the original RegistrationDateTime remains unchanged.&#xA;&#xA;Note: This data element differs from the data element RegistrationDateTime in zib RegistratieGegevens-v1.1.1 (2024NL). In zib RegistratieGegevens-v1.1.1 (2024NL), RegistrationDateTime refers to the date and time when the data was recorded. This may be the initial registration or the date and time when data was transferred. The zib concept RegistrationDateTime is not applied in MP9."/>
+         <definition value="The date and time when the MedicationAgreement was recorded. RegistrationDateTime is used to accurately determine the chronological order of agreements. Therefore, the date and time are mandatory. These values are immutable. When consulting or receiving this MedicationAgreement, the original RegistrationDateTime remains unchanged."/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1480"/>
             <comment value="RegistrationDateTime"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-1480"/>
             <comment value="RegistrationDateTime"/>
          </mapping>
@@ -246,17 +236,12 @@
          <short value="MedicationAgreementStopType"/>
          <alias value="MedicatieafspraakStopType"/>
          <mapping>
-            <identity value="zib-medicationagreement-v1.2-2020EN"/>
-            <map value="NL-CM:9.6.19954"/>
-            <comment value="MedicationAgreementStopType [DEPRECATED]"/>
-         </mapping>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-88"/>
             <comment value="MedicationAgreementStopType"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-88"/>
             <comment value="MedicationAgreementStopType"/>
          </mapping>
@@ -272,8 +257,8 @@
       <element id="MedicationRequest.modifierExtension:repeatPeriodCyclicalSchedule.value[x]">
          <path value="MedicationRequest.modifierExtension.value[x]"/>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.22505"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-53"/>
             <comment value="RepeatPeriodCyclicalSchedule"/>
          </mapping>
       </element>
@@ -282,38 +267,28 @@
          <short value="Identification"/>
          <alias value="Identificatie"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-194"/>
             <comment value="Identification"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-194"/>
             <comment value="Identification"/>
          </mapping>
       </element>
       <element id="MedicationRequest.status">
          <path value="MedicationRequest.status"/>
-         <comment value="This element is implictly mapped to the zib concept NL-CM:9.6.19936 (PeriodOfUse) and the concept mp-dataelement9x-88 (MedicationAgreementStopType).&#xD;&#xA;Unless the status is explicitly recorded, the following guidance applies:&#xD;&#xA;&#xD;&#xA;* When the value of PeriodOfUse.startDateTime is in the future, `.status` will usually be set to _active_.&#xD;&#xA;* When the value of PeriodOfUse.startDateTime is in the past and PeriodOfUse.endDateTime exists and its value is in the future, `.status` will usually be set to _active_.&#xD;&#xA;* When PeriodOfUse.endDateTime exists and its value is in the past and MedicationAgreementStopType has no value, `.status` will usually be set to _completed_.&#xD;&#xA;* When PeriodOfUse.endDateTime exists and its value is in the past and MedicationAgreementStopType is _385655000_, `.status` will usually be set to _on-hold_.&#xD;&#xA;* When PeriodOfUse.endDateTime exists and its value is in the past, and the value of MedicationAgreementStopType is _410546004_, `.status` will usually be set to _stopped_.&#xD;&#xA;* When the value of PeriodOfUse.startDateTime is in the future, the value of PeriodOfUse.endDateTime equals the value of PeriodOfUse.startDateTime and the value of MedicationAgreementStopType is _89925002_, `.status` will usually be set to _cancelled_.&#xD;&#xA;* When PeriodOfUse.Duration and PeriodOfUse.startDateTime are known, PeriodOfUse.endDateTime can be deduced and the previous rules apply. &#xD;&#xA;* When a system is unable to infer the status, `.status` will be set to _unknown_. The _unknown_ code is not to be used to convey other statuses. The _unknown_ code should be used when one of the statuses applies, but the authoring system doesn't know the current state of the MedicationAgreement."/>
-         <mapping>
-            <identity value="zib-medicationagreement-v1.2-2020EN"/>
-            <map value="NL-CM:9.6.19936"/>
-            <comment value="PeriodOfUse (implicit, main mapping is on the extensions ext-TimeInterval.Period and ext-TimeInterval.Duration)"/>
-         </mapping>
-         <mapping>
-            <identity value="zib-medicationagreement-v1.2-2020EN"/>
-            <map value="NL-CM:9.6.19954"/>
-            <comment value="MedicationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType) [DEPRECATED]"/>
-         </mapping>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-            <map value="mp-dataelement9x-88"/>
-            <comment value="MedicationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
-         </mapping>
+         <comment value="This element is implicitly mapped to mp-dataelement9x-84 (PeriodOfUse) and mp-dataelement9x-88 (MedicationAgreementStopType).&#xD;&#xA;Unless the status is explicitly recorded, the following guidance applies:&#xD;&#xA;&#xD;&#xA;* When the value of PeriodOfUse.startDateTime is in the future, `.status` will usually be set to _active_.&#xD;&#xA;* When the value of PeriodOfUse.startDateTime is in the past and PeriodOfUse.endDateTime exists and its value is in the future, `.status` will usually be set to _active_.&#xD;&#xA;* When PeriodOfUse.endDateTime exists and its value is in the past and MedicationAgreementStopType has no value, `.status` will usually be set to _completed_.&#xD;&#xA;* When PeriodOfUse.endDateTime exists and its value is in the past and MedicationAgreementStopType is _385655000_, `.status` will usually be set to _on-hold_.&#xD;&#xA;* When PeriodOfUse.endDateTime exists and its value is in the past, and the value of MedicationAgreementStopType is _410546004_, `.status` will usually be set to _stopped_.&#xD;&#xA;* When the value of PeriodOfUse.startDateTime is in the future, the value of PeriodOfUse.endDateTime equals the value of PeriodOfUse.startDateTime and the value of MedicationAgreementStopType is _89925002_, `.status` will usually be set to _cancelled_.&#xD;&#xA;* When PeriodOfUse.Duration and PeriodOfUse.startDateTime are known, PeriodOfUse.endDateTime can be deduced and the previous rules apply. &#xD;&#xA;* When a system is unable to infer the status, `.status` will be set to _unknown_. The _unknown_ code is not to be used to convey other statuses. The _unknown_ code should be used when one of the statuses applies, but the authoring system doesn't know the current state of the MedicationAgreement."/>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-88"/>
             <comment value="MedicationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-84"/>
+            <comment value="PeriodOfUse (implicit, main mapping is on the extensions ext-TimeInterval.Period and ext-TimeInterval.Duration)"/>
          </mapping>
       </element>
       <element id="MedicationRequest.intent">
@@ -363,12 +338,12 @@
             <code value="boolean"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-273"/>
             <comment value="CopyIndicator"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-273"/>
             <comment value="CopyIndicator"/>
          </mapping>
@@ -395,8 +370,8 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"/>
          </type>
          <mapping>
-            <identity value="zib-medicationagreement-v1.2-2020EN"/>
-            <map value="NL-CM:9.6.19925"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-48"/>
             <comment value="AgreedMedicine"/>
          </mapping>
       </element>
@@ -419,25 +394,14 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-            <map value="mp-dataelement9x-199"/>
-            <comment value="RelationEncounter"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-199"/>
             <comment value="RelationEncounter"/>
          </mapping>
-      </element>
-      <element id="MedicationRequest.authoredOn">
-         <path value="MedicationRequest.authoredOn"/>
-         <short value="MedicationAgreementDateTime"/>
-         <definition value="The time at which the agreement was made. Appointment date + time are required (order of the appointments must be clear in cases with multiple appointments on one day)"/>
-         <alias value="MedicatieafspraakDatumTijd"/>
          <mapping>
-            <identity value="zib-medicationagreement-v1.2-2020EN"/>
-            <map value="NL-CM:9.6.19757"/>
-            <comment value="MedicationAgreementDateTime"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-199"/>
+            <comment value="RelationEncounter"/>
          </mapping>
       </element>
       <element id="MedicationRequest.requester">
@@ -457,8 +421,8 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole"/>
          </type>
          <mapping>
-            <identity value="zib-medicationagreement-v1.2-2020EN"/>
-            <map value="NL-CM:9.6.1030"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-44"/>
             <comment value="Prescriber"/>
          </mapping>
       </element>
@@ -473,12 +437,12 @@
             <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.42--20221114132525"/>
          </binding>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-89"/>
             <comment value="ReasonModificationOrDiscontinuation"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-89"/>
             <comment value="ReasonModificationOrDiscontinuation"/>
          </mapping>
@@ -496,12 +460,12 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Problem"/>
          </type>
          <mapping>
-            <identity value="zib-medicationagreement-v1.2-2020EN"/>
-            <map value="NL-CM:9.6.23133"/>
-            <comment value="PrescriptionReason [DEPRECATED]"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-46"/>
+            <comment value="PrescriptionReason"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-46"/>
             <comment value="PrescriptionReason"/>
          </mapping>
@@ -517,12 +481,12 @@
       <element id="MedicationRequest.basedOn.extension:relationAdministrationAgreement.value[x]">
          <path value="MedicationRequest.basedOn.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1328"/>
             <comment value="RelationAdministrationAgreement"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-1328"/>
             <comment value="RelationAdministrationAgreement"/>
          </mapping>
@@ -538,12 +502,12 @@
       <element id="MedicationRequest.basedOn.extension:relationMedicationUse.value[x]">
          <path value="MedicationRequest.basedOn.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1327"/>
             <comment value="RelationMedicationUse"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-1327"/>
             <comment value="RelationMedicationUse"/>
          </mapping>
@@ -558,8 +522,8 @@
          <definition value="Comments regarding to the medication agreement. For example: in consultation with the medical specialist."/>
          <alias value="Toelichting"/>
          <mapping>
-            <identity value="zib-medicationagreement-v1.2-2020EN"/>
-            <map value="NL-CM:9.6.22273"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-91"/>
             <comment value="Comment"/>
          </mapping>
       </element>
@@ -584,12 +548,12 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
          </type>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-195"/>
             <comment value="RelationMedicationAgreement"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-195"/>
             <comment value="RelationMedicationAgreement"/>
          </mapping>

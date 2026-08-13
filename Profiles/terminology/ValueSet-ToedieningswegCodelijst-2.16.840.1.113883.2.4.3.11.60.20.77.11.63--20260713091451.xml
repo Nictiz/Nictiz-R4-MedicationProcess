@@ -1,0 +1,47 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+   <id value="2.16.840.1.113883.2.4.3.11.60.20.77.11.63--20260713091451"/>
+   <meta>
+      <lastUpdated value="2026-07-27T09:57:52Z"/>
+      <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+      <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+      <tag>
+         <system value="http://hl7.org/fhir/FHIR-version"/>
+         <code value="4.0.1"/>
+      </tag>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+      <valuePeriod>
+         <start value="2026-07-13T09:14:51Z"/>
+      </valuePeriod>
+   </extension>
+   <extension url="http://hl7.org/fhir/StructureDefinition/web-source">
+      <valueUrl value="http://decor.nictiz.nl/decor/services/RetrieveValueSet?prefix=mp-&amp;version=&amp;id=2.16.840.1.113883.2.4.3.11.60.20.77.11.63&amp;effectiveDate=2026-07-13T09:14:51"/>
+   </extension>
+   <url value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.63--20260713091451"/>
+   <identifier>
+      <use value="official"/>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.11.63"/>
+   </identifier>
+   <version value="2026-07-13T09:14:51"/>
+   <name value="ToedieningswegCodelijst"/>
+   <title value="ToedieningswegCodelijst"/>
+   <status value="draft"/>
+   <experimental value="false"/>
+   <date value="2026-07-27T09:57:52Z"/>
+   <publisher value="Nictiz"/>
+   <contact>
+      <name value="Nictiz"/>
+      <telecom>
+         <system value="phone"/>
+         <value value="070-3173450"/>
+      </telecom>
+   </contact>
+   <description value="G-Standaard Toedieningswegen - Alle waarden"/>
+   <immutable value="false"/>
+   <compose>
+      <include>
+         <system value="urn:oid:2.16.840.1.113883.2.4.4.9"/>
+      </include>
+   </compose>
+</ValueSet>

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="mp-AdministrationAgreement"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/mp-AdministrationAgreement"/>
-   <version value="2.0.0-rc.7"/>
+   <version value="2.0.0-rc.8"/>
    <name value="MpAdministrationAgreement"/>
    <title value="mp AdministrationAgreement"/>
    <status value="active"/>
@@ -16,28 +16,18 @@
       </telecom>
    </contact>
    <description value="An administration agreement contains the instructions for the use or administration of medication given by the supplier to the patient, their representative or administrator. With this, the medication agreement is specified in concrete terms."/>
-   <purpose value="This MedicationDispense resource represents the AdministrationAgreement building block for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). This profile is based on the Dutch zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) AdministrationAgreement, but has no dependency on the corresponding nl-core profile because it contains non-compatible changes. Where compatible, mappings to zib concepts are defined. Additional concepts or concepts that are not compatible with their zib counterparts contain a mapping to the MP9 data set."/>
+   <purpose value="This MedicationDispense resource represents the AdministrationAgreement building block for implementations following the information standard [MP9](https://informatiestandaarden.nictiz.nl/wiki/Landingspagina_Medicatieproces). This profile is based on the medication building block AdministrationAgreement and contains mappings to the MP9 data set."/>
    <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise."/>
    <fhirVersion value="4.0.1"/>
-   <mapping>
-      <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
-      <uri value="https://zibs.nl/wiki/AdministrationAgreement-v1.0.3(2020EN)"/>
-      <name value="zib AdministrationAgreement-v1.0.3(2020EN)"/>
-   </mapping>
-   <mapping>
-      <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-      <uri value="https://zibs.nl/wiki/InstructionsForUse-v1.2.1(2020EN)"/>
-      <name value="zib InstructionsForUse-v1.2.1(2020EN)"/>
-   </mapping>
-   <mapping>
-      <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20250522T132618/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
-      <name value="ART-DECOR Dataset MP9 3.0.0-rc.1 20250522"/>
-   </mapping>
    <mapping>
       <identity value="mp-dataset-mp9-300-rc2-20260213"/>
       <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20260213T112547/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
       <name value="ART-DECOR Dataset MP9 3.0.0-rc.2 20260213"/>
+   </mapping>
+   <mapping>
+      <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+      <uri value="https://decor.nictiz.nl/pub/medicatieproces/mp-html-20260728T110127/ds-2.16.840.1.113883.2.4.3.11.60.20.77.1.4-2022-06-30T000000.html"/>
+      <name value="ART-DECOR Dataset MP9 3.0.0-rc.3 20260728"/>
    </mapping>
    <kind value="resource"/>
    <abstract value="false"/>
@@ -50,35 +40,14 @@
          <short value="AdministrationAgreement"/>
          <alias value="Toedieningsafspraak"/>
          <mapping>
-            <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
-            <map value="NL-CM:9.8.20132"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-294"/>
             <comment value="AdministrationAgreement"/>
          </mapping>
          <mapping>
-            <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
-            <map value="NL-CM:9.8.22098"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-299"/>
             <comment value="InstructionsForUse"/>
-         </mapping>
-      </element>
-      <element id="MedicationDispense.extension:additionalInformation">
-         <path value="MedicationDispense.extension"/>
-         <sliceName value="additionalInformation"/>
-         <type>
-            <code value="Extension"/>
-            <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdministrationAgreement.AdditionalInformation"/>
-         </type>
-      </element>
-      <element id="MedicationDispense.extension:additionalInformation.value[x]">
-         <path value="MedicationDispense.extension.value[x]"/>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-            <map value="mp-dataelement9x-342"/>
-            <comment value="AdministrationAgreementAdditionalInformation"/>
-         </mapping>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
-            <map value="mp-dataelement9x-342"/>
-            <comment value="AdministrationAgreementAdditionalInformation"/>
          </mapping>
       </element>
       <element id="MedicationDispense.extension:reasonModificationOrDiscontinuation">
@@ -92,30 +61,14 @@
       <element id="MedicationDispense.extension:reasonModificationOrDiscontinuation.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
-            <map value="mp-dataelement9x-333"/>
-            <comment value="AdministrationAgreementReasonModificationOrDiscontinuation"/>
-         </mapping>
-         <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-333"/>
             <comment value="AdministrationAgreementReasonModificationOrDiscontinuation"/>
          </mapping>
-      </element>
-      <element id="MedicationDispense.extension:administrationAgreementDateTime">
-         <path value="MedicationDispense.extension"/>
-         <sliceName value="administrationAgreementDateTime"/>
-         <type>
-            <code value="Extension"/>
-            <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-AdministrationAgreement.AdministrationAgreementDateTime"/>
-         </type>
-      </element>
-      <element id="MedicationDispense.extension:administrationAgreementDateTime.value[x]">
-         <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
-            <map value="NL-CM:9.8.20133"/>
-            <comment value="AdministrationAgreementDateTime"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-333"/>
+            <comment value="AdministrationAgreementReasonModificationOrDiscontinuation"/>
          </mapping>
       </element>
       <element id="MedicationDispense.extension:renderedDosageInstruction">
@@ -129,8 +82,8 @@
       <element id="MedicationDispense.extension:renderedDosageInstruction.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.9581"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-301"/>
             <comment value="Description"/>
          </mapping>
       </element>
@@ -153,8 +106,8 @@
             <profile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-TimeInterval"/>
          </type>
          <mapping>
-            <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
-            <map value="NL-CM:9.8.22660"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-334"/>
             <comment value="PeriodOfUse"/>
          </mapping>
       </element>
@@ -171,12 +124,12 @@
          <path value="MedicationDispense.extension.value[x].extension.value[x]"/>
          <definition value="Element to indicate that the start or end date is uncertain.&#xD;&#xA;&#xD;&#xA;In certain situations the start or end date can depend on another piece of information. This is, for example, the case when a patient has to start or stop medication a few days before hospital admission. In that case this element is used to indicate (in free text): ‘start X days before hospital admission’ or ‘stop X days before hospital admission’. By doing this, it is clear that the entered start or end date is uncertain when the AdministrationAgreement is being exchanged."/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1484"/>
             <comment value="Condition"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-1484"/>
             <comment value="Condition"/>
          </mapping>
@@ -192,12 +145,12 @@
       <element id="MedicationDispense.extension:copyIndicator.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-345"/>
             <comment value="CopyIndicator"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-345"/>
             <comment value="CopyIndicator"/>
          </mapping>
@@ -213,12 +166,12 @@
       <element id="MedicationDispense.extension:pharmaceuticalTreatmentIdentifier.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-42"/>
             <comment value="Identification"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-42"/>
             <comment value="Identification"/>
          </mapping>
@@ -234,12 +187,12 @@
       <element id="MedicationDispense.extension:distributionForm.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1371"/>
             <comment value="DistributionForm"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-1371"/>
             <comment value="DistributionForm"/>
          </mapping>
@@ -255,12 +208,12 @@
       <element id="MedicationDispense.extension:relationAdministrationAgreement.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1380"/>
             <comment value="RelationAdministrationAgreement"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-1380"/>
             <comment value="RelationAdministrationAgreement"/>
          </mapping>
@@ -275,14 +228,14 @@
       </element>
       <element id="MedicationDispense.extension:registrationDateTime.value[x]">
          <path value="MedicationDispense.extension.value[x]"/>
-         <definition value="The date and time when the AdministrationAgreement was recorded. RegistrationDateTime is used to accurately determine the chronological order of agreements. Therefore, the date and time are mandatory. These values are immutable. When consulting or receiving this AdministrationAgreement, the original RegistrationDateTime remains unchanged.&#xD;&#xA;&#xD;&#xA;Note: This data element differs from the data element RegistrationDateTime in zib RegistratieGegevens-v1.1.1 (2024NL). In zib RegistratieGegevens-v1.1.1 (2024NL), RegistrationDateTime refers to the date and time when the data was recorded. This may be the initial registration or the date and time when data was transferred. The zib concept RegistrationDateTime is not applied in MP9."/>
+         <definition value="The date and time when the AdministrationAgreement was recorded. RegistrationDateTime is used to accurately determine the chronological order of agreements. Therefore, the date and time are mandatory. These values are immutable. When consulting or receiving this AdministrationAgreement, the original RegistrationDateTime remains unchanged."/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-1481"/>
             <comment value="RegistrationDateTime"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-1481"/>
             <comment value="RegistrationDateTime"/>
          </mapping>
@@ -300,17 +253,12 @@
          <short value="AdministrationAgreementStopType"/>
          <alias value="ToedieningsafspraakStopType"/>
          <mapping>
-            <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
-            <map value="NL-CM:9.8.22498"/>
-            <comment value="AdministrationAgreementStopType [DEPRECATED]"/>
-         </mapping>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-340"/>
             <comment value="AdministrationAgreementStopType"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-340"/>
             <comment value="AdministrationAgreementStopType"/>
          </mapping>
@@ -326,8 +274,8 @@
       <element id="MedicationDispense.modifierExtension:repeatPeriodCyclicalSchedule.value[x]">
          <path value="MedicationDispense.modifierExtension.value[x]"/>
          <mapping>
-            <identity value="zib-instructionsforuse-v1.2.1-2020EN"/>
-            <map value="NL-CM:9.12.22505"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-302"/>
             <comment value="RepeatPeriodCyclicalSchedule"/>
          </mapping>
       </element>
@@ -336,12 +284,12 @@
          <short value="Identification"/>
          <alias value="Identificatie"/>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-344"/>
             <comment value="Identification"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-344"/>
             <comment value="Identification"/>
          </mapping>
@@ -351,27 +299,12 @@
          <definition value="A code specifying the state of the set of dispense events. In the event of an error correction, the value is set to _entered-in-error_."/>
          <comment value="The AdministrationAgreement building block does not provide much information on the logistical status as is intended by the ValueSet binding on this element. Therefore, if a system is unable to infer the status, `.status` will usually be set to _unknown_."/>
          <mapping>
-            <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
-            <map value="NL-CM:9.8.23034"/>
-            <comment value="CanceledIndicator [DEPRECATED]"/>
-         </mapping>
-         <mapping>
-            <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
-            <map value="NL-CM:9.8.22660"/>
-            <comment value="PeriodOfUse (implicit, main mapping is on the extensions ext-TimeInterval.Period and ext-TimeInterval.Duration) [DEPRECATED]"/>
-         </mapping>
-         <mapping>
-            <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
-            <map value="NL-CM:9.8.22498"/>
-            <comment value="AdministrationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType) [DEPRECATED]"/>
-         </mapping>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc1-20250522"/>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
             <map value="mp-dataelement9x-340"/>
             <comment value="AdministrationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-340"/>
             <comment value="AdministrationAgreementStopType (implicit, main mapping is on the modifier extension ext-StopType)"/>
          </mapping>
@@ -425,8 +358,8 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"/>
          </type>
          <mapping>
-            <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
-            <map value="NL-CM:9.8.20237"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-297"/>
             <comment value="MedicineForAdministrationAgreement"/>
          </mapping>
       </element>
@@ -447,7 +380,7 @@
          <path value="MedicationDispense.performer.actor"/>
          <short value="Supplier"/>
          <definition value="The supplier (pharmacist) that entered the administration agreement."/>
-         <comment value="The 'Supplier' concept of zib AdministrationAgreement is mapped to both `.performer.actor` and `.location`. This is a Reference to an instance of nl-core-HealthcareProvider-Organization instead of to an instance of nl-core-HealthcareProfessional, because individuals who enter the administration agreement are not recorded."/>
+         <comment value="The 'Supplier' concept of the medication building block AdministrationAgreement is mapped to both `.performer.actor` and `.location`. This is a Reference to an instance of nl-core-HealthcareProvider-Organization instead of to an instance of nl-core-HealthcareProfessional, because individuals who enter the administration agreement are not recorded."/>
          <alias value="Verstrekker"/>
          <type>
             <code value="Reference"/>
@@ -460,8 +393,8 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization"/>
          </type>
          <mapping>
-            <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
-            <map value="NL-CM:9.8.22097"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-295"/>
             <comment value="Supplier"/>
          </mapping>
       </element>
@@ -469,7 +402,7 @@
          <path value="MedicationDispense.location"/>
          <short value="Supplier"/>
          <definition value="The supplier (pharmacist) that entered the administration agreement."/>
-         <comment value="The 'Supplier' concept of zib AdministrationAgreement is mapped to both `.performer.actor` and `.location`. Details of the physical location of the supplier of the administration agreement can be referenced here."/>
+         <comment value="The 'Supplier' concept of medication building block AdministrationAgreement is mapped to both `.performer.actor` and `.location`. Details of the physical location of the supplier of the administration agreement can be referenced here."/>
          <alias value="Verstrekker"/>
          <type>
             <code value="Reference"/>
@@ -477,8 +410,8 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"/>
          </type>
          <mapping>
-            <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
-            <map value="NL-CM:9.8.22097"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-295"/>
             <comment value="Supplier"/>
          </mapping>
       </element>
@@ -494,9 +427,9 @@
             <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/mp-MedicationAgreement"/>
          </type>
          <mapping>
-            <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
-            <map value="NL-CM:9.8.22394"/>
-            <comment value="MedicationAgreement"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-338"/>
+            <comment value="RelationMedicationAgreement"/>
          </mapping>
       </element>
       <element id="MedicationDispense.note">
@@ -509,8 +442,8 @@
          <definition value="Comments on the administration agreement."/>
          <alias value="Toelichting"/>
          <mapping>
-            <identity value="zib-administrationagreement-v1.0.3-2020EN"/>
-            <map value="NL-CM:9.8.22275"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-343"/>
             <comment value="Comment"/>
          </mapping>
       </element>

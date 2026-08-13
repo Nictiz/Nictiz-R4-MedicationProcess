@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="ext-MedicationDispense.DistributionForm"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/ext-MedicationDispense.DistributionForm"/>
-   <version value="2.0.0-rc.7"/>
+   <version value="2.0.0-rc.8"/>
    <name value="ExtMedicationDispenseDistributionForm"/>
    <title value="ext MedicationDispense.DistributionForm"/>
    <status value="active"/>
@@ -47,7 +47,7 @@
          </type>
          <binding>
             <strength value="required"/>
-            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.9.1--20200901000000"/>
+            <valueSet value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.62--20260713091249"/>
          </binding>
       </element>
    </differential>

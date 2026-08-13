@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="ext-DispenseRequest.DispenseLocation"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/ext-DispenseRequest.DispenseLocation"/>
-   <version value="2.0.0-rc.7"/>
+   <version value="2.0.0-rc.8"/>
    <name value="ExtDispenseRequestDispenseLocation"/>
    <title value="ext DispenseRequest.DispenseLocation"/>
    <status value="active"/>
@@ -41,7 +41,7 @@
          <path value="Extension.value[x]"/>
          <short value="DispenseLocation"/>
          <definition value="Dispense location. Use `Location.name`."/>
-         <comment value="Although the mapping is placed on this Reference element and not a string thereby deviating from the zib, the actual information will be a string in `Location.name`. A reference to a Location resource has been chosen over an extension with a string to allow for more detailed information to be captured in use cases not accounted for by the zib."/>
+         <comment value="Although the mapping is placed on this Reference element and not a string thereby deviating from the MP9 data set, the actual information will be a string in `Location.name`. A reference to a Location resource has been chosen over an extension with a string to allow for more detailed information for future use cases."/>
          <alias value="Afleverlocatie"/>
          <type>
             <code value="Reference"/>
