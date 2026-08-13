@@ -536,6 +536,11 @@
             <code value="Dosage"/>
             <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-InstructionsForUse.DosageInstructions"/>
          </type>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-50"/>
+            <comment value="InstructionsForUse"/>
+         </mapping>
       </element>
       <element id="MedicationRequest.priorPrescription">
          <path value="MedicationRequest.priorPrescription"/>

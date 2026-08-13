@@ -151,7 +151,6 @@
          <short value="MedicationAdministrationStatus"/>
          <definition value="The status of the administration, as a description of the stage within the administering process. Servers SHALL only expose MedicationAdministration resources with status = `completed`."/>
          <comment value="If no value for MedicationAdministrationStatus is present, and the system is thus unable to infer the status, `.status` will be set to _unknown_."/>
-         <alias value="MedicatietoedieningStatus"/>
       </element>
       <element id="MedicationAdministration.category">
          <path value="MedicationAdministration.category"/>

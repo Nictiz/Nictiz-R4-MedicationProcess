@@ -61,7 +61,9 @@
             <key value="ext-1"/>
             <severity value="error"/>
             <human value="Must have either extensions or value[x], not both"/>
-            <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+            <expression value="extension.exists() != value.exists()"/>
+            <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+            <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
          </constraint>
       </element>
       <element id="Medication.code">
