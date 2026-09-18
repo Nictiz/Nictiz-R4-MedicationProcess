@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OperationDefinition xmlns="http://hl7.org/fhir">
+    <id value="mp-latest-stop"/>
+    <url value="http://nictiz.nl/fhir/OperationDefinition/mp-latest-stop"/>
+    <version value="2.0.0-rc.8"/>
+    <name value="MpLatestStop"/>
+    <title value="Latest stop for each pharmaceutical treatment"/>
+    <status value="active"/>
+    <kind value="operation"/>
+    <experimental value="false"/>    
+    <publisher value="Nictiz"/>
+    <contact>
+        <name value="Nictiz"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.nictiz.nl"/>
+            <use value="work"/>
+        </telecom>
+    </contact>    
+    <description value="This operation determines, for a given patient, the latest stop for each pharmaceutical treatment based on MedicationAgreement (MedicatieAfspraak, MA), AdministrationAgreement (ToedieningsAfspraak, TA) and MedicationRequest resources representing a VariableDosingRegimen (WisselendDoseerSchema, WDS) in the source system.
+                        
+                        When invoked in the context of a specific kind of building block (e.g. MedicationAgreement/MA, AdministrationAgreement/TA or VariableDosingRegimen/WDS), the server SHALL return the active and latest stopped building blocks of that kind for each pharmaceutical treatment.
+                        
+                        If requested (e.g. via the include-details parameter), the server MAY also return the underlying MedicationAgreement, AdministrationAgreement and VariableDosingRegimen resources that were used to determine the latest stop for each pharmaceutical treatment."/>
+    <purpose value="To provide a deterministic, server-side application of the 'latest stop for each pharmaceutical treatment' rule in the MedicationProcess, so that clients can obtain a consistent view of stopped and ongoing medication without having to reimplement stop logic themselves."/>
+    <affectsState value="false"/>
+    <code value="latest-stop"/>
+
+    <!-- The resource types this OperationDefinition applies to -->
+    <resource value="MedicationRequest"/>
+    <resource value="MedicationDispense"/> <!--AdministrationAgreement-->   
+    
+    <system value="true"/>
+    <type value="true"/>
+    <instance value="false"/>
+
+    <!-- Input parameters -->
+    <parameter>
+        <name value="patient"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="1"/>
+        <documentation value="Patient identifier for whom the latest stop for each pharmaceutical treatment should be determined (e.g. BSN)."/>
+        <type value="string"/>
+        <searchType value="token"/>
+    </parameter>
+    
+    <parameter>
+        <name value="category"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <documentation value="Optional category to support routing and targeted source querying. When provided, the server SHOULD limit evaluation to the relevant medication process building blocks in that category, according to MP9 conventions."/>
+        <type value="string"/>
+        <searchType value="token"/>
+    </parameter>
+    
+    <parameter>
+        <name value="pharmaceutical-treatment-identifier"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="*"/>
+        <documentation value="Optional restriction to one or more specific pharmaceutical treatment identifiers. If omitted, the server SHALL determine the latest stop for all pharmaceutical treatments in the source system for the given patient."/>
+        <type value="string"/>
+        <searchType value="token"/>
+    </parameter>
+    <parameter>
+        <name value="include-details"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <documentation value="If true, the returned Bundle SHOULD include the underlying resources."/>
+        <type value="boolean"/>
+    </parameter>
+    <parameter>
+        <name value="return"/>
+        <use value="out"/>
+        <min value="1"/>
+        <max value="1"/>
+        <documentation value="Bundle containing the results after applying the latest stop logic for each pharmaceutical treatment for the given patient (and any optional filters).&#xA;&#xA;When the operation is invoked in the context of a specific kind (MA, TA or WDS), the Bundle SHALL at least contain the building blocks of that kind that are active or represent the latest stop for each pharmaceutical treatment, including latest stopped building blocks of that kind even if their PeriodOfUse lies outside the searched period."/>
+        <type value="Bundle"/>
+    </parameter>
+    
+</OperationDefinition>
