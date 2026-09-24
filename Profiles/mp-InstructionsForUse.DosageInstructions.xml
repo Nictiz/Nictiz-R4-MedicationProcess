@@ -898,49 +898,6 @@
             <comment value="Condition"/>
          </mapping>
       </element>
-      <element id="Dosage.asNeeded[x]:asNeededCodeableConcept.text">
-         <path value="Dosage.asNeeded[x].text"/>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
-            <map value="mp-dataelement9x-272"/>
-            <comment value="Description"/>
-         </mapping>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
-            <map value="mp-dataelement9x-272"/>
-            <comment value="Description"/>
-         </mapping>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
-            <map value="mp-dataelement9x-677"/>
-            <comment value="Description"/>
-         </mapping>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
-            <map value="mp-dataelement9x-677"/>
-            <comment value="Description"/>
-         </mapping>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
-            <map value="mp-dataelement9x-582"/>
-            <comment value="Description"/>
-         </mapping>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
-            <map value="mp-dataelement9x-582"/>
-            <comment value="Description"/>
-         </mapping>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
-            <map value="mp-dataelement9x-514"/>
-            <comment value="Description"/>
-         </mapping>
-         <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
-            <map value="mp-dataelement9x-514"/>
-            <comment value="Description"/>
-         </mapping>
-      </element>
       <element id="Dosage.route">
          <path value="Dosage.route"/>
          <short value="RouteOfAdministration"/>
