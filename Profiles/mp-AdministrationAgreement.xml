@@ -167,13 +167,13 @@
          <path value="MedicationDispense.extension.value[x]"/>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
-            <map value="mp-dataelement9x-42"/>
-            <comment value="Identification"/>
+            <map value="mp-dataelement9x-1501"/>
+            <comment value="PharmaceuticalTreatmentID"/>
          </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc3-20260728"/>
-            <map value="mp-dataelement9x-42"/>
-            <comment value="Identification"/>
+            <map value="mp-dataelement9x-1501"/>
+            <comment value="PharmaceuticalTreatmentID"/>
          </mapping>
       </element>
       <element id="MedicationDispense.extension:distributionForm">
