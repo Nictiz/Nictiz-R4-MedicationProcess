@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="ext-RegistrationDateTime"/>
    <url value="http://nictiz.nl/fhir/StructureDefinition/ext-RegistrationDateTime"/>
-   <version value="2.0.0-rc.7"/>
+   <version value="2.0.0-rc.8"/>
    <name value="ExtRegistrationDateTime"/>
    <title value="ext RegistrationDateTime"/>
    <status value="active"/>
@@ -52,7 +52,7 @@
       <element id="Extension.value[x]">
          <path value="Extension.value[x]"/>
          <short value="RegistrationDateTime"/>
-         <definition value="The date and time when a certain agreement, variable dosing regimen or administation was recorded. RegistrationDateTime is used to accurately determine the chronological order of agreements. Therefore, the date and time are mandatory. These values are immutable. When consulting or receiving this agreement, variable dosing regimen or administation, the original RegistrationDateTime remains unchanged. &#xD;&#xA;&#xD;&#xA;Note: This data element differs from the data element RegistrationDateTime in zib RegistratieGegevens-v1.1.1 (2024NL). In zib RegistratieGegevens-v1.1.1 (2024NL), RegistrationDateTime refers to the date and time when the data was recorded. This may be the initial registration or the date and time when data was transferred. The zib concept RegistrationDateTime is not applied in MP9."/>
+         <definition value="The date and time when a certain agreement, variable dosing regimen or administration was recorded. RegistrationDateTime is used to accurately determine the chronological order of agreements. Therefore, the date and time are mandatory. These values are immutable. When consulting or receiving this agreement, variable dosing regimen or administration, the original RegistrationDateTime remains unchanged."/>
          <alias value="RegistratieDatumTijd"/>
          <type>
             <code value="dateTime"/>
@@ -60,4 +60,3 @@
       </element>
    </differential>
 </StructureDefinition>
-

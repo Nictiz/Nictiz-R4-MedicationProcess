@@ -1,0 +1,46 @@
+
+main branch: origin/main
+igs:
+  - Profiles
+  - nictiz.fhir.nl.r4.nl-core#0.11.0-beta.1
+  - SearchParameters
+  - CapabilityStatements
+
+patterns:
+  mp profiles: Profiles/mp-*.xml
+  mp extensions: Profiles/ext-*.xml
+  mp searchparameters: SearchParamters/*.xml
+  mp capabilitystatements: CapabilityStatements/*.xml
+
+steps:
+  validate mp profiles:
+    description: Validate the mp profiles using the standard validator
+    patterns: mp profiles
+    #profile:
+    #- http://nictiz.nl/fhir/StructureDefinition/ProfilingGuidelinesR4-StructureDefinitions
+
+
+  validate mp extensions:
+    description: Validate the mp extensions using the standard validator
+    patterns: mp extensions
+    profile:
+    - http://nictiz.nl/fhir/StructureDefinition/ProfilingGuidelinesR4-StructureDefinitions
+  
+  validate mp searchparameters:
+    description: Validate the mp search parameters using the standard validator
+    patterns: mp searchparameters
+    profile:
+    - http://nictiz.nl/fhir/StructureDefinition/ProfilingGuidelinesR4-StructureDefinitions
+
+  validate mp capabilitystatements:
+    description: Validate the mp capability statements using the standard validator
+    patterns: mp capabilitystatements
+  
+#  suppress:
+    # ivm onterechte foutmeldingen:
+#    - 6005
+#    - eld-16
+#    - 1001
+
+# TO DO CHECKS 
+  # Do all referenced resource conform to the type in the profile?
