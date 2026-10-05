@@ -65,6 +65,11 @@
             <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
             <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
          </constraint>
+         <mapping>
+            <identity value="zib-pharmaceuticalproduct-v2.1.2-2020EN"/>
+            <map value="NL-CM:9.7.19784"/>
+            <comment value="Description"/>
+         </mapping>
       </element>
       <element id="Medication.code">
          <path value="Medication.code"/>
@@ -103,17 +108,6 @@
             <comment value="Medication"/>
          </mapping>
       </element>
-      <element id="Medication.manufacturer">
-         <path value="Medication.manufacturer"/>
-         <constraint>
-            <key value="ref-1"/>
-            <severity value="error"/>
-            <human value="SHALL have a contained resource if a local reference is provided"/>
-            <expression value="hasValue() or (children().count() &gt; id.count())"/>
-            <xpath value="@value|f:*|h:div"/>
-            <source value="http://hl7.org/fhir/StructureDefinition/Medication"/>
-         </constraint>
-      </element>
       <element id="Medication.form">
          <path value="Medication.form"/>
          <short value="PharmaceuticalForm"/>
@@ -138,17 +132,6 @@
             <map value="mp-dataelement9x-263"/>
             <comment value="PharmaceuticalForm"/>
          </mapping>
-      </element>
-      <element id="Medication.amount">
-         <path value="Medication.amount"/>
-         <constraint>
-            <key value="rat-1"/>
-            <severity value="error"/>
-            <human value="Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present"/>
-            <expression value="hasValue() or (children().count() &gt; id.count())"/>
-            <xpath value="@value|f:*|h:div"/>
-            <source value="http://hl7.org/fhir/StructureDefinition/Medication"/>
-         </constraint>
       </element>
       <element id="Medication.ingredient">
          <path value="Medication.ingredient"/>
