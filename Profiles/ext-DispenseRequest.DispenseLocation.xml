@@ -45,7 +45,7 @@
          <alias value="Afleverlocatie"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider"/>
+            <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/>
          </type>
       </element>
    </differential>
