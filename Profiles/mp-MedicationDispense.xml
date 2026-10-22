@@ -213,7 +213,7 @@
       <element id="MedicationDispense.performer.actor">
          <path value="MedicationDispense.performer.actor"/>
          <short value="Supplier"/>
-         <definition value="In almost all cases, the supplier will be a pharmacist. It could also be supplied by a webshop (in case of an online order), a drug store or a foreign pharmacist."/>
+         <definition value="The supplier, being a pharmacist or a dispensing general practitioner, who dispenses the medicinal product or under whose responsibility this takes place."/>
          <comment value="The 'Supplier' concept of the medication building block MedicationDispense is mapped to both `.performer.actor` and `.location`. This is a Reference to an instance of nl-core-HealthcareProvider-Organization instead of to an instance of nl-core-HealthcareProfessional, because individuals who enter the medication dispense are not recorded."/>
          <alias value="Verstrekker"/>
          <type>

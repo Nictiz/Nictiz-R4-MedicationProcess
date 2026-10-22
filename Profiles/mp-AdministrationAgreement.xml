@@ -379,7 +379,7 @@
       <element id="MedicationDispense.performer.actor">
          <path value="MedicationDispense.performer.actor"/>
          <short value="Supplier"/>
-         <definition value="The supplier (pharmacist) that entered the administration agreement."/>
+         <definition value="The supplier, being a pharmacist or a dispensing general practitioner, who recorded the administration agreement or under whose responsibility it was recorded."/>
          <comment value="The 'Supplier' concept of the medication building block AdministrationAgreement is mapped to both `.performer.actor` and `.location`. This is a Reference to an instance of nl-core-HealthcareProvider-Organization instead of to an instance of nl-core-HealthcareProfessional, because individuals who enter the administration agreement are not recorded."/>
          <alias value="Verstrekker"/>
          <type>
