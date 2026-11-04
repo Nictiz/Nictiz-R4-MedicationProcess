@@ -22,6 +22,7 @@
                         When invoked in the context of a specific kind of building block (e.g. MedicationAgreement/MA, AdministrationAgreement/TA or VariableDosingRegimen/WDS), the server SHALL return it's own latest stopped building blocks of that kind for each pharmaceutical treatment.
                         
                         If requested (e.g. via the include and include:iterate parameter), the server MAY also return the underlying MedicationAgreement, AdministrationAgreement and VariableDosingRegimen resources that were used to determine the latest stop for each pharmaceutical treatment."/>
+
     <purpose value="To provide a deterministic, server-side application of the 'latest stop for each pharmaceutical treatment' rule in the MedicationProcess, so that clients can obtain a consistent view of stopped and ongoing medication without having to reimplement stop logic themselves."/>
     <affectsState value="false"/>
     <code value="latest-stop"/>
@@ -68,13 +69,23 @@
     </parameter>
     
     <parameter>
-        <name value="include-details"/>
+        <name value="include"/>
         <use value="in"/>
         <min value="0"/>
-        <max value="1"/>
-        <documentation value="If true, the returned Bundle SHOULD include the underlying resources."/>
-        <type value="boolean"/>
+        <max value="*"/>
+        <documentation value="Optional parameter to support the existing search result parameter _include with the operation and to add resources to include in the search results in the bundle that search matches point to."/>
+        <type value="token"/>
     </parameter>
+
+    <parameter>
+        <name value="include:iterate"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="*"/>
+        <documentation value="Optional parameter to support the existing search result parameter _include:iterate with the operation and to add other resources to include in the search results when they refer to search matches."/>
+        <type value="token"/>
+    </parameter>
+
     <parameter>
         <name value="return"/>
         <use value="out"/>
