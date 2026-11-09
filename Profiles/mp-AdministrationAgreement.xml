@@ -144,7 +144,7 @@
     </element>
     <element id="MedicationDispense.extension:copyIndicator.value[x]">
       <path value="MedicationDispense.extension.value[x]" />
-      <definition value="The CopyIndicator indicates whether the AdministrationAgreement is a copy sent along with the processing of a medication prescription.&#xD;&#xA;&#xD;&#xA;The value ‘true’ is used when the AdministrationAgreement originates from another source system and is sent as a copy. The value ‘false’ is used when the AdministrationAgreement is the original concept.&#xD;&#xA;&#xD;&#xA;When a medication prescription is processed by another supplier, the AdministrationAgreement of the original dispenser is sent as a copy." />
+      <definition value="The CopyIndicator indicates whether the administration agreement is a copy sent along with the processing of a medication prescription.&#xD;&#xA;&#xD;&#xA;The value ‘true’ is used when the administration agreement originates from another source system and is sent as a copy. The value ‘false’ is used when the administration agreement is the original concept.&#xD;&#xA;&#xD;&#xA;When a medication prescription is processed by another supplier, the administration agreement of the original dispenser is sent as a copy." />
       <mapping>
         <identity value="mp-dataset-mp9-300-rc2-20260213" />
         <map value="mp-dataelement9x-345" />
