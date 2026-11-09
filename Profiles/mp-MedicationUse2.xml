@@ -130,7 +130,7 @@
     </element>
     <element id="MedicationStatement.extension:copyIndicator.value[x]">
       <path value="MedicationStatement.extension.value[x]" />
-      <definition value="Indicates whether the concept is original or a copy from another source system&#xD;&#xA;&#xD;&#xA;The value ‘true’ is used when the MGB originates from another source system and is sent as a copy. The value ‘false’ is used when the MGB is the original concept." />
+      <definition value="Indicates whether the concept is original or a copy from another source system&#xD;&#xA;&#xD;&#xA;The value ‘true’ is used when the MedicationUse originates from another source system and is sent as a copy. The value ‘false’ is used when the MedicationUse is the original concept." />
       <mapping>
         <identity value="mp-dataset-mp9-300-rc2-20260213" />
         <map value="mp-dataelement9x-418" />

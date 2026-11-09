@@ -332,7 +332,7 @@
          <path value="MedicationRequest.reported[x]"/>
          <sliceName value="reportedBoolean"/>
          <short value="CopyIndicator"/>
-         <definition value="The CopyIndicator indicates whether the MA is a copy sent along with a medication prescription.&#xD;&#xA;&#xD;&#xA;The value ‘true’ is used when the MA originates from another source system and is sent as a copy. The value ‘false’ is used when the MA is the original concept.&#xD;&#xA;&#xD;&#xA;When a medication prescription is created by another prescriber, the MA of the original prescriber is sent as a copy."/>
+         <definition value="The CopyIndicator indicates whether the MedicationAgreement is a copy sent along with a medication prescription.&#xD;&#xA;&#xD;&#xA;The value ‘true’ is used when the MedicationAgreement originates from another source system and is sent as a copy. The value ‘false’ is used when the MedicationAgreement is the original concept.&#xD;&#xA;&#xD;&#xA;When a medication prescription is created by another prescriber, the MedicationAgreement of the original prescriber is sent as a copy."/>
          <alias value="KopieIndicator"/>
          <type>
             <code value="boolean"/>
