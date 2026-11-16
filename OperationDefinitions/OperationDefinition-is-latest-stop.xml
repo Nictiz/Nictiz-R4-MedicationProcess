@@ -17,21 +17,21 @@
             <use value="work"/>
         </telecom>
     </contact>    
-    <description value="This operation determines, for a given patient, the latest stop for each pharmaceutical treatment based on MedicationAgreement (MedicatieAfspraak, MA), AdministrationAgreement (ToedieningsAfspraak, TA) and MedicationRequest resources representing a VariableDosingRegimen (WisselendDoseerSchema, WDS) in the source system.
+    <description value="This operation determines, for a given patient, the latest stop for each pharmaceutical treatment based on MedicationAgreement (MedicatieAfspraak, MA), AdministrationAgreement (ToedieningsAfspraak, TA) and MedicationRequest resources representing a VariableDosingRegimen (WisselendDoseerSchema, WDS) in the source system based on the value in the extension ext-RegistrationDateTime.
                         
-                        When invoked in the context of a specific kind of building block (e.g. MedicationAgreement/MA, AdministrationAgreement/TA or VariableDosingRegimen/WDS), the server SHALL return it's own latest stopped building blocks of that kind for each pharmaceutical treatment.
+                        When invoked in the context of a specific kind of building block (e.g. MedicationAgreement/MA, AdministrationAgreement/TA or VariableDosingRegimen/WDS), the server SHALL return it's own latest stopped building blocks of that kind for each pharmaceutical treatment or a specific pharmaceutical treatment if specified in the parameter.
                         
-                        If requested (e.g. via the include and include:iterate parameter), the server MAY also return the underlying MedicationAgreement, AdministrationAgreement and VariableDosingRegimen resources that were used to determine the latest stop for each pharmaceutical treatment."/>
+                        If requested (e.g. via the include and include:iterate parameter), the server MAY also return the underlying MedicationAgreement, AdministrationAgreement or VariableDosingRegimen resources that were used to determine the latest stop for the pharmaceutical treatment(s)."/>
 
     <purpose value="To provide a deterministic, server-side application of the 'latest stop for each pharmaceutical treatment' rule in the MedicationProcess, so that clients can obtain a consistent view of stopped and ongoing medication without having to reimplement stop logic themselves."/>
     <affectsState value="false"/>
     <code value="latest-stop"/>
 
     <!-- The resource types this OperationDefinition applies to -->
-    <resource value="MedicationRequest"/>
+    <resource value="MedicationRequest"/>  <!--MedicationAgreement--> <!--VariableDosingRegimen-->   
     <resource value="MedicationDispense"/> <!--AdministrationAgreement-->   
     
-    <system value="true"/>
+    <system value="false"/>
     <type value="true"/>
     <instance value="false"/>
 
@@ -43,7 +43,7 @@
         <!--optional parameter to allow usecases with different patient identification mechanisms-->
         <min value="0"/>
         <max value="1"/>
-        <documentation value="Patient identifier for whom the latest stop for each pharmaceutical treatment should be determined (e.g. BSN). The parameter is optional but should be executed including a patient identification mechanism."/>
+        <documentation value="Patient identifier for whom the latest stop should be determined (e.g. BSN) based on subject element in the resource. The parameter is optional but the operation SHALL be executed including a patient identification mechanism."/>
         <type value="string"/>
         <searchType value="token"/>
     </parameter>
@@ -51,9 +51,9 @@
     <parameter>
         <name value="category"/>
         <use value="in"/>
-        <min value="0"/>
+        <min value="1"/>
         <max value="1"/>
-        <documentation value="Optional category to support routing and targeted source querying. When provided, the server SHOULD limit evaluation to the relevant medication process building blocks in that category, according to MP9 conventions."/>
+        <documentation value="Required category to support routing and targeted source querying based on the category element in the resource. When provided, the server SHOULD limit evaluation to the relevant medication process building blocks in that category, according to MP9 conventions."/>
         <type value="string"/>
         <searchType value="token"/>
     </parameter>
@@ -63,7 +63,7 @@
         <use value="in"/>
         <min value="0"/>
         <max value="*"/>
-        <documentation value="Optional restriction to one or more specific pharmaceutical treatment identifiers. If omitted, the server SHALL determine the latest stop for all pharmaceutical treatments in the source system for the given patient."/>
+        <documentation value="Optional restriction to one or more specific pharmaceutical treatment identifiers and based on the extension ext-PharmaceuticalTreatment.Identifier in the resource. If omitted, the server SHALL determine the latest stop for all pharmaceutical treatments in the source system for the given patient."/>
         <type value="string"/>
         <searchType value="token"/>
     </parameter>
