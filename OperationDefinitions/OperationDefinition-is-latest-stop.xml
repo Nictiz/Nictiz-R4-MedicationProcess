@@ -62,7 +62,7 @@
         <use value="in"/>
         <min value="0"/>
         <max value="*"/>
-        <documentation value="Optional restriction to one or more specific pharmaceutical treatment identifiers and is based on the extension ext-PharmaceuticalTreatment.Identifier in the resource. If omitted, the server SHALL determine the latest stop for all pharmaceutical treatments in the source system for the given patient."/>
+        <documentation value="Optional restriction to one or more specific pharmaceutical treatment identifiers and is based on the extension ext-PharmaceuticalTreatment.Identifier in the resource. If omitted, the server SHALL determine it's own latest stopped building blocks for all pharmaceutical treatments in the source system for the given patient."/>
         <type value="string"/>
         <searchType value="token"/>
     </parameter>
@@ -81,7 +81,7 @@
         <use value="out"/>
         <min value="1"/>
         <max value="1"/>
-        <documentation value="Bundle containing the results after applying the latest stop logic for the given patient and category or any additional parameters.&#xA;&#xA;When the operation is invoked in the context of a specific category (MedicationAgreement/MA, AdministrationAgreement/TA or VariableDosingRegimen/WDS), the Bundle SHALL contain the server's own latest stopped building blocks for each pharmaceutical treatment."/>
+        <documentation value="Bundle containing the results after applying the latest stop logic for the given patient and category or any additional parameters.&#xA;&#xA;When the operation is invoked in the context of a specific category (MedicationAgreement/MA, AdministrationAgreement/TA or VariableDosingRegimen/WDS), the Bundle SHALL contain the server's own latest stopped building block of each pharmaceutical treatment."/>
         <type value="Bundle"/>
     </parameter>
     
