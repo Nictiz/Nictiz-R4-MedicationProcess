@@ -221,9 +221,8 @@
          <path value="MedicationDispense.supportingInformation"/>
          <sliceName value="administrationAgreement"/>
          <short value="RelationAdministrationAgreement"/>
-         <definition value="Reference to the administration agreement associated with this medication dispense."/>
+         <definition value="Administration agreement on which this medication dispense is based."/>
          <alias value="RelatieToedieningsafspraak"/>
-         <min value="0"/>
          <max value="1"/>
          <type>
             <code value="Reference"/>
@@ -231,7 +230,7 @@
          </type>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc3-20260728"/>
-            <map value="mp-dataelement9x-1509"/>
+            <map value="mp-dataelement9x-1324"/>
             <comment value="RelationAdministrationAgreement"/>
          </mapping>
       </element>      
