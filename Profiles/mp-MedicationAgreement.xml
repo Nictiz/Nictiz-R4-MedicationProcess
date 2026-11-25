@@ -66,7 +66,7 @@
             <comment value="MedicationAgreementAdditionalInformation"/>
          </mapping>
          <mapping>
-            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/> 
             <map value="mp-dataelement9x-90"/>
             <comment value="MedicationAgreementAdditionalInformation"/>
          </mapping>
@@ -148,13 +148,13 @@
          <path value="MedicationRequest.extension.value[x]"/>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc2-20260213"/>
-            <map value="mp-dataelement9x-1498"/>
-            <comment value="PharmaceuticalTreatmentID"/>
+            <map value="mp-dataelement9x-42"/>
+            <comment value="Identification"/>
          </mapping>
          <mapping>
             <identity value="mp-dataset-mp9-300-rc3-20260728"/>
-            <map value="mp-dataelement9x-1498"/>
-            <comment value="PharmaceuticalTreatmentID"/>
+            <map value="mp-dataelement9x-42"/>
+            <comment value="Identification"/>
          </mapping>
       </element>
       <element id="MedicationRequest.extension:relationEpisodeOfCare">
@@ -332,7 +332,7 @@
          <path value="MedicationRequest.reported[x]"/>
          <sliceName value="reportedBoolean"/>
          <short value="CopyIndicator"/>
-         <definition value="An indication whether the resource is original (false) or a copy from a different source (true)."/>
+         <definition value="The CopyIndicator indicates whether the medication agreement is a copy sent along with a medication prescription.&#xD;&#xA;&#xD;&#xA;The value ‘true’ is used when the medication agreement originates from another source system and is sent as a copy. The value ‘false’ is used when the medication agreement is the original concept.&#xD;&#xA;&#xD;&#xA;When a medication prescription is created by another prescriber, the medication agreement of the original prescriber is sent as a copy."/>
          <alias value="KopieIndicator"/>
          <type>
             <code value="boolean"/>
@@ -408,10 +408,10 @@
          <path value="MedicationRequest.requester"/>
          <short value="Prescriber"/>
          <definition value="The health professional that entered the medication agreement with the patient."/>
-         <comment value="Each occurrence of the zib HealthProfessional is normally represented by _two_ FHIR resources: a PractitionerRole resource (instance of [nl-core-HealthProfessional-PractitionerRole](http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)) and a Practitioner resource (instance of [nl-core-HealthProfessional-Practitioner](http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner)). The Practitioner resource is referenced from the PractitionerRole instance. For this reason, sending systems should fill the reference to the PractitionerRole instance here, and not the Practitioner resource. Receiving systems can then retrieve the reference to the Practitioner resource from that PractitionerRole instance. In rare circumstances, there is only a Practitioner instance, in which case it is that instance which will be referenced here. However, since this should be the exception, the zib-HealthProfessional-Practitioner profile is not explicitly mentioned as a target profile."/>
          <alias value="Voorschrijver"/>
          <type>
             <code value="Reference"/>
+            <profile value="http://nictiz.nl/fhir/StructureDefinition/pattern-NlCoreHealthProfessionalReference"/>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
             <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>

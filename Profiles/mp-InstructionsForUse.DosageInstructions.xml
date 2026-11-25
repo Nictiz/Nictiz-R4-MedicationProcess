@@ -129,7 +129,7 @@
       <element id="Dosage.additionalInstruction">
          <path value="Dosage.additionalInstruction"/>
          <short value="AdditionalInstructions"/>
-         <definition value="The additional instructions contain extra information on the use of the current prescription. The additional instructions applies to the entire instructions for use and not to an individual dosage.&#xD;&#xA;&#xD;&#xA;This includes all instructions for use. The text can come from the original “paper&#34; medication prescription, but can also be generated from the coded information.&#xD;&#xA;&#xD;&#xA;The instructions may not conflict with other components of the medication agreement/ administration agreement.&#xD;&#xA;&#xD;&#xA;The instructions can also refer to an existing protocol. In the case of an external dosing regimen (e.g., &#34;according to thrombosis service regimen&#34;), OTH is used.&#xD;&#xA;&#xD;&#xA;The texts in the G-standard that can support this attribute are included in table 362 where the texts from the general practitioner' standard 'NHG-Tabel 25-component b: 'aanvullende teksten’ ' are included. These texts can only be used when it is not possible to include this information in the other structured elements of the Instructions for Use.&#xD;&#xA;&#xD;&#xA;A free-text explanation of the Instructions for Use can be placed under code OTH if it is not possible to record it in a structured manner within the Instructions for Use."/>
+         <definition value="The additional instruction provides further information on use. It applies to the entire set of instructions for use, rather than to an individual dosage.&#xD;&#xA;&#xD;&#xA;The OTH code allows the additional instruction to refer to an existing protocol. This code can also be used to provide a free-text explanation when the information cannot be recorded in a structured format in the Instructions for Use.&#xD;&#xA;&#xD;&#xA;The texts in the G-Standard that can support the value set are included in file 362, which contains the texts from NHG Table 25, component b: ‘aanvullende teksten’.&#xD;&#xA;&#xD;&#xA;The additional instruction may only contain information that cannot be recorded in the other structured elements of the instructions for use. Additional instructions must not conflict with other elements of other medication building blocks; medication agreement, administration agreement, variable dosing regimen and medication use."/>
          <comment value="Please note that in contrast to the MP9 dataset, this AdditionalInstructions concept is grouped under the DosingInstructions concept. This `.additionalInstruction` element shall have the same value when there are multiple DosingInstructions."/>
          <alias value="AanvullendeInstructie"/>
          <binding>
@@ -896,6 +896,49 @@
             <identity value="mp-dataset-mp9-300-rc3-20260728"/>
             <map value="mp-dataelement9x-676"/>
             <comment value="Condition"/>
+         </mapping>
+      </element>
+      <element id="Dosage.asNeeded[x]:asNeededCodeableConcept.text">
+         <path value="Dosage.asNeeded[x].text"/>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-272"/>
+            <comment value="Description"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-272"/>
+            <comment value="Description"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-677"/>
+            <comment value="Description"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-677"/>
+            <comment value="Description"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-582"/>
+            <comment value="Description"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-582"/>
+            <comment value="Description"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc2-20260213"/>
+            <map value="mp-dataelement9x-514"/>
+            <comment value="Description"/>
+         </mapping>
+         <mapping>
+            <identity value="mp-dataset-mp9-300-rc3-20260728"/>
+            <map value="mp-dataelement9x-514"/>
+            <comment value="Description"/>
          </mapping>
       </element>
       <element id="Dosage.route">
